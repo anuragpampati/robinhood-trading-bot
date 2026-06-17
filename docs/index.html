@@ -46,6 +46,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .btn-logout{background:transparent;color:var(--muted);border:none;font-size:.72rem;cursor:pointer;padding:4px 8px}
 .btn-logout:hover{color:var(--red)}
 
+/* ── Tunnel banner ── */
+.tunnel-bar{background:#0e1a2a;border-bottom:1px solid #1a3050;padding:9px 24px;display:none;align-items:center;gap:10px;font-size:.8rem}
+.tunnel-bar.show{display:flex}
+.tunnel-url{color:var(--blue);font-weight:600;text-decoration:none}
+.tunnel-url:hover{text-decoration:underline}
+
 /* ── Run status bar ── */
 .run-bar{background:var(--surface2);border-bottom:1px solid var(--border);padding:10px 24px;display:none;align-items:center;gap:10px;font-size:.8rem}
 .run-bar.show{display:flex}
@@ -138,6 +144,14 @@ tr:hover td{background:#0f1319}
   <button class="btn btn-run" id="run-btn" onclick="triggerRun()" disabled>▶ Run Now</button>
   <button class="btn btn-ghost" onclick="refreshAll()">↻ Refresh</button>
   <button class="btn-logout" onclick="logout()">Sign out</button>
+</div>
+
+<!-- ── Tunnel banner ── -->
+<div class="tunnel-bar" id="tunnel-bar">
+  <span style="color:var(--muted)">🌐 Remote URL:</span>
+  <a class="tunnel-url" id="tunnel-url" href="#" target="_blank">detecting…</a>
+  <span style="color:var(--muted);font-size:.72rem">(changes on reboot)</span>
+  <button onclick="copyTunnel()" class="btn btn-ghost" style="padding:3px 10px;font-size:.72rem;margin-left:4px">Copy</button>
 </div>
 
 <!-- ── Run status bar ── -->
@@ -439,10 +453,32 @@ async function refreshAll() {
   await Promise.all([loadSignals(), loadPositions(), loadLog()]);
 }
 
+async function loadTunnel() {
+  if (!LOCAL) return;
+  try {
+    const d = await fetch('/api/tunnel', {headers:{'X-Token':TOKEN}}).then(r=>r.json());
+    const bar = document.getElementById('tunnel-bar');
+    const link = document.getElementById('tunnel-url');
+    if (d.url) {
+      link.textContent = d.url;
+      link.href = d.url;
+      bar.className = 'tunnel-bar show';
+    } else {
+      link.textContent = 'tunnel starting…';
+      bar.className = 'tunnel-bar show';
+      setTimeout(loadTunnel, 5000);
+    }
+  } catch(e) {}
+}
+
+function copyTunnel() {
+  const url = document.getElementById('tunnel-url').textContent;
+  navigator.clipboard.writeText(url).then(() => alert('Copied: ' + url));
+}
+
 async function init() {
   if (LOCAL) {
     document.getElementById('run-btn').disabled = false;
-    // Check current run status
     try {
       const d = await fetch('/api/status', {headers:{'X-Token':TOKEN}}).then(r=>r.json());
       if (d.status === 'running') {
@@ -452,6 +488,7 @@ async function init() {
         showRunBar('idle', d.last_log_line);
       }
     } catch(e) {}
+    loadTunnel();
   }
   refreshAll();
 }

@@ -77,6 +77,14 @@ def status():
         last_line = lines[-1] if lines else ''
     return jsonify({**_run_state, 'last_log_line': last_line})
 
+@app.route('/api/tunnel')
+def tunnel():
+    path = os.path.join(LOGS, 'tunnel_url.txt')
+    if os.path.exists(path):
+        url = open(path).read().strip()
+        return jsonify({'url': url})
+    return jsonify({'url': None})
+
 @app.route('/api/run', methods=['POST', 'OPTIONS'])
 def run():
     if request.method == 'OPTIONS':
