@@ -234,32 +234,31 @@ tr:hover td{background:#0f1319}
 
 <script>
 // ── Auth ──────────────────────────────────────────────────────────────────────
-const LOCAL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-const API   = LOCAL ? '' : null; // null = GitHub Pages (read-only)
-
-let TOKEN = localStorage.getItem('rh_token') || '';
+// CAN_RUN = true once we confirm /api/status is reachable with the token.
+// Works on localhost AND tunnel URL — not just hostname-based.
+let TOKEN  = localStorage.getItem('rh_token') || '';
+let CAN_RUN = false;
 
 function doLogin() {
   const pw = document.getElementById('pw-input').value.trim();
   if (!pw) return;
-  if (LOCAL) {
-    // Verify against local server
-    fetch('/api/status', {headers:{'X-Token': pw}})
-      .then(r => {
-        if (r.status === 401) { showLoginError(); return; }
-        TOKEN = pw;
-        localStorage.setItem('rh_token', TOKEN);
-        hidLogin();
-        init();
-      })
-      .catch(() => { showLoginError(); });
-  } else {
-    // On GitHub Pages — no run access, just dismiss login
-    TOKEN = pw;
-    localStorage.setItem('rh_token', TOKEN);
-    hidLogin();
-    init();
-  }
+  // Always verify against the server (works on localhost + tunnel)
+  fetch('/api/status', {headers:{'X-Token': pw}})
+    .then(r => {
+      if (r.status === 401) { showLoginError(); return; }
+      TOKEN = pw;
+      localStorage.setItem('rh_token', TOKEN);
+      CAN_RUN = true;
+      hidLogin();
+      init();
+    })
+    .catch(() => {
+      // Can't reach server — still save token, load read-only data
+      TOKEN = pw;
+      localStorage.setItem('rh_token', TOKEN);
+      hidLogin();
+      init();
+    });
 }
 
 function showLoginError() {
@@ -270,8 +269,11 @@ function hidLogin() {
 }
 function logout() {
   TOKEN = '';
+  CAN_RUN = false;
   localStorage.removeItem('rh_token');
-  location.reload();
+  document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('pw-input').value = '';
+  document.getElementById('pw-error').style.display = 'none';
 }
 
 document.getElementById('pw-input').addEventListener('keydown', e => {
@@ -346,7 +348,7 @@ function confPips(c, max=3) {
 }
 
 async function loadSignals() {
-  const url = LOCAL ? '/api/signals' : 'signals.json?t='+Date.now();
+  const url = CAN_RUN ? '/api/signals' : 'signals.json?t='+Date.now();
   try {
     const d = await fetch(url).then(r => r.json());
     const pill = document.getElementById('market-pill');
@@ -398,7 +400,7 @@ async function loadSignals() {
 }
 
 async function loadPositions() {
-  const url = LOCAL ? '/api/positions' : 'positions.json?t='+Date.now();
+  const url = CAN_RUN ? '/api/positions' : 'positions.json?t='+Date.now();
   try {
     const d = await fetch(url).then(r => r.json());
     document.getElementById('h-cash').textContent = '$'+Number(d.buying_power||0).toFixed(2);
@@ -427,7 +429,7 @@ async function loadPositions() {
 }
 
 async function loadLog() {
-  const url = LOCAL ? '/api/tradelog' : 'trade_log.md?t='+Date.now();
+  const url = CAN_RUN ? '/api/tradelog' : 'trade_log.md?t='+Date.now();
   try {
     const text = await fetch(url).then(r => r.text());
     const entries = text.split('\n## ').slice(1).reverse().slice(0,30);
@@ -454,7 +456,7 @@ async function refreshAll() {
 }
 
 async function loadTunnel() {
-  if (!LOCAL) return;
+  if (!CAN_RUN) return;
   try {
     const d = await fetch('/api/tunnel', {headers:{'X-Token':TOKEN}}).then(r=>r.json());
     const bar = document.getElementById('tunnel-bar');
@@ -477,7 +479,7 @@ function copyTunnel() {
 }
 
 async function init() {
-  if (LOCAL) {
+  if (CAN_RUN) {
     document.getElementById('run-btn').disabled = false;
     try {
       const d = await fetch('/api/status', {headers:{'X-Token':TOKEN}}).then(r=>r.json());
@@ -493,21 +495,29 @@ async function init() {
   refreshAll();
 }
 
-// Startup: check if already logged in
+// Startup: probe the API with saved token
 if (TOKEN) {
-  if (LOCAL) {
-    fetch('/api/status', {headers:{'X-Token': TOKEN}})
-      .then(r => {
-        if (r.status === 401) { TOKEN=''; localStorage.removeItem('rh_token'); return; }
-        hidLogin(); init();
-      })
-      .catch(() => { hidLogin(); init(); });
-  } else {
+  fetch('/api/status', {headers:{'X-Token': TOKEN}})
+    .then(r => {
+      if (r.status === 401) {
+        // Token wrong — show login
+        TOKEN = ''; localStorage.removeItem('rh_token');
+        return;
+      }
+      CAN_RUN = true;
+      hidLogin(); init();
+    })
+    .catch(() => {
+      // Server unreachable — show read-only dashboard (GitHub Pages)
+      hidLogin(); init();
+    });
+} else {
+  const isGitHubPages = window.location.hostname.includes('github.io');
+  if (isGitHubPages) {
+    // Public view-only — skip login
     hidLogin(); init();
   }
-} else if (!LOCAL) {
-  // GitHub Pages — skip login, view-only
-  hidLogin(); init();
+  // Otherwise show login screen (already visible by default)
 }
 
 setInterval(refreshAll, 60000);
