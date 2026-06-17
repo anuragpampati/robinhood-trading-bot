@@ -1,6 +1,8 @@
 # Never commit credentials
 .env
 *.env
+.rh_token.b64
+get_token.py
 
 # Python cache
 __pycache__/
