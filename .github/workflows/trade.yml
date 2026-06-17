@@ -2,13 +2,14 @@ name: Automated Trading
 
 on:
   schedule:
-    # Every hour Mon-Fri 10am-3pm ET (14:00-19:00 UTC)
+    # Every hour Mon-Fri 10am-4pm ET (14:00-20:00 UTC)
     - cron: '0 14 * * 1-5'
     - cron: '0 15 * * 1-5'
     - cron: '0 16 * * 1-5'
     - cron: '0 17 * * 1-5'
     - cron: '0 18 * * 1-5'
     - cron: '0 19 * * 1-5'
+    - cron: '0 20 * * 1-5'
   workflow_dispatch:   # allow manual trigger from GitHub UI
 
 permissions:
