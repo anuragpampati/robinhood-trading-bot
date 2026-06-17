@@ -3,7 +3,7 @@
 # Uses caffeinate to prevent Mac sleeping mid-run.
 # Uses claude -p with Robinhood MCP (already authenticated locally).
 
-cd /Users/anuragpampati/Desktop/Claude/robinhood
+cd /Users/anuragpampati/robinhood
 
 LOGFILE="logs/auto_run.log"
 TRADELOG="logs/trade_log.md"
