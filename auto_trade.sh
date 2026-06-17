@@ -8,7 +8,7 @@ cd /Users/anuragpampati/Desktop/Claude/robinhood
 LOGFILE="logs/auto_run.log"
 TRADELOG="logs/trade_log.md"
 PY="/Users/anuragpampati/anaconda3/bin/python3"
-CLAUDE="/usr/local/bin/claude"
+CLAUDE="/Users/anuragpampati/.local/bin/claude"
 TS=$(date '+%Y-%m-%d %H:%M:%S')
 
 # Prevent Mac from sleeping during this run
@@ -52,7 +52,7 @@ EOF
 
 echo "[$TS] Running Claude trade executor..." >> "$LOGFILE"
 CLAUDE_OUTPUT=$(cat /tmp/rh_prompt.txt | "$CLAUDE" -p \
-    --allowedTools "mcp__robinhood-trading__*,Bash" \
+    --allowedTools "mcp__robinhood-trading__get_accounts,mcp__robinhood-trading__get_portfolio,mcp__robinhood-trading__get_equity_positions,mcp__robinhood-trading__get_equity_orders,mcp__robinhood-trading__get_equity_quotes,mcp__robinhood-trading__get_equity_tradability,mcp__robinhood-trading__place_equity_order,mcp__robinhood-trading__review_equity_order,mcp__robinhood-trading__cancel_equity_order,Bash" \
     2>/dev/null)
 
 echo "$CLAUDE_OUTPUT" >> "$LOGFILE"
