@@ -3,333 +3,318 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Trading Bot Dashboard</title>
+<title>Robinhood Trading Bot</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e0e0e0;min-height:100vh}
+:root{
+  --bg:#080b0f;--surface:#0e1117;--surface2:#141820;--border:#1e2330;
+  --green:#00e676;--red:#ff4d6a;--yellow:#fbbf24;--blue:#38bdf8;
+  --text:#e2e8f0;--muted:#64748b;--subtle:#1e2330;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+/* ── Login ── */
+#login-screen{position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px}
+.login-box{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:40px 36px;width:100%;max-width:400px}
+.login-logo{font-size:2rem;margin-bottom:8px}
+.login-box h1{font-size:1.3rem;font-weight:700;margin-bottom:4px}
+.login-box p{font-size:.83rem;color:var(--muted);margin-bottom:28px;line-height:1.5}
+.login-field{margin-bottom:16px}
+.login-field label{display:block;font-size:.75rem;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em}
+.login-field input{width:100%;background:#0a0d12;border:1px solid var(--border);border-radius:10px;padding:11px 14px;color:var(--text);font-size:.95rem;outline:none;transition:.15s}
+.login-field input:focus{border-color:var(--green);box-shadow:0 0 0 3px #00e67615}
+.login-error{font-size:.78rem;color:var(--red);margin-top:6px;display:none}
+.btn-login{width:100%;background:var(--green);color:#000;border:none;border-radius:10px;padding:12px;font-size:.9rem;font-weight:700;cursor:pointer;transition:.15s;margin-top:4px}
+.btn-login:hover{background:#00ff85}
+.btn-login:active{transform:scale(.98)}
+.login-hint{font-size:.75rem;color:var(--muted);margin-top:16px;text-align:center}
+.login-hint code{background:#1a1f2a;padding:2px 6px;border-radius:4px;font-size:.72rem;color:#94a3b8}
 
 /* ── Top bar ── */
-.topbar{background:#111;border-bottom:1px solid #222;padding:14px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.topbar h1{font-size:1rem;font-weight:700;color:#fff;flex:1;min-width:160px}
-.gh-status{display:flex;align-items:center;gap:8px;font-size:.82rem}
-.dot{width:8px;height:8px;border-radius:50%;background:#444;flex-shrink:0}
-.dot.green{background:#00e676;box-shadow:0 0 6px #00e67688}
-.dot.yellow{background:#ffd600;box-shadow:0 0 6px #ffd60088}
-.dot.red{background:#ff5252;box-shadow:0 0 6px #ff525288}
-.btn{padding:8px 16px;border-radius:8px;border:none;cursor:pointer;font-size:.82rem;font-weight:600;transition:.15s}
-.btn-primary{background:#00e676;color:#000}
-.btn-primary:hover{background:#00ff85}
-.btn-primary:disabled{background:#2a2a2a;color:#555;cursor:default}
-.btn-ghost{background:transparent;color:#aaa;border:1px solid #333}
-.btn-ghost:hover{background:#1a1a1a;color:#fff}
-.market-pill{font-size:.75rem;padding:4px 10px;border-radius:99px;font-weight:600}
-.market-open{background:#00e67622;color:#00e676;border:1px solid #00e67644}
-.market-closed{background:#ffffff11;color:#666;border:1px solid #333}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;gap:14px;height:54px;position:sticky;top:0;z-index:10}
+.topbar-logo{font-size:.95rem;font-weight:700;color:#fff;flex:1}
+.market-pill{font-size:.72rem;padding:4px 11px;border-radius:99px;font-weight:600;letter-spacing:.03em}
+.market-open{background:#00e67618;color:var(--green);border:1px solid #00e67633}
+.market-closed{background:#ffffff08;color:var(--muted);border:1px solid var(--border)}
+.topbar-sep{width:1px;height:22px;background:var(--border)}
+.btn{padding:7px 14px;border-radius:8px;border:none;cursor:pointer;font-size:.78rem;font-weight:600;transition:.15s}
+.btn-run{background:var(--green);color:#000}
+.btn-run:hover:not(:disabled){background:#00ff85}
+.btn-run:disabled{background:#1a1f2a;color:var(--muted);cursor:default}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-ghost:hover{background:var(--surface2);color:var(--text)}
+.btn-logout{background:transparent;color:var(--muted);border:none;font-size:.72rem;cursor:pointer;padding:4px 8px}
+.btn-logout:hover{color:var(--red)}
 
-/* ── Setup modal ── */
-.modal-overlay{position:fixed;inset:0;background:#000000cc;z-index:100;display:flex;align-items:center;justify-content:center;padding:16px}
-.modal{background:#141414;border:1px solid #2a2a2a;border-radius:16px;padding:28px;width:100%;max-width:440px}
-.modal h2{font-size:1.1rem;margin-bottom:6px}
-.modal p{font-size:.82rem;color:#888;margin-bottom:20px;line-height:1.5}
-.field{margin-bottom:14px}
-.field label{display:block;font-size:.78rem;color:#aaa;margin-bottom:5px}
-.field input{width:100%;background:#0f0f0f;border:1px solid #333;border-radius:8px;padding:9px 12px;color:#fff;font-size:.88rem;outline:none}
-.field input:focus{border-color:#00e676}
-.field small{display:block;font-size:.72rem;color:#555;margin-top:4px}
-.modal-actions{display:flex;gap:10px;margin-top:20px}
+/* ── Run status bar ── */
+.run-bar{background:var(--surface2);border-bottom:1px solid var(--border);padding:10px 24px;display:none;align-items:center;gap:10px;font-size:.8rem}
+.run-bar.show{display:flex}
+.run-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.run-dot.running{background:var(--yellow);animation:pulse 1s ease-in-out infinite}
+.run-dot.success{background:var(--green)}
+.run-dot.error{background:var(--red)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.run-bar-text{flex:1;color:#94a3b8}
+.run-bar-time{color:var(--muted)}
 
-/* ── Main content ── */
-main{max-width:1140px;margin:0 auto;padding:20px 16px}
-.section-title{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:#555;margin-bottom:10px;margin-top:24px}
+/* ── Main ── */
+main{max-width:1160px;margin:0 auto;padding:24px 16px 48px}
 
-/* ── Stat cards ── */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:8px}
-@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
-.stat-card{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:16px 18px}
-.stat-card .val{font-size:1.8rem;font-weight:700;color:#fff;line-height:1}
-.stat-card .lbl{font-size:.72rem;color:#555;margin-top:5px}
-.stat-card .val.green{color:#00e676}
-.stat-card .val.red{color:#ff5252}
-.stat-card .val.yellow{color:#ffd600}
+/* ── Hero stats ── */
+.hero{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+@media(max-width:700px){.hero{grid-template-columns:repeat(2,1fr)}}
+.hero-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px 20px 16px}
+.hero-card .val{font-size:2rem;font-weight:800;line-height:1;color:#fff}
+.hero-card .lbl{font-size:.72rem;color:var(--muted);margin-top:6px;text-transform:uppercase;letter-spacing:.06em}
+.hero-card .sub{font-size:.75rem;margin-top:4px}
+.green{color:var(--green)!important}
+.red{color:var(--red)!important}
+.yellow{color:var(--yellow)!important}
+.blue{color:var(--blue)!important}
 
-/* ── Last run banner ── */
-.run-banner{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:12px;margin-bottom:8px;flex-wrap:wrap}
-.run-banner .run-info{flex:1;font-size:.83rem;color:#888}
-.run-banner .run-info strong{color:#ddd}
-.run-badge{font-size:.72rem;padding:3px 9px;border-radius:99px;font-weight:600}
-.run-success{background:#00e67622;color:#00e676;border:1px solid #00e67644}
-.run-fail{background:#ff525222;color:#ff5252;border:1px solid #ff525244}
-.run-running{background:#ffd60022;color:#ffd600;border:1px solid #ffd60044}
+/* ── Section label ── */
+.sec{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:8px;margin-top:24px}
 
-/* ── Tables ── */
-.card{background:#111;border:1px solid #1e1e1e;border-radius:12px;overflow:hidden;margin-bottom:8px}
-.card-header{padding:14px 18px;border-bottom:1px solid #1a1a1a;display:flex;align-items:center;justify-content:space-between}
-.card-header h3{font-size:.82rem;font-weight:600;color:#aaa}
-.card-header span{font-size:.75rem;color:#555}
-table{width:100%;border-collapse:collapse;font-size:.83rem}
-thead tr{background:#0d0d0d}
-th{text-align:left;padding:10px 16px;color:#555;font-weight:500;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid #1a1a1a}
-td{padding:10px 16px;border-bottom:1px solid #161616}
+/* ── Cards / tables ── */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px}
+.card-hdr{padding:14px 18px;border-bottom:1px solid var(--subtle);display:flex;align-items:center;justify-content:space-between}
+.card-hdr h3{font-size:.82rem;font-weight:600;color:#94a3b8}
+.card-hdr .ts{font-size:.72rem;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+thead tr{background:#0a0d12}
+th{text-align:left;padding:9px 16px;color:var(--muted);font-weight:500;font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid var(--subtle)}
+td{padding:10px 16px;border-bottom:1px solid var(--subtle)}
 tr:last-child td{border-bottom:none}
-tr:hover td{background:#141414}
-.ticker{font-weight:700;color:#fff}
-.BUY{color:#00e676;font-weight:700}
-.SELL{color:#ff5252;font-weight:700}
-.HOLD{color:#555}
-.pnl-pos{color:#00e676}
-.pnl-neg{color:#ff5252}
-.streak-badge{background:#00e67618;color:#00e676;border:1px solid #00e67633;border-radius:99px;padding:2px 8px;font-size:.72rem;font-weight:600}
+tr:hover td{background:#0f1319}
+.tk{font-weight:700;color:#fff}
+.BUY{color:var(--green);font-weight:700}
+.SELL{color:var(--red);font-weight:700}
+.HOLD{color:var(--muted)}
+.badge{display:inline-block;font-size:.68rem;font-weight:600;padding:2px 8px;border-radius:99px}
+.badge-green{background:#00e67615;color:var(--green);border:1px solid #00e67630}
+.badge-red{background:#ff4d6a15;color:var(--red);border:1px solid #ff4d6a30}
+.badge-yellow{background:#fbbf2415;color:var(--yellow);border:1px solid #fbbf2430}
+.badge-blue{background:#38bdf815;color:var(--blue);border:1px solid #38bdf830}
+.empty{padding:28px 18px;color:var(--muted);font-size:.82rem;text-align:center}
 
 /* ── Trade log ── */
-.log-list{padding:0 18px}
-.log-item{padding:12px 0;border-bottom:1px solid #161616;font-size:.83rem}
-.log-item:last-child{border-bottom:none}
-.log-ts{font-size:.72rem;color:#444;margin-bottom:3px}
-.log-action{color:#ddd}
-.log-action.buy{color:#00e676}
-.log-action.sell{color:#ff5252}
-.empty{padding:24px 18px;color:#444;font-size:.83rem}
+.log-wrap{padding:0 18px 8px}
+.log-entry{padding:14px 0;border-bottom:1px solid var(--subtle)}
+.log-entry:last-child{border-bottom:none}
+.log-ts{font-size:.72rem;color:var(--muted);margin-bottom:4px}
+.log-line{font-size:.82rem;color:#94a3b8;line-height:1.6}
+.log-line.buy-line{color:var(--green)}
+.log-line.sell-line{color:var(--red)}
 
-/* ── Spinner ── */
-@keyframes spin{to{transform:rotate(360deg)}}
-.spinner{width:14px;height:14px;border:2px solid #333;border-top-color:#00e676;border-radius:50%;animation:spin .7s linear infinite;display:inline-block;vertical-align:middle}
+/* ── Misc ── */
+.conf-bar{display:inline-flex;gap:3px;vertical-align:middle}
+.conf-pip{width:7px;height:7px;border-radius:2px;background:var(--border)}
+.conf-pip.on{background:var(--green)}
 </style>
 </head>
 <body>
 
-<!-- ── Setup Modal ── -->
-<div class="modal-overlay" id="setup-modal">
-  <div class="modal">
-    <h2>Connect to GitHub</h2>
-    <p>Enter your GitHub details so the dashboard can show live status and let you trigger a manual run.</p>
-    <div class="field">
-      <label>GitHub Username</label>
-      <input id="gh-user" placeholder="e.g. johndoe"/>
+<!-- ── Login ── -->
+<div id="login-screen">
+  <div class="login-box">
+    <div class="login-logo">🤖</div>
+    <h1>Trading Bot</h1>
+    <p>Enter your dashboard password to access the trading controls and live data.</p>
+    <div class="login-field">
+      <label>Password</label>
+      <input id="pw-input" type="password" placeholder="Paste your token…" autocomplete="current-password"/>
+      <div class="login-error" id="pw-error">Incorrect password. Check ~/.robinhood_token on your Mac.</div>
     </div>
-    <div class="field">
-      <label>Repository Name</label>
-      <input id="gh-repo" placeholder="e.g. robinhood-trading-bot"/>
-    </div>
-    <div class="field">
-      <label>Personal Access Token (PAT)</label>
-      <input id="gh-token" type="password" placeholder="ghp_xxxxxxxxxxxx"/>
-      <small>GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → give <strong>Actions: read & write</strong> and <strong>Contents: read</strong> permissions on this repo.</small>
-    </div>
-    <div class="modal-actions">
-      <button class="btn btn-primary" onclick="saveConfig()">Connect</button>
-      <button class="btn btn-ghost" onclick="skipSetup()">Skip (view only)</button>
-    </div>
+    <button class="btn-login" onclick="doLogin()">Sign In</button>
+    <p class="login-hint">Find your password by running:<br/><code>cat ~/.robinhood_token</code></p>
   </div>
 </div>
 
 <!-- ── Top bar ── -->
 <div class="topbar">
-  <h1>🤖 Robinhood Trading Bot</h1>
-  <div class="gh-status">
-    <span class="dot" id="gh-dot"></span>
-    <span id="gh-label" style="color:#555">Not connected</span>
-  </div>
+  <span class="topbar-logo">🤖 Trading Bot</span>
   <span class="market-pill market-closed" id="market-pill">Market Closed</span>
-  <button class="btn btn-ghost" style="font-size:.75rem" onclick="openSetup()">⚙ Settings</button>
-  <button class="btn btn-primary" id="run-btn" onclick="triggerRun()" disabled>▶ Run Now</button>
+  <div class="topbar-sep"></div>
+  <button class="btn btn-run" id="run-btn" onclick="triggerRun()" disabled>▶ Run Now</button>
+  <button class="btn btn-ghost" onclick="refreshAll()">↻ Refresh</button>
+  <button class="btn-logout" onclick="logout()">Sign out</button>
+</div>
+
+<!-- ── Run status bar ── -->
+<div class="run-bar" id="run-bar">
+  <span class="run-dot" id="run-dot"></span>
+  <span class="run-bar-text" id="run-bar-text">Idle</span>
+  <span class="run-bar-time" id="run-bar-time"></span>
 </div>
 
 <main>
-  <!-- Last run banner -->
-  <div class="run-banner" id="run-banner" style="display:none">
-    <div class="run-info" id="run-info">Checking last run…</div>
-    <span class="run-badge" id="run-badge"></span>
-    <span id="run-spinner" style="display:none"><span class="spinner"></span> Running…</span>
-  </div>
-
-  <!-- Stats row -->
-  <p class="section-title">Overview</p>
-  <div class="stats">
-    <div class="stat-card">
-      <div class="val" id="s-power">—</div>
+  <!-- Hero stats -->
+  <div class="hero">
+    <div class="hero-card">
+      <div class="val green" id="h-cash">—</div>
       <div class="lbl">Buying Power</div>
     </div>
-    <div class="stat-card">
-      <div class="val yellow" id="s-positions">—</div>
+    <div class="hero-card">
+      <div class="val" id="h-pos">—</div>
       <div class="lbl">Open Positions</div>
+      <div class="sub" style="color:var(--muted)" id="h-pos-sub"></div>
     </div>
-    <div class="stat-card">
-      <div class="val green" id="s-buys">—</div>
-      <div class="lbl">Buy Signals Today</div>
+    <div class="hero-card">
+      <div class="val green" id="h-buys">—</div>
+      <div class="lbl">Buy Signals</div>
+      <div class="sub" style="color:var(--muted)" id="h-sig-ts"></div>
     </div>
-    <div class="stat-card">
-      <div class="val red" id="s-sells">—</div>
-      <div class="lbl">Sell Signals Today</div>
+    <div class="hero-card">
+      <div class="val red" id="h-sells">—</div>
+      <div class="lbl">Sell Signals</div>
     </div>
   </div>
 
-  <!-- Current positions -->
-  <p class="section-title">Current Positions</p>
+  <!-- Positions -->
+  <p class="sec">Current Positions</p>
   <div class="card">
-    <div class="card-header">
-      <h3>Holdings</h3>
-      <span id="pos-updated">—</span>
-    </div>
+    <div class="card-hdr"><h3>Holdings</h3><span class="ts" id="pos-ts">—</span></div>
     <table>
       <thead><tr>
-        <th>Ticker</th><th>Qty</th><th>Avg Cost</th>
+        <th>Ticker</th><th>Shares</th><th>Avg Cost</th>
         <th>Current</th><th>P&amp;L</th><th>Value</th>
-        <th>Stop Loss</th><th>Target</th>
+        <th>Stop</th><th>Target</th>
       </tr></thead>
-      <tbody id="pos-table"><tr><td colspan="8" class="empty">Loading positions…</td></tr></tbody>
-    </table>
-  </div>
-
-  <!-- Top buy signals -->
-  <p class="section-title">Top Net Buy Signals (S&amp;P 500 scan)</p>
-  <div class="card">
-    <div class="card-header">
-      <h3>3-Day Accumulation Leaders</h3>
-      <span id="sig-updated">—</span>
-    </div>
-    <table>
-      <thead><tr>
-        <th>Ticker</th><th>Price</th><th>D-2</th><th>D-1</th>
-        <th>D0</th><th>Streak</th><th>OBV</th><th>Score</th>
-      </tr></thead>
-      <tbody id="nb-table"><tr><td colspan="8" class="empty">Loading signals…</td></tr></tbody>
+      <tbody id="pos-body"><tr><td colspan="8" class="empty">Loading…</td></tr></tbody>
     </table>
   </div>
 
   <!-- RSI signals -->
-  <p class="section-title">RSI / VWAP / EMA Signals (Watchlist)</p>
+  <p class="sec">Watchlist — RSI / EMA / VWAP</p>
   <div class="card">
-    <div class="card-header"><h3>Intraday Indicators</h3></div>
+    <div class="card-hdr"><h3>Intraday Signals</h3><span class="ts" id="rsi-ts">—</span></div>
     <table>
       <thead><tr>
-        <th>Ticker</th><th>Action</th><th>Price</th>
-        <th>RSI</th><th>EMA</th><th>VWAP</th><th>Confidence</th>
+        <th>Ticker</th><th>Signal</th><th>Price</th>
+        <th>RSI</th><th>EMA Trend</th><th>VWAP</th><th>Confidence</th>
       </tr></thead>
-      <tbody id="rsi-table"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
+      <tbody id="rsi-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- Net buy signals -->
+  <p class="sec">S&amp;P 500 Scan — Net Buy Accumulation</p>
+  <div class="card">
+    <div class="card-hdr"><h3>3-Day Leaders</h3><span class="ts" id="nb-ts">—</span></div>
+    <table>
+      <thead><tr>
+        <th>Ticker</th><th>Price</th><th>D-2 Flow</th>
+        <th>D-1 Flow</th><th>Today</th><th>OBV</th><th>Score</th>
+      </tr></thead>
+      <tbody id="nb-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
     </table>
   </div>
 
   <!-- Trade log -->
-  <p class="section-title">Trade History</p>
+  <p class="sec">Trade History</p>
   <div class="card">
-    <div class="card-header"><h3>Recent Trades</h3></div>
-    <div class="log-list" id="trade-log"><div class="empty">Loading…</div></div>
+    <div class="card-hdr"><h3>Activity Log</h3></div>
+    <div class="log-wrap" id="log-wrap"><div class="empty">Loading…</div></div>
   </div>
 </main>
 
 <script>
-// ── Config (stored in localStorage) ──────────────────────────────────────────
-let CFG = {};
-function loadConfig() {
-  try { CFG = JSON.parse(localStorage.getItem('rh_cfg') || '{}'); } catch(e){}
-}
-function saveConfig() {
-  CFG = {
-    user:  document.getElementById('gh-user').value.trim(),
-    repo:  document.getElementById('gh-repo').value.trim(),
-    token: document.getElementById('gh-token').value.trim(),
-  };
-  if (!CFG.user || !CFG.repo || !CFG.token) { alert('Fill in all fields.'); return; }
-  localStorage.setItem('rh_cfg', JSON.stringify(CFG));
-  closeModal();
-  init();
-}
-function skipSetup() { closeModal(); init(); }
-function openSetup() {
-  document.getElementById('gh-user').value  = CFG.user  || '';
-  document.getElementById('gh-repo').value  = CFG.repo  || '';
-  document.getElementById('gh-token').value = CFG.token || '';
-  document.getElementById('setup-modal').style.display = 'flex';
-}
-function closeModal() { document.getElementById('setup-modal').style.display = 'none'; }
+// ── Auth ──────────────────────────────────────────────────────────────────────
+const LOCAL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const API   = LOCAL ? '' : null; // null = GitHub Pages (read-only)
 
-// ── GitHub API ────────────────────────────────────────────────────────────────
-async function ghFetch(path, opts = {}) {
-  const res = await fetch(`https://api.github.com${path}`, {
-    headers: {
-      Authorization: `Bearer ${CFG.token}`,
-      Accept: 'application/vnd.github+json',
-    },
-    ...opts
-  });
-  return res;
-}
+let TOKEN = localStorage.getItem('rh_token') || '';
 
-async function checkGitHub() {
-  if (!CFG.token) {
-    setDot('off'); return;
-  }
-  try {
-    const res = await ghFetch(`/repos/${CFG.user}/${CFG.repo}/actions/runs?per_page=5`);
-    if (!res.ok) { setDot('red', 'Auth failed'); return; }
-    const data = await res.json();
-    setDot('green', `${CFG.user}/${CFG.repo}`);
-    document.getElementById('run-btn').disabled = false;
-    document.getElementById('run-banner').style.display = 'flex';
-    renderLastRun(data.workflow_runs || []);
-  } catch(e) {
-    setDot('red', 'Cannot reach GitHub');
-  }
-}
-
-function setDot(state, label='') {
-  const dot = document.getElementById('gh-dot');
-  const lbl = document.getElementById('gh-label');
-  dot.className = 'dot ' + (state === 'green' ? 'green' : state === 'red' ? 'red' : state === 'yellow' ? 'yellow' : '');
-  lbl.textContent = label;
-  lbl.style.color = state === 'green' ? '#aaa' : state === 'red' ? '#ff5252' : '#555';
-}
-
-function renderLastRun(runs) {
-  const last = runs[0];
-  const info = document.getElementById('run-info');
-  const badge = document.getElementById('run-badge');
-  if (!last) { info.innerHTML = 'No runs yet — push code and trigger a run.'; return; }
-
-  const when = new Date(last.updated_at).toLocaleString();
-  const dur  = last.run_started_at
-    ? Math.round((new Date(last.updated_at) - new Date(last.run_started_at)) / 1000) + 's'
-    : '';
-
-  info.innerHTML = `Last run: <strong>${when}</strong> · ${dur} · <a href="${last.html_url}" target="_blank" style="color:#00e676">View logs ↗</a>`;
-
-  const st = last.conclusion || last.status;
-  badge.textContent = st;
-  badge.className = 'run-badge ' + (st === 'success' ? 'run-success' : st === 'in_progress' || st === 'queued' ? 'run-running' : 'run-fail');
-
-  if (st === 'in_progress' || st === 'queued') {
-    document.getElementById('run-spinner').style.display = 'inline';
-    setTimeout(checkGitHub, 8000);
+function doLogin() {
+  const pw = document.getElementById('pw-input').value.trim();
+  if (!pw) return;
+  if (LOCAL) {
+    // Verify against local server
+    fetch('/api/status', {headers:{'X-Token': pw}})
+      .then(r => {
+        if (r.status === 401) { showLoginError(); return; }
+        TOKEN = pw;
+        localStorage.setItem('rh_token', TOKEN);
+        hidLogin();
+        init();
+      })
+      .catch(() => { showLoginError(); });
   } else {
-    document.getElementById('run-spinner').style.display = 'none';
+    // On GitHub Pages — no run access, just dismiss login
+    TOKEN = pw;
+    localStorage.setItem('rh_token', TOKEN);
+    hidLogin();
+    init();
   }
 }
 
-async function triggerRun() {
-  if (!CFG.token) { openSetup(); return; }
+function showLoginError() {
+  document.getElementById('pw-error').style.display = 'block';
+}
+function hidLogin() {
+  document.getElementById('login-screen').style.display = 'none';
+}
+function logout() {
+  TOKEN = '';
+  localStorage.removeItem('rh_token');
+  location.reload();
+}
+
+document.getElementById('pw-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') doLogin();
+});
+
+// ── Run Now ───────────────────────────────────────────────────────────────────
+let polling = false;
+
+function triggerRun() {
   const btn = document.getElementById('run-btn');
-  btn.disabled = true; btn.textContent = '⏳ Triggering…';
-  try {
-    const res = await ghFetch(`/repos/${CFG.user}/${CFG.repo}/actions/workflows/trade.yml/dispatches`, {
-      method: 'POST',
-      body: JSON.stringify({ ref: 'main' }),
-      headers: {
-        Authorization: `Bearer ${CFG.token}`,
-        Accept: 'application/vnd.github+json',
-        'Content-Type': 'application/json',
+  btn.disabled = true; btn.textContent = '⏳ Starting…';
+  fetch('/api/run', {method:'POST', headers:{'X-Token': TOKEN}})
+    .then(r => r.json())
+    .then(d => {
+      if (d.error) { btn.disabled = false; btn.textContent = '▶ Run Now'; alert(d.error); return; }
+      btn.textContent = '⏳ Running…';
+      showRunBar('running', 'Trading cycle in progress…');
+      if (!polling) pollStatus();
+    })
+    .catch(() => { btn.disabled = false; btn.textContent = '▶ Run Now'; });
+}
+
+function pollStatus() {
+  polling = true;
+  fetch('/api/status', {headers:{'X-Token': TOKEN}})
+    .then(r => r.json())
+    .then(d => {
+      const btn = document.getElementById('run-btn');
+      if (d.status === 'running') {
+        showRunBar('running', 'Running… ' + (d.last_log_line || ''));
+        setTimeout(pollStatus, 3000);
+      } else {
+        polling = false;
+        btn.disabled = false; btn.textContent = '▶ Run Now';
+        if (d.status === 'success') {
+          showRunBar('success', 'Cycle complete — ' + (d.last_log_line || ''));
+          refreshAll();
+        } else if (d.status === 'error') {
+          showRunBar('error', 'Cycle failed — check logs');
+        } else {
+          showRunBar('idle', d.last_log_line || '');
+        }
       }
-    });
-    if (res.status === 204) {
-      btn.textContent = '✓ Triggered!';
-      document.getElementById('run-spinner').style.display = 'inline';
-      setTimeout(() => { btn.disabled = false; btn.textContent = '▶ Run Now'; checkGitHub(); }, 5000);
-    } else {
-      btn.textContent = '✗ Failed';
-      setTimeout(() => { btn.disabled = false; btn.textContent = '▶ Run Now'; }, 3000);
-    }
-  } catch(e) {
-    btn.textContent = '✗ Error'; btn.disabled = false;
-  }
+    })
+    .catch(() => { polling = false; });
+}
+
+function showRunBar(state, msg) {
+  const bar  = document.getElementById('run-bar');
+  const dot  = document.getElementById('run-dot');
+  const text = document.getElementById('run-bar-text');
+  const time = document.getElementById('run-bar-time');
+  bar.className = 'run-bar show';
+  dot.className = 'run-dot ' + state;
+  text.textContent = msg;
+  time.textContent = new Date().toLocaleTimeString();
 }
 
 // ── Data loading ──────────────────────────────────────────────────────────────
@@ -340,140 +325,155 @@ function fmt(n) {
   return Number(n).toFixed(1);
 }
 
-async function loadSignals() {
-  try {
-    const res = await fetch('signals.json?t=' + Date.now());
-    const d = await res.json();
+function confPips(c, max=3) {
+  let h = '<span class="conf-bar">';
+  for (let i=0;i<max;i++) h += `<span class="conf-pip${i<c?' on':''}"></span>`;
+  return h + '</span>';
+}
 
-    // Market pill
+async function loadSignals() {
+  const url = LOCAL ? '/api/signals' : 'signals.json?t='+Date.now();
+  try {
+    const d = await fetch(url).then(r => r.json());
     const pill = document.getElementById('market-pill');
     pill.textContent = d.market_open ? 'Market Open' : 'Market Closed';
-    pill.className = 'market-pill ' + (d.market_open ? 'market-open' : 'market-closed');
+    pill.className   = 'market-pill ' + (d.market_open ? 'market-open' : 'market-closed');
 
-    // Stats
-    const nb = d.net_buy_buy_signals || [];
-    const sells = d.net_buy_sell_signals || [];
-    document.getElementById('s-buys').textContent  = nb.length;
-    document.getElementById('s-sells').textContent = sells.length;
-    document.getElementById('sig-updated').textContent = d.timestamp ? 'Updated ' + new Date(d.timestamp).toLocaleTimeString() : '';
+    const ts = d.timestamp ? new Date(d.timestamp).toLocaleTimeString() : '';
+    document.getElementById('rsi-ts').textContent = ts ? 'Updated '+ts : '';
+    document.getElementById('nb-ts').textContent  = ts ? 'Updated '+ts : '';
+    document.getElementById('h-sig-ts').textContent = ts ? ts : '';
 
-    // Net buy table
-    const nbBody = document.getElementById('nb-table');
-    if (!nb.length) {
-      nbBody.innerHTML = '<tr><td colspan="8" class="empty">No buy signals right now — market accumulation not confirmed yet</td></tr>';
-    } else {
-      nbBody.innerHTML = nb.slice(0,12).map(s => `
-        <tr>
-          <td class="ticker">${s.ticker}</td>
-          <td>$${Number(s.price).toFixed(2)}</td>
-          <td style="color:#555">${fmt(s.net_buy_d1)}</td>
-          <td style="color:#aaa">${fmt(s.net_buy_d2)}</td>
-          <td style="color:#00e676;font-weight:600">${fmt(s.net_buy_d3)}</td>
-          <td><span class="streak-badge">🔥 ${s.trend_days}d</span></td>
-          <td>${s.obv_slope > 0 ? '↑' : '↓'}</td>
-          <td style="color:#ffd600">${Number(s.score||0).toFixed(1)}</td>
-        </tr>`).join('');
-    }
+    const nb    = d.net_buy_buy_signals   || [];
+    const sells = d.net_buy_sell_signals  || [];
+    const rsi   = d.rsi_signals           || [];
+
+    document.getElementById('h-buys').textContent  = nb.length + rsi.filter(s=>s.action==='BUY').length;
+    document.getElementById('h-sells').textContent = sells.length + rsi.filter(s=>s.action==='SELL').length;
 
     // RSI table
-    const rsi = d.rsi_signals || [];
-    document.getElementById('rsi-table').innerHTML = rsi.map(s => `
+    document.getElementById('rsi-body').innerHTML = rsi.length ? rsi.map(s => `
       <tr>
-        <td class="ticker">${s.ticker}</td>
-        <td class="${s.action}">${s.action}</td>
+        <td class="tk">${s.ticker}</td>
+        <td><span class="${s.action}">${s.action}</span></td>
         <td>$${Number(s.price).toFixed(2)}</td>
-        <td>${Number(s.rsi).toFixed(1)}</td>
-        <td>${s.ema_trend}</td>
+        <td style="color:${s.rsi<30?'var(--green)':s.rsi>70?'var(--red)':'var(--text)'}">${Number(s.rsi).toFixed(1)}</td>
+        <td><span class="badge ${s.ema_trend==='BULLISH'?'badge-green':s.ema_trend==='BEARISH'?'badge-red':'badge-blue'}">${s.ema_trend}</span></td>
         <td>${s.vwap_bias}</td>
-        <td>${s.confidence}/3</td>
-      </tr>`).join('');
+        <td>${confPips(s.confidence||0)}</td>
+      </tr>`).join('')
+    : '<tr><td colspan="7" class="empty">No watchlist signals</td></tr>';
+
+    // Net buy table
+    document.getElementById('nb-body').innerHTML = nb.length ? nb.slice(0,12).map(s => `
+      <tr>
+        <td class="tk">${s.ticker}</td>
+        <td>$${Number(s.price).toFixed(2)}</td>
+        <td style="color:var(--muted)">${fmt(s.net_buy_d1||0)}</td>
+        <td style="color:#94a3b8">${fmt(s.net_buy_d2||0)}</td>
+        <td style="color:var(--green);font-weight:600">${fmt(s.net_buy_d3||0)}</td>
+        <td>${(s.obv_slope||0)>0?'<span style="color:var(--green)">↑ rising</span>':'<span style="color:var(--muted)">↓ falling</span>'}</td>
+        <td><span class="badge badge-yellow">${Number(s.score||0).toFixed(1)}</span></td>
+      </tr>`).join('')
+    : '<tr><td colspan="7" class="empty">No net-buy accumulation signals right now</td></tr>';
+
   } catch(e) {
-    document.getElementById('nb-table').innerHTML = '<tr><td colspan="8" class="empty">signals.json not found — run the bot at least once</td></tr>';
+    document.getElementById('rsi-body').innerHTML = '<tr><td colspan="7" class="empty">Could not load signals</td></tr>';
+    document.getElementById('nb-body').innerHTML  = '<tr><td colspan="7" class="empty">Could not load signals</td></tr>';
   }
 }
 
 async function loadPositions() {
+  const url = LOCAL ? '/api/positions' : 'positions.json?t='+Date.now();
   try {
-    const res = await fetch('positions.json?t=' + Date.now());
-    if (!res.ok) throw new Error('not found');
-    const d = await res.json();
-
-    document.getElementById('s-power').textContent = '$' + Number(d.buying_power||0).toFixed(2);
-    document.getElementById('s-positions').textContent = (d.positions||[]).length;
-    document.getElementById('pos-updated').textContent = d.updated_at ? 'Updated ' + new Date(d.updated_at).toLocaleTimeString() : '';
-
-    const tbody = document.getElementById('pos-table');
+    const d = await fetch(url).then(r => r.json());
+    document.getElementById('h-cash').textContent = '$'+Number(d.buying_power||0).toFixed(2);
     const pos = d.positions || [];
-    if (!pos.length) {
-      tbody.innerHTML = '<tr><td colspan="8" class="empty">No open positions — bot is in cash</td></tr>';
-    } else {
-      tbody.innerHTML = pos.map(p => `
-        <tr>
-          <td class="ticker">${p.ticker}</td>
-          <td>${Number(p.quantity).toFixed(4)}</td>
-          <td>$${Number(p.avg_cost).toFixed(2)}</td>
-          <td>$${Number(p.current_price).toFixed(2)}</td>
-          <td class="${p.pnl_pct >= 0 ? 'pnl-pos' : 'pnl-neg'}">${p.pnl_pct >= 0 ? '+' : ''}${p.pnl_pct}%</td>
-          <td>$${Number(p.value).toFixed(2)}</td>
-          <td style="color:#ff5252">$${Number(p.stop_loss).toFixed(2)}</td>
-          <td style="color:#00e676">$${Number(p.take_profit).toFixed(2)}</td>
-        </tr>`).join('');
-    }
+    document.getElementById('h-pos').textContent     = pos.length;
+    document.getElementById('h-pos-sub').textContent = pos.length ? 'of 4 max' : 'all cash';
+    document.getElementById('pos-ts').textContent    = d.updated_at ? 'Updated '+new Date(d.updated_at).toLocaleTimeString() : '';
+
+    document.getElementById('pos-body').innerHTML = pos.length ? pos.map(p => {
+      const pnl = Number(p.pnl_pct||0);
+      return `<tr>
+        <td class="tk">${p.ticker}</td>
+        <td>${Number(p.quantity).toFixed(4)}</td>
+        <td>$${Number(p.avg_cost).toFixed(2)}</td>
+        <td>$${Number(p.current_price).toFixed(2)}</td>
+        <td class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</td>
+        <td>$${Number(p.value).toFixed(2)}</td>
+        <td style="color:var(--red)">$${Number(p.stop_loss).toFixed(2)}</td>
+        <td style="color:var(--green)">$${Number(p.take_profit).toFixed(2)}</td>
+      </tr>`;
+    }).join('')
+    : '<tr><td colspan="8" class="empty">No open positions — holding cash</td></tr>';
   } catch(e) {
-    document.getElementById('s-power').textContent = '—';
-    document.getElementById('s-positions').textContent = '—';
-    document.getElementById('pos-table').innerHTML = '<tr><td colspan="8" class="empty">positions.json not yet available — will appear after first trade cycle</td></tr>';
+    document.getElementById('pos-body').innerHTML = '<tr><td colspan="8" class="empty">Could not load positions</td></tr>';
   }
 }
 
-async function loadTradeLog() {
+async function loadLog() {
+  const url = LOCAL ? '/api/tradelog' : 'trade_log.md?t='+Date.now();
   try {
-    const res = await fetch('trade_log.md?t=' + Date.now());
-    const text = await res.text();
-    const entries = text.split('\n## ').slice(1).reverse().slice(0, 25);
-    const el = document.getElementById('trade-log');
-    if (!entries.length) {
-      el.innerHTML = '<div class="empty">No trades yet.</div>'; return;
-    }
-    el.innerHTML = entries.map(e => {
+    const text = await fetch(url).then(r => r.text());
+    const entries = text.split('\n## ').slice(1).reverse().slice(0,30);
+    const wrap = document.getElementById('log-wrap');
+    if (!entries.length) { wrap.innerHTML = '<div class="empty">No trade history yet.</div>'; return; }
+    wrap.innerHTML = entries.map(e => {
       const lines = e.trim().split('\n');
-      const ts = lines[0];
+      const ts    = lines[0];
       const items = lines.slice(1).filter(l => l.startsWith('-')).map(l => l.replace(/^-\s*/,''));
-      const cls = items.join(' ').includes('BUY') ? 'buy' : items.join(' ').includes('SELL') ? 'sell' : '';
-      return `<div class="log-item">
+      return `<div class="log-entry">
         <div class="log-ts">${ts}</div>
-        ${items.map(i => `<div class="log-action ${cls}">${i}</div>`).join('')}
+        ${items.map(i => {
+          const cls = /BUY/.test(i) ? 'buy-line' : /SELL|stop|take/.test(i.toLowerCase()) ? 'sell-line' : '';
+          return `<div class="log-line ${cls}">${i}</div>`;
+        }).join('')}
       </div>`;
     }).join('');
   } catch(e) {}
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────
+async function refreshAll() {
+  await Promise.all([loadSignals(), loadPositions(), loadLog()]);
+}
+
 async function init() {
-  await Promise.all([loadSignals(), loadPositions(), loadTradeLog()]);
-  await checkGitHub();
+  if (LOCAL) {
+    document.getElementById('run-btn').disabled = false;
+    // Check current run status
+    try {
+      const d = await fetch('/api/status', {headers:{'X-Token':TOKEN}}).then(r=>r.json());
+      if (d.status === 'running') {
+        showRunBar('running', 'Running…');
+        if (!polling) pollStatus();
+      } else if (d.last_log_line) {
+        showRunBar('idle', d.last_log_line);
+      }
+    } catch(e) {}
+  }
+  refreshAll();
 }
 
-function refresh() {
-  loadSignals();
-  loadPositions();
-  loadTradeLog();
-  checkGitHub();
+// Startup: check if already logged in
+if (TOKEN) {
+  if (LOCAL) {
+    fetch('/api/status', {headers:{'X-Token': TOKEN}})
+      .then(r => {
+        if (r.status === 401) { TOKEN=''; localStorage.removeItem('rh_token'); return; }
+        hidLogin(); init();
+      })
+      .catch(() => { hidLogin(); init(); });
+  } else {
+    hidLogin(); init();
+  }
+} else if (!LOCAL) {
+  // GitHub Pages — skip login, view-only
+  hidLogin(); init();
 }
 
-loadConfig();
-
-// Show modal only if no config saved
-if (!CFG.token) {
-  document.getElementById('setup-modal').style.display = 'flex';
-  document.getElementById('gh-user').value = CFG.user || '';
-  document.getElementById('gh-repo').value = CFG.repo || '';
-} else {
-  closeModal();
-}
-
-init();
-setInterval(refresh, 60000);
+setInterval(refreshAll, 60000);
 </script>
 </body>
 </html>

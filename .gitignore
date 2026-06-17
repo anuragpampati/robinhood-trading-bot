@@ -16,3 +16,4 @@ logs/cron.log
 
 # OS
 .DS_Store
+.robinhood_token
