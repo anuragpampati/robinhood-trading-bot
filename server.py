@@ -24,8 +24,18 @@ def get_token():
 
 def authorized():
     token = get_token()
-    return (request.headers.get('X-Token') == token or
-            request.args.get('token') == token)
+    # Accept token from header, query param, or JSON body
+    if request.headers.get('X-Token') == token:
+        return True
+    if request.args.get('token') == token:
+        return True
+    try:
+        body = request.get_json(silent=True) or {}
+        if body.get('token') == token:
+            return True
+    except Exception:
+        pass
+    return False
 
 # ── Static dashboard ──────────────────────────────────────────────────────────
 
