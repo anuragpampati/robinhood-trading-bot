@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-18T20:28:39.277471+00:00",
+  "timestamp": "2026-06-18T21:22:55.467514+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -66,10 +66,19 @@
       "ticker": "ACGL",
       "price": 91.18000030517578,
       "net_buy_d2": -47143,
-      "net_buy_d3": -3005164,
-      "obv_slope": -1338755,
+      "net_buy_d3": -3851444,
+      "obv_slope": -1577282,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.05M \u2192 -3.01M | OBV -1.3M/day"
+      "reason": "Net buy reversed: -0.05M \u2192 -3.85M | OBV -1.6M/day"
+    },
+    {
+      "ticker": "LIN",
+      "price": 512.1500244140625,
+      "net_buy_d2": 176141,
+      "net_buy_d3": -3837131,
+      "obv_slope": -2982155,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.18M \u2192 -3.84M | OBV -3.0M/day"
     },
     {
       "ticker": "STLD",
@@ -88,24 +97,6 @@
       "obv_slope": -47614,
       "score": 0.0,
       "reason": "Net buy reversed: -0.07M \u2192 -1.55M | OBV -0.0M/day"
-    },
-    {
-      "ticker": "LIN",
-      "price": 512.1500244140625,
-      "net_buy_d2": 176141,
-      "net_buy_d3": -2985785,
-      "obv_slope": -2752387,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.18M \u2192 -2.99M | OBV -2.8M/day"
-    },
-    {
-      "ticker": "CHD",
-      "price": 95.62999725341797,
-      "net_buy_d2": -315082,
-      "net_buy_d3": -4817050,
-      "obv_slope": -765107,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.32M \u2192 -4.82M | OBV -0.8M/day"
     },
     {
       "ticker": "CINF",
@@ -129,28 +120,37 @@
       "ticker": "PTC",
       "price": 114.75,
       "net_buy_d2": 152492,
-      "net_buy_d3": -954890,
-      "obv_slope": -425053,
+      "net_buy_d3": -1070490,
+      "obv_slope": -533173,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.15M \u2192 -0.95M | OBV -0.4M/day"
+      "reason": "Net buy reversed: 0.15M \u2192 -1.07M | OBV -0.5M/day"
     },
     {
       "ticker": "ABBV",
       "price": 216.49000549316406,
       "net_buy_d2": 1108002,
-      "net_buy_d3": -5990809,
-      "obv_slope": -2720378,
+      "net_buy_d3": -6471664,
+      "obv_slope": -2868519,
       "score": 0.0,
-      "reason": "Net buy reversed: 1.11M \u2192 -5.99M | OBV -2.7M/day"
+      "reason": "Net buy reversed: 1.11M \u2192 -6.47M | OBV -2.9M/day"
     },
     {
-      "ticker": "EG",
-      "price": 335.6300048828125,
-      "net_buy_d2": -17748,
-      "net_buy_d3": -121474,
-      "obv_slope": -401254,
+      "ticker": "COP",
+      "price": 107.73999786376953,
+      "net_buy_d2": 2068006,
+      "net_buy_d3": -11062795,
+      "obv_slope": -11307781,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.02M \u2192 -0.12M | OBV -0.4M/day"
+      "reason": "Net buy reversed: 2.07M \u2192 -11.06M | OBV -11.3M/day"
+    },
+    {
+      "ticker": "CHD",
+      "price": 95.62999725341797,
+      "net_buy_d2": -315082,
+      "net_buy_d3": -2187507,
+      "obv_slope": -224376,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.32M \u2192 -2.19M | OBV -0.2M/day"
     }
   ]
 }
