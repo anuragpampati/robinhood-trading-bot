@@ -5,6 +5,7 @@ import pandas as pd
 from .config import (
     RSI_OVERSOLD, RSI_OVERBOUGHT,
     ATR_VOLATILITY_THRESHOLD, MIN_SIGNALS_TO_TRADE,
+    MARKET_REGIME_RSI_MIN,
 )
 
 
@@ -38,8 +39,12 @@ def _vwap_bias(row: pd.Series) -> str:
     return "AT"
 
 
-def generate_signal(ticker: str, df: pd.DataFrame) -> Signal:
-    """Produce a trading signal for *ticker* from its indicator DataFrame."""
+def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False) -> Signal:
+    """Produce a trading signal for *ticker* from its indicator DataFrame.
+
+    market_bearish: pass True when SPY RSI < MARKET_REGIME_RSI_MIN to suppress
+    new BUY entries on individual stocks during broad market weakness.
+    """
     row = df.dropna(subset=["rsi", "ema_fast", "ema_slow", "vwap", "atr"]).iloc[-1]
     price = float(row["close"])
     rsi_val = float(row["rsi"])
@@ -66,9 +71,12 @@ def generate_signal(ticker: str, df: pd.DataFrame) -> Signal:
         buy_reasons.append("EMA bullish crossover")
 
     # ── SELL scoring ─────────────────────────────────────────────────────────
+    # RSI overbought is REQUIRED for a signal sell — EMA/VWAP alone can look
+    # bearish mid-bounce and would otherwise exit a perfectly good trade early.
+    rsi_overbought = rsi_val > RSI_OVERBOUGHT
     sell_score = 0
     sell_reasons = []
-    if rsi_val > RSI_OVERBOUGHT:
+    if rsi_overbought:
         sell_score += 1
         sell_reasons.append(f"RSI overbought ({rsi_val:.1f})")
     if bias == "ABOVE":
@@ -76,13 +84,18 @@ def generate_signal(ticker: str, df: pd.DataFrame) -> Signal:
         sell_reasons.append("price above VWAP")
     if trend == "BEARISH":
         sell_score += 1
-        sell_reasons.append("EMA bearish crossover")
+        sell_reasons.append("EMA bearish")
 
+    # BUY: suppress on individual tickers when broad market is weak
     if buy_score >= MIN_SIGNALS_TO_TRADE and buy_score > sell_score:
+        if market_bearish:
+            return Signal(ticker, "HOLD", price, rsi_val, trend, bias, buy_score, atr_pct,
+                          f"BUY suppressed — SPY RSI < {MARKET_REGIME_RSI_MIN} (market regime)")
         return Signal(ticker, "BUY", price, rsi_val, trend, bias,
                       buy_score, atr_pct, " | ".join(buy_reasons))
 
-    if sell_score >= MIN_SIGNALS_TO_TRADE and sell_score > buy_score:
+    # SELL: RSI overbought must be present (not just EMA/VWAP flip)
+    if rsi_overbought and sell_score >= MIN_SIGNALS_TO_TRADE and sell_score > buy_score:
         return Signal(ticker, "SELL", price, rsi_val, trend, bias,
                       sell_score, atr_pct, " | ".join(sell_reasons))
 

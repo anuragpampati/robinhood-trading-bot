@@ -12,6 +12,7 @@ import os
 import json
 import time
 from datetime import datetime, timezone
+from .config import STOP_LOSS_PCT, TAKE_PROFIT_PCT, MAX_OPEN_POSITIONS as _MAX_POSITIONS, CASH_BUFFER as _CASH_BUFFER
 
 # ── Auth ──────────────────────────────────────────────────────────────────────
 def _login():
@@ -99,7 +100,6 @@ def execute(signals_path: str = "logs/latest_signals.json",
 
     buying_power = _buying_power(r)
     held = _positions(r)
-    CASH_BUFFER = 10.0
     actions = []
 
     print(f"Buying power: ${buying_power:.2f} | Held: {list(held.keys())}")
@@ -114,10 +114,12 @@ def execute(signals_path: str = "logs/latest_signals.json",
         qty = pos["quantity"]
         reason = None
 
-        if avg > 0 and price <= avg * 0.95:
-            reason = f"STOP_LOSS (price ${price:.2f} <= stop ${avg*0.95:.2f})"
-        elif avg > 0 and price >= avg * 1.10:
-            reason = f"TAKE_PROFIT (price ${price:.2f} >= target ${avg*1.10:.2f})"
+        stop = avg * (1 - STOP_LOSS_PCT)
+        target = avg * (1 + TAKE_PROFIT_PCT)
+        if avg > 0 and price <= stop:
+            reason = f"STOP_LOSS (price ${price:.2f} <= stop ${stop:.2f})"
+        elif avg > 0 and price >= target:
+            reason = f"TAKE_PROFIT (price ${price:.2f} >= target ${target:.2f})"
         elif ticker in sell_tickers:
             reason = "SELL signal — net buy reversed"
 
@@ -142,7 +144,10 @@ def execute(signals_path: str = "logs/latest_signals.json",
         if ticker in held:
             print(f"  Skip {ticker} — already held")
             return
-        if buying_power - dollar_amount < CASH_BUFFER:
+        if len(held) >= _MAX_POSITIONS:
+            print(f"  Skip {ticker} — max positions ({_MAX_POSITIONS}) reached")
+            return
+        if buying_power - dollar_amount < _CASH_BUFFER:
             print(f"  Skip {ticker} — not enough buying power (${buying_power:.2f})")
             return
         price = _current_price(r, ticker)
@@ -195,8 +200,8 @@ def _write_positions(r, buying_power: float, actions: list, trade_log_path: str)
                 "current_price": round(price, 4),
                 "pnl_pct": round(pnl_pct, 2),
                 "value": round(price * qty, 2),
-                "stop_loss": round(avg * 0.95, 4),
-                "take_profit": round(avg * 1.10, 4),
+                "stop_loss": round(avg * (1 - STOP_LOSS_PCT), 4),
+                "take_profit": round(avg * (1 + TAKE_PROFIT_PCT), 4),
             })
 
         snapshot = {

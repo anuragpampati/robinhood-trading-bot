@@ -17,7 +17,7 @@ from .signals import generate_signal
 from .net_buy import run_net_buy_scan, NetBuySignal
 from .risk import risk_summary
 from .universe import full_universe
-from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER
+from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN
 
 QUICK_MODE = "--quick" in sys.argv
 
@@ -58,10 +58,30 @@ def run_analysis() -> dict:
     print("[2/4] Computing RSI / VWAP / EMA on watchlist...")
     data_map = fetch_all_watchlist(WATCHLIST)
     rsi_signals = {}
+
+    # Compute SPY first to determine market regime
+    spy_rsi = None
+    if "SPY" in data_map:
+        try:
+            spy_df = compute_all(data_map["SPY"])
+            spy_sig = generate_signal("SPY", spy_df)
+            rsi_signals["SPY"] = spy_sig
+            spy_rsi = spy_sig.rsi
+        except Exception as exc:
+            print(f"  [WARN] SPY: {exc}")
+
+    market_bearish = spy_rsi is not None and spy_rsi < MARKET_REGIME_RSI_MIN
+    if market_bearish:
+        print(f"  [REGIME] SPY RSI={spy_rsi:.1f} < {MARKET_REGIME_RSI_MIN} — BUY signals suppressed on individual stocks")
+
     for ticker, df in data_map.items():
+        if ticker == "SPY":
+            continue  # already computed above
         try:
             df_ind = compute_all(df)
-            rsi_signals[ticker] = generate_signal(ticker, df_ind)
+            # SPY itself is always evaluated without the regime filter
+            suppress = market_bearish
+            rsi_signals[ticker] = generate_signal(ticker, df_ind, market_bearish=suppress)
         except Exception as exc:
             print(f"  [WARN] {ticker}: {exc}")
 
