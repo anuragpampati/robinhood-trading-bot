@@ -7,6 +7,7 @@ Usage:
 """
 
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from tabulate import tabulate
@@ -204,7 +205,11 @@ def run_analysis() -> dict:
 
     with open("logs/latest_signals.json", "w") as f:
         json.dump(report, f, indent=2)
-    print("\n[OK] Full report saved → logs/latest_signals.json")
+    # Mirror to docs/ so the GitHub Pages dashboard always reflects the latest run
+    os.makedirs("docs", exist_ok=True)
+    with open("docs/signals.json", "w") as f:
+        json.dump(report, f, indent=2)
+    print("\n[OK] Full report saved → logs/latest_signals.json + docs/signals.json")
 
     print("\n── CLAUDE AGENT INSTRUCTIONS ──")
     print("  STRONG BUY  → buy up to $20 (both strategies agree)")
