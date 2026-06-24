@@ -499,29 +499,26 @@ async function init() {
   refreshAll();
 }
 
-// Startup: probe the API with saved token
-if (TOKEN) {
+// Startup: on GitHub Pages always use static files — never probe /api/*
+const IS_GITHUB_PAGES = window.location.hostname.includes('github.io');
+if (IS_GITHUB_PAGES) {
+  // Read-only public view — CAN_RUN stays false, fetches use signals.json etc.
+  hidLogin(); init();
+} else if (TOKEN) {
   fetch('/api/status', {headers:{'X-Token': TOKEN}})
     .then(r => {
       if (r.status === 401) {
-        // Token wrong — show login
         TOKEN = ''; localStorage.removeItem('rh_token');
         return;
       }
+      if (!r.ok) { hidLogin(); init(); return; } // server exists but 4xx/5xx → read-only
       CAN_RUN = true;
       hidLogin(); init();
     })
     .catch(() => {
-      // Server unreachable — show read-only dashboard (GitHub Pages)
+      // Server unreachable — read-only mode
       hidLogin(); init();
     });
-} else {
-  const isGitHubPages = window.location.hostname.includes('github.io');
-  if (isGitHubPages) {
-    // Public view-only — skip login
-    hidLogin(); init();
-  }
-  // Otherwise show login screen (already visible by default)
 }
 
 setInterval(refreshAll, 60000);
