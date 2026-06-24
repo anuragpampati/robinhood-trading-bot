@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-06-24T18:05:45Z
+- SUMMARY: Market open — regime filter active (SPY RSI=33.2 < 40), buys suppressed. Buying power: $100.00, Open positions: 0.
+- Signals: SPY HOLD (RSI=33.2, BEARISH EMA) | QQQ HOLD (RSI=30.7, BEARISH EMA) | AAPL HOLD (RSI=44.8, BEARISH EMA) | MSFT HOLD (RSI=38.2, BEARISH EMA) | NVDA HOLD (RSI=23.1, BEARISH EMA, 2/3 conf — suppressed by regime).
+- No net-buy BUY or SELL signals on any watchlist ticker.
+- Action: HOLD all — no trades placed.
+
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 

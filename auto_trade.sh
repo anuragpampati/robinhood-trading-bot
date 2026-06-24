@@ -75,38 +75,13 @@ else
 fi
 
 # ── Step 4: Sync logs to GitHub ───────────────────────────────────────────────
-# Pull latest from cloud agent first so we don't overwrite docs/trade_log.md
-git pull --rebase origin main 2>/dev/null || true
-
-# Mirror signals to docs/ (safe — cloud agent also writes this)
+# docs/trade_log.md and docs/positions.json are owned exclusively by the cloud
+# agent — never touch them here to avoid race conditions.
+# This script only updates logs/ and docs/signals.json.
 cp logs/latest_signals.json docs/signals.json 2>/dev/null
 
-# Prepend new trade log entry to docs/trade_log.md (don't copy — cloud agent owns it)
-DOCS_LOG="docs/trade_log.md"
-TMP_ENTRY="/tmp/rh_log_entry.md"
-{
-  echo "## $TS"
-  if echo "$CLAUDE_OUTPUT" | grep -q "MARKET_CLOSED"; then
-      echo "- Market closed — no trades placed."
-  else
-      echo "$CLAUDE_OUTPUT" | grep -E "^(BOUGHT|SOLD|STOP_LOSS|TAKE_PROFIT|SUMMARY)" | while read -r line; do
-          echo "- $line"
-      done
-  fi
-  echo ""
-} > "$TMP_ENTRY"
-
-if [ -f "$DOCS_LOG" ]; then
-    # Prepend after the 5-line header block
-    HEADER=$(head -5 "$DOCS_LOG")
-    BODY=$(tail -n +6 "$DOCS_LOG")
-    { printf "%s\n\n" "$HEADER"; cat "$TMP_ENTRY"; printf "%s\n" "$BODY"; } > "$DOCS_LOG.tmp" && mv "$DOCS_LOG.tmp" "$DOCS_LOG"
-else
-    { printf "# Trade Log — Robinhood Agentic Account\n\n> Auto-maintained by Claude agent. One entry per trade action.\n\n---\n\n"; cat "$TMP_ENTRY"; } > "$DOCS_LOG"
-fi
-rm -f "$TMP_ENTRY"
-
-git add logs/trade_log.md logs/latest_signals.json docs/signals.json docs/trade_log.md 2>/dev/null
+git pull --rebase origin main 2>/dev/null || true
+git add logs/trade_log.md logs/latest_signals.json docs/signals.json 2>/dev/null
 git diff --staged --quiet 2>/dev/null || \
     git commit -m "chore: trading cycle $TS" 2>/dev/null && \
     git push 2>/dev/null &
