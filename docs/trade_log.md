@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-06-24T00:54:13Z
+- SUMMARY: Market closed — no trades placed.
+- Regime: SPY RSI=34.2 (< 40 threshold) — bearish regime, buys suppressed.
+- Signals: All 5 tickers HOLD on RSI strategy (0/3 confidence). Net-buy SELL signals on QQQ ($713.67, net-buy -3.5M→-7.3M) and AAPL ($294.29, net-buy -10.9M→-15.5M). No open positions to sell.
+- Buying power: $100.00 (estimated), Open positions: 0.
+
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 

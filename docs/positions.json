@@ -1,6 +1,8 @@
 {
-  "updated_at": null,
-  "buying_power": 100.0,
+  "updated_at": "2026-06-24T00:54:13Z",
+  "buying_power": 100,
   "positions": [],
-  "last_actions": []
+  "last_actions": [
+    "Market closed — no trades placed. SPY RSI=34.2 (bearish regime). Net-buy SELL signals on QQQ and AAPL noted but market closed. 0 open positions."
+  ]
 }
