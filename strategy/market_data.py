@@ -1,5 +1,6 @@
-"""Fetch OHLCV market data via yfinance."""
+"""Fetch OHLCV market data — yfinance (local) or Robinhood historicals cache (cloud)."""
 
+import json
 import yfinance as yf
 import pandas as pd
 from datetime import datetime, timezone
@@ -24,6 +25,53 @@ def fetch_all_watchlist(watchlist: list[str] = WATCHLIST) -> dict[str, pd.DataFr
     for ticker in watchlist:
         try:
             result[ticker] = fetch_ohlcv(ticker)
+        except Exception as exc:
+            print(f"[WARN] {ticker}: {exc}")
+    return result
+
+
+def rh_json_to_df(data_points: list[dict]) -> pd.DataFrame:
+    """Convert Robinhood get_equity_historicals data_points to an OHLCV DataFrame.
+
+    Expects each element to have: begins_at, open_price, high_price, low_price,
+    close_price, volume (strings/numbers as returned by the MCP tool).
+    """
+    rows = [
+        {
+            "open":   float(dp["open_price"]),
+            "high":   float(dp["high_price"]),
+            "low":    float(dp["low_price"]),
+            "close":  float(dp["close_price"]),
+            "volume": float(dp.get("volume", 0) or 0),
+        }
+        for dp in data_points
+        if float(dp.get("close_price", 0) or 0) > 0  # skip empty bars
+    ]
+    index = pd.to_datetime(
+        [dp["begins_at"] for dp in data_points
+         if float(dp.get("close_price", 0) or 0) > 0],
+        utc=True,
+    )
+    df = pd.DataFrame(rows, index=index)
+    return df.sort_index()
+
+
+def fetch_all_from_cache(cache_path: str) -> dict[str, pd.DataFrame]:
+    """Load pre-fetched Robinhood historicals from a JSON cache file.
+
+    The file must be a dict mapping ticker → list[data_point], where each
+    data_point is a Robinhood historicals object (begins_at, *_price, volume).
+    """
+    with open(cache_path) as f:
+        cache = json.load(f)
+    result = {}
+    for ticker, data_points in cache.items():
+        try:
+            df = rh_json_to_df(data_points)
+            if df.empty:
+                print(f"[WARN] {ticker}: empty after conversion")
+            else:
+                result[ticker] = df
         except Exception as exc:
             print(f"[WARN] {ticker}: {exc}")
     return result

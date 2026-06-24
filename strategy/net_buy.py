@@ -84,8 +84,8 @@ def _score(sig: NetBuySignal) -> float:
     return 0.0
 
 
-def analyze_net_buy(ticker: str) -> NetBuySignal:
-    df = _fetch_daily(ticker)
+def _analyze_daily_df(ticker: str, df: pd.DataFrame) -> NetBuySignal:
+    """Core net buy analysis on a daily OHLCV DataFrame."""
     net_buy = _net_buy_series(df)
     obv     = _obv(df)
 
@@ -101,7 +101,6 @@ def analyze_net_buy(ticker: str) -> NetBuySignal:
 
     price = float(df["close"].iloc[-1])
 
-    # ── BUY ──────────────────────────────────────────────────────────────────
     if trend_days >= 3 and obv_slope > 0 and d1 < d2 < d3:
         reason = (
             f"Net buy ↑ {trend_days}d streak: "
@@ -111,7 +110,6 @@ def analyze_net_buy(ticker: str) -> NetBuySignal:
         sig.score = _score(sig)
         return sig
 
-    # ── SELL ─────────────────────────────────────────────────────────────────
     if trend_days == 0 and d2 > d3 and obv_slope < 0:
         reason = (
             f"Net buy reversed: {d2/1e6:.2f}M → {d3/1e6:.2f}M | OBV {obv_slope/1e6:.1f}M/day"
@@ -124,25 +122,48 @@ def analyze_net_buy(ticker: str) -> NetBuySignal:
     return NetBuySignal(ticker, "HOLD", price, d1, d2, d3, trend_days, obv_slope, reason, score=0.0)
 
 
+def analyze_net_buy(ticker: str) -> NetBuySignal:
+    """Fetch daily data via yfinance and analyze net buy trend."""
+    return _analyze_daily_df(ticker, _fetch_daily(ticker))
+
+
+def analyze_net_buy_from_df(ticker: str, df_hourly: pd.DataFrame) -> NetBuySignal:
+    """Analyze net buy trend from a pre-fetched hourly DataFrame (no yfinance)."""
+    daily = df_hourly.resample("D").agg(
+        {"open": "first", "high": "max", "low": "min", "close": "last", "volume": "sum"}
+    ).dropna(subset=["close"])
+    return _analyze_daily_df(ticker, daily)
+
+
 def run_net_buy_scan(
     tickers: list[str],
     workers: int = PARALLEL_WORKERS,
     top_n: int = TOP_N_RESULTS,
     verbose: bool = True,
+    data_cache: dict | None = None,
 ) -> list[NetBuySignal]:
     """
     Scan *tickers* in parallel. Returns top_n BUY signals (ranked) +
     all SELL signals + a sample of HOLDs.
+
+    data_cache: optional dict of {ticker: hourly_df} from Robinhood historicals.
+    When provided, skips yfinance and uses pre-fetched data instead.
     """
     total = len(tickers)
     results: list[NetBuySignal] = []
     errors = 0
 
     if verbose:
-        print(f"  Scanning {total} tickers with {workers} parallel workers...")
+        src = "cached data" if data_cache else f"{workers} parallel workers"
+        print(f"  Scanning {total} tickers ({src})...")
+
+    def _fetch_one(ticker):
+        if data_cache and ticker in data_cache:
+            return analyze_net_buy_from_df(ticker, data_cache[ticker])
+        return analyze_net_buy(ticker)
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(analyze_net_buy, t): t for t in tickers}
+        futures = {pool.submit(_fetch_one, t): t for t in tickers}
         done = 0
         for future in as_completed(futures):
             done += 1

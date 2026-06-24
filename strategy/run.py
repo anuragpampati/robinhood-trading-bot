@@ -12,7 +12,7 @@ import sys
 from datetime import datetime, timezone
 from tabulate import tabulate
 
-from .market_data import fetch_all_watchlist, is_market_open
+from .market_data import fetch_all_watchlist, fetch_all_from_cache, is_market_open
 from .indicators import compute_all
 from .signals import generate_signal
 from .net_buy import run_net_buy_scan, NetBuySignal
@@ -21,6 +21,13 @@ from .universe import full_universe
 from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN
 
 QUICK_MODE = "--quick" in sys.argv
+
+# --from-cache <path>: use pre-fetched Robinhood historicals instead of yfinance
+_CACHE_FILE = None
+for _i, _arg in enumerate(sys.argv):
+    if _arg == "--from-cache" and _i + 1 < len(sys.argv):
+        _CACHE_FILE = sys.argv[_i + 1]
+        break
 
 
 def _merged_action(rsi_action: str, nb_action: str) -> str:
@@ -56,8 +63,12 @@ def run_analysis() -> dict:
         print(f"      {len(universe)} tickers loaded.\n")
 
     # ── Strategy 1: RSI + VWAP + EMA on watchlist ────────────────────────────
-    print("[2/4] Computing RSI / VWAP / EMA on watchlist...")
-    data_map = fetch_all_watchlist(WATCHLIST)
+    if _CACHE_FILE:
+        print(f"[2/4] Loading watchlist data from cache: {_CACHE_FILE}")
+        data_map = fetch_all_from_cache(_CACHE_FILE)
+    else:
+        print("[2/4] Computing RSI / VWAP / EMA on watchlist...")
+        data_map = fetch_all_watchlist(WATCHLIST)
     rsi_signals = {}
 
     # Compute SPY first to determine market regime
@@ -88,7 +99,8 @@ def run_analysis() -> dict:
 
     # ── Strategy 2: Net Buy Trend scan on full universe ───────────────────────
     print(f"[3/4] Scanning 3-day net buy trends across {len(universe)} tickers...")
-    nb_results = run_net_buy_scan(universe, verbose=True)
+    nb_results = run_net_buy_scan(universe, verbose=True,
+                                  data_cache=data_map if _CACHE_FILE else None)
     nb_by_ticker = {s.ticker: s for s in nb_results}
 
     print("\n[4/4] Building report...\n")
