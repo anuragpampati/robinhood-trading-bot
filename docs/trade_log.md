@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-06-24T16:04:31Z
+- SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
+- SPY RSI=42.5 (above 40, regime filter not active)
+- RSI Signals: SPY HOLD (RSI=42.5, BEARISH EMA, AT VWAP) | QQQ HOLD (RSI=37.7, BEARISH EMA, AT VWAP) | AAPL HOLD (RSI=53.7, NEUTRAL EMA, AT VWAP) | MSFT HOLD (RSI=43.3, BEARISH EMA, AT VWAP) | NVDA HOLD (RSI=30.0, BEARISH EMA, AT VWAP)
+- Net-Buy signals: 0 BUY, 0 SELL across 5 tickers scanned
+- No positions to evaluate for stop-loss/take-profit
+- Note: NVDA RSI oversold (30.0) but EMA BEARISH — confidence 0/3, no buy triggered
+
 ## 2026-06-24T15:06:08Z
 - SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
 - SPY RSI=44.9 (above 40, regime filter not active)
