@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-06-24T01:01:55.516588+00:00",
+  "timestamp": "2026-06-24T14:05:43.298058+00:00",
   "mode": "quick",
   "universe_size": 5,
-  "market_open": false,
+  "market_open": true,
   "rsi_signals": [
     {
       "ticker": "SPY",
