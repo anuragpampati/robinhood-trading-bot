@@ -4,6 +4,13 @@
 
 ---
 
+## 2026-06-24T15:06:08Z
+- SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
+- SPY RSI=44.9 (above 40, regime filter not active)
+- RSI Signals: SPY HOLD (RSI=44.9, BEARISH EMA, AT VWAP) | QQQ HOLD (RSI=40.7, BEARISH EMA, AT VWAP) | AAPL HOLD (RSI=48.0, BEARISH EMA, AT VWAP) | MSFT HOLD (RSI=45.5, BEARISH EMA, AT VWAP) | NVDA HOLD (RSI=31.0, BEARISH EMA, AT VWAP)
+- Net-Buy signals: 0 BUY, 0 SELL across 5 tickers scanned
+- No positions to evaluate for stop-loss/take-profit
+
 ## 2026-06-24T14:05:43Z
 - SUMMARY: Market open — no trades placed.
 - Regime: SPY RSI=34.2 < 40 — bearish regime active, all buys suppressed.

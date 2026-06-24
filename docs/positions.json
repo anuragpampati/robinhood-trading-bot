@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-24T14:05:43Z",
+  "updated_at": "2026-06-24T15:06:08Z",
   "buying_power": 100.0,
   "positions": [],
   "last_actions": [
-    "Market open — no trades placed. SPY RSI=34.2 < 40 regime filter active (bearish). All 5 tickers HOLD on RSI strategy (0/3 confidence). Net-buy SELL alerts on QQQ ($713.67) and AAPL ($294.29) — no positions held to sell."
+    "2026-06-24T15:06:08Z — Market open. SPY RSI=44.9 (above 40, regime filter not active). All signals HOLD (bearish EMA across all 5 tickers). No buy signals from RSI or net-buy strategies. No positions held. No trades placed."
   ]
 }
