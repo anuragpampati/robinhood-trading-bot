@@ -4,7 +4,6 @@ import json
 import yfinance as yf
 import pandas as pd
 from datetime import datetime, timezone
-from typing import Optional
 from .config import DATA_PERIOD, DATA_INTERVAL, WATCHLIST
 
 
@@ -93,9 +92,3 @@ def is_market_open() -> bool:
     return open_time <= local <= close_time
 
 
-def current_price(ticker: str) -> Optional[float]:
-    """Return latest closing price for *ticker*."""
-    df = fetch_ohlcv(ticker, period="5d", interval="1m")
-    if df.empty:
-        return None
-    return float(df["close"].iloc[-1])

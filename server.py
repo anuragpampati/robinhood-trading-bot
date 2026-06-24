@@ -14,28 +14,17 @@ app = Flask(__name__)
 
 # ── Auth token ────────────────────────────────────────────────────────────────
 
-def get_token():
+def _load_token():
     if os.path.exists(TOKEN_FILE):
         return open(TOKEN_FILE).read().strip()
     token = secrets.token_urlsafe(24)
-    with open(TOKEN_FILE, 'w') as f:
-        f.write(token)
+    open(TOKEN_FILE, 'w').write(token)
     return token
 
+TOKEN = _load_token()
+
 def authorized():
-    token = get_token()
-    # Accept token from header, query param, or JSON body
-    if request.headers.get('X-Token') == token:
-        return True
-    if request.args.get('token') == token:
-        return True
-    try:
-        body = request.get_json(silent=True) or {}
-        if body.get('token') == token:
-            return True
-    except Exception:
-        pass
-    return False
+    return request.headers.get('X-Token') == TOKEN
 
 # ── Static dashboard ──────────────────────────────────────────────────────────
 
@@ -89,14 +78,6 @@ def status():
         last_line = lines[-1] if lines else ''
     return jsonify({**_run_state, 'last_log_line': last_line})
 
-@app.route('/api/tunnel')
-def tunnel():
-    path = os.path.join(LOGS, 'tunnel_url.txt')
-    if os.path.exists(path):
-        url = open(path).read().strip()
-        return jsonify({'url': url})
-    return jsonify({'url': None})
-
 @app.route('/api/run', methods=['POST', 'OPTIONS'])
 def run():
     if request.method == 'OPTIONS':
@@ -127,13 +108,12 @@ def run():
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 if __name__ == '__main__':
-    token = get_token()
     print()
     print('━' * 52)
     print('  Robinhood Trading Dashboard')
     print('  http://localhost:5001')
     print()
-    print(f'  Password: {token}')
+    print(f'  Password: {TOKEN}')
     print('━' * 52)
     print()
     app.run(host='127.0.0.1', port=5001, debug=False)
