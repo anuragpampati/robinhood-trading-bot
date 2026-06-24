@@ -4,12 +4,6 @@
 
 ---
 
-## 2026-06-24T20:05:11Z
-- SUMMARY: Market closed — no trades placed.
-- Signals: All HOLD (SPY RSI=36.7 BEARISH, QQQ RSI=36.7, AAPL RSI=39.7, MSFT RSI=31.5, NVDA RSI=32.6). EMA BEARISH all tickers.
-- Regime filter: SPY RSI=36.7 < 40 — buys suppressed.
-- Account: $100.00 cash (default), 0 open positions.
-
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 
