@@ -4,12 +4,6 @@
 
 ---
 
-## 2026-06-24T18:05:45Z
-- SUMMARY: Market open — regime filter active (SPY RSI=33.2 < 40), buys suppressed. Buying power: $100.00, Open positions: 0.
-- Signals: SPY HOLD (RSI=33.2, BEARISH EMA) | QQQ HOLD (RSI=30.7, BEARISH EMA) | AAPL HOLD (RSI=44.8, BEARISH EMA) | MSFT HOLD (RSI=38.2, BEARISH EMA) | NVDA HOLD (RSI=23.1, BEARISH EMA, 2/3 conf — suppressed by regime).
-- No net-buy BUY or SELL signals on any watchlist ticker.
-- Action: HOLD all — no trades placed.
-
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 
@@ -39,3 +33,9 @@
 
 ## 2026-06-17 15:18:03
 - Market closed — no trades placed.
+## 2026-06-22T04:30:00Z
+- Market closed — no trades placed.
+- Account: $100.00 cash, 0 open positions.
+- MSFT BUY signal persists: RSI=26.0 (deeply oversold), below VWAP, confidence=2. EMA bearish.
+- DAL and TPL show net-buy streaks but are outside primary watchlist — no action per strategy rules.
+- Plan: Execute MSFT BUY ($20) at market open tomorrow (10:00–15:30 ET) if signal holds.
