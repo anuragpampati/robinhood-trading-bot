@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-24T16:04:31Z",
+  "updated_at": "2026-06-24T17:04:06Z",
   "buying_power": 100.0,
   "positions": [],
   "last_actions": [
-    "Market open — no qualifying signals. All tickers HOLD with confidence 0/3.",
-    "SPY RSI=42.5 (regime filter not active). NVDA RSI=30.0 (oversold) but EMA BEARISH, no buy triggered.",
-    "No stop-loss/take-profit evaluations (no positions held).",
+    "Market open — regime filter active (SPY RSI=38.4 < 40), all buys suppressed.",
+    "No open positions. No sell triggers evaluated.",
+    "All tickers HOLD: SPY RSI=38.4 BEARISH, QQQ RSI=34.7 BEARISH, AAPL RSI=48.6 NEUTRAL, MSFT RSI=41.5 BEARISH, NVDA RSI=26.5 BEARISH.",
     "Buying power: $100.00 | Open positions: 0"
   ]
 }
