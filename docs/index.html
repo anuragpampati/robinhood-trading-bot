@@ -436,7 +436,7 @@ async function loadLog() {
   const url = CAN_RUN ? '/api/tradelog' : 'trade_log.md?t='+Date.now();
   try {
     const text = await fetch(url).then(r => r.text());
-    const entries = text.split('\n## ').slice(1).reverse().slice(0,30);
+    const entries = text.split('\n## ').slice(1).slice(0,30);
     const wrap = document.getElementById('log-wrap');
     if (!entries.length) { wrap.innerHTML = '<div class="empty">No trade history yet.</div>'; return; }
     wrap.innerHTML = entries.map(e => {
