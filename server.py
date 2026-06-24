@@ -71,10 +71,12 @@ def positions():
 
 @app.route('/api/tradelog')
 def tradelog():
-    path = os.path.join(LOGS, 'trade_log.md')
-    if not os.path.exists(path):
-        return '', 404
-    return Response(open(path).read(), mimetype='text/plain')
+    # Prefer docs/trade_log.md — kept in sync by both local auto_trade.sh and
+    # the cloud agent, so local server and GitHub Pages always show the same log.
+    for path in [os.path.join(DOCS, 'trade_log.md'), os.path.join(LOGS, 'trade_log.md')]:
+        if os.path.exists(path):
+            return Response(open(path).read(), mimetype='text/plain')
+    return '', 404
 
 _run_state = {'status': 'idle', 'started': None, 'output': ''}
 

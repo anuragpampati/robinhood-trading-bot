@@ -3,7 +3,7 @@
 # Uses caffeinate to prevent Mac sleeping mid-run.
 # Uses claude -p with Robinhood MCP (already authenticated locally).
 
-cd /Users/anuragpampati/robinhood
+cd /Users/anuragpampati/Desktop/Claude/robinhood
 
 LOGFILE="logs/auto_run.log"
 TRADELOG="logs/trade_log.md"
@@ -25,27 +25,32 @@ echo "[$TS] Signals generated." >> "$LOGFILE"
 
 # ── Step 2: Claude executes trades via Robinhood MCP ─────────────────────────
 cat > /tmp/rh_prompt.txt << 'EOF'
-You are an automated trading agent. The signal file is at logs/latest_signals.json.
+You are an automated trading agent for a $100 Robinhood agentic account. The signal file is at logs/latest_signals.json.
 
 Do the following in order:
 1. Run: cat logs/latest_signals.json
 2. If market_open is false: print "MARKET_CLOSED" and stop.
-3. Use the robinhood-trading MCP tools to get buying power and open positions.
-4. For each entry in net_buy_buy_signals where trend_days >= 3:
-   - Skip if you already hold that ticker
-   - Skip if buying power after trade would be below $10
-   - Place a buy order for $20 (if score > 30) or $15 (otherwise)
-   - Print: BOUGHT <ticker> $<amount> @ $<price>
-5. For each entry in rsi_signals where action=BUY and confidence >= 2:
-   - Same skip rules as above
-   - Place a buy order for $15
-   - Print: BOUGHT <ticker> $<amount> @ $<price>
-6. For each position you hold, check if net_buy_sell_signals or rsi_signals has action=SELL:
-   - Sell the full position
-   - Print: SOLD <ticker> <shares> @ $<price>
-7. Check stop-loss (-5% from entry) and take-profit (+10% from entry) on all held positions.
-   - Print: STOP_LOSS <ticker> or TAKE_PROFIT <ticker>
-8. Print a one-line summary starting with "SUMMARY:" of all actions taken.
+3. Use the robinhood-trading MCP tools:
+   - get_accounts → use account_number=837287598 (agentic_allowed=true)
+   - get_portfolio  → buying_power
+   - get_equity_positions → open positions and their average_buy_price
+4. SELL checks — for each position you hold, get current price via get_equity_quotes:
+   - If ticker in net_buy_sell_signals → SELL (print: SOLD <ticker> <shares> @ $<price> | signal)
+   - If ticker in rsi_signals with action=SELL and confidence>=2 → SELL
+   - If price <= avg_cost * 0.95 → SELL (print: SOLD <ticker> ... | STOP_LOSS)
+   - If price >= avg_cost * 1.10 → SELL (print: SOLD <ticker> ... | TAKE_PROFIT)
+5. BUY checks — capital rules (HARD LIMITS — never violate):
+   - Keep >=$ 10 cash buffer at all times
+   - Max $20 per new position, min $5
+   - Max 4 open positions total — skip if len(held) >= 4
+   - Never buy a ticker you already hold
+   - Skip if SPY RSI < 40 in rsi_signals (market regime filter — broad market too weak)
+   Priority:
+   a. Ticker in BOTH net_buy_buy_signals (trend_days>=3) AND rsi_signals (action=BUY, confidence>=2) → $20
+   b. Ticker in net_buy_buy_signals (trend_days>=3) only → $15
+   c. Ticker in rsi_signals (action=BUY, confidence>=2) only → $15
+   Print: BOUGHT <ticker> $<amount> @ $<price>
+6. Print a one-line summary: "SUMMARY: <actions taken or 'no trades'>"
 
 Only print actions you actually took. Do not write to any files.
 EOF
