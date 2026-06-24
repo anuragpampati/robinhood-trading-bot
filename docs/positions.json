@@ -1,6 +1,8 @@
 {
-  "updated_at": null,
+  "updated_at": "2026-06-24T19:03:54Z",
   "buying_power": 100.0,
   "positions": [],
-  "last_actions": []
+  "last_actions": [
+    "2026-06-24T19:03:54Z — Market open — regime filter active (SPY RSI=33.1 < 40), all buys suppressed. No positions held. No trades placed. Buying power: $100.00."
+  ]
 }
