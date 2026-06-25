@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-06-25T19:04:35Z
+- SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
+- SPY RSI=40.4 (regime filter passes, ≥40), but all 5 tickers show HOLD (confidence 0/3). EMA bearish across the board. No net-buy streaks detected.
+- No trades placed.
+
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 
