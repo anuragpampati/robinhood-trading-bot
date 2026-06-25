@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-25T15:05:21Z
+- SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
+- SPY RSI=41.5 BEARISH EMA — regime filter not triggered (RSI > 40), but no BUY signals. AAPL/MSFT/NVDA extremely oversold (RSI 22-24) but EMA bearish blocks entry (confidence 0/3). No positions held — no sell triggers evaluated.
+
 ## 2026-06-25T14:04:22Z
 - SUMMARY: Market open — regime filter active (SPY RSI=36.5 < 40), buys suppressed. Buying power: $100.00, Open positions: 0.
 - All signals HOLD. EMA bearish across all 5 tickers. No sell triggers (no positions held).

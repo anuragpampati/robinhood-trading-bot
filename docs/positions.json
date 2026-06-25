@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-25T14:04:22Z",
+  "updated_at": "2026-06-25T15:05:21Z",
   "buying_power": 100.0,
   "positions": [],
   "last_actions": [
-    "2026-06-25T14:04:22Z — Market open — regime filter active (SPY RSI=36.5 < 40), buys suppressed. No positions held, no trades executed."
+    "2026-06-25T15:05:21Z — Market open — no qualifying signals. All tickers HOLD (confidence 0/3). AAPL/MSFT/NVDA RSI extremely oversold (22-24) but EMA bearish blocks entry. SPY RSI=41.5 (regime filter not triggered). No positions held. No trades placed."
   ]
 }
