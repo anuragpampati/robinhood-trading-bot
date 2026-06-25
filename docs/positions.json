@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-24T20:05:11Z",
-  "buying_power": 100,
+  "updated_at": "2026-06-25T14:04:22Z",
+  "buying_power": 100.0,
   "positions": [],
   "last_actions": [
-    "2026-06-24T20:05:11Z — Market closed — no trades placed. SPY RSI=36.7 (regime filter active, <40). All tickers HOLD with BEARISH EMA. Buying power: $100.00."
+    "2026-06-25T14:04:22Z — Market open — regime filter active (SPY RSI=36.5 < 40), buys suppressed. No positions held, no trades executed."
   ]
 }

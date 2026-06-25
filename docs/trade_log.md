@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-25T14:04:22Z
+- SUMMARY: Market open — regime filter active (SPY RSI=36.5 < 40), buys suppressed. Buying power: $100.00, Open positions: 0.
+- All signals HOLD. EMA bearish across all 5 tickers. No sell triggers (no positions held).
+
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 
