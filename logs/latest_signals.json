@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-25T20:57:38.959028+00:00",
+  "timestamp": "2026-06-25T21:26:41.767595+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -34,7 +34,7 @@
       "ema_trend": "BEARISH",
       "vwap_bias": "BELOW",
       "confidence": 2,
-      "atr_pct": 0.015,
+      "atr_pct": 0.0151,
       "reason": "RSI oversold (26.4) | price below VWAP"
     },
     {
@@ -56,7 +56,7 @@
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0121,
+      "atr_pct": 0.0123,
       "reason": "RSI=36.1, trend=BEARISH, VWAP=AT"
     }
   ],
@@ -66,22 +66,22 @@
       "price": 104.66000366210938,
       "net_buy_d1": 1532117,
       "net_buy_d2": 4964088,
-      "net_buy_d3": 5359578,
+      "net_buy_d3": 7040801,
       "trend_days": 4,
-      "obv_slope": 7797738,
-      "score": 47.8,
-      "reason": "Net buy \u2191 4d streak: 1.53M \u2192 4.96M \u2192 5.36M | OBV +7.8M/day"
+      "obv_slope": 8223647,
+      "score": 48.22,
+      "reason": "Net buy \u2191 4d streak: 1.53M \u2192 4.96M \u2192 7.04M | OBV +8.2M/day"
     },
     {
       "ticker": "DVA",
       "price": 213.36000061035156,
       "net_buy_d1": -423510,
       "net_buy_d2": 201772,
-      "net_buy_d3": 341693,
+      "net_buy_d3": 444224,
       "trend_days": 4,
-      "obv_slope": 686094,
-      "score": 40.69,
-      "reason": "Net buy \u2191 4d streak: -0.42M \u2192 0.20M \u2192 0.34M | OBV +0.7M/day"
+      "obv_slope": 721662,
+      "score": 40.72,
+      "reason": "Net buy \u2191 4d streak: -0.42M \u2192 0.20M \u2192 0.44M | OBV +0.7M/day"
     }
   ],
   "net_buy_sell_signals": [
@@ -89,10 +89,10 @@
       "ticker": "NKE",
       "price": 40.900001525878906,
       "net_buy_d2": -129,
-      "net_buy_d3": -9160466,
-      "obv_slope": -30180811,
+      "net_buy_d3": -9172921,
+      "obv_slope": -30187932,
       "score": 0.07,
-      "reason": "Net buy reversed: -0.00M \u2192 -9.16M | OBV -30.2M/day"
+      "reason": "Net buy reversed: -0.00M \u2192 -9.17M | OBV -30.2M/day"
     },
     {
       "ticker": "CTAS",
@@ -104,6 +104,15 @@
       "reason": "Net buy reversed: 0.09M \u2192 -1.06M | OBV -0.4M/day"
     },
     {
+      "ticker": "QCOM",
+      "price": 204.89999389648438,
+      "net_buy_d2": 1772495,
+      "net_buy_d3": -16008472,
+      "obv_slope": -11623110,
+      "score": 0.0,
+      "reason": "Net buy reversed: 1.77M \u2192 -16.01M | OBV -11.6M/day"
+    },
+    {
       "ticker": "SWKS",
       "price": 69.94000244140625,
       "net_buy_d2": -214858,
@@ -111,15 +120,6 @@
       "obv_slope": -3839952,
       "score": 0.0,
       "reason": "Net buy reversed: -0.21M \u2192 -2.34M | OBV -3.8M/day"
-    },
-    {
-      "ticker": "QCOM",
-      "price": 204.89999389648438,
-      "net_buy_d2": 1772495,
-      "net_buy_d3": -15334168,
-      "obv_slope": -11909875,
-      "score": 0.0,
-      "reason": "Net buy reversed: 1.77M \u2192 -15.33M | OBV -11.9M/day"
     },
     {
       "ticker": "FOXA",
@@ -167,13 +167,13 @@
       "reason": "Net buy reversed: -0.90M \u2192 -3.74M | OBV -2.7M/day"
     },
     {
-      "ticker": "XYZ",
-      "price": 74.08000183105469,
-      "net_buy_d2": 1897155,
-      "net_buy_d3": -3071530,
-      "obv_slope": -1532573,
+      "ticker": "RL",
+      "price": 410.1099853515625,
+      "net_buy_d2": 170316,
+      "net_buy_d3": -327155,
+      "obv_slope": -240255,
       "score": 0.0,
-      "reason": "Net buy reversed: 1.90M \u2192 -3.07M | OBV -1.5M/day"
+      "reason": "Net buy reversed: 0.17M \u2192 -0.33M | OBV -0.2M/day"
     }
   ]
 }
