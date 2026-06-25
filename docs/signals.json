@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-25T15:05:21.726492+00:00",
+  "timestamp": "2026-06-25T16:04:36.128461+00:00",
   "mode": "quick",
   "universe_size": 5,
   "market_open": true,
@@ -7,57 +7,57 @@
     {
       "ticker": "SPY",
       "action": "HOLD",
-      "price": 735.23,
-      "rsi": 41.47,
+      "price": 734.14,
+      "rsi": 39.54,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0048,
-      "reason": "RSI=41.5, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0039,
+      "reason": "RSI=39.5, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "QQQ",
       "action": "HOLD",
-      "price": 713.43,
-      "rsi": 40.84,
+      "price": 714.05,
+      "rsi": 41.8,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0072,
-      "reason": "RSI=40.8, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0068,
+      "reason": "RSI=41.8, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "AAPL",
       "action": "HOLD",
-      "price": 277.605,
-      "rsi": 22.48,
+      "price": 277.855,
+      "rsi": 23.06,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0152,
-      "reason": "RSI=22.5, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0147,
+      "reason": "RSI=23.1, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "MSFT",
       "action": "HOLD",
-      "price": 355.555,
-      "rsi": 24.08,
+      "price": 355.635,
+      "rsi": 24.01,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0106,
-      "reason": "RSI=24.1, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0099,
+      "reason": "RSI=24.0, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "NVDA",
       "action": "HOLD",
-      "price": 195.465,
-      "rsi": 22.11,
+      "price": 195.61,
+      "rsi": 22.95,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
       "atr_pct": 0.0101,
-      "reason": "RSI=22.1, trend=BEARISH, VWAP=AT"
+      "reason": "RSI=23.0, trend=BEARISH, VWAP=AT"
     }
   ],
   "net_buy_buy_signals": [],
