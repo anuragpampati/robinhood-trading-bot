@@ -4,6 +4,9 @@
 
 ---
 
+## 2026-06-25T18:04:00Z
+- SUMMARY: Market open — regime filter active (SPY RSI=39.4 < 40), buys suppressed. Buying power: $100.00, Open positions: 0. MSFT net-buy SELL signal noted but no position held.
+
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 
