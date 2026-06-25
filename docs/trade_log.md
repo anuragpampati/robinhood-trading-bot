@@ -4,11 +4,6 @@
 
 ---
 
-## 2026-06-25T17:03:56Z
-- SUMMARY: Market open — regime filter active (SPY RSI=37.1 < 40), buys suppressed. Buying power: $100.00, Open positions: 0.
-- SIGNALS: All tickers HOLD on RSI/EMA/VWAP. MSFT net-buy trend sell signal (not held). No sells executed (no positions).
-- PRICES: SPY=$732.54 | QQQ=$714.62 | AAPL=$275.12 | MSFT=$351.60 | NVDA=$194.87
-
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 
