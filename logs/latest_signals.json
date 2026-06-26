@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-26T14:06:08.919863+00:00",
+  "timestamp": "2026-06-26T15:05:11.900544+00:00",
   "mode": "quick",
   "universe_size": 5,
   "market_open": true,
@@ -7,78 +7,69 @@
     {
       "ticker": "SPY",
       "action": "HOLD",
-      "price": 732.18,
-      "rsi": 37.43,
+      "price": 732.48,
+      "rsi": 38.29,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.004,
-      "reason": "RSI=37.4, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0041,
+      "reason": "RSI=38.3, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "QQQ",
       "action": "HOLD",
-      "price": 716.26,
-      "rsi": 45.3,
+      "price": 710.5001,
+      "rsi": 38.8,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0064,
-      "reason": "RSI=45.3, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0069,
+      "reason": "RSI=38.8, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "AAPL",
       "action": "HOLD",
-      "price": 275.05,
-      "rsi": 27.06,
+      "price": 279.8496,
+      "rsi": 36.49,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0148,
-      "reason": "RSI=27.1, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0151,
+      "reason": "RSI=36.5, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "MSFT",
       "action": "HOLD",
-      "price": 353.0,
-      "rsi": 28.85,
+      "price": 369.86,
+      "rsi": 51.94,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0113,
-      "reason": "RSI=28.9, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0156,
+      "reason": "RSI=51.9, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "NVDA",
       "action": "HOLD",
-      "price": 195.75,
-      "rsi": 29.24,
+      "price": 193.095,
+      "rsi": 23.68,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0095,
-      "reason": "RSI=29.2, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0104,
+      "reason": "RSI=23.7, trend=BEARISH, VWAP=AT"
     }
   ],
   "net_buy_buy_signals": [],
   "net_buy_sell_signals": [
     {
-      "ticker": "SPY",
-      "price": 732.18,
-      "net_buy_d2": -2836553,
-      "net_buy_d3": -4609690,
-      "obv_slope": -6768763,
+      "ticker": "QQQ",
+      "price": 710.5001,
+      "net_buy_d2": 5196135,
+      "net_buy_d3": -1091072,
+      "obv_slope": -1483394,
       "score": 0.0,
-      "reason": "Net buy reversed: -2.84M \u2192 -4.61M | OBV -6.8M/day"
-    },
-    {
-      "ticker": "AAPL",
-      "price": 275.05,
-      "net_buy_d2": -13813138,
-      "net_buy_d3": -20366826,
-      "obv_slope": -18086073,
-      "score": 0.0,
-      "reason": "Net buy reversed: -13.81M \u2192 -20.37M | OBV -18.1M/day"
+      "reason": "Net buy reversed: 5.20M \u2192 -1.09M | OBV -1.5M/day"
     }
   ]
 }
