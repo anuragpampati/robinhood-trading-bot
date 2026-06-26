@@ -1,75 +1,168 @@
 {
-  "timestamp": "2026-06-26T16:04:55.721725+00:00",
-  "mode": "quick",
-  "universe_size": 5,
+  "timestamp": "2026-06-26T16:21:47.666696+00:00",
+  "mode": "full_universe",
+  "universe_size": 503,
   "market_open": true,
   "rsi_signals": [
     {
       "ticker": "SPY",
       "action": "HOLD",
-      "price": 735.4,
-      "rsi": 45.98,
+      "price": 732.8599243164062,
+      "rsi": 42.28,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0039,
-      "reason": "RSI=46.0, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0056,
+      "reason": "RSI=42.3, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "QQQ",
       "action": "HOLD",
-      "price": 713.21,
-      "rsi": 42.89,
+      "price": 710.4500122070312,
+      "rsi": 39.38,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0071,
-      "reason": "RSI=42.9, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0094,
+      "reason": "RSI=39.4, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "AAPL",
       "action": "HOLD",
-      "price": 277.165,
-      "rsi": 33.85,
+      "price": 275.3599853515625,
+      "rsi": 31.28,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0149,
-      "reason": "RSI=33.9, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0145,
+      "reason": "RSI=31.3, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "MSFT",
       "action": "HOLD",
-      "price": 370.19,
-      "rsi": 52.43,
+      "price": 368.4100036621094,
+      "rsi": 51.95,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0143,
-      "reason": "RSI=52.4, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0151,
+      "reason": "RSI=51.9, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "NVDA",
       "action": "HOLD",
-      "price": 194.359,
-      "rsi": 27.98,
+      "price": 193.9149932861328,
+      "rsi": 32.99,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0102,
-      "reason": "RSI=28.0, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0123,
+      "reason": "RSI=33.0, trend=BEARISH, VWAP=AT"
     }
   ],
-  "net_buy_buy_signals": [],
+  "net_buy_buy_signals": [
+    {
+      "ticker": "ROP",
+      "price": 341.8113098144531,
+      "net_buy_d1": -326033,
+      "net_buy_d2": -8523,
+      "net_buy_d3": 386389,
+      "trend_days": 4,
+      "obv_slope": 939561,
+      "score": 40.94,
+      "reason": "Net buy \u2191 4d streak: -0.33M \u2192 -0.01M \u2192 0.39M | OBV +0.9M/day"
+    }
+  ],
   "net_buy_sell_signals": [
     {
-      "ticker": "QQQ",
-      "price": 713.21,
-      "net_buy_d2": 5196135,
-      "net_buy_d3": 981411,
-      "obv_slope": -1687046,
+      "ticker": "ETN",
+      "price": 398.5199890136719,
+      "net_buy_d2": -36253,
+      "net_buy_d3": -1001957,
+      "obv_slope": -853732,
       "score": 0.0,
-      "reason": "Net buy reversed: 5.20M \u2192 0.98M | OBV -1.7M/day"
+      "reason": "Net buy reversed: -0.04M \u2192 -1.00M | OBV -0.9M/day"
+    },
+    {
+      "ticker": "FSLR",
+      "price": 238.19000244140625,
+      "net_buy_d2": -21268,
+      "net_buy_d3": -543762,
+      "obv_slope": -559918,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.02M \u2192 -0.54M | OBV -0.6M/day"
+    },
+    {
+      "ticker": "CHRW",
+      "price": 178.88499450683594,
+      "net_buy_d2": -14000,
+      "net_buy_d3": -316710,
+      "obv_slope": -564587,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.01M \u2192 -0.32M | OBV -0.6M/day"
+    },
+    {
+      "ticker": "FLEX",
+      "price": 151.22000122070312,
+      "net_buy_d2": 238002,
+      "net_buy_d3": -2525965,
+      "obv_slope": -1652625,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.24M \u2192 -2.53M | OBV -1.7M/day"
+    },
+    {
+      "ticker": "ON",
+      "price": 91.33000183105469,
+      "net_buy_d2": 3738238,
+      "net_buy_d3": -19871032,
+      "obv_slope": -7173064,
+      "score": 0.0,
+      "reason": "Net buy reversed: 3.74M \u2192 -19.87M | OBV -7.2M/day"
+    },
+    {
+      "ticker": "FANG",
+      "price": 181.46499633789062,
+      "net_buy_d2": 61578,
+      "net_buy_d3": -243278,
+      "obv_slope": -981791,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.06M \u2192 -0.24M | OBV -1.0M/day"
+    },
+    {
+      "ticker": "PLD",
+      "price": 139.8699951171875,
+      "net_buy_d2": 321946,
+      "net_buy_d3": -912586,
+      "obv_slope": -2592432,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.32M \u2192 -0.91M | OBV -2.6M/day"
+    },
+    {
+      "ticker": "TXN",
+      "price": 296.5350036621094,
+      "net_buy_d2": 1538316,
+      "net_buy_d3": -3336653,
+      "obv_slope": -2856129,
+      "score": 0.0,
+      "reason": "Net buy reversed: 1.54M \u2192 -3.34M | OBV -2.9M/day"
+    },
+    {
+      "ticker": "CI",
+      "price": 284.3949890136719,
+      "net_buy_d2": -126431,
+      "net_buy_d3": -511469,
+      "obv_slope": -37453,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.13M \u2192 -0.51M | OBV -0.0M/day"
+    },
+    {
+      "ticker": "ANET",
+      "price": 157.53500366210938,
+      "net_buy_d2": 983422,
+      "net_buy_d3": -1649388,
+      "obv_slope": -1495039,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.98M \u2192 -1.65M | OBV -1.5M/day"
     }
   ]
 }
