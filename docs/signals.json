@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-26T20:46:46.536305+00:00",
+  "timestamp": "2026-06-26T21:15:09.575146+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -56,7 +56,7 @@
       "ema_trend": "BEARISH",
       "vwap_bias": "BELOW",
       "confidence": 0,
-      "atr_pct": 0.0116,
+      "atr_pct": 0.0115,
       "reason": "RSI=30.0, trend=BEARISH, VWAP=BELOW"
     }
   ],
@@ -77,11 +77,11 @@
       "price": 178.42999267578125,
       "net_buy_d1": 326967,
       "net_buy_d2": 524149,
-      "net_buy_d3": 1043178,
+      "net_buy_d3": 1127166,
       "trend_days": 4,
-      "obv_slope": 792007,
-      "score": 40.79,
-      "reason": "Net buy \u2191 4d streak: 0.33M \u2192 0.52M \u2192 1.04M | OBV +0.8M/day"
+      "obv_slope": 816848,
+      "score": 40.82,
+      "reason": "Net buy \u2191 4d streak: 0.33M \u2192 0.52M \u2192 1.13M | OBV +0.8M/day"
     }
   ],
   "net_buy_sell_signals": [
@@ -89,37 +89,46 @@
       "ticker": "CHRW",
       "price": 179.3300018310547,
       "net_buy_d2": -14000,
-      "net_buy_d3": -1411779,
-      "obv_slope": -1040212,
+      "net_buy_d3": -1968564,
+      "obv_slope": -1259468,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.01M \u2192 -1.41M | OBV -1.0M/day"
+      "reason": "Net buy reversed: -0.01M \u2192 -1.97M | OBV -1.3M/day"
+    },
+    {
+      "ticker": "ETN",
+      "price": 402.67999267578125,
+      "net_buy_d2": -36253,
+      "net_buy_d3": -2059133,
+      "obv_slope": -1690062,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.04M \u2192 -2.06M | OBV -1.7M/day"
     },
     {
       "ticker": "FSLR",
       "price": 239.07000732421875,
       "net_buy_d2": -21268,
-      "net_buy_d3": -1099293,
-      "obv_slope": -787340,
+      "net_buy_d3": -1179196,
+      "obv_slope": -812106,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.02M \u2192 -1.10M | OBV -0.8M/day"
+      "reason": "Net buy reversed: -0.02M \u2192 -1.18M | OBV -0.8M/day"
     },
     {
       "ticker": "FANG",
       "price": 179.91000366210938,
       "net_buy_d2": 61578,
-      "net_buy_d3": -2360638,
-      "obv_slope": -1531844,
+      "net_buy_d3": -2372716,
+      "obv_slope": -1535305,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.06M \u2192 -2.36M | OBV -1.5M/day"
+      "reason": "Net buy reversed: 0.06M \u2192 -2.37M | OBV -1.5M/day"
     },
     {
       "ticker": "MPWR",
       "price": 1313.3199462890625,
       "net_buy_d2": -58395,
-      "net_buy_d3": -2142384,
-      "obv_slope": -447469,
+      "net_buy_d3": -2162833,
+      "obv_slope": -453965,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.06M \u2192 -2.14M | OBV -0.4M/day"
+      "reason": "Net buy reversed: -0.06M \u2192 -2.16M | OBV -0.5M/day"
     },
     {
       "ticker": "FLEX",
@@ -131,49 +140,40 @@
       "reason": "Net buy reversed: 0.24M \u2192 -6.94M | OBV -3.0M/day"
     },
     {
-      "ticker": "ETN",
-      "price": 402.67999267578125,
-      "net_buy_d2": -36253,
-      "net_buy_d3": -984263,
-      "obv_slope": -1143009,
+      "ticker": "EME",
+      "price": 798.0999755859375,
+      "net_buy_d2": -82022,
+      "net_buy_d3": -1269159,
+      "obv_slope": -182357,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.04M \u2192 -0.98M | OBV -1.1M/day"
+      "reason": "Net buy reversed: -0.08M \u2192 -1.27M | OBV -0.2M/day"
     },
     {
       "ticker": "NXPI",
       "price": 277.0199890136719,
       "net_buy_d2": -394639,
-      "net_buy_d3": -5357771,
-      "obv_slope": -2738294,
+      "net_buy_d3": -5366429,
+      "obv_slope": -2740537,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.39M \u2192 -5.36M | OBV -2.7M/day"
-    },
-    {
-      "ticker": "ON",
-      "price": 90.6500015258789,
-      "net_buy_d2": 3738238,
-      "net_buy_d3": -29811400,
-      "obv_slope": -11718453,
-      "score": 0.0,
-      "reason": "Net buy reversed: 3.74M \u2192 -29.81M | OBV -11.7M/day"
+      "reason": "Net buy reversed: -0.39M \u2192 -5.37M | OBV -2.7M/day"
     },
     {
       "ticker": "TXN",
       "price": 285.42498779296875,
       "net_buy_d2": 1538316,
-      "net_buy_d3": -11642746,
-      "obv_slope": -6482161,
+      "net_buy_d3": -15358256,
+      "obv_slope": -7862594,
       "score": 0.0,
-      "reason": "Net buy reversed: 1.54M \u2192 -11.64M | OBV -6.5M/day"
+      "reason": "Net buy reversed: 1.54M \u2192 -15.36M | OBV -7.9M/day"
     },
     {
       "ticker": "MCHP",
       "price": 87.93000030517578,
       "net_buy_d2": -1503766,
-      "net_buy_d3": -11615272,
-      "obv_slope": -8318482,
+      "net_buy_d3": -15406070,
+      "obv_slope": -9817267,
       "score": 0.0,
-      "reason": "Net buy reversed: -1.50M \u2192 -11.62M | OBV -8.3M/day"
+      "reason": "Net buy reversed: -1.50M \u2192 -15.41M | OBV -9.8M/day"
     }
   ]
 }
