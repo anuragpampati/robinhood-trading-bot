@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-26T15:05:32Z",
+  "updated_at": "2026-06-26T16:05:00Z",
   "buying_power": 100.0,
   "positions": [],
   "last_actions": [
-    "2026-06-26T15:05:32Z — Market open — regime filter active (SPY RSI=38.3 < 40), all buys suppressed. No open positions. Net-sell signal on QQQ (not held). No trades placed. Account fully in cash at $100.00."
+    "2026-06-26T16:05:00Z — Market open — no qualifying signals. Regime filter cleared (SPY RSI=45.98 ≥ 40). All EMAs BEARISH. QQQ net-sell signal but not held. No trades executed. Account fully in cash at $100.00."
   ]
 }

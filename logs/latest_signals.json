@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-26T15:05:11.900544+00:00",
+  "timestamp": "2026-06-26T16:04:55.721725+00:00",
   "mode": "quick",
   "universe_size": 5,
   "market_open": true,
@@ -7,69 +7,69 @@
     {
       "ticker": "SPY",
       "action": "HOLD",
-      "price": 732.48,
-      "rsi": 38.29,
+      "price": 735.4,
+      "rsi": 45.98,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0041,
-      "reason": "RSI=38.3, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0039,
+      "reason": "RSI=46.0, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "QQQ",
       "action": "HOLD",
-      "price": 710.5001,
-      "rsi": 38.8,
+      "price": 713.21,
+      "rsi": 42.89,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0069,
-      "reason": "RSI=38.8, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0071,
+      "reason": "RSI=42.9, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "AAPL",
       "action": "HOLD",
-      "price": 279.8496,
-      "rsi": 36.49,
+      "price": 277.165,
+      "rsi": 33.85,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0151,
-      "reason": "RSI=36.5, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0149,
+      "reason": "RSI=33.9, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "MSFT",
       "action": "HOLD",
-      "price": 369.86,
-      "rsi": 51.94,
+      "price": 370.19,
+      "rsi": 52.43,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0156,
-      "reason": "RSI=51.9, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0143,
+      "reason": "RSI=52.4, trend=BEARISH, VWAP=AT"
     },
     {
       "ticker": "NVDA",
       "action": "HOLD",
-      "price": 193.095,
-      "rsi": 23.68,
+      "price": 194.359,
+      "rsi": 27.98,
       "ema_trend": "BEARISH",
       "vwap_bias": "AT",
       "confidence": 0,
-      "atr_pct": 0.0104,
-      "reason": "RSI=23.7, trend=BEARISH, VWAP=AT"
+      "atr_pct": 0.0102,
+      "reason": "RSI=28.0, trend=BEARISH, VWAP=AT"
     }
   ],
   "net_buy_buy_signals": [],
   "net_buy_sell_signals": [
     {
       "ticker": "QQQ",
-      "price": 710.5001,
+      "price": 713.21,
       "net_buy_d2": 5196135,
-      "net_buy_d3": -1091072,
-      "obv_slope": -1483394,
+      "net_buy_d3": 981411,
+      "obv_slope": -1687046,
       "score": 0.0,
-      "reason": "Net buy reversed: 5.20M \u2192 -1.09M | OBV -1.5M/day"
+      "reason": "Net buy reversed: 5.20M \u2192 0.98M | OBV -1.7M/day"
     }
   ]
 }
