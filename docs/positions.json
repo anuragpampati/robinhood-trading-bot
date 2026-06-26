@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-25T20:03:48Z",
+  "updated_at": "2026-06-26T14:05:07Z",
   "buying_power": 100.0,
   "positions": [],
   "last_actions": [
-    "2026-06-25T20:03:48Z — Market closed — no trades placed. SPY RSI=39.3 (regime filter SUPPRESSED, <40). All 5 watchlist tickers HOLD (EMA bearish across board). AAPL and MSFT show net-buy SELL signals but market closed. Account fully in cash at $100.00."
+    "2026-06-26T14:05:07Z — Market open — regime filter active (SPY RSI=37.4 < 40), all buys suppressed. No open positions. No sells triggered. Account fully in cash at $100.00."
   ]
 }
