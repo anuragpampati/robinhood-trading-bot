@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-26T19:04:26Z",
-  "buying_power": 100.0,
+  "updated_at": "2026-06-26T20:04:32Z",
+  "buying_power": 100.00,
   "positions": [],
   "last_actions": [
-    "2026-06-26T19:04:26Z — Market open — regime filter active (SPY RSI=37.9 < 40), all buys suppressed. No open positions. QQQ net-buy SELL signal noted but not held. No trades placed."
+    "2026-06-26T20:04:32Z — Market closed — no trades placed. Regime filter active: SPY RSI=33.5 < 40 (buys suppressed). QQQ net-buy trend reversed (SELL signal noted, no position held). All tickers HOLD with BEARISH EMA. Prices: SPY=$729.09, QQQ=$705.86, AAPL=$281.30, MSFT=$371.34, NVDA=$191.72."
   ]
 }
