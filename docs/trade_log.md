@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-06-26T19:04:26Z
+- SUMMARY: Market open — regime filter active (SPY RSI=37.9 < 40), buys suppressed. Buying power: $100.00, Open positions: 0.
+- QQQ net-buy SELL signal noted (net buy reversed: 5.2M → -5.4M), but no position held — no action.
+- All tickers BEARISH EMA. No qualifying trades executed.
+
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 
