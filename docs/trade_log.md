@@ -4,6 +4,9 @@
 
 ---
 
+## 2026-06-29T08:38:00Z
+- SUMMARY: Market closed — no trades placed. Regime filter active (SPY RSI=33.4 < 40, buys suppressed). QQQ net-buy trend reversed (5.2M→-6.0M, SELL signal noted — no position held). All tickers BEARISH EMA: SPY=$729.09 RSI=33.4, QQQ=$705.86 RSI=34.9, AAPL=$281.30 RSI=41.6, MSFT=$371.34 RSI=54.1, NVDA=$191.72 RSI=26.9. Buying power: $100.00, Open positions: 0.
+
 ## 2026-06-16 19:14:32
 - Market closed — no trades placed.
 
