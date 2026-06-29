@@ -15,7 +15,7 @@ WATCHLIST = ["SPY", "QQQ", "AAPL", "MSFT", "NVDA"]
 
 # ── RSI parameters ───────────────────────────────────────────────────────────
 RSI_PERIOD = 14
-RSI_OVERSOLD = 30              # buy signal threshold (Wilder standard; 35 fired too many false signals)
+RSI_OVERSOLD = 35              # buy signal threshold — large caps bounce at 35, rarely hit 30
 RSI_OVERBOUGHT = 70            # sell signal threshold (let winners run past 65)
 
 # ── EMA parameters ───────────────────────────────────────────────────────────
@@ -37,8 +37,8 @@ DATA_INTERVAL = "1h"           # 1-hour bars
 VOLUME_LOOKBACK = 20           # days for avg-volume filter
 
 # ── Market regime filter ──────────────────────────────────────────────────────
-# Don't buy individual stocks when SPY RSI is below this — broad market too weak
-MARKET_REGIME_RSI_MIN = 40
+# Suppress buys during true market panic only — RSI 30-40 is normal correction territory
+MARKET_REGIME_RSI_MIN = 30
 
 # ── Market hours (ET) ─────────────────────────────────────────────────────────
 MARKET_OPEN_HOUR = 9

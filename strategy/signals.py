@@ -43,14 +43,20 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False)
     """Produce a trading signal for *ticker* from its indicator DataFrame.
 
     market_bearish: pass True when SPY RSI < MARKET_REGIME_RSI_MIN to suppress
-    new BUY entries on individual stocks during broad market weakness.
+    new BUY entries on individual stocks during true market panic.
+    SPY itself is exempt from market_bearish — it IS the market.
     """
-    row = df.dropna(subset=["rsi", "ema_fast", "ema_slow", "vwap", "atr"]).iloc[-1]
+    df_clean = df.dropna(subset=["rsi", "ema_fast", "ema_slow", "vwap", "atr"])
+    row = df_clean.iloc[-1]
     price = float(row["close"])
     rsi_val = float(row["rsi"])
     atr_pct = float(row["atr_pct"])
     trend = _ema_trend(row)
     bias = _vwap_bias(row)
+
+    # RSI slope — is it stabilizing or still falling? (falling knife guard)
+    rsi_prev = float(df_clean["rsi"].iloc[-4]) if len(df_clean) >= 4 else rsi_val
+    rsi_still_falling = rsi_val < rsi_prev - 2.0  # dropped >2 RSI points in last 4 bars
 
     # Volatility gate — skip if market is too choppy
     if atr_pct > ATR_VOLATILITY_THRESHOLD:
@@ -61,8 +67,12 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False)
     buy_score = 0
     buy_reasons = []
     if rsi_val < RSI_OVERSOLD:
-        buy_score += 1
-        buy_reasons.append(f"RSI oversold ({rsi_val:.1f})")
+        if rsi_still_falling:
+            buy_reasons.append(f"RSI oversold ({rsi_val:.1f}) but still falling — wait")
+        else:
+            buy_score += 1
+            direction = "↑" if rsi_val >= rsi_prev else "≈"
+            buy_reasons.append(f"RSI oversold+stabilizing ({rsi_prev:.1f}{direction}{rsi_val:.1f})")
     if bias == "BELOW":
         buy_score += 1
         buy_reasons.append("price below VWAP")
@@ -86,11 +96,12 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False)
         sell_score += 1
         sell_reasons.append("EMA bearish")
 
-    # BUY: suppress on individual tickers when broad market is weak
+    # BUY: suppress individual tickers during market panic (not corrections)
+    # SPY is exempt — it IS the market, blocking it on its own RSI makes no sense
     if buy_score >= MIN_SIGNALS_TO_TRADE and buy_score > sell_score:
-        if market_bearish:
+        if market_bearish and ticker != "SPY":
             return Signal(ticker, "HOLD", price, rsi_val, trend, bias, buy_score, atr_pct,
-                          f"BUY suppressed — SPY RSI < {MARKET_REGIME_RSI_MIN} (market regime)")
+                          f"BUY suppressed — SPY RSI < {MARKET_REGIME_RSI_MIN} (market panic)")
         return Signal(ticker, "BUY", price, rsi_val, trend, bias,
                       buy_score, atr_pct, " | ".join(buy_reasons))
 
@@ -99,5 +110,5 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False)
         return Signal(ticker, "SELL", price, rsi_val, trend, bias,
                       sell_score, atr_pct, " | ".join(sell_reasons))
 
-    reason = f"RSI={rsi_val:.1f}, trend={trend}, VWAP={bias}"
+    reason = f"RSI={rsi_val:.1f} ({'falling' if rsi_still_falling else 'stable'}), trend={trend}, VWAP={bias}"
     return Signal(ticker, "HOLD", price, rsi_val, trend, bias, 0, atr_pct, reason)
