@@ -62,12 +62,12 @@ def run_analysis() -> dict:
         universe = full_universe()
         print(f"      {len(universe)} tickers loaded.\n")
 
-    # ── Strategy 1: RSI + VWAP + EMA on watchlist ────────────────────────────
+    # ── Strategy 1: RSI + BB + EMA on watchlist ──────────────────────────────
     if _CACHE_FILE:
         print(f"[2/4] Loading watchlist data from cache: {_CACHE_FILE}")
         data_map = fetch_all_from_cache(_CACHE_FILE)
     else:
-        print("[2/4] Computing RSI / VWAP / EMA on watchlist...")
+        print("[2/4] Computing RSI / BB / EMA on watchlist...")
         data_map = fetch_all_watchlist(WATCHLIST)
     rsi_signals = {}
 
@@ -106,14 +106,14 @@ def run_analysis() -> dict:
     print("\n[4/4] Building report...\n")
 
     # ── Table 1: RSI signals on watchlist ─────────────────────────────────────
-    print("STRATEGY 1 — RSI + VWAP + EMA  [watchlist]")
+    print("STRATEGY 1 — RSI + BB + EMA  [watchlist]")
     rows1 = []
     for s in rsi_signals.values():
         rows1.append([s.ticker, s.action, f"${s.price:.2f}",
-                      f"{s.rsi:.1f}", s.ema_trend, s.vwap_bias,
+                      f"{s.rsi:.1f}", s.ema_trend, s.bb_signal,
                       f"{s.confidence}/3", f"{s.atr_pct:.1%}"])
     print(tabulate(rows1,
-                   headers=["Ticker", "Action", "Price", "RSI", "EMA", "VWAP", "Conf", "ATR%"],
+                   headers=["Ticker", "Action", "Price", "RSI", "EMA", "BB", "Conf", "ATR%"],
                    tablefmt="rounded_outline"))
 
     # ── Table 2: Top Net Buy signals from full universe ───────────────────────
@@ -194,7 +194,7 @@ def run_analysis() -> dict:
         "rsi_signals": [
             {"ticker": s.ticker, "action": s.action, "price": s.price,
              "rsi": round(s.rsi, 2), "ema_trend": s.ema_trend,
-             "vwap_bias": s.vwap_bias, "confidence": s.confidence,
+             "bb_signal": s.bb_signal, "confidence": s.confidence,
              "atr_pct": round(s.atr_pct, 4), "reason": s.reason}
             for s in rsi_signals.values()
         ],
