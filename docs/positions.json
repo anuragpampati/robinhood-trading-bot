@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-29T17:08:21Z",
+  "updated_at": "2026-06-29T18:05:02Z",
   "buying_power": 100.00,
   "positions": [],
   "last_actions": [
-    "2026-06-29T17:08:21Z — Market open — no qualifying signals. Regime filter INACTIVE (SPY RSI=43.4 > 30). All 5 tickers HOLD with 0/3 confidence. Net-buy scan: 0 BUY, 2 SELL (QQQ, NVDA — not held). No trades executed. Buying power: $100.00, Open positions: 0."
+    "2026-06-29T18:05:02Z — Market open — no qualifying signals. Regime filter INACTIVE (SPY RSI=58.1 > 30). All 5 tickers HOLD with 0/3 RSI confidence. Net-buy scan: 0 BUY, 1 SELL (MSFT net-buy reversed — not held). No trades executed. Buying power: $100.00, Open positions: 0."
   ]
 }
