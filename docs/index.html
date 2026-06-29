@@ -112,6 +112,15 @@ tr:hover td{background:#0f1319}
 .log-line.buy-line{color:var(--green)}
 .log-line.sell-line{color:var(--red)}
 
+/* ── Last run banner ── */
+.last-run-bar{padding:8px 24px;display:flex;align-items:center;gap:10px;font-size:.78rem;border-bottom:1px solid var(--border);background:var(--surface)}
+.last-run-bar.fresh{border-left:3px solid var(--green)}
+.last-run-bar.stale{border-left:3px solid var(--yellow)}
+.last-run-bar.old{border-left:3px solid var(--red)}
+.last-run-label{color:var(--muted);flex-shrink:0}
+.last-run-detail{color:#94a3b8;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.last-run-age{color:var(--muted);flex-shrink:0}
+
 /* ── Misc ── */
 .conf-bar{display:inline-flex;gap:3px;vertical-align:middle}
 .conf-pip{width:7px;height:7px;border-radius:2px;background:var(--border)}
@@ -152,6 +161,13 @@ tr:hover td{background:#0f1319}
   <a class="tunnel-url" id="tunnel-url" href="#" target="_blank">detecting…</a>
   <span style="color:var(--muted);font-size:.72rem">(changes on reboot)</span>
   <button onclick="copyTunnel()" class="btn btn-ghost" style="padding:3px 10px;font-size:.72rem;margin-left:4px">Copy</button>
+</div>
+
+<!-- ── Last cloud run status ── -->
+<div class="last-run-bar" id="last-run-bar" style="display:none">
+  <span class="last-run-label">☁ Last cloud run:</span>
+  <span class="last-run-detail" id="last-run-detail">—</span>
+  <span class="last-run-age" id="last-run-age"></span>
 </div>
 
 <!-- ── Run status bar ── -->
@@ -199,13 +215,13 @@ tr:hover td{background:#0f1319}
   </div>
 
   <!-- RSI signals -->
-  <p class="sec">Watchlist — RSI / EMA / VWAP</p>
+  <p class="sec">Watchlist — RSI / BB / EMA</p>
   <div class="card">
     <div class="card-hdr"><h3>Intraday Signals</h3><span class="ts" id="rsi-ts">—</span></div>
     <table>
       <thead><tr>
         <th>Ticker</th><th>Signal</th><th>Price</th>
-        <th>RSI</th><th>EMA Trend</th><th>VWAP</th><th>Confidence</th>
+        <th>RSI</th><th>EMA Trend</th><th>BB</th><th>Confidence</th>
       </tr></thead>
       <tbody id="rsi-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
     </table>
@@ -379,7 +395,7 @@ async function loadSignals() {
         <td>$${Number(s.price).toFixed(2)}</td>
         <td style="color:${s.rsi<30?'var(--green)':s.rsi>70?'var(--red)':'var(--text)'}">${Number(s.rsi).toFixed(1)}</td>
         <td><span class="badge ${s.ema_trend==='BULLISH'?'badge-green':s.ema_trend==='BEARISH'?'badge-red':'badge-blue'}">${s.ema_trend}</span></td>
-        <td>${s.vwap_bias}</td>
+        <td>${s.bb_signal||s.vwap_bias||'—'}</td>
         <td>${confPips(s.confidence||0)}</td>
       </tr>`).join('')
     : '<tr><td colspan="7" class="empty">No watchlist signals</td></tr>';
@@ -408,6 +424,22 @@ async function loadPositions() {
   try {
     const d = await fetch(url).then(r => r.json());
     document.getElementById('h-cash').textContent = '$'+Number(d.buying_power||0).toFixed(2);
+
+    // Last cloud run banner
+    if (d.updated_at) {
+      const runBar  = document.getElementById('last-run-bar');
+      const ageEl   = document.getElementById('last-run-age');
+      const detEl   = document.getElementById('last-run-detail');
+      const runTime = new Date(d.updated_at);
+      const ageMin  = Math.round((Date.now() - runTime) / 60000);
+      const ageStr  = ageMin < 60 ? `${ageMin}m ago` : `${Math.round(ageMin/60)}h ago`;
+      const detail  = (d.last_actions||[])[0] || 'No summary';
+      runBar.style.display = 'flex';
+      runBar.className = 'last-run-bar ' + (ageMin < 90 ? 'fresh' : ageMin < 360 ? 'stale' : 'old');
+      detEl.textContent = detail;
+      ageEl.textContent = `${runTime.toLocaleTimeString()} (${ageStr})`;
+    }
+
     const pos = d.positions || [];
     document.getElementById('h-pos').textContent     = pos.length;
     document.getElementById('h-pos-sub').textContent = pos.length ? 'of 4 max' : 'all cash';
@@ -422,7 +454,7 @@ async function loadPositions() {
         <td>$${Number(p.current_price).toFixed(2)}</td>
         <td class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</td>
         <td>$${Number(p.value).toFixed(2)}</td>
-        <td style="color:var(--red)">$${Number(p.stop_loss).toFixed(2)}</td>
+        <td style="color:var(--red)" title="ATR trailing stop">$${Number(p.trail_stop||p.stop_loss||0).toFixed(2)}</td>
         <td style="color:var(--green)">$${Number(p.take_profit).toFixed(2)}</td>
       </tr>`;
     }).join('')

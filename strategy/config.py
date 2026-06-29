@@ -40,6 +40,13 @@ VOLUME_LOOKBACK = 20           # days for avg-volume filter
 # Suppress buys during true market panic only — RSI 30-40 is normal correction territory
 MARKET_REGIME_RSI_MIN = 30
 
+# ── ATR trailing stop ─────────────────────────────────────────────────────────
+ATR_STOP_MULTIPLIER = 2.0   # initial stop = entry − ATR_STOP_MULTIPLIER × ATR
+TRAIL_LOCK1_PROFIT  = 0.025 # when profit ≥ +2.5 %, ratchet stop to entry + 0.5 %
+TRAIL_LOCK1_STOP    = 0.005
+TRAIL_LOCK2_PROFIT  = 0.050 # when profit ≥ +5.0 %, ratchet stop to entry + 2.5 %
+TRAIL_LOCK2_STOP    = 0.025
+
 # ── Market hours (ET) ─────────────────────────────────────────────────────────
 MARKET_OPEN_HOUR = 9
 MARKET_OPEN_MINUTE = 30

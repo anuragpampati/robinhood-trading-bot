@@ -21,6 +21,8 @@ from strategy.signals import generate_signal
 from strategy.config import (
     WATCHLIST, CASH_BUFFER, MAX_POSITION_SIZE, MIN_TRADE_SIZE,
     MAX_OPEN_POSITIONS, STOP_LOSS_PCT, TAKE_PROFIT_PCT, MARKET_REGIME_RSI_MIN,
+    ATR_STOP_MULTIPLIER, TRAIL_LOCK1_PROFIT, TRAIL_LOCK1_STOP,
+    TRAIL_LOCK2_PROFIT, TRAIL_LOCK2_STOP,
 )
 
 TEST_DAYS = 30
@@ -98,8 +100,17 @@ def run():
             price = prices[tk]
             entry = pos["entry_price"]
 
-            if price <= entry * (1 - STOP_LOSS_PCT):
-                reason = f"STOP_LOSS {price/entry-1:+.1%}"
+            # Ratchet trailing stop up (stop only moves up, never down)
+            profit_pct = (price - entry) / entry
+            trail = pos["trail_stop"]
+            if profit_pct >= TRAIL_LOCK2_PROFIT:
+                trail = max(trail, entry * (1 + TRAIL_LOCK2_STOP))
+            elif profit_pct >= TRAIL_LOCK1_PROFIT:
+                trail = max(trail, entry * (1 + TRAIL_LOCK1_STOP))
+            pos["trail_stop"] = trail
+
+            if price <= trail:
+                reason = f"TRAIL_STOP {price/entry-1:+.1%} (stop=${trail:.2f})"
             elif price >= entry * (1 + TAKE_PROFIT_PCT):
                 reason = f"TAKE_PROFIT {price/entry-1:+.1%}"
             else:
@@ -132,10 +143,12 @@ def run():
                 continue
 
             price = prices[tk]
-            qty   = amount / price
+            qty       = amount / price
+            atr_stop  = price * (1 - ATR_STOP_MULTIPLIER * sig.atr_pct) if sig.atr_pct > 0 else price * (1 - STOP_LOSS_PCT)
             cash -= amount
             positions[tk] = dict(
                 qty=qty, entry_price=price, cost=amount, bars_held=0,
+                trail_stop=atr_stop, atr_pct=sig.atr_pct,
             )
             trades.append(dict(
                 ts=bar_ts, ticker=tk, side="BUY", price=price,
