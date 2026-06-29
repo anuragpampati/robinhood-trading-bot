@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-29T15:06:55.740266+00:00",
+  "timestamp": "2026-06-29T16:05:15.852155+00:00",
   "mode": "quick",
   "universe_size": 5,
   "market_open": true,
@@ -7,78 +7,59 @@
     {
       "ticker": "SPY",
       "action": "HOLD",
-      "price": 737.87,
-      "rsi": 53.57,
+      "price": 738.51,
+      "rsi": 54.74,
       "ema_trend": "BEARISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0068,
-      "reason": "low volume (0.06x avg) \u2014 skipping"
+      "atr_pct": 0.0062,
+      "reason": "RSI=54.7 (stable), BB=ABOVE_BAND, EMA=BEARISH"
     },
     {
       "ticker": "QQQ",
       "action": "HOLD",
-      "price": 715.9,
-      "rsi": 49.79,
+      "price": 718.949,
+      "rsi": 53.48,
       "ema_trend": "BEARISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0071,
-      "reason": "low volume (0.11x avg) \u2014 skipping"
+      "atr_pct": 0.007,
+      "reason": "RSI=53.5 (stable), BB=ABOVE_BAND, EMA=BEARISH"
     },
     {
       "ticker": "AAPL",
       "action": "HOLD",
-      "price": 281.815,
-      "rsi": 42.57,
+      "price": 281.505,
+      "rsi": 42.1,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0142,
-      "reason": "RSI=42.6 (stable), BB=IN_BAND, EMA=BEARISH"
+      "atr_pct": 0.0134,
+      "reason": "RSI=42.1 (stable), BB=IN_BAND, EMA=BEARISH"
     },
     {
       "ticker": "MSFT",
       "action": "HOLD",
-      "price": 371.995,
-      "rsi": 54.9,
-      "ema_trend": "NEUTRAL",
+      "price": 371.56,
+      "rsi": 53.97,
+      "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0112,
-      "reason": "low volume (0.13x avg) \u2014 skipping"
+      "atr_pct": 0.0119,
+      "reason": "RSI=54.0 (stable), BB=IN_BAND, EMA=BULLISH"
     },
     {
       "ticker": "NVDA",
       "action": "HOLD",
-      "price": 194.86,
-      "rsi": 40.68,
+      "price": 193.965,
+      "rsi": 37.35,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0111,
-      "reason": "RSI=40.7 (stable), BB=IN_BAND, EMA=BEARISH"
+      "atr_pct": 0.0114,
+      "reason": "RSI=37.3 (stable), BB=IN_BAND, EMA=BEARISH"
     }
   ],
   "net_buy_buy_signals": [],
-  "net_buy_sell_signals": [
-    {
-      "ticker": "MSFT",
-      "price": 371.995,
-      "net_buy_d2": 2348218,
-      "net_buy_d3": -113793,
-      "obv_slope": -221129,
-      "score": 0.0,
-      "reason": "Net buy reversed: 2.35M \u2192 -0.11M | OBV -0.2M/day"
-    },
-    {
-      "ticker": "SPY",
-      "price": 737.87,
-      "net_buy_d2": 3588086,
-      "net_buy_d3": 80408,
-      "obv_slope": -6575105,
-      "score": 0.0,
-      "reason": "Net buy reversed: 3.59M \u2192 0.08M | OBV -6.6M/day"
-    }
-  ]
+  "net_buy_sell_signals": []
 }

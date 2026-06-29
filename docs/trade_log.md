@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-06-29T16:05:15Z
+- SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
+- Regime filter: INACTIVE (SPY RSI=54.7 > 30). Buys permitted but no signals met entry criteria.
+- RSI signals: All HOLD with 0/3 confidence. SPY EMA=BEARISH BB=ABOVE_BAND; QQQ EMA=BEARISH BB=ABOVE_BAND; AAPL RSI=42.1 EMA=BEARISH IN_BAND; MSFT RSI=54.0 EMA=BULLISH IN_BAND; NVDA RSI=37.3 EMA=BEARISH IN_BAND.
+- Net-buy scan: 0 BUY candidates, 0 SELL candidates across 5 tickers.
+- Prices: SPY=$738.51 RSI=54.7, QQQ=$718.95 RSI=53.5, AAPL=$281.50 RSI=42.1, MSFT=$371.56 RSI=54.0, NVDA=$193.97 RSI=37.3.
+- Note: SPY up +$0.64 (+0.1%) from prior cycle. EMAs remain BEARISH on 4 of 5 tickers — no confirmed trend reversal. MSFT is the sole BULLISH EMA but RSI mid-range, no entry signal.
+
 ## 2026-06-29T15:05:05Z
 - SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
 - Regime filter: INACTIVE (SPY RSI=53.6 > 30). Buys permitted but no signals met entry criteria.
