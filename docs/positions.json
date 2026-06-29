@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-29T16:05:15Z",
+  "updated_at": "2026-06-29T17:08:21Z",
   "buying_power": 100.00,
   "positions": [],
   "last_actions": [
-    "2026-06-29T16:05:15Z — Market open — no qualifying signals. Regime filter INACTIVE (SPY RSI=54.7 > 30). All tickers HOLD with 0/3 confidence. No net-buy BUY candidates. SPY EMA bearish BB above band; MSFT EMA bullish but RSI mid-range. No entries triggered. Prices: SPY=$738.51, QQQ=$718.95, AAPL=$281.50, MSFT=$371.56, NVDA=$193.97."
+    "2026-06-29T17:08:21Z — Market open — no qualifying signals. Regime filter INACTIVE (SPY RSI=43.4 > 30). All 5 tickers HOLD with 0/3 confidence. Net-buy scan: 0 BUY, 2 SELL (QQQ, NVDA — not held). No trades executed. Buying power: $100.00, Open positions: 0."
   ]
 }
