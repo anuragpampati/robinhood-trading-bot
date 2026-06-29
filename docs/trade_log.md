@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-06-29T15:05:05Z
+- SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
+- Regime filter: INACTIVE (SPY RSI=53.6 > 30). Buys permitted but no signals met entry criteria.
+- RSI signals: All HOLD with 0/3 confidence. Low volume suppression on SPY/QQQ/MSFT; AAPL RSI=42.6 stable; NVDA RSI=40.7 stable — neither oversold.
+- Net-buy: MSFT (2.35M→-0.11M) and SPY (3.59M→0.08M) net-buy reversed (SELL signals) — no positions held, no action.
+- No net-buy BUY candidates found.
+- Prices: SPY=$737.87 RSI=53.6, QQQ=$715.90 RSI=49.8, AAPL=$281.82 RSI=42.6, MSFT=$372.00 RSI=54.9, NVDA=$194.86 RSI=40.7.
+- Note: Market rebounded since prior cycle (SPY +$8.78, +1.2%); all EMAs remain BEARISH — no confirmed trend reversal.
+
 ## 2026-06-29T14:04:55Z
 - SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
 - Regime filter: INACTIVE (SPY RSI=33.4 > 30). All EMA trends BEARISH.
