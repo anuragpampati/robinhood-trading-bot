@@ -16,7 +16,10 @@ from dataclasses import dataclass, field
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import pandas as pd
 import numpy as np
-import yfinance as yf
+try:
+    import yfinance as yf
+except ImportError:
+    yf = None
 
 TOP_N_RESULTS = 20        # show top N buy/sell signals from full scan
 PARALLEL_WORKERS = 30     # concurrent yfinance downloads

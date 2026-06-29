@@ -1,7 +1,10 @@
 """Fetch OHLCV market data — yfinance (local) or Robinhood historicals cache (cloud)."""
 
 import json
-import yfinance as yf
+try:
+    import yfinance as yf
+except ImportError:
+    yf = None
 import pandas as pd
 from datetime import datetime, timezone
 from .config import DATA_PERIOD, DATA_INTERVAL, WATCHLIST
