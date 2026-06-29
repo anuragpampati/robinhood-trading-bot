@@ -4,6 +4,13 @@
 
 ---
 
+## 2026-06-29T14:04:55Z
+- SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
+- Regime filter: INACTIVE (SPY RSI=33.4 > 30). All EMA trends BEARISH.
+- No RSI buy signals with confidence ≥ 2. No net-buy buy candidates.
+- QQQ net-buy sell noted (5.2M→-6.0M) — no position held, no action.
+- Prices: SPY=$729.09 RSI=33.4, QQQ=$705.86 RSI=34.9, AAPL=$281.30 RSI=41.6, MSFT=$371.34 RSI=54.1, NVDA=$191.72 RSI=26.9.
+
 ## 2026-06-29T08:38:00Z
 - SUMMARY: Market closed — no trades placed. Regime filter active (SPY RSI=33.4 < 40, buys suppressed). QQQ net-buy trend reversed (5.2M→-6.0M, SELL signal noted — no position held). All tickers BEARISH EMA: SPY=$729.09 RSI=33.4, QQQ=$705.86 RSI=34.9, AAPL=$281.30 RSI=41.6, MSFT=$371.34 RSI=54.1, NVDA=$191.72 RSI=26.9. Buying power: $100.00, Open positions: 0.
 
