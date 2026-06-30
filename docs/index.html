@@ -3,128 +3,179 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Robinhood Trading Bot</title>
+<title>Agentic — Trading Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
 :root{
-  --bg:#080b0f;--surface:#0e1117;--surface2:#141820;--border:#1e2330;
-  --green:#00e676;--red:#ff4d6a;--yellow:#fbbf24;--blue:#38bdf8;
-  --text:#e2e8f0;--muted:#64748b;--subtle:#1e2330;
+  --bg:       #09090b;
+  --s1:       #0f1013;
+  --s2:       #141519;
+  --s3:       #1a1d23;
+  --border:   #1f2328;
+  --border2:  #282d35;
+
+  --amber:    #f59e0b;
+  --amber-bg: rgba(245,158,11,.1);
+  --amber-br: rgba(245,158,11,.25);
+
+  --green:    #22c55e;
+  --green-bg: rgba(34,197,94,.1);
+  --green-br: rgba(34,197,94,.25);
+  --red:      #ef4444;
+  --red-bg:   rgba(239,68,68,.1);
+  --red-br:   rgba(239,68,68,.25);
+  --blue:     #60a5fa;
+  --blue-bg:  rgba(96,165,250,.1);
+  --blue-br:  rgba(96,165,250,.25);
+  --yellow:   #f59e0b;
+
+  --tx:       #e4dfd9;
+  --tx2:      #9e9892;
+  --muted:    #4d4a46;
+
+  --sans: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --r:    10px;
 }
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100vh;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
 
 /* ── Login ── */
-#login-screen{position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px}
-.login-box{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:40px 36px;width:100%;max-width:400px}
-.login-logo{font-size:2rem;margin-bottom:8px}
-.login-box h1{font-size:1.3rem;font-weight:700;margin-bottom:4px}
-.login-box p{font-size:.83rem;color:var(--muted);margin-bottom:28px;line-height:1.5}
-.login-field{margin-bottom:16px}
-.login-field label{display:block;font-size:.75rem;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em}
-.login-field input{width:100%;background:#0a0d12;border:1px solid var(--border);border-radius:10px;padding:11px 14px;color:var(--text);font-size:.95rem;outline:none;transition:.15s}
-.login-field input:focus{border-color:var(--green);box-shadow:0 0 0 3px #00e67615}
-.login-error{font-size:.78rem;color:var(--red);margin-top:6px;display:none}
-.btn-login{width:100%;background:var(--green);color:#000;border:none;border-radius:10px;padding:12px;font-size:.9rem;font-weight:700;cursor:pointer;transition:.15s;margin-top:4px}
-.btn-login:hover{background:#00ff85}
-.btn-login:active{transform:scale(.98)}
-.login-hint{font-size:.75rem;color:var(--muted);margin-top:16px;text-align:center}
-.login-hint code{background:#1a1f2a;padding:2px 6px;border-radius:4px;font-size:.72rem;color:#94a3b8}
+#login-screen{position:fixed;inset:0;z-index:200;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px}
+.login-box{width:100%;max-width:360px}
+.login-mark{font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:32px;display:flex;align-items:center;gap:9px}
+.login-mark-dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px var(--amber);flex-shrink:0}
+.login-box h1{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+.login-box p{font-size:.82rem;color:var(--tx2);margin-bottom:28px;line-height:1.6}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--tx2);margin-bottom:7px}
+.field input{width:100%;background:var(--s1);border:1px solid var(--border2);border-radius:7px;padding:11px 14px;color:var(--tx);font-family:var(--sans);font-size:.9rem;outline:none;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none}
+.field input:focus{border-color:var(--amber);box-shadow:0 0 0 3px var(--amber-bg)}
+.field-error{font-size:.74rem;color:var(--red);margin-top:6px;display:none}
+.btn-sign-in{width:100%;background:var(--amber);color:#000;border:none;border-radius:7px;padding:12px;font-family:var(--sans);font-size:.88rem;font-weight:700;cursor:pointer;margin-top:8px;letter-spacing:.01em;transition:background .15s,transform .1s}
+.btn-sign-in:hover{background:#fbbf24}
+.btn-sign-in:active{transform:scale(.98)}
+.login-hint{font-size:.72rem;color:var(--muted);margin-top:18px;text-align:center}
 
-/* ── Top bar ── */
-.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;gap:14px;height:54px;position:sticky;top:0;z-index:10}
-.topbar-logo{font-size:.95rem;font-weight:700;color:#fff;flex:1}
-.market-pill{font-size:.72rem;padding:4px 11px;border-radius:99px;font-weight:600;letter-spacing:.03em}
-.market-open{background:#00e67618;color:var(--green);border:1px solid #00e67633}
-.market-closed{background:#ffffff08;color:var(--muted);border:1px solid var(--border)}
-.topbar-sep{width:1px;height:22px;background:var(--border)}
-.btn{padding:7px 14px;border-radius:8px;border:none;cursor:pointer;font-size:.78rem;font-weight:600;transition:.15s}
-.btn-run{background:var(--green);color:#000}
-.btn-run:hover:not(:disabled){background:#00ff85}
-.btn-run:disabled{background:#1a1f2a;color:var(--muted);cursor:default}
-.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--border)}
-.btn-ghost:hover{background:var(--surface2);color:var(--text)}
-.btn-logout{background:transparent;color:var(--muted);border:none;font-size:.72rem;cursor:pointer;padding:4px 8px}
+/* ── Topbar ── */
+.topbar{background:var(--s1);border-bottom:1px solid var(--border);padding:0 20px;height:52px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:10}
+.topbar-logo{font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);flex:1;display:flex;align-items:center;gap:8px}
+.topbar-logo-dot{width:6px;height:6px;border-radius:50%;background:var(--amber);box-shadow:0 0 6px var(--amber);animation:hb 3s ease-in-out infinite}
+@keyframes hb{0%,100%{opacity:1}50%{opacity:.35}}
+.market-pill{font-family:var(--mono);font-size:.65rem;font-weight:700;padding:3px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.market-open {background:var(--green-bg);color:var(--green);border:1px solid var(--green-br)}
+.market-closed{background:var(--s3);color:var(--muted);border:1px solid var(--border)}
+.topbar-sep{width:1px;height:20px;background:var(--border);flex-shrink:0}
+.btn{padding:6px 13px;border-radius:6px;border:none;cursor:pointer;font-family:var(--sans);font-size:.74rem;font-weight:600;transition:.15s}
+.btn-run{background:var(--amber);color:#000}
+.btn-run:hover:not(:disabled){background:#fbbf24}
+.btn-run:disabled{background:var(--s3);color:var(--muted);cursor:default}
+.btn-ghost{background:transparent;color:var(--tx2);border:1px solid var(--border)}
+.btn-ghost:hover{background:var(--s2);color:var(--tx)}
+.btn-logout{background:transparent;color:var(--muted);border:none;font-family:var(--sans);font-size:.72rem;cursor:pointer;padding:4px 6px}
 .btn-logout:hover{color:var(--red)}
 
-/* ── Tunnel banner ── */
-.tunnel-bar{background:#0e1a2a;border-bottom:1px solid #1a3050;padding:9px 24px;display:none;align-items:center;gap:10px;font-size:.8rem}
+/* ── System bars ── */
+.tunnel-bar{background:#0a1520;border-bottom:1px solid #1a3050;padding:8px 20px;display:none;align-items:center;gap:10px;font-size:.78rem}
 .tunnel-bar.show{display:flex}
 .tunnel-url{color:var(--blue);font-weight:600;text-decoration:none}
 .tunnel-url:hover{text-decoration:underline}
 
-/* ── Run status bar ── */
-.run-bar{background:var(--surface2);border-bottom:1px solid var(--border);padding:10px 24px;display:none;align-items:center;gap:10px;font-size:.8rem}
+.run-bar{background:var(--s2);border-bottom:1px solid var(--border);padding:9px 20px;display:none;align-items:center;gap:10px;font-size:.78rem}
 .run-bar.show{display:flex}
-.run-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.run-dot.running{background:var(--yellow);animation:pulse 1s ease-in-out infinite}
+.run-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.run-dot.running{background:var(--amber);animation:pulse 1.2s ease-in-out infinite}
 .run-dot.success{background:var(--green)}
 .run-dot.error{background:var(--red)}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.run-bar-text{flex:1;color:#94a3b8}
-.run-bar-time{color:var(--muted)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
+.run-bar-text{flex:1;color:var(--tx2)}
+.run-bar-time{font-family:var(--mono);font-size:.68rem;color:var(--muted)}
 
-/* ── Main ── */
-main{max-width:1160px;margin:0 auto;padding:24px 16px 48px}
+/* ── Last-run banner ── */
+.last-run-bar{padding:9px 20px;display:none;align-items:baseline;gap:12px;font-size:.78rem;border-bottom:1px solid var(--border)}
+.last-run-bar.fresh{background:#0d1a10;border-left:3px solid var(--green)}
+.last-run-bar.stale{background:#1a1507;border-left:3px solid var(--amber)}
+.last-run-bar.old  {background:#180f0f;border-left:3px solid var(--red)}
+.last-run-label{color:var(--tx2);font-weight:500;flex-shrink:0;white-space:nowrap}
+.last-run-detail{color:var(--tx2);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.last-run-age{font-family:var(--mono);font-size:.67rem;color:var(--muted);flex-shrink:0;white-space:nowrap}
 
-/* ── Hero stats ── */
-.hero{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
-@media(max-width:700px){.hero{grid-template-columns:repeat(2,1fr)}}
-.hero-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px 20px 16px}
-.hero-card .val{font-size:2rem;font-weight:800;line-height:1;color:#fff}
-.hero-card .lbl{font-size:.72rem;color:var(--muted);margin-top:6px;text-transform:uppercase;letter-spacing:.06em}
-.hero-card .sub{font-size:.75rem;margin-top:4px}
-.green{color:var(--green)!important}
-.red{color:var(--red)!important}
-.yellow{color:var(--yellow)!important}
-.blue{color:var(--blue)!important}
+/* ── Layout ── */
+main{max-width:1200px;margin:0 auto;padding:24px 16px 64px}
 
-/* ── Section label ── */
-.sec{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:8px;margin-top:24px}
+/* ── Hero ── */
+.hero{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:28px}
+@media(max-width:720px){.hero{grid-template-columns:1fr 1fr}}
+.hcard{background:var(--s1);border:1px solid var(--border);border-radius:var(--r);padding:18px 18px 14px;position:relative;overflow:hidden}
+.hcard::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--border2)}
+.hcard.accent::after{background:var(--amber)}
+.hval{font-family:var(--mono);font-size:1.6rem;font-weight:700;line-height:1;letter-spacing:-.025em}
+.hlbl{font-size:.63rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-top:9px}
+.hsub{font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-top:3px}
 
-/* ── Cards / tables ── */
-.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px}
-.card-hdr{padding:14px 18px;border-bottom:1px solid var(--subtle);display:flex;align-items:center;justify-content:space-between}
-.card-hdr h3{font-size:.82rem;font-weight:600;color:#94a3b8}
-.card-hdr .ts{font-size:.72rem;color:var(--muted)}
+/* ── Section headers ── */
+.sec{display:flex;align-items:center;gap:10px;margin:28px 0 10px}
+.sec-lbl{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);white-space:nowrap}
+.sec-rule{flex:1;height:1px;background:var(--border)}
+.sec-ts{font-family:var(--mono);font-size:.64rem;color:var(--muted)}
+
+/* ── Card ── */
+.card{background:var(--s1);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:10px}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ── Table ── */
 table{width:100%;border-collapse:collapse;font-size:.82rem}
-thead tr{background:#0a0d12}
-th{text-align:left;padding:9px 16px;color:var(--muted);font-weight:500;font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid var(--subtle)}
-td{padding:10px 16px;border-bottom:1px solid var(--subtle)}
+thead tr{background:var(--s2)}
+th{text-align:left;padding:9px 14px;color:var(--muted);font-weight:600;font-size:.62rem;text-transform:uppercase;letter-spacing:.09em;border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:10px 14px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:.79rem;color:var(--tx)}
 tr:last-child td{border-bottom:none}
-tr:hover td{background:#0f1319}
-.tk{font-weight:700;color:#fff}
-.BUY{color:var(--green);font-weight:700}
-.SELL{color:var(--red);font-weight:700}
-.HOLD{color:var(--muted)}
-.badge{display:inline-block;font-size:.68rem;font-weight:600;padding:2px 8px;border-radius:99px}
-.badge-green{background:#00e67615;color:var(--green);border:1px solid #00e67630}
-.badge-red{background:#ff4d6a15;color:var(--red);border:1px solid #ff4d6a30}
-.badge-yellow{background:#fbbf2415;color:var(--yellow);border:1px solid #fbbf2430}
-.badge-blue{background:#38bdf815;color:var(--blue);border:1px solid #38bdf830}
-.empty{padding:28px 18px;color:var(--muted);font-size:.82rem;text-align:center}
+tr:hover td{background:var(--s2)}
+.tk{font-weight:700;color:var(--tx);letter-spacing:.04em}
 
-/* ── Trade log ── */
-.log-wrap{padding:0 18px 8px}
-.log-entry{padding:14px 0;border-bottom:1px solid var(--subtle)}
+/* ── Colours ── */
+.green{color:var(--green)!important}
+.red  {color:var(--red)  !important}
+.yellow{color:var(--amber)!important}
+.blue {color:var(--blue) !important}
+.BUY {color:var(--green);font-weight:700}
+.SELL{color:var(--red)  ;font-weight:700}
+.HOLD{color:var(--muted)}
+
+/* ── Badges ── */
+.badge{display:inline-block;font-family:var(--mono);font-size:.63rem;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:.04em;text-transform:uppercase}
+.badge-green {background:var(--green-bg);color:var(--green);border:1px solid var(--green-br)}
+.badge-red   {background:var(--red-bg)  ;color:var(--red)  ;border:1px solid var(--red-br)}
+.badge-yellow{background:var(--amber-bg);color:var(--amber) ;border:1px solid var(--amber-br)}
+.badge-blue  {background:var(--blue-bg) ;color:var(--blue)  ;border:1px solid var(--blue-br)}
+
+/* ── Confidence pips ── */
+.conf-bar{display:inline-flex;gap:3px;vertical-align:middle}
+.conf-pip{width:7px;height:7px;border-radius:2px;background:var(--border2)}
+.conf-pip.on{background:var(--amber)}
+
+/* ── Empty ── */
+.empty{padding:32px 18px;color:var(--muted);font-size:.78rem;text-align:center;font-family:var(--mono)}
+
+/* ── Activity log ── */
+.log-wrap{padding:2px 0 4px}
+.log-entry{padding:14px 16px 14px 14px;border-bottom:1px solid var(--border);border-left:2px solid transparent;transition:border-color .15s,background .15s}
 .log-entry:last-child{border-bottom:none}
-.log-ts{font-size:.72rem;color:var(--muted);margin-bottom:4px}
-.log-line{font-size:.82rem;color:#94a3b8;line-height:1.6}
-.log-line.buy-line{color:var(--green)}
+.log-entry:hover{border-left-color:var(--amber);background:var(--s2)}
+.log-ts{font-family:var(--mono);font-size:.67rem;font-weight:700;color:var(--amber);margin-bottom:6px;letter-spacing:.04em}
+.log-line{font-family:var(--mono);font-size:.74rem;color:var(--tx2);line-height:1.65}
+.log-line.buy-line {color:var(--green)}
 .log-line.sell-line{color:var(--red)}
 
-/* ── Last run banner ── */
-.last-run-bar{padding:8px 24px;display:flex;align-items:center;gap:10px;font-size:.78rem;border-bottom:1px solid var(--border);background:var(--surface)}
-.last-run-bar.fresh{border-left:3px solid var(--green)}
-.last-run-bar.stale{border-left:3px solid var(--yellow)}
-.last-run-bar.old{border-left:3px solid var(--red)}
-.last-run-label{color:var(--muted);flex-shrink:0}
-.last-run-detail{color:#94a3b8;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.last-run-age{color:var(--muted);flex-shrink:0}
+/* ── Responsive ── */
+@media(max-width:600px){.hide-sm{display:none!important}}
+@media(max-width:400px){td,th{padding:8px 10px}.hval{font-size:1.35rem}}
 
-/* ── Misc ── */
-.conf-bar{display:inline-flex;gap:3px;vertical-align:middle}
-.conf-pip{width:7px;height:7px;border-radius:2px;background:var(--border)}
-.conf-pip.on{background:var(--green)}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
 </style>
 </head>
 <body>
@@ -132,124 +183,157 @@ tr:hover td{background:#0f1319}
 <!-- ── Login ── -->
 <div id="login-screen">
   <div class="login-box">
-    <div class="login-logo">🤖</div>
-    <h1>Trading Bot</h1>
+    <div class="login-mark"><span class="login-mark-dot"></span>AGENTIC</div>
+    <h1>Trading Dashboard</h1>
     <p>Sign in to view live signals, positions, and trade history.</p>
-    <div class="login-field">
+    <div class="field">
       <label>Username</label>
       <input id="user-input" type="text" placeholder="username" autocomplete="username" autocorrect="off" autocapitalize="none"/>
     </div>
-    <div class="login-field">
+    <div class="field">
       <label>Password</label>
-      <input id="pw-input" type="password" placeholder="password" autocomplete="current-password"/>
-      <div class="login-error" id="pw-error">Incorrect username or password.</div>
+      <input id="pw-input" type="password" placeholder="••••••••" autocomplete="current-password"/>
+      <div class="field-error" id="pw-error">Incorrect username or password.</div>
     </div>
-    <button class="btn-login" onclick="doLogin()">Sign In</button>
-    <p class="login-hint">Use your dashboard credentials to sign in.</p>
+    <button class="btn-sign-in" onclick="doLogin()">Sign in</button>
+    <p class="login-hint">Use your dashboard credentials to access.</p>
   </div>
 </div>
 
-<!-- ── Top bar ── -->
+<!-- ── Topbar ── -->
 <div class="topbar">
-  <span class="topbar-logo">🤖 Trading Bot</span>
+  <span class="topbar-logo"><span class="topbar-logo-dot"></span>AGENTIC</span>
   <span class="market-pill market-closed" id="market-pill">Market Closed</span>
   <div class="topbar-sep"></div>
-  <button class="btn btn-run" id="run-btn" onclick="triggerRun()" disabled>▶ Run Now</button>
-  <button class="btn btn-ghost" onclick="refreshAll()">↻ Refresh</button>
+  <button class="btn btn-run" id="run-btn" onclick="triggerRun()" disabled>▶ Run</button>
+  <button class="btn btn-ghost" onclick="refreshAll()" title="Refresh">↻</button>
   <button class="btn-logout" onclick="logout()">Sign out</button>
 </div>
 
 <!-- ── Tunnel banner ── -->
 <div class="tunnel-bar" id="tunnel-bar">
-  <span style="color:var(--muted)">🌐 Remote URL:</span>
+  <span style="color:var(--muted)">Remote</span>
   <a class="tunnel-url" id="tunnel-url" href="#" target="_blank">detecting…</a>
-  <span style="color:var(--muted);font-size:.72rem">(changes on reboot)</span>
-  <button onclick="copyTunnel()" class="btn btn-ghost" style="padding:3px 10px;font-size:.72rem;margin-left:4px">Copy</button>
+  <button onclick="copyTunnel()" class="btn btn-ghost" style="padding:3px 9px;font-size:.68rem">Copy</button>
 </div>
 
-<!-- ── Last cloud run status ── -->
-<div class="last-run-bar" id="last-run-bar" style="display:none">
-  <span class="last-run-label">☁ Last cloud run:</span>
-  <span class="last-run-detail" id="last-run-detail">—</span>
-  <span class="last-run-age" id="last-run-age"></span>
-</div>
-
-<!-- ── Run status bar ── -->
+<!-- ── Run status ── -->
 <div class="run-bar" id="run-bar">
   <span class="run-dot" id="run-dot"></span>
   <span class="run-bar-text" id="run-bar-text">Idle</span>
   <span class="run-bar-time" id="run-bar-time"></span>
 </div>
 
+<!-- ── Last cloud run ── -->
+<div class="last-run-bar" id="last-run-bar" style="display:none">
+  <span class="last-run-label">Last run</span>
+  <span class="last-run-detail" id="last-run-detail">—</span>
+  <span class="last-run-age" id="last-run-age"></span>
+</div>
+
 <main>
-  <!-- Hero stats -->
+
+  <!-- Hero -->
   <div class="hero">
-    <div class="hero-card">
-      <div class="val green" id="h-cash">—</div>
-      <div class="lbl">Buying Power</div>
+    <div class="hcard accent">
+      <div class="hval green" id="h-cash">—</div>
+      <div class="hlbl">Buying Power</div>
     </div>
-    <div class="hero-card">
-      <div class="val" id="h-pos">—</div>
-      <div class="lbl">Open Positions</div>
-      <div class="sub" style="color:var(--muted)" id="h-pos-sub"></div>
+    <div class="hcard">
+      <div class="hval" id="h-pos">—</div>
+      <div class="hlbl">Positions</div>
+      <div class="hsub" id="h-pos-sub">of 4 max</div>
     </div>
-    <div class="hero-card">
-      <div class="val green" id="h-buys">—</div>
-      <div class="lbl">Buy Signals</div>
-      <div class="sub" style="color:var(--muted)" id="h-sig-ts"></div>
+    <div class="hcard">
+      <div class="hval green" id="h-buys">—</div>
+      <div class="hlbl">Buy Signals</div>
+      <div class="hsub" id="h-sig-ts"></div>
     </div>
-    <div class="hero-card">
-      <div class="val red" id="h-sells">—</div>
-      <div class="lbl">Sell Signals</div>
+    <div class="hcard">
+      <div class="hval red" id="h-sells">—</div>
+      <div class="hlbl">Sell Signals</div>
     </div>
   </div>
 
   <!-- Positions -->
-  <p class="sec">Current Positions</p>
+  <div class="sec">
+    <span class="sec-lbl">Positions</span>
+    <div class="sec-rule"></div>
+    <span class="sec-ts" id="pos-ts"></span>
+  </div>
   <div class="card">
-    <div class="card-hdr"><h3>Holdings</h3><span class="ts" id="pos-ts">—</span></div>
-    <table>
-      <thead><tr>
-        <th>Ticker</th><th>Shares</th><th>Avg Cost</th>
-        <th>Current</th><th>P&amp;L</th><th>Value</th>
-        <th>Stop</th><th>Target</th>
-      </tr></thead>
-      <tbody id="pos-body"><tr><td colspan="8" class="empty">Loading…</td></tr></tbody>
-    </table>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>Ticker</th>
+          <th class="hide-sm">Shares</th>
+          <th>Cost</th>
+          <th>Price</th>
+          <th>P&amp;L</th>
+          <th class="hide-sm">Value</th>
+          <th>Trail Stop</th>
+          <th class="hide-sm">Target</th>
+        </tr></thead>
+        <tbody id="pos-body"><tr><td colspan="8" class="empty">Loading…</td></tr></tbody>
+      </table>
+    </div>
   </div>
 
-  <!-- RSI signals -->
-  <p class="sec">Watchlist — RSI / BB / EMA</p>
+  <!-- Signals -->
+  <div class="sec">
+    <span class="sec-lbl">Signals — RSI / BB / EMA</span>
+    <div class="sec-rule"></div>
+    <span class="sec-ts" id="rsi-ts"></span>
+  </div>
   <div class="card">
-    <div class="card-hdr"><h3>Intraday Signals</h3><span class="ts" id="rsi-ts">—</span></div>
-    <table>
-      <thead><tr>
-        <th>Ticker</th><th>Signal</th><th>Price</th>
-        <th>RSI</th><th>EMA Trend</th><th>BB</th><th>Confidence</th>
-      </tr></thead>
-      <tbody id="rsi-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
-    </table>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>Ticker</th>
+          <th>Action</th>
+          <th>Price</th>
+          <th>RSI</th>
+          <th>EMA</th>
+          <th class="hide-sm">BB</th>
+          <th>Conf</th>
+        </tr></thead>
+        <tbody id="rsi-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
+      </table>
+    </div>
   </div>
 
-  <!-- Net buy signals -->
-  <p class="sec">S&amp;P 500 Scan — Net Buy Accumulation</p>
+  <!-- Net Buy -->
+  <div class="sec">
+    <span class="sec-lbl">3-Day Net Buy Leaders</span>
+    <div class="sec-rule"></div>
+    <span class="sec-ts" id="nb-ts"></span>
+  </div>
   <div class="card">
-    <div class="card-hdr"><h3>3-Day Leaders</h3><span class="ts" id="nb-ts">—</span></div>
-    <table>
-      <thead><tr>
-        <th>Ticker</th><th>Price</th><th>D-2 Flow</th>
-        <th>D-1 Flow</th><th>Today</th><th>OBV</th><th>Score</th>
-      </tr></thead>
-      <tbody id="nb-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
-    </table>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th class="hide-sm">D-2 Flow</th>
+          <th class="hide-sm">D-1 Flow</th>
+          <th>Today</th>
+          <th>OBV</th>
+          <th>Score</th>
+        </tr></thead>
+        <tbody id="nb-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
+      </table>
+    </div>
   </div>
 
-  <!-- Trade log -->
-  <p class="sec">Trade History</p>
+  <!-- Trade History -->
+  <div class="sec">
+    <span class="sec-lbl">Trade History</span>
+    <div class="sec-rule"></div>
+  </div>
   <div class="card">
-    <div class="card-hdr"><h3>Activity Log</h3></div>
     <div class="log-wrap" id="log-wrap"><div class="empty">Loading…</div></div>
   </div>
+
 </main>
 
 <script>
@@ -327,12 +411,12 @@ function triggerRun() {
   })
     .then(r => r.json())
     .then(d => {
-      if (d.error) { btn.disabled = false; btn.textContent = '▶ Run Now'; alert(d.error); return; }
+      if (d.error) { btn.disabled = false; btn.textContent = '▶ Run'; alert(d.error); return; }
       btn.textContent = '⏳ Running…';
       showRunBar('running', 'Trading cycle in progress…');
       if (!polling) pollStatus();
     })
-    .catch(() => { btn.disabled = false; btn.textContent = '▶ Run Now'; });
+    .catch(() => { btn.disabled = false; btn.textContent = '▶ Run'; });
 }
 
 function pollStatus() {
@@ -346,7 +430,7 @@ function pollStatus() {
         setTimeout(pollStatus, 3000);
       } else {
         polling = false;
-        btn.disabled = false; btn.textContent = '▶ Run Now';
+        btn.disabled = false; btn.textContent = '▶ Run';
         if (d.status === 'success') {
           showRunBar('success', 'Cycle complete — ' + (d.last_log_line || ''));
           refreshAll();
@@ -398,7 +482,7 @@ async function loadSignals() {
     document.getElementById('nb-ts').textContent  = ts ? 'Updated '+ts : '';
     document.getElementById('h-sig-ts').textContent = ts ? ts : '';
 
-    // Drive last-run banner from signals timestamp (updated every run at Step 3)
+    // Drive last-run banner from signals timestamp (written at Step 3 of every run)
     if (d.timestamp) {
       const runBar = document.getElementById('last-run-bar');
       const ageMin = Math.round((Date.now() - new Date(d.timestamp)) / 60000);
@@ -408,35 +492,33 @@ async function loadSignals() {
       document.getElementById('last-run-age').textContent = `${new Date(d.timestamp).toLocaleTimeString()} (${ageStr})`;
     }
 
-    const nb    = d.net_buy_buy_signals   || [];
-    const sells = d.net_buy_sell_signals  || [];
-    const rsi   = d.rsi_signals           || [];
+    const nb    = d.net_buy_buy_signals  || [];
+    const sells = d.net_buy_sell_signals || [];
+    const rsi   = d.rsi_signals          || [];
 
     document.getElementById('h-buys').textContent  = nb.length + rsi.filter(s=>s.action==='BUY').length;
     document.getElementById('h-sells').textContent = sells.length + rsi.filter(s=>s.action==='SELL').length;
 
-    // RSI table
     document.getElementById('rsi-body').innerHTML = rsi.length ? rsi.map(s => `
       <tr>
         <td class="tk">${s.ticker}</td>
         <td><span class="${s.action}">${s.action}</span></td>
         <td>$${Number(s.price).toFixed(2)}</td>
-        <td style="color:${s.rsi<30?'var(--green)':s.rsi>70?'var(--red)':'var(--text)'}">${Number(s.rsi).toFixed(1)}</td>
+        <td style="color:${s.rsi<30?'var(--green)':s.rsi>70?'var(--red)':'var(--tx)'}">${Number(s.rsi).toFixed(1)}</td>
         <td><span class="badge ${s.ema_trend==='BULLISH'?'badge-green':s.ema_trend==='BEARISH'?'badge-red':'badge-blue'}">${s.ema_trend}</span></td>
-        <td>${s.bb_signal||s.vwap_bias||'—'}</td>
+        <td class="hide-sm">${s.bb_signal||s.vwap_bias||'—'}</td>
         <td>${confPips(s.confidence||0)}</td>
       </tr>`).join('')
     : '<tr><td colspan="7" class="empty">No watchlist signals</td></tr>';
 
-    // Net buy table
     document.getElementById('nb-body').innerHTML = nb.length ? nb.slice(0,12).map(s => `
       <tr>
         <td class="tk">${s.ticker}</td>
         <td>$${Number(s.price).toFixed(2)}</td>
-        <td style="color:var(--muted)">${fmt(s.net_buy_d1||0)}</td>
-        <td style="color:#94a3b8">${fmt(s.net_buy_d2||0)}</td>
+        <td class="hide-sm" style="color:var(--muted)">${fmt(s.net_buy_d1||0)}</td>
+        <td class="hide-sm" style="color:var(--tx2)">${fmt(s.net_buy_d2||0)}</td>
         <td style="color:var(--green);font-weight:600">${fmt(s.net_buy_d3||0)}</td>
-        <td>${(s.obv_slope||0)>0?'<span style="color:var(--green)">↑ rising</span>':'<span style="color:var(--muted)">↓ falling</span>'}</td>
+        <td>${(s.obv_slope||0)>0?'<span style="color:var(--green)">↑</span>':'<span style="color:var(--muted)">↓</span>'}</td>
         <td><span class="badge badge-yellow">${Number(s.score||0).toFixed(1)}</span></td>
       </tr>`).join('')
     : '<tr><td colspan="7" class="empty">No net-buy accumulation signals right now</td></tr>';
@@ -453,7 +535,6 @@ async function loadPositions() {
     const d = await fetch(url).then(r => r.json());
     document.getElementById('h-cash').textContent = '$'+Number(d.buying_power||0).toFixed(2);
 
-    // Show last_actions summary in the banner detail line
     const lastAction = (d.last_actions||[])[0];
     if (lastAction) document.getElementById('last-run-detail').textContent = lastAction;
 
@@ -466,13 +547,13 @@ async function loadPositions() {
       const pnl = Number(p.pnl_pct||0);
       return `<tr>
         <td class="tk">${p.ticker}</td>
-        <td>${Number(p.quantity).toFixed(4)}</td>
+        <td class="hide-sm">${Number(p.quantity).toFixed(4)}</td>
         <td>$${Number(p.avg_cost).toFixed(2)}</td>
         <td>$${Number(p.current_price).toFixed(2)}</td>
         <td class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</td>
-        <td>$${Number(p.value).toFixed(2)}</td>
+        <td class="hide-sm">$${Number(p.value).toFixed(2)}</td>
         <td style="color:var(--red)" title="ATR trailing stop">$${Number(p.trail_stop||p.stop_loss||0).toFixed(2)}</td>
-        <td style="color:var(--green)">$${Number(p.take_profit).toFixed(2)}</td>
+        <td class="hide-sm" style="color:var(--green)">$${Number(p.take_profit).toFixed(2)}</td>
       </tr>`;
     }).join('')
     : '<tr><td colspan="8" class="empty">No open positions — holding cash</td></tr>';
@@ -495,7 +576,7 @@ async function loadLog() {
       return `<div class="log-entry">
         <div class="log-ts">${ts}</div>
         ${items.map(i => {
-          const cls = /BUY/.test(i) ? 'buy-line' : /SELL|stop|take/.test(i.toLowerCase()) ? 'sell-line' : '';
+          const cls = /BUY/.test(i) ? 'buy-line' : /SELL|stop|take/i.test(i) ? 'sell-line' : '';
           return `<div class="log-line ${cls}">${i}</div>`;
         }).join('')}
       </div>`;
@@ -552,7 +633,6 @@ async function init() {
 const IS_GITHUB_PAGES = window.location.hostname.includes('github.io');
 document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshAll(); });
 if (IS_GITHUB_PAGES) {
-  // Check saved session
   const savedAuth = localStorage.getItem('rh_auth');
   if (savedAuth) {
     try {
@@ -560,22 +640,15 @@ if (IS_GITHUB_PAGES) {
       if (u === GH_USER && p === GH_PASS) { hidLogin(); init(); }
     } catch(e) { localStorage.removeItem('rh_auth'); }
   }
-  // Login screen stays visible if no valid saved auth
 } else if (TOKEN) {
   fetch('/api/status', {headers:{'X-Token': TOKEN}})
     .then(r => {
-      if (r.status === 401) {
-        TOKEN = ''; localStorage.removeItem('rh_token');
-        return;
-      }
-      if (!r.ok) { hidLogin(); init(); return; } // server exists but 4xx/5xx → read-only
+      if (r.status === 401) { TOKEN = ''; localStorage.removeItem('rh_token'); return; }
+      if (!r.ok) { hidLogin(); init(); return; }
       CAN_RUN = true;
       hidLogin(); init();
     })
-    .catch(() => {
-      // Server unreachable — read-only mode
-      hidLogin(); init();
-    });
+    .catch(() => { hidLogin(); init(); });
 }
 
 setInterval(refreshAll, 60000);
