@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-30T19:09:00Z",
+  "updated_at": "2026-06-30T20:08:28Z",
   "buying_power": 100.0,
   "positions": [],
   "last_actions": [
-    "2026-06-30T19:09:00Z — Market open — no trades placed. QQQ SELL signal (RSI=70.5, conf=2/3) but no position held. SPY net-buy trend reversed (8.40M→3.05M) — not held, no sell. All other tickers HOLD (0/3 confidence). All EMAs BULLISH. Prices: SPY=$747.13, QQQ=$736.49, AAPL=$286.99, MSFT=$370.49, NVDA=$198.85. Buying power: $100.00, Open positions: 0."
+    "2026-06-30T20:08:28Z — Market closed — no trades placed. All tickers HOLD (0/3 confidence), EMAs BULLISH across watchlist. SPY net-buy trend reversed (8.40M→2.14M) — not held, no sell. Prices: SPY=$746.33, QQQ=$735.76, AAPL=$289.09, MSFT=$372.83, NVDA=$199.76. Buying power: $100.00, Open positions: 0."
   ]
 }
