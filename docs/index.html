@@ -134,14 +134,18 @@ tr:hover td{background:#0f1319}
   <div class="login-box">
     <div class="login-logo">🤖</div>
     <h1>Trading Bot</h1>
-    <p>Enter your dashboard password to access the trading controls and live data.</p>
+    <p>Sign in to view live signals, positions, and trade history.</p>
+    <div class="login-field">
+      <label>Username</label>
+      <input id="user-input" type="text" placeholder="username" autocomplete="username" autocorrect="off" autocapitalize="none"/>
+    </div>
     <div class="login-field">
       <label>Password</label>
-      <input id="pw-input" type="password" placeholder="Paste your token…" autocomplete="current-password"/>
-      <div class="login-error" id="pw-error">Incorrect password. Check ~/.robinhood_token on your Mac.</div>
+      <input id="pw-input" type="password" placeholder="password" autocomplete="current-password"/>
+      <div class="login-error" id="pw-error">Incorrect username or password.</div>
     </div>
     <button class="btn-login" onclick="doLogin()">Sign In</button>
-    <p class="login-hint">Find your password by running:<br/><code>cat ~/.robinhood_token</code></p>
+    <p class="login-hint">Use your dashboard credentials to sign in.</p>
   </div>
 </div>
 
@@ -250,30 +254,40 @@ tr:hover td{background:#0f1319}
 
 <script>
 // ── Auth ──────────────────────────────────────────────────────────────────────
-// CAN_RUN = true once we confirm /api/status is reachable with the token.
-// Works on localhost AND tunnel URL — not just hostname-based.
-let TOKEN  = localStorage.getItem('rh_token') || '';
+let TOKEN   = localStorage.getItem('rh_token') || '';
 let CAN_RUN = false;
 
+// GitHub Pages credentials (client-side gate — data files are public, this is UI convenience)
+const GH_USER = 'anurag';
+const GH_PASS = 'rh2026';
+
 function doLogin() {
-  const pw = document.getElementById('pw-input').value.trim();
-  if (!pw) return;
-  // Always verify against the server (works on localhost + tunnel)
+  const user = (document.getElementById('user-input').value || '').trim().toLowerCase();
+  const pw   = document.getElementById('pw-input').value.trim();
+  if (!user || !pw) return;
+
+  if (window.location.hostname.includes('github.io')) {
+    if (user === GH_USER && pw === GH_PASS) {
+      localStorage.setItem('rh_auth', btoa(user + ':' + pw));
+      hidLogin(); init();
+    } else {
+      showLoginError();
+    }
+    return;
+  }
+
   fetch('/api/status', {headers:{'X-Token': pw}})
     .then(r => {
       if (r.status === 401) { showLoginError(); return; }
       TOKEN = pw;
       localStorage.setItem('rh_token', TOKEN);
       CAN_RUN = true;
-      hidLogin();
-      init();
+      hidLogin(); init();
     })
     .catch(() => {
-      // Can't reach server — still save token, load read-only data
       TOKEN = pw;
       localStorage.setItem('rh_token', TOKEN);
-      hidLogin();
-      init();
+      hidLogin(); init();
     });
 }
 
@@ -287,14 +301,18 @@ function logout() {
   TOKEN = '';
   CAN_RUN = false;
   localStorage.removeItem('rh_token');
+  localStorage.removeItem('rh_auth');
   document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('user-input').value = '';
   document.getElementById('pw-input').value = '';
   document.getElementById('pw-error').style.display = 'none';
 }
 
-document.getElementById('pw-input').addEventListener('keydown', e => {
-  if (e.key === 'Enter') doLogin();
-});
+['user-input','pw-input'].forEach(id =>
+  document.getElementById(id).addEventListener('keydown', e => {
+    if (e.key === 'Enter') doLogin();
+  })
+);
 
 // ── Run Now ───────────────────────────────────────────────────────────────────
 let polling = false;
@@ -380,6 +398,16 @@ async function loadSignals() {
     document.getElementById('nb-ts').textContent  = ts ? 'Updated '+ts : '';
     document.getElementById('h-sig-ts').textContent = ts ? ts : '';
 
+    // Drive last-run banner from signals timestamp (updated every run at Step 3)
+    if (d.timestamp) {
+      const runBar = document.getElementById('last-run-bar');
+      const ageMin = Math.round((Date.now() - new Date(d.timestamp)) / 60000);
+      const ageStr = ageMin < 60 ? `${ageMin}m ago` : `${Math.round(ageMin/60)}h ago`;
+      runBar.style.display = 'flex';
+      runBar.className = 'last-run-bar ' + (ageMin < 90 ? 'fresh' : ageMin < 360 ? 'stale' : 'old');
+      document.getElementById('last-run-age').textContent = `${new Date(d.timestamp).toLocaleTimeString()} (${ageStr})`;
+    }
+
     const nb    = d.net_buy_buy_signals   || [];
     const sells = d.net_buy_sell_signals  || [];
     const rsi   = d.rsi_signals           || [];
@@ -425,20 +453,9 @@ async function loadPositions() {
     const d = await fetch(url).then(r => r.json());
     document.getElementById('h-cash').textContent = '$'+Number(d.buying_power||0).toFixed(2);
 
-    // Last cloud run banner
-    if (d.updated_at) {
-      const runBar  = document.getElementById('last-run-bar');
-      const ageEl   = document.getElementById('last-run-age');
-      const detEl   = document.getElementById('last-run-detail');
-      const runTime = new Date(d.updated_at);
-      const ageMin  = Math.round((Date.now() - runTime) / 60000);
-      const ageStr  = ageMin < 60 ? `${ageMin}m ago` : `${Math.round(ageMin/60)}h ago`;
-      const detail  = (d.last_actions||[])[0] || 'No summary';
-      runBar.style.display = 'flex';
-      runBar.className = 'last-run-bar ' + (ageMin < 90 ? 'fresh' : ageMin < 360 ? 'stale' : 'old');
-      detEl.textContent = detail;
-      ageEl.textContent = `${runTime.toLocaleTimeString()} (${ageStr})`;
-    }
+    // Show last_actions summary in the banner detail line
+    const lastAction = (d.last_actions||[])[0];
+    if (lastAction) document.getElementById('last-run-detail').textContent = lastAction;
 
     const pos = d.positions || [];
     document.getElementById('h-pos').textContent     = pos.length;
@@ -474,7 +491,7 @@ async function loadLog() {
     wrap.innerHTML = entries.map(e => {
       const lines = e.trim().split('\n');
       const ts    = lines[0];
-      const items = lines.slice(1).filter(l => l.startsWith('-')).map(l => l.replace(/^-\s*/,''));
+      const items = lines.slice(1).filter(l => l.trim()).map(l => l.replace(/^-\s*/,''));
       return `<div class="log-entry">
         <div class="log-ts">${ts}</div>
         ${items.map(i => {
@@ -531,11 +548,19 @@ async function init() {
   refreshAll();
 }
 
-// Startup: on GitHub Pages always use static files — never probe /api/*
+// Startup
 const IS_GITHUB_PAGES = window.location.hostname.includes('github.io');
+document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshAll(); });
 if (IS_GITHUB_PAGES) {
-  // Read-only public view — CAN_RUN stays false, fetches use signals.json etc.
-  hidLogin(); init();
+  // Check saved session
+  const savedAuth = localStorage.getItem('rh_auth');
+  if (savedAuth) {
+    try {
+      const [u, p] = atob(savedAuth).split(':');
+      if (u === GH_USER && p === GH_PASS) { hidLogin(); init(); }
+    } catch(e) { localStorage.removeItem('rh_auth'); }
+  }
+  // Login screen stays visible if no valid saved auth
 } else if (TOKEN) {
   fetch('/api/status', {headers:{'X-Token': TOKEN}})
     .then(r => {
