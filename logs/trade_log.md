@@ -64,3 +64,9 @@
 - MSFT BUY signal persists: RSI=26.0 (deeply oversold), below VWAP, confidence=2. EMA bearish.
 - DAL and TPL show net-buy streaks but are outside primary watchlist — no action per strategy rules.
 - Plan: Execute MSFT BUY ($20) at market open tomorrow (10:00–15:30 ET) if signal holds.
+
+## 2026-06-30T18:09:03Z
+- SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
+- RSI signals: All HOLD with 0/3 confidence. SPY RSI=68.0 EMA=BULLISH BB=ABOVE_BAND; QQQ RSI=69.8 EMA=BULLISH BB=ABOVE_BAND; AAPL RSI=56.4 EMA=BULLISH BB=ABOVE_BAND; MSFT RSI=52.6 EMA=BULLISH BB=IN_BAND; NVDA RSI=56.4 EMA=NEUTRAL BB=ABOVE_BAND.
+- Net-buy trend: 0 BUY, 1 SELL (SPY reversed 8.40M→1.34M, OBV -1.8M/day) — not held, no action.
+- Prices: SPY=$746.49, QQQ=$735.78, AAPL=$288.42, MSFT=$370.89, NVDA=$198.39.
