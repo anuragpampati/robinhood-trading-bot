@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T15:10:35Z",
+  "updated_at": "2026-07-01T16:13:03Z",
   "buying_power": 85.0,
   "market_regime": "normal",
   "positions": [
@@ -7,9 +7,9 @@
       "ticker": "PYPL",
       "quantity": 0.338753,
       "avg_cost": 44.28,
-      "current_price": 44.87,
-      "pnl_pct": 0.0133,
-      "value": 15.2,
+      "current_price": 44.77,
+      "pnl_pct": 0.0111,
+      "value": 15.17,
       "entry_atr_pct": 0.0099,
       "entry_time": "2026-07-01T14:12:27Z",
       "trail_stop": 43.4,
@@ -19,6 +19,6 @@
     }
   ],
   "last_actions": [
-    "2026-07-01T15:10:35Z — HOLD PYPL @ $44.87 (+1.33%). Trail stop $43.40, target $48.71. Sell date 2026-07-02. No new signals. Surge tracker cleared (GE/PYPL/GM stale — not in surge_signals). Buying power $85.00, 1 open position, regime normal."
+    "2026-07-01T16:13:03Z \u2014 LAZR BUY BLOCKED: investor profile completion required (Robinhood compliance). LAZR RSI=24.82 oversold, conf=2/3 \u2014 signal valid, trade blocked. PYPL held @ $44.77 (1.11% vs avg $44.28). Trail stop $43.40, target $48.71. Sell date 2026-07-02. Surge tracker: PLTR/RBLX/COIN all count=1 (need 2 for intraday buy). Buying power $85.00, 1 open position, regime normal."
   ]
 }
