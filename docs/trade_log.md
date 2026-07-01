@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-01T14:12:27Z
+- Action   : BUY PYPL
+- Price    : $44.28
+- Amount   : $15.00 | Shares: 0.338753
+- RSI      : 48.0 | EMA: BEARISH | BB: IN_BAND
+- Stop     : $43.40 | Target: $48.71
+- Strategy : surge | Sell date: 2026-07-02
+- Regime   : normal
+- Reason   : Buy vol surge +74.1% vs prior day | 2d streak | OBV +1.1M/day | price $44.22 (+2.4% intraday)
+
 ## 2026-06-30T15:08:39Z
 - SUMMARY: Market open — no qualifying signals. Buying power: $100.00, Open positions: 0.
 - Regime filter: INACTIVE (SPY RSI=63.2 > 30). Buys permitted but no signals met entry criteria.

@@ -1,8 +1,24 @@
 {
-  "updated_at": "2026-06-30T20:08:28Z",
-  "buying_power": 100.0,
-  "positions": [],
+  "updated_at": "2026-07-01T14:12:27Z",
+  "buying_power": 85.0,
+  "market_regime": "normal",
+  "positions": [
+    {
+      "ticker": "PYPL",
+      "quantity": 0.338753,
+      "avg_cost": 44.28,
+      "current_price": 44.28,
+      "pnl_pct": 0.0,
+      "value": 15.0,
+      "entry_atr_pct": 0.0099,
+      "entry_time": "2026-07-01T14:12:27Z",
+      "trail_stop": 43.4,
+      "take_profit": 48.71,
+      "strategy": "surge",
+      "sell_date": "2026-07-02"
+    }
+  ],
   "last_actions": [
-    "2026-06-30T20:08:28Z — Market closed — no trades placed. All tickers HOLD (0/3 confidence), EMAs BULLISH across watchlist. SPY net-buy trend reversed (8.40M→2.14M) — not held, no sell. Prices: SPY=$746.33, QQQ=$735.76, AAPL=$289.09, MSFT=$372.83, NVDA=$199.76. Buying power: $100.00, Open positions: 0."
+    "2026-07-01T14:12:27Z — BUY PYPL $15.00 @ $44.28 (surge +74.1% buy vol, 2d streak, OBV +1.1M/day). Stop $43.40, Target $48.71. Sell date 2026-07-02. Buying power $85.00, 1 open position."
   ]
 }
