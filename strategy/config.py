@@ -10,7 +10,7 @@ MIN_TRADE_SIZE = 5.0           # don't place orders smaller than this
 MAX_OPEN_POSITIONS = 4         # max concurrent holdings
 
 # ── Watchlist ─────────────────────────────────────────────────────────────────
-# 65 liquid stocks: ETFs + mega-cap + AI/data center + semiconductors + space
+# 72 liquid stocks: ETFs + mega-cap + AI/data center + semiconductors + space + physical AI
 WATCHLIST = [
     # Market ETFs
     "SPY", "QQQ", "IWM",
@@ -42,6 +42,8 @@ WATCHLIST = [
     "AMAT", "LRCX", "KLAC", "MRVL", "TXN", "ASML",
     # Space
     "RKLB", "ASTS",
+    # Physical AI — robotics, autonomous driving, industrial automation
+    "ISRG", "SYM", "MBLY", "TER", "ROK", "AUR", "LAZR",
 ]
 
 # ── RSI parameters ───────────────────────────────────────────────────────────
