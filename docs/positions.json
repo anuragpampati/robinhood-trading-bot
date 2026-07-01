@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T16:13:03Z",
+  "updated_at": "2026-07-01T17:14:00Z",
   "buying_power": 85.0,
   "market_regime": "normal",
   "positions": [
@@ -7,9 +7,9 @@
       "ticker": "PYPL",
       "quantity": 0.338753,
       "avg_cost": 44.28,
-      "current_price": 44.77,
-      "pnl_pct": 0.0111,
-      "value": 15.17,
+      "current_price": 44.505,
+      "pnl_pct": 0.0051,
+      "value": 15.08,
       "entry_atr_pct": 0.0099,
       "entry_time": "2026-07-01T14:12:27Z",
       "trail_stop": 43.4,
@@ -19,6 +19,7 @@
     }
   ],
   "last_actions": [
-    "2026-07-01T16:13:03Z \u2014 LAZR BUY BLOCKED: investor profile completion required (Robinhood compliance). LAZR RSI=24.82 oversold, conf=2/3 \u2014 signal valid, trade blocked. PYPL held @ $44.77 (1.11% vs avg $44.28). Trail stop $43.40, target $48.71. Sell date 2026-07-02. Surge tracker: PLTR/RBLX/COIN all count=1 (need 2 for intraday buy). Buying power $85.00, 1 open position, regime normal."
+    "2026-07-01T17:14:00Z — CVX SURGE BUY $15 BLOCKED (investor profile incomplete). JPM SURGE BUY $15 BLOCKED (investor profile incomplete). PYPL HOLD @ $44.51 (+0.51%). Trail stop $43.40, target $48.71. Sell date 2026-07-02. Buying power $85.00, 1 open position, regime normal. Complete profile: https://applink.robinhood.com/investment_profile?account_number=837287598&context=second_trade",
+    "2026-07-01T16:13:03Z — LAZR BUY BLOCKED: investor profile completion required (Robinhood compliance). LAZR RSI=24.82 oversold, conf=2/3 — signal valid, trade blocked. PYPL held @ $44.77 (1.11% vs avg $44.28). Trail stop $43.40, target $48.71. Sell date 2026-07-02. Surge tracker: PLTR/RBLX/COIN all count=1 (need 2 for intraday buy). Buying power $85.00, 1 open position, regime normal."
   ]
 }

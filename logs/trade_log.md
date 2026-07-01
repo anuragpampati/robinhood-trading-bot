@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-07-01T17:14:00Z
+- SUMMARY: Market open — surge buy signals blocked (investor profile incomplete). Buying power: $85.00. Positions: 1 (PYPL). Regime: normal. Surge tracker: CVX count=1, JPM count=1.
+- PYPL held @ $44.51 (+0.51% vs avg $44.28). Trail stop $43.40 (no ratchet, profit <2.5%), target $48.71. Sell date 2026-07-02. No sell triggers.
+- CVX SURGE BUY BLOCKED @ $166.37 (buy vol +53.6%, 1d streak): $15 order rejected — Robinhood requires investor profile completion for 2nd+ trades. Complete at https://applink.robinhood.com/investment_profile?account_number=837287598&context=second_trade
+- JPM SURGE BUY BLOCKED @ $333.81 (buy vol +144.0%, 0d streak): $15 order rejected — same investor profile hold.
+- RSI SELL signals (not held): META conf=2, PLTR conf=2, HOOD conf=2, RIVN conf=2, MBLY conf=2, AUR conf=2. Net-buy SELL: ORCL, XOM.
+- Action required: Complete investor profile to unlock trading → https://applink.robinhood.com/investment_profile?account_number=837287598&context=second_trade
+
 ## 2026-07-01T16:13:03Z
 - SUMMARY: Market open — LAZR BUY blocked (Robinhood requires investor profile completion before 2nd trade on agentic account). Buying power: $85.00. Positions: 1 (PYPL). Regime: normal.
 - RSI BUY signal: LAZR @ $47.86 RSI=24.82 EMA=BEARISH BB=BELOW_BAND conf=2/3 — $15 order attempted, BLOCKED (account compliance hold).
