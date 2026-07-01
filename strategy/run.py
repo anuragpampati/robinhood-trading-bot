@@ -15,7 +15,7 @@ from tabulate import tabulate
 from .market_data import fetch_all_watchlist, fetch_all_from_cache, is_market_open
 from .indicators import compute_all
 from .signals import generate_signal
-from .net_buy import run_net_buy_scan, NetBuySignal
+from .net_buy import run_net_buy_scan, NetBuySignal, BUY_SURGE_MIN
 from .risk import risk_summary
 from .universe import full_universe
 from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN
@@ -212,6 +212,16 @@ def run_analysis() -> dict:
              "obv_slope": round(s.obv_slope), "score": round(s.score, 2),
              "reason": s.reason}
             for s in sell_signals[:10]
+        ],
+        # Surge strategy: buy vol spike ≥5% vs prior day → buy now, sell next trading day
+        "surge_signals": [
+            {"ticker": s.ticker, "price": s.price,
+             "buy_surge_pct": round(s.buy_surge_pct, 4),
+             "buy_vol_d2": round(s.buy_vol_d2), "buy_vol_d3": round(s.buy_vol_d3),
+             "net_buy_d3": round(s.net_buy_d3),
+             "reason": f"Buy vol ↑{s.buy_surge_pct:.1%} vs prior day | {s.reason}"}
+            for s in nb_results
+            if s.buy_surge_pct >= BUY_SURGE_MIN and s.net_buy_d3 > 0
         ],
     }
 

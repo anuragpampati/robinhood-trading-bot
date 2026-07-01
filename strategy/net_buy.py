@@ -23,6 +23,7 @@ except ImportError:
 
 TOP_N_RESULTS = 20        # show top N buy/sell signals from full scan
 PARALLEL_WORKERS = 30     # concurrent yfinance downloads
+BUY_SURGE_MIN = 0.05      # 5%+ spike in gross buy volume vs prior day → surge signal
 
 
 @dataclass
@@ -37,6 +38,9 @@ class NetBuySignal:
     obv_slope: float      # OBV 5-day slope (positive = rising)
     reason: str
     score: float = field(default=0.0)   # ranking score (higher = stronger signal)
+    buy_vol_d2: float = field(default=0.0)    # gross buy dollar-volume prior day
+    buy_vol_d3: float = field(default=0.0)    # gross buy dollar-volume today
+    buy_surge_pct: float = field(default=0.0) # (d3-d2)/d2 — buy volume surge %
 
 
 def _fetch_daily(ticker: str, period: str = "30d") -> pd.DataFrame:
@@ -48,11 +52,16 @@ def _fetch_daily(ticker: str, period: str = "30d") -> pd.DataFrame:
     return df
 
 
-def _net_buy_series(df: pd.DataFrame) -> pd.Series:
+def _buy_sell_series(df: pd.DataFrame) -> tuple[pd.Series, pd.Series]:
     spread = (df["high"] - df["low"]).replace(0, np.nan)
     buy_vol  = ((df["close"] - df["low"])  / spread) * df["volume"]
     sell_vol = ((df["high"]  - df["close"]) / spread) * df["volume"]
-    return (buy_vol - sell_vol).fillna(0)
+    return buy_vol.fillna(0), sell_vol.fillna(0)
+
+
+def _net_buy_series(df: pd.DataFrame) -> pd.Series:
+    buy_vol, sell_vol = _buy_sell_series(df)
+    return buy_vol - sell_vol
 
 
 def _obv(df: pd.DataFrame) -> pd.Series:
@@ -83,13 +92,21 @@ def _score(sig: NetBuySignal) -> float:
 
 def _analyze_daily_df(ticker: str, df: pd.DataFrame) -> NetBuySignal:
     """Core net buy analysis on a daily OHLCV DataFrame."""
-    net_buy = _net_buy_series(df)
+    buy_vols, sell_vols = _buy_sell_series(df)
+    net_buy = buy_vols - sell_vols
     obv     = _obv(df)
 
     nb = net_buy.iloc[-3:].values
     if len(nb) < 3:
         raise ValueError("Not enough data")
     d1, d2, d3 = float(nb[0]), float(nb[1]), float(nb[2])
+
+    # Buy surge: gross buy dollar-volume spike vs prior day (mirrors Robinhood's customer chart)
+    prices     = df["close"].iloc[-3:].values
+    bv         = buy_vols.iloc[-3:].values * prices  # dollar-weighted gross buy vol
+    buy_vol_d2 = float(bv[-2]) if len(bv) >= 2 else 0.0
+    buy_vol_d3 = float(bv[-1]) if len(bv) >= 1 else 0.0
+    buy_surge_pct = (buy_vol_d3 - buy_vol_d2) / buy_vol_d2 if buy_vol_d2 > 0 else 0.0
 
     trend_days = _consecutive_increasing(net_buy, n=5)
 
@@ -98,12 +115,19 @@ def _analyze_daily_df(ticker: str, df: pd.DataFrame) -> NetBuySignal:
 
     price = float(df["close"].iloc[-1])
 
+    def _make(action, reason, score=0.0):
+        return NetBuySignal(
+            ticker, action, price, d1, d2, d3, trend_days, obv_slope, reason,
+            score=score,
+            buy_vol_d2=buy_vol_d2, buy_vol_d3=buy_vol_d3, buy_surge_pct=buy_surge_pct,
+        )
+
     if trend_days >= 3 and obv_slope > 0 and d1 < d2 < d3:
         reason = (
             f"Net buy ↑ {trend_days}d streak: "
             f"{d1/1e6:.2f}M → {d2/1e6:.2f}M → {d3/1e6:.2f}M | OBV +{obv_slope/1e6:.1f}M/day"
         )
-        sig = NetBuySignal(ticker, "BUY", price, d1, d2, d3, trend_days, obv_slope, reason)
+        sig = _make("BUY", reason)
         sig.score = _score(sig)
         return sig
 
@@ -111,12 +135,12 @@ def _analyze_daily_df(ticker: str, df: pd.DataFrame) -> NetBuySignal:
         reason = (
             f"Net buy reversed: {d2/1e6:.2f}M → {d3/1e6:.2f}M | OBV {obv_slope/1e6:.1f}M/day"
         )
-        sig = NetBuySignal(ticker, "SELL", price, d1, d2, d3, trend_days, obv_slope, reason)
+        sig = _make("SELL", reason)
         sig.score = _score(sig)
         return sig
 
     reason = f"{trend_days}d streak | latest {d3/1e6:.2f}M | OBV {obv_slope/1e6:.1f}M/day"
-    return NetBuySignal(ticker, "HOLD", price, d1, d2, d3, trend_days, obv_slope, reason, score=0.0)
+    return _make("HOLD", reason)
 
 
 def analyze_net_buy(ticker: str) -> NetBuySignal:
