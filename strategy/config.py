@@ -48,7 +48,7 @@ WATCHLIST = [
 
 # ── RSI parameters ───────────────────────────────────────────────────────────
 RSI_PERIOD = 14
-RSI_OVERSOLD = 35              # buy signal threshold — large caps bounce at 35, rarely hit 30
+RSI_OVERSOLD = 30              # buy signal threshold — tighter entry, avoids mid-drop knives
 RSI_OVERBOUGHT = 70            # sell signal threshold (let winners run past 65)
 
 # ── EMA parameters ───────────────────────────────────────────────────────────
@@ -79,7 +79,8 @@ BEARISH_EMA_MAX_POSITION = 10.0   # halved from MAX_POSITION_SIZE
 BEARISH_EMA_MIN_CONFIDENCE = 3    # require 3/3 vs normal 2/3
 
 # ── ATR trailing stop ─────────────────────────────────────────────────────────
-ATR_STOP_MULTIPLIER = 1.5   # initial stop = entry − ATR_STOP_MULTIPLIER × ATR (tighter = faster loss-cut)
+ATR_STOP_MULTIPLIER = 2.0   # initial stop = entry − ATR_STOP_MULTIPLIER × ATR (wider = less whipsaw on hourly bars)
+MIN_HOLD_BARS = 3           # don't fire ATR stop in first N bars — gives trade room to breathe
 TRAIL_LOCK1_PROFIT  = 0.025 # when profit ≥ +2.5 %, ratchet stop to entry + 0.5 %
 TRAIL_LOCK1_STOP    = 0.005
 TRAIL_LOCK2_PROFIT  = 0.050 # when profit ≥ +5.0 %, ratchet stop to entry + 2.5 %

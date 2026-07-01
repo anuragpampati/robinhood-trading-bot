@@ -23,7 +23,7 @@ from strategy.config import (
     MAX_OPEN_POSITIONS, STOP_LOSS_PCT, TAKE_PROFIT_PCT, MARKET_REGIME_RSI_MIN,
     ATR_STOP_MULTIPLIER, TRAIL_LOCK1_PROFIT, TRAIL_LOCK1_STOP,
     TRAIL_LOCK2_PROFIT, TRAIL_LOCK2_STOP,
-    BEARISH_EMA_MAX_POSITION, BEARISH_EMA_MIN_CONFIDENCE,
+    BEARISH_EMA_MAX_POSITION, BEARISH_EMA_MIN_CONFIDENCE, MIN_HOLD_BARS,
 )
 
 TEST_DAYS = 30
@@ -113,7 +113,7 @@ def run():
                 trail = max(trail, entry * (1 + TRAIL_LOCK1_STOP))
             pos["trail_stop"] = trail
 
-            if price <= trail:
+            if price <= trail and pos["bars_held"] >= MIN_HOLD_BARS:
                 reason = f"TRAIL_STOP {price/entry-1:+.1%} (stop=${trail:.2f})"
             elif price >= entry * (1 + TAKE_PROFIT_PCT):
                 reason = f"TAKE_PROFIT {price/entry-1:+.1%}"
