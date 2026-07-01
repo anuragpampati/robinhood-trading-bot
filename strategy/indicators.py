@@ -2,7 +2,7 @@
 
 import pandas as pd
 import numpy as np
-from .config import RSI_PERIOD, EMA_FAST, EMA_SLOW, ATR_PERIOD
+from .config import RSI_PERIOD, EMA_FAST, EMA_SLOW, ATR_PERIOD, EMA200_PERIOD
 
 BB_PERIOD = 20    # SMA lookback for Bollinger Bands
 BB_STD    = 2.0   # standard deviation multiplier
@@ -55,4 +55,5 @@ def compute_all(df: pd.DataFrame) -> pd.DataFrame:
     out["vol_ratio"] = out["volume"] / vol_ma.replace(0, np.nan)
     out["atr"]       = atr(out)
     out["atr_pct"]   = out["atr"] / out["close"]
+    out["ema200"]    = ema(out["close"], EMA200_PERIOD)
     return out

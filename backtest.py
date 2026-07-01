@@ -23,6 +23,7 @@ from strategy.config import (
     MAX_OPEN_POSITIONS, STOP_LOSS_PCT, TAKE_PROFIT_PCT, MARKET_REGIME_RSI_MIN,
     ATR_STOP_MULTIPLIER, TRAIL_LOCK1_PROFIT, TRAIL_LOCK1_STOP,
     TRAIL_LOCK2_PROFIT, TRAIL_LOCK2_STOP,
+    BEARISH_EMA_MAX_POSITION, BEARISH_EMA_MIN_CONFIDENCE,
 )
 
 TEST_DAYS = 30
@@ -87,10 +88,13 @@ def run():
                 if not slice_.empty:
                     prices[tk] = float(slice_["close"].iloc[-1])
 
-        # regime filter — SPY RSI at this bar
+        # regime filter — SPY RSI + 200 EMA at this bar
         spy_slice = raw["SPY"].loc[:bar_ts]
         spy_rsi = float(spy_slice["rsi"].iloc[-1]) if not spy_slice.empty else 50.0
         market_bearish = spy_rsi < MARKET_REGIME_RSI_MIN
+        spy_close_now  = float(spy_slice["close"].iloc[-1]) if not spy_slice.empty else 0.0
+        spy_ema200_now = float(spy_slice["ema200"].iloc[-1]) if not spy_slice.empty else spy_close_now
+        market_bearish_ema = spy_close_now < spy_ema200_now
 
         # ── SELL: stop-loss / take-profit / signal ────────────────────────────
         for tk in list(positions):
@@ -134,11 +138,13 @@ def run():
             if len(positions) >= MAX_OPEN_POSITIONS:
                 break
 
-            sig = generate_signal(tk, raw[tk].loc[:bar_ts], market_bearish=market_bearish)
+            sig = generate_signal(tk, raw[tk].loc[:bar_ts], market_bearish=market_bearish,
+                                  market_bearish_ema=market_bearish_ema)
             if sig.action != "BUY":
                 continue
 
-            amount = min(MAX_POSITION_SIZE, cash - CASH_BUFFER)
+            pos_max = BEARISH_EMA_MAX_POSITION if market_bearish_ema else MAX_POSITION_SIZE
+            amount = min(pos_max, cash - CASH_BUFFER)
             if amount < MIN_TRADE_SIZE:
                 continue
 

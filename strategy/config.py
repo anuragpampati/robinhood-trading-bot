@@ -10,8 +10,39 @@ MIN_TRADE_SIZE = 5.0           # don't place orders smaller than this
 MAX_OPEN_POSITIONS = 4         # max concurrent holdings
 
 # ── Watchlist ─────────────────────────────────────────────────────────────────
-# Liquid, fractional-share eligible; blend of ETFs + blue-chips
-WATCHLIST = ["SPY", "QQQ", "AAPL", "MSFT", "NVDA"]
+# 65 liquid stocks: ETFs + mega-cap + AI/data center + semiconductors + space
+WATCHLIST = [
+    # Market ETFs
+    "SPY", "QQQ", "IWM",
+    # Mega-cap tech
+    "AAPL", "MSFT", "NVDA", "AMD", "INTC", "QCOM", "AVGO", "MU", "CRM",
+    # Big tech / growth
+    "AMZN", "GOOGL", "META", "TSLA", "NFLX", "UBER", "COIN", "SNAP",
+    # Robinhood-popular
+    "PLTR", "SOFI", "HOOD", "RIVN", "ARM",
+    # Finance
+    "JPM", "BAC", "GS", "C", "WFC",
+    # Healthcare
+    "JNJ", "PFE", "MRNA",
+    # Consumer
+    "DIS", "SBUX", "MCD", "WMT", "TGT",
+    # Industrial / Auto
+    "BA", "GE", "F", "GM",
+    # Energy
+    "XOM", "CVX",
+    # Fintech / payments
+    "PYPL", "SQ",
+    # High-growth
+    "SHOP", "RBLX", "DKNG", "ORCL",
+    # AI & data companies
+    "SNOW", "AI", "SOUN",
+    # AI data center infrastructure
+    "SMCI", "VRT", "DELL", "EQIX",
+    # Semiconductor equipment & advanced chips
+    "AMAT", "LRCX", "KLAC", "MRVL", "TXN", "ASML",
+    # Space
+    "RKLB", "ASTS",
+]
 
 # ── RSI parameters ───────────────────────────────────────────────────────────
 RSI_PERIOD = 14
@@ -37,11 +68,16 @@ DATA_INTERVAL = "1h"           # 1-hour bars
 VOLUME_LOOKBACK = 20           # days for avg-volume filter
 
 # ── Market regime filter ──────────────────────────────────────────────────────
-# Suppress buys during true market panic only — RSI 30-40 is normal correction territory
+# RSI panic filter (extreme only)
 MARKET_REGIME_RSI_MIN = 30
+# 200-period EMA regime: if SPY close < SPY EMA200 → bearish trend
+# Effect: max position $10 (halved), require 3/3 signal confidence
+EMA200_PERIOD = 200
+BEARISH_EMA_MAX_POSITION = 10.0   # halved from MAX_POSITION_SIZE
+BEARISH_EMA_MIN_CONFIDENCE = 3    # require 3/3 vs normal 2/3
 
 # ── ATR trailing stop ─────────────────────────────────────────────────────────
-ATR_STOP_MULTIPLIER = 2.0   # initial stop = entry − ATR_STOP_MULTIPLIER × ATR
+ATR_STOP_MULTIPLIER = 1.5   # initial stop = entry − ATR_STOP_MULTIPLIER × ATR (tighter = faster loss-cut)
 TRAIL_LOCK1_PROFIT  = 0.025 # when profit ≥ +2.5 %, ratchet stop to entry + 0.5 %
 TRAIL_LOCK1_STOP    = 0.005
 TRAIL_LOCK2_PROFIT  = 0.050 # when profit ≥ +5.0 %, ratchet stop to entry + 2.5 %

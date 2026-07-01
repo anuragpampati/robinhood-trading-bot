@@ -5,7 +5,7 @@ import pandas as pd
 from .config import (
     RSI_OVERSOLD, RSI_OVERBOUGHT,
     ATR_VOLATILITY_THRESHOLD, MIN_SIGNALS_TO_TRADE,
-    MARKET_REGIME_RSI_MIN,
+    MARKET_REGIME_RSI_MIN, BEARISH_EMA_MIN_CONFIDENCE,
 )
 
 VOL_GATE = 0.7   # skip signal if volume < 70% of 20-bar average (thin/noise bar)
@@ -44,7 +44,8 @@ def _bb_position(row: pd.Series) -> str:
     return "IN_BAND"
 
 
-def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False) -> Signal:
+def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False,
+                    market_bearish_ema: bool = False) -> Signal:
     """Produce a trading signal for *ticker* from its indicator DataFrame.
 
     Three signals scored 0-3: RSI oversold/overbought, Bollinger Band position,
@@ -123,9 +124,12 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False)
         sell_score += 1
         sell_reasons.append("EMA bearish")
 
+    # Require higher confidence in bearish EMA regime (SPY below 200 EMA)
+    min_signals = BEARISH_EMA_MIN_CONFIDENCE if market_bearish_ema else MIN_SIGNALS_TO_TRADE
+
     # BUY: suppress individual tickers during market panic (not corrections)
     # SPY is exempt — it IS the market
-    if buy_score >= MIN_SIGNALS_TO_TRADE and buy_score > sell_score:
+    if buy_score >= min_signals and buy_score > sell_score:
         if market_bearish and ticker != "SPY":
             return Signal(ticker, "HOLD", price, rsi_val, trend, bb_pos, buy_score, atr_pct,
                           f"BUY suppressed — SPY RSI < {MARKET_REGIME_RSI_MIN} (market panic)")

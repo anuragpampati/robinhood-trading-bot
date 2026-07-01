@@ -18,7 +18,7 @@ from .signals import generate_signal
 from .net_buy import run_net_buy_scan, NetBuySignal, BUY_SURGE_MIN
 from .risk import risk_summary
 from .universe import full_universe
-from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN
+from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN, BEARISH_EMA_MAX_POSITION
 
 QUICK_MODE = "--quick" in sys.argv
 
@@ -73,12 +73,20 @@ def run_analysis() -> dict:
 
     # Compute SPY first to determine market regime
     spy_rsi = None
+    market_bearish_ema = False
     if "SPY" in data_map:
         try:
             spy_df = compute_all(data_map["SPY"])
             spy_sig = generate_signal("SPY", spy_df)
             rsi_signals["SPY"] = spy_sig
             spy_rsi = spy_sig.rsi
+            spy_close  = float(spy_df["close"].iloc[-1])
+            spy_ema200 = float(spy_df["ema200"].iloc[-1])
+            market_bearish_ema = spy_close < spy_ema200
+            regime_tag = "BEARISH (SPY below 200 EMA)" if market_bearish_ema else "BULLISH (SPY above 200 EMA)"
+            print(f"  [REGIME] SPY ${spy_close:.2f} vs EMA200 ${spy_ema200:.2f} → {regime_tag}")
+            if market_bearish_ema:
+                print(f"  [REGIME] Max position ${BEARISH_EMA_MAX_POSITION}, 3/3 confidence required")
         except Exception as exc:
             print(f"  [WARN] SPY: {exc}")
 
@@ -93,7 +101,8 @@ def run_analysis() -> dict:
             df_ind = compute_all(df)
             # SPY itself is always evaluated without the regime filter
             suppress = market_bearish
-            rsi_signals[ticker] = generate_signal(ticker, df_ind, market_bearish=suppress)
+            rsi_signals[ticker] = generate_signal(ticker, df_ind, market_bearish=suppress,
+                                                  market_bearish_ema=market_bearish_ema)
         except Exception as exc:
             print(f"  [WARN] {ticker}: {exc}")
 
@@ -191,6 +200,7 @@ def run_analysis() -> dict:
         "mode": "quick" if QUICK_MODE else "full_universe",
         "universe_size": len(universe),
         "market_open": market_open,
+        "market_regime": "bearish_ema" if market_bearish_ema else "normal",
         "rsi_signals": [
             {"ticker": s.ticker, "action": s.action, "price": s.price,
              "rsi": round(s.rsi, 2), "ema_trend": s.ema_trend,
