@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-07-01T15:10:35Z
+- SUMMARY: Market open — no new signals. Buying power: $85.00. Positions: 1 (PYPL). Regime: normal. Surge tracker: cleared (GE/PYPL/GM no longer in surge_signals).
+- PYPL held @ $44.87 (+1.33% vs avg cost $44.28). Trail stop $43.40, target $48.71, sell date 2026-07-02. No sell triggers (held <3h, above stop, below take-profit).
+- RSI SELL signals (not held): MSFT, CRM, META, TSLA, SNAP, PLTR, RBLX, SNOW, SOUN, SYM, MBLY, AUR. No RSI BUY signals. No net-buy BUY signals. No surge signals.
+- SPY: $746.96 RSI=67.7 BULLISH — normal regime, all buys eligible. No qualifying buy entries found.
+
 ## 2026-07-01T14:12:27Z
 - Action   : BUY PYPL
 - Price    : $44.28
