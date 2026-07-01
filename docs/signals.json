@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-07-01T04:23:07.323373+00:00",
+  "timestamp": "2026-07-01T06:40:47.198992+00:00",
   "mode": "quick",
-  "universe_size": 65,
+  "universe_size": 72,
   "market_open": false,
   "market_regime": "normal",
   "rsi_signals": [
@@ -708,6 +708,83 @@
       "confidence": 0,
       "atr_pct": 0.029,
       "reason": "RSI=71.2 (falling), BB=IN_BAND, EMA=BULLISH"
+    },
+    {
+      "ticker": "ISRG",
+      "action": "HOLD",
+      "price": 397.5799865722656,
+      "rsi": 36.46,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0073,
+      "reason": "RSI=36.5 (falling), BB=BELOW_BAND, EMA=BEARISH"
+    },
+    {
+      "ticker": "SYM",
+      "action": "SELL",
+      "price": 44.95000076293945,
+      "rsi": 72.72,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0191,
+      "reason": "RSI overbought (72.7) | price above BB upper band"
+    },
+    {
+      "ticker": "MBLY",
+      "action": "SELL",
+      "price": 9.6850004196167,
+      "rsi": 81.67,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0263,
+      "reason": "RSI overbought (81.7) | price above BB upper band"
+    },
+    {
+      "ticker": "TER",
+      "action": "HOLD",
+      "price": 483.239990234375,
+      "rsi": 65.41,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0199,
+      "reason": "RSI=65.4 (stable), BB=ABOVE_BAND, EMA=BULLISH"
+    },
+    {
+      "ticker": "ROK",
+      "action": "SELL",
+      "price": 495.07000732421875,
+      "rsi": 70.02,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0076,
+      "reason": "RSI overbought (70.0) | price above BB upper band"
+    },
+    {
+      "ticker": "AUR",
+      "action": "HOLD",
+      "price": 6.809999942779541,
+      "rsi": 62.2,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0207,
+      "reason": "RSI=62.2 (falling), BB=ABOVE_BAND, EMA=BULLISH"
+    },
+    {
+      "ticker": "LAZR",
+      "action": "HOLD",
+      "price": 0,
+      "rsi": 50,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0,
+      "reason": "insufficient data"
     }
   ],
   "net_buy_buy_signals": [],
@@ -769,13 +846,13 @@
   ],
   "surge_signals": [
     {
-      "ticker": "AMD",
-      "price": 580.9099731445312,
-      "buy_surge_pct": 0.3306,
-      "buy_vol_d2": 13559323140,
-      "buy_vol_d3": 18042291846,
-      "net_buy_d3": 27701442,
-      "reason": "Buy vol \u219133.1% vs prior day | 0d streak | latest 27.70M | OBV 4.5M/day"
+      "ticker": "MSFT",
+      "price": 373.0199890136719,
+      "buy_surge_pct": 0.7499,
+      "buy_vol_d2": 7946866557,
+      "buy_vol_d3": 13906510138,
+      "net_buy_d3": 29717542,
+      "reason": "Buy vol \u219175.0% vs prior day | 2d streak | latest 29.72M | OBV 36.2M/day"
     },
     {
       "ticker": "NVDA",
@@ -787,13 +864,13 @@
       "reason": "Buy vol \u219127.4% vs prior day | 0d streak | latest 133.51M | OBV -5.9M/day"
     },
     {
-      "ticker": "MSFT",
-      "price": 373.0199890136719,
-      "buy_surge_pct": 0.7499,
-      "buy_vol_d2": 7946866557,
-      "buy_vol_d3": 13906510138,
-      "net_buy_d3": 29717542,
-      "reason": "Buy vol \u219175.0% vs prior day | 2d streak | latest 29.72M | OBV 36.2M/day"
+      "ticker": "AMD",
+      "price": 580.9099731445312,
+      "buy_surge_pct": 0.3306,
+      "buy_vol_d2": 13559323140,
+      "buy_vol_d3": 18042291846,
+      "net_buy_d3": 27701442,
+      "reason": "Buy vol \u219133.1% vs prior day | 0d streak | latest 27.70M | OBV 4.5M/day"
     }
   ]
 }
