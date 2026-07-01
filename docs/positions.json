@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T19:10:14Z",
+  "updated_at": "2026-07-01T20:09:37Z",
   "buying_power": 85.0,
   "market_regime": "normal",
   "positions": [
@@ -7,9 +7,9 @@
       "ticker": "PYPL",
       "quantity": 0.338753,
       "avg_cost": 44.28,
-      "current_price": 44.305,
-      "pnl_pct": 0.00056,
-      "value": 15.01,
+      "current_price": 44.06,
+      "pnl_pct": -0.00497,
+      "value": 14.93,
       "entry_atr_pct": 0.0099,
       "entry_time": "2026-07-01T14:12:27Z",
       "trail_stop": 43.4,
@@ -19,7 +19,7 @@
     }
   ],
   "last_actions": [
-    "2026-07-01T19:10:14Z — WMT RSI BUY $15 BLOCKED (investor profile incomplete). EQIX INTRADAY_SURGE BUY skipped (same blocker). PYPL held @ $44.305 (+0.06% vs avg $44.28). Trail stop $43.40 (no ratchet, profit <2.5%), target $48.71. Sell date 2026-07-02. Surge tracker: EQIX count=2 (INTRADAY_SURGE candidate — blocked), HOOD/MRNA removed. Action required: complete investor profile → https://applink.robinhood.com/investment_profile?account_number=837287598&context=second_trade",
-    "2026-07-01T18:14:00Z — WMT RSI BUY $15 BLOCKED (investor profile incomplete). WMT RSI=21.4 oversold, conf=2/3 — signal valid, trade blocked. PYPL held @ $44.36 (+0.18% vs avg $44.28). Trail stop $43.40, target $48.71. Sell date 2026-07-02. Surge tracker: HOOD/EQIX/MRNA count=1 (need 2 for intraday buy). Buying power $85.00, 1 open position, regime normal. Complete profile: https://applink.robinhood.com/investment_profile?account_number=837287598&context=second_trade"
+    "2026-07-01T20:09:37Z — Market CLOSED. No trades. PYPL held @ $44.06 (−0.50% vs avg $44.28), sell_date=2026-07-02. Trail stop $43.40 (no ratchet). RSI BUY: WMT (conf=2/3), LAZR (conf=2/3, conflicting net-buy SELL). RSI SELL not held: HOOD, SNOW. Net-buy SELL not held: LAZR, ORCL, ASML, XOM, F, QCOM. Surge tracker: EQIX count=2. Action required: complete investor profile to unlock buys.",
+    "2026-07-01T19:10:14Z — WMT RSI BUY $15 BLOCKED (investor profile incomplete). EQIX INTRADAY_SURGE BUY skipped (same blocker). PYPL held @ $44.305 (+0.06% vs avg $44.28). Trail stop $43.40 (no ratchet, profit <2.5%), target $48.71. Sell date 2026-07-02. Surge tracker: EQIX count=2 (INTRADAY_SURGE candidate — blocked), HOOD/MRNA removed. Action required: complete investor profile → https://applink.robinhood.com/investment_profile?account_number=837287598&context=second_trade"
   ]
 }
