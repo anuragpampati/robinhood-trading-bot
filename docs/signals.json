@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-01T16:29:44.394899+00:00",
+  "timestamp": "2026-07-01T17:09:23.523475+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": true,
@@ -8,211 +8,211 @@
     {
       "ticker": "SPY",
       "action": "HOLD",
-      "price": 749.0,
-      "rsi": 70.11,
+      "price": 747.5399780273438,
+      "rsi": 64.5,
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0034,
-      "reason": "low volume (0.46x avg) \u2014 skipping"
+      "atr_pct": 0.0033,
+      "reason": "low volume (0.33x avg) \u2014 skipping"
     },
     {
       "ticker": "QQQ",
       "action": "HOLD",
-      "price": 729.2999877929688,
-      "rsi": 55.55,
+      "price": 727.9199829101562,
+      "rsi": 53.17,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0059,
-      "reason": "RSI=55.6 (falling), BB=IN_BAND, EMA=BULLISH"
+      "atr_pct": 0.0056,
+      "reason": "low volume (0.53x avg) \u2014 skipping"
     },
     {
       "ticker": "IWM",
       "action": "HOLD",
-      "price": 302.2200012207031,
-      "rsi": 64.95,
+      "price": 301.510009765625,
+      "rsi": 60.41,
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0051,
-      "reason": "low volume (0.65x avg) \u2014 skipping"
+      "atr_pct": 0.0049,
+      "reason": "low volume (0.33x avg) \u2014 skipping"
     },
     {
       "ticker": "AAPL",
       "action": "HOLD",
-      "price": 295.0249938964844,
-      "rsi": 68.15,
+      "price": 294.3999938964844,
+      "rsi": 66.23,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.009,
-      "reason": "low volume (0.44x avg) \u2014 skipping"
+      "atr_pct": 0.0084,
+      "reason": "low volume (0.34x avg) \u2014 skipping"
     },
     {
       "ticker": "MSFT",
       "action": "HOLD",
-      "price": 385.79998779296875,
-      "rsi": 70.0,
+      "price": 386.4649963378906,
+      "rsi": 70.41,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0113,
-      "reason": "RSI=70.0 (stable), BB=ABOVE_BAND, EMA=BULLISH"
+      "atr_pct": 0.0104,
+      "reason": "low volume (0.31x avg) \u2014 skipping"
     },
     {
       "ticker": "NVDA",
       "action": "HOLD",
-      "price": 197.13999938964844,
-      "rsi": 50.32,
+      "price": 197.3916015625,
+      "rsi": 51.26,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0113,
-      "reason": "low volume (0.67x avg) \u2014 skipping"
+      "atr_pct": 0.0103,
+      "reason": "low volume (0.40x avg) \u2014 skipping"
     },
     {
       "ticker": "AMD",
       "action": "HOLD",
-      "price": 551.2150268554688,
-      "rsi": 52.02,
+      "price": 550.3200073242188,
+      "rsi": 51.47,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0213,
-      "reason": "low volume (0.49x avg) \u2014 skipping"
+      "atr_pct": 0.0196,
+      "reason": "low volume (0.26x avg) \u2014 skipping"
     },
     {
       "ticker": "INTC",
       "action": "HOLD",
-      "price": 129.74560546875,
-      "rsi": 42.87,
-      "ema_trend": "BULLISH",
+      "price": 128.57000732421875,
+      "rsi": 40.92,
+      "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0248,
-      "reason": "RSI=42.9 (falling), BB=IN_BAND, EMA=BULLISH"
+      "atr_pct": 0.0236,
+      "reason": "low volume (0.34x avg) \u2014 skipping"
     },
     {
       "ticker": "QCOM",
       "action": "HOLD",
-      "price": 185.7899932861328,
-      "rsi": 36.82,
+      "price": 183.80999755859375,
+      "rsi": 33.97,
       "ema_trend": "BEARISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0187,
-      "reason": "low volume (0.41x avg) \u2014 skipping"
+      "atr_pct": 0.0182,
+      "reason": "low volume (0.23x avg) \u2014 skipping"
     },
     {
       "ticker": "AVGO",
       "action": "HOLD",
-      "price": 368.4949951171875,
-      "rsi": 39.73,
+      "price": 369.55499267578125,
+      "rsi": 41.72,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.012,
-      "reason": "low volume (0.66x avg) \u2014 skipping"
+      "atr_pct": 0.011,
+      "reason": "low volume (0.47x avg) \u2014 skipping"
     },
     {
       "ticker": "MU",
       "action": "HOLD",
-      "price": 1051.6300048828125,
-      "rsi": 35.25,
+      "price": 1047.6099853515625,
+      "rsi": 34.69,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0297,
-      "reason": "RSI=35.3 (falling), BB=BELOW_BAND, EMA=BEARISH"
+      "atr_pct": 0.0271,
+      "reason": "low volume (0.35x avg) \u2014 skipping"
     },
     {
       "ticker": "CRM",
-      "action": "SELL",
-      "price": 164.85499572753906,
-      "rsi": 73.6,
+      "action": "HOLD",
+      "price": 164.24000549316406,
+      "rsi": 70.69,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0129,
-      "reason": "RSI overbought (73.6) | price above BB upper band"
+      "confidence": 0,
+      "atr_pct": 0.0119,
+      "reason": "low volume (0.38x avg) \u2014 skipping"
     },
     {
       "ticker": "AMZN",
       "action": "HOLD",
-      "price": 242.19500732421875,
-      "rsi": 59.77,
+      "price": 243.4499969482422,
+      "rsi": 62.08,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0125,
-      "reason": "low volume (0.63x avg) \u2014 skipping"
+      "atr_pct": 0.0115,
+      "reason": "low volume (0.28x avg) \u2014 skipping"
     },
     {
       "ticker": "GOOGL",
       "action": "HOLD",
-      "price": 358.81500244140625,
-      "rsi": 61.72,
+      "price": 359.010009765625,
+      "rsi": 62.09,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0088,
-      "reason": "low volume (0.58x avg) \u2014 skipping"
+      "atr_pct": 0.0082,
+      "reason": "low volume (0.33x avg) \u2014 skipping"
     },
     {
       "ticker": "META",
-      "action": "SELL",
-      "price": 618.5,
-      "rsi": 77.15,
+      "action": "HOLD",
+      "price": 618.7100219726562,
+      "rsi": 76.98,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0192,
-      "reason": "RSI overbought (77.2) | price above BB upper band"
+      "confidence": 0,
+      "atr_pct": 0.0177,
+      "reason": "low volume (0.53x avg) \u2014 skipping"
     },
     {
       "ticker": "TSLA",
       "action": "HOLD",
-      "price": 427.9649963378906,
-      "rsi": 74.11,
+      "price": 426.3699951171875,
+      "rsi": 71.36,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0134,
-      "reason": "low volume (0.67x avg) \u2014 skipping"
+      "atr_pct": 0.0126,
+      "reason": "low volume (0.32x avg) \u2014 skipping"
     },
     {
       "ticker": "NFLX",
       "action": "HOLD",
-      "price": 73.27999877929688,
-      "rsi": 50.09,
+      "price": 73.91500091552734,
+      "rsi": 54.64,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0115,
-      "reason": "RSI=50.1 (stable), BB=IN_BAND, EMA=BEARISH"
+      "atr_pct": 0.0114,
+      "reason": "low volume (0.44x avg) \u2014 skipping"
     },
     {
       "ticker": "UBER",
       "action": "HOLD",
-      "price": 72.94499969482422,
-      "rsi": 45.55,
+      "price": 73.21499633789062,
+      "rsi": 47.46,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0123,
-      "reason": "low volume (0.38x avg) \u2014 skipping"
+      "atr_pct": 0.0114,
+      "reason": "low volume (0.22x avg) \u2014 skipping"
     },
     {
       "ticker": "COIN",
-      "action": "SELL",
-      "price": 163.17999267578125,
-      "rsi": 72.39,
+      "action": "HOLD",
+      "price": 162.5800018310547,
+      "rsi": 70.85,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 2,
-      "atr_pct": 0.025,
-      "reason": "RSI overbought (72.4) | price above BB upper band"
+      "confidence": 0,
+      "atr_pct": 0.0234,
+      "reason": "low volume (0.53x avg) \u2014 skipping"
     },
     {
       "ticker": "SNAP",
@@ -222,558 +222,558 @@
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0222,
-      "reason": "RSI=69.6 (stable), BB=ABOVE_BAND, EMA=BULLISH"
+      "atr_pct": 0.0206,
+      "reason": "low volume (0.44x avg) \u2014 skipping"
     },
     {
       "ticker": "PLTR",
-      "action": "SELL",
-      "price": 126.77999877929688,
-      "rsi": 74.16,
+      "action": "HOLD",
+      "price": 126.83999633789062,
+      "rsi": 74.04,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0195,
-      "reason": "RSI overbought (74.2) | price above BB upper band"
+      "confidence": 0,
+      "atr_pct": 0.0179,
+      "reason": "low volume (0.44x avg) \u2014 skipping"
     },
     {
       "ticker": "SOFI",
       "action": "HOLD",
-      "price": 18.584999084472656,
-      "rsi": 67.85,
+      "price": 18.665000915527344,
+      "rsi": 69.33,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0161,
-      "reason": "RSI=67.9 (stable), BB=ABOVE_BAND, EMA=BULLISH"
+      "atr_pct": 0.0152,
+      "reason": "low volume (0.62x avg) \u2014 skipping"
     },
     {
       "ticker": "HOOD",
-      "action": "SELL",
-      "price": 108.73999786376953,
-      "rsi": 71.19,
+      "action": "HOLD",
+      "price": 107.98999786376953,
+      "rsi": 68.23,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0211,
-      "reason": "RSI overbought (71.2) | price above BB upper band"
+      "confidence": 0,
+      "atr_pct": 0.0206,
+      "reason": "low volume (0.62x avg) \u2014 skipping"
     },
     {
       "ticker": "RIVN",
       "action": "HOLD",
-      "price": 17.670000076293945,
-      "rsi": 75.93,
+      "price": 17.565000534057617,
+      "rsi": 72.1,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0195,
-      "reason": "RSI=75.9 (stable), BB=IN_BAND, EMA=BULLISH"
+      "atr_pct": 0.0189,
+      "reason": "low volume (0.57x avg) \u2014 skipping"
     },
     {
       "ticker": "ARM",
       "action": "HOLD",
-      "price": 343.010009765625,
-      "rsi": 45.3,
+      "price": 339.7738037109375,
+      "rsi": 43.2,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0253,
-      "reason": "low volume (0.44x avg) \u2014 skipping"
+      "atr_pct": 0.0243,
+      "reason": "low volume (0.25x avg) \u2014 skipping"
     },
     {
       "ticker": "JPM",
       "action": "HOLD",
-      "price": 335.2950134277344,
-      "rsi": 62.81,
-      "ema_trend": "NEUTRAL",
+      "price": 333.67999267578125,
+      "rsi": 57.29,
+      "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0074,
-      "reason": "RSI=62.8 (stable), BB=ABOVE_BAND, EMA=NEUTRAL"
+      "atr_pct": 0.0073,
+      "reason": "low volume (0.45x avg) \u2014 skipping"
     },
     {
       "ticker": "BAC",
       "action": "HOLD",
-      "price": 58.435001373291016,
-      "rsi": 62.73,
+      "price": 58.1349983215332,
+      "rsi": 56.77,
       "ema_trend": "NEUTRAL",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0072,
-      "reason": "RSI=62.7 (stable), BB=ABOVE_BAND, EMA=NEUTRAL"
+      "atr_pct": 0.0071,
+      "reason": "low volume (0.49x avg) \u2014 skipping"
     },
     {
       "ticker": "GS",
       "action": "HOLD",
-      "price": 1031.489990234375,
-      "rsi": 49.85,
+      "price": 1024.3499755859375,
+      "rsi": 44.35,
       "ema_trend": "BEARISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0096,
-      "reason": "RSI=49.8 (stable), BB=ABOVE_BAND, EMA=BEARISH"
+      "reason": "low volume (0.38x avg) \u2014 skipping"
     },
     {
       "ticker": "C",
       "action": "HOLD",
-      "price": 141.0,
-      "rsi": 42.81,
+      "price": 139.89999389648438,
+      "rsi": 36.48,
       "ema_trend": "BEARISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.008,
-      "reason": "RSI=42.8 (stable), BB=IN_BAND, EMA=BEARISH"
+      "atr_pct": 0.0083,
+      "reason": "low volume (0.56x avg) \u2014 skipping"
     },
     {
       "ticker": "WFC",
       "action": "HOLD",
-      "price": 85.69000244140625,
-      "rsi": 64.39,
+      "price": 85.22000122070312,
+      "rsi": 59.55,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0089,
-      "reason": "RSI=64.4 (stable), BB=ABOVE_BAND, EMA=BULLISH"
+      "atr_pct": 0.0087,
+      "reason": "low volume (0.44x avg) \u2014 skipping"
     },
     {
       "ticker": "JNJ",
       "action": "HOLD",
-      "price": 253.13999938964844,
-      "rsi": 52.84,
+      "price": 252.74000549316406,
+      "rsi": 51.46,
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0082,
-      "reason": "low volume (0.56x avg) \u2014 skipping"
+      "atr_pct": 0.0076,
+      "reason": "low volume (0.27x avg) \u2014 skipping"
     },
     {
       "ticker": "PFE",
       "action": "HOLD",
-      "price": 23.975000381469727,
-      "rsi": 41.51,
+      "price": 23.879899978637695,
+      "rsi": 38.49,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.007,
-      "reason": "RSI=41.5 (stable), BB=BELOW_BAND, EMA=BEARISH"
+      "atr_pct": 0.0067,
+      "reason": "low volume (0.46x avg) \u2014 skipping"
     },
     {
       "ticker": "MRNA",
       "action": "HOLD",
-      "price": 73.41500091552734,
-      "rsi": 69.29,
+      "price": 73.5999984741211,
+      "rsi": 69.75,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0238,
-      "reason": "low volume (0.55x avg) \u2014 skipping"
+      "atr_pct": 0.0216,
+      "reason": "low volume (0.39x avg) \u2014 skipping"
     },
     {
       "ticker": "DIS",
       "action": "HOLD",
-      "price": 96.91000366210938,
-      "rsi": 37.92,
+      "price": 96.52999877929688,
+      "rsi": 35.34,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0067,
-      "reason": "RSI=37.9 (stable), BB=IN_BAND, EMA=BEARISH"
+      "atr_pct": 0.0064,
+      "reason": "low volume (0.43x avg) \u2014 skipping"
     },
     {
       "ticker": "SBUX",
       "action": "HOLD",
-      "price": 102.26499938964844,
-      "rsi": 41.37,
+      "price": 103.68990325927734,
+      "rsi": 55.72,
       "ema_trend": "BEARISH",
-      "bb_signal": "BELOW_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0082,
-      "reason": "RSI=41.4 (stable), BB=BELOW_BAND, EMA=BEARISH"
+      "atr_pct": 0.0088,
+      "reason": "low volume (0.58x avg) \u2014 skipping"
     },
     {
       "ticker": "MCD",
       "action": "HOLD",
-      "price": 270.8500061035156,
-      "rsi": 56.04,
+      "price": 271.2950134277344,
+      "rsi": 57.95,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0065,
-      "reason": "low volume (0.55x avg) \u2014 skipping"
+      "atr_pct": 0.0059,
+      "reason": "low volume (0.27x avg) \u2014 skipping"
     },
     {
       "ticker": "WMT",
-      "action": "HOLD",
-      "price": 108.1281967163086,
-      "rsi": 16.85,
+      "action": "BUY",
+      "price": 108.30500030517578,
+      "rsi": 18.53,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0112,
-      "reason": "RSI=16.8 (falling), BB=BELOW_BAND, EMA=BEARISH"
+      "confidence": 2,
+      "atr_pct": 0.0102,
+      "reason": "RSI oversold+stabilizing (12.5\u219118.5) | BB reversal: -0.01\u21920.07 (returning from band)"
     },
     {
       "ticker": "TGT",
       "action": "HOLD",
-      "price": 129.8300018310547,
-      "rsi": 35.89,
+      "price": 130.11500549316406,
+      "rsi": 37.21,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0135,
-      "reason": "RSI=35.9 (stable), BB=IN_BAND, EMA=BEARISH"
+      "atr_pct": 0.0122,
+      "reason": "low volume (0.32x avg) \u2014 skipping"
     },
     {
       "ticker": "BA",
       "action": "HOLD",
-      "price": 218.3350067138672,
-      "rsi": 53.52,
+      "price": 217.7050018310547,
+      "rsi": 50.7,
       "ema_trend": "NEUTRAL",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.009,
-      "reason": "low volume (0.62x avg) \u2014 skipping"
+      "atr_pct": 0.0088,
+      "reason": "low volume (0.32x avg) \u2014 skipping"
     },
     {
       "ticker": "GE",
       "action": "HOLD",
-      "price": 375.875,
-      "rsi": 61.31,
+      "price": 372.79998779296875,
+      "rsi": 53.04,
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0085,
-      "reason": "low volume (0.53x avg) \u2014 skipping"
+      "atr_pct": 0.0086,
+      "reason": "low volume (0.32x avg) \u2014 skipping"
     },
     {
       "ticker": "F",
       "action": "HOLD",
-      "price": 13.845000267028809,
-      "rsi": 43.47,
+      "price": 13.805000305175781,
+      "rsi": 41.87,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0112,
-      "reason": "RSI=43.5 (stable), BB=IN_BAND, EMA=BEARISH"
+      "atr_pct": 0.0108,
+      "reason": "low volume (0.51x avg) \u2014 skipping"
     },
     {
       "ticker": "GM",
       "action": "HOLD",
-      "price": 76.56999969482422,
-      "rsi": 37.99,
+      "price": 76.19000244140625,
+      "rsi": 34.98,
       "ema_trend": "BEARISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.009,
-      "reason": "low volume (0.70x avg) \u2014 skipping"
+      "atr_pct": 0.0088,
+      "reason": "low volume (0.36x avg) \u2014 skipping"
     },
     {
       "ticker": "XOM",
       "action": "HOLD",
-      "price": 136.6699981689453,
-      "rsi": 51.02,
+      "price": 136.49000549316406,
+      "rsi": 49.11,
       "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0065,
-      "reason": "low volume (0.57x avg) \u2014 skipping"
+      "atr_pct": 0.0062,
+      "reason": "low volume (0.30x avg) \u2014 skipping"
     },
     {
       "ticker": "CVX",
       "action": "HOLD",
-      "price": 166.39999389648438,
-      "rsi": 32.42,
+      "price": 166.24000549316406,
+      "rsi": 31.92,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0075,
-      "reason": "RSI=32.4 (stable), BB=IN_BAND, EMA=BEARISH"
+      "atr_pct": 0.007,
+      "reason": "low volume (0.41x avg) \u2014 skipping"
     },
     {
       "ticker": "PYPL",
       "action": "HOLD",
-      "price": 44.79999923706055,
-      "rsi": 64.42,
+      "price": 44.510101318359375,
+      "rsi": 60.05,
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.011,
-      "reason": "low volume (0.56x avg) \u2014 skipping"
+      "atr_pct": 0.0108,
+      "reason": "low volume (0.55x avg) \u2014 skipping"
     },
     {
       "ticker": "SHOP",
-      "action": "SELL",
-      "price": 122.30999755859375,
-      "rsi": 71.0,
+      "action": "HOLD",
+      "price": 122.41500091552734,
+      "rsi": 71.17,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0178,
-      "reason": "RSI overbought (71.0) | price above BB upper band"
+      "confidence": 0,
+      "atr_pct": 0.0159,
+      "reason": "low volume (0.29x avg) \u2014 skipping"
     },
     {
       "ticker": "RBLX",
       "action": "HOLD",
-      "price": 57.15999984741211,
-      "rsi": 71.41,
+      "price": 57.5,
+      "rsi": 72.42,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0212,
-      "reason": "RSI=71.4 (stable), BB=IN_BAND, EMA=BULLISH"
+      "atr_pct": 0.0201,
+      "reason": "low volume (0.41x avg) \u2014 skipping"
     },
     {
       "ticker": "DKNG",
       "action": "HOLD",
-      "price": 26.020000457763672,
-      "rsi": 62.15,
+      "price": 25.7549991607666,
+      "rsi": 57.23,
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0154,
-      "reason": "low volume (0.70x avg) \u2014 skipping"
+      "reason": "low volume (0.32x avg) \u2014 skipping"
     },
     {
       "ticker": "ORCL",
       "action": "HOLD",
-      "price": 145.2449951171875,
-      "rsi": 23.61,
+      "price": 144.16000366210938,
+      "rsi": 21.01,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0144,
-      "reason": "RSI=23.6 (falling), BB=BELOW_BAND, EMA=BEARISH"
+      "atr_pct": 0.0139,
+      "reason": "low volume (0.54x avg) \u2014 skipping"
     },
     {
       "ticker": "SNOW",
       "action": "HOLD",
-      "price": 260.489990234375,
-      "rsi": 73.32,
+      "price": 260.4049987792969,
+      "rsi": 73.06,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0139,
-      "reason": "low volume (0.52x avg) \u2014 skipping"
+      "atr_pct": 0.0129,
+      "reason": "low volume (0.24x avg) \u2014 skipping"
     },
     {
       "ticker": "AI",
       "action": "HOLD",
-      "price": 9.539999961853027,
-      "rsi": 64.84,
+      "price": 9.505000114440918,
+      "rsi": 63.16,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0218,
-      "reason": "RSI=64.8 (stable), BB=ABOVE_BAND, EMA=BULLISH"
+      "atr_pct": 0.0201,
+      "reason": "low volume (0.25x avg) \u2014 skipping"
     },
     {
       "ticker": "SOUN",
       "action": "HOLD",
-      "price": 6.90500020980835,
-      "rsi": 67.33,
+      "price": 6.820000171661377,
+      "rsi": 62.51,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0234,
-      "reason": "RSI=67.3 (stable), BB=ABOVE_BAND, EMA=BULLISH"
+      "atr_pct": 0.0226,
+      "reason": "RSI=62.5 (falling), BB=ABOVE_BAND, EMA=BULLISH"
     },
     {
       "ticker": "SMCI",
       "action": "HOLD",
-      "price": 28.19499969482422,
-      "rsi": 34.38,
+      "price": 28.295000076293945,
+      "rsi": 35.62,
       "ema_trend": "BEARISH",
-      "bb_signal": "BELOW_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0264,
-      "reason": "low volume (0.45x avg) \u2014 skipping"
+      "atr_pct": 0.024,
+      "reason": "low volume (0.28x avg) \u2014 skipping"
     },
     {
       "ticker": "VRT",
       "action": "HOLD",
-      "price": 318.864990234375,
-      "rsi": 49.66,
+      "price": 315.2799987792969,
+      "rsi": 46.27,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0229,
-      "reason": "low volume (0.43x avg) \u2014 skipping"
+      "atr_pct": 0.0223,
+      "reason": "low volume (0.49x avg) \u2014 skipping"
     },
     {
       "ticker": "DELL",
       "action": "HOLD",
-      "price": 435.0299987792969,
-      "rsi": 62.33,
+      "price": 434.7749938964844,
+      "rsi": 62.17,
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0228,
-      "reason": "RSI=62.3 (stable), BB=ABOVE_BAND, EMA=BULLISH"
+      "atr_pct": 0.0206,
+      "reason": "low volume (0.25x avg) \u2014 skipping"
     },
     {
       "ticker": "EQIX",
-      "action": "BUY",
-      "price": 1026.3199462890625,
-      "rsi": 27.87,
+      "action": "HOLD",
+      "price": 1029.324951171875,
+      "rsi": 30.37,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0133,
-      "reason": "RSI oversold+stabilizing (28.8\u224827.9) | BB reversal: -0.03\u21920.10 (returning from band)"
+      "confidence": 0,
+      "atr_pct": 0.0125,
+      "reason": "low volume (0.55x avg) \u2014 skipping"
     },
     {
       "ticker": "AMAT",
       "action": "HOLD",
-      "price": 658.8900146484375,
-      "rsi": 42.73,
+      "price": 650.77001953125,
+      "rsi": 40.6,
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0285,
-      "reason": "low volume (0.69x avg) \u2014 skipping"
+      "atr_pct": 0.0275,
+      "reason": "low volume (0.42x avg) \u2014 skipping"
     },
     {
       "ticker": "LRCX",
       "action": "HOLD",
-      "price": 394.28509521484375,
-      "rsi": 42.45,
-      "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "price": 388.05999755859375,
+      "rsi": 39.45,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0282,
-      "reason": "RSI=42.5 (falling), BB=IN_BAND, EMA=BULLISH"
+      "atr_pct": 0.0274,
+      "reason": "low volume (0.59x avg) \u2014 skipping"
     },
     {
       "ticker": "KLAC",
       "action": "HOLD",
-      "price": 270.70001220703125,
-      "rsi": 46.39,
+      "price": 269.0101013183594,
+      "rsi": 45.21,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0303,
-      "reason": "ATR too high (3.0%) \u2014 skipping"
+      "atr_pct": 0.0277,
+      "reason": "low volume (0.51x avg) \u2014 skipping"
     },
     {
       "ticker": "MRVL",
       "action": "HOLD",
-      "price": 279.20001220703125,
-      "rsi": 47.03,
+      "price": 274.5199890136719,
+      "rsi": 43.23,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0282,
-      "reason": "RSI=47.0 (falling), BB=IN_BAND, EMA=BULLISH"
+      "atr_pct": 0.0277,
+      "reason": "low volume (0.43x avg) \u2014 skipping"
     },
     {
       "ticker": "TXN",
       "action": "HOLD",
-      "price": 299.5299987792969,
-      "rsi": 54.18,
+      "price": 298.55999755859375,
+      "rsi": 52.26,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0135,
-      "reason": "low volume (0.44x avg) \u2014 skipping"
+      "atr_pct": 0.0129,
+      "reason": "low volume (0.30x avg) \u2014 skipping"
     },
     {
       "ticker": "ASML",
       "action": "HOLD",
-      "price": 1862.0699462890625,
-      "rsi": 45.06,
+      "price": 1852.5999755859375,
+      "rsi": 43.45,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0193,
-      "reason": "RSI=45.1 (falling), BB=IN_BAND, EMA=BULLISH"
+      "atr_pct": 0.0181,
+      "reason": "low volume (0.43x avg) \u2014 skipping"
     },
     {
       "ticker": "RKLB",
       "action": "HOLD",
-      "price": 106.94000244140625,
-      "rsi": 73.01,
+      "price": 105.8301010131836,
+      "rsi": 69.51,
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0327,
-      "reason": "ATR too high (3.3%) \u2014 skipping"
+      "atr_pct": 0.0307,
+      "reason": "low volume (0.31x avg) \u2014 skipping"
     },
     {
       "ticker": "ASTS",
       "action": "HOLD",
-      "price": 90.87220001220703,
-      "rsi": 70.58,
+      "price": 90.47000122070312,
+      "rsi": 69.2,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0351,
-      "reason": "ATR too high (3.5%) \u2014 skipping"
+      "atr_pct": 0.033,
+      "reason": "low volume (0.38x avg) \u2014 skipping"
     },
     {
       "ticker": "ISRG",
       "action": "HOLD",
-      "price": 404.0299987792969,
-      "rsi": 50.53,
-      "ema_trend": "BEARISH",
+      "price": 403.6600036621094,
+      "rsi": 49.79,
+      "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0085,
-      "reason": "low volume (0.58x avg) \u2014 skipping"
+      "atr_pct": 0.008,
+      "reason": "low volume (0.38x avg) \u2014 skipping"
     },
     {
       "ticker": "SYM",
       "action": "HOLD",
-      "price": 46.66999816894531,
-      "rsi": 78.24,
+      "price": 46.4900016784668,
+      "rsi": 75.9,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0221,
-      "reason": "low volume (0.67x avg) \u2014 skipping"
+      "atr_pct": 0.0203,
+      "reason": "low volume (0.31x avg) \u2014 skipping"
     },
     {
       "ticker": "MBLY",
-      "action": "SELL",
-      "price": 9.809900283813477,
-      "rsi": 81.08,
+      "action": "HOLD",
+      "price": 9.824999809265137,
+      "rsi": 81.26,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0268,
-      "reason": "RSI overbought (81.1) | price above BB upper band"
+      "confidence": 0,
+      "atr_pct": 0.0251,
+      "reason": "low volume (0.55x avg) \u2014 skipping"
     },
     {
       "ticker": "TER",
       "action": "HOLD",
-      "price": 439.0098876953125,
-      "rsi": 40.97,
-      "ema_trend": "NEUTRAL",
-      "bb_signal": "IN_BAND",
+      "price": 435.1549987792969,
+      "rsi": 39.39,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0298,
-      "reason": "low volume (0.44x avg) \u2014 skipping"
+      "atr_pct": 0.0277,
+      "reason": "low volume (0.30x avg) \u2014 skipping"
     },
     {
       "ticker": "ROK",
       "action": "HOLD",
-      "price": 493.05499267578125,
-      "rsi": 63.25,
+      "price": 488.1400146484375,
+      "rsi": 54.71,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0102,
-      "reason": "low volume (0.52x avg) \u2014 skipping"
+      "atr_pct": 0.0105,
+      "reason": "low volume (0.27x avg) \u2014 skipping"
     },
     {
       "ticker": "AUR",
       "action": "SELL",
-      "price": 7.454999923706055,
-      "rsi": 77.69,
+      "price": 7.574999809265137,
+      "rsi": 79.53,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 2,
-      "atr_pct": 0.0261,
-      "reason": "RSI overbought (77.7) | price above BB upper band"
+      "atr_pct": 0.0254,
+      "reason": "RSI overbought (79.5) | price above BB upper band"
     },
     {
       "ticker": "LAZR",
@@ -791,93 +791,93 @@
   "net_buy_sell_signals": [
     {
       "ticker": "RCL",
-      "price": 313.9150085449219,
+      "price": 310.7200012207031,
       "net_buy_d2": -119727,
-      "net_buy_d3": -832742,
-      "obv_slope": -1660635,
+      "net_buy_d3": -1014177,
+      "obv_slope": -1684717,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.12M \u2192 -0.83M | OBV -1.7M/day"
+      "reason": "Net buy reversed: -0.12M \u2192 -1.01M | OBV -1.7M/day"
     },
     {
       "ticker": "LEN",
-      "price": 89.05500030517578,
+      "price": 88.07019805908203,
       "net_buy_d2": -172211,
-      "net_buy_d3": -671957,
-      "obv_slope": -2206464,
+      "net_buy_d3": -938210,
+      "obv_slope": -2250813,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.17M \u2192 -0.67M | OBV -2.2M/day"
+      "reason": "Net buy reversed: -0.17M \u2192 -0.94M | OBV -2.3M/day"
     },
     {
       "ticker": "LUV",
-      "price": 51.20000076293945,
+      "price": 50.869998931884766,
       "net_buy_d2": 1150656,
-      "net_buy_d3": -953798,
-      "obv_slope": -5924152,
+      "net_buy_d3": -1599017,
+      "obv_slope": -6028229,
       "score": 0.0,
-      "reason": "Net buy reversed: 1.15M \u2192 -0.95M | OBV -5.9M/day"
+      "reason": "Net buy reversed: 1.15M \u2192 -1.60M | OBV -6.0M/day"
     },
     {
-      "ticker": "STZ",
-      "price": 136.13499450683594,
-      "net_buy_d2": 2375386,
-      "net_buy_d3": -1851965,
-      "obv_slope": -2054323,
+      "ticker": "NEM",
+      "price": 93.62999725341797,
+      "net_buy_d2": 993661,
+      "net_buy_d3": -1302514,
+      "obv_slope": -1944120,
       "score": 0.0,
-      "reason": "Net buy reversed: 2.38M \u2192 -1.85M | OBV -2.1M/day"
-    },
-    {
-      "ticker": "SNDK",
-      "price": 2048.36767578125,
-      "net_buy_d2": 10622058,
-      "net_buy_d3": -2592084,
-      "obv_slope": -4531843,
-      "score": 0.0,
-      "reason": "Net buy reversed: 10.62M \u2192 -2.59M | OBV -4.5M/day"
-    },
-    {
-      "ticker": "GOOG",
-      "price": 355.3800048828125,
-      "net_buy_d2": 9182246,
-      "net_buy_d3": -2194866,
-      "obv_slope": -1102800,
-      "score": 0.0,
-      "reason": "Net buy reversed: 9.18M \u2192 -2.19M | OBV -1.1M/day"
+      "reason": "Net buy reversed: 0.99M \u2192 -1.30M | OBV -1.9M/day"
     },
     {
       "ticker": "CAT",
-      "price": 1018.4450073242188,
+      "price": 1001.8300170898438,
       "net_buy_d2": 1732952,
-      "net_buy_d3": -295914,
-      "obv_slope": -1194395,
+      "net_buy_d3": -1777924,
+      "obv_slope": -1237632,
       "score": 0.0,
-      "reason": "Net buy reversed: 1.73M \u2192 -0.30M | OBV -1.2M/day"
+      "reason": "Net buy reversed: 1.73M \u2192 -1.78M | OBV -1.2M/day"
+    },
+    {
+      "ticker": "STZ",
+      "price": 135.27000427246094,
+      "net_buy_d2": 2375386,
+      "net_buy_d3": -2061128,
+      "obv_slope": -2105005,
+      "score": 0.0,
+      "reason": "Net buy reversed: 2.38M \u2192 -2.06M | OBV -2.1M/day"
     },
     {
       "ticker": "NVR",
-      "price": 6792.9501953125,
+      "price": 6743.59228515625,
       "net_buy_d2": 7354,
-      "net_buy_d3": -1212,
-      "obv_slope": -7119,
+      "net_buy_d3": -5440,
+      "obv_slope": -7500,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.01M \u2192 -0.00M | OBV -0.0M/day"
+      "reason": "Net buy reversed: 0.01M \u2192 -0.01M | OBV -0.0M/day"
     },
     {
       "ticker": "HUBB",
-      "price": 504.7850036621094,
+      "price": 495.44000244140625,
       "net_buy_d2": 384425,
-      "net_buy_d3": -54171,
-      "obv_slope": -233024,
+      "net_buy_d3": -265667,
+      "obv_slope": -245304,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.38M \u2192 -0.05M | OBV -0.2M/day"
+      "reason": "Net buy reversed: 0.38M \u2192 -0.27M | OBV -0.2M/day"
     },
     {
-      "ticker": "GM",
-      "price": 76.625,
-      "net_buy_d2": 5546174,
-      "net_buy_d3": -718820,
-      "obv_slope": -7359054,
+      "ticker": "FIX",
+      "price": 1877.9000244140625,
+      "net_buy_d2": 204581,
+      "net_buy_d3": -106166,
+      "obv_slope": -36988,
       "score": 0.0,
-      "reason": "Net buy reversed: 5.55M \u2192 -0.72M | OBV -7.4M/day"
+      "reason": "Net buy reversed: 0.20M \u2192 -0.11M | OBV -0.0M/day"
+    },
+    {
+      "ticker": "EMR",
+      "price": 141.0050048828125,
+      "net_buy_d2": 273007,
+      "net_buy_d3": -117109,
+      "obv_slope": -1202291,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.27M \u2192 -0.12M | OBV -1.2M/day"
     }
   ],
   "surge_signals": []
