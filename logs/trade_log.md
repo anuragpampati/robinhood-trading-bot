@@ -4,6 +4,56 @@
 
 ---
 
+## 2026-07-02T14:12:14Z
+- Action   : BUY DKNG
+- Price    : $25.42
+- Amount   : $15.00 | Shares: 0.590088
+- RSI      : 55.9 | EMA: BULLISH | BB: IN_BAND
+- Stop     : $24.66 | Target: $27.96
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : EMA bullish crossover | momentum RSI=55.9 | vol=1.7×avg | conf=2/3
+
+## 2026-07-02T14:12:13Z
+- Action   : BUY TXN
+- Price    : $302.71
+- Amount   : $15.00 | Shares: 0.049552
+- RSI      : 50.7 | EMA: BULLISH | BB: IN_BAND
+- Stop     : $296.66 | Target: $332.98
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : EMA bullish crossover | momentum RSI=50.7 | vol=1.4×avg | conf=2/3
+
+## 2026-07-02T14:12:12Z
+- Action   : BUY JNJ
+- Price    : $257.71
+- Amount   : $15.00 | Shares: 0.058204
+- RSI      : 57.9 | EMA: BULLISH | BB: IN_BAND
+- Stop     : $255.13 | Target: $283.48
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : EMA bullish crossover | momentum RSI=57.9 | vol=1.3×avg | conf=2/3
+
+## 2026-07-02T14:12:11Z
+- Action   : BUY WMT
+- Price    : $110.32
+- Amount   : $15.00 | Shares: 0.135968
+- RSI      : 26.4 | EMA: BEARISH | BB: BELOW_BAND
+- Stop     : $108.33 | Target: $121.35
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (20.2→26.4) | BB reversal returning from band | conf=2/3
+
+## 2026-07-02T14:11:47Z
+- Action   : SELL PYPL
+- Price    : $45.10
+- Amount   : $15.28 | Shares: 0.338753
+- RSI      : 55.6 | EMA: BULLISH | BB: IN_BAND
+- Stop     : N/A | Target: N/A
+- Strategy : surge | Sell date: 2026-07-02 (surge date exit)
+- Regime   : normal
+- Reason   : Surge sell date reached (2026-07-02), price $45.10 > avg_cost $44.28 (+1.86%), profitable exit
+
 ## 2026-07-01T19:10:14Z
 - SUMMARY: Market open — no trades placed (investor profile incomplete blocker). Buying power: $85.00. Positions: 1 (PYPL). Regime: normal. Surge tracker: EQIX count=2.
 - PYPL held @ $44.305 (+0.06% vs avg $44.28). Trail stop $43.40 (no ratchet, profit <2.5%), take-profit $48.71. Sell date 2026-07-02. No exit triggers (above stop, below target, sell_date is tomorrow, no signal sell).
