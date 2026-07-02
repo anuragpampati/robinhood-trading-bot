@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-07-01T21:22:38.162365+00:00",
-  "mode": "full_universe",
-  "universe_size": 503,
+  "timestamp": "2026-07-02T00:55:32.615827+00:00",
+  "mode": "quick",
+  "universe_size": 72,
   "market_open": false,
   "market_regime": "normal",
   "rsi_signals": [
@@ -293,14 +293,14 @@
     },
     {
       "ticker": "BAC",
-      "action": "HOLD",
+      "action": "BUY",
       "price": 58.3849983215332,
       "rsi": 60.25,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
-      "confidence": 0,
+      "confidence": 2,
       "atr_pct": 0.0057,
-      "reason": "RSI=60.2 (stable), BB=IN_BAND, EMA=BULLISH"
+      "reason": "EMA bullish crossover | EMA momentum: RSI=60.2 vol=1.7\u00d7avg"
     },
     {
       "ticker": "GS",
@@ -337,14 +337,14 @@
     },
     {
       "ticker": "JNJ",
-      "action": "HOLD",
+      "action": "BUY",
       "price": 253.9499969482422,
       "rsi": 55.53,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
-      "confidence": 0,
+      "confidence": 2,
       "atr_pct": 0.0064,
-      "reason": "RSI=55.5 (stable), BB=IN_BAND, EMA=BULLISH"
+      "reason": "EMA bullish crossover | EMA momentum: RSI=55.5 vol=1.8\u00d7avg"
     },
     {
       "ticker": "PFE",
@@ -436,14 +436,14 @@
     },
     {
       "ticker": "GE",
-      "action": "HOLD",
+      "action": "BUY",
       "price": 374.9700012207031,
       "rsi": 57.46,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
-      "confidence": 0,
+      "confidence": 2,
       "atr_pct": 0.0077,
-      "reason": "RSI=57.5 (stable), BB=IN_BAND, EMA=BULLISH"
+      "reason": "EMA bullish crossover | EMA momentum: RSI=57.5 vol=1.5\u00d7avg"
     },
     {
       "ticker": "F",
@@ -667,14 +667,14 @@
     },
     {
       "ticker": "TXN",
-      "action": "HOLD",
+      "action": "BUY",
       "price": 298.489990234375,
       "rsi": 51.64,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
-      "confidence": 0,
+      "confidence": 2,
       "atr_pct": 0.0114,
-      "reason": "RSI=51.6 (stable), BB=IN_BAND, EMA=BULLISH"
+      "reason": "EMA bullish crossover | EMA momentum: RSI=51.6 vol=1.6\u00d7avg"
     },
     {
       "ticker": "ASML",
@@ -787,83 +787,8 @@
       "reason": "insufficient data"
     }
   ],
-  "net_buy_buy_signals": [
-    {
-      "ticker": "ICE",
-      "price": 126.7300033569336,
-      "net_buy_d1": -3389709,
-      "net_buy_d2": -336429,
-      "net_buy_d3": 1065843,
-      "trend_days": 4,
-      "obv_slope": 136118,
-      "score": 40.14,
-      "reason": "Net buy \u2191 4d streak: -3.39M \u2192 -0.34M \u2192 1.07M | OBV +0.1M/day"
-    }
-  ],
+  "net_buy_buy_signals": [],
   "net_buy_sell_signals": [
-    {
-      "ticker": "RCL",
-      "price": 306.29998779296875,
-      "net_buy_d2": -119727,
-      "net_buy_d3": -1840725,
-      "obv_slope": -1832459,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.12M \u2192 -1.84M | OBV -1.8M/day"
-    },
-    {
-      "ticker": "LEN",
-      "price": 87.05999755859375,
-      "net_buy_d2": -172211,
-      "net_buy_d3": -2297963,
-      "obv_slope": -2589752,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.17M \u2192 -2.30M | OBV -2.6M/day"
-    },
-    {
-      "ticker": "ADI",
-      "price": 388.9800109863281,
-      "net_buy_d2": 477674,
-      "net_buy_d3": -4353926,
-      "obv_slope": -137688,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.48M \u2192 -4.35M | OBV -0.1M/day"
-    },
-    {
-      "ticker": "EMR",
-      "price": 139.52000427246094,
-      "net_buy_d2": 273007,
-      "net_buy_d3": -2071122,
-      "obv_slope": -1449693,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.27M \u2192 -2.07M | OBV -1.4M/day"
-    },
-    {
-      "ticker": "FSLR",
-      "price": 232.0800018310547,
-      "net_buy_d2": -140166,
-      "net_buy_d3": -1170920,
-      "obv_slope": -595995,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.14M \u2192 -1.17M | OBV -0.6M/day"
-    },
-    {
-      "ticker": "DHI",
-      "price": 157.05999755859375,
-      "net_buy_d2": -361415,
-      "net_buy_d3": -2147431,
-      "obv_slope": -2128534,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.36M \u2192 -2.15M | OBV -2.1M/day"
-    },
-    {
-      "ticker": "LUV",
-      "price": 50.470001220703125,
-      "net_buy_d2": 1150840,
-      "net_buy_d3": -3987743,
-      "obv_slope": -6411456,
-      "score": 0.0,
-      "reason": "Net buy reversed: 1.15M \u2192 -3.99M | OBV -6.4M/day"
-    },
     {
       "ticker": "ORCL",
       "price": 142.5,
@@ -874,42 +799,50 @@
       "reason": "Net buy reversed: -8.64M \u2192 -45.62M | OBV -37.5M/day"
     },
     {
-      "ticker": "NEM",
-      "price": 93.30000305175781,
-      "net_buy_d2": 994623,
-      "net_buy_d3": -3255817,
-      "obv_slope": -4090572,
+      "ticker": "TER",
+      "price": 427.3399963378906,
+      "net_buy_d2": 3557606,
+      "net_buy_d3": -4792278,
+      "obv_slope": -347681,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.99M \u2192 -3.26M | OBV -4.1M/day"
+      "reason": "Net buy reversed: 3.56M \u2192 -4.79M | OBV -0.3M/day"
     },
     {
-      "ticker": "URI",
-      "price": 1111.760009765625,
-      "net_buy_d2": 77995,
-      "net_buy_d3": -226710,
-      "obv_slope": -38975,
+      "ticker": "GM",
+      "price": 75.5199966430664,
+      "net_buy_d2": 5768600,
+      "net_buy_d3": -3726227,
+      "obv_slope": -8035285,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.08M \u2192 -0.23M | OBV -0.0M/day"
+      "reason": "Net buy reversed: 5.77M \u2192 -3.73M | OBV -8.0M/day"
+    },
+    {
+      "ticker": "VRT",
+      "price": 311.4200134277344,
+      "net_buy_d2": 6371994,
+      "net_buy_d3": -3594525,
+      "obv_slope": -978999,
+      "score": 0.0,
+      "reason": "Net buy reversed: 6.37M \u2192 -3.59M | OBV -1.0M/day"
+    },
+    {
+      "ticker": "XOM",
+      "price": 136.27999877929688,
+      "net_buy_d2": 11835003,
+      "net_buy_d3": -2577512,
+      "obv_slope": -1205616,
+      "score": 0.0,
+      "reason": "Net buy reversed: 11.84M \u2192 -2.58M | OBV -1.2M/day"
+    },
+    {
+      "ticker": "QCOM",
+      "price": 181.9199981689453,
+      "net_buy_d2": -16365656,
+      "net_buy_d3": -19875258,
+      "obv_slope": -24788251,
+      "score": 0.0,
+      "reason": "Net buy reversed: -16.37M \u2192 -19.88M | OBV -24.8M/day"
     }
   ],
-  "surge_signals": [
-    {
-      "ticker": "ICE",
-      "price": 126.7300033569336,
-      "buy_surge_pct": 0.0565,
-      "buy_vol_d2": 417347273,
-      "buy_vol_d3": 440927445,
-      "net_buy_d3": 1065843,
-      "reason": "Buy vol \u21915.7% vs prior day | Net buy \u2191 4d streak: -3.39M \u2192 -0.34M \u2192 1.07M | OBV +0.1M/day"
-    },
-    {
-      "ticker": "ABBV",
-      "price": 251.05999755859375,
-      "buy_surge_pct": 1.7529,
-      "buy_vol_d2": 502324847,
-      "buy_vol_d3": 1382840325,
-      "net_buy_d3": 4333381,
-      "reason": "Buy vol \u2191175.3% vs prior day | 1d streak | latest 4.33M | OBV 10.0M/day"
-    }
-  ]
+  "surge_signals": []
 }
