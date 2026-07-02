@@ -23,6 +23,8 @@ from strategy.config import (
     MAX_OPEN_POSITIONS, STOP_LOSS_PCT, TAKE_PROFIT_PCT, MARKET_REGIME_RSI_MIN,
     ATR_STOP_MULTIPLIER, TRAIL_LOCK1_PROFIT, TRAIL_LOCK1_STOP,
     TRAIL_LOCK2_PROFIT, TRAIL_LOCK2_STOP,
+    BEARISH_EMA_MAX_POSITION, BEARISH_EMA_MIN_CONFIDENCE, MIN_HOLD_BARS,
+    DAILY_LOSS_HALT, WEEKLY_LOSS_HALT,
 )
 
 TEST_DAYS = 30
@@ -78,6 +80,11 @@ def run():
     peak_pv = INITIAL_CASH
     max_dd  = 0.0
 
+    # ── Circuit breaker tracking ──────────────────────────────────────────────
+    day_open_pv:  dict[str, float] = {}  # date_str → account value at first bar of that day
+    week_open_pv: dict[str, float] = {}  # iso_week  → account value at first bar of that week
+    cb_halts = 0  # count bars where buys were halted by circuit breaker
+
     for bar_ts in test_bars:
         # current prices for all tickers (last close at or before this bar)
         prices = {}
@@ -87,10 +94,13 @@ def run():
                 if not slice_.empty:
                     prices[tk] = float(slice_["close"].iloc[-1])
 
-        # regime filter — SPY RSI at this bar
+        # regime filter — SPY RSI + 200 EMA at this bar
         spy_slice = raw["SPY"].loc[:bar_ts]
         spy_rsi = float(spy_slice["rsi"].iloc[-1]) if not spy_slice.empty else 50.0
         market_bearish = spy_rsi < MARKET_REGIME_RSI_MIN
+        spy_close_now  = float(spy_slice["close"].iloc[-1]) if not spy_slice.empty else 0.0
+        spy_ema200_now = float(spy_slice["ema200"].iloc[-1]) if not spy_slice.empty else spy_close_now
+        market_bearish_ema = spy_close_now < spy_ema200_now
 
         # ── SELL: stop-loss / take-profit / signal ────────────────────────────
         for tk in list(positions):
@@ -109,7 +119,7 @@ def run():
                 trail = max(trail, entry * (1 + TRAIL_LOCK1_STOP))
             pos["trail_stop"] = trail
 
-            if price <= trail:
+            if price <= trail and pos["bars_held"] >= MIN_HOLD_BARS:
                 reason = f"TRAIL_STOP {price/entry-1:+.1%} (stop=${trail:.2f})"
             elif price >= entry * (1 + TAKE_PROFIT_PCT):
                 reason = f"TAKE_PROFIT {price/entry-1:+.1%}"
@@ -127,33 +137,49 @@ def run():
                 ))
                 del positions[tk]
 
-        # ── BUY: signal-based ─────────────────────────────────────────────────
-        for tk in WATCHLIST:
-            if tk in positions or tk not in prices:
-                continue
-            if len(positions) >= MAX_OPEN_POSITIONS:
-                break
+        # ── Circuit breaker: compute current pv, record day/week open, check halts ──
+        pv_now = cash + sum(positions[tk]["qty"] * prices.get(tk, positions[tk]["entry_price"])
+                            for tk in positions)
+        day_key  = bar_ts.strftime("%Y-%m-%d")
+        week_key = bar_ts.strftime("%Y-W%W")
+        day_open_pv.setdefault(day_key, pv_now)
+        week_open_pv.setdefault(week_key, pv_now)
+        daily_dd  = (day_open_pv[day_key]  - pv_now) / day_open_pv[day_key]
+        weekly_dd = (week_open_pv[week_key] - pv_now) / week_open_pv[week_key]
+        circuit_breaker_active = daily_dd >= DAILY_LOSS_HALT or weekly_dd >= WEEKLY_LOSS_HALT
+        if circuit_breaker_active:
+            cb_halts += 1
 
-            sig = generate_signal(tk, raw[tk].loc[:bar_ts], market_bearish=market_bearish)
-            if sig.action != "BUY":
-                continue
+        # ── BUY: signal-based (skipped if circuit breaker active) ────────────────
+        if not circuit_breaker_active:
+            for tk in WATCHLIST:
+                if tk in positions or tk not in prices:
+                    continue
+                if len(positions) >= MAX_OPEN_POSITIONS:
+                    break
 
-            amount = min(MAX_POSITION_SIZE, cash - CASH_BUFFER)
-            if amount < MIN_TRADE_SIZE:
-                continue
+                sig = generate_signal(tk, raw[tk].loc[:bar_ts], market_bearish=market_bearish,
+                                      market_bearish_ema=market_bearish_ema)
+                if sig.action != "BUY":
+                    continue
 
-            price = prices[tk]
-            qty       = amount / price
-            atr_stop  = price * (1 - ATR_STOP_MULTIPLIER * sig.atr_pct) if sig.atr_pct > 0 else price * (1 - STOP_LOSS_PCT)
-            cash -= amount
-            positions[tk] = dict(
-                qty=qty, entry_price=price, cost=amount, bars_held=0,
-                trail_stop=atr_stop, atr_pct=sig.atr_pct,
-            )
-            trades.append(dict(
-                ts=bar_ts, ticker=tk, side="BUY", price=price,
-                pnl=None, reason=sig.reason, bars=None,
-            ))
+                pos_max = BEARISH_EMA_MAX_POSITION if market_bearish_ema else MAX_POSITION_SIZE
+                amount = min(pos_max, cash - CASH_BUFFER)
+                if amount < MIN_TRADE_SIZE:
+                    continue
+
+                price    = prices[tk]
+                qty      = amount / price
+                atr_stop = price * (1 - ATR_STOP_MULTIPLIER * sig.atr_pct) if sig.atr_pct > 0 else price * (1 - STOP_LOSS_PCT)
+                cash -= amount
+                positions[tk] = dict(
+                    qty=qty, entry_price=price, cost=amount, bars_held=0,
+                    trail_stop=atr_stop, atr_pct=sig.atr_pct,
+                )
+                trades.append(dict(
+                    ts=bar_ts, ticker=tk, side="BUY", price=price,
+                    pnl=None, reason=sig.reason, bars=None,
+                ))
 
         for pos in positions.values():
             pos["bars_held"] += 1
@@ -192,6 +218,7 @@ def run():
     print(f"  Strategy return   : {total_return:+.2%}  (${INITIAL_CASH:.0f} → ${final_value:.2f})")
     print(f"  Buy-and-hold SPY  : {bah_return:+.2%}")
     print(f"  Max drawdown      : {max_dd:.2%}")
+    print(f"  Circuit breaker   : {cb_halts} bars halted ({DAILY_LOSS_HALT:.0%} daily / {WEEKLY_LOSS_HALT:.0%} weekly limits)")
     print(f"  Trades            : {len(buys)} buys → {len(closed)} closed, {len(open_)} still open")
     print(f"  Win rate          : {win_rate:.0%}  ({len(wins)}W / {len(losses)}L)")
     if wins:
