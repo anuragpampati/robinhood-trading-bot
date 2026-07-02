@@ -4,6 +4,36 @@
 
 ---
 
+## 2026-07-02T17:14:34Z
+- Action   : BUY JPM
+- Price    : $333.92
+- Amount   : $15.00 | Shares: 0.044920
+- RSI      : 58.7 | EMA: BULLISH | BB: ABOVE_BAND
+- Stop     : $330.59 | Target: $367.32
+- Strategy : surge | Sell date: 2026-07-03
+- Regime   : normal
+- Reason   : SURGE BUY — buy volume +21.8% vs prior day | 1-day streak | OBV +0.1M/day. XOM MODERATE BUY (RSI conf=2) skipped — fractional positions not allowed on XOM.
+
+## 2026-07-02T17:13:06Z
+- Action   : SELL JNJ
+- Price    : $261.42
+- Amount   : $15.22 | Shares: 0.058204
+- RSI      : 72.4 | EMA: BULLISH | BB: ABOVE_BAND
+- Stop     : $255.13 | Target: $283.48
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI overbought (72.4), price above BB upper band, conf=2/3. Held 3.0h. Gain: +1.44% (+$0.22). Entry: $257.71.
+
+## 2026-07-02T17:13:05Z
+- Action   : SELL TXN
+- Price    : $290.74
+- Amount   : $14.41 | Shares: 0.049552
+- RSI      : 37.9 | EMA: BEARISH | BB: IN_BAND
+- Stop     : $296.66 | Target: $332.98
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : ATR trailing stop triggered — price $290.74 ≤ trail_stop $296.66. Held 3.0h. Loss: −3.95% (−$0.59). Entry: $302.71.
+
 ## 2026-07-02T16:11:00Z
 - SUMMARY: Market open — no trades. 4/4 positions held (<3h). TXN WATCH: $293.51 < trail_stop $296.66 (ATR sell suppressed — held 1.97h; fires at ~17:12 UTC if still below). JNJ RSI SELL conf=2 suppressed (<3h held; fires next cycle if conf≥2 and held≥3h). GS NET-BUY BUY skipped (4/4 positions full). Buying power: $25.00. Positions: 4. Regime: normal. Account: $100.19. Daily drawdown: 0.1%. Weekly drawdown: -0.2% (up). Surge tracker: empty.
 

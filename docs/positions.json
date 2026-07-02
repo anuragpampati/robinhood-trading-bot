@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-02T16:11:00Z",
-  "buying_power": 25.0,
+  "updated_at": "2026-07-02T17:15:30Z",
+  "buying_power": 10.0,
   "market_regime": "normal",
-  "account_value": 100.19,
+  "account_value": 100.189,
   "peak_value": 100.29,
   "day_start_value": 100.28,
   "day_start_date": "2026-07-02",
@@ -13,9 +13,9 @@
       "ticker": "WMT",
       "quantity": 0.135968,
       "avg_cost": 110.32,
-      "current_price": 111.93,
-      "pnl_pct": 0.0146,
-      "value": 15.22,
+      "current_price": 112.135,
+      "pnl_pct": 0.0165,
+      "value": 15.2468,
       "entry_atr_pct": 0.009,
       "entry_time": "2026-07-02T14:12:11Z",
       "trail_stop": 108.33,
@@ -24,49 +24,41 @@
       "sell_date": null
     },
     {
-      "ticker": "JNJ",
-      "quantity": 0.058204,
-      "avg_cost": 257.71,
-      "current_price": 260.32,
-      "pnl_pct": 0.0101,
-      "value": 15.15,
-      "entry_atr_pct": 0.005,
-      "entry_time": "2026-07-02T14:12:12Z",
-      "trail_stop": 255.13,
-      "take_profit": 283.48,
-      "strategy": "normal",
-      "sell_date": null
-    },
-    {
-      "ticker": "TXN",
-      "quantity": 0.049552,
-      "avg_cost": 302.71,
-      "current_price": 293.51,
-      "pnl_pct": -0.0304,
-      "value": 14.54,
-      "entry_atr_pct": 0.01,
-      "entry_time": "2026-07-02T14:12:13Z",
-      "trail_stop": 296.66,
-      "take_profit": 332.98,
-      "strategy": "normal",
-      "sell_date": null
-    },
-    {
       "ticker": "DKNG",
       "quantity": 0.590088,
       "avg_cost": 25.42,
-      "current_price": 25.4,
-      "pnl_pct": -0.0008,
-      "value": 14.99,
+      "current_price": 25.5205,
+      "pnl_pct": 0.004,
+      "value": 15.0593,
       "entry_atr_pct": 0.015,
       "entry_time": "2026-07-02T14:12:14Z",
       "trail_stop": 24.66,
       "take_profit": 27.96,
       "strategy": "normal",
       "sell_date": null
+    },
+    {
+      "ticker": "JPM",
+      "quantity": 0.04492,
+      "avg_cost": 333.93,
+      "current_price": 333.29,
+      "pnl_pct": -0.0019,
+      "value": 14.9714,
+      "entry_atr_pct": 0.005,
+      "entry_time": "2026-07-02T17:14:34Z",
+      "trail_stop": 330.59,
+      "take_profit": 367.32,
+      "strategy": "surge",
+      "sell_date": "2026-07-03"
     }
   ],
   "last_actions": [
-    "2026-07-02T16:11:00Z \u2014 CYCLE SUMMARY: Market open \u2014 no trades. 4/4 positions held <3h. WMT +1.46% ($111.93, stop $108.33). JNJ +1.01% ($260.32, stop $255.13) \u2014 RSI SELL conf=2 suppressed <3h. TXN -3.04% ($293.51 \u26a0\ufe0f BELOW trail_stop $296.66 \u2014 ATR sell suppressed <3h; fires ~17:12 UTC). DKNG -0.08% ($25.40, stop $24.66). GS NET-BUY BUY skipped (4/4 positions). Circuit breaker: inactive (daily -0.1%, weekly +0.2%). Buying power: $25.00. Account: $100.19."
+    "SELL TXN -3.95% @ $290.74 (ATR trail stop triggered, held 3.0h; stop $296.66)",
+    "SELL JNJ +1.44% @ $261.42 (RSI overbought 72.4, conf=2, held 3.0h)",
+    "BUY JPM $15.00 @ $333.93/sh (SURGE +21.8% buy vol; trail_stop $330.59, target $367.32)",
+    "XOM MODERATE BUY SKIPPED \u2014 fractional position not allowed on XOM",
+    "Circuit breaker: inactive (daily +0.09% vs 3% threshold, weekly +0.19%)",
+    "Regime: normal. Buying power: $10.00. Account: $100.19. Positions: 3 (WMT +1.7%, DKNG +0.4%, JPM -0.2%).",
+    "Surge tracker: JPM=1, DKNG=1"
   ]
 }
