@@ -224,6 +224,7 @@ def run_analysis() -> dict:
             for s in sell_signals[:10]
         ],
         # Surge strategy: buy vol spike ≥5% vs prior day → buy now, sell next trading day
+        # Require EMA BULLISH to avoid buying volume spikes in downtrends (e.g. PYPL bearish EMA)
         "surge_signals": [
             {"ticker": s.ticker, "price": s.price,
              "buy_surge_pct": round(s.buy_surge_pct, 4),
@@ -231,7 +232,9 @@ def run_analysis() -> dict:
              "net_buy_d3": round(s.net_buy_d3),
              "reason": f"Buy vol ↑{s.buy_surge_pct:.1%} vs prior day | {s.reason}"}
             for s in nb_results
-            if s.buy_surge_pct >= BUY_SURGE_MIN and s.net_buy_d3 > 0
+            if (s.buy_surge_pct >= BUY_SURGE_MIN and s.net_buy_d3 > 0
+                and rsi_signals.get(s.ticker) is not None
+                and rsi_signals[s.ticker].ema_trend == "BULLISH")
         ],
     }
 

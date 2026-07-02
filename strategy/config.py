@@ -64,6 +64,12 @@ STOP_LOSS_PCT = 0.05           # 5% below entry → exit
 TAKE_PROFIT_PCT = 0.10         # 10% above entry → exit
 MIN_SIGNALS_TO_TRADE = 2       # need at least 2/3 indicators aligned
 
+# ── Momentum signal thresholds ────────────────────────────────────────────────
+# Catches EMA-trending stocks with elevated volume (e.g. META) — complements RSI mean-reversion
+MOMENTUM_RSI_MIN = 45   # must have some upside momentum already
+MOMENTUM_RSI_MAX = 62   # not yet overbought
+MOMENTUM_VOL_MIN = 1.3  # volume ≥ 30% above 20-bar average confirms real buying interest
+
 # ── Market data ───────────────────────────────────────────────────────────────
 DATA_PERIOD = "60d"            # lookback window for indicator warmup
 DATA_INTERVAL = "1h"           # 1-hour bars

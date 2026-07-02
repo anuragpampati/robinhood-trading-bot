@@ -6,6 +6,7 @@ from .config import (
     RSI_OVERSOLD, RSI_OVERBOUGHT,
     ATR_VOLATILITY_THRESHOLD, MIN_SIGNALS_TO_TRADE,
     MARKET_REGIME_RSI_MIN, BEARISH_EMA_MIN_CONFIDENCE,
+    MOMENTUM_RSI_MIN, MOMENTUM_RSI_MAX, MOMENTUM_VOL_MIN,
 )
 
 VOL_GATE = 0.7   # skip signal if volume < 70% of 20-bar average (thin/noise bar)
@@ -107,6 +108,17 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False,
     if trend == "BULLISH":
         buy_score += 1
         buy_reasons.append("EMA bullish crossover")
+
+    # ── MOMENTUM BUY path (EMA-led trend continuation) ───────────────────────
+    # Catches META-type setups: EMA trending up, mid-RSI, elevated volume.
+    # Complements RSI mean-reversion — fires independently of oversold score.
+    if (trend == "BULLISH"
+            and MOMENTUM_RSI_MIN <= rsi_val <= MOMENTUM_RSI_MAX
+            and bb_pos != "ABOVE_BAND"
+            and vol_ratio >= MOMENTUM_VOL_MIN
+            and not rsi_still_falling):
+        buy_score = max(buy_score, 2)  # counts as 2/3 — EMA + volume confirmation
+        buy_reasons.append(f"EMA momentum: RSI={rsi_val:.1f} vol={vol_ratio:.1f}×avg")
 
     # ── SELL scoring ─────────────────────────────────────────────────────────
     # RSI overbought REQUIRED for sell — BB/EMA alone can signal mid-bounce.
