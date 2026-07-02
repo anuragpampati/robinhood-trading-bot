@@ -8,31 +8,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;height:100%}
 
 :root{
-  /* surfaces */
   --bg:    #06070d;
   --s1:    #0b0d18;
   --s2:    #0f1120;
   --s3:    #151829;
   --bd:    #1e2238;
   --bd2:   #272b45;
-
-  /* brand */
-  --gold:  #f5a623;
-  --goldbg:rgba(245,166,35,.1);
-  --goldbr:rgba(245,166,35,.2);
-
-  /* signals */
-  --buy:   #00d48a;
-  --buybg: rgba(0,212,138,.08);
-  --buybr: rgba(0,212,138,.25);
-  --sell:  #ff3860;
-  --sellbg:rgba(255,56,96,.08);
-  --sellbr:rgba(255,56,96,.25);
-
-  /* status */
+  --gold:  #f0a500;
+  --goldbg:rgba(240,165,0,.1);
+  --goldbr:rgba(240,165,0,.22);
+  --buy:   #10d07a;
+  --buybg: rgba(16,208,122,.08);
+  --buybr: rgba(16,208,122,.25);
+  --sell:  #ff3355;
+  --sellbg:rgba(255,51,85,.08);
+  --sellbr:rgba(255,51,85,.25);
   --green: #22c55e;
   --gbg:   rgba(34,197,94,.1);
   --gbr:   rgba(34,197,94,.25);
@@ -42,20 +35,17 @@ html{-webkit-text-size-adjust:100%}
   --blue:  #818cf8;
   --bbg:   rgba(129,140,248,.1);
   --bbr:   rgba(129,140,248,.25);
-
-  /* text */
   --tx:    #dde1f0;
   --tx2:   #7c82a0;
   --muted: #414661;
-
-  --sans: 'Inter', system-ui, sans-serif;
-  --mono: 'JetBrains Mono', monospace;
-  --r:    12px;
+  --sans:  'Inter', system-ui, sans-serif;
+  --mono:  'JetBrains Mono', monospace;
+  --r:     10px;
 }
 
-body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100vh;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100%;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 
-/* ── LOGIN ───────────────────────────────────────────────────── */
+/* ── LOGIN ──────────────────────────────────────────────────────────── */
 #login-wrap{position:fixed;inset:0;z-index:300;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px}
 .lbox{width:100%;max-width:360px}
 .lmark{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.25em;color:var(--gold);display:flex;align-items:center;gap:8px;margin-bottom:36px}
@@ -73,8 +63,8 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .lbtn:active{transform:scale(.98)}
 .lhint{font-size:.7rem;color:var(--muted);margin-top:16px;text-align:center}
 
-/* ── TOPBAR ──────────────────────────────────────────────────── */
-.topbar{background:rgba(11,13,24,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);padding:0 16px;height:54px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top)}
+/* ── TOPBAR ─────────────────────────────────────────────────────────── */
+.topbar{background:rgba(11,13,24,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);padding:0 16px;height:54px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100;padding-top:env(safe-area-inset-top)}
 .tb-brand{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.25em;color:var(--gold);display:flex;align-items:center;gap:7px;flex:1}
 .tb-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 6px var(--gold);animation:pulse 2.5s ease-in-out infinite}
 .tb-pills{display:flex;align-items:center;gap:6px}
@@ -86,19 +76,10 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .tb-sep{width:1px;height:18px;background:var(--bd);flex-shrink:0}
 .tb-ico{background:transparent;color:var(--tx2);border:1px solid var(--bd);border-radius:7px;padding:6px 10px;font-size:.8rem;cursor:pointer;line-height:1;transition:.15s;-webkit-tap-highlight-color:transparent}
 .tb-ico:hover{background:var(--s2);color:var(--tx)}
-.tb-out{background:transparent;border:none;color:var(--muted);font-size:.72rem;cursor:pointer;padding:4px 4px;font-family:var(--sans)}
+.tb-out{background:transparent;border:none;color:var(--muted);font-size:.72rem;cursor:pointer;padding:4px;font-family:var(--sans)}
 .tb-out:hover{color:var(--sell)}
 
-/* desktop tab nav — hidden on mobile (bottom nav handles it there) */
-.desk-tabs{display:none}
-@media(min-width:641px){
-  .desk-tabs{display:flex;gap:2px}
-  .desk-tab{background:transparent;border:none;color:var(--muted);font-size:.72rem;font-weight:600;font-family:var(--sans);padding:5px 11px;border-radius:7px;cursor:pointer;transition:.15s;text-decoration:none;letter-spacing:.02em}
-  .desk-tab:hover{background:var(--s2);color:var(--tx)}
-  .desk-tab.active{background:var(--goldbg);color:var(--gold)}
-}
-
-/* ── STATUS BARS ─────────────────────────────────────────────── */
+/* ── STATUS BARS ────────────────────────────────────────────────────── */
 .sbar{padding:8px 16px;display:none;align-items:center;gap:10px;font-size:.76rem;border-bottom:1px solid var(--bd)}
 .sbar.show{display:flex}
 .sbar-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
@@ -109,92 +90,173 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .sbar-msg{flex:1;color:var(--tx2)}
 .sbar-time{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
 
-.lrbar{padding:9px 16px;display:none;align-items:center;gap:10px;font-size:.76rem;border-bottom:1px solid var(--bd)}
+.lrbar{padding:8px 16px;display:none;align-items:center;gap:10px;font-size:.76rem;border-bottom:1px solid var(--bd)}
 .lrbar.show{display:flex}
-.lrbar.fresh{background:rgba(0,212,138,.04);border-left:3px solid var(--buy)}
-.lrbar.stale{background:rgba(245,166,35,.04);border-left:3px solid var(--gold)}
-.lrbar.old  {background:rgba(255,56,96,.04);border-left:3px solid var(--sell)}
+.lrbar.fresh{background:rgba(16,208,122,.04);border-left:3px solid var(--buy)}
+.lrbar.stale{background:rgba(240,165,0,.04);border-left:3px solid var(--gold)}
+.lrbar.old  {background:rgba(255,51,85,.04);border-left:3px solid var(--sell)}
 .lrbar-lbl{color:var(--tx2);font-size:.72rem;flex-shrink:0}
 .lrbar-msg{flex:1;color:var(--tx2);font-size:.74rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 .lrbar-age{font-family:var(--mono);font-size:.65rem;color:var(--muted);flex-shrink:0}
 
-/* ── ACCOUNT STRIP ───────────────────────────────────────────── */
+/* ── APP SHELL ──────────────────────────────────────────────────────── */
+/* mobile: natural block flow; desktop ≥900px: sticky sidebar + scrolling main */
+.app-shell{position:relative}
+
+@media(min-width:900px){
+  .app-shell{display:flex;align-items:flex-start}
+  /* sidebar: sticky, full viewport height minus topbar */
+  .sidebar{
+    width:300px;flex-shrink:0;
+    position:sticky;top:54px;
+    height:calc(100vh - 54px);
+    overflow-y:auto;overflow-x:hidden;
+    border-right:1px solid var(--bd);
+    background:var(--s1);
+    display:flex;flex-direction:column;
+    /* order: sidebar appears on the RIGHT */
+    order:2;
+  }
+  .main-scroll{flex:1;min-width:0;order:1}
+  /* hide portfolio panel on desktop — sidebar shows that content */
+  #panel-portfolio{display:none!important}
+  /* hide mobile account strip on desktop */
+  #acct-strip{display:none!important}
+}
+
+/* ── SIDEBAR ────────────────────────────────────────────────────────── */
+.sidebar{display:none} /* hidden on mobile by default */
+@media(min-width:900px){.sidebar{display:flex}}
+
+/* Account section */
+.sb-acct{padding:18px 16px 14px;border-bottom:1px solid var(--bd)}
+.sb-mkt-row{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+.sb-mkt-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.sb-mkt-dot.open{background:var(--buy);box-shadow:0 0 6px var(--buy);animation:blink 2s ease-in-out infinite}
+.sb-mkt-dot.closed{background:var(--muted)}
+.sb-mkt-lbl{font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.sb-regime-pill{font-family:var(--mono);font-size:.55rem;font-weight:700;padding:2px 7px;border-radius:99px;text-transform:uppercase;letter-spacing:.06em}
+.sb-cash-val{font-family:var(--mono);font-size:1.75rem;font-weight:700;letter-spacing:-.03em;color:var(--buy);line-height:1}
+.sb-cash-lbl{font-size:.58rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-top:4px}
+
+/* Capital deployment bar — the signature element */
+/* Shows: what fraction of $90 tradeable capital is currently deployed */
+.sb-deploy{margin-top:12px}
+.sb-deploy-labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-bottom:5px}
+.sb-deploy-track{height:4px;background:var(--bd2);border-radius:2px;overflow:hidden}
+.sb-deploy-fill{height:100%;border-radius:2px;transition:width .6s ease,background .4s}
+.sb-deploy-sub{font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:5px}
+
+/* Sidebar section wrapper */
+.sb-section{border-bottom:1px solid var(--bd);flex-shrink:0}
+.sb-section:last-child{border-bottom:none}
+.sb-sec-hd{display:flex;align-items:center;padding:11px 16px 6px;gap:8px}
+.sb-sec-lbl{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);flex:1}
+.sb-sec-cnt{font-family:var(--mono);font-size:.62rem;color:var(--muted);background:var(--s2);border:1px solid var(--bd);padding:1px 6px;border-radius:4px}
+
+/* Sidebar position cards (compact) */
+.sb-pc{padding:10px 14px 12px;border-bottom:1px solid var(--bd);transition:background .12s}
+.sb-pc:last-child{border-bottom:none}
+.sb-pc:hover{background:var(--s2)}
+.sb-pc-head{display:flex;align-items:baseline;gap:6px;margin-bottom:7px}
+.sb-pc-tk{font-family:var(--mono);font-size:1rem;font-weight:700;letter-spacing:.04em;flex:1}
+.sb-pc-strat{font-family:var(--mono);font-size:.52rem;font-weight:700;padding:1px 5px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;flex-shrink:0}
+.sb-pc-strat.surge {background:var(--goldbg);color:var(--gold);border:1px solid var(--goldbr)}
+.sb-pc-strat.normal{background:var(--bbg);color:var(--blue);border:1px solid var(--bbr)}
+.sb-pc-pnl{font-family:var(--mono);font-size:.88rem;font-weight:700;flex-shrink:0}
+.sb-pc-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:8px}
+.sb-pc-cell-k{font-size:.56rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.sb-pc-cell-v{font-family:var(--mono);font-size:.76rem;color:var(--tx);margin-top:1px}
+.sb-pc-gauge{height:5px;background:var(--bd2);border-radius:3px;overflow:hidden;margin-bottom:6px}
+.sb-pc-gauge-fill{height:100%;border-radius:3px;transition:width .5s ease}
+.sb-pc-footer{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.6rem;color:var(--muted)}
+
+/* Sidebar net buy list */
+.sb-nb-row{display:flex;align-items:center;gap:8px;padding:8px 14px;border-bottom:1px solid var(--bd)}
+.sb-nb-row:last-child{border-bottom:none}
+.sb-nb-tk{font-family:var(--mono);font-size:.82rem;font-weight:700;flex:1;letter-spacing:.03em}
+.sb-nb-streak{font-size:.66rem;color:var(--tx2)}
+.sb-nb-score{font-family:var(--mono);font-size:.72rem;font-weight:700;color:var(--gold)}
+
+/* Sidebar last-action */
+.sb-last-text{padding:10px 14px;font-family:var(--mono);font-size:.62rem;color:var(--tx2);line-height:1.6;max-height:110px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical}
+
+/* ── ACCOUNT STRIP (mobile only) ────────────────────────────────────── */
 .account-strip{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--bd)}
 @media(max-width:500px){.account-strip{grid-template-columns:1fr 1fr}}
-.acct-cell{padding:14px 16px;position:relative}
+.acct-cell{padding:13px 14px;position:relative}
 .acct-cell+.acct-cell::before{content:'';position:absolute;left:0;top:20%;bottom:20%;width:1px;background:var(--bd)}
-.acct-val{font-family:var(--mono);font-size:1.25rem;font-weight:700;letter-spacing:-.02em;line-height:1}
-.acct-lbl{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:5px}
-.acct-sub{font-family:var(--mono);font-size:.62rem;color:var(--muted);margin-top:2px}
+.acct-val{font-family:var(--mono);font-size:1.2rem;font-weight:700;letter-spacing:-.02em;line-height:1}
+.acct-lbl{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:4px}
+.acct-sub{font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:2px}
 .acct-cell.clickable{cursor:pointer;transition:background .15s;-webkit-tap-highlight-color:transparent}
 .acct-cell.clickable:hover{background:var(--s2)}
-.acct-cell.clickable:active{background:var(--s3)}
 
-/* ── BOTTOM NAV (mobile) ─────────────────────────────────────── */
-.bnav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(11,13,24,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--bd);z-index:40;padding-bottom:env(safe-area-inset-bottom)}
-@media(max-width:640px){.bnav{display:flex}}
+/* ── BOTTOM NAV ─────────────────────────────────────────────────────── */
+.bnav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(11,13,24,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--bd);z-index:40;padding-bottom:env(safe-area-inset-bottom)}
+@media(max-width:899px){.bnav{display:flex}}
 .bnav-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 4px 8px;background:transparent;border:none;cursor:pointer;-webkit-tap-highlight-color:transparent;color:var(--muted);font-size:.64rem;font-family:var(--sans);font-weight:600;letter-spacing:.04em;text-transform:uppercase;transition:color .15s}
 .bnav-btn.active{color:var(--gold)}
 .bnav-icon{font-size:1.1rem;line-height:1}
 
-/* ── MAIN LAYOUT ─────────────────────────────────────────────── */
-main{max-width:1200px;margin:0 auto;padding:0 0 80px}
-@media(min-width:641px){main{padding-bottom:32px}}
+/* ── MAIN LAYOUT ────────────────────────────────────────────────────── */
+.main-scroll{padding-bottom:80px}
+@media(min-width:900px){.main-scroll{padding-bottom:32px}}
 
-/* panels: mobile shows only active, desktop shows all */
+/* panels: mobile shows only active, desktop shows all in main-scroll */
 .panel{display:none}
 .panel.active{display:block}
 @media(min-width:641px){.panel{display:block!important;padding:0}}
 
-/* ── ACTION BANNER ───────────────────────────────────────────── */
-.action-banner{display:none;align-items:center;gap:12px;padding:12px 16px;background:var(--buybg);border-bottom:1px solid var(--buybr)}
+/* ── ACTION BANNER ──────────────────────────────────────────────────── */
+.action-banner{display:none;align-items:center;gap:12px;padding:11px 16px;background:var(--buybg);border-bottom:1px solid var(--buybr)}
 .action-banner.show{display:flex}
 .ab-dot{width:8px;height:8px;border-radius:50%;background:var(--buy);box-shadow:0 0 8px var(--buy);flex-shrink:0;animation:blink 1.5s ease-in-out infinite}
 .ab-text{flex:1;font-size:.82rem;color:var(--buy);font-weight:600}
 .ab-count{font-family:var(--mono);font-size:.78rem;font-weight:700;background:var(--buy);color:#000;padding:2px 9px;border-radius:99px}
 
-/* ── SECTION HEADER ──────────────────────────────────────────── */
-.sec{display:flex;align-items:center;gap:10px;padding:20px 16px 8px}
+/* ── SECTION HEADER ─────────────────────────────────────────────────── */
+.sec{display:flex;align-items:center;gap:10px;padding:18px 16px 8px}
 .sec-lbl{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);white-space:nowrap}
 .sec-rule{flex:1;height:1px;background:var(--bd)}
 .sec-ts{font-family:var(--mono);font-size:.62rem;color:var(--muted);white-space:nowrap}
 
-/* ── SIGNAL CONTROLS ─────────────────────────────────────────── */
-.sig-controls{padding:10px 14px 0;display:flex;flex-direction:column;gap:8px}
+/* ── SIGNAL CONTROLS ────────────────────────────────────────────────── */
+.sig-controls{padding:8px 14px 0;display:flex;flex-direction:column;gap:8px}
 .search-row{display:flex;gap:8px;align-items:center}
-.sig-search{flex:1;background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:10px 14px;color:var(--tx);font-family:var(--mono);font-size:.84rem;outline:none;-webkit-appearance:none;transition:border-color .15s,box-shadow .15s}
+.sig-search{flex:1;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r);padding:10px 14px;color:var(--tx);font-family:var(--mono);font-size:.84rem;outline:none;-webkit-appearance:none;transition:border-color .15s,box-shadow .15s}
 .sig-search:focus{border-color:var(--gold);box-shadow:0 0 0 2px var(--goldbg)}
 .sig-search::placeholder{color:var(--muted)}
 .sort-btn{background:var(--s2);border:1px solid var(--bd);border-radius:8px;padding:9px 11px;color:var(--tx2);font-size:.72rem;font-family:var(--sans);font-weight:600;cursor:pointer;white-space:nowrap;transition:.15s;flex-shrink:0}
 .sort-btn:hover{background:var(--s3);color:var(--tx)}
 .filter-chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:10px}
 .filter-chips::-webkit-scrollbar{display:none}
-.chip{display:flex;align-items:center;gap:5px;padding:5px 12px;border-radius:99px;border:1px solid var(--bd);background:transparent;color:var(--tx2);font-size:.72rem;font-weight:600;font-family:var(--sans);cursor:pointer;white-space:nowrap;transition:.15s;-webkit-tap-highlight-color:transparent;flex-shrink:0}
+.chip{display:flex;align-items:center;gap:5px;padding:5px 13px;border-radius:99px;border:1px solid var(--bd);background:transparent;color:var(--tx2);font-size:.72rem;font-weight:600;font-family:var(--sans);cursor:pointer;white-space:nowrap;transition:.15s;-webkit-tap-highlight-color:transparent;flex-shrink:0}
 .chip.active{border-color:var(--gold);background:var(--goldbg);color:var(--gold)}
 .chip.cbuy.active{border-color:var(--buy);background:var(--buybg);color:var(--buy)}
 .chip.csell.active{border-color:var(--sell);background:var(--sellbg);color:var(--sell)}
 .chip:hover:not(.active){background:var(--s2);color:var(--tx)}
 .chip-cnt{font-family:var(--mono);font-size:.65rem;opacity:.8}
 
-/* ── SIGNAL CARD GRID ────────────────────────────────────────── */
-#sig-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:8px;padding:12px 14px;margin-top:0}
-@media(max-width:420px){#sig-list{grid-template-columns:repeat(2,1fr);gap:6px;padding:10px 12px}}
-.sig-item{background:var(--s1);border:1px solid var(--bd);border-top:3px solid var(--bd);border-radius:10px;padding:11px 12px;cursor:pointer;transition:background .1s,border-color .15s,transform .12s;-webkit-tap-highlight-color:transparent;display:flex;flex-direction:column;gap:5px}
-.sig-item:hover{background:var(--s2);border-color:var(--bd2);transform:translateY(-2px)}
-.sig-item:active{transform:translateY(0)}
-.si-buy {border-top-color:var(--buy)}
-.si-sell{border-top-color:var(--sell)}
+/* ── SIGNAL CARD GRID ───────────────────────────────────────────────── */
+#sig-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(126px,1fr));gap:7px;padding:10px 14px;margin-top:0}
+@media(max-width:420px){#sig-list{grid-template-columns:repeat(2,1fr);gap:6px;padding:8px 10px}}
+.sig-item{background:var(--s1);border:1px solid var(--bd);border-top:3px solid var(--bd);border-radius:var(--r);padding:11px 11px 10px;cursor:pointer;transition:background .1s,border-color .15s,transform .12s,box-shadow .15s;-webkit-tap-highlight-color:transparent;display:flex;flex-direction:column;gap:5px}
+.sig-item:hover{background:var(--s2);border-color:var(--bd2);transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.3)}
+.sig-item:active{transform:translateY(0);box-shadow:none}
+.si-buy {border-top-color:var(--buy);background:rgba(16,208,122,.025)}
+.si-sell{border-top-color:var(--sell);background:rgba(255,51,85,.025)}
 .si-head{display:flex;align-items:flex-start;justify-content:space-between;gap:4px}
-.si-tk{font-family:var(--mono);font-size:.95rem;font-weight:700;letter-spacing:.04em;line-height:1.2}
-.si-price{font-family:var(--mono);font-size:.72rem;color:var(--tx2)}
-.si-badge{font-family:var(--mono);font-size:.52rem;font-weight:700;padding:2px 6px;border-radius:4px;letter-spacing:.06em;text-transform:uppercase;flex-shrink:0;white-space:nowrap}
+.si-tk{font-family:var(--mono);font-size:1.05rem;font-weight:700;letter-spacing:.02em;line-height:1.2}
+.si-price{font-family:var(--mono);font-size:.7rem;color:var(--tx2)}
+.si-badge{font-family:var(--mono);font-size:.5rem;font-weight:700;padding:2px 5px;border-radius:4px;letter-spacing:.07em;text-transform:uppercase;flex-shrink:0;white-space:nowrap}
 .si-badge.BUY {background:var(--buybg);color:var(--buy);border:1px solid var(--buybr)}
 .si-badge.SELL{background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr)}
 .si-badge.HOLD{background:rgba(255,255,255,.04);color:var(--muted);border:1px solid var(--bd)}
 .si-rsibar{height:3px;background:var(--bd2);border-radius:2px;overflow:hidden}
 .si-rsibar-fill{height:100%;border-radius:2px}
 .si-rsi{font-family:var(--mono);font-size:.62rem}
-.si-ema{font-family:var(--mono);font-size:.58rem;font-weight:700;padding:1px 5px;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
+.si-ema{font-family:var(--mono);font-size:.56rem;font-weight:700;padding:1px 5px;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
 .si-ema.bull{background:var(--buybg);color:var(--buy);border:1px solid var(--buybr)}
 .si-ema.bear{background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr)}
 .si-ema.neu {background:var(--bbg);color:var(--blue);border:1px solid var(--bbr)}
@@ -204,26 +266,26 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
 .si-foot{display:flex;align-items:center;gap:5px}
 .si-foot2{display:flex;align-items:center;gap:5px}
 
-/* ── POSITION CARDS ──────────────────────────────────────────── */
+/* ── POSITION CARDS (full size — mobile Portfolio tab) ──────────────── */
 .pos-cards{padding:0 14px;display:flex;flex-direction:column;gap:8px;padding-bottom:4px}
 .pc{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:0;overflow:hidden;cursor:pointer;transition:border-color .15s}
 .pc:hover{border-color:var(--bd2)}
-.pc-head{display:flex;align-items:center;padding:14px 14px 10px}
+.pc-head{display:flex;align-items:center;padding:14px 14px 10px;gap:8px}
 .pc-tk{font-family:var(--mono);font-size:1rem;font-weight:700;letter-spacing:.04em;flex:1}
 .pc-pnl{font-family:var(--mono);font-size:.95rem;font-weight:700}
-.pc-strat{margin-left:8px;font-family:var(--mono);font-size:.58rem;font-weight:700;padding:2px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.05em}
-.pc-strat.surge{background:var(--goldbg);color:var(--gold);border:1px solid var(--goldbr)}
+.pc-strat{font-family:var(--mono);font-size:.58rem;font-weight:700;padding:2px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.05em}
+.pc-strat.surge {background:var(--goldbg);color:var(--gold);border:1px solid var(--goldbr)}
 .pc-strat.normal{background:var(--bbg);color:var(--blue);border:1px solid var(--bbr)}
-.pc-body{padding:0 14px 14px;display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.pc-body{padding:0 14px 14px;display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .pc-kv{display:flex;flex-direction:column;gap:1px}
 .pc-k{font-size:.6rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
 .pc-v{font-family:var(--mono);font-size:.78rem;color:var(--tx)}
-.pc-bar-row{padding:0 14px 14px;grid-column:1/-1}
+.pc-bar-row{padding:0 14px 14px}
 .pc-bar-labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.6rem;margin-bottom:4px}
-.pc-bar-outer{height:4px;background:var(--bd2);border-radius:3px;overflow:hidden}
-.pc-bar-fill{height:100%;border-radius:3px;transition:width .4s}
+.pc-bar-outer{height:5px;background:var(--bd2);border-radius:3px;overflow:hidden}
+.pc-bar-fill{height:100%;border-radius:3px;transition:width .5s}
 
-/* ── NET BUY TABLE ───────────────────────────────────────────── */
+/* ── NET BUY TABLE ──────────────────────────────────────────────────── */
 .nb-table{width:100%;border-collapse:collapse;font-size:.8rem}
 .nb-table thead tr{background:var(--s2)}
 .nb-table th{text-align:left;padding:9px 14px;color:var(--muted);font-weight:700;font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--bd);white-space:nowrap}
@@ -232,14 +294,14 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
 .nb-table tbody tr:hover td{background:var(--s2)}
 .nb-table .tk{font-weight:700;letter-spacing:.04em}
 
-/* ── SURGE STRIP ─────────────────────────────────────────────── */
+/* ── SURGE STRIP ────────────────────────────────────────────────────── */
 .surge-scroll{padding:10px 14px;display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .surge-scroll::-webkit-scrollbar{display:none}
 .surge-chip{flex-shrink:0;background:var(--goldbg);border:1px solid var(--goldbr);border-radius:9px;padding:8px 12px;min-width:72px}
 .surge-tk{font-family:var(--mono);font-size:.8rem;font-weight:700;color:var(--tx)}
 .surge-pct{font-family:var(--mono);font-size:.7rem;color:var(--gold);margin-top:2px}
 
-/* ── TRADE LOG ───────────────────────────────────────────────── */
+/* ── TRADE LOG ──────────────────────────────────────────────────────── */
 .logwrap{padding:2px 0 4px}
 .log-entry{padding:14px 16px;border-bottom:1px solid var(--bd);border-left:3px solid transparent;transition:background .12s,border-color .12s}
 .log-entry:last-child{border-bottom:none}
@@ -249,8 +311,8 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
 .log-buy{color:var(--buy)}
 .log-sell{color:var(--sell)}
 
-/* ── DETAIL SHEET ────────────────────────────────────────────── */
-.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;opacity:0;pointer-events:none;transition:opacity .25s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+/* ── DETAIL SHEET ───────────────────────────────────────────────────── */
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;opacity:0;pointer-events:none;transition:opacity .25s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
 .backdrop.open{opacity:1;pointer-events:all}
 .sheet{position:fixed;bottom:0;left:0;right:0;background:var(--s1);border-top:1px solid var(--bd);border-radius:20px 20px 0 0;z-index:201;padding-bottom:env(safe-area-inset-bottom);transform:translateY(100%);transition:transform .32s cubic-bezier(.32,.72,0,1);max-height:90vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
 .sheet.open{transform:translateY(0)}
@@ -274,17 +336,17 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
 .sh-ck-on {background:var(--buybg);color:var(--buy);border:1px solid var(--buybr)}
 .sh-ck-off{background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr)}
 .sh-reason{font-family:var(--mono);font-size:.73rem;color:var(--tx2);line-height:1.65;background:var(--s2);border-radius:9px;padding:10px 13px;border:1px solid var(--bd)}
-.sh-order{background:var(--goldbg);border:1px solid var(--goldbr);border-radius:10px;padding:13px 15px}
+.sh-order{background:var(--goldbg);border:1px solid var(--goldbr);border-radius:var(--r);padding:13px 15px}
 .sh-order-title{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);margin-bottom:9px}
 .sh-order-row{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.77rem;margin-bottom:5px}
 .sh-order-row:last-child{margin-bottom:0}
 .sh-order-row span:first-child{color:var(--tx2)}
 .sh-order-row span:last-child{font-weight:600;color:var(--tx)}
-.sh-close{width:100%;padding:13px;background:var(--s2);border:1px solid var(--bd);border-radius:10px;color:var(--tx2);font-size:.85rem;font-weight:600;cursor:pointer;margin-top:4px;font-family:var(--sans);transition:.15s;-webkit-tap-highlight-color:transparent}
+.sh-close{width:100%;padding:13px;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r);color:var(--tx2);font-size:.85rem;font-weight:600;cursor:pointer;margin-top:4px;font-family:var(--sans);transition:.15s;-webkit-tap-highlight-color:transparent}
 .sh-close:hover{background:var(--s3);color:var(--tx)}
 
-/* ── MISC ────────────────────────────────────────────────────── */
-.empty{padding:32px 16px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:.76rem}
+/* ── MISC ───────────────────────────────────────────────────────────── */
+.empty{padding:24px 16px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:.74rem}
 .card-shell{background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
 @media(min-width:641px){.card-shell{border:1px solid var(--bd);border-radius:var(--r);margin:0 0 10px;overflow:hidden}}
 .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
@@ -295,7 +357,7 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
 </head>
 <body>
 
-<!-- ── DETAIL SHEET ────────────────────────────────────────── -->
+<!-- ── DETAIL SHEET ────────────────────────────────────────────────── -->
 <div class="backdrop" id="backdrop" onclick="closeSheet()"></div>
 <div class="sheet" id="sheet">
   <div class="sheet-drag"></div>
@@ -306,7 +368,7 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
   <div class="sheet-body" id="sh-body"></div>
 </div>
 
-<!-- ── LOGIN ──────────────────────────────────────────────── -->
+<!-- ── LOGIN ──────────────────────────────────────────────────────── -->
 <div id="login-wrap">
   <div class="lbox">
     <div class="lmark"><span class="lpulse"></span>AGENTIC</div>
@@ -326,7 +388,7 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
   </div>
 </div>
 
-<!-- ── TOPBAR ─────────────────────────────────────────────── -->
+<!-- ── TOPBAR ─────────────────────────────────────────────────────── -->
 <header class="topbar">
   <span class="tb-brand"><span class="tb-dot"></span>AGENTIC</span>
   <div class="tb-pills">
@@ -334,147 +396,199 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
     <span class="pill pill-bull" id="reg-pill" style="display:none"></span>
   </div>
   <div class="tb-sep"></div>
-  <div class="desk-tabs">
-    <a class="desk-tab active" id="dt-signals"  href="#sec-signals"  onclick="dtActive('signals')">Signals</a>
-    <a class="desk-tab"        id="dt-portfolio" href="#sec-portfolio" onclick="dtActive('portfolio')">Portfolio</a>
-    <a class="desk-tab"        id="dt-history"   href="#sec-history"  onclick="dtActive('history')">History</a>
-  </div>
-  <div class="tb-sep"></div>
   <button class="tb-ico" onclick="refreshAll()" title="Refresh">↻</button>
   <button class="tb-out" onclick="logout()">out</button>
 </header>
 
-<!-- ── STATUS BARS ────────────────────────────────────────── -->
-<div class="sbar" id="sbar">
-  <span class="sbar-dot" id="sbar-dot"></span>
-  <span class="sbar-msg" id="sbar-msg">Idle</span>
-  <span class="sbar-time" id="sbar-time"></span>
-</div>
-<div class="lrbar" id="lrbar">
-  <span class="lrbar-lbl">Last run</span>
-  <span class="lrbar-msg" id="lrbar-msg">—</span>
-  <span class="lrbar-age" id="lrbar-age"></span>
-</div>
+<!-- ── APP SHELL: sidebar (right) + main scroll (left) ───────────── -->
+<div class="app-shell">
 
-<!-- ── ACCOUNT STRIP ──────────────────────────────────────── -->
-<div class="account-strip" id="acct-strip">
-  <div class="acct-cell">
-    <div class="acct-val" id="ac-cash" style="color:var(--buy)">—</div>
-    <div class="acct-lbl">Buying Power</div>
-    <div class="acct-sub" id="ac-cash-sub">of $100</div>
-  </div>
-  <div class="acct-cell">
-    <div class="acct-val" id="ac-pos">—</div>
-    <div class="acct-lbl">Positions</div>
-    <div class="acct-sub" id="ac-pos-sub">of 4 max</div>
-  </div>
-  <div class="acct-cell clickable" onclick="goSignals('BUY')" title="Show buy signals">
-    <div class="acct-val" id="ac-buys" style="color:var(--buy)">—</div>
-    <div class="acct-lbl">Buy Signals</div>
-    <div class="acct-sub" id="ac-sig-ts"></div>
-  </div>
-  <div class="acct-cell clickable" onclick="goSignals('SELL')" title="Show sell signals">
-    <div class="acct-val" id="ac-sells" style="color:var(--sell)">—</div>
-    <div class="acct-lbl">Sell Signals</div>
-    <div class="acct-sub" id="ac-sell-sub"></div>
-  </div>
-</div>
+  <!-- ── SIDEBAR ───────────────────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
 
-<!-- ── ACTION BANNER ──────────────────────────────────────── -->
-<div class="action-banner" id="action-banner">
-  <span class="ab-dot"></span>
-  <span class="ab-text" id="ab-text">Buy signals detected</span>
-  <span class="ab-count" id="ab-count">0</span>
-</div>
-
-<main>
-
-<!-- ══ PANEL: SIGNALS ════════════════════════════════════════ -->
-<div class="panel active" id="panel-signals">
-
-  <div class="sec" id="sec-signals">
-    <span class="sec-lbl">RSI · BB · EMA Signals</span>
-    <div class="sec-rule"></div>
-    <span class="sec-ts" id="rsi-ts"></span>
-  </div>
-
-  <div class="sig-controls">
-    <div class="search-row">
-      <input type="search" class="sig-search" id="sig-search" placeholder="Search ticker…" autocorrect="off" autocapitalize="none" autocomplete="off"/>
-      <button class="sort-btn" id="sort-btn" onclick="cycleSort()">Sort: <span id="sort-lbl">Action</span></button>
+    <!-- Account -->
+    <div class="sb-acct">
+      <div class="sb-mkt-row">
+        <span class="sb-mkt-dot closed" id="sb-mkt-dot"></span>
+        <span class="sb-mkt-lbl" id="sb-mkt-lbl" style="color:var(--muted)">CLOSED</span>
+        <span class="sb-regime-pill" id="sb-regime" style="display:none"></span>
+      </div>
+      <div class="sb-cash-val" id="sb-cash">—</div>
+      <div class="sb-cash-lbl">Buying power</div>
+      <div class="sb-deploy">
+        <div class="sb-deploy-labels">
+          <span>Deployed</span>
+          <span id="sb-deploy-label">—</span>
+        </div>
+        <div class="sb-deploy-track">
+          <div class="sb-deploy-fill" id="sb-deploy-fill" style="width:0%;background:var(--muted)"></div>
+        </div>
+        <div class="sb-deploy-sub" id="sb-deploy-sub">— of $90 tradeable capital</div>
+      </div>
     </div>
-    <div class="filter-chips">
-      <button class="chip active"  data-filter="all"  onclick="setChip(this,'all')">All <span class="chip-cnt" id="cnt-all"></span></button>
-      <button class="chip cbuy"    data-filter="BUY"  onclick="setChip(this,'BUY')">Buy <span class="chip-cnt" id="cnt-buy"></span></button>
-      <button class="chip csell"   data-filter="SELL" onclick="setChip(this,'SELL')">Sell <span class="chip-cnt" id="cnt-sell"></span></button>
-      <button class="chip"         data-filter="HOLD" onclick="setChip(this,'HOLD')">Hold <span class="chip-cnt" id="cnt-hold"></span></button>
+
+    <!-- Open Positions -->
+    <div class="sb-section">
+      <div class="sb-sec-hd">
+        <span class="sb-sec-lbl">Positions</span>
+        <span class="sb-sec-cnt" id="sb-pos-cnt">0 / 4</span>
+      </div>
+      <div id="sb-pos-cards"><div class="empty" style="padding:14px 16px">No open positions</div></div>
     </div>
-  </div>
 
-  <div class="card-shell">
-    <div id="sig-list"><div class="empty">Loading signals…</div></div>
-  </div>
-
-  <!-- Surge strip inside signals panel -->
-  <div id="surge-wrap" style="display:none">
-    <div class="sec">
-      <span class="sec-lbl">Buy Volume Surge</span>
-      <div class="sec-rule"></div>
-      <span class="sec-ts">≥ 5% spike vs prior day</span>
+    <!-- Net Buy Leaders -->
+    <div class="sb-section">
+      <div class="sb-sec-hd">
+        <span class="sb-sec-lbl">Net Buy Leaders</span>
+      </div>
+      <div id="sb-nb-list"><div class="empty" style="padding:12px 16px">Loading…</div></div>
     </div>
-    <div class="card-shell">
-      <div class="surge-scroll" id="surge-scroll"></div>
+
+    <!-- Last Action -->
+    <div class="sb-section">
+      <div class="sb-sec-hd">
+        <span class="sb-sec-lbl">Last action</span>
+        <span class="sb-sec-cnt" id="sb-last-age">—</span>
+      </div>
+      <div class="sb-last-text" id="sb-last-text">—</div>
     </div>
-  </div>
 
-</div>
+  </aside>
 
-<!-- ══ PANEL: PORTFOLIO ══════════════════════════════════════ -->
-<div class="panel" id="panel-portfolio">
+  <!-- ── MAIN SCROLL ────────────────────────────────────────────── -->
+  <div class="main-scroll">
 
-  <div class="sec" id="sec-portfolio">
-    <span class="sec-lbl">Open Positions</span>
-    <div class="sec-rule"></div>
-    <span class="sec-ts" id="pos-ts"></span>
-  </div>
-  <div class="card-shell">
-    <div class="pos-cards" id="pos-cards"><div class="empty">Loading…</div></div>
-  </div>
-
-  <div class="sec">
-    <span class="sec-lbl">3-Day Net Buy Leaders</span>
-    <div class="sec-rule"></div>
-    <span class="sec-ts" id="nb-ts"></span>
-  </div>
-  <div class="card-shell">
-    <div class="tbl-wrap">
-      <table class="nb-table">
-        <thead><tr>
-          <th>Ticker</th><th>Price</th>
-          <th class="hide-sm">D-2</th><th class="hide-sm">D-1</th>
-          <th>Today</th><th>OBV</th><th>Score</th>
-        </tr></thead>
-        <tbody id="nb-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
-      </table>
+    <!-- Status bars -->
+    <div class="sbar" id="sbar">
+      <span class="sbar-dot" id="sbar-dot"></span>
+      <span class="sbar-msg" id="sbar-msg">Idle</span>
+      <span class="sbar-time" id="sbar-time"></span>
     </div>
-  </div>
+    <div class="lrbar" id="lrbar">
+      <span class="lrbar-lbl">Last run</span>
+      <span class="lrbar-msg" id="lrbar-msg">—</span>
+      <span class="lrbar-age" id="lrbar-age"></span>
+    </div>
 
-</div>
+    <!-- Account strip (mobile only) -->
+    <div class="account-strip" id="acct-strip">
+      <div class="acct-cell">
+        <div class="acct-val" id="ac-cash" style="color:var(--buy)">—</div>
+        <div class="acct-lbl">Cash</div>
+        <div class="acct-sub" id="ac-cash-sub">of $100</div>
+      </div>
+      <div class="acct-cell">
+        <div class="acct-val" id="ac-pos">—</div>
+        <div class="acct-lbl">Positions</div>
+        <div class="acct-sub" id="ac-pos-sub">of 4 max</div>
+      </div>
+      <div class="acct-cell clickable" onclick="goSignals('BUY')">
+        <div class="acct-val" id="ac-buys" style="color:var(--buy)">—</div>
+        <div class="acct-lbl">Buy Signals</div>
+        <div class="acct-sub" id="ac-sig-ts"></div>
+      </div>
+      <div class="acct-cell clickable" onclick="goSignals('SELL')">
+        <div class="acct-val" id="ac-sells" style="color:var(--sell)">—</div>
+        <div class="acct-lbl">Sell Signals</div>
+        <div class="acct-sub" id="ac-sell-sub"></div>
+      </div>
+    </div>
 
-<!-- ══ PANEL: HISTORY ════════════════════════════════════════ -->
-<div class="panel" id="panel-history">
-  <div class="sec" id="sec-history">
-    <span class="sec-lbl">Trade History</span>
-    <div class="sec-rule"></div>
-  </div>
-  <div class="card-shell">
-    <div class="logwrap" id="logwrap"><div class="empty">Loading…</div></div>
-  </div>
-</div>
+    <!-- Action banner -->
+    <div class="action-banner" id="action-banner">
+      <span class="ab-dot"></span>
+      <span class="ab-text" id="ab-text">Buy signals detected</span>
+      <span class="ab-count" id="ab-count">0</span>
+    </div>
 
-</main>
+    <!-- ══ PANEL: SIGNALS ════════════════════════════════════════ -->
+    <div class="panel active" id="panel-signals">
 
-<!-- ── BOTTOM NAV ─────────────────────────────────────────── -->
+      <div class="sec" id="sec-signals">
+        <span class="sec-lbl">RSI · BB · EMA Signals</span>
+        <div class="sec-rule"></div>
+        <span class="sec-ts" id="rsi-ts"></span>
+      </div>
+
+      <div class="sig-controls">
+        <div class="search-row">
+          <input type="search" class="sig-search" id="sig-search" placeholder="Search ticker…" autocorrect="off" autocapitalize="none" autocomplete="off"/>
+          <button class="sort-btn" id="sort-btn" onclick="cycleSort()">Sort: <span id="sort-lbl">Action</span></button>
+        </div>
+        <div class="filter-chips">
+          <button class="chip active"  data-filter="all"  onclick="setChip(this,'all')">All <span class="chip-cnt" id="cnt-all"></span></button>
+          <button class="chip cbuy"    data-filter="BUY"  onclick="setChip(this,'BUY')">Buy <span class="chip-cnt" id="cnt-buy"></span></button>
+          <button class="chip csell"   data-filter="SELL" onclick="setChip(this,'SELL')">Sell <span class="chip-cnt" id="cnt-sell"></span></button>
+          <button class="chip"         data-filter="HOLD" onclick="setChip(this,'HOLD')">Hold <span class="chip-cnt" id="cnt-hold"></span></button>
+        </div>
+      </div>
+
+      <div class="card-shell">
+        <div id="sig-list"><div class="empty">Loading signals…</div></div>
+      </div>
+
+      <!-- Surge strip -->
+      <div id="surge-wrap" style="display:none">
+        <div class="sec">
+          <span class="sec-lbl">Buy Volume Surge</span>
+          <div class="sec-rule"></div>
+          <span class="sec-ts">≥ 5% spike vs prior day</span>
+        </div>
+        <div class="card-shell">
+          <div class="surge-scroll" id="surge-scroll"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══ PANEL: PORTFOLIO (mobile only — desktop uses sidebar) ═ -->
+    <div class="panel" id="panel-portfolio">
+
+      <div class="sec">
+        <span class="sec-lbl">Open Positions</span>
+        <div class="sec-rule"></div>
+        <span class="sec-ts" id="pos-ts"></span>
+      </div>
+      <div class="card-shell">
+        <div class="pos-cards" id="pos-cards"><div class="empty">Loading…</div></div>
+      </div>
+
+      <div class="sec">
+        <span class="sec-lbl">3-Day Net Buy Leaders</span>
+        <div class="sec-rule"></div>
+        <span class="sec-ts" id="nb-ts"></span>
+      </div>
+      <div class="card-shell">
+        <div class="tbl-wrap">
+          <table class="nb-table">
+            <thead><tr>
+              <th>Ticker</th><th>Price</th>
+              <th class="hide-sm">D-2</th><th class="hide-sm">D-1</th>
+              <th>Today</th><th>OBV</th><th>Score</th>
+            </tr></thead>
+            <tbody id="nb-body"><tr><td colspan="7" class="empty">Loading…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══ PANEL: HISTORY ════════════════════════════════════════ -->
+    <div class="panel" id="panel-history">
+      <div class="sec" id="sec-history">
+        <span class="sec-lbl">Trade History</span>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="card-shell">
+        <div class="logwrap" id="logwrap"><div class="empty">Loading…</div></div>
+      </div>
+    </div>
+
+  </div><!-- end main-scroll -->
+
+</div><!-- end app-shell -->
+
+<!-- ── BOTTOM NAV (mobile only) ───────────────────────────────────── -->
 <nav class="bnav">
   <button class="bnav-btn active" data-panel="signals" onclick="switchPanel('signals')">
     <span class="bnav-icon">📊</span>Signals
@@ -516,20 +630,15 @@ function logout(){
   TOKEN='';CAN_RUN=false;
   localStorage.removeItem('rh_token');localStorage.removeItem('rh_auth');
   document.getElementById('login-wrap').style.display='flex';
-  document.getElementById('u').value='';document.getElementById('p').value='';
+  ['u','p'].forEach(id=>{document.getElementById(id).value='';});
   document.getElementById('lerr').style.display='none';
 }
 ['u','p'].forEach(id=>document.getElementById(id).addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();}));
 
-// ── DESKTOP TAB HIGHLIGHT ─────────────────────────────────────────────────────
-function dtActive(name){
-  document.querySelectorAll('.desk-tab').forEach(t=>t.classList.toggle('active',t.id==='dt-'+name));
-}
-
 // ── PANELS ────────────────────────────────────────────────────────────────────
 let currentPanel = 'signals';
 function switchPanel(name) {
-  if (window.innerWidth >= 641) return; // desktop: all visible
+  if (window.innerWidth >= 900) return; // desktop: sidebar handles portfolio
   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active', p.id==='panel-'+name));
   document.querySelectorAll('.bnav-btn').forEach(b=>b.classList.toggle('active', b.dataset.panel===name));
   currentPanel = name;
@@ -537,7 +646,6 @@ function switchPanel(name) {
 function goSignals(filter) {
   switchPanel('signals');
   setChip(document.querySelector(`.chip[data-filter="${filter}"]`), filter);
-  document.getElementById('sig-list').scrollIntoView({behavior:'smooth',block:'start'});
 }
 
 // ── UTILITIES ─────────────────────────────────────────────────────────────────
@@ -547,7 +655,7 @@ function pips(c,max=3){let h='<span class="si-conf">';for(let i=0;i<max;i++)h+=`
 function emaCls(t){return t==='BULLISH'?'bull':t==='BEARISH'?'bear':'neu';}
 function emaShort(t){return t==='BULLISH'?'↑ Bull':t==='BEARISH'?'↓ Bear':'— Neu';}
 
-// ── SHEET ─────────────────────────────────────────────────────────────────────
+// ── DETAIL SHEET ──────────────────────────────────────────────────────────────
 function openSheet(sig) {
   const rc=rsiClr(sig.rsi), pct=Math.min(100,Math.max(0,sig.rsi));
   const isOS=sig.rsi<35, isOB=sig.rsi>70, isEB=sig.ema_trend==='BULLISH';
@@ -603,7 +711,7 @@ document.getElementById('sheet').addEventListener('touchstart',e=>{_sy=e.touches
 document.getElementById('sheet').addEventListener('touchend',e=>{if(e.changedTouches[0].clientY-_sy>80)closeSheet();},{passive:true});
 
 // ── SIGNAL STATE ──────────────────────────────────────────────────────────────
-let allSigs=[], activeFilter='all', searchQ='', sortMode='action'; // action | rsi | ticker
+let allSigs=[], activeFilter='all', searchQ='', sortMode='action';
 
 function setChip(el, f) {
   if (!el) return;
@@ -612,7 +720,6 @@ function setChip(el, f) {
   activeFilter=f;
   renderSigs();
 }
-
 document.getElementById('sig-search').addEventListener('input',e=>{searchQ=e.target.value.trim().toUpperCase();renderSigs();});
 
 const sortModes=['action','rsi','ticker'];
@@ -620,15 +727,12 @@ let sortIdx=0;
 function cycleSort(){
   sortIdx=(sortIdx+1)%sortModes.length;
   sortMode=sortModes[sortIdx];
-  const labels={action:'Action',rsi:'RSI',ticker:'Ticker'};
-  document.getElementById('sort-lbl').textContent=labels[sortMode];
+  document.getElementById('sort-lbl').textContent={action:'Action',rsi:'RSI',ticker:'Ticker'}[sortMode];
   renderSigs();
 }
-
 function sortSigs(arr){
   if(sortMode==='ticker') return [...arr].sort((a,b)=>a.ticker.localeCompare(b.ticker));
   if(sortMode==='rsi')    return [...arr].sort((a,b)=>a.rsi-b.rsi);
-  // action: BUY first, then SELL, then HOLD
   const o={BUY:0,SELL:1,HOLD:2};
   return [...arr].sort((a,b)=>(o[a.action]??2)-(o[b.action]??2));
 }
@@ -647,7 +751,6 @@ function renderSigs(){
   document.getElementById('cnt-sell').textContent=sells;
   document.getElementById('cnt-hold').textContent=holds;
 
-  // Action banner
   const banner=document.getElementById('action-banner');
   if(buys>0){
     banner.classList.add('show');
@@ -660,7 +763,6 @@ function renderSigs(){
     document.getElementById('sig-list').innerHTML=`<div class="empty">No ${activeFilter==='all'?'':activeFilter+' '}signals${searchQ?' matching "'+searchQ+'"':''}</div>`;
     return;
   }
-
   document.getElementById('sig-list').innerHTML=f.map(s=>{
     const idx=allSigs.indexOf(s);
     const rc=rsiClr(s.rsi), pct=Math.min(100,Math.max(0,s.rsi));
@@ -682,21 +784,65 @@ function renderSigs(){
   }).join('');
 }
 
+// ── SIDEBAR POSITION CARD (compact) ──────────────────────────────────────────
+function renderSbPosCard(p) {
+  const pnl=Number(p.pnl_pct||0);
+  const cost=Number(p.avg_cost||0);
+  const price=Number(p.current_price||0);
+  const stop=Number(p.trail_stop||cost*(1-0.05));
+  const tgt=Number(p.take_profit||cost*1.10);
+  const range=tgt-stop;
+  const barPct=range>0?Math.min(100,Math.max(0,((price-stop)/range)*100)):50;
+  const strat=p.strategy||'normal';
+  const isSurge=strat==='surge'||strat==='intraday_surge';
+  const pnlClr=pnl>=0?'var(--buy)':'var(--sell)';
+  return `<div class="sb-pc">
+    <div class="sb-pc-head">
+      <span class="sb-pc-tk">${p.ticker}</span>
+      <span class="sb-pc-strat ${isSurge?'surge':'normal'}">${strat}</span>
+      <span class="sb-pc-pnl" style="color:${pnlClr}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</span>
+    </div>
+    <div class="sb-pc-row">
+      <div><div class="sb-pc-cell-k">Price</div><div class="sb-pc-cell-v">$${price.toFixed(2)}</div></div>
+      <div><div class="sb-pc-cell-k">Cost</div><div class="sb-pc-cell-v">$${cost.toFixed(2)}</div></div>
+      <div><div class="sb-pc-cell-k">Stop</div><div class="sb-pc-cell-v" style="color:var(--sell)">$${stop.toFixed(2)}</div></div>
+    </div>
+    <div class="sb-pc-gauge"><div class="sb-pc-gauge-fill" style="width:${barPct}%;background:${pnlClr}"></div></div>
+    <div class="sb-pc-footer">
+      <span style="color:var(--buy)">▶ $${tgt.toFixed(2)}</span>
+      ${p.sell_date?`<span>Sell ${p.sell_date}</span>`:''}
+    </div>
+  </div>`;
+}
+
 // ── DATA LOADERS ──────────────────────────────────────────────────────────────
 async function loadSignals(){
   try{
     const d=await fetch(CAN_RUN?'/api/signals':'signals.json?t='+Date.now()).then(r=>r.json());
 
-    // market status
+    // topbar market pill
     const mp=document.getElementById('mkt-pill');
     mp.textContent=d.market_open?'OPEN':'CLOSED';
     mp.className='pill '+(d.market_open?'pill-open':'pill-closed');
 
-    // regime
+    // sidebar market dot
+    const dot=document.getElementById('sb-mkt-dot');
+    const lbl=document.getElementById('sb-mkt-lbl');
+    dot.className='sb-mkt-dot '+(d.market_open?'open':'closed');
+    lbl.textContent=d.market_open?'MARKET OPEN':'MARKET CLOSED';
+    lbl.style.color=d.market_open?'var(--buy)':'var(--muted)';
+
+    // regime pills (topbar + sidebar)
     const rp=document.getElementById('reg-pill');
+    const srp=document.getElementById('sb-regime');
     const regime=d.market_regime||'normal';
-    if(regime==='bearish_ema'){rp.textContent='⚠ Bearish';rp.className='pill pill-bear';rp.style.display='';}
-    else{rp.textContent='Bullish';rp.className='pill pill-bull';rp.style.display='';}
+    if(regime==='bearish_ema'){
+      rp.textContent='⚠ Bearish';rp.className='pill pill-bear';rp.style.display='';
+      srp.textContent='⚠ Bearish regime';srp.style.cssText='display:inline;background:var(--goldbg);color:var(--gold);border:1px solid var(--goldbr)';
+    } else {
+      rp.textContent='Bullish';rp.className='pill pill-bull';rp.style.display='';
+      srp.style.display='none';
+    }
 
     // last-run banner
     if(d.timestamp){
@@ -723,7 +869,7 @@ async function loadSignals(){
     document.getElementById('ac-sells').textContent=nbSell.length+rsiSells;
     document.getElementById('ac-sell-sub').textContent=nbSell.length?nbSell.length+' net-sell':'';
 
-    // Net buy table
+    // Full net buy table (mobile portfolio panel)
     document.getElementById('nb-body').innerHTML=nb.length
       ?nb.slice(0,15).map(s=>`<tr>
         <td class="tk">${s.ticker}</td>
@@ -736,7 +882,16 @@ async function loadSignals(){
       </tr>`).join('')
       :'<tr><td colspan="7" class="empty">No net-buy accumulation signals</td></tr>';
 
-    // Surge
+    // Sidebar net buy list (compact)
+    document.getElementById('sb-nb-list').innerHTML=nb.length
+      ?nb.slice(0,8).map(s=>`<div class="sb-nb-row">
+          <span class="sb-nb-tk">${s.ticker}</span>
+          <span class="sb-nb-streak">${s.trend_days||0}d ↑</span>
+          <span class="sb-nb-score">${Number(s.score||0).toFixed(1)}</span>
+        </div>`).join('')
+      :'<div class="empty" style="padding:12px 16px">No accumulation signals</div>';
+
+    // Surge strip
     const surges=(d.surge_signals||[]).filter(s=>s.buy_surge_pct>=0.05);
     const sw=document.getElementById('surge-wrap');
     if(surges.length){
@@ -755,49 +910,79 @@ async function loadPositions(){
   try{
     const d=await fetch(CAN_RUN?'/api/positions':'positions.json?t='+Date.now()).then(r=>r.json());
     const bp=Number(d.buying_power||0);
-    document.getElementById('ac-cash').textContent='$'+bp.toFixed(2);
-    const lastAct=(d.last_actions||[])[0];
-    if(lastAct) document.getElementById('lrbar-msg').textContent=lastAct;
     const pos=d.positions||[];
+
+    // Mobile account strip
+    document.getElementById('ac-cash').textContent='$'+bp.toFixed(2);
     document.getElementById('ac-pos').textContent=pos.length;
     document.getElementById('ac-pos-sub').textContent=pos.length?'of 4 max':'all cash';
-    document.getElementById('pos-ts').textContent=d.updated_at?'Updated '+new Date(d.updated_at).toLocaleTimeString():'';
 
-    if(!pos.length){
-      document.getElementById('pos-cards').innerHTML='<div class="empty">No open positions — holding cash</div>';
-      return;
+    // Sidebar account section
+    document.getElementById('sb-cash').textContent='$'+bp.toFixed(2);
+    document.getElementById('sb-pos-cnt').textContent=pos.length+' / 4';
+
+    // Capital deployment bar
+    const deployed=Math.max(0,100-bp);
+    const deployPct=Math.min(100,(deployed/90)*100);
+    const aggPnl=pos.reduce((s,p)=>s+Number(p.pnl_pct||0),0)/Math.max(pos.length,1);
+    const deployClr=pos.length===0?'var(--muted)':aggPnl>=0?'var(--buy)':'var(--sell)';
+    document.getElementById('sb-deploy-fill').style.width=deployPct.toFixed(1)+'%';
+    document.getElementById('sb-deploy-fill').style.background=deployClr;
+    document.getElementById('sb-deploy-label').textContent=deployPct.toFixed(0)+'%';
+    document.getElementById('sb-deploy-sub').textContent=`$${deployed.toFixed(0)} of $90 tradeable deployed`;
+
+    // Sidebar positions
+    document.getElementById('sb-pos-cards').innerHTML=pos.length
+      ?pos.map(renderSbPosCard).join('')
+      :'<div class="empty" style="padding:14px 16px">No open positions — holding cash</div>';
+
+    // Last action in sidebar
+    const lastAct=(d.last_actions||[])[0];
+    if(lastAct){
+      document.getElementById('lrbar-msg').textContent=lastAct;
+      document.getElementById('sb-last-text').textContent=lastAct.replace(/^[\d\-TZ:\.]+\s*—\s*/,'');
+      if(d.updated_at){
+        const ageMin=Math.round((Date.now()-new Date(d.updated_at))/60000);
+        document.getElementById('sb-last-age').textContent=ageMin<60?ageMin+'m ago':Math.round(ageMin/60)+'h ago';
+      }
     }
 
-    document.getElementById('pos-cards').innerHTML=pos.map(p=>{
-      const pnl=Number(p.pnl_pct||0);
-      const cost=Number(p.avg_cost||0), price=Number(p.current_price||0);
-      const stop=Number(p.trail_stop||p.stop_loss||0), tgt=Number(p.take_profit||cost*1.10);
-      const range=tgt-stop, barPct=range>0?Math.min(100,Math.max(0,((price-stop)/range)*100)):50;
-      const strat=p.strategy||'normal';
-      const isSurge=strat==='surge'||strat==='intraday_surge';
-      return `<div class="pc">
-        <div class="pc-head">
-          <span class="pc-tk">${p.ticker}</span>
-          <span class="pc-strat ${isSurge?'surge':'normal'}">${strat}</span>
-          <span class="pc-pnl" style="margin-left:auto;color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</span>
-        </div>
-        <div class="pc-body">
-          <div class="pc-kv"><div class="pc-k">Price</div><div class="pc-v">$${price.toFixed(2)}</div></div>
-          <div class="pc-kv"><div class="pc-k">Cost</div><div class="pc-v">$${cost.toFixed(2)}</div></div>
-          <div class="pc-kv"><div class="pc-k">Trail Stop</div><div class="pc-v" style="color:var(--sell)">$${stop.toFixed(2)}</div></div>
-          <div class="pc-kv"><div class="pc-k">Target</div><div class="pc-v" style="color:var(--buy)">$${tgt.toFixed(2)}</div></div>
-        </div>
-        <div class="pc-bar-row">
-          <div class="pc-bar-labels">
-            <span style="color:var(--sell)">Stop $${stop.toFixed(2)}</span>
-            <span style="color:var(--buy)">Target $${tgt.toFixed(2)}</span>
-          </div>
-          <div class="pc-bar-outer"><div class="pc-bar-fill" style="width:${barPct}%;background:${pnl>=0?'var(--buy)':'var(--sell)'}"></div></div>
-          ${p.sell_date?`<div style="font-family:var(--mono);font-size:.62rem;color:var(--muted);margin-top:5px">Sell date: ${p.sell_date}</div>`:''}
-        </div>
-      </div>`;
-    }).join('');
-  }catch(e){document.getElementById('pos-cards').innerHTML='<div class="empty">Could not load positions</div>';}
+    // Mobile portfolio panel positions
+    document.getElementById('pos-ts').textContent=d.updated_at?'Updated '+new Date(d.updated_at).toLocaleTimeString():'';
+    document.getElementById('pos-cards').innerHTML=pos.length
+      ?pos.map(p=>{
+          const pnl=Number(p.pnl_pct||0);
+          const cost=Number(p.avg_cost||0),price=Number(p.current_price||0);
+          const stop=Number(p.trail_stop||cost*(1-0.05)),tgt=Number(p.take_profit||cost*1.10);
+          const range=tgt-stop,barPct=range>0?Math.min(100,Math.max(0,((price-stop)/range)*100)):50;
+          const strat=p.strategy||'normal',isSurge=strat==='surge'||strat==='intraday_surge';
+          return `<div class="pc">
+            <div class="pc-head">
+              <span class="pc-tk">${p.ticker}</span>
+              <span class="pc-strat ${isSurge?'surge':'normal'}">${strat}</span>
+              <span class="pc-pnl" style="margin-left:auto;color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-kv"><div class="pc-k">Price</div><div class="pc-v">$${price.toFixed(2)}</div></div>
+              <div class="pc-kv"><div class="pc-k">Cost</div><div class="pc-v">$${cost.toFixed(2)}</div></div>
+              <div class="pc-kv"><div class="pc-k">Trail Stop</div><div class="pc-v" style="color:var(--sell)">$${stop.toFixed(2)}</div></div>
+              <div class="pc-kv"><div class="pc-k">Target</div><div class="pc-v" style="color:var(--buy)">$${tgt.toFixed(2)}</div></div>
+            </div>
+            <div class="pc-bar-row">
+              <div class="pc-bar-labels">
+                <span style="color:var(--sell)">Stop $${stop.toFixed(2)}</span>
+                <span style="color:var(--buy)">Target $${tgt.toFixed(2)}</span>
+              </div>
+              <div class="pc-bar-outer"><div class="pc-bar-fill" style="width:${barPct}%;background:${pnl>=0?'var(--buy)':'var(--sell)'}"></div></div>
+              ${p.sell_date?`<div style="font-family:var(--mono);font-size:.62rem;color:var(--muted);margin-top:5px">Sell date: ${p.sell_date}</div>`:''}
+            </div>
+          </div>`;
+        }).join('')
+      :'<div class="empty">No open positions — holding cash</div>';
+
+  }catch(e){
+    document.getElementById('sb-pos-cards').innerHTML='<div class="empty" style="padding:14px 16px">Could not load positions</div>';
+  }
 }
 
 async function loadLog(){
@@ -807,7 +992,7 @@ async function loadLog(){
     const wrap=document.getElementById('logwrap');
     if(!entries.length){wrap.innerHTML='<div class="empty">No trade history yet.</div>';return;}
     wrap.innerHTML=entries.map(e=>{
-      const lines=e.trim().split('\n'), ts=lines[0];
+      const lines=e.trim().split('\n'),ts=lines[0];
       const items=lines.slice(1).filter(l=>l.trim()).map(l=>l.replace(/^-\s*/,''));
       return `<div class="log-entry">
         <div class="log-ts">${ts}</div>
