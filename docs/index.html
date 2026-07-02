@@ -89,6 +89,15 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .tb-out{background:transparent;border:none;color:var(--muted);font-size:.72rem;cursor:pointer;padding:4px 4px;font-family:var(--sans)}
 .tb-out:hover{color:var(--sell)}
 
+/* desktop tab nav — hidden on mobile (bottom nav handles it there) */
+.desk-tabs{display:none}
+@media(min-width:641px){
+  .desk-tabs{display:flex;gap:2px}
+  .desk-tab{background:transparent;border:none;color:var(--muted);font-size:.72rem;font-weight:600;font-family:var(--sans);padding:5px 11px;border-radius:7px;cursor:pointer;transition:.15s;text-decoration:none;letter-spacing:.02em}
+  .desk-tab:hover{background:var(--s2);color:var(--tx)}
+  .desk-tab.active{background:var(--goldbg);color:var(--gold)}
+}
+
 /* ── STATUS BARS ─────────────────────────────────────────────── */
 .sbar{padding:8px 16px;display:none;align-items:center;gap:10px;font-size:.76rem;border-bottom:1px solid var(--bd)}
 .sbar.show{display:flex}
@@ -325,6 +334,12 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
     <span class="pill pill-bull" id="reg-pill" style="display:none"></span>
   </div>
   <div class="tb-sep"></div>
+  <div class="desk-tabs">
+    <a class="desk-tab active" id="dt-signals"  href="#sec-signals"  onclick="dtActive('signals')">Signals</a>
+    <a class="desk-tab"        id="dt-portfolio" href="#sec-portfolio" onclick="dtActive('portfolio')">Portfolio</a>
+    <a class="desk-tab"        id="dt-history"   href="#sec-history"  onclick="dtActive('history')">History</a>
+  </div>
+  <div class="tb-sep"></div>
   <button class="tb-ico" onclick="refreshAll()" title="Refresh">↻</button>
   <button class="tb-out" onclick="logout()">out</button>
 </header>
@@ -377,7 +392,7 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
 <!-- ══ PANEL: SIGNALS ════════════════════════════════════════ -->
 <div class="panel active" id="panel-signals">
 
-  <div class="sec">
+  <div class="sec" id="sec-signals">
     <span class="sec-lbl">RSI · BB · EMA Signals</span>
     <div class="sec-rule"></div>
     <span class="sec-ts" id="rsi-ts"></span>
@@ -417,7 +432,7 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
 <!-- ══ PANEL: PORTFOLIO ══════════════════════════════════════ -->
 <div class="panel" id="panel-portfolio">
 
-  <div class="sec">
+  <div class="sec" id="sec-portfolio">
     <span class="sec-lbl">Open Positions</span>
     <div class="sec-rule"></div>
     <span class="sec-ts" id="pos-ts"></span>
@@ -448,7 +463,7 @@ main{max-width:1200px;margin:0 auto;padding:0 0 80px}
 
 <!-- ══ PANEL: HISTORY ════════════════════════════════════════ -->
 <div class="panel" id="panel-history">
-  <div class="sec">
+  <div class="sec" id="sec-history">
     <span class="sec-lbl">Trade History</span>
     <div class="sec-rule"></div>
   </div>
@@ -505,6 +520,11 @@ function logout(){
   document.getElementById('lerr').style.display='none';
 }
 ['u','p'].forEach(id=>document.getElementById(id).addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();}));
+
+// ── DESKTOP TAB HIGHLIGHT ─────────────────────────────────────────────────────
+function dtActive(name){
+  document.querySelectorAll('.desk-tab').forEach(t=>t.classList.toggle('active',t.id==='dt-'+name));
+}
 
 // ── PANELS ────────────────────────────────────────────────────────────────────
 let currentPanel = 'signals';
