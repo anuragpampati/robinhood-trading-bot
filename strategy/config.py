@@ -64,6 +64,13 @@ STOP_LOSS_PCT = 0.05           # 5% below entry → exit
 TAKE_PROFIT_PCT = 0.10         # 10% above entry → exit
 MIN_SIGNALS_TO_TRADE = 2       # need at least 2/3 indicators aligned
 
+# ── Circuit breakers ──────────────────────────────────────────────────────────
+# Halt all new buys if account drops this much from prior reference value.
+# CCR writes peak_value + week_start_value to positions.json each cycle.
+DAILY_LOSS_HALT   = 0.03   # 3 % drop from prior-day close → no new buys today
+WEEKLY_LOSS_HALT  = 0.05   # 5 % drop from Monday open → no new buys this week
+CONCENTRATION_MAX = 0.20   # single-position value / account_value ceiling (= $20 / $100)
+
 # ── Momentum signal thresholds ────────────────────────────────────────────────
 # Catches EMA-trending stocks with elevated volume (e.g. META) — complements RSI mean-reversion
 MOMENTUM_RSI_MIN = 45   # must have some upside momentum already

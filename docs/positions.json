@@ -2,6 +2,9 @@
   "updated_at": "2026-07-01T20:09:37Z",
   "buying_power": 85.0,
   "market_regime": "normal",
+  "account_value": 99.93,
+  "peak_value": 100.0,
+  "week_start_value": 100.0,
   "positions": [
     {
       "ticker": "PYPL",
