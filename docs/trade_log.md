@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-07-03T14:15:00Z
+- Action   : SELL JPM (order queued — awaiting fill)
+- Price    : $334.35 (est. — average_price pending)
+- Amount   : $15.02 | Shares: 0.044920
+- RSI      : 56.6 | EMA: BULLISH | BB: IN_BAND
+- Stop     : $330.59 | Target: $367.32
+- Strategy : surge | Sell date: 2026-07-03
+- Regime   : normal
+- Reason   : Surge sell_date reached (2026-07-03). Position +0.13% profitable at $334.35 vs cost $333.93. GFD order 6a47c3df placed at 14:14:55Z — order queued, market likely closed (July 3 = observed Independence Day holiday for NYSE). Will fill Mon Jul 7 open if GFD expires unfilled today.
+
+## 2026-07-03T14:15:01Z
+- SUMMARY: Market signals say open but empirical evidence (stale quotes from Jul 2 close, queued sell order not filling) confirms NYSE closed — observed Independence Day holiday (Jul 4 falls Saturday, NYSE closed Friday Jul 3). Buying power: $10.00. Positions: 3 (JPM SELL queued). Regime: normal. Account: $100.41. Daily drawdown: 0.0% (new day, day_start=$100.41). Weekly drawdown: -0.41% (account UP vs week_start $100.00). Surge tracker: MRNA=1 (216.7% buy volume surge, need count≥2 to buy). JPM SELL order placed to execute at next open. Buy queue pending JPM fill: GS (net-buy 4d streak, $15). Circuit breaker: inactive.
+
+---
+
 ## 2026-07-02T20:12:27Z
 - SUMMARY: Market closed. Buying power: $10.00. Positions: 3 (WMT +1.26% @ $111.71, DKNG +1.81% @ $25.88, JPM +0.13% @ $334.35). Regime: normal. Account: $100.37. Daily drawdown: -0.09% (account UP vs day start $100.28). Weekly drawdown: -0.37% (account UP vs week start $100.00). Surge tracker: empty (JPM removed — no longer in surge_signals). JPM sell_date=2026-07-03 — sell order pending next open cycle. No exits triggered. BUY queue for tomorrow: GOOGL, META, UBER, RBLX, AI, RKLB, LAZR (RSI conf=2), GS (net-buy 4d streak). Buying power at $10 floor — sell JPM tomorrow should free ~$15.
 
