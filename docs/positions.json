@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T14:15:00Z",
+  "updated_at": "2026-07-03T15:10:05Z",
   "buying_power": 10.0,
   "market_regime": "normal",
   "account_value": 100.41,
@@ -53,15 +53,14 @@
     }
   ],
   "last_actions": [
-    "⚠️ NYSE CLOSED — July 3, 2026 = observed Independence Day holiday (Jul 4 falls on Saturday)",
-    "SELL JPM placed: 0.044920 shares @ est. $334.35 (order 6a47c3df queued at 14:14:55Z — GFD, will execute Mon Jul 7 open if unfilled today)",
-    "JPM surge sell_date=2026-07-03 reached, position +0.13% profitable",
-    "WMT HOLD: +1.26% @ $111.71 (stop $108.33, target $121.35)",
-    "DKNG HOLD: +1.81% @ $25.88 (stop $24.66, target $27.96)",
-    "No new buys: buying_power $10.00 at minimum buffer (JPM sell proceeds not yet cleared)",
-    "Buy queue pending JPM sell fill: GS $15 (net-buy 4d streak, priority 2)",
-    "Surge tracker: MRNA=1 (216.7% buy vol surge — need count≥2 to buy)",
-    "Circuit breaker: inactive (daily 0.0%, weekly +0.41% gain)",
+    "Market open per strategy.run — quotes stale from Jul 2 EOD (possible early close before Jul 4 holiday; no Jul 3 trade data at 11:10 ET)",
+    "JPM sell order PENDING from prior cycle (GFD placed 10:14 ET): shares_held_for_sells=0.044920 — no new order placed",
+    "WMT HOLD: +1.26% @ $111.71 (stop $108.33, target $121.35) — no exit signals triggered",
+    "DKNG HOLD: +1.81% @ $25.88 (stop $24.66, target $27.96) — no exit signals triggered",
+    "No new buys: buying_power $10.00 = minimum cash buffer (cannot place any order)",
+    "Surge tracker: MRNA=2 (RSI overbought SELL conf=2 — do NOT buy on Mon open), ISRG=1 (new, also RSI SELL)",
+    "Buy queue for Mon Jul 7 after JPM fill (~$15 freed): GS (net-buy 4d streak, $15 priority 2), GOOGL/RBLX/AI/RKLB (RSI BUY conf=2, $15 each)",
+    "Circuit breaker: inactive (daily 0.0%, weekly +0.41% gain vs $100.00 week-start)",
     "Regime: normal. Positions: 3. Account: $100.41. Peak: $100.45."
   ]
 }

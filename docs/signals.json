@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-03T14:10:00.522562+00:00",
+  "timestamp": "2026-07-03T15:10:05.418451+00:00",
   "mode": "quick",
   "universe_size": 72,
   "market_open": true,
@@ -874,6 +874,15 @@
       "buy_vol_d3": 188393389,
       "net_buy_d3": 2259578,
       "reason": "Buy vol \u2191216.7% vs prior day | 1d streak | latest 2.26M | OBV 1.8M/day"
+    },
+    {
+      "ticker": "ISRG",
+      "price": 426.0,
+      "buy_surge_pct": 11.4805,
+      "buy_vol_d2": 42620826,
+      "buy_vol_d3": 531928739,
+      "net_buy_d3": 1247256,
+      "reason": "Buy vol \u21911148.0% vs prior day | 0d streak | latest 1.25M | OBV 0.4M/day"
     }
   ]
 }
