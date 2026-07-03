@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-03T16:12:13Z
+- SUMMARY: NYSE holiday — Jul 3 observed for Jul 4 Independence Day. is_market_open() bug (no holiday calendar) returned True, but live quotes confirm no Jul 3 trading (last trades from Jul 2 close, bid/ask spreads absurd). No new orders placed. JPM GFD sell (order 6a47c3df, queued 14:14 ET) will expire EOD unfilled — re-sell needed Mon Jul 7. WMT HOLD +1.26% @ $111.71 (stop $108.33, target $121.35). DKNG HOLD +1.81% @ $25.88 (stop $24.66, target $27.96). JPM +0.13% @ $334.35 (pending sell). Buying power: $10.00. Positions: 3. Regime: normal. Account: $100.41. Daily drawdown: 0.0%. Weekly drawdown: -0.4% (gain). Surge tracker: JNJ=1 (buy vol +101.5% on Jul 2 data; MRNA/ISRG removed — not in signals). Buy queue for Mon Jul 7: re-sell JPM, then GS ($15 net-buy 4d), GOOGL/RBLX/AI/RKLB ($15 each RSI conf=2). Circuit breaker: inactive.
+
+---
+
 ## 2026-07-03T15:10:05Z
 - SUMMARY: Market open per strategy.run (market_open=True, regime=normal) — quotes stale from Jul 2 EOD (possible early close before Jul 4 Independence Day holiday; no Jul 3 trade data at 11:10 ET). Buying power: $10.00 (minimum buffer — no buys possible). Positions: 3. Regime: normal. Account: $100.41. Daily drawdown: 0.0%. Weekly drawdown: -0.4% (gain). JPM sell order PENDING from prior cycle (GFD placed 10:14 ET, shares_held_for_sells=0.044920) — no new sell placed. WMT +1.26% @ $111.71, DKNG +1.81% @ $25.88, both HOLD (no exit signals). Surge tracker: MRNA=2 (RSI SELL — do NOT buy), ISRG=1. Buy queue for Mon Jul 7: GS, GOOGL, RBLX, AI, RKLB (pending JPM fill ~$15). Circuit breaker: inactive.
 

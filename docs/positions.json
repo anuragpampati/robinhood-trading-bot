@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T15:10:05Z",
+  "updated_at": "2026-07-03T16:12:13Z",
   "buying_power": 10.0,
   "market_regime": "normal",
   "account_value": 100.41,
@@ -53,14 +53,14 @@
     }
   ],
   "last_actions": [
-    "Market open per strategy.run — quotes stale from Jul 2 EOD (possible early close before Jul 4 holiday; no Jul 3 trade data at 11:10 ET)",
-    "JPM sell order PENDING from prior cycle (GFD placed 10:14 ET): shares_held_for_sells=0.044920 — no new order placed",
-    "WMT HOLD: +1.26% @ $111.71 (stop $108.33, target $121.35) — no exit signals triggered",
-    "DKNG HOLD: +1.81% @ $25.88 (stop $24.66, target $27.96) — no exit signals triggered",
-    "No new buys: buying_power $10.00 = minimum cash buffer (cannot place any order)",
-    "Surge tracker: MRNA=2 (RSI overbought SELL conf=2 — do NOT buy on Mon open), ISRG=1 (new, also RSI SELL)",
-    "Buy queue for Mon Jul 7 after JPM fill (~$15 freed): GS (net-buy 4d streak, $15 priority 2), GOOGL/RBLX/AI/RKLB (RSI BUY conf=2, $15 each)",
-    "Circuit breaker: inactive (daily 0.0%, weekly +0.41% gain vs $100.00 week-start)",
-    "Regime: normal. Positions: 3. Account: $100.41. Peak: $100.45."
+    "NYSE HOLIDAY Jul 3 (Jul 4 observed) — is_market_open() bug returned True but live quotes confirm market closed. No new orders placed.",
+    "JPM GFD sell (order 6a47c3df placed 14:14 ET) queued but WILL NOT execute on holiday — expires EOD. RE-SELL JPM on Mon Jul 7 (sell_date Jul 3 still applies: Jul 7 >= Jul 3).",
+    "WMT HOLD: +1.26% @ $111.71 (stop $108.33, target $121.35) — no exit signals",
+    "DKNG HOLD: +1.81% @ $25.88 (stop $24.66, target $27.96) — RSI BUY but already held",
+    "No new buys: buying_power $10.00 = minimum cash buffer + market closed",
+    "Surge tracker: JNJ=1 (buy vol +101.5% surge from Jul 2 data). MRNA/ISRG removed (not in signals).",
+    "Buy queue Mon Jul 7: 1) Re-sell JPM first ($15 freed), 2) GS net-buy 4d streak ($15), 3) GOOGL/RBLX/AI/RKLB RSI BUY conf=2 ($15 each). PFE/LAZR skip (net-buy SELL conflict).",
+    "Circuit breaker: inactive. Daily drawdown: 0.0%. Weekly: -0.4% (gain vs $100.00 week-start).",
+    "Regime: normal. Positions: 3. Account: $100.41. Peak: $100.45. Unsettled cash ~$44.91 (from Jul 2 sells TXN/JNJ/PYPL) settles Mon Jul 7."
   ]
 }
