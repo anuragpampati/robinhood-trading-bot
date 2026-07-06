@@ -1,8 +1,81 @@
 {
-  "updated_at": "2026-06-29T15:05:05Z",
-  "buying_power": 100.00,
-  "positions": [],
+  "updated_at": "2026-07-06T15:11:29Z",
+  "buying_power": 24.91,
+  "market_regime": "normal",
+  "account_value": 100.27,
+  "peak_value": 100.45,
+  "day_start_value": 99.90,
+  "day_start_date": "2026-07-06",
+  "week_start_value": 99.90,
+  "week_start_date": "2026-07-06",
+  "positions": [
+    {
+      "ticker": "WMT",
+      "quantity": 0.135968,
+      "avg_cost": 110.32,
+      "current_price": 110.15,
+      "pnl_pct": -0.0015,
+      "value": 14.98,
+      "entry_atr_pct": 0.009,
+      "entry_time": "2026-07-02T14:12:11Z",
+      "trail_stop": 108.33,
+      "take_profit": 121.35,
+      "strategy": "normal",
+      "sell_date": null
+    },
+    {
+      "ticker": "DKNG",
+      "quantity": 0.590088,
+      "avg_cost": 25.42,
+      "current_price": 25.525,
+      "pnl_pct": 0.0041,
+      "value": 15.06,
+      "entry_atr_pct": 0.015,
+      "entry_time": "2026-07-02T14:12:14Z",
+      "trail_stop": 24.66,
+      "take_profit": 27.96,
+      "strategy": "normal",
+      "sell_date": null
+    },
+    {
+      "ticker": "GS",
+      "quantity": 0.014347,
+      "avg_cost": 1045.51,
+      "current_price": 1053.45,
+      "pnl_pct": 0.0076,
+      "value": 15.11,
+      "entry_atr_pct": 0.0078,
+      "entry_time": "2026-07-06T14:12:36Z",
+      "trail_stop": 1029.12,
+      "take_profit": 1150.06,
+      "strategy": "normal",
+      "sell_date": null
+    },
+    {
+      "ticker": "GOOGL",
+      "quantity": 0.041828,
+      "avg_cost": 358.61,
+      "current_price": 362.38,
+      "pnl_pct": 0.0105,
+      "value": 15.16,
+      "entry_atr_pct": 0.0074,
+      "entry_time": "2026-07-06T14:12:37Z",
+      "trail_stop": 353.29,
+      "take_profit": 394.47,
+      "strategy": "normal",
+      "sell_date": null
+    }
+  ],
   "last_actions": [
-    "2026-06-29T15:05:05Z — Market open — no qualifying signals. Regime filter INACTIVE (SPY RSI=53.6 > 30). All tickers HOLD with 0/3 confidence. RSI signals suppressed by low volume (SPY/QQQ/MSFT) or stable RSI (AAPL/NVDA). Net-buy SELL on MSFT and SPY — no positions held, no action. No net-buy BUY candidates. Prices: SPY=$737.87, QQQ=$715.90, AAPL=$281.82, MSFT=$372.00, NVDA=$194.86."
+    "HOLD: No trades executed. Market open, positions at max (4/4). No BUY signals. No SELL triggers for held positions.",
+    "WMT HOLD: -0.15% @ $110.15 (stop $108.33, target $121.35) — above ATR stop, held 4d.",
+    "DKNG HOLD: +0.41% @ $25.53 (stop $24.66, target $27.96) — above ATR stop, held 4d.",
+    "GS HOLD: +0.76% @ $1053.45 (stop $1029.12, target $1150.06) — <3h hold, ATR stop check skipped.",
+    "GOOGL HOLD: +1.05% @ $362.38 (stop $353.29, target $394.47) — <3h hold, ATR stop check skipped.",
+    "ATR ratchet: no ratchets — all positions below 2.5% profit threshold.",
+    "Circuit breaker: inactive. Daily drawdown: 0.0% (account UP $99.90→$100.27). Weekly: 0.0%.",
+    "RSI SELL signals (not held): AAPL, HOOD, RIVN, WFC, MRNA, BA, MBLY — no action.",
+    "Regime: normal. SPY $750.26, RSI 64.5, EMA BULLISH. No surge signals. Surge tracker: empty.",
+    "Positions: 4/4 (max). Buying power: $24.91. Account: $100.27. Peak: $100.45."
   ]
 }
