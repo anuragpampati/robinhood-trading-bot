@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-06T18:11:55Z
+- SUMMARY: Market open — positions at max (4/4). No SELL triggers. No BUY slots available (4/4 max). Buying power: $24.91. Positions: 4. Regime: normal. Account: $100.31. Daily drawdown: -0.4% (account UP vs day start $99.90). Weekly drawdown: -0.4% (account UP vs week start $99.90). Surge tracker: empty. Held: WMT +0.08% @ $110.41 (stop $108.33, target $121.35, held 4d); DKNG +0.57% @ $25.57 (stop $24.66, target $27.96, held 4d); GS +0.09% @ $1046.48 (stop $1029.12, target $1150.06, held 4h); GOOGL +1.60% @ $364.34 (stop $353.29, target $394.47, held 4h). ATR ratchet: no ratchets (all positions below 2.5% profit threshold). TGT MODERATE BUY (RSI=29.9 oversold, BB=BELOW_BAND, conf=2) skipped — positions full. RSI SELL signals not held: BAC (RSI=73.1, conf=2), WFC (RSI=71.4, conf=2), BA (RSI=77.4, conf=2), ISRG (RSI=78.4, conf=2). Net-buy SELL: QQQ (not held). Circuit breaker: inactive (daily +0.4%, weekly +0.4%).
+
+---
+
 ## 2026-07-06T17:15:00Z
 - SUMMARY: Market open — max positions (4/4), no SELL triggers, no new BUY slots. Buying power: $24.91. Positions: 4/4. Regime: normal. Account: $100.37. Daily drawdown: -0.5% (account up). Weekly drawdown: -0.5% (account up). Surge tracker: empty. Held: WMT -0.14% ($108.33 stop), DKNG +0.69% ($24.66 stop), GS +0.42% ($1029.12 stop, <3h hold), GOOGL +1.72% ($353.29 stop, <3h hold). No SELL triggers. RSI SELL signals not held: RIVN, BAC, MRNA, BA, ISRG, MBLY.
 
