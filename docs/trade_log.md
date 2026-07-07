@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-07-07T16:12:13Z
+- Action   : SELL GOOGL
+- Price    : $368.62
+- Amount   : $15.42 | Shares: 0.041828
+- RSI      : 73.07 | EMA: BULLISH | BB: ABOVE_BAND
+- Stop     : was $360.40 | Target: was $394.47
+- Strategy : normal | Sell date: signal exit (RSI overbought, 26h held)
+- Regime   : normal
+- Reason   : RSI overbought (73.07), price above BB upper band, confidence 2/3. Held 26h ≥ 3h threshold. P&L: +2.79% (+$0.42). Entry was $358.61 on 2026-07-06.
+
+## 2026-07-07T16:12:13Z
+- Action   : BUY SMCI
+- Price    : $26.11
+- Amount   : $15.00 | Shares: 0.574494
+- RSI      : 31.36 | EMA: BEARISH | BB: BELOW_BAND
+- Stop     : $24.86 | Target: $28.72
+- Strategy : normal | Sell date: null (ATR/signal exit)
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (32.8→31.4), BB reversal (below band returning), confidence 2/3. MODERATE BUY. ATR 2.39%.
+
 ## 2026-07-07T15:13:00Z
 - SUMMARY: Market open — positions at max (4/4). No SELL triggers. No BUY slots available. Buying power: $39.96. Positions: 4. Regime: normal. Account: $101.16. Daily drawdown: 0.51%. Weekly drawdown: -1.26% (UP vs week start $99.90). Surge tracker: empty. Held: WMT +1.38% @ $111.84 (stop $110.87, target $121.35); DKNG +4.43% @ $26.55 (stop $26.06, target $27.96); GS -0.38% @ $1041.54 (stop $1029.12, target $1150.06); GOOGL +2.59% @ $367.90 (stop $360.40, target $394.47). No ratchet changes. RSI SELL signals (not held): CRM (RSI=71.2), JNJ (RSI=74.4), BAC (RSI=76.1), MCD (RSI=72.1), XOM (RSI=70.8), ISRG (RSI=71.5). No BUY signals. Circuit breaker: inactive.
 
