@@ -5,7 +5,7 @@
 ---
 
 ## 2026-07-07T20:10:00Z
-- SUMMARY: Market closed. Buying power: $24.96. Positions: 4. Regime: normal. Account: $101.49. Daily drawdown: 0.19%. Weekly drawdown: -0.34% (gain). Surge tracker: empty. Signals not acted on (market closed): RSI BUY INTC@$110.50 (conf 2/3), ARM@$300.49 (conf 2/3); RSI SELL XOM@$141.66 (conf 2/3, not held). Holdings: WMT +1.11% (stop $110.87), DKNG +5.86% (stop $26.06, near TP $27.96), GS -0.38% (stop $1029.12), SMCI +0.50% (stop $24.862). Circuit breaker: inactive.
+- SUMMARY: Market closed. Buying power: $24.96. Positions: 4. Regime: normal. Account: $101.49. Daily drawdown: 0.19%. Weekly drawdown: -0.34% (gain). Surge tracker: empty. Signals not acted on (market closed): RSI BUY INTC@$110.50 (conf 2/3), ARM@$300.49 (conf 2/3); RSI SELL XOM@$141.66 (not held). Holdings: WMT +1.11%, DKNG +5.86%, GS -0.38%, SMCI +0.50%. Circuit breaker: inactive.
 
 ## 2026-07-07T19:11:00Z
 - SUMMARY: Market open — no signals. 4/4 positions held. No sell conditions triggered. Max positions reached — no buys. Buying power: $24.96. Positions: 4. Regime: normal. Account: $101.28. Daily drawdown: 0.4%. Weekly drawdown: -0.1% (gain). Surge tracker: empty.
