@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-08T14:12:50Z
+- SUMMARY: Market open — no trades. Positions at capacity (4/4): no new buys allowed. No sell triggers hit. Buying power: $40.38. Positions: 4. Regime: normal. Account: $101.70. Daily drawdown: 0.00% (new day). Weekly drawdown: -0.55% (up from week start). Surge tracker: UBER=1. Signals: RSI BUY UUUU@$12.86 (not tradeable, 4/4 positions), UBER surge 54.7% (count=1, needs 2). RSI SELL XOM@$141.66 (not held). Net-buy SELL on non-held tickers: F, ONDS, AI, ASTS, MCD, NBIS, AVAV, ORCL, RDW, OKLO. SMCI trail stop ratcheted: $24.862→$26.241 (+3.38% profit). WMT: +2.66%, DKNG: +4.09%, GS: -1.31%, SMCI: +3.38%. Circuit breaker: inactive. Daily 0.00% / Weekly -0.55%.
+
+
 ## 2026-07-07T20:10:00Z
 - SUMMARY: Market closed. Buying power: $24.96. Positions: 4. Regime: normal. Account: $101.49. Daily drawdown: 0.19%. Weekly drawdown: -0.34% (gain). Surge tracker: empty. Signals not acted on (market closed): RSI BUY INTC@$110.50 (conf 2/3), ARM@$300.49 (conf 2/3); RSI SELL XOM@$141.66 (not held). Holdings: WMT +1.11%, DKNG +5.86%, GS -0.38%, SMCI +0.50%. Circuit breaker: inactive.
 
