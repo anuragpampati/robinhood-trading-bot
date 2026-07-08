@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-08T16:12:13Z
+- Action   : BUY JPM
+- Price    : $333.00
+- Amount   : $15.00 | Shares: 0.045040
+- RSI      : 41.19 | EMA: BULLISH | BB: BELOW_BAND
+- Stop     : $328.54 | Target: $366.30
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : BB reversal returning from lower band | EMA bullish crossover | conf 2/3
+
+## 2026-07-08T16:12:15Z
+- SUMMARY: Market open — BUY JPM $15. Buying power: $25.38. Positions: 3 (WMT, DKNG, JPM). Regime: normal. Account: $101.20. Daily drawdown: -0.49%. Weekly drawdown: +0.05% (gain). Surge tracker: empty. Circuit breaker: inactive.
+
 ## 2026-07-08T15:13:22Z
 - Action   : SELL GS
 - Price    : $1,018.83
