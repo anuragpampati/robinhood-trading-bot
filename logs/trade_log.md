@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-08T19:12:00Z
+- SUMMARY: Market open — no signals, no trades. 4/4 positions (max). Buying power: $10.38. Positions: WMT, DKNG, JPM, RKLB. Regime: normal. Account: $101.90. Daily drawdown: -0.2% (gain). Weekly drawdown: -0.7% (gain). Surge tracker: NVDA=1.
+- WMT: +2.40% @ $112.97 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
+- DKNG: +6.52% @ $27.079 | trail $26.06 (≥5% profit threshold, ratcheted) | target $27.962
+- JPM: -0.33% @ $331.93 | trail $328.54 | held 2.97h — stop/signal gates active (need ≥3h) | target $366.322
+- RKLB: +1.80% @ $82.75 | trail $76.69 | held 1.98h — stop/signal gates active (need ≥3h) | target $89.419
+- Circuit breaker: inactive. SPY RSI 49.3, EMA NEUTRAL. No RSI or net-buy buy signals. Net-sell: GE, COHR, LITE, INFQ, EOSE, MU, LRCX, VRT, AMAT, TXN, TER, QBTS, CRDO, CIFR, AMKR, AEHR (none held). Surge: NVDA +40.5% (count=1, need 2 for intraday_surge entry).
+
+---
+
 ## 2026-07-08T16:12:13Z
 - Action   : BUY JPM
 - Price    : $333.00
