@@ -20,6 +20,7 @@ import yfinance as yf
 
 TOP_N_RESULTS = 20        # show top N buy/sell signals from full scan
 PARALLEL_WORKERS = 30     # concurrent yfinance downloads
+BUY_SURGE_MIN = 0.05      # 5% intraday buy-volume surge threshold
 
 
 @dataclass
@@ -34,6 +35,9 @@ class NetBuySignal:
     obv_slope: float      # OBV 5-day slope (positive = rising)
     reason: str
     score: float = field(default=0.0)   # ranking score (higher = stronger signal)
+    buy_vol_d2: float = field(default=0.0)   # buy volume prior day
+    buy_vol_d3: float = field(default=0.0)   # buy volume most recent day
+    buy_surge_pct: float = field(default=0.0)  # (buy_vol_d3 - buy_vol_d2) / buy_vol_d2
 
 
 def _fetch_daily(ticker: str, period: str = "30d") -> pd.DataFrame:
@@ -95,12 +99,20 @@ def _analyze_daily_df(ticker: str, df: pd.DataFrame) -> NetBuySignal:
 
     price = float(df["close"].iloc[-1])
 
+    # Buy volume surge fields
+    spread = (df["high"] - df["low"]).replace(0, np.nan)
+    buy_vol_series = ((df["close"] - df["low"]) / spread * df["volume"]).fillna(0)
+    bv2 = float(buy_vol_series.iloc[-2]) if len(buy_vol_series) >= 2 else 0.0
+    bv3 = float(buy_vol_series.iloc[-1])
+    surge_pct = (bv3 - bv2) / bv2 if bv2 > 0 else 0.0
+
     if trend_days >= 3 and obv_slope > 0 and d1 < d2 < d3:
         reason = (
             f"Net buy ↑ {trend_days}d streak: "
             f"{d1/1e6:.2f}M → {d2/1e6:.2f}M → {d3/1e6:.2f}M | OBV +{obv_slope/1e6:.1f}M/day"
         )
-        sig = NetBuySignal(ticker, "BUY", price, d1, d2, d3, trend_days, obv_slope, reason)
+        sig = NetBuySignal(ticker, "BUY", price, d1, d2, d3, trend_days, obv_slope, reason,
+                           buy_vol_d2=bv2, buy_vol_d3=bv3, buy_surge_pct=surge_pct)
         sig.score = _score(sig)
         return sig
 
@@ -108,12 +120,14 @@ def _analyze_daily_df(ticker: str, df: pd.DataFrame) -> NetBuySignal:
         reason = (
             f"Net buy reversed: {d2/1e6:.2f}M → {d3/1e6:.2f}M | OBV {obv_slope/1e6:.1f}M/day"
         )
-        sig = NetBuySignal(ticker, "SELL", price, d1, d2, d3, trend_days, obv_slope, reason)
+        sig = NetBuySignal(ticker, "SELL", price, d1, d2, d3, trend_days, obv_slope, reason,
+                           buy_vol_d2=bv2, buy_vol_d3=bv3, buy_surge_pct=surge_pct)
         sig.score = _score(sig)
         return sig
 
     reason = f"{trend_days}d streak | latest {d3/1e6:.2f}M | OBV {obv_slope/1e6:.1f}M/day"
-    return NetBuySignal(ticker, "HOLD", price, d1, d2, d3, trend_days, obv_slope, reason, score=0.0)
+    return NetBuySignal(ticker, "HOLD", price, d1, d2, d3, trend_days, obv_slope, reason,
+                        score=0.0, buy_vol_d2=bv2, buy_vol_d3=bv3, buy_surge_pct=surge_pct)
 
 
 def analyze_net_buy(ticker: str) -> NetBuySignal:

@@ -45,6 +45,7 @@ def compute_all(df: pd.DataFrame) -> pd.DataFrame:
     out["rsi"]       = rsi(out["close"])
     out["ema_fast"]  = ema(out["close"], EMA_FAST)
     out["ema_slow"]  = ema(out["close"], EMA_SLOW)
+    out["ema200"]    = ema(out["close"], 200)
     bb_lower, bb_mid, bb_upper = bollinger(out["close"])
     out["bb_lower"]  = bb_lower
     out["bb_mid"]    = bb_mid

@@ -44,7 +44,7 @@ def _bb_position(row: pd.Series) -> str:
     return "IN_BAND"
 
 
-def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False) -> Signal:
+def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False, market_bearish_ema: bool = False) -> Signal:
     """Produce a trading signal for *ticker* from its indicator DataFrame.
 
     Three signals scored 0-3: RSI oversold/overbought, Bollinger Band position,
