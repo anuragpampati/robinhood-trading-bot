@@ -4,25 +4,15 @@
 
 ---
 
-## 2026-07-08T18:10:00Z
-- SUMMARY: Market open — no signals, no trades. Positions: 4/4 (max — no buys possible). Regime: normal. Buying power: $10.38. Account: $101.72. Daily drawdown: -0.0% (gain). Weekly drawdown: -0.6% (gain). Surge tracker: empty.
-  WMT: +2.34% @ $112.90 | stop $110.872 | target $121.352
-  DKNG: +5.43% @ $26.80 | stop $26.06 (ratcheted ≥5% profit) | target $27.962
-  JPM: -0.08% @ $332.77 | stop $328.54 | held 2.0h (gates active) | target $366.322
-  RKLB: +1.48% @ $82.49 | stop $76.69 | held 1.0h (gates active) | target $89.419
+## 2026-07-08T19:12:00Z
+- SUMMARY: Market open — no signals, no trades. 4/4 positions (max). Buying power: $10.38. Positions: WMT, DKNG, JPM, RKLB. Regime: normal. Account: $101.90. Daily drawdown: -0.2% (gain). Weekly drawdown: -0.7% (gain). Surge tracker: NVDA=1.
+- WMT: +2.40% @ $112.97 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
+- DKNG: +6.52% @ $27.079 | trail $26.06 (≥5% profit threshold, ratcheted) | target $27.962
+- JPM: -0.33% @ $331.93 | trail $328.54 | held 2.97h — stop/signal gates active (need ≥3h) | target $366.322
+- RKLB: +1.80% @ $82.75 | trail $76.69 | held 1.98h — stop/signal gates active (need ≥3h) | target $89.419
+- Circuit breaker: inactive. SPY RSI 49.3, EMA NEUTRAL. No RSI or net-buy buy signals. Net-sell: GE, COHR, LITE, INFQ, EOSE, MU, LRCX, VRT, AMAT, TXN, TER, QBTS, CRDO, CIFR, AMKR, AEHR (none held). Surge: NVDA +40.5% (count=1, need 2 for intraday_surge entry).
 
-## 2026-07-08T17:12:00Z
-- SUMMARY: Market open — BUY RKLB $15. Buying power: ~$10.38. Positions: 4 (WMT, DKNG, JPM, RKLB). Regime: normal. Account: $101.25. Daily drawdown: -0.44%. Weekly drawdown: -0.10% (gain vs Mon). Surge tracker: empty. Circuit breaker: inactive. WMT +2.42% @ $112.99 (stop $110.872). DKNG +3.31% @ $26.26 (stop $26.06). JPM +0.18% @ $333.62 (stop $328.54).
-
-## 2026-07-08T17:11:32Z
-- Action   : BUY RKLB
-- Price    : $81.28
-- Amount   : $15.00 | Shares: 0.184540
-- RSI      : 29.9 | EMA: BEARISH | BB: BELOW_BAND
-- Stop     : $76.69 | Target: $89.41
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI oversold+stabilizing (29.9≈30 threshold) | BB returning from lower band | conf 2/3
+---
 
 ## 2026-07-08T16:12:13Z
 - Action   : BUY JPM
