@@ -10,7 +10,8 @@ MIN_TRADE_SIZE = 5.0           # don't place orders smaller than this
 MAX_OPEN_POSITIONS = 4         # max concurrent holdings
 
 # ── Watchlist ─────────────────────────────────────────────────────────────────
-# 72 liquid stocks: ETFs + mega-cap + AI/data center + semiconductors + space + physical AI
+# 103 tickers: core + sector themes (Space, Quantum, Drones, Nuclear, Photonics,
+# CPU, Physical AI, AI Utilities, AI Power, AI Connectivity, AI Hardware, AI Applications)
 WATCHLIST = [
     # Market ETFs
     "SPY", "QQQ", "IWM",
@@ -41,10 +42,73 @@ WATCHLIST = [
     # Semiconductor equipment & advanced chips
     "AMAT", "LRCX", "KLAC", "MRVL", "TXN", "ASML",
     # Space
-    "RKLB", "ASTS",
+    "RKLB", "ASTS", "PL", "RDW",
     # Physical AI — robotics, autonomous driving, industrial automation
     "ISRG", "SYM", "MBLY", "TER", "ROK", "AUR", "LAZR",
+    # Quantum computing
+    "IONQ", "RGTI", "QBTS", "INFQ",
+    # Drones & defense
+    "ONDS", "AVAV", "KTOS", "MRCY",
+    # Nuclear energy
+    "OKLO", "UUUU", "GEV", "LEU",
+    # Photonics
+    "AAOI", "LITE", "COHR", "AEHR",
+    # CPU / advanced packaging
+    "AMKR", "TSM",
+    # AI Utilities (compute/mining)
+    "IREN", "NBIS", "CIFR", "CRWV",
+    # AI Power
+    "EOSE", "BE", "NVTS",
+    # AI Connectivity
+    "ALAB", "CRDO",
+    # AI Applications
+    "NOW", "CRWD",
 ]
+
+# ── Fibonacci target levels (upside Fibonacci levels by ticker) ───────────────
+# Reference price targets for dashboard display. NOT used for automated exits.
+FIB_TARGETS: dict[str, float] = {
+    # Space
+    "RKLB": 92, "ASTS": 79, "PL": 26, "RDW": 8,
+    # Quantum
+    "IONQ": 44, "RGTI": 16, "QBTS": 20, "INFQ": 10,
+    # Drones
+    "ONDS": 7, "AVAV": 174, "KTOS": 52, "MRCY": 104,
+    # Nuclear
+    "OKLO": 50, "UUUU": 12, "GEV": 906, "LEU": 132,
+    # Photonics
+    "AAOI": 103, "LITE": 636, "COHR": 311, "AEHR": 59,
+    # CPU
+    "AMD": 515, "INTC": 120, "ARM": 304, "AMKR": 64,
+    # Physical AI
+    "TSLA": 382, "AMZN": 230, "GOOGL": 357, "ISRG": 397,
+    # AI Utilities
+    "IREN": 31, "NBIS": 213, "CIFR": 17, "CRWV": 67,
+    # AI Power
+    "EOSE": 4, "BE": 265, "NVTS": 13, "VRT": 282,
+    # AI Connectivity
+    "AVGO": 334, "ALAB": 341, "CRDO": 210, "MRVL": 225,
+    # AI Hardware
+    "NVDA": 192, "TSM": 419, "ASML": 1732, "MU": 869,
+    # AI Applications
+    "PLTR": 121, "NOW": 104, "CRWD": 171, "SNOW": 181,
+}
+
+# ── Sector groups (for dashboard Sectors panel) ───────────────────────────────
+SECTOR_GROUPS: dict[str, list[str]] = {
+    "Space":          ["RKLB", "ASTS", "PL", "RDW"],
+    "Quantum":        ["IONQ", "RGTI", "QBTS", "INFQ"],
+    "Drones":         ["ONDS", "AVAV", "KTOS", "MRCY"],
+    "Nuclear":        ["OKLO", "UUUU", "GEV", "LEU"],
+    "Photonics":      ["AAOI", "LITE", "COHR", "AEHR"],
+    "CPU":            ["AMD", "INTC", "ARM", "AMKR"],
+    "Physical AI":    ["TSLA", "AMZN", "GOOGL", "ISRG"],
+    "AI Utilities":   ["IREN", "NBIS", "CIFR", "CRWV"],
+    "AI Power":       ["EOSE", "BE", "NVTS", "VRT"],
+    "AI Connectivity":["AVGO", "ALAB", "CRDO", "MRVL"],
+    "AI Hardware":    ["NVDA", "TSM", "ASML", "MU"],
+    "AI Applications":["PLTR", "NOW", "CRWD", "SNOW"],
+}
 
 # ── RSI parameters ───────────────────────────────────────────────────────────
 RSI_PERIOD = 14

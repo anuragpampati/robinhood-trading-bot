@@ -15,10 +15,10 @@ from tabulate import tabulate
 from .market_data import fetch_all_watchlist, fetch_all_from_cache, is_market_open
 from .indicators import compute_all
 from .signals import generate_signal
-from .net_buy import run_net_buy_scan, NetBuySignal
+from .net_buy import run_net_buy_scan, NetBuySignal, BUY_SURGE_MIN
 from .risk import risk_summary
 from .universe import full_universe
-from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN
+from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN, BEARISH_EMA_MAX_POSITION, FIB_TARGETS, SECTOR_GROUPS
 
 QUICK_MODE = "--quick" in sys.argv
 
@@ -73,12 +73,20 @@ def run_analysis() -> dict:
 
     # Compute SPY first to determine market regime
     spy_rsi = None
+    market_bearish_ema = False
     if "SPY" in data_map:
         try:
             spy_df = compute_all(data_map["SPY"])
             spy_sig = generate_signal("SPY", spy_df)
             rsi_signals["SPY"] = spy_sig
             spy_rsi = spy_sig.rsi
+            spy_close  = float(spy_df["close"].iloc[-1])
+            spy_ema200 = float(spy_df["ema200"].iloc[-1])
+            market_bearish_ema = spy_close < spy_ema200
+            regime_tag = "BEARISH (SPY below 200 EMA)" if market_bearish_ema else "BULLISH (SPY above 200 EMA)"
+            print(f"  [REGIME] SPY ${spy_close:.2f} vs EMA200 ${spy_ema200:.2f} → {regime_tag}")
+            if market_bearish_ema:
+                print(f"  [REGIME] Max position ${BEARISH_EMA_MAX_POSITION}, 3/3 confidence required")
         except Exception as exc:
             print(f"  [WARN] SPY: {exc}")
 
@@ -93,7 +101,8 @@ def run_analysis() -> dict:
             df_ind = compute_all(df)
             # SPY itself is always evaluated without the regime filter
             suppress = market_bearish
-            rsi_signals[ticker] = generate_signal(ticker, df_ind, market_bearish=suppress)
+            rsi_signals[ticker] = generate_signal(ticker, df_ind, market_bearish=suppress,
+                                                  market_bearish_ema=market_bearish_ema)
         except Exception as exc:
             print(f"  [WARN] {ticker}: {exc}")
 
@@ -191,13 +200,17 @@ def run_analysis() -> dict:
         "mode": "quick" if QUICK_MODE else "full_universe",
         "universe_size": len(universe),
         "market_open": market_open,
+        "market_regime": "bearish_ema" if market_bearish_ema else "normal",
         "rsi_signals": [
             {"ticker": s.ticker, "action": s.action, "price": s.price,
              "rsi": round(s.rsi, 2), "ema_trend": s.ema_trend,
              "bb_signal": s.bb_signal, "confidence": s.confidence,
-             "atr_pct": round(s.atr_pct, 4), "reason": s.reason}
+             "atr_pct": round(s.atr_pct, 4), "reason": s.reason,
+             "fib_target": FIB_TARGETS.get(s.ticker)}
             for s in rsi_signals.values()
         ],
+        "fib_targets": FIB_TARGETS,
+        "sector_groups": SECTOR_GROUPS,
         "net_buy_buy_signals": [
             {"ticker": s.ticker, "price": s.price,
              "net_buy_d1": round(s.net_buy_d1), "net_buy_d2": round(s.net_buy_d2),
@@ -212,6 +225,19 @@ def run_analysis() -> dict:
              "obv_slope": round(s.obv_slope), "score": round(s.score, 2),
              "reason": s.reason}
             for s in sell_signals[:10]
+        ],
+        # Surge strategy: buy vol spike ≥5% vs prior day → buy now, sell next trading day
+        # Require EMA BULLISH to avoid buying volume spikes in downtrends (e.g. PYPL bearish EMA)
+        "surge_signals": [
+            {"ticker": s.ticker, "price": s.price,
+             "buy_surge_pct": round(s.buy_surge_pct, 4),
+             "buy_vol_d2": round(s.buy_vol_d2), "buy_vol_d3": round(s.buy_vol_d3),
+             "net_buy_d3": round(s.net_buy_d3),
+             "reason": f"Buy vol ↑{s.buy_surge_pct:.1%} vs prior day | {s.reason}"}
+            for s in nb_results
+            if (s.buy_surge_pct >= BUY_SURGE_MIN and s.net_buy_d3 > 0
+                and rsi_signals.get(s.ticker) is not None
+                and rsi_signals[s.ticker].ema_trend == "BULLISH")
         ],
     }
 

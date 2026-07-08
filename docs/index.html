@@ -345,6 +345,21 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .sh-close{width:100%;padding:13px;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r);color:var(--tx2);font-size:.85rem;font-weight:600;cursor:pointer;margin-top:4px;font-family:var(--sans);transition:.15s;-webkit-tap-highlight-color:transparent}
 .sh-close:hover{background:var(--s3);color:var(--tx)}
 
+/* ── SECTORS PANEL ──────────────────────────────────────────────────── */
+.sectors-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;padding:12px}
+@media(min-width:900px){.sectors-grid{grid-template-columns:repeat(3,1fr)}}
+.sec-card{background:var(--s2);border:1px solid var(--bd);border-radius:10px;overflow:hidden}
+.sec-card-hdr{padding:7px 12px;font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--bd)}
+.fib-row{display:grid;grid-template-columns:52px 1fr 70px 56px;align-items:center;padding:5px 12px;gap:4px;border-bottom:1px solid color-mix(in srgb,var(--bd) 50%,transparent)}
+.fib-row:last-child{border-bottom:none}
+.fib-tk{font-family:var(--mono);font-size:.74rem;font-weight:700;color:var(--tx)}
+.fib-price{font-family:var(--mono);font-size:.72rem;color:var(--tx2)}
+.fib-target{font-family:var(--mono);font-size:.7rem;color:var(--muted);text-align:right}
+.fib-pct{font-family:var(--mono);font-size:.7rem;text-align:right;font-weight:600}
+.fib-pct.up{color:var(--buy)}
+.fib-pct.near{color:var(--gold)}
+.fib-pct.hit{color:var(--sell)}
+
 /* ── MISC ───────────────────────────────────────────────────────────── */
 .empty{padding:24px 16px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:.74rem}
 .card-shell{background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
@@ -538,6 +553,14 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
           <div class="surge-scroll" id="surge-scroll"></div>
         </div>
       </div>
+
+      <!-- Sectors & Fib Levels -->
+      <div class="sec" style="margin-top:4px">
+        <span class="sec-lbl">Sectors &amp; Fib Levels</span>
+        <div class="sec-rule"></div>
+        <span class="sec-ts">Upside targets</span>
+      </div>
+      <div class="sectors-grid" id="sectors-grid"><div class="empty">Loading…</div></div>
 
     </div>
 
@@ -815,6 +838,45 @@ function renderSbPosCard(p) {
   </div>`;
 }
 
+function renderSectors(d){
+  const fibs = d.fib_targets || {};
+  const groups = d.sector_groups || {};
+  // build price lookup from rsi_signals
+  const prices = {};
+  (d.rsi_signals||[]).forEach(s=>{ prices[s.ticker]=s.price; });
+
+  const el = document.getElementById('sectors-grid');
+  const sectors = Object.keys(groups);
+  if(!sectors.length){ el.innerHTML='<div class="empty">No sector data</div>'; return; }
+
+  el.innerHTML = sectors.map(name => {
+    const tickers = groups[name] || [];
+    const rows = tickers.map(tk => {
+      const price = prices[tk];
+      const fib   = fibs[tk];
+      const priceStr = price != null ? '$'+Number(price).toFixed(2) : '—';
+      const fibStr   = fib  != null ? '$'+Number(fib).toFixed(0)   : '—';
+      let pctHtml = '<span class="fib-pct" style="color:var(--muted)">—</span>';
+      if(price != null && fib != null){
+        const pct = (fib - price) / price * 100;
+        const cls = pct > 10 ? 'up' : pct > -5 ? 'near' : 'hit';
+        const sign = pct >= 0 ? '+' : '';
+        pctHtml = `<span class="fib-pct ${cls}">${sign}${pct.toFixed(0)}%</span>`;
+      }
+      return `<div class="fib-row">
+        <span class="fib-tk">${tk}</span>
+        <span class="fib-price">${priceStr}</span>
+        <span class="fib-target">${fibStr}</span>
+        ${pctHtml}
+      </div>`;
+    }).join('');
+    return `<div class="sec-card">
+      <div class="sec-card-hdr">${name}</div>
+      ${rows}
+    </div>`;
+  }).join('');
+}
+
 // ── DATA LOADERS ──────────────────────────────────────────────────────────────
 async function loadSignals(){
   try{
@@ -860,6 +922,7 @@ async function loadSignals(){
 
     allSigs=d.rsi_signals||[];
     renderSigs();
+    renderSectors(d);
 
     const nb=d.net_buy_buy_signals||[];
     const nbSell=d.net_buy_sell_signals||[];
