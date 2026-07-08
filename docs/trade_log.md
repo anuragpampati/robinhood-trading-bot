@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-07-08T18:10:00Z
+- SUMMARY: Market open — no signals, no trades. Positions: 4/4 (max — no buys possible). Regime: normal. Buying power: $10.38. Account: $101.72. Daily drawdown: -0.0% (gain). Weekly drawdown: -0.6% (gain). Surge tracker: empty.
+  WMT: +2.34% @ $112.90 | stop $110.872 | target $121.352
+  DKNG: +5.43% @ $26.80 | stop $26.06 (ratcheted ≥5% profit) | target $27.962
+  JPM: -0.08% @ $332.77 | stop $328.54 | held 2.0h (gates active) | target $366.322
+  RKLB: +1.48% @ $82.49 | stop $76.69 | held 1.0h (gates active) | target $89.419
+
+## 2026-07-08T17:12:00Z
+- SUMMARY: Market open — BUY RKLB $15. Buying power: ~$10.38. Positions: 4 (WMT, DKNG, JPM, RKLB). Regime: normal. Account: $101.25. Daily drawdown: -0.44%. Weekly drawdown: -0.10% (gain vs Mon). Surge tracker: empty. Circuit breaker: inactive. WMT +2.42% @ $112.99 (stop $110.872). DKNG +3.31% @ $26.26 (stop $26.06). JPM +0.18% @ $333.62 (stop $328.54).
+
+## 2026-07-08T17:11:32Z
+- Action   : BUY RKLB
+- Price    : $81.28
+- Amount   : $15.00 | Shares: 0.184540
+- RSI      : 29.9 | EMA: BEARISH | BB: BELOW_BAND
+- Stop     : $76.69 | Target: $89.41
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (29.9≈30 threshold) | BB returning from lower band | conf 2/3
+
 ## 2026-07-08T16:12:13Z
 - Action   : BUY JPM
 - Price    : $333.00
