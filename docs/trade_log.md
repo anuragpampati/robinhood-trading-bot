@@ -4,16 +4,6 @@
 
 ---
 
-## 2026-07-08T20:10:00Z
-- SUMMARY: Market closed. Buying power: $10.38. Positions: 4 (WMT, DKNG, JPM, RKLB). Regime: normal. Account: $102.24. Daily drawdown: -0.5% (gain). Weekly drawdown: -1.1% (gain). Surge tracker: NVDA=1.
-- WMT: +2.47% @ $113.05 | trail $110.872 (profit <2.5%, no ratchet) | target $121.352
-- DKNG: +6.85% @ $27.16 | trail $26.06 (already ratcheted at ≥5% threshold) | target $27.962
-- JPM: -0.75% @ $330.52 | trail $328.54 | target $366.322
-- RKLB: +2.53% @ $83.345 | trail $76.69 (market closed, 5b skipped) | target $89.419
-- Circuit breaker: inactive. peak_value updated to $102.24. Net-sell signals (none held): GE, COHR, QBTS, CRDO, AMAT, TXN, MU, PFE, INFQ, VRT, LRCX, TER, EOSE. No RSI or net-buy buy signals. SPY $745.34 > EMA200 $740.43 → regime: normal.
-
----
-
 ## 2026-07-08T19:12:00Z
 - SUMMARY: Market open — no signals, no trades. 4/4 positions (max). Buying power: $10.38. Positions: WMT, DKNG, JPM, RKLB. Regime: normal. Account: $101.90. Daily drawdown: -0.2% (gain). Weekly drawdown: -0.7% (gain). Surge tracker: NVDA=1.
 - WMT: +2.40% @ $112.97 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
