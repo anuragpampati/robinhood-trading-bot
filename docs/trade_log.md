@@ -4,6 +4,29 @@
 
 ---
 
+## 2026-07-08T15:13:22Z
+- Action   : SELL GS
+- Price    : $1,018.83
+- Amount   : $14.63 | Shares: 0.014347
+- RSI      : 40.1 | EMA: BULLISH | BB: IN_BAND
+- Stop     : $1,029.12 | Target: $1,150.06
+- Strategy : normal | Sell date: ATR stop exit
+- Regime   : normal
+- Reason   : ATR trailing stop triggered — price $1,018.83 ≤ trail_stop $1,029.12. Held ~49h ≥ 3h. P&L: -2.46% (-$0.38). Entry $1,045.51 on 2026-07-06.
+
+## 2026-07-08T15:13:23Z
+- Action   : SELL SMCI
+- Price    : $26.74
+- Amount   : $15.36 | Shares: 0.574494
+- RSI      : 43.9 | EMA: BEARISH | BB: IN_BAND
+- Stop     : $26.241 | Target: $28.721
+- Strategy : normal | Sell date: net-buy signal exit
+- Regime   : normal
+- Reason   : Net-buy SELL signal — momentum reversal: net buy 5.49M → -1.41M, OBV -9.1M/day. Held ~23h ≥ 3h. P&L: +2.41% (+$0.36). Entry $26.11 on 2026-07-07.
+
+## 2026-07-08T15:14:00Z
+- SUMMARY: Market open — 2 sells executed (GS ATR stop, SMCI net-buy signal). Buying power: $70.36. Positions: 2 (WMT, DKNG). Regime: normal. Account: $101.26. Daily drawdown: -0.43%. Weekly drawdown: +0.11% (gain). Surge tracker: cleared (UBER lost surge). No buy signals this cycle.
+
 ## 2026-07-07T20:10:00Z
 - SUMMARY: Market closed. Buying power: $24.96. Positions: 4. Regime: normal. Account: $101.49. Daily drawdown: 0.19%. Weekly drawdown: -0.34% (gain). Surge tracker: empty. Signals not acted on (market closed): RSI BUY INTC@$110.50 (conf 2/3), ARM@$300.49 (conf 2/3); RSI SELL XOM@$141.66 (not held). Holdings: WMT +1.11%, DKNG +5.86%, GS -0.38%, SMCI +0.50%. Circuit breaker: inactive.
 
