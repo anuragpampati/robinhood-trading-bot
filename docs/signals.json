@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-08T20:20:15.627051+00:00",
+  "timestamp": "2026-07-08T21:01:00.927619+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1446,8 +1446,8 @@
       "ticker": "SYF",
       "price": 68.26000213623047,
       "net_buy_d2": -2514352,
-      "net_buy_d3": -8757171,
-      "obv_slope": -2524281,
+      "net_buy_d3": -8763006,
+      "obv_slope": -2525525,
       "score": 0.0,
       "reason": "Net buy reversed: -2.51M \u2192 -8.76M | OBV -2.5M/day"
     },
