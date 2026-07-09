@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-09T16:15:37Z
+- SUMMARY: Market open — no trades. No buy signals (net_buy=0, rsi_buy=0, surge=0). No sell triggers on held positions. Buying power: $40.43. Positions: 3 (WMT, DKNG, JPM). Regime: normal. Account: $101.65. Daily drawdown: 0.19% (day start $101.84). Weekly: -0.49% (gain vs $101.15 week start). Surge tracker: empty. Circuit breaker: inactive.
+- WMT: +1.21% @ $111.66 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
+- DKNG: +2.99% @ $26.18 | trail $26.06 (profit ≥2.5%, ratchet check: max($26.06,$25.547)=$26.06 unchanged) | target $27.962
+- JPM: +1.03% @ $336.46 | trail $328.54 (profit <2.5%, unchanged) | target $366.322
+- Net-sell signals (none held): NFLX, AMAT, INTC, NBIS, SOFI, SNAP, ROK, PL, MBLY, PYPL, UBER, RGTI, IWM, CRM. No RSI buy signals. 1 open slot — no eligible candidates.
+
+---
+
 ## 2026-07-09T15:12:23Z
 - Action   : SELL RKLB
 - Price    : $83.6701
