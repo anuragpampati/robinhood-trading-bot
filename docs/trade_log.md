@@ -4,26 +4,6 @@
 
 ---
 
-## 2026-07-09T18:11:45Z
-- Action   : BUY DELL
-- Price    : $459.03
-- Amount   : $15.00 | Shares: 0.032670
-- RSI      : 68.5 | EMA: BULLISH | BB: ABOVE_BAND
-- Stop     : $440.03 | Target: $504.93
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : Net buy ↑ 4d streak: 0.40M → 0.95M → 0.96M | OBV +1.3M/day (trend_days=4)
-
-## 2026-07-09T18:12:00Z
-- SUMMARY: Market open — BUY DELL ($15) placed. Positions: 4 (WMT, DKNG, JPM, DELL). Buying power: ~$25.43. Regime: normal. Account: $101.75. Daily drawdown: 0.09% (day start $101.84). Weekly: +0.60% gain vs $101.15 week start. Surge tracker: empty. Circuit breaker: inactive.
-- WMT: +1.21% @ $111.66 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
-- DKNG: +3.87% @ $26.404 | trail $26.06 (profit ≥2.5%, ratchet: max($26.06,$25.547)=$26.06 unchanged) | target $27.962
-- JPM: +0.76% @ $335.55 | trail $328.54 (profit <2.5%, unchanged) | target $366.322
-- DELL: +0.00% @ $459.05 | trail $440.03 | target $504.93 (freshly bought)
-- Net-sell signals (none held): AMAT, RKLB, NFLX, PL, INTC, ROK, CRM, SOFI, SNAP, RGTI. RSI SELL: AVGO (not held).
-
----
-
 ## 2026-07-09T16:15:37Z
 - SUMMARY: Market open — no trades. No buy signals (net_buy=0, rsi_buy=0, surge=0). No sell triggers on held positions. Buying power: $40.43. Positions: 3 (WMT, DKNG, JPM). Regime: normal. Account: $101.65. Daily drawdown: 0.19% (day start $101.84). Weekly: -0.49% (gain vs $101.15 week start). Surge tracker: empty. Circuit breaker: inactive.
 - WMT: +1.21% @ $111.66 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
