@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-09T19:11:00Z
+- SUMMARY: Market open — no trades. At max 4 positions (WMT, DKNG, JPM, DELL). No sell triggers on any held position. AMZN has NET-BUY signal but slots full. Buying power: $25.43. Positions: 4. Regime: normal. Account: $101.62. Daily drawdown: 0.21% (day start $101.84). Weekly: -0.46% (gain vs $101.15 week start). Surge tracker: empty. Circuit breaker: inactive.
+- WMT: +1.43% @ $111.90 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
+- DKNG: +4.41% @ $26.54 | trail $26.06 (profit ≥2.5%, ratchet: max($26.06,$25.547)=$26.06 unchanged) | target $27.962
+- JPM: +0.57% @ $334.92 | trail $328.54 (profit <2.5%, unchanged) | target $366.322
+- DELL: -1.39% @ $452.63 | trail $440.03 (profit <2.5%, unchanged) | target $504.93 | held <3h, no signal sell
+- Sell signals (none held): AMAT, ARM, CRM, INTC, PL, ROK, EOSE, SNAP, MRCY, NFLX. RSI SELL: AVGO (not held). Buy signal: AMZN (NET-BUY 4d streak) — skipped (max positions).
+
+---
+
 ## 2026-07-09T16:15:37Z
 - SUMMARY: Market open — no trades. No buy signals (net_buy=0, rsi_buy=0, surge=0). No sell triggers on held positions. Buying power: $40.43. Positions: 3 (WMT, DKNG, JPM). Regime: normal. Account: $101.65. Daily drawdown: 0.19% (day start $101.84). Weekly: -0.49% (gain vs $101.15 week start). Surge tracker: empty. Circuit breaker: inactive.
 - WMT: +1.21% @ $111.66 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
