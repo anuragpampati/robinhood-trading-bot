@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-09T20:12:00Z
+- SUMMARY: Market closed. Buying power: $25.43. Positions: 4 (WMT, DKNG, JPM, DELL). Regime: normal. Account: $101.35. Daily drawdown: 0.5% (day start $101.84). Weekly drawdown: -0.2% (gain vs $101.15 week start). Surge tracker: empty.
+- WMT: +1.71% @ $112.21 | trail $110.872 (unchanged, market closed) | target $121.352
+- DKNG: +3.40% @ $26.29 | trail $26.06 (unchanged, market closed) | target $27.962
+- JPM: +0.71% @ $335.40 | trail $328.54 (unchanged, market closed) | target $366.322
+- DELL: -2.0% @ $449.88 | trail $440.03 (unchanged, market closed) | target $504.911 | entered today
+- Signals: NET-BUY AMZN (4d streak) — no trade (market closed). RSI SELL META (conf 2, not held). Net-sell signals (none held): ARM, RKLB, IONQ, PL, MRCY, ROK, CRM, INTC, NBIS, RGTI, SOFI, AAOI.
+
+---
+
 ## 2026-07-09T16:15:37Z
 - SUMMARY: Market open — no trades. No buy signals (net_buy=0, rsi_buy=0, surge=0). No sell triggers on held positions. Buying power: $40.43. Positions: 3 (WMT, DKNG, JPM). Regime: normal. Account: $101.65. Daily drawdown: 0.19% (day start $101.84). Weekly: -0.49% (gain vs $101.15 week start). Surge tracker: empty. Circuit breaker: inactive.
 - WMT: +1.21% @ $111.66 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
