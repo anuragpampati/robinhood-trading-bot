@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-09T20:46:56.756833+00:00",
+  "timestamp": "2026-07-09T21:17:42.749933+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1366,6 +1366,24 @@
       "reason": "Net buy reversed: 0.02M \u2192 -2.48M | OBV -0.2M/day"
     },
     {
+      "ticker": "KMI",
+      "price": 32.400001525878906,
+      "net_buy_d2": -260166,
+      "net_buy_d3": -5155033,
+      "obv_slope": -2938739,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.26M \u2192 -5.16M | OBV -2.9M/day"
+    },
+    {
+      "ticker": "DOC",
+      "price": 21.56999969482422,
+      "net_buy_d2": 346996,
+      "net_buy_d3": -5236300,
+      "obv_slope": -2269858,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.35M \u2192 -5.24M | OBV -2.3M/day"
+    },
+    {
       "ticker": "AZO",
       "price": 3010.389892578125,
       "net_buy_d2": -8520,
@@ -1373,24 +1391,6 @@
       "obv_slope": -98117,
       "score": 0.0,
       "reason": "Net buy reversed: -0.01M \u2192 -0.12M | OBV -0.1M/day"
-    },
-    {
-      "ticker": "DOC",
-      "price": 21.56999969482422,
-      "net_buy_d2": 346996,
-      "net_buy_d3": -3771358,
-      "obv_slope": -1967856,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.35M \u2192 -3.77M | OBV -2.0M/day"
-    },
-    {
-      "ticker": "KMI",
-      "price": 32.400001525878906,
-      "net_buy_d2": -260166,
-      "net_buy_d3": -3321506,
-      "obv_slope": -2449797,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.26M \u2192 -3.32M | OBV -2.4M/day"
     },
     {
       "ticker": "SNA",
@@ -1405,10 +1405,10 @@
       "ticker": "AMAT",
       "price": 588.6599731445312,
       "net_buy_d2": 3932895,
-      "net_buy_d3": -11988416,
-      "obv_slope": -427979,
+      "net_buy_d3": -12022509,
+      "obv_slope": -420012,
       "score": 0.0,
-      "reason": "Net buy reversed: 3.93M \u2192 -11.99M | OBV -0.4M/day"
+      "reason": "Net buy reversed: 3.93M \u2192 -12.02M | OBV -0.4M/day"
     },
     {
       "ticker": "COST",
@@ -1429,6 +1429,15 @@
       "reason": "Net buy reversed: 0.33M \u2192 -0.52M | OBV -0.8M/day"
     },
     {
+      "ticker": "J",
+      "price": 125.83999633789062,
+      "net_buy_d2": 393200,
+      "net_buy_d3": -632495,
+      "obv_slope": -19892,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.39M \u2192 -0.63M | OBV -0.0M/day"
+    },
+    {
       "ticker": "WAB",
       "price": 259.7699890136719,
       "net_buy_d2": 405118,
@@ -1436,15 +1445,6 @@
       "obv_slope": -487354,
       "score": 0.0,
       "reason": "Net buy reversed: 0.41M \u2192 -0.40M | OBV -0.5M/day"
-    },
-    {
-      "ticker": "WSM",
-      "price": 219.77000427246094,
-      "net_buy_d2": 663336,
-      "net_buy_d3": -520297,
-      "obv_slope": -619596,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.66M \u2192 -0.52M | OBV -0.6M/day"
     }
   ],
   "surge_signals": []
