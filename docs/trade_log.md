@@ -4,6 +4,25 @@
 
 ---
 
+## 2026-07-09T15:12:23Z
+- Action   : SELL RKLB
+- Price    : $83.6701
+- Amount   : $15.44 | Shares: 0.184524
+- RSI      : 35.2 | EMA: BEARISH | BB: IN_BAND
+- Stop     : $81.696 | Target: $89.419
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net buy reversed: 0.37M → -0.10M | OBV -5.3M/day | held ~22h ≥ 3h minimum
+
+## 2026-07-09T15:13:00Z
+- SUMMARY: Market open — SELL RKLB executed (+2.93%). No buy signals (net_buy_buy=0, rsi_buy=0, surge=0). Buying power: $55.87. Positions: 3 (WMT, DKNG, JPM). Regime: normal. Account: $101.86. Daily drawdown: 0.0% (gain vs $101.84 day start). Weekly: -0.7% (gain vs $101.15 week start). Surge tracker: empty. Circuit breaker: inactive.
+- WMT: +1.79% @ $112.29 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
+- DKNG: +3.87% @ $26.405 | trail $26.06 (profit ≥2.5%, ratchet check: max($26.06,$25.547)=$26.06 unchanged) | target $27.962
+- JPM: +0.93% @ $336.13 | trail $328.54 (profit <2.5%, unchanged) | target $366.322
+- Net-sell signals (none held): AAOI, AMAT, SNAP, INTC, NBIS, PL, SOFI, ROK, PYPL. DELL RSI sell (not held).
+
+---
+
 ## 2026-07-09T14:11:00Z
 - SUMMARY: Market open — no trades. 4/4 positions at max (WMT, DKNG, JPM, RKLB). No buy/sell signals triggered on held positions. Regime: normal. Buying power: $40.43. Account: $101.84. Daily drawdown: 0.0% (new day start). Weekly: -0.7% (gain vs $101.15 week start). Circuit breaker: inactive. Surge tracker: cleared (NVDA 2026-07-08 expired).
 - WMT: +1.62% @ $112.11 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
