@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-10T20:22:53.859130+00:00",
+  "timestamp": "2026-07-10T21:02:00.746785+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1016,8 +1016,8 @@
     {
       "ticker": "LAZR",
       "action": "HOLD",
-      "price": 42.61009979248047,
-      "rsi": 48.33,
+      "price": 42.634700775146484,
+      "rsi": 48.59,
       "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
@@ -1575,6 +1575,15 @@
       "reason": "Net buy reversed: 0.00M \u2192 -0.67M | OBV -0.9M/day"
     },
     {
+      "ticker": "LEN",
+      "price": 84.2699966430664,
+      "net_buy_d2": 78737,
+      "net_buy_d3": -1996889,
+      "obv_slope": -1033332,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.08M \u2192 -2.00M | OBV -1.0M/day"
+    },
+    {
       "ticker": "ARE",
       "price": 47.880001068115234,
       "net_buy_d2": -23739,
@@ -1582,15 +1591,6 @@
       "obv_slope": -724031,
       "score": 0.0,
       "reason": "Net buy reversed: -0.02M \u2192 -0.55M | OBV -0.7M/day"
-    },
-    {
-      "ticker": "LEN",
-      "price": 84.2699966430664,
-      "net_buy_d2": 78737,
-      "net_buy_d3": -1624051,
-      "obv_slope": -952925,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.08M \u2192 -1.62M | OBV -1.0M/day"
     },
     {
       "ticker": "IBKR",
@@ -1620,6 +1620,15 @@
       "reason": "Net buy reversed: 0.79M \u2192 -5.48M | OBV -2.6M/day"
     },
     {
+      "ticker": "PHM",
+      "price": 124.75,
+      "net_buy_d2": -76108,
+      "net_buy_d3": -611144,
+      "obv_slope": -109046,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.08M \u2192 -0.61M | OBV -0.1M/day"
+    },
+    {
       "ticker": "LH",
       "price": 276.80999755859375,
       "net_buy_d2": 36805,
@@ -1627,15 +1636,6 @@
       "obv_slope": -446341,
       "score": 0.0,
       "reason": "Net buy reversed: 0.04M \u2192 -0.18M | OBV -0.4M/day"
-    },
-    {
-      "ticker": "PHM",
-      "price": 124.75,
-      "net_buy_d2": -76108,
-      "net_buy_d3": -443738,
-      "obv_slope": -184241,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.08M \u2192 -0.44M | OBV -0.2M/day"
     },
     {
       "ticker": "APO",
@@ -1647,14 +1647,24 @@
       "reason": "Net buy reversed: 0.66M \u2192 -2.32M | OBV -0.4M/day"
     },
     {
-      "ticker": "MS",
-      "price": 222.27999877929688,
-      "net_buy_d2": -174681,
-      "net_buy_d3": -925284,
-      "obv_slope": -399264,
+      "ticker": "ZTS",
+      "price": 75.55999755859375,
+      "net_buy_d2": 879613,
+      "net_buy_d3": -2854882,
+      "obv_slope": -1311081,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.17M \u2192 -0.93M | OBV -0.4M/day"
+      "reason": "Net buy reversed: 0.88M \u2192 -2.85M | OBV -1.3M/day"
     }
   ],
-  "surge_signals": []
+  "surge_signals": [
+    {
+      "ticker": "AMD",
+      "price": 557.8900146484375,
+      "buy_surge_pct": 0.427,
+      "buy_vol_d2": 12752932,
+      "buy_vol_d3": 18198019,
+      "net_buy_d3": 15790677,
+      "reason": "Buy vol \u219142.7% vs prior day | 2d streak | latest 15.79M | OBV 13.5M/day"
+    }
+  ]
 }
