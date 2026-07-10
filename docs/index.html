@@ -426,6 +426,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .ag-vote-effect.veto{background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr)}
 .ag-vote-effect.agree{background:var(--buybg);color:var(--buy);border:1px solid var(--buybr)}
 .ag-vote-effect.neutral{background:rgba(255,255,255,.04);color:var(--muted);border:1px solid var(--bd)}
+.ag-vote-effect.watching{background:var(--bbg);color:var(--blue);border:1px solid var(--bbr)}
 
 /* perf comparison bar */
 .ag-perf-bar-row{margin-top:10px}
@@ -601,6 +602,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
           <button class="chip cbuy"    data-filter="BUY"  onclick="setChip(this,'BUY')">Buy <span class="chip-cnt" id="cnt-buy"></span></button>
           <button class="chip csell"   data-filter="SELL" onclick="setChip(this,'SELL')">Sell <span class="chip-cnt" id="cnt-sell"></span></button>
           <button class="chip"         data-filter="HOLD" onclick="setChip(this,'HOLD')">Hold <span class="chip-cnt" id="cnt-hold"></span></button>
+          <button class="chip"         data-filter="RL"   onclick="setChip(this,'RL')" style="border-color:var(--blue)">🤖 RL Watch <span class="chip-cnt" id="cnt-rl"></span></button>
         </div>
       </div>
 
@@ -692,7 +694,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
           <div class="ag-stat"><span class="ag-stat-k">Votes this cycle</span><span class="ag-stat-v" id="ag-vote-cnt">—</span></div>
         </div>
         <div class="ag-card">
-          <div class="ag-card-title">60-Day Backtest</div>
+          <div class="ag-card-title">1-Year Backtest (365 days)</div>
           <div class="ag-stat"><span class="ag-stat-k">Strategy return</span><span class="ag-stat-v pos" id="ag-ret">—</span></div>
           <div class="ag-stat"><span class="ag-stat-k">Win rate</span><span class="ag-stat-v" id="ag-wr">—</span></div>
           <div class="ag-stat"><span class="ag-stat-k">Avg win P&amp;L</span><span class="ag-stat-v pos" id="ag-win">—</span></div>
@@ -721,7 +723,12 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
         <div class="sec" style="margin:4px 0 4px">
           <span class="sec-lbl">RL Votes — This Cycle</span>
           <div class="sec-rule"></div>
-          <span class="sec-ts">From current signals.json</span>
+          <span class="sec-ts">Only tickers with known Q-table states shown</span>
+        </div>
+        <div style="padding:0 14px 10px;font-size:.72rem;color:var(--tx2);line-height:1.6">
+          <span style="background:var(--bbg);color:var(--blue);border:1px solid var(--bbr);padding:1px 6px;border-radius:3px;font-size:.62rem;font-weight:700">👁 Watching</span> = RL says BUY but no signal yet — will boost if RSI/BB fires.&nbsp;
+          <span style="background:var(--gbg);color:var(--green);border:1px solid var(--gbr);padding:1px 6px;border-radius:3px;font-size:.62rem;font-weight:700">↑ BOOST</span> = upgrades 2/3 signal to 3/3.&nbsp;
+          <span style="background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr);padding:1px 6px;border-radius:3px;font-size:.62rem;font-weight:700">⊘ VETO</span> = blocks a BUY.
         </div>
         <div class="ag-votes-card" id="ag-votes"><div class="empty">Loading…</div></div>
       </div>
@@ -894,17 +901,20 @@ function sortSigs(arr){
 
 function renderSigs(){
   let f=allSigs;
-  if(activeFilter!=='all') f=f.filter(s=>s.action===activeFilter);
+  if(activeFilter==='RL') f=f.filter(s=>s.rl_action!=null);
+  else if(activeFilter!=='all') f=f.filter(s=>s.action===activeFilter);
   if(searchQ) f=f.filter(s=>s.ticker.includes(searchQ));
   f=sortSigs(f);
 
   const buys=allSigs.filter(s=>s.action==='BUY').length;
   const sells=allSigs.filter(s=>s.action==='SELL').length;
   const holds=allSigs.filter(s=>s.action==='HOLD').length;
+  const rlWatching=allSigs.filter(s=>s.rl_action!=null).length;
   document.getElementById('cnt-all').textContent=allSigs.length;
   document.getElementById('cnt-buy').textContent=buys;
   document.getElementById('cnt-sell').textContent=sells;
   document.getElementById('cnt-hold').textContent=holds;
+  document.getElementById('cnt-rl').textContent=rlWatching;
 
   const banner=document.getElementById('action-banner');
   if(buys>0){
@@ -915,7 +925,8 @@ function renderSigs(){
   } else { banner.classList.remove('show'); }
 
   if(!f.length){
-    document.getElementById('sig-list').innerHTML=`<div class="empty">No ${activeFilter==='all'?'':activeFilter+' '}signals${searchQ?' matching "'+searchQ+'"':''}</div>`;
+    const lbl=activeFilter==='RL'?'RL-watched':activeFilter==='all'?'':activeFilter+' ';
+    document.getElementById('sig-list').innerHTML=`<div class="empty">No ${lbl}signals${searchQ?' matching "'+searchQ+'"':''}</div>`;
     return;
   }
   document.getElementById('sig-list').innerHTML=f.map(s=>{
@@ -1028,16 +1039,17 @@ function renderRL(sigData, perf) {
   // Training progress
   const target = (perf && perf.rl_target_samples) || 200;
   const samples = rs.training_samples != null ? rs.training_samples : (perf && perf.rl_training_samples) || 0;
-  const pct = Math.min(100, (samples / target) * 100);
-  const daysLeft = Math.ceil((target - samples) / 2.5); // ~2.5 trades/day avg
-  document.getElementById('ag-samples').textContent   = samples + ' / ' + target;
-  document.getElementById('ag-vote-cnt').textContent  = votes.length + ' signals';
-  document.getElementById('ag-prog-pct').textContent  = pct.toFixed(0) + '%';
+  const rawPct = (samples / target) * 100;
+  const pct = Math.min(100, rawPct);
+  const daysLeft = Math.ceil((target - samples) / 2.5);
+  document.getElementById('ag-samples').textContent   = samples + ' samples (' + rawPct.toFixed(0) + '% of target)';
+  document.getElementById('ag-vote-cnt').textContent  = votes.length + ' tickers';
+  document.getElementById('ag-prog-pct').textContent  = rawPct >= 100 ? '✓ Active' : pct.toFixed(0) + '%';
   document.getElementById('ag-prog-fill').style.width = pct.toFixed(1) + '%';
-  document.getElementById('ag-prog-count').textContent = samples + ' / ' + target;
+  document.getElementById('ag-prog-count').textContent = samples + ' / ' + target + ' samples';
   document.getElementById('ag-prog-left').textContent =
-    pct >= 100 ? '✓ Ready to train' :
-    samples > 0 ? '~' + daysLeft + ' trading days to activation' :
+    rawPct >= 100 ? '✓ Model active — retrains daily from live trades' :
+    samples > 0 ? '~' + daysLeft + ' trading days to live activation' :
     'Collecting data…';
 
   // Last cycle timestamp
@@ -1076,8 +1088,8 @@ function renderRL(sigData, perf) {
       const agree  = s.rl_action === s.action;
       const isBoost = isBuy  && sigBuy && (s.confidence||0) === 2;
       const isVeto  = isSell && sigBuy;
-      const effCls  = isBoost ? 'boost' : isVeto ? 'veto' : agree ? 'agree' : 'neutral';
-      const effTxt  = isBoost ? '↑ BOOST' : isVeto ? '⊘ VETO' : agree ? '✓ AGREE' : '— HOLD';
+      const effCls  = isBoost ? 'boost' : isVeto ? 'veto' : agree ? 'agree' : isBuy ? 'watching' : 'neutral';
+      const effTxt  = isBoost ? '↑ BOOST' : isVeto ? '⊘ VETO' : agree ? '✓ AGREE' : isBuy ? '👁 Watching' : '— Hold';
       const rlColor = isBuy ? 'var(--buy)' : isSell ? 'var(--sell)' : 'var(--muted)';
       return `<div class="ag-vote-row">
         <span class="ag-vote-tk">${s.ticker}</span>

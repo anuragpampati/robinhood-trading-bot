@@ -80,10 +80,10 @@ class QAgent:
     def _q(self, state_key: str, action: str) -> float:
         return self.q.get(state_key, {}).get(action, 0.0)
 
-    def best_action(self, state: State) -> tuple[str, float]:
+    def best_action(self, state: State) -> tuple[str | None, float | None]:
         k = state.key()
         if k not in self.q:
-            return "HOLD", 0.0  # unknown state → no opinion
+            return None, None  # unknown state → no opinion
         scores = {a: self._q(k, a) for a in ACTIONS}
         best = max(scores, key=scores.__getitem__)
         return best, scores[best]
@@ -144,14 +144,15 @@ def train(epochs: int = 3):
     print(f"[RL] Q-table saved → {Q_TABLE_PATH}  ({len(agent.q)} states learned)")
 
 
-def predict(obs: dict) -> tuple[str, float]:
-    """Return (action, confidence) for a live signal observation."""
+def predict(obs: dict) -> tuple[str | None, float | None]:
+    """Return (action, confidence) or (None, None) if state is unknown."""
     if not Q_TABLE_PATH.exists():
-        return "HOLD", 0.0
+        return None, None
     agent = QAgent(epsilon=0.0)
     state = make_state(obs)
     action, score = agent.best_action(state)
-    # normalise score to [0,1] confidence using sigmoid
+    if action is None:
+        return None, None
     confidence = 1 / (1 + math.exp(-score))
     return action, round(confidence, 3)
 

@@ -143,7 +143,9 @@ def run_analysis() -> dict:
                 "atr_pct": s.atr_pct, "regime": regime_label,
             }
             try:
-                rl_preds[ticker] = _rl_predict(obs)
+                act, conf = _rl_predict(obs)
+                if act is not None:
+                    rl_preds[ticker] = (act, conf)
             except Exception:
                 pass
 
