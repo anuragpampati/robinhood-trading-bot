@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10",
+  "updated_at": "2026-07-09",
   "backtest_days": 365,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -13,9 +13,9 @@
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
   "rl_training_samples": 364,
-  "rl_states_learned": 13,
-  "rl_veto_states": 6,
-  "rl_buy_states": 7,
+  "rl_states_learned": 19,
+  "rl_veto_states": 8,
+  "rl_buy_states": 11,
   "rl_target_samples": 200,
-  "note": "1-year backtest with counterfactual HOLD rows. 6/13 states now VETO."
+  "note": "Improved model v2: 4-dim state (rsi_bucket/ema/atr_bucket/regime), 6-bucket RSI, reward shaping on high-ATR losers. 19 states vs 13 before. Key VETO: high-ATR entries in normal regime (strongest signal — Q(BUY)=-4.0 to -3.5)."
 }

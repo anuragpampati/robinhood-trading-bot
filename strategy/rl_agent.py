@@ -21,52 +21,50 @@ Q_TABLE_PATH = Path("logs/q_table.json")
 DATA_PATH     = Path("logs/rl_training_data.jsonl")
 
 # Hyper-parameters
-ALPHA  = 0.10   # learning rate
-GAMMA  = 0.90   # discount factor (we care about near-term P&L)
-EPSILON_START = 0.20
+ALPHA  = 0.20   # faster learning — more data per state now
+GAMMA  = 0.75   # weight immediate trade P&L over distant future
+EPSILON_START = 0.15
 EPSILON_MIN   = 0.02
-EPSILON_DECAY = 0.995
+EPSILON_DECAY = 0.990
 
 ACTIONS = ["BUY", "HOLD", "SELL"]
+
+# State: 4 dimensions (removed bb_signal and vol_bucket — always constant in our signals)
+# RSI: 6 buckets with finer resolution in the <35 oversold zone where edge lives
+# ATR: 3 buckets — distinguishes calm/normal/volatile entries
+# Possible states: 6 × 3 × 3 × 2 = 108  (vs old 5×3×3×3×2×2 = 540 with only 13 visited)
 
 
 @dataclass
 class State:
-    rsi_bucket:    str   # oversold / low / mid / high / overbought
-    ema:           str   # BULLISH / BEARISH / NEUTRAL
-    bb:            str   # BELOW_BAND / WITHIN / ABOVE_BAND
-    vol_bucket:    str   # low / normal / high
-    atr_bucket:    str   # low / high
-    regime:        str   # normal / bearish_ema
+    rsi_bucket: str   # deep(<25) / oversold(25-30) / low(30-38) / mid(38-55) / high(55-70) / ob(70+)
+    ema:        str   # BULLISH / BEARISH / NEUTRAL
+    atr_bucket: str   # low(<0.01) / mid(0.01-0.025) / high(>0.025)
+    regime:     str   # normal / bearish_ema
 
     def key(self) -> str:
         return "|".join(asdict(self).values())
 
 
 def _bucket_rsi(rsi: float) -> str:
-    if rsi < 30:   return "oversold"
-    if rsi < 45:   return "low"
-    if rsi < 55:   return "mid"
-    if rsi < 70:   return "high"
-    return "overbought"
-
-
-def _bucket_vol(vol_ratio: float) -> str:
-    if vol_ratio < 0.8:  return "low"
-    if vol_ratio < 1.3:  return "normal"
-    return "high"
+    if rsi < 25:  return "deep"
+    if rsi < 30:  return "oversold"
+    if rsi < 38:  return "low"
+    if rsi < 55:  return "mid"
+    if rsi < 70:  return "high"
+    return "ob"
 
 
 def _bucket_atr(atr_pct: float) -> str:
-    return "high" if atr_pct > 0.015 else "low"
+    if atr_pct < 0.010:  return "low"
+    if atr_pct < 0.025:  return "mid"
+    return "high"
 
 
 def make_state(obs: dict) -> State:
     return State(
         rsi_bucket = _bucket_rsi(obs.get("rsi", 50)),
         ema        = obs.get("ema_trend", "NEUTRAL"),
-        bb         = obs.get("bb_signal", "WITHIN"),
-        vol_bucket = _bucket_vol(obs.get("vol_ratio", 1.0)),
         atr_bucket = _bucket_atr(obs.get("atr_pct", 0.01)),
         regime     = obs.get("regime", "normal"),
     )
@@ -128,6 +126,12 @@ def train(epochs: int = 3):
             state      = make_state(row["obs"])
             action     = row["action"]
             reward     = float(row["reward"])
+            # Reward shaping: penalise high-ATR losing BUY entries more —
+            # they're the most avoidable (chasing volatile moves)
+            if action == "BUY" and reward < 0:
+                atr = row["obs"].get("atr_pct", 0.01)
+                if atr > 0.025:
+                    reward *= 1.5   # amplify penalty on volatile losers
             next_state = make_state(rows[i + 1]["obs"])
             agent.update(state, action, reward, next_state)
             total_reward += reward
