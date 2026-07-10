@@ -20,6 +20,12 @@ from .risk import risk_summary
 from .universe import full_universe
 from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN, BEARISH_EMA_MAX_POSITION, FIB_TARGETS, SECTOR_GROUPS
 
+try:
+    from .rl_agent import predict as _rl_predict
+    _RL_LIVE = True
+except Exception:
+    _RL_LIVE = False
+
 QUICK_MODE = "--quick" in sys.argv
 
 # --from-cache <path>: use pre-fetched Robinhood historicals instead of yfinance
@@ -114,6 +120,21 @@ def run_analysis() -> dict:
 
     print("\n[4/4] Building report...\n")
 
+    # ── RL predictions ────────────────────────────────────────────────────────
+    regime_label = "bearish_ema" if market_bearish_ema else "normal"
+    rl_preds: dict[str, tuple[str, float]] = {}
+    if _RL_LIVE:
+        for ticker, s in rsi_signals.items():
+            obs = {
+                "rsi": s.rsi, "ema_trend": s.ema_trend, "bb_signal": s.bb_signal,
+                "vol_ratio": round(1.0 + (s.confidence - 1) * 0.3, 2),
+                "atr_pct": s.atr_pct, "regime": regime_label,
+            }
+            try:
+                rl_preds[ticker] = _rl_predict(obs)
+            except Exception:
+                pass
+
     # ── Table 1: RSI signals on watchlist ─────────────────────────────────────
     print("STRATEGY 1 — RSI + BB + EMA  [watchlist]")
     rows1 = []
@@ -206,7 +227,9 @@ def run_analysis() -> dict:
              "rsi": round(s.rsi, 2), "ema_trend": s.ema_trend,
              "bb_signal": s.bb_signal, "confidence": s.confidence,
              "atr_pct": round(s.atr_pct, 4), "reason": s.reason,
-             "fib_target": FIB_TARGETS.get(s.ticker)}
+             "fib_target": FIB_TARGETS.get(s.ticker),
+             "rl_action": rl_preds[s.ticker][0] if s.ticker in rl_preds else None,
+             "rl_confidence": rl_preds[s.ticker][1] if s.ticker in rl_preds else None}
             for s in rsi_signals.values()
         ],
         "fib_targets": FIB_TARGETS,
