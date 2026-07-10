@@ -123,7 +123,19 @@ def run_analysis() -> dict:
     # ── RL predictions ────────────────────────────────────────────────────────
     regime_label = "bearish_ema" if market_bearish_ema else "normal"
     rl_preds: dict[str, tuple[str, float]] = {}
+    rl_stats_payload: dict = {"live": _RL_LIVE, "states": 0, "training_samples": 0}
     if _RL_LIVE:
+        try:
+            from pathlib import Path as _P
+            import json as _j
+            _q = _P("logs/q_table.json")
+            _dt = _P("logs/rl_training_data.jsonl")
+            if _q.exists():
+                rl_stats_payload["states"] = len(_j.loads(_q.read_text()))
+            if _dt.exists():
+                rl_stats_payload["training_samples"] = sum(1 for _ in _dt.open())
+        except Exception:
+            pass
         for ticker, s in rsi_signals.items():
             obs = {
                 "rsi": s.rsi, "ema_trend": s.ema_trend, "bb_signal": s.bb_signal,
@@ -234,6 +246,7 @@ def run_analysis() -> dict:
         ],
         "fib_targets": FIB_TARGETS,
         "sector_groups": SECTOR_GROUPS,
+        "rl_stats": rl_stats_payload,
         "net_buy_buy_signals": [
             {"ticker": s.ticker, "price": s.price,
              "net_buy_d1": round(s.net_buy_d1), "net_buy_d2": round(s.net_buy_d2),

@@ -368,6 +368,72 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .hide-sm{display:table-cell}
 @media(max-width:600px){.hide-sm{display:none!important}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ── RL AGENT PANEL ─────────────────────────────────────────────────── */
+/* signal card RL badge */
+.si-rl{display:flex;align-items:center;gap:5px;margin-top:5px;padding-top:5px;border-top:1px solid color-mix(in srgb,var(--bd) 60%,transparent)}
+.si-rl-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.si-rl-dot.buy{background:var(--buy)}
+.si-rl-dot.sell{background:var(--sell)}
+.si-rl-dot.hold{background:var(--muted)}
+.si-rl-txt{font-family:var(--mono);font-size:.62rem;color:var(--tx2);letter-spacing:.04em}
+
+/* sheet RL section */
+.sh-rl-vote{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:6px}
+.sh-rl-badge{font-family:var(--mono);font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.06em}
+.sh-rl-badge.buy{background:var(--buybg);color:var(--buy);border:1px solid var(--buybr)}
+.sh-rl-badge.sell{background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr)}
+.sh-rl-badge.hold{background:rgba(255,255,255,.04);color:var(--muted);border:1px solid var(--bd)}
+.sh-rl-conf{font-family:var(--mono);font-size:.72rem;color:var(--tx2)}
+.sh-rl-effect{font-size:.7rem;padding:2px 8px;border-radius:4px;font-weight:600}
+.sh-rl-effect.boost{background:var(--gbg);color:var(--green);border:1px solid var(--gbr)}
+.sh-rl-effect.veto{background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr)}
+
+/* agent panel */
+.ag-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px}
+@media(max-width:480px){.ag-grid{grid-template-columns:1fr}}
+.ag-card{background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px}
+.ag-card-title{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:10px}
+.ag-stat{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
+.ag-stat:last-child{margin-bottom:0}
+.ag-stat-k{font-size:.76rem;color:var(--tx2)}
+.ag-stat-v{font-family:var(--mono);font-size:.82rem;font-weight:700;color:var(--tx)}
+.ag-stat-v.pos{color:var(--buy)}
+.ag-stat-v.neg{color:var(--sell)}
+.ag-stat-v.gold{color:var(--gold)}
+
+/* training progress bar */
+.ag-prog-wrap{padding:0 12px 12px}
+.ag-prog-card{background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px}
+.ag-prog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.ag-prog-title{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.ag-prog-pct{font-family:var(--mono);font-size:.8rem;font-weight:700;color:var(--gold)}
+.ag-prog-bar{height:6px;background:var(--s3);border-radius:3px;overflow:hidden;margin-bottom:8px}
+.ag-prog-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--gold));transition:width .4s}
+.ag-prog-sub{display:flex;justify-content:space-between;font-size:.7rem;color:var(--tx2)}
+.ag-prog-sub span:last-child{font-family:var(--mono)}
+
+/* RL votes list */
+.ag-votes-wrap{padding:0 12px 12px}
+.ag-votes-card{background:var(--s2);border:1px solid var(--bd);border-radius:10px;overflow:hidden}
+.ag-vote-row{display:grid;grid-template-columns:56px 1fr 60px 90px;align-items:center;padding:7px 14px;gap:6px;border-bottom:1px solid color-mix(in srgb,var(--bd) 50%,transparent)}
+.ag-vote-row:last-child{border-bottom:none}
+.ag-vote-tk{font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--tx)}
+.ag-vote-sig{font-size:.72rem;color:var(--tx2)}
+.ag-vote-conf{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-align:right}
+.ag-vote-effect{font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:4px;text-align:center}
+.ag-vote-effect.boost{background:var(--gbg);color:var(--green);border:1px solid var(--gbr)}
+.ag-vote-effect.veto{background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr)}
+.ag-vote-effect.agree{background:var(--buybg);color:var(--buy);border:1px solid var(--buybr)}
+.ag-vote-effect.neutral{background:rgba(255,255,255,.04);color:var(--muted);border:1px solid var(--bd)}
+
+/* perf comparison bar */
+.ag-perf-bar-row{margin-top:10px}
+.ag-perf-bar-lbl{display:flex;justify-content:space-between;font-size:.7rem;margin-bottom:4px}
+.ag-perf-bar-lbl span:first-child{color:var(--tx2)}
+.ag-perf-bar-lbl span:last-child{font-family:var(--mono);font-weight:700}
+.ag-perf-outer{height:5px;background:var(--s3);border-radius:3px;overflow:hidden}
+.ag-perf-inner{height:100%;border-radius:3px}
 </style>
 </head>
 <body>
@@ -607,6 +673,61 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
       </div>
     </div>
 
+    <!-- ── AGENT PANEL ─────────────────────────────────────────────── -->
+    <div class="panel" id="panel-agent">
+      <div class="sec" style="margin-top:4px">
+        <span class="sec-lbl">RL Agent</span>
+        <div class="sec-rule"></div>
+        <span class="sec-ts" id="ag-ts">Loading…</span>
+      </div>
+
+      <!-- Model status + Backtest performance -->
+      <div class="ag-grid">
+        <div class="ag-card">
+          <div class="ag-card-title">Model Status</div>
+          <div class="ag-stat"><span class="ag-stat-k">Mode</span><span class="ag-stat-v gold" id="ag-mode">LIVE</span></div>
+          <div class="ag-stat"><span class="ag-stat-k">Q-states learned</span><span class="ag-stat-v" id="ag-states">—</span></div>
+          <div class="ag-stat"><span class="ag-stat-k">Training samples</span><span class="ag-stat-v" id="ag-samples">—</span></div>
+          <div class="ag-stat"><span class="ag-stat-k">Exploration ε</span><span class="ag-stat-v gold" id="ag-epsilon">19.5%</span></div>
+          <div class="ag-stat"><span class="ag-stat-k">Votes this cycle</span><span class="ag-stat-v" id="ag-vote-cnt">—</span></div>
+        </div>
+        <div class="ag-card">
+          <div class="ag-card-title">60-Day Backtest</div>
+          <div class="ag-stat"><span class="ag-stat-k">Strategy return</span><span class="ag-stat-v pos" id="ag-ret">—</span></div>
+          <div class="ag-stat"><span class="ag-stat-k">Win rate</span><span class="ag-stat-v" id="ag-wr">—</span></div>
+          <div class="ag-stat"><span class="ag-stat-k">Avg win P&amp;L</span><span class="ag-stat-v pos" id="ag-win">—</span></div>
+          <div class="ag-stat"><span class="ag-stat-k">Avg loss P&amp;L</span><span class="ag-stat-v neg" id="ag-loss">—</span></div>
+          <div class="ag-stat"><span class="ag-stat-k">Actual R:R</span><span class="ag-stat-v gold" id="ag-rr">—</span></div>
+        </div>
+      </div>
+
+      <!-- Training progress -->
+      <div class="ag-prog-wrap">
+        <div class="ag-prog-card">
+          <div class="ag-prog-head">
+            <span class="ag-prog-title">Training Progress to Full Activation</span>
+            <span class="ag-prog-pct" id="ag-prog-pct">0%</span>
+          </div>
+          <div class="ag-prog-bar"><div class="ag-prog-fill" id="ag-prog-fill" style="width:0%"></div></div>
+          <div class="ag-prog-sub">
+            <span id="ag-prog-left">Collecting samples…</span>
+            <span id="ag-prog-count">0 / 200</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live RL votes -->
+      <div class="ag-votes-wrap">
+        <div class="sec" style="margin:4px 0 4px">
+          <span class="sec-lbl">RL Votes — This Cycle</span>
+          <div class="sec-rule"></div>
+          <span class="sec-ts">From current signals.json</span>
+        </div>
+        <div class="ag-votes-card" id="ag-votes"><div class="empty">Loading…</div></div>
+      </div>
+
+    </div><!-- end panel-agent -->
+
   </div><!-- end main-scroll -->
 
 </div><!-- end app-shell -->
@@ -621,6 +742,9 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
   </button>
   <button class="bnav-btn" data-panel="history" onclick="switchPanel('history')">
     <span class="bnav-icon">📋</span>History
+  </button>
+  <button class="bnav-btn" data-panel="agent" onclick="switchPanel('agent')">
+    <span class="bnav-icon">🤖</span>Agent
   </button>
 </nav>
 
@@ -712,6 +836,14 @@ function openSheet(sig) {
       <span style="color:${c.ok?'var(--tx)':'var(--tx2)'}">${c.txt}</span>
     </div>`).join('')}</div></div>`:''}
     ${sig.reason?`<div><div class="sh-lbl">Signal Reason</div><div class="sh-reason">${sig.reason}</div></div>`:''}
+    ${sig.rl_action?`<div><div class="sh-lbl">RL Agent Vote</div>
+    <div class="sh-rl-vote">
+      <span class="sh-rl-badge ${sig.rl_action.toLowerCase()}">${sig.rl_action}</span>
+      ${sig.rl_confidence!=null?`<span class="sh-rl-conf">${(sig.rl_confidence*100).toFixed(0)}% confidence</span>`:''}
+      ${sig.rl_action==='BUY'&&sig.action==='BUY'&&(sig.confidence||0)===2?'<span class="sh-rl-effect boost">→ Boosting to 3/3 conf</span>':''}
+      ${sig.rl_action==='SELL'&&sig.action==='BUY'?'<span class="sh-rl-effect veto">→ Will veto this buy</span>':''}
+      ${sig.rl_action==='BUY'&&sig.action==='BUY'&&(sig.confidence||0)===3?'<span class="sh-rl-effect boost">→ Agrees: strong signal</span>':''}
+    </div></div>`:''}
     ${sig.action==='BUY'?`<div class="sh-order"><div class="sh-order-title">Suggested Entry · $15</div>
       <div class="sh-order-row"><span>Buy at market</span><span>$${price.toFixed(2)}</span></div>
       <div class="sh-order-row"><span>ATR trailing stop</span><span style="color:var(--sell)">$${stop.toFixed(2)} (−${risk.toFixed(1)}%)</span></div>
@@ -803,6 +935,12 @@ function renderSigs(){
         <span class="si-ema ${emaCls(s.ema_trend)}">${emaShort(s.ema_trend)}</span>
         ${pips(s.confidence||0)}
       </div>
+      ${s.rl_action?`<div class="si-rl">
+        <span class="si-rl-dot ${s.rl_action.toLowerCase()}"></span>
+        <span class="si-rl-txt">RL: ${s.rl_action}${s.rl_confidence!=null?' '+(s.rl_confidence*100).toFixed(0)+'%':''}</span>
+        ${s.rl_action==='BUY'&&s.action==='BUY'&&(s.confidence||0)===2?'<span style="font-size:.6rem;color:var(--green);margin-left:auto">↑ boost</span>':''}
+        ${s.rl_action==='SELL'&&s.action==='BUY'?'<span style="font-size:.6rem;color:var(--sell);margin-left:auto">⊘ veto</span>':''}
+      </div>`:''}
     </div>`;
   }).join('');
 }
@@ -877,7 +1015,81 @@ function renderSectors(d){
   }).join('');
 }
 
+// ── RL AGENT PANEL ────────────────────────────────────────────────────────────
+function renderRL(sigData, perf) {
+  // Model status from signals.json rl_stats
+  const rs = sigData.rl_stats || {};
+  document.getElementById('ag-mode').textContent   = rs.live ? 'LIVE' : 'OFFLINE';
+  document.getElementById('ag-states').textContent = rs.states != null ? rs.states : '—';
+
+  const sigs = sigData.rsi_signals || [];
+  const votes = sigs.filter(s => s.rl_action && s.rl_action !== 'HOLD');
+
+  // Training progress
+  const target = (perf && perf.rl_target_samples) || 200;
+  const samples = rs.training_samples != null ? rs.training_samples : (perf && perf.rl_training_samples) || 0;
+  const pct = Math.min(100, (samples / target) * 100);
+  const daysLeft = Math.ceil((target - samples) / 2.5); // ~2.5 trades/day avg
+  document.getElementById('ag-samples').textContent   = samples + ' / ' + target;
+  document.getElementById('ag-vote-cnt').textContent  = votes.length + ' signals';
+  document.getElementById('ag-prog-pct').textContent  = pct.toFixed(0) + '%';
+  document.getElementById('ag-prog-fill').style.width = pct.toFixed(1) + '%';
+  document.getElementById('ag-prog-count').textContent = samples + ' / ' + target;
+  document.getElementById('ag-prog-left').textContent =
+    pct >= 100 ? '✓ Ready to train' :
+    samples > 0 ? '~' + daysLeft + ' trading days to activation' :
+    'Collecting data…';
+
+  // Last cycle timestamp
+  if (sigData.timestamp) {
+    document.getElementById('ag-ts').textContent =
+      'Last cycle: ' + new Date(sigData.timestamp).toLocaleTimeString();
+  }
+
+  // Backtest performance card
+  if (perf) {
+    const r = perf.strategy_return;
+    const el = document.getElementById('ag-ret');
+    el.textContent = r != null ? (r>=0?'+':'') + (r*100).toFixed(2) + '%' : '—';
+    el.className = 'ag-stat-v ' + (r != null ? (r>=0?'pos':'neg') : '');
+    document.getElementById('ag-wr').textContent =
+      perf.win_rate != null ? (perf.win_rate*100).toFixed(0)+'% ('+perf.wins+'W / '+perf.losses+'L)' : '—';
+    document.getElementById('ag-win').textContent  = perf.avg_win_pnl  != null ? '+$'+Number(perf.avg_win_pnl).toFixed(2)  : '—';
+    document.getElementById('ag-loss').textContent = perf.avg_loss_pnl != null ? '$'+Number(perf.avg_loss_pnl).toFixed(2)   : '—';
+    document.getElementById('ag-rr').textContent   = perf.risk_reward   != null ? '1:'+Number(perf.risk_reward).toFixed(1)   : '—';
+  }
+
+  // RL votes list
+  const el = document.getElementById('ag-votes');
+  if (!votes.length) { el.innerHTML = '<div class="empty">No RL votes this cycle</div>'; return; }
+
+  el.innerHTML = '<div class="ag-vote-row" style="background:var(--s3);border-bottom:1px solid var(--bd)">' +
+    '<span style="font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)">Ticker</span>' +
+    '<span style="font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)">Signal → RL</span>' +
+    '<span style="font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);text-align:right">Conf</span>' +
+    '<span style="font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);text-align:center">Effect</span>' +
+    '</div>' +
+    votes.map(s => {
+      const isBuy  = s.rl_action === 'BUY';
+      const isSell = s.rl_action === 'SELL';
+      const sigBuy = s.action === 'BUY';
+      const agree  = s.rl_action === s.action;
+      const isBoost = isBuy  && sigBuy && (s.confidence||0) === 2;
+      const isVeto  = isSell && sigBuy;
+      const effCls  = isBoost ? 'boost' : isVeto ? 'veto' : agree ? 'agree' : 'neutral';
+      const effTxt  = isBoost ? '↑ BOOST' : isVeto ? '⊘ VETO' : agree ? '✓ AGREE' : '— HOLD';
+      const rlColor = isBuy ? 'var(--buy)' : isSell ? 'var(--sell)' : 'var(--muted)';
+      return `<div class="ag-vote-row">
+        <span class="ag-vote-tk">${s.ticker}</span>
+        <span class="ag-vote-sig">${s.action} → <span style="color:${rlColor};font-weight:600">${s.rl_action}</span></span>
+        <span class="ag-vote-conf">${s.rl_confidence!=null?(s.rl_confidence*100).toFixed(0)+'%':'—'}</span>
+        <span class="ag-vote-effect ${effCls}">${effTxt}</span>
+      </div>`;
+    }).join('');
+}
+
 // ── DATA LOADERS ──────────────────────────────────────────────────────────────
+let _perfData = null;
 async function loadSignals(){
   try{
     const d=await fetch(CAN_RUN?'/api/signals':'signals.json?t='+Date.now()).then(r=>r.json());
@@ -923,6 +1135,7 @@ async function loadSignals(){
     allSigs=d.rsi_signals||[];
     renderSigs();
     renderSectors(d);
+    renderRL(d, _perfData);
 
     const nb=d.net_buy_buy_signals||[];
     const nbSell=d.net_buy_sell_signals||[];
@@ -1085,7 +1298,10 @@ function pollStatus(){
 }
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
-async function refreshAll(){await Promise.all([loadSignals(),loadPositions(),loadLog()]);}
+async function loadPerf(){
+  try{_perfData=await fetch('rl_performance.json?t='+Date.now()).then(r=>r.json());}catch(e){}
+}
+async function refreshAll(){await Promise.all([loadPerf().then(loadSignals),loadPositions(),loadLog()]);}
 async function init(){
   if(CAN_RUN){
     try{const d=await fetch('/api/status',{headers:{'X-Token':TOKEN}}).then(r=>r.json());

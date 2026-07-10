@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-07-10",
+  "backtest_days": 60,
+  "strategy_return": 0.0649,
+  "spy_return": null,
+  "win_rate": 0.3404,
+  "avg_win_pnl": 1.07,
+  "avg_loss_pnl": -0.45,
+  "risk_reward": 2.4,
+  "total_trades": 49,
+  "wins": 16,
+  "losses": 31,
+  "circuit_breaker_halts": 0,
+  "rl_training_samples": 53,
+  "rl_states_learned": 8,
+  "rl_target_samples": 200,
+  "note": "Updated daily by learning CCR at 9:30pm UTC"
+}
