@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-10T15:15:01Z
+- SUMMARY: Market open — no trades (4/4 positions held, max reached). No sell exits triggered. No RSI/net-buy signals for held positions. Buying power: $40.87. Positions: 4 (WMT, DKNG, JPM, DELL). Regime: normal (SPY $751.22 > EMA200 $741.27). Account: $101.93. Daily drawdown: 0.1% (day start $101.99). Weekly drawdown: -0.8% (gain vs $101.15 week start). Circuit breaker: INACTIVE. Surge tracker: TGT=1 (90.99% surge, need ≥2 + open slot).
+- WMT: +3.06% @ $113.70 | trail $110.872 (≥2.5% ratchet, avg×1.005=$110.872 unchanged) | target $121.352 | 🤖 RL(WMT): HOLD conf=91.8%
+- DKNG: +6.06% @ $26.96 | trail $26.06 (≥5% ratchet, avg×1.025=$26.056 unchanged) | target $27.962 | RL: null
+- JPM: +1.26% @ $337.20 | trail $328.54 (unchanged, <2.5%) | target $366.322 | RL: null
+- DELL: -3.32% @ $443.77 | trail $440.03 (unchanged, loss; current above stop) | target $504.911 | RL: null
+- No sells: WMT/DKNG/JPM/DELL not in any sell signal. No ATR stop hits. No take-profit reached.
+- No buys: at 4/4 position limit. Zero RSI BUY or net_buy_buy signals. Surge TGT count=1 (need ≥2, also no open slot).
+- Surge tracker: AMZN/AAOI removed (below 10% threshold), TGT added count=1 (90.99% intraday surge).
+- Net-buy SELL signals (non-held): OKLO, MBLY, PLTR, COIN, GOOGL, SOFI, SNAP, NFLX, SOUN, AI. RSI SELL (non-held): META conf=2.
+
+---
+
 ## 2026-07-10T14:15:10Z
 - SUMMARY: Market open — no trades (4/4 positions at max capacity). Buying power: $40.87. Positions: 4 (WMT, DKNG, JPM, DELL). Regime: normal. Account: $101.99. Daily drawdown: 0.0% (new day). Weekly drawdown: -0.8% (gain vs $101.15). Surge tracker: AMZN=1, AAOI=1.
 - WMT: +2.76% @ $113.37 | trail $110.872 (≥2.5% lock unchanged) | target $121.352 | RL: null
