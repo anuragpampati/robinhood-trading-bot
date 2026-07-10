@@ -82,6 +82,8 @@ class QAgent:
 
     def best_action(self, state: State) -> tuple[str, float]:
         k = state.key()
+        if k not in self.q:
+            return "HOLD", 0.0  # unknown state → no opinion
         scores = {a: self._q(k, a) for a in ACTIONS}
         best = max(scores, key=scores.__getitem__)
         return best, scores[best]
