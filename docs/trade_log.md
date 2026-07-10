@@ -3,6 +3,15 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-10T20:12:00Z
+- SUMMARY: Market closed. Buying power: $40.87. Positions: 4/4. Regime: normal. Account: $101.34. Daily drawdown: 0.6%. Weekly drawdown: -0.2% (weekly gain vs $101.15 week start). Surge tracker: ARM=1 (needs count≥2). Circuit breaker: INACTIVE.
+- WMT: +3.25% @ $113.90 | trail $110.872 (profit ≥2.5%, ratchet: max($110.872,$110.872)=unchanged) | target $121.352 | 🤖 RL: HOLD conf=91.8%
+- DKNG: +4.15% @ $26.475 | trail $26.060 (profit ≥2.5%, ratchet: max($26.060,$25.547)=unchanged) | target $27.962 | 🤖 RL: BUY conf=97.4% (already held)
+- JPM: +1.02% @ $336.42 | trail $328.540 (profit <2.5%, no ratchet) | target $366.322 | 🤖 RL: HOLD conf=91.0%
+- DELL: -5.27% @ $434.83 | trail $440.030 ⚠️ BELOW ATR STOP — will SELL at next market open | target $504.911 | 🤖 RL: null
+- No trades: market closed. DELL has breached ATR trailing stop ($434.83 < $440.03); sell order queued for next open.
+- Net-buy BUY: AUR @ $6.37 (4d streak) — not actioned (market closed, also 4/4 positions). RSI SELL: NVDA (RSI=73.4, conf=2), META (RSI=78.3, conf=2) — not held. Net-buy SELLs (not held): COIN, DIS, MCD, AI, SNOW, SOFI, PLTR, CRM, BAC, GOOGL.
+
 ## 2026-07-10T19:11:00Z
 - SUMMARY: Market open — no trades. Buying power: $40.87. Positions: 4/4 (max). Regime: normal. Account: $101.5778. Daily drawdown: 0.40%. Weekly drawdown: -0.42% (account up from week start). Surge tracker: ARM=1 (82% surge, needs count≥2 for intraday buy). Circuit breaker: INACTIVE.
 - WMT: +3.31% @ $113.97 | trail $110.872 | target $121.352 | 🤖 RL(WMT): HOLD conf=91.8%
