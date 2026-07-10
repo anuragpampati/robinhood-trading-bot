@@ -28,6 +28,7 @@ from strategy.config import (
 )
 
 TEST_DAYS = 30
+EXPORT_RL = "--export-rl" in sys.argv or "--train-rl" in sys.argv
 for i, arg in enumerate(sys.argv):
     if arg == "--days" and i + 1 < len(sys.argv):
         TEST_DAYS = int(sys.argv[i + 1])
@@ -176,9 +177,17 @@ def run():
                     qty=qty, entry_price=price, cost=amount, bars_held=0,
                     trail_stop=atr_stop, atr_pct=sig.atr_pct,
                 )
+                rl_obs = dict(
+                    rsi=round(sig.rsi, 2), ema_trend=sig.ema_trend,
+                    bb_signal=sig.bb_signal,
+                    vol_ratio=round(1.0 + (sig.confidence - 1) * 0.3, 2),
+                    atr_pct=round(sig.atr_pct, 4),
+                    regime="bearish_ema" if market_bearish_ema else "normal",
+                ) if EXPORT_RL else None
                 trades.append(dict(
                     ts=bar_ts, ticker=tk, side="BUY", price=price,
                     pnl=None, reason=sig.reason, bars=None,
+                    amount=amount, rl_obs=rl_obs,
                 ))
 
         for pos in positions.values():
@@ -248,6 +257,55 @@ def run():
     if not buys:
         print("\n  No buy signals fired in this period.")
         print("  (Check regime filter, RSI threshold, ATR gate in config.py)")
+
+    # ── RL training data export ───────────────────────────────────────────────
+    if EXPORT_RL:
+        import json
+        from pathlib import Path
+        rl_path = Path("logs/rl_training_data.jsonl")
+        rl_path.parent.mkdir(exist_ok=True)
+
+        # Load existing trade IDs to avoid duplicates
+        existing_ids: set[str] = set()
+        if rl_path.exists():
+            for line in rl_path.read_text().splitlines():
+                try:
+                    existing_ids.add(json.loads(line)["trade_id"])
+                except Exception:
+                    pass
+
+        # Pair BUY→SELL/OPEN trades
+        buy_map: dict[str, dict] = {}
+        rl_rows = []
+        for t in trades:
+            if t["side"] == "BUY" and t.get("rl_obs"):
+                buy_map[t["ticker"]] = t
+            elif t["side"] in ("SELL", "OPEN") and t["ticker"] in buy_map:
+                buy_t = buy_map.pop(t["ticker"])
+                reward = round((t["pnl"] / buy_t["amount"]) * 100, 4) if t["pnl"] is not None else 0.0
+                trade_id = f"{t['ticker']}|{buy_t['ts'].strftime('%Y-%m-%d')}|BT"
+                if trade_id not in existing_ids:
+                    rl_rows.append({
+                        "trade_id": trade_id,
+                        "timestamp": buy_t["ts"].isoformat(),
+                        "ticker":    t["ticker"],
+                        "action":    "BUY",
+                        "price":     buy_t["price"],
+                        "obs":       buy_t["rl_obs"],
+                        "reward":    reward,
+                    })
+
+        if rl_rows:
+            with rl_path.open("a") as f:
+                for row in rl_rows:
+                    f.write(json.dumps(row) + "\n")
+        total_rl = sum(1 for _ in rl_path.open()) if rl_path.exists() else 0
+        print(f"\n[RL] Exported {len(rl_rows)} new training rows → {total_rl} total in {rl_path}")
+
+        if "--train-rl" in sys.argv:
+            from strategy.rl_agent import train as rl_train
+            print("[RL] Training Q-agent on accumulated data...")
+            rl_train(epochs=5)
 
 
 if __name__ == "__main__":
