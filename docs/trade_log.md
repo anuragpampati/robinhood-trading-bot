@@ -3,6 +3,16 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-10T19:11:00Z
+- SUMMARY: Market open — no trades. Buying power: $40.87. Positions: 4/4 (max). Regime: normal. Account: $101.5778. Daily drawdown: 0.40%. Weekly drawdown: -0.42% (account up from week start). Surge tracker: ARM=1 (82% surge, needs count≥2 for intraday buy). Circuit breaker: INACTIVE.
+- WMT: +3.31% @ $113.97 | trail $110.872 | target $121.352 | 🤖 RL(WMT): HOLD conf=91.8%
+- DKNG: +4.05% @ $26.45 | trail $26.060 | target $27.962 | 🤖 RL(DKNG): BUY conf=97.4% (already held)
+- JPM: +1.08% @ $336.63 | trail $328.540 | target $366.322 | 🤖 RL(JPM): HOLD conf=91.0%
+- DELL: -3.73% @ $441.90 | trail $440.030 ⚠️ NEAR STOP (margin only $1.87) | target $504.911 | 🤖 RL(DELL): null
+- No sells: all above ATR trailing stops. DELL at $441.90 vs stop $440.03 — WATCH CLOSELY next cycle.
+- No buys: at 4/4 max positions. AUR (net-buy 4d streak, $6.35) not actionable until a position is exited.
+- RSI SELL non-held: META (RSI=78.2, BB above band, conf=2). Net-buy SELLs non-held: COIN, AI, SOFI, SNAP, PLTR, GOOGL, MCD, DIS, CRM, WFC.
+
 ## 2026-07-10T18:11:00Z
 - SUMMARY: Market open — no trades (4/4 positions held, max reached). Buying power: $40.87. Positions: 4. Regime: normal. Account: $101.58. Daily drawdown: 0.40%. Weekly: -0.42% (up from week start). Circuit breaker: INACTIVE. Surge tracker: cleared (EQIX removed — not in 10%+ surge this cycle).
 - WMT: +3.09% @ $113.725 | trail $110.872 (unchanged, profit <5%) | target $121.352 | 🤖 RL(WMT): HOLD conf=91.8%
