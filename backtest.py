@@ -274,7 +274,7 @@ def run():
                 except Exception:
                     pass
 
-        # Pair BUY→SELL/OPEN trades
+        # Pair BUY→SELL/OPEN trades; add counterfactual HOLD for losing trades
         buy_map: dict[str, dict] = {}
         rl_rows = []
         for t in trades:
@@ -294,6 +294,19 @@ def run():
                         "obs":       buy_t["rl_obs"],
                         "reward":    reward,
                     })
+                # Counterfactual HOLD: if we lost money, teach model "not buying = 0 loss"
+                if reward < 0:
+                    hold_id = f"{t['ticker']}|{buy_t['ts'].strftime('%Y-%m-%d')}|HOLD"
+                    if hold_id not in existing_ids:
+                        rl_rows.append({
+                            "trade_id": hold_id,
+                            "timestamp": buy_t["ts"].isoformat(),
+                            "ticker":    t["ticker"],
+                            "action":    "HOLD",
+                            "price":     buy_t["price"],
+                            "obs":       buy_t["rl_obs"],
+                            "reward":    0.0,
+                        })
 
         if rl_rows:
             with rl_path.open("a") as f:

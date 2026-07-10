@@ -1,26 +1,54 @@
 {
+  "mid|BULLISH|BELOW_BAND|high|high|bearish_ema": {
+    "HOLD": 5.884538,
+    "BUY": 4.974028
+  },
+  "low|BULLISH|BELOW_BAND|high|high|normal": {
+    "BUY": 5.980102,
+    "HOLD": 6.191772
+  },
   "oversold|BEARISH|BELOW_BAND|high|low|normal": {
-    "BUY": 8.156438
+    "BUY": 5.849043,
+    "HOLD": 5.967685
   },
   "oversold|BEARISH|BELOW_BAND|high|high|normal": {
-    "BUY": 6.320211
-  },
-  "oversold|BEARISH|BELOW_BAND|high|high|bearish_ema": {
-    "BUY": 10.731415
+    "HOLD": 5.814728,
+    "BUY": 5.353269
   },
   "oversold|BEARISH|BELOW_BAND|high|low|bearish_ema": {
-    "BUY": 6.045364
-  },
-  "low|BULLISH|BELOW_BAND|high|low|normal": {
-    "BUY": 2.790882
-  },
-  "high|BULLISH|BELOW_BAND|high|low|normal": {
-    "BUY": 1.534099
-  },
-  "low|BULLISH|BELOW_BAND|high|high|bearish_ema": {
-    "BUY": 3.476798
+    "HOLD": 5.902297,
+    "BUY": 6.006662
   },
   "mid|BULLISH|BELOW_BAND|high|low|normal": {
-    "BUY": 6.544108
+    "BUY": 6.717199,
+    "HOLD": 6.377123
+  },
+  "low|BULLISH|BELOW_BAND|high|low|normal": {
+    "HOLD": 6.006144,
+    "BUY": 4.070201
+  },
+  "oversold|BEARISH|BELOW_BAND|high|high|bearish_ema": {
+    "BUY": 7.178607,
+    "HOLD": 6.18772
+  },
+  "mid|BULLISH|BELOW_BAND|high|high|normal": {
+    "HOLD": 5.932641,
+    "BUY": 11.356203
+  },
+  "low|BULLISH|BELOW_BAND|high|low|bearish_ema": {
+    "BUY": 7.466804,
+    "HOLD": 5.209014
+  },
+  "low|BULLISH|BELOW_BAND|high|high|bearish_ema": {
+    "BUY": 6.296858,
+    "HOLD": 4.90627
+  },
+  "mid|BULLISH|BELOW_BAND|high|low|bearish_ema": {
+    "BUY": 7.278858,
+    "HOLD": 5.083059
+  },
+  "high|BULLISH|BELOW_BAND|high|low|normal": {
+    "HOLD": 5.43145,
+    "BUY": 2.850192
   }
 }

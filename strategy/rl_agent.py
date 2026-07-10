@@ -116,8 +116,8 @@ def train(epochs: int = 3):
         return
 
     rows = [json.loads(l) for l in DATA_PATH.read_text().splitlines() if l.strip()]
-    if len(rows) < 50:
-        print(f"[RL] Only {len(rows)} samples — need ≥50. Check back in a few days.")
+    if len(rows) < 30:
+        print(f"[RL] Only {len(rows)} samples — need ≥30.")
         return
 
     agent = QAgent(epsilon=EPSILON_START)
