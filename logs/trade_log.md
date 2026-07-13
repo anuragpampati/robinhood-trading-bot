@@ -3,6 +3,28 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-13T14:13:18Z
+- Action   : BUY AUR
+- Price    : $6.18
+- Amount   : $15.00 | Shares: 2.42718
+- RSI      : 50.2 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=n/a | null
+- Stop     : $5.94 | Target: $6.80
+- Strategy : normal | Sell date: null (ATR/signal)
+- Regime   : normal
+- Reason   : Net buy trend 4d streak (−2.88M→+0.92M→+7.03M), OBV +0.5M/day; priority-2 NET-BUY
+
+## 2026-07-13T14:12:46Z
+- Action   : SELL DELL
+- Price    : $431.39
+- Amount   : $14.10 | Shares: 0.032679
+- RSI      : 50.3 | EMA: BULLISH | BB: IN_BAND
+- RL       : BUY conf=97.4% | sell override (ATR trailing stop)
+- Stop     : $440.03 (triggered) | Target: $504.91
+- Strategy : normal | Sell date: ATR
+- Regime   : normal
+- Reason   : ATR trailing stop triggered ($431.39 ≤ $440.03), held ~3.5 days, pnl=−6.01%
+
 ## 2026-07-10T19:11:00Z
 - SUMMARY: Market open — no trades. Buying power: $40.87. Positions: 4/4 (max). Regime: normal. Account: $101.5778. Daily drawdown: 0.40%. Weekly drawdown: -0.42% (account up from week start). Surge tracker: ARM=1 (82% surge, needs count≥2 for intraday buy). Circuit breaker: INACTIVE.
 - WMT: +3.31% @ $113.97 | trail $110.872 | target $121.352 | 🤖 RL(WMT): HOLD conf=91.8%
