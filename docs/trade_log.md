@@ -4,12 +4,32 @@
 
 ---
 ## 2026-07-13T16:17:00Z
-- SUMMARY: Market open — no trades. Buying power: $25.87. Positions: 4/4 (max — WMT, DKNG, JPM, AUR). Regime: normal. Account: $101.21. Daily drawdown: 0.26%. Weekly drawdown: 0.26%. Circuit breaker: INACTIVE. Surge tracker: UBER=1 ($75.32, 10.4% surge — need count≥2 and open slot).
-- WMT: +3.57% @ $114.26 | trail $110.872 | target $121.352 | HOLD | 🤖 RL: null
-- DKNG: +6.67% @ $27.115 | trail $26.060 | target $27.962 | HOLD (approaching take-profit) | 🤖 RL: null
-- JPM: +0.18% @ $333.61 | trail $328.540 | target $366.322 | HOLD | 🤖 RL: null
-- AUR: -1.77% @ $6.07 | trail $5.938 | target $6.798 | HOLD (held <2h — trail stop skipped) | 🤖 RL: null
-- RSI SELL (not held): XOM RSI=72.2 conf=2, CVX RSI=77.3 conf=2, PYPL RSI=73.7 conf=2. Net-buy SELL (not held): COHR, XOM.
+- SUMMARY: Market open — no trades. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $101.21. Daily drawdown: 0.26%. Weekly drawdown: 0.26%. Surge tracker: UBER=1.
+
+## 2026-07-13T15:13:03Z
+- SUMMARY: Market open — no trades. At max 4 positions. Buying power: $25.87. Positions: 4/4. Regime: normal. Account: $101.34. Daily drawdown: 0.13%. Weekly drawdown: 0.13%. Surge tracker: empty. RSI sell signals (not held): XOM, CVX, PYPL. No held positions triggered any exit. DKNG approaching take-profit ($26.98 vs $27.962).
+
+## 2026-07-13T14:13:18Z
+- Action   : BUY AUR
+- Price    : $6.18
+- Amount   : $15.00 | Shares: 2.42718
+- RSI      : 50.2 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=n/a | null
+- Stop     : $5.94 | Target: $6.80
+- Strategy : normal | Sell date: null (ATR/signal)
+- Regime   : normal
+- Reason   : Net buy trend 4d streak (−2.88M→+0.92M→+7.03M), OBV +0.5M/day; priority-2 NET-BUY
+
+## 2026-07-13T14:12:46Z
+- Action   : SELL DELL
+- Price    : $431.39
+- Amount   : $14.10 | Shares: 0.032679
+- RSI      : 50.3 | EMA: BULLISH | BB: IN_BAND
+- RL       : BUY conf=97.4% | sell override (ATR trailing stop)
+- Stop     : $440.03 (triggered) | Target: $504.91
+- Strategy : normal | Sell date: ATR
+- Regime   : normal
+- Reason   : ATR trailing stop triggered ($431.39 ≤ $440.03), held ~3.5 days, pnl=−6.01%
 
 ## 2026-07-10T19:11:00Z
 - SUMMARY: Market open — no trades. Buying power: $40.87. Positions: 4/4 (max). Regime: normal. Account: $101.5778. Daily drawdown: 0.40%. Weekly drawdown: -0.42% (account up from week start). Surge tracker: ARM=1 (82% surge, needs count≥2 for intraday buy). Circuit breaker: INACTIVE.
@@ -85,49 +105,3 @@
 - Net-sell signals (none held): GE, PFE, TXN, EOSE, INFQ, COHR, LRCX, AMAT, MU, QBTS, TER, LITE, VRT, CRDO. Surge: SBUX 4.83% (below 10% threshold). No RSI/net-buy buy signals.
 
 ---
-
-## 2026-07-08T19:12:00Z
-- SUMMARY: Market open — no signals, no trades. 4/4 positions (max). Buying power: $10.38. Positions: WMT, DKNG, JPM, RKLB. Regime: normal. Account: $101.90. Daily drawdown: -0.2% (gain). Weekly drawdown: -0.7% (gain). Surge tracker: NVDA=1.
-- WMT: +2.40% @ $112.97 | trail $110.872 (profit <2.5%, unchanged) | target $121.352
-- DKNG: +6.52% @ $27.079 | trail $26.06 (≥5% profit threshold, ratcheted) | target $27.962
-- JPM: -0.33% @ $331.93 | trail $328.54 | held 2.97h — stop/signal gates active (need ≥3h) | target $366.322
-- RKLB: +1.80% @ $82.75 | trail $76.69 | held 1.98h — stop/signal gates active (need ≥3h) | target $89.419
-- Circuit breaker: inactive. SPY RSI 49.3, EMA NEUTRAL. No RSI or net-buy buy signals. Net-sell: GE, COHR, LITE, INFQ, EOSE, MU, LRCX, VRT, AMAT, TXN, TER, QBTS, CRDO, CIFR, AMKR, AEHR (none held). Surge: NVDA +40.5% (count=1, need 2 for intraday_surge entry).
-
----
-
-## 2026-07-08T16:12:13Z
-- Action   : BUY JPM
-- Price    : $333.00
-- Amount   : $15.00 | Shares: 0.045040
-- RSI      : 41.19 | EMA: BULLISH | BB: BELOW_BAND
-- Stop     : $328.54 | Target: $366.30
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : BB reversal returning from lower band | EMA bullish crossover | conf 2/3
-
-## 2026-07-08T16:12:15Z
-- SUMMARY: Market open — BUY JPM $15. Buying power: $25.38. Positions: 3 (WMT, DKNG, JPM). Regime: normal. Account: $101.20. Daily drawdown: -0.49%. Weekly drawdown: +0.05% (gain). Surge tracker: empty. Circuit breaker: inactive.
-
-## 2026-07-08T15:13:22Z
-- Action   : SELL GS
-- Price    : $1,018.83
-- Amount   : $14.63 | Shares: 0.014347
-- RSI      : 40.1 | EMA: BULLISH | BB: IN_BAND
-- Stop     : $1,029.12 | Target: $1,150.06
-- Strategy : normal | Sell date: ATR stop exit
-- Regime   : normal
-- Reason   : ATR trailing stop triggered — price $1,018.83 ≤ trail_stop $1,029.12. Held ~49h ≥ 3h. P&L: -2.46% (-$0.38). Entry $1,045.51 on 2026-07-06.
-
-## 2026-07-08T15:13:23Z
-- Action   : SELL SMCI
-- Price    : $26.74
-- Amount   : $15.36 | Shares: 0.574494
-- RSI      : 43.9 | EMA: BEARISH | BB: IN_BAND
-- Stop     : $26.241 | Target: $28.721
-- Strategy : normal | Sell date: net-buy signal exit
-- Regime   : normal
-- Reason   : Net-buy SELL signal — momentum reversal: net buy 5.49M → -1.41M, OBV -9.1M/day. Held ~23h ≥ 3h. P&L: +2.41% (+$0.36). Entry $26.11 on 2026-07-07.
-
-## 2026-07-08T15:14:00Z
-- SUMMARY: Market open — 2 sells executed (GS ATR stop, SMCI net-buy signal). Buying power: $70.36. Positions: 2 (WMT, DKNG). Regime: normal. Account: $101.26. Daily drawdown: -0.43%. Weekly drawdown: +0.11% (gain). Surge tracker: cleared (UBER lost surge). No buy signals this cycle.
