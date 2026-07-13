@@ -3,9 +3,6 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
-## 2026-07-13T20:11:55Z
-- SUMMARY: Market closed. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $100.94. Daily drawdown: 0.52%. Weekly drawdown: 0.52%. Surge tracker: empty. RSI BUY signals (market closed - no action): RKLB conf=2 (RL=HOLD 90.6%), ASTS conf=2 (RL=HOLD 90.6%), IONQ conf=2 (RL=HOLD 93.0%), RGTI conf=2 (RL=HOLD 90.6%), QBTS conf=2 (RL=HOLD 93.0%), MRCY conf=2 (RL=HOLD 93.0%). RSI SELL signals (not held): XOM conf=2, CVX conf=2, PYPL conf=2. Net-buy SELL (not held): ASML, COHR, INFQ. WMT: +4.06% | DKNG: +4.09% | JPM: +0.45% | AUR: -1.78%.
-
 ## 2026-07-13T19:11:00Z
 - SUMMARY: Market open — no trades (at max 4 positions). Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $100.96. Daily drawdown: 0.50%. Weekly drawdown: 0.50%. Surge tracker: AI=1, SNOW=1. WMT: +4.33% | DKNG: +5.00% | JPM: +0.56% | AUR: -2.67%. RSI SELLs not held: XOM conf=2, CVX conf=2, PYPL conf=2. RSI BUYs blocked by max-positions: IONQ(conf=2), QBTS(conf=2).
 
