@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10",
+  "updated_at": "2026-07-13",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,7 +12,7 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 366,
+  "rl_training_samples": 376,
   "rl_states_learned": 19,
   "rl_veto_states": 8,
   "rl_buy_states": 11,
@@ -30,5 +30,5 @@
     "vetoed_total_pnl_pct": -50.78,
     "allowed_total_pnl_pct": 121.51
   },
-  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked). Prior 365d backtest metrics retained. RL: 366 samples, 19 states."
+  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked). Prior 365d backtest metrics retained. RL: 376 samples, 19 states."
 }

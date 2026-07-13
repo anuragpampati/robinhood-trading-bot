@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-07-13
+- Trades analysed: 4 cumulative closed (SMCI +2.41%, GS -2.46%, RKLB +2.93%, DELL -6.01%; 4 open: WMT/DKNG/JPM/AUR)
+- Win rate: 50.0% overall (normal: 50.0% — 2W/2L; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- Config changes: none — RSI_OVERSOLD: n=4 < 5 (need ≥5); MOMENTUM_VOL_MIN: no momentum-strategy closed trades (n<3); ATR_VOLATILITY_THRESHOLD: avg_hold ~53h > 2h threshold, rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior metrics retained: +9.29% 365d return, 15.3% drawdown, 39.6% win rate
+- RL samples: 376/200 (READY — exceeds target; +10 new rows collected today)
+- Notes: DELL exited at -6.01% via ATR trailing stop (held ~3.5d). AUR entered 2026-07-13 at $6.18. Account at $100.94. Log trimmed to 6/15 entries. RL has 19 states learned, Q-table veto active.
+
 ## 2026-07-10
 - Trades analysed: 3 (RKLB +2.93%, GS -2.46%, SMCI +2.41%; 4 open: WMT/DKNG/JPM/DELL)
 - Win rate: 66.7% overall (normal: 66.7% — 2W/1L; momentum: n/a; surge: n/a)
