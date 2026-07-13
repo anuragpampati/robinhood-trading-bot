@@ -3,6 +3,8 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-13T18:12:00Z
+- SUMMARY: Market open — no trades. At max 4 positions — no new buys. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $100.76. Daily drawdown: 0.70%. Weekly drawdown: 0.70%. Surge tracker: empty. WMT: +4.00% @ $114.73 | trail $110.872 | target $121.352 | HOLD. DKNG: +3.76% @ $26.375 | trail $26.06 | target $27.962 | HOLD. JPM: +0.33% @ $334.11 | trail $328.54 | target $366.322 | HOLD. AUR: -2.67% @ $6.015 | trail $5.938 | target $6.798 | HOLD. RSI SELLs (not held): CVX conf=2 (RSI=80.8), PYPL conf=2 (RSI=80.5). Net-buy SELLs (not held): COHR, MRNA. Circuit breaker: INACTIVE (daily dd 0.70% < 3%, weekly dd 0.70% < 5%). 🤖 RL: WMT=HOLD(91.8%), DKNG=BUY(97.4%) — boost N/A (max positions), JPM=null, AUR=null.
 ## 2026-07-13T17:10:00Z
 - SUMMARY: Market open — no trades. At max 4 positions. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $101.03. Daily drawdown: 0.43%. Weekly drawdown: 0.43%. Surge tracker: empty (UBER removed — no longer in 10%+ surge signals). RSI sell signals (not held): CRM conf=2 (RSI=70.6), XOM conf=2 (RSI=73.6), CVX conf=2 (RSI=78.8), PYPL conf=2 (RSI=80.1). Net-buy SELL (not held): COHR, XOM. WMT: +3.77% | DKNG: +4.96% | JPM: +0.45% | AUR: -1.78% (held <3h). 🤖 RL: WMT=HOLD(91.8%), others=null.
 
