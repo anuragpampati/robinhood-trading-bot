@@ -3,6 +3,9 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-13T19:11:00Z
+- SUMMARY: Market open — no trades (at max 4 positions). Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $100.96. Daily drawdown: 0.50%. Weekly drawdown: 0.50%. Surge tracker: AI=1, SNOW=1. WMT: +4.33% | DKNG: +5.00% | JPM: +0.56% | AUR: -2.67%. RSI SELLs not held: XOM conf=2, CVX conf=2, PYPL conf=2. RSI BUYs blocked by max-positions: IONQ(conf=2), QBTS(conf=2).
+
 ## 2026-07-13T17:10:00Z
 - SUMMARY: Market open — no trades. At max 4 positions. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $101.03. Daily drawdown: 0.43%. Weekly drawdown: 0.43%. Surge tracker: empty (UBER removed — no longer in 10%+ surge signals). RSI sell signals (not held): CRM conf=2 (RSI=70.6), XOM conf=2 (RSI=73.6), CVX conf=2 (RSI=78.8), PYPL conf=2 (RSI=80.1). Net-buy SELL (not held): COHR, XOM. WMT: +3.77% | DKNG: +4.96% | JPM: +0.45% | AUR: -1.78% (held <3h). 🤖 RL: WMT=HOLD(91.8%), others=null.
 
