@@ -3,6 +3,16 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-14T15:10:50Z
+- SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $101.03. Daily drawdown: -0.0%. Weekly drawdown: -0.0%. Surge tracker: empty.
+- RSI BUY signals not traded: IONQ conf=2 (max positions), INFQ conf=2 (max positions)
+- 🤖 RL(IONQ): HOLD conf=93.0% — not a SELL veto; no trade (max positions)
+- 🤖 RL(INFQ): HOLD conf=94.6% — not a SELL veto; no trade (max positions)
+- RSI SELL signals not held: BAC conf=2 (RSI=70.5), GS conf=2 (RSI=79.9), XOM conf=2 (RSI=71.4), CVX conf=2 (RSI=72.8), CRWD conf=2 (RSI=72.3)
+- Net-buy SELL signals not held: MU, NBIS, NVTS
+- ATR trail stops: WMT=$110.872 (unchanged, profit=4.12%), JPM=$334.685 (unchanged, profit=3.25%), RKLB=$77.38 (unchanged, profit=0.67%), AUR=$5.938 (unchanged, loss=-1.29%)
+- Circuit breaker: INACTIVE | daily_dd=-0.0% | weekly_dd=-0.0%
+
 ## 2026-07-14T14:16:53Z
 - Action   : BUY RKLB
 - Price    : $80.28
