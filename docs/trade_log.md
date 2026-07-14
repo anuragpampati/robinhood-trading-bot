@@ -3,6 +3,25 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-14T19:11:08Z
+- Action   : SELL RKLB
+- Price    : $78.93
+- Amount   : $14.75 | Shares: 0.186846
+- RSI      : 40.0 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=n/a | null
+- Stop     : N/A (sold) | Target: N/A (sold)
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net buy reversed: -1.60M → -2.12M | OBV -3.2M/day (momentum reversal, exit c)
+
+## 2026-07-14T19:13:00Z
+- SUMMARY: Market open — SELL RKLB executed. ISRG BUY candidate skipped: buying power $24.93 - $15 = $9.93 < $10 buffer (sell proceeds pending settlement). Buying power: $24.93. Positions: 3. Regime: normal. Account: $100.24. Daily drawdown: 0.17%. Weekly drawdown: 0.17%. Surge tracker: empty.
+- RSI BUY signals not traded: ISRG conf=2 (🤖 RL: HOLD conf=93.0% — insufficient buying power after $10 buffer)
+- RSI SELL signals not held: GS conf=2 (RSI=79.8), CRWD conf=2 (RSI=73.0)
+- Net-buy SELL signals not held: DELL, NBIS, RDW, MU, NVTS, TGT
+- ATR trail stops: WMT=$110.872 (no ratchet, profit=+3.01%), JPM=$334.685 (no ratchet, profit=+2.49%), AUR=$5.938 (no ratchet, loss=-2.35%)
+- Circuit breaker: INACTIVE | daily_dd=0.17% | weekly_dd=0.17%
+
 ## 2026-07-14T17:10:18Z
 - SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $100.41. Daily drawdown: 0.0% (new day reset). Weekly drawdown: 0.0% (new week — Monday reset). Surge tracker: empty.
 - RSI BUY signals not traded: ORCL conf=2 (max positions) | 🤖 RL: HOLD conf=90.6%
