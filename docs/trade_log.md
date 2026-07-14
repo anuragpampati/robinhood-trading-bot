@@ -3,6 +3,28 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-14T14:16:53Z
+- Action   : BUY RKLB
+- Price    : $80.28
+- Amount   : $15.00 | Shares: 0.186846
+- RSI      : 29.9 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=90.6% | null
+- Stop     : $77.38 | Target: $88.31
+- Strategy : normal | Sell date: null (ATR/signal)
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (29.5↑29.9) | BB reversal (0.04→0.14, returning from band) | priority-3 MODERATE BUY
+
+## 2026-07-14T14:16:44Z
+- Action   : SELL DKNG
+- Price    : $25.60
+- Amount   : $15.11 | Shares: 0.590088
+- RSI      : 49.0 | EMA: BULLISH | BB: IN_BAND
+- RL       : BUY conf=97.4% | sell override (ATR trailing stop)
+- Stop     : $26.06 (triggered) | Target: $27.96
+- Strategy : normal | Sell date: ATR
+- Regime   : normal
+- Reason   : ATR trailing stop triggered ($25.60 ≤ $26.06) | held 12 days | pnl=+0.71% from avg $25.42
+
 ## 2026-07-13T19:11:00Z
 - SUMMARY: Market open — no trades (at max 4 positions). Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $100.96. Daily drawdown: 0.50%. Weekly drawdown: 0.50%. Surge tracker: AI=1, SNOW=1. WMT: +4.33% | DKNG: +5.00% | JPM: +0.56% | AUR: -2.67%. RSI SELLs not held: XOM conf=2, CVX conf=2, PYPL conf=2. RSI BUYs blocked by max-positions: IONQ(conf=2), QBTS(conf=2).
 
