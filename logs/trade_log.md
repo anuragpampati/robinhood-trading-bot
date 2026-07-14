@@ -3,6 +3,15 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-14T18:11:53Z
+- SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $100.45. Daily drawdown: -0.04% (gain). Weekly drawdown: -0.04% (gain). Surge tracker: empty.
+- RSI BUY signals not traded: ORCL conf=2 (max positions) | 🤖 RL: HOLD conf=90.6% | ISRG conf=2 (max positions) | 🤖 RL: HOLD conf=93.0%
+- RSI SELL signals not held: GS conf=2 (RSI=78.8, overbought), CRWD conf=2 (RSI=71.7, overbought)
+- Net-buy SELL signals not held: NBIS, NVTS, MU
+- ATR trail stops: WMT=$110.872 (unchanged, +3.46% @ $114.14), JPM=$334.685 (unchanged, +1.67% @ $338.59), RKLB=$77.38 (unchanged, -0.57% @ $79.82), AUR=$5.938 (unchanged, -1.86% @ $6.065)
+- Circuit breaker: INACTIVE | daily_dd=-0.04% (gain) | weekly_dd=-0.04% (gain)
+- 🤖 RL(WMT): HOLD conf=91.8% | 🤖 RL(JPM): HOLD conf=91.0% | 🤖 RL(RKLB): null conf=n/a | 🤖 RL(AUR): null conf=n/a
+
 ## 2026-07-14T17:10:18Z
 - SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $100.41. Daily drawdown: 0.0% (new day reset). Weekly drawdown: 0.0% (new week — Monday reset). Surge tracker: empty.
 - RSI BUY signals not traded: ORCL conf=2 (max positions) | 🤖 RL: HOLD conf=90.6%
