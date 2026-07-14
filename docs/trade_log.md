@@ -3,7 +3,6 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
-
 ## 2026-07-14T17:10:18Z
 - SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $100.41. Daily drawdown: 0.0% (new day reset). Weekly drawdown: 0.0% (new week — Monday reset). Surge tracker: empty.
 - RSI BUY signals not traded: ORCL conf=2 (max positions) | 🤖 RL: HOLD conf=90.6%
