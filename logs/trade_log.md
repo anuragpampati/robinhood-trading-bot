@@ -3,6 +3,17 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-14T20:13:00Z
+- SUMMARY: Market closed — no trades. Buying power: $24.93. Positions: 3 (WMT, JPM, AUR). Regime: normal. Account: $100.51. Daily drawdown: -0.10% (gain). Weekly drawdown: -0.10% (gain). Surge tracker: empty.
+- RSI BUY signals (market closed, not executed): ISRG conf=2 RSI=20.9 BELOW_BAND | 🤖 RL: HOLD conf=93.0% | CRWV conf=2 RSI=29.4 BELOW_BAND | 🤖 RL: HOLD conf=90.6%
+- RSI SELL signals not held: GS conf=2 (RSI=82.4, overbought), CRWD conf=2 (RSI=74.5, overbought)
+- Net-buy SELL signals not held: NBIS, RDW, MRCY, QCOM, RKLB, PL, MU, ARM, ALAB
+- Surge signals (market closed): MBLY +29.4% | LRCX +103.4% — not processed (market closed)
+- ATR trail stops: WMT=$110.872 (unchanged, +3.03% @ $113.665), JPM=$334.685 (unchanged, +3.00% @ $343.000), AUR=$5.938 (unchanged, -0.89% @ $6.125)
+- Circuit breaker: INACTIVE | daily_dd=-0.10% (gain) | weekly_dd=-0.10% (gain)
+- 🤖 RL(WMT): HOLD conf=91.8% | 🤖 RL(JPM): HOLD conf=91.0% | 🤖 RL(AUR): null conf=n/a
+
+
 ## 2026-07-14T18:11:53Z
 - SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $100.45. Daily drawdown: -0.04% (gain). Weekly drawdown: -0.04% (gain). Surge tracker: empty.
 - RSI BUY signals not traded: ORCL conf=2 (max positions) | 🤖 RL: HOLD conf=90.6% | ISRG conf=2 (max positions) | 🤖 RL: HOLD conf=93.0%
