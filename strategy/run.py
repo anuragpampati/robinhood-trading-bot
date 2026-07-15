@@ -281,7 +281,7 @@ def run_analysis() -> dict:
         "options_ideas": [
             idea
             for s in rsi_signals.values()
-            for idea in [generate_options_idea(s.ticker, s.action, s.confidence)]
+            for idea in [generate_options_idea(s.ticker, s.action, s.confidence, s.rsi)]
             if idea is not None
         ],
     }
