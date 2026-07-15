@@ -3,6 +3,15 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-15T17:15:13Z
+- SUMMARY: Market open — no trades. No buy signals (net_buy_buy_signals=[], surge_signals=[]). No sell triggers on held positions (WMT +3.4%, JPM +4.2%). Buying power: $54.79. Equity positions: 2 (WMT, JPM). Regime: normal/BULLISH. Account: $100.30.
+- WMT HOLD: +3.4% @ $114.07 (stop $110.872, target $121.352) — ATR trail unchanged
+- JPM HOLD: +4.2% @ $346.96 (stop $334.685, target $366.322) — ATR trail unchanged
+- RSI SELL signals not held: AAPL conf=2 (RSI=75.4, overbought+ABOVE_BAND) | AMZN conf=2 (RSI=74.8) | GOOGL conf=2 (RSI=73.1) | PYPL conf=2 (RSI=85.8)
+- Net-buy SELL signals not held: SNAP, SOUN, DELL, QBTS, INFQ, AI, RIVN, RGTI, SYM, AMKR
+- Circuit breaker: INACTIVE | daily_dd=0.31% | weekly_dd=0.11%
+- Surge tracker: empty (no 10%+ intraday surges)
+
 ## 2026-07-15T16:13:18Z
 - Action   : SELL AUR
 - Price    : $5.9235
