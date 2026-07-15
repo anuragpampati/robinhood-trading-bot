@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-07-15
+- Trades analysed: 3 closed (DELL -6.01%, DKNG +0.71%, AUR -4.10%; 2 open: WMT/JPM)
+- Win rate: 33.3% overall (normal: 33.3% — 1W/2L; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- Config changes: none — RSI_OVERSOLD: n=3 < 5 (need ≥5); MOMENTUM_VOL_MIN: no momentum-strategy closed trades (n<3); ATR_VOLATILITY_THRESHOLD: avg_hold ~140h > 2h, rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior metrics retained: +9.29% 365d return, 15.3% drawdown, 39.6% win rate
+- RL samples: 380/200 (READY — +4 new rows collected today; 19 states in Q-table)
+- Notes: AUR exited 2026-07-15 at -4.1% via ATR trailing stop (held ~48h). RKLB sold between 2026-07-14T18:11 and 2026-07-15T15:15 (explicit entry trimmed from log). WMT +1.8%/JPM +4.2% still held. Account $100.11. Log trimmed to 12 entries. RL exceeds 200 target — ready to train Q-agent.
+
 ## 2026-07-13
 - Trades analysed: 4 cumulative closed (SMCI +2.41%, GS -2.46%, RKLB +2.93%, DELL -6.01%; 4 open: WMT/DKNG/JPM/AUR)
 - Win rate: 50.0% overall (normal: 50.0% — 2W/2L; momentum: n/a — 0 trades; surge: n/a — 0 trades)

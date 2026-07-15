@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-07-15",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,23 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 376,
+  "rl_training_samples": 380,
   "rl_states_learned": 19,
-  "rl_veto_states": 8,
-  "rl_buy_states": 11,
   "rl_target_samples": 200,
-  "rl_filter_simulation": {
-    "note": "In-sample post-hoc simulation — RL trained and tested on same 227 trades. Real out-of-sample improvement will be smaller.",
-    "baseline_win_rate": 0.396,
-    "filtered_win_rate": 0.521,
-    "win_rate_delta": 0.125,
-    "baseline_rr": 1.79,
-    "filtered_rr": 2.35,
-    "trades_vetoed": 154,
-    "trades_allowed": 73,
-    "veto_pct": 0.68,
-    "vetoed_total_pnl_pct": -50.78,
-    "allowed_total_pnl_pct": 121.51
-  },
-  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked). Prior 365d backtest metrics retained. RL: 376 samples, 19 states."
+  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked). Prior 365d backtest metrics retained. RL: 380 samples (+4 today), 19 states. Config: NO_CHANGE (n_trades < 5 for all strategy types)."
 }
