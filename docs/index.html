@@ -106,6 +106,54 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .tb-out{background:transparent;border:none;color:var(--muted);font-size:.72rem;cursor:pointer;padding:4px;font-family:var(--sans);transition:color .15s}
 .tb-out:hover{color:var(--sell)}
 
+/* ── SYSTEM TOGGLE (Stocks / Options) ───────────────────────────── */
+.sys-toggle{
+  display:flex;align-items:center;gap:2px;
+  background:var(--s2);border:1px solid var(--bd2);border-radius:8px;
+  padding:3px;margin:0 auto;
+}
+.sys-btn{
+  font-family:var(--mono);font-size:.58rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.08em;
+  padding:5px 13px;border-radius:6px;border:none;
+  color:var(--muted);background:transparent;cursor:pointer;
+  transition:background .15s,color .15s;white-space:nowrap;
+  -webkit-tap-highlight-color:transparent;
+}
+.sys-btn.active{background:var(--s3);color:var(--tx)}
+.sys-btn.stocks.active{color:var(--buy)}
+.sys-btn.options.active{color:var(--blue)}
+.sys-btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+/* ── OPTIONS SIGNAL CARDS ────────────────────────────────────────── */
+.opt-sig-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;padding:12px 14px}
+.opt-sig-card{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:12px;position:relative;overflow:hidden}
+.opt-sig-card.call{border-left:3px solid var(--buy)}
+.opt-sig-card.put {border-left:3px solid var(--sell)}
+.opt-sig-card.hold{border-left:3px solid var(--bd2);opacity:.6}
+.osc-tk{font-family:var(--mono);font-size:.95rem;font-weight:700;letter-spacing:-.02em}
+.osc-action{font-family:var(--mono);font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:2px 7px;border-radius:4px;display:inline-block;margin-top:4px}
+.osc-action.call{background:var(--buybg);color:var(--buy);border:1px solid var(--buybr)}
+.osc-action.put {background:var(--sellbg);color:var(--sell);border:1px solid var(--sellbr)}
+.osc-action.hold{background:var(--s3);color:var(--muted)}
+.osc-row{display:flex;gap:6px;margin-top:8px;font-size:.68rem;color:var(--tx2)}
+.osc-kv{flex:1;min-width:0}
+.osc-k{font-size:.58rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:1px}
+.osc-v{font-family:var(--mono);font-weight:600;color:var(--tx)}
+.osc-conf{position:absolute;top:10px;right:10px;font-family:var(--mono);font-size:.58rem;color:var(--muted)}
+.osc-reason{font-size:.66rem;color:var(--tx2);margin-top:6px;line-height:1.4;border-top:1px solid var(--bd);padding-top:6px}
+.osc-iv{display:inline-block;font-size:.6rem;font-weight:700;padding:1px 5px;border-radius:3px;margin-top:4px}
+.osc-iv.cheap{background:var(--buybg);color:var(--buy)}
+.osc-iv.rich {background:var(--s3);color:var(--muted)}
+
+/* Options positions cards use the same .pc .pc-head etc from equity positions */
+
+/* Options stats bar */
+.opt-stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);margin-bottom:4px}
+.opt-stat{background:var(--s1);padding:12px 14px;text-align:center}
+.opt-stat-v{font-family:var(--mono);font-size:1.1rem;font-weight:700;color:var(--tx)}
+.opt-stat-k{font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:2px}
+
 /* ── STATUS BARS ────────────────────────────────────────────────────── */
 .sbar{padding:8px 16px;display:none;align-items:center;gap:10px;font-size:.76rem;border-bottom:1px solid var(--bd)}
 .sbar.show{display:flex}
@@ -562,6 +610,11 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 <!-- ── TOPBAR ─────────────────────────────────────────────────────── -->
 <header class="topbar">
   <span class="tb-brand"><span class="tb-dot"></span>AGENTIC</span>
+  <!-- Stocks / Options system toggle -->
+  <div class="sys-toggle" id="sys-toggle">
+    <button class="sys-btn stocks active" onclick="switchSystem('stocks')">Stocks</button>
+    <button class="sys-btn options" onclick="switchSystem('options')">Options</button>
+  </div>
   <div class="tb-pills">
     <span class="pill pill-closed" id="mkt-pill">CLOSED</span>
     <span class="pill pill-bull" id="reg-pill" style="display:none"></span>
@@ -841,36 +894,137 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 
     </div><!-- end panel-agent -->
 
+    <!-- ══ OPTIONS PANELS (hidden when stocks system is active) ══ -->
+    <div id="options-panels" style="display:none">
+
+      <!-- OPTIONS: Signals -->
+      <div class="panel active" id="panel-opt-signals">
+        <div class="sec" style="margin-top:4px">
+          <span class="sec-lbl">Options Signals</span>
+          <div class="sec-rule"></div>
+          <span class="sec-ts" id="opt-sig-ts">Daily RSI mean-reversion · independent system</span>
+        </div>
+        <!-- Stats bar -->
+        <div class="opt-stats-bar" id="opt-stats-bar" style="display:none">
+          <div class="opt-stat"><div class="opt-stat-v" id="ost-trades">—</div><div class="opt-stat-k">Total trades</div></div>
+          <div class="opt-stat"><div class="opt-stat-v" id="ost-wr">—</div><div class="opt-stat-k">Win rate</div></div>
+          <div class="opt-stat"><div class="opt-stat-v" id="ost-pnl">—</div><div class="opt-stat-k">Net P&amp;L</div></div>
+          <div class="opt-stat"><div class="opt-stat-v" id="ost-rr">1:2</div><div class="opt-stat-k">R:R (backtest)</div></div>
+        </div>
+        <div class="opt-sig-grid" id="opt-sig-grid">
+          <div class="empty" style="grid-column:1/-1;padding:24px">Loading options signals…</div>
+        </div>
+        <div style="padding:0 14px 10px">
+          <div style="background:var(--s2);border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px;font-size:.72rem;color:var(--tx2);line-height:1.7">
+            <strong style="color:var(--tx)">Signal logic:</strong> Daily RSI(14) &lt; 35 → buy call (oversold bounce).
+            Daily RSI(14) &gt; 65 → buy put (overbought reversal).
+            Confidence 2–4 based on RSI extremity + cheap IV (HV20 &lt; HV90).
+            <br><strong style="color:var(--tx)">Budget:</strong> ≤$75/contract · 14 DTE target · ~5.5% OTM strike · max 2 positions.
+          </div>
+        </div>
+      </div>
+
+      <!-- OPTIONS: Positions -->
+      <div class="panel" id="panel-opt-positions">
+        <div class="sec" style="margin-top:4px">
+          <span class="sec-lbl">Option Positions</span>
+          <div class="sec-rule"></div>
+          <span class="sec-ts" id="opt-pos-ts">From option_positions.json</span>
+        </div>
+        <div class="card-shell">
+          <div class="pos-cards" id="opt-pos-cards">
+            <div class="empty" style="padding:24px">No open option positions</div>
+          </div>
+        </div>
+        <!-- Closed today -->
+        <div class="sec" id="opt-closed-sec" style="display:none">
+          <span class="sec-lbl">Closed Today</span>
+          <div class="sec-rule"></div>
+        </div>
+        <div class="card-shell" id="opt-closed-shell" style="display:none">
+          <div class="pos-cards" id="opt-closed-cards"></div>
+        </div>
+      </div>
+
+      <!-- OPTIONS: Trade Log -->
+      <div class="panel" id="panel-opt-log">
+        <div class="sec" style="margin-top:4px">
+          <span class="sec-lbl">Options Trade Log</span>
+          <div class="sec-rule"></div>
+          <span class="sec-ts">Append-only · logs/options_trade_log.md</span>
+        </div>
+        <div class="card-shell">
+          <div id="opt-logwrap" style="padding:12px 14px">
+            <div class="empty">No options trades yet — positions appear here after first trade</div>
+          </div>
+        </div>
+        <!-- Backtest summary -->
+        <div class="sec" style="margin-top:4px">
+          <span class="sec-lbl">Backtest Reference</span>
+          <div class="sec-rule"></div>
+          <span class="sec-ts">180-day Black-Scholes simulation</span>
+        </div>
+        <div style="padding:0 14px 16px">
+          <div class="ag-grid">
+            <div class="ag-card">
+              <div class="ag-card-title">Strategy Parameters</div>
+              <div class="ag-stat"><span class="ag-stat-k">Tickers</span><span class="ag-stat-v">NVDA · AAPL · AMZN · META</span></div>
+              <div class="ag-stat"><span class="ag-stat-k">Signal</span><span class="ag-stat-v">Daily RSI &lt;35 / &gt;65</span></div>
+              <div class="ag-stat"><span class="ag-stat-k">Option type</span><span class="ag-stat-v">Long calls &amp; puts only</span></div>
+              <div class="ag-stat"><span class="ag-stat-k">DTE target</span><span class="ag-stat-v gold">14 days</span></div>
+              <div class="ag-stat"><span class="ag-stat-k">Strike</span><span class="ag-stat-v">~5.5% OTM</span></div>
+            </div>
+            <div class="ag-card">
+              <div class="ag-card-title">180-Day Backtest (AAPL)</div>
+              <div class="ag-stat"><span class="ag-stat-k">Total trades</span><span class="ag-stat-v">13</span></div>
+              <div class="ag-stat"><span class="ag-stat-k">Win rate</span><span class="ag-stat-v">46%</span></div>
+              <div class="ag-stat"><span class="ag-stat-k">Return on premium</span><span class="ag-stat-v pos">+28.1%</span></div>
+              <div class="ag-stat"><span class="ag-stat-k">Actual R:R</span><span class="ag-stat-v gold">1:2.0</span></div>
+              <div class="ag-stat"><span class="ag-stat-k">Avg hold</span><span class="ag-stat-v">2.8 days</span></div>
+            </div>
+          </div>
+          <div style="background:var(--goldbg);border:1px solid var(--goldbr);border-radius:var(--r);padding:10px 12px;font-size:.71rem;color:var(--tx2);margin-top:8px;line-height:1.6">
+            <strong style="color:var(--gold)">Exit rules:</strong> Take profit at +50% · Stop loss at −50% · Force close at DTE ≤ 5 to avoid pin risk.
+            46% win rate is fine because winners average 2× the loss size (R:R 1:2).
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end options-panels -->
+
   </div><!-- end main-scroll -->
 
 </div><!-- end app-shell -->
 
 <!-- ── BOTTOM NAV (mobile only) ───────────────────────────────────── -->
-<nav class="bnav">
-  <button class="bnav-btn active" data-panel="signals" onclick="switchPanel('signals')">
-    <span class="bnav-icon">
-      <!-- bars-chart icon -->
-      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="7" width="4" height="14" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg>
-    </span>Signals
-  </button>
-  <button class="bnav-btn" data-panel="portfolio" onclick="switchPanel('portfolio')">
-    <span class="bnav-icon">
-      <!-- briefcase icon -->
-      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="12.01"/></svg>
-    </span>Portfolio
-  </button>
-  <button class="bnav-btn" data-panel="history" onclick="switchPanel('history')">
-    <span class="bnav-icon">
-      <!-- list icon -->
-      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-    </span>History
-  </button>
-  <button class="bnav-btn" data-panel="agent" onclick="switchPanel('agent')">
-    <span class="bnav-icon">
-      <!-- cpu icon -->
-      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-    </span>Agent
-  </button>
+<nav class="bnav" id="bnav">
+  <!-- Stocks nav (default visible) -->
+  <div id="bnav-stocks" style="display:contents">
+    <button class="bnav-btn active" data-panel="signals" onclick="switchPanel('signals')">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="7" width="4" height="14" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg></span>Signals
+    </button>
+    <button class="bnav-btn" data-panel="portfolio" onclick="switchPanel('portfolio')">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="12.01"/></svg></span>Portfolio
+    </button>
+    <button class="bnav-btn" data-panel="history" onclick="switchPanel('history')">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></span>History
+    </button>
+    <button class="bnav-btn" data-panel="agent" onclick="switchPanel('agent')">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></span>Agent
+    </button>
+  </div>
+  <!-- Options nav (hidden until options mode active) -->
+  <div id="bnav-options" style="display:none">
+    <button class="bnav-btn active" data-opanel="opt-signals" onclick="switchOptPanel('opt-signals')">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>Signals
+    </button>
+    <button class="bnav-btn" data-opanel="opt-positions" onclick="switchOptPanel('opt-positions')">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><circle cx="12" cy="14" r="2"/></svg></span>Positions
+    </button>
+    <button class="bnav-btn" data-opanel="opt-log" onclick="switchOptPanel('opt-log')">
+      <span class="bnav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></span>Log
+    </button>
+  </div>
 </nav>
 
 <script>
@@ -907,12 +1061,60 @@ function logout(){
 }
 ['u','p'].forEach(id=>document.getElementById(id).addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();}));
 
-// ── PANELS ────────────────────────────────────────────────────────────────────
+// ── SYSTEM TOGGLE (Stocks / Options) ─────────────────────────────────────────
+let _activeSystem = 'stocks';
+
+function switchSystem(name){
+  _activeSystem = name;
+  // Toggle bar buttons
+  document.querySelectorAll('.sys-btn').forEach(b=>{
+    b.classList.toggle('active', b.classList.contains(name));
+  });
+  const isOpts = name==='options';
+  // Show/hide panel sets in main scroll
+  document.getElementById('options-panels').style.display = isOpts ? '' : 'none';
+  // Stocks panels — hide all when options active, restore active one when returning
+  ['panel-signals','panel-portfolio','panel-history','panel-agent'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.style.display = isOpts ? 'none' : '';
+  });
+  if(!isOpts){
+    // Restore correct panel active state for stocks
+    document.querySelectorAll('.panel').forEach(p=>{
+      if(['panel-signals','panel-portfolio','panel-history','panel-agent'].includes(p.id))
+        p.classList.toggle('active', p.id==='panel-'+currentPanel);
+    });
+  }
+  // Bottom nav swap
+  document.getElementById('bnav-stocks').style.display = isOpts ? 'none' : 'contents';
+  document.getElementById('bnav-options').style.display = isOpts ? 'contents' : 'none';
+  // Sidebar: toggle between stocks/options content in sb-opts-section
+  const optsSec = document.getElementById('sb-opts-section');
+  if(optsSec) optsSec.style.display = isOpts ? '' : '';
+  // Reload relevant data
+  if(isOpts){ loadOptionsData(); }
+  else { loadPositions(); }
+}
+
+// ── OPTIONS PANEL SWITCHING ───────────────────────────────────────────────────
+function switchOptPanel(name){
+  const optPanels = document.querySelectorAll('#options-panels .panel');
+  optPanels.forEach(p=>p.classList.toggle('active', p.id==='panel-'+name));
+  document.querySelectorAll('#bnav-options .bnav-btn').forEach(b=>{
+    b.classList.toggle('active', b.dataset.opanel===name);
+  });
+}
+
+// ── PANELS (stocks) ───────────────────────────────────────────────────────────
 let currentPanel = 'signals';
 function switchPanel(name) {
-  if (window.innerWidth >= 900) return; // desktop: sidebar handles portfolio
-  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active', p.id==='panel-'+name));
-  document.querySelectorAll('.bnav-btn').forEach(b=>b.classList.toggle('active', b.dataset.panel===name));
+  if(window.innerWidth >= 900) return; // desktop: sidebar handles portfolio
+  document.querySelectorAll('#stocks-panels .panel, .main-scroll > .panel').forEach(
+    p=>p.classList.toggle('active', p.id==='panel-'+name)
+  );
+  document.querySelectorAll('#bnav-stocks .bnav-btn').forEach(
+    b=>b.classList.toggle('active', b.dataset.panel===name)
+  );
   currentPanel = name;
 }
 function goSignals(filter) {
@@ -1342,54 +1544,7 @@ async function loadPositions(){
       ?pos.map(renderSbPosCard).join('')
       :'<div class="empty" style="padding:14px 16px">No open positions — holding cash</div>';
 
-    // Option positions
-    const opts=d.option_positions||[];
-    const optsSec=document.getElementById('sb-opts-section');
-    if(opts.length){
-      optsSec.style.display='';
-      document.getElementById('sb-opts-cnt').textContent=opts.length;
-      document.getElementById('sb-opts-cards').innerHTML=opts.map(o=>{
-        const pnl=Number(o.pnl_pct||0);
-        return `<div class="sb-pc">
-          <div class="sb-pc-head">
-            <span class="sb-pc-tk">${o.ticker}</span>
-            <span class="opt-badge ${o.option_type}">${o.option_type} $${o.strike}</span>
-            <span class="sb-pc-pnl" style="color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}${pnl.toFixed(1)}%</span>
-          </div>
-          <div class="sb-pc-row">
-            <div><div class="sb-pc-cell-k">Premium</div><div class="sb-pc-cell-v">$${Number(o.current_premium||o.entry_premium||0).toFixed(2)}</div></div>
-            <div><div class="sb-pc-cell-k">Paid</div><div class="sb-pc-cell-v">$${Number(o.entry_premium||0).toFixed(2)}</div></div>
-            <div><div class="sb-pc-cell-k">Expiry</div><div class="sb-pc-cell-v">${o.expiry||'—'}</div></div>
-          </div>
-        </div>`;
-      }).join('');
-      // Mobile panel
-      document.getElementById('opts-sec').style.display='';
-      document.getElementById('opts-shell').style.display='';
-      document.getElementById('opts-cards').innerHTML=opts.map(o=>{
-        const pnl=Number(o.pnl_pct||0);
-        const paid=Number(o.entry_premium||0)*100;
-        const tp=paid*(1+Number(o.take_profit||0.5));
-        const sl=paid*(1-Number(o.stop_loss||0.5));
-        return `<div class="pc">
-          <div class="pc-head">
-            <span class="pc-tk">${o.ticker}</span>
-            <span class="opt-badge ${o.option_type}" style="margin-right:auto">${o.option_type.toUpperCase()} $${o.strike} exp ${o.expiry}</span>
-            <span class="pc-pnl" style="color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}${pnl.toFixed(1)}%</span>
-          </div>
-          <div class="pc-body">
-            <div class="pc-kv"><div class="pc-k">Entry</div><div class="pc-v">$${Number(o.entry_premium||0).toFixed(2)}/share · $${paid.toFixed(0)} total</div></div>
-            <div class="pc-kv"><div class="pc-k">Current</div><div class="pc-v">$${Number(o.current_premium||o.entry_premium||0).toFixed(2)}/share</div></div>
-            <div class="pc-kv"><div class="pc-k">Take Profit</div><div class="pc-v" style="color:var(--buy)">$${tp.toFixed(0)} (+50%)</div></div>
-            <div class="pc-kv"><div class="pc-k">Stop Loss</div><div class="pc-v" style="color:var(--sell)">$${sl.toFixed(0)} (−50%)</div></div>
-          </div>
-        </div>`;
-      }).join('');
-    } else {
-      optsSec.style.display='none';
-      document.getElementById('opts-sec').style.display='none';
-      document.getElementById('opts-shell').style.display='none';
-    }
+    // Options are now loaded separately by loadOptionsData()
 
     // Last action in sidebar
     const lastAct=(d.last_actions||[])[0];
@@ -1480,7 +1635,137 @@ function pollStatus(){
 async function loadPerf(){
   try{_perfData=await fetch('rl_performance.json?t='+Date.now()).then(r=>r.json());}catch(e){}
 }
-async function refreshAll(){await Promise.all([loadPerf().then(loadSignals),loadPositions(),loadLog()]);}
+// ── SEPARATE OPTIONS SYSTEM ──────────────────────────────────────────────────
+// Reads from option_positions.json and options_signals.json — NOT positions.json
+async function loadOptionsData(){
+  try{
+    const [posD, sigD] = await Promise.all([
+      fetch('option_positions.json?t='+Date.now()).then(r=>r.json()).catch(()=>({})),
+      fetch('options_signals.json?t='+Date.now()).then(r=>r.json()).catch(()=>({})),
+    ]);
+    const opts  = posD.option_positions||[];
+    const allSigs = sigD.signals||[];
+    const stats   = posD.stats||{};
+
+    // ── Options Signals panel ─────────────────────────────────────────────
+    const sigTs = sigD.timestamp ? new Date(sigD.timestamp).toLocaleTimeString() : '—';
+    const sigEl = document.getElementById('opt-sig-ts');
+    if(sigEl) sigEl.textContent = `Updated ${sigTs} · Daily RSI mean-reversion`;
+
+    const statsBar = document.getElementById('opt-stats-bar');
+    if(statsBar && stats.total_trades>0){
+      statsBar.style.display='';
+      document.getElementById('ost-trades').textContent = stats.total_trades||0;
+      document.getElementById('ost-wr').textContent = stats.win_rate!=null ? Math.round(stats.win_rate*100)+'%' : '—';
+      const pnl = Number(stats.total_pnl||0);
+      const pEl = document.getElementById('ost-pnl');
+      pEl.textContent = (pnl>=0?'+':'')+'$'+Math.abs(pnl).toFixed(2);
+      pEl.style.color = pnl>=0?'var(--buy)':'var(--sell)';
+    }
+
+    const grid = document.getElementById('opt-sig-grid');
+    if(grid && allSigs.length){
+      grid.innerHTML = allSigs.map(s=>{
+        const isc = s.action==='BUY_CALL', isp = s.action==='BUY_PUT';
+        const cls = isc?'call':isp?'put':'hold';
+        const acLbl = isc?'BUY CALL':isp?'BUY PUT':'HOLD';
+        const rsi = Number(s.rsi||0);
+        const rsiClr = rsi<35?'var(--buy)':rsi>65?'var(--sell)':'var(--tx2)';
+        return `<div class="opt-sig-card ${cls}">
+          <span class="osc-conf">conf ${s.confidence||0}/4</span>
+          <div class="osc-tk">${s.ticker}</div>
+          <div class="osc-action ${cls}">${acLbl}</div>
+          <div class="osc-row">
+            <div class="osc-kv"><div class="osc-k">RSI(14)</div><div class="osc-v" style="color:${rsiClr}">${rsi.toFixed(1)}</div></div>
+            <div class="osc-kv"><div class="osc-k">EMA50</div><div class="osc-v">$${Number(s.ema50||0).toFixed(0)}</div></div>
+            <div class="osc-kv"><div class="osc-k">Price</div><div class="osc-v">$${Number(s.price||0).toFixed(2)}</div></div>
+          </div>
+          <div class="osc-row">
+            <div class="osc-kv"><div class="osc-k">HV20</div><div class="osc-v">${(Number(s.hv20||0)*100).toFixed(1)}%</div></div>
+            <div class="osc-kv"><div class="osc-k">HV90</div><div class="osc-v">${(Number(s.hv90||0)*100).toFixed(1)}%</div></div>
+            <div class="osc-kv"><div class="osc-k">IV</div><div class="osc-v"><span class="osc-iv ${s.cheap_iv?'cheap':'rich'}">${s.cheap_iv?'CHEAP':'RICH'}</span></div></div>
+          </div>
+          ${s.reason&&(isc||isp)?`<div class="osc-reason">${s.reason}</div>`:''}
+        </div>`;
+      }).join('');
+    } else if(grid) {
+      grid.innerHTML = '<div class="empty" style="grid-column:1/-1;padding:24px">Run python -m strategy.options_engine to generate signals</div>';
+    }
+
+    // ── Options Positions panel ───────────────────────────────────────────
+    const posCards = document.getElementById('opt-pos-cards');
+    if(posCards){
+      if(opts.length){
+        posCards.innerHTML = opts.map(o=>{
+          const pnl=Number(o.pnl_pct||0);
+          const paid=Number(o.entry_premium||0)*100;
+          const tp=paid*1.5, sl=paid*0.5;
+          return `<div class="pc">
+            <div class="pc-head">
+              <span class="pc-tk">${o.ticker}</span>
+              <span class="opt-badge ${o.option_type}" style="margin-right:auto">${(o.option_type||'').toUpperCase()} $${o.strike} exp ${o.expiry||'—'}</span>
+              <span class="pc-pnl" style="color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}${(pnl*100).toFixed(1)}%</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-kv"><div class="pc-k">Entry premium</div><div class="pc-v">$${Number(o.entry_premium||0).toFixed(2)}/share · $${paid.toFixed(0)} total</div></div>
+              <div class="pc-kv"><div class="pc-k">Current premium</div><div class="pc-v">$${Number(o.current_premium||o.entry_premium||0).toFixed(2)}/share</div></div>
+              <div class="pc-kv"><div class="pc-k">Take profit</div><div class="pc-v" style="color:var(--buy)">+50% ($${tp.toFixed(0)})</div></div>
+              <div class="pc-kv"><div class="pc-k">Stop loss</div><div class="pc-v" style="color:var(--sell)">−50% ($${sl.toFixed(0)})</div></div>
+            </div>
+          </div>`;
+        }).join('');
+      } else {
+        posCards.innerHTML='<div class="empty" style="padding:24px">No open option positions</div>';
+      }
+    }
+    // Closed today
+    const closed = posD.closed_today||[];
+    document.getElementById('opt-closed-sec').style.display  = closed.length?'':'none';
+    document.getElementById('opt-closed-shell').style.display = closed.length?'':'none';
+    if(closed.length){
+      document.getElementById('opt-closed-cards').innerHTML = closed.map(o=>{
+        const pnl=Number(o.pnl||0);
+        return `<div class="pc" style="opacity:.75">
+          <div class="pc-head">
+            <span class="pc-tk">${o.ticker}</span>
+            <span class="opt-badge ${o.option_type}" style="margin-right:auto">${(o.option_type||'').toUpperCase()} $${o.strike}</span>
+            <span class="pc-pnl" style="color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}$${Math.abs(pnl).toFixed(2)}</span>
+          </div>
+          <div class="pc-body"><div class="pc-kv"><div class="pc-k">Reason</div><div class="pc-v">${o.reason||'closed'}</div></div></div>
+        </div>`;
+      }).join('');
+    }
+
+    // ── Sidebar options section (always up to date) ───────────────────────
+    const optsSec = document.getElementById('sb-opts-section');
+    const actionableSigs = allSigs.filter(s=>s.action!=='HOLD'&&s.confidence>=2);
+    if(opts.length||actionableSigs.length){
+      optsSec.style.display='';
+      document.getElementById('sb-opts-cnt').textContent=opts.length?opts.length+' pos':actionableSigs.length+' ideas';
+      const items = opts.length ? opts.map(o=>{
+        const pnl=Number(o.pnl_pct||0);
+        return `<div class="sb-pc"><div class="sb-pc-head">
+          <span class="sb-pc-tk">${o.ticker}</span>
+          <span class="opt-badge ${o.option_type}">${o.option_type} $${o.strike}</span>
+          <span class="sb-pc-pnl" style="color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}${(pnl*100).toFixed(1)}%</span>
+        </div></div>`;
+      }) : actionableSigs.map(s=>{
+        const isc=s.action==='BUY_CALL';
+        return `<div class="sb-pc" style="border-left:3px solid ${isc?'var(--buy)':'var(--sell)'}">
+          <div class="sb-pc-head">
+            <span class="sb-pc-tk">${s.ticker}</span>
+            <span class="opt-badge ${isc?'call':'put'}">${isc?'CALL':'PUT'}</span>
+            <span style="font-size:.65rem;color:var(--tx2);margin-left:auto">conf ${s.confidence}/4</span>
+          </div>
+        </div>`;
+      });
+      document.getElementById('sb-opts-cards').innerHTML=items.join('');
+    } else { optsSec.style.display='none'; }
+
+  }catch(e){ console.warn('loadOptionsData:', e); }
+}
+
+async function refreshAll(){await Promise.all([loadPerf().then(loadSignals),loadPositions(),loadLog(),loadOptionsData()]);}
 async function init(){
   if(CAN_RUN){
     try{const d=await fetch('/api/status',{headers:{'X-Token':TOKEN}}).then(r=>r.json());
