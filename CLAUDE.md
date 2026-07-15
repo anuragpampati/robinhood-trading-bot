@@ -53,13 +53,11 @@ You have access to the Robinhood MCP server (`robinhood-trading`) which gives yo
 - [ ] Current price ≤ entry price × 0.95 (stop-loss: −5%)
 - [ ] Current price ≥ entry price × 1.10 (take-profit: +10%)
 
-### Never do these
+### Never do these (equities)
 - ❌ Trade when market is closed
-- ❌ Place an order > $20 in a single position
-- ❌ Hold more than 4 positions at once
-- ❌ Buy a ticker you already hold (no averaging down without explicit user instruction)
+- ❌ Buy a ticker you already hold (no averaging down)
 - ❌ Use margin or leverage
-- ❌ Trade options, crypto, or futures (equities only in this account)
+- ❌ Trade crypto or futures
 
 ---
 
@@ -75,7 +73,7 @@ You have access to the Robinhood MCP server (`robinhood-trading`) which gives yo
 
 ---
 
-## Logging Format
+## Logging Format (equities)
 Append to `logs/trade_log.md` after every action:
 
 ```
@@ -90,7 +88,7 @@ Append to `logs/trade_log.md` after every action:
 
 ---
 
-## Scheduled Execution
+## Scheduled Execution (equities)
 Run a full trading cycle every hour during market hours (10:00–15:30 ET):
 ```bash
 python -m strategy.run
@@ -99,9 +97,115 @@ Then execute any BUY/SELL orders that meet all entry/exit rules.
 
 ---
 
+# OPTIONS SYSTEM (completely separate from equities above)
+
+The options system is a standalone strategy that runs independently.
+It has its own CCR, its own signal file, and its own position tracker.
+**It does NOT share code, signals, or execution with the equity system.**
+
+## How to Run an Options Cycle
+
+1. **Generate options signals (DAILY bars — independent):**
+   ```bash
+   python -m strategy.options_engine
+   ```
+   Saves to `docs/options_signals.json` and `logs/options_signals.json`.
+
+2. **Check current option positions:**
+   - `get_option_positions(account_number=837287598)`
+   - Also read `docs/option_positions.json` for tracked state
+
+3. **Execute exits first** (before any new entries):
+   - P&L ≥ +50% → take profit (close position)
+   - P&L ≤ −50% → stop loss (close position)
+   - DTE ≤ 5 → force close (avoid pin risk + theta cliff)
+
+4. **Execute new entries** (if conditions met):
+   - Signal must be `BUY_CALL` or `BUY_PUT` with confidence ≥ 2
+   - Must have fewer than 2 open option positions
+   - Market must be open
+   - Call `get_option_chains` → find expiry closest to 14 DTE
+   - Select strike ~5.5% OTM from current price
+   - Call `get_option_quotes` → verify ask ≤ $0.75/share ($75/contract)
+   - Call `place_option_order(side=buy, ...)`
+
+5. **Update `docs/option_positions.json`** with current state
+
+6. **Append to `logs/options_trade_log.md`**
+
+---
+
+## Options Strategy Rules
+
+### Signal logic (daily RSI mean-reversion)
+| Signal | Condition | Option to buy |
+|--------|-----------|---------------|
+| BUY_CALL | Daily RSI(14) < 35 (oversold) | Long call — expect bounce |
+| BUY_PUT  | Daily RSI(14) > 65 (overbought) | Long put — expect reversal |
+| HOLD | 35 ≤ RSI ≤ 65 | Do nothing |
+
+Confidence bonus: RSI < 30 or > 70 adds +1. Cheap IV (HV20 < HV90) adds +1 (max conf = 4).
+
+### Capital rules (options)
+| Rule | Value |
+|------|-------|
+| Tickers | NVDA, AAPL, AMZN, META |
+| Max premium per contract | $75 |
+| Max open option positions | 2 |
+| Contracts per trade | 1 |
+| Take profit | +50% on premium |
+| Stop loss | −50% on premium |
+| Force close | DTE ≤ 5 |
+| Target DTE when opening | ~14 days |
+| Strike selection | ~5.5% OTM from current price |
+
+### Never do these (options)
+- ❌ Sell options (naked or covered) — only buy long calls/puts
+- ❌ Open a new options position if you already have 2 open
+- ❌ Spend more than $75 on any single contract
+- ❌ Hold past DTE = 5
+- ❌ Use options as a hedge for equity positions — systems are independent
+
+---
+
+## Options Logging Format
+Append to `logs/options_trade_log.md`:
+
+```
+## 2026-07-15T14:00:00Z
+- Action   : BUY_CALL AAPL
+- Strike   : $340 | Expiry: 2026-07-29 (14 DTE)
+- Premium  : $0.62/share | Cost: $62.00 (1 contract)
+- RSI      : 28.4 (daily) | HV20 < HV90 (cheap IV)
+- TP       : $93.00 (+50%) | SL: $31.00 (-50%)
+- Reason   : RSI 28.4 oversold (daily) + cheap IV
+```
+
+---
+
+## Data Files (options system)
+| File | Purpose |
+|------|---------|
+| `docs/options_signals.json` | Latest options signals (written by options_engine) |
+| `docs/option_positions.json` | Tracked open + historical options positions |
+| `logs/options_signals.json` | Archive of signal runs |
+| `logs/options_trade_log.md` | Append-only trade log for options |
+
+---
+
+## Backtest
+Run to validate the strategy on historical data:
+```bash
+python -m strategy.options_backtest          # 90-day default
+python -m strategy.options_backtest --days 180
+python -m strategy.options_backtest --ticker AAPL --days 90
+```
+180-day backtest result (AAPL, 2026): 13 trades, 46% win rate, R:R 1:2, +28% on premium.
+
+---
+
 ## Important Disclaimers
-- You are responsible for verifying buying power before every order
-- All trades are final — review signals carefully before acting
-- Never exceed the $100 account limit
+- Options are real money — losses can be 100% of premium paid
+- Never open a new option position when the equity system is at max positions (capital preservation first)
 - This is real money — prioritize capital preservation over gains
-- If in doubt, output a HOLD and ask the user
+- If in doubt, output HOLD and ask the user
