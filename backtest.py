@@ -34,7 +34,7 @@ for i, arg in enumerate(sys.argv):
         TEST_DAYS = int(sys.argv[i + 1])
 
 WARMUP_DAYS = 60   # extra history for indicator warmup (RSI needs ~14+ bars)
-INITIAL_CASH = 100.0
+INITIAL_CASH = 500.0
 
 
 def in_trade_window(ts: pd.Timestamp) -> bool:

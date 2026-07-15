@@ -557,7 +557,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
       <div class="acct-cell">
         <div class="acct-val" id="ac-cash" style="color:var(--buy)">—</div>
         <div class="acct-lbl">Cash</div>
-        <div class="acct-sub" id="ac-cash-sub">of $100</div>
+        <div class="acct-sub" id="ac-cash-sub">of $500</div>
       </div>
       <div class="acct-cell">
         <div class="acct-val" id="ac-pos">—</div>
@@ -1210,14 +1210,14 @@ async function loadPositions(){
     document.getElementById('sb-pos-cnt').textContent=pos.length+' / 4';
 
     // Capital deployment bar
-    const deployed=Math.max(0,100-bp);
-    const deployPct=Math.min(100,(deployed/90)*100);
+    const deployed=Math.max(0,500-bp);
+    const deployPct=Math.min(100,(deployed/450)*100);
     const aggPnl=pos.reduce((s,p)=>s+Number(p.pnl_pct||0),0)/Math.max(pos.length,1);
     const deployClr=pos.length===0?'var(--muted)':aggPnl>=0?'var(--buy)':'var(--sell)';
     document.getElementById('sb-deploy-fill').style.width=deployPct.toFixed(1)+'%';
     document.getElementById('sb-deploy-fill').style.background=deployClr;
     document.getElementById('sb-deploy-label').textContent=deployPct.toFixed(0)+'%';
-    document.getElementById('sb-deploy-sub').textContent=`$${deployed.toFixed(0)} of $90 tradeable deployed`;
+    document.getElementById('sb-deploy-sub').textContent=`$${deployed.toFixed(0)} of $450 tradeable deployed`;
 
     // Sidebar positions
     document.getElementById('sb-pos-cards').innerHTML=pos.length

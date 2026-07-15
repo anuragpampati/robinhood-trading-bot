@@ -1,13 +1,13 @@
 """Trading strategy configuration for a $100 Robinhood agentic account."""
 
 # ── Capital & position sizing ─────────────────────────────────────────────────
-TOTAL_CAPITAL = 100.0          # USD funded in agentic account
-CASH_BUFFER = 10.0             # always keep this much uninvested
-TRADEABLE_CAPITAL = TOTAL_CAPITAL - CASH_BUFFER  # $90
+TOTAL_CAPITAL = 500.0          # USD funded in agentic account
+CASH_BUFFER = 50.0             # always keep this much uninvested (10%)
+TRADEABLE_CAPITAL = TOTAL_CAPITAL - CASH_BUFFER  # $450
 
-MAX_POSITION_SIZE = 20.0       # max dollars per position
-MIN_TRADE_SIZE = 5.0           # don't place orders smaller than this
-MAX_OPEN_POSITIONS = 4         # max concurrent holdings
+MAX_POSITION_SIZE = 100.0      # max dollars per position (20% of capital)
+MIN_TRADE_SIZE = 15.0          # don't place orders smaller than this
+MAX_OPEN_POSITIONS = 5         # max concurrent holdings
 
 # ── Watchlist ─────────────────────────────────────────────────────────────────
 # 103 tickers: core + sector themes (Space, Quantum, Drones, Nuclear, Photonics,
@@ -152,7 +152,7 @@ MARKET_REGIME_RSI_MIN = 30
 # 200-period EMA regime: if SPY close < SPY EMA200 → bearish trend
 # Effect: max position $10 (halved), require 3/3 signal confidence
 EMA200_PERIOD = 200
-BEARISH_EMA_MAX_POSITION = 10.0   # halved from MAX_POSITION_SIZE
+BEARISH_EMA_MAX_POSITION = 50.0   # halved from MAX_POSITION_SIZE
 BEARISH_EMA_MIN_CONFIDENCE = 3    # require 3/3 vs normal 2/3
 
 # ── ATR trailing stop ─────────────────────────────────────────────────────────
