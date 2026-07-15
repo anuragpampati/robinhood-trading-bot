@@ -3,6 +3,27 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-15T16:13:18Z
+- Action   : SELL AUR
+- Price    : $5.9235
+- Amount   : $14.38 | Shares: 2.427223
+- RSI      : 34.8 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : null conf=null | null
+- Stop     : $5.938 (ATR trail triggered) | Target: $6.798
+- Strategy : normal | Sell date: ATR/trail
+- Regime   : normal
+- Reason   : ATR trailing stop triggered — price $5.9235 ≤ trail_stop $5.938 (-4.1% from avg $6.18)
+
+## 2026-07-15T16:13:18Z
+- SUMMARY: Market open. SOLD AUR (ATR trail stop). No buys (zero buy signals). Buying power: ~$69.17 (est. post-fill). Equity positions: 2 (WMT, JPM). Regime: normal. Account: ~$100.45.
+- WMT HOLD: +3.76% @ $114.47 (stop $110.872, target $121.352) — ATR trail unchanged
+- JPM HOLD: +4.79% @ $348.98 (stop $334.685, target $366.322) — ATR trail unchanged
+- RSI SELL signals not held: AAPL conf=2 (RSI=73.5, overbought) | AMZN conf=2 (RSI=73.6) | GOOGL conf=2 (RSI=72.4) | PYPL conf=2 (RSI=85.5) | GS conf=2 (RSI=77.8)
+- Net-buy SELL signals not held: SNAP, SOUN, INFQ, QBTS, DELL, AI, RGTI, RIVN, CIFR, AMKR
+- No BUY signals (net_buy_buy_signals=[], surge_signals=[])
+- Surge tracker: SBUX removed (no longer in 10%+ surge signals)
+- Circuit breaker: INACTIVE | daily_dd=0.19% (gain) | weekly_dd=flat
+
 ## 2026-07-15T15:15:05Z
 - SUMMARY: Market open — no trades. Insufficient buying power ($54.79 BP, $50 buffer → $4.79 deployable < $15 min). No sell triggers on held positions. Buying power: $54.79. Equity positions: 3 (WMT, JPM, AUR). Regime: normal. Account: $100.63.
 - RSI SELL signals not held: AAPL conf=2 (RSI=70.7, overbought+ABOVE_BAND) | GS conf=2 (RSI=77.3, overbought+ABOVE_BAND) | TGT conf=2 (RSI=71.0, overbought+ABOVE_BAND) | PYPL conf=2 (RSI=90.2, overbought+ABOVE_BAND) | KTOS conf=2 (RSI=71.7, overbought+ABOVE_BAND)
