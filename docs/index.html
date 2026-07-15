@@ -171,6 +171,12 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
 .sb-pc-gauge-fill{height:100%;border-radius:3px;transition:width .5s ease}
 .sb-pc-footer{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.6rem;color:var(--muted)}
 
+/* Option position badge */
+.sb-pc-strat.option{background:#1a1040;color:#a78bfa;border:1px solid #4c2889}
+.opt-badge{display:inline-flex;align-items:center;gap:3px;font-family:var(--mono);font-size:.52rem;font-weight:700;padding:1px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;border:1px solid;flex-shrink:0}
+.opt-badge.call{background:#0d2b1a;color:#34d399;border-color:#166534}
+.opt-badge.put{background:#2b0d0d;color:#f87171;border-color:#991b1b}
+
 /* Sidebar net buy list */
 .sb-nb-row{display:flex;align-items:center;gap:8px;padding:8px 14px;border-bottom:1px solid var(--bd)}
 .sb-nb-row:last-child{border-bottom:none}
@@ -518,6 +524,15 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
       <div id="sb-pos-cards"><div class="empty" style="padding:14px 16px">No open positions</div></div>
     </div>
 
+    <!-- Option Positions (sidebar) -->
+    <div class="sb-section" id="sb-opts-section" style="display:none">
+      <div class="sb-sec-hd">
+        <span class="sb-sec-lbl">Options</span>
+        <span class="sb-sec-cnt" id="sb-opts-cnt">0</span>
+      </div>
+      <div id="sb-opts-cards"></div>
+    </div>
+
     <!-- Net Buy Leaders -->
     <div class="sb-section">
       <div class="sb-sec-hd">
@@ -562,7 +577,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
       <div class="acct-cell">
         <div class="acct-val" id="ac-pos">—</div>
         <div class="acct-lbl">Positions</div>
-        <div class="acct-sub" id="ac-pos-sub">of 4 max</div>
+        <div class="acct-sub" id="ac-pos-sub">of 5 max</div>
       </div>
       <div class="acct-cell clickable" onclick="goSignals('BUY')">
         <div class="acct-val" id="ac-buys" style="color:var(--buy)">—</div>
@@ -642,6 +657,14 @@ body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100
       </div>
       <div class="card-shell">
         <div class="pos-cards" id="pos-cards"><div class="empty">Loading…</div></div>
+      </div>
+
+      <div class="sec" id="opts-sec" style="display:none">
+        <span class="sec-lbl">Option Positions</span>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="card-shell" id="opts-shell" style="display:none">
+        <div class="pos-cards" id="opts-cards"></div>
       </div>
 
       <div class="sec">
@@ -1203,11 +1226,11 @@ async function loadPositions(){
     // Mobile account strip
     document.getElementById('ac-cash').textContent='$'+bp.toFixed(2);
     document.getElementById('ac-pos').textContent=pos.length;
-    document.getElementById('ac-pos-sub').textContent=pos.length?'of 4 max':'all cash';
+    document.getElementById('ac-pos-sub').textContent=pos.length?'of 5 max':'all cash';
 
     // Sidebar account section
     document.getElementById('sb-cash').textContent='$'+bp.toFixed(2);
-    document.getElementById('sb-pos-cnt').textContent=pos.length+' / 4';
+    document.getElementById('sb-pos-cnt').textContent=pos.length+' / 5';
 
     // Capital deployment bar
     const deployed=Math.max(0,500-bp);
@@ -1223,6 +1246,55 @@ async function loadPositions(){
     document.getElementById('sb-pos-cards').innerHTML=pos.length
       ?pos.map(renderSbPosCard).join('')
       :'<div class="empty" style="padding:14px 16px">No open positions — holding cash</div>';
+
+    // Option positions
+    const opts=d.option_positions||[];
+    const optsSec=document.getElementById('sb-opts-section');
+    if(opts.length){
+      optsSec.style.display='';
+      document.getElementById('sb-opts-cnt').textContent=opts.length;
+      document.getElementById('sb-opts-cards').innerHTML=opts.map(o=>{
+        const pnl=Number(o.pnl_pct||0);
+        return `<div class="sb-pc">
+          <div class="sb-pc-head">
+            <span class="sb-pc-tk">${o.ticker}</span>
+            <span class="opt-badge ${o.option_type}">${o.option_type} $${o.strike}</span>
+            <span class="sb-pc-pnl" style="color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}${pnl.toFixed(1)}%</span>
+          </div>
+          <div class="sb-pc-row">
+            <div><div class="sb-pc-cell-k">Premium</div><div class="sb-pc-cell-v">$${Number(o.current_premium||o.entry_premium||0).toFixed(2)}</div></div>
+            <div><div class="sb-pc-cell-k">Paid</div><div class="sb-pc-cell-v">$${Number(o.entry_premium||0).toFixed(2)}</div></div>
+            <div><div class="sb-pc-cell-k">Expiry</div><div class="sb-pc-cell-v">${o.expiry||'—'}</div></div>
+          </div>
+        </div>`;
+      }).join('');
+      // Mobile panel
+      document.getElementById('opts-sec').style.display='';
+      document.getElementById('opts-shell').style.display='';
+      document.getElementById('opts-cards').innerHTML=opts.map(o=>{
+        const pnl=Number(o.pnl_pct||0);
+        const paid=Number(o.entry_premium||0)*100;
+        const tp=paid*(1+Number(o.take_profit||0.5));
+        const sl=paid*(1-Number(o.stop_loss||0.5));
+        return `<div class="pc">
+          <div class="pc-head">
+            <span class="pc-tk">${o.ticker}</span>
+            <span class="opt-badge ${o.option_type}" style="margin-right:auto">${o.option_type.toUpperCase()} $${o.strike} exp ${o.expiry}</span>
+            <span class="pc-pnl" style="color:${pnl>=0?'var(--buy)':'var(--sell)'}">${pnl>=0?'+':''}${pnl.toFixed(1)}%</span>
+          </div>
+          <div class="pc-body">
+            <div class="pc-kv"><div class="pc-k">Entry</div><div class="pc-v">$${Number(o.entry_premium||0).toFixed(2)}/share · $${paid.toFixed(0)} total</div></div>
+            <div class="pc-kv"><div class="pc-k">Current</div><div class="pc-v">$${Number(o.current_premium||o.entry_premium||0).toFixed(2)}/share</div></div>
+            <div class="pc-kv"><div class="pc-k">Take Profit</div><div class="pc-v" style="color:var(--buy)">$${tp.toFixed(0)} (+50%)</div></div>
+            <div class="pc-kv"><div class="pc-k">Stop Loss</div><div class="pc-v" style="color:var(--sell)">$${sl.toFixed(0)} (−50%)</div></div>
+          </div>
+        </div>`;
+      }).join('');
+    } else {
+      optsSec.style.display='none';
+      document.getElementById('opts-sec').style.display='none';
+      document.getElementById('opts-shell').style.display='none';
+    }
 
     // Last action in sidebar
     const lastAct=(d.last_actions||[])[0];

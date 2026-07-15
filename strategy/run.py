@@ -19,6 +19,7 @@ from .net_buy import run_net_buy_scan, NetBuySignal, BUY_SURGE_MIN
 from .risk import risk_summary
 from .universe import full_universe
 from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN, BEARISH_EMA_MAX_POSITION, FIB_TARGETS, SECTOR_GROUPS
+from .options_signals import generate_options_idea
 
 try:
     from .rl_agent import predict as _rl_predict
@@ -276,6 +277,12 @@ def run_analysis() -> dict:
             if (s.buy_surge_pct >= BUY_SURGE_MIN and s.net_buy_d3 > 0
                 and rsi_signals.get(s.ticker) is not None
                 and rsi_signals[s.ticker].ema_trend == "BULLISH")
+        ],
+        "options_ideas": [
+            idea
+            for s in rsi_signals.values()
+            for idea in [generate_options_idea(s.ticker, s.action, s.confidence)]
+            if idea is not None
         ],
     }
 
