@@ -75,12 +75,15 @@ def run_backtest_for(ticker: str, daily_df: pd.DataFrame) -> list[dict]:
 
     for i, bar_ts in enumerate(bars):
         hist = close.loc[:bar_ts]
-        if len(hist) < 55:    # need 50+ bars for EMA50
+        if len(hist) < 30:
             continue
-        price  = float(hist.iloc[-1])
-        ema50  = float(hist.ewm(span=50, adjust=False).mean().iloc[-1])
-        rsi    = float(_opt_rsi(hist, 14).iloc[-1])
-        hv     = _hv(hist, min(20, len(hist) - 1))
+        price    = float(hist.iloc[-1])
+        rsi      = float(_opt_rsi(hist, 14).iloc[-1])
+        hv       = _hv(hist, min(20, len(hist) - 1))
+        bb_mid   = float(hist.rolling(20).mean().iloc[-1])
+        bb_std   = float(hist.rolling(20).std().iloc[-1])
+        lower_bb = bb_mid - 2.0 * bb_std
+        upper_bb = bb_mid + 2.0 * bb_std
 
         # ── Manage open position ─────────────────────────────────────────────
         if open_pos is not None:
@@ -123,12 +126,13 @@ def run_backtest_for(ticker: str, daily_df: pd.DataFrame) -> list[dict]:
                 open_pos = None
             continue   # don't open while managing an open position
 
-        # ── Entry signal — same logic as options_engine.py ──────────────────
-        # Pure RSI mean-reversion; no trend filter (see options_engine.py)
-        if rsi < RSI_CALL_MOD:
+        # ── Entry signal — RSI + Bollinger Band double-confirmation ────────────
+        # BUY_CALL: RSI oversold AND price at/below lower BB
+        # BUY_PUT:  RSI overbought AND price at/above upper BB
+        if rsi < RSI_CALL_MOD and price <= lower_bb:
             opt_type   = "call"
             action_str = "BUY_CALL"
-        elif rsi > RSI_PUT_MOD:
+        elif rsi > RSI_PUT_MOD and price >= upper_bb:
             opt_type   = "put"
             action_str = "BUY_PUT"
         else:
@@ -165,7 +169,7 @@ def run_backtest_for(ticker: str, daily_df: pd.DataFrame) -> list[dict]:
             "strike":      strike,
             "entry_prem":  prem,
             "entry_delta": round(delta, 3),
-            "ema50":       round(ema50, 2),
+            "lower_bb":    round(lower_bb, 2),
             "rsi":         round(rsi, 2),
             "cost":        cost,
         })
@@ -206,7 +210,8 @@ def run_backtest_for(ticker: str, daily_df: pd.DataFrame) -> list[dict]:
 
 def run():
     universe     = [SINGLE_TICKER] if SINGLE_TICKER else OPTIONS_TICKERS
-    fetch_period = f"{TEST_DAYS + 120}d"
+    fetch_days = TEST_DAYS + 120
+    fetch_period = "2y" if fetch_days > 365 else f"{fetch_days}d"
 
     print(f"\n{'='*65}")
     print(f"  Options Strategy Backtest — Black-Scholes / DAILY bars")

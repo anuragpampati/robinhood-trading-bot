@@ -48,14 +48,16 @@ TAKE_PROFIT_PCT  = 0.50   # close when premium gained +50%
 STOP_LOSS_PCT    = 0.50   # close when premium lost -50%
 MIN_DTE          = 5      # force-close at or below this DTE
 
-# ── Signal thresholds (daily RSI, no trend filter) ───────────────────────────
-# Trend filter (price vs EMA50) was removed: when RSI is oversold the stock
-# is already in a short-term downtrend → EMA50 filter would never fire.
-# Strategy: pure daily RSI mean-reversion for long calls/puts.
-RSI_CALL_STRONG = 30   # extreme oversold → conf=3 (or +1 to base)
-RSI_CALL_MOD    = 35   # moderate oversold → conf=2
-RSI_PUT_STRONG  = 70   # extreme overbought → conf=3
-RSI_PUT_MOD     = 65   # moderate overbought → conf=2
+# ── Signal thresholds — RSI + Bollinger Band double-confirmation ─────────────
+# Entry requires BOTH RSI extreme AND price at BB extreme (2 std-dev band).
+# RSI alone in a trending market generates too many false signals (NVDA Jul-Aug
+# 2025: RSI overbought but never hit upper BB → gradual trend, not blow-off).
+RSI_CALL_STRONG = 30   # extreme oversold → +1 confidence
+RSI_CALL_MOD    = 40   # moderate oversold threshold
+RSI_PUT_STRONG  = 70   # extreme overbought → +1 confidence
+RSI_PUT_MOD     = 60   # moderate overbought threshold
+BB_PERIOD       = 20   # Bollinger Band lookback
+BB_STD          = 2.0  # Bollinger Band width (standard deviations)
 
 
 # ── Indicator helpers (self-contained, no equity dependency) ──────────────────
@@ -78,62 +80,77 @@ def _hv(close: pd.Series, window: int) -> float:
 
 def analyse_ticker(ticker: str) -> dict:
     """Fetch daily bars, compute indicators, return options signal dict."""
-    df    = fetch_ohlcv(ticker, period="120d", interval="1d")
+    df    = fetch_ohlcv(ticker, period="300d", interval="1d")
     close = df["close"].dropna()   # drop partial/missing bars
     if close.empty:
         raise ValueError(f"No valid close data for {ticker}")
+    if len(close) < 30:
+        raise ValueError(f"Insufficient history for {ticker} ({len(close)} bars, need 30)")
     price = float(close.iloc[-1])
 
-    rsi   = float(_rsi(close, 14).iloc[-1])
-    ema20 = float(close.ewm(span=20, adjust=False).mean().iloc[-1])
-    ema50 = float(close.ewm(span=50, adjust=False).mean().iloc[-1])
-    hv20  = _hv(close, 20)
-    hv90  = _hv(close, 90)
+    rsi    = float(_rsi(close, 14).iloc[-1])
+    ema50  = float(close.ewm(span=50,  adjust=False).mean().iloc[-1])
+    hv20   = _hv(close, 20)
+    hv90   = _hv(close, 90)
 
-    uptrend   = price > ema50     # informational only — not used as gate
-    cheap_iv  = hv20 < hv90      # recent vol < long-term vol → options cheap
+    # Bollinger Bands (20-day, 2 std dev)
+    bb_mid   = float(close.rolling(BB_PERIOD).mean().iloc[-1])
+    bb_std   = float(close.rolling(BB_PERIOD).std().iloc[-1])
+    lower_bb = bb_mid - BB_STD * bb_std
+    upper_bb = bb_mid + BB_STD * bb_std
+    at_lower_bb = price <= lower_bb
+    at_upper_bb = price >= upper_bb
+
+    cheap_iv = hv20 < hv90
+    uptrend  = price > ema50   # informational display only
 
     action     = "HOLD"
     confidence = 0
     reason     = "no directional signal"
 
-    # BUY_CALL: daily RSI oversold → expect mean-reversion bounce
-    if rsi < RSI_CALL_MOD:
+    # BUY_CALL: RSI oversold AND price at/below lower BB
+    if rsi < RSI_CALL_MOD and at_lower_bb:
         action     = "BUY_CALL"
         confidence = 2
-        reason     = f"RSI {rsi:.1f} oversold (daily) — mean-reversion call"
+        reason     = f"RSI {rsi:.1f} oversold + price at lower BB ({lower_bb:.2f}) — mean-reversion call"
         if rsi < RSI_CALL_STRONG:
             confidence += 1
-            reason     += " (extreme)"
+            reason     += " (extreme RSI)"
         if cheap_iv:
             confidence  = min(confidence + 1, 4)
-            reason     += " + cheap IV (HV20 < HV90)"
+            reason     += " + cheap IV"
 
-    # BUY_PUT: daily RSI overbought → expect mean-reversion pullback
-    elif rsi > RSI_PUT_MOD:
+    # BUY_PUT: RSI overbought AND price at/above upper BB
+    elif rsi > RSI_PUT_MOD and at_upper_bb:
         action     = "BUY_PUT"
         confidence = 2
-        reason     = f"RSI {rsi:.1f} overbought (daily) — mean-reversion put"
+        reason     = f"RSI {rsi:.1f} overbought + price at upper BB ({upper_bb:.2f}) — mean-reversion put"
         if rsi > RSI_PUT_STRONG:
             confidence += 1
-            reason     += " (extreme)"
+            reason     += " (extreme RSI)"
         if cheap_iv:
             confidence  = min(confidence + 1, 4)
-            reason     += " + cheap IV (HV20 < HV90)"
+            reason     += " + cheap IV"
+
+    elif rsi < RSI_CALL_MOD:
+        reason = f"RSI {rsi:.1f} oversold but price ${price:.2f} not at lower BB (${lower_bb:.2f}) — waiting"
+    elif rsi > RSI_PUT_MOD:
+        reason = f"RSI {rsi:.1f} overbought but price ${price:.2f} not at upper BB (${upper_bb:.2f}) — waiting"
 
     return {
-        "ticker":     ticker,
-        "action":     action,
-        "confidence": confidence,
-        "price":      round(price, 2),
-        "rsi":        round(rsi, 2),
-        "ema20":      round(ema20, 2),
-        "ema50":      round(ema50, 2),
-        "hv20":       round(hv20, 4),
-        "hv90":       round(hv90, 4),
-        "cheap_iv":   cheap_iv,
-        "uptrend":    uptrend,     # informational — EMA50 used only for display
-        "reason":     reason,
+        "ticker":      ticker,
+        "action":      action,
+        "confidence":  confidence,
+        "price":       round(price, 2),
+        "rsi":         round(rsi, 2),
+        "ema50":       round(ema50, 2),
+        "lower_bb":    round(lower_bb, 2),
+        "upper_bb":    round(upper_bb, 2),
+        "hv20":        round(hv20, 4),
+        "hv90":        round(hv90, 4),
+        "cheap_iv":    cheap_iv,
+        "uptrend":     uptrend,
+        "reason":      reason,
         # execution params for CCR
         "target_dte":      TARGET_DTE,
         "otm_pct":         OTM_PCT,

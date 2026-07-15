@@ -1,0 +1,7 @@
+{
+  "trading_enabled": false,
+  "disabled_reason": "Strategy under review — backtest did not meet minimum criteria. Set trading_enabled=true and push to activate.",
+  "min_win_rate": 0.40,
+  "min_rr": 1.5,
+  "min_trades_to_qualify": 20
+}
