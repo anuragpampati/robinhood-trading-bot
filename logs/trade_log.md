@@ -3,6 +3,17 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-15T19:10:00Z
+- SUMMARY: Market open — no trades. RSI BUY (MRVL conf=2) blocked: buying power $54.79 insufficient ($50 trade leaves $4.79 < $50 buffer). No sell triggers on WMT or JPM. SPY intraday surge 13.9% (count=1, needs ≥2). Buying power: $54.79. Equity positions: 2 (WMT, JPM). Regime: normal/BULLISH. Account: $100.16.
+- WMT HOLD: +2.7% @ $113.25 (stop $110.872, target $121.352) — ATR trail unchanged
+- JPM HOLD: +4.0% @ $346.42 (stop $334.69, target $366.322) — ATR ratchet to $334.69
+- MRVL BUY SKIPPED: RSI oversold (28.3) conf=2, RL=HOLD — buying power $54.79 insufficient ($4.79 buffer remaining < $50 min)
+- RSI SELL signals not held: AAPL conf=2 (RSI=73.9) | PYPL conf=2 (RSI=86.4)
+- Net-buy SELL signals not held: QBTS, SNAP, AI, DIS, DELL, SOUN, INFQ, SYM, RGTI, RIVN
+- Circuit breaker: INACTIVE | daily_dd=0.45% | weekly_dd=0.25%
+- Surge tracker: SPY +13.9% (count=1/2 — needs another cycle to trigger intraday buy)
+
+---
 ## 2026-07-15T17:15:13Z
 - SUMMARY: Market open — no trades. No buy signals (net_buy_buy_signals=[], surge_signals=[]). No sell triggers on held positions (WMT +3.4%, JPM +4.2%). Buying power: $54.79. Equity positions: 2 (WMT, JPM). Regime: normal/BULLISH. Account: $100.30.
 - WMT HOLD: +3.4% @ $114.07 (stop $110.872, target $121.352) — ATR trail unchanged
