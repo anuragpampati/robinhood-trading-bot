@@ -3,6 +3,21 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-16T15:14:04Z
+- Action   : BUY DIS
+- Price    : $98.49
+- Amount   : $15.00 | Shares: 0.152290
+- RSI      : 64.0 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : HOLD conf=0.918 | null
+- Stop     : $97.07 | Target: $108.34
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net buy up 4d streak: -0.07M -> -0.02M -> 0.13M | OBV +0.6M/day
+
+## 2026-07-16T15:14:04Z
+- SUMMARY: Market OPEN. BUY DIS $15 (NET-BUY 4d streak, RL=HOLD/neutral). WMT HOLD +3.7% @ $114.41 (stop $110.872). JPM HOLD +3.9% @ $345.86 (stop $334.69). Circuit breaker: INACTIVE (daily gain / weekly -0.12%). Surge tracker cleared (no 10%+ surges). Regime: normal/BULLISH. Buying power: $54.16. Equity positions: 3 (WMT, JPM, DIS). Account: $100.29.
+
+---
 ## 2026-07-15T20:10:16Z
 - SUMMARY: Market closed. No trades executed. MRVL RSI BUY (conf=2, RL=HOLD) queued for next open cycle — buying power $54.79 still insufficient ($50 trade leaves $4.79 < $50 buffer). WMT +1.8% @ $112.52 (stop $110.872, target $121.352). JPM +4.2% @ $346.96 (stop $334.69, target $366.322). Regime: normal/BULLISH (SPY $754.78 > EMA200 $743.89). Circuit breaker: INACTIVE (daily −0.50% / weekly −0.30%). Buying power: $54.79. Equity positions: 2 (WMT, JPM). Account: $100.11.
 
