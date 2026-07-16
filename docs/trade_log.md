@@ -3,6 +3,10 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-16T18:11:10Z
+- SUMMARY: Market OPEN — no trades. ARM RSI BUY (conf=2) and CRDO RSI BUY (conf=2) blocked: max usable $4.16 < $15 min order (buying power $54.16 − $50 buffer). DIS net-buy BUY already held. No SELL triggers: WMT +4.6% @ $115.41 (stop $110.87, target $121.35), JPM +3.0% @ $342.98 (stop $334.69, target $366.32), DIS +0.3% @ $98.84 (held 2.95h < 3h min — exempt from ATR/signal sell). ATR stops unchanged. No intraday surges (surge tracker empty). Circuit breaker: INACTIVE (daily gain / weekly −0.06%). Buying power: $54.16. Equity positions: 3 (WMT, JPM, DIS). Regime: normal/BULLISH (SPY $751.31 > EMA200 $744.33). Account: $100.35.
+
+---
 ## 2026-07-16T17:10:00Z
 - SUMMARY: Market OPEN — no trades. CRWV RSI BUY (conf=2) blocked by cash buffer ($54.16 buying power; max usable $4.16 < $15 min order). DIS Net BUY already held. No SELL triggers: WMT +4.4% @ $115.22 (stop $110.87), JPM +3.7% @ $345.20 (stop $334.69), DIS +0.5% @ $98.95 (held 1.9h < 3h min). ATR stops unchanged. Surge tracker cleared (SNAP removed, no active 10%+ surges). Circuit breaker: INACTIVE (daily +0.31% / weekly +0.03%). Buying power: $54.16. Equity positions: 3 (WMT, JPM, DIS). Regime: normal/BULLISH (SPY $752.86 > EMA200 $744.26). Account: $100.44.
 
