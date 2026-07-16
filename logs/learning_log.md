@@ -27,3 +27,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403). Prior metrics retained: +9.29% 365d return, 15.3% drawdown, 39.6% win rate
 - RL samples: 366/200 (READY — exceeds target)
 - Notes: RL READY for Q-learning activation. DELL position at -5.27%, flagged below stop $440.03 — sell at next market open. Account $101.34. Log trimmed to 9/15 entries.
+
+## 2026-07-16
+- Trades analysed: 2 confirmed closed in recent log (DKNG +0.71% ATR trail, held 12d; AUR -4.1% ATR trail, held ~48h)
+- Win rate: 50.0% overall (normal: 50.0% — 1W/1L; momentum: n/a — 0 closed; surge: n/a — 0 closed)
+- Config changes: none — RSI_OVERSOLD: n=2 < 5 (need ≥5); MOMENTUM_VOL_MIN: no momentum entries (n<3); ATR_VOLATILITY_THRESHOLD: avg_hold ~144h >> 2h threshold, rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 392/200 (READY — +12 new rows today; 19 states in Q-table)
+- Notes: 3 open positions: WMT +4.2%, JPM +3.1%, DIS +1.2% (entered today). DIS RSI SELL signal (RSI 71.1) deferred to next market open. Account $100.29. Log trimmed to 12 entries. RL well past 200 target — Q-agent training recommended.
