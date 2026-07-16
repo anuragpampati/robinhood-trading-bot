@@ -18,6 +18,9 @@
 - SUMMARY: Market OPEN. BUY DIS $15 (NET-BUY 4d streak, RL=HOLD/neutral). WMT HOLD +3.7% @ $114.41 (stop $110.872). JPM HOLD +3.9% @ $345.86 (stop $334.69). Circuit breaker: INACTIVE (daily gain / weekly -0.12%). Surge tracker cleared (no 10%+ surges). Regime: normal/BULLISH. Buying power: $54.16. Equity positions: 3 (WMT, JPM, DIS). Account: $100.29.
 
 ---
+## 2026-07-16T14:12:02Z
+- SUMMARY: Market OPEN. No trades executed. Zero BUY signals (RSI: 3 SELL only; Net-buy: 0 BUY / 10 SELL). WMT HOLD: +2.0% @ $112.52 (stop $110.872, target $121.352) — trail unchanged (profit 2.0% < 2.5% threshold). JPM HOLD: +4.2% @ $347.02 (stop $334.69, target $366.322) — trail unchanged (max(334.69, 334.685) = 334.69). WFC surge tracker reset (SPY stale; WFC buy volume +219.8%, count=1 — needs ≥2). Circuit breaker: INACTIVE | daily_dd=0.0% (new day reset) | weekly_dd=0.28%. Regime: normal/BULLISH (SPY $754.78 > EMA200 $743.97). Buying power: $69.16. Equity positions: 2 (WMT, JPM). Account: $100.13.
+
 ## 2026-07-15T20:10:16Z
 - SUMMARY: Market closed. No trades executed. MRVL RSI BUY (conf=2, RL=HOLD) queued for next open cycle — buying power $54.79 still insufficient ($50 trade leaves $4.79 < $50 buffer). WMT +1.8% @ $112.52 (stop $110.872, target $121.352). JPM +4.2% @ $346.96 (stop $334.69, target $366.322). Regime: normal/BULLISH (SPY $754.78 > EMA200 $743.89). Circuit breaker: INACTIVE (daily −0.50% / weekly −0.30%). Buying power: $54.79. Equity positions: 2 (WMT, JPM). Account: $100.11.
 
@@ -130,37 +133,3 @@
 - Strategy : normal | Sell date: ATR
 - Regime   : normal
 - Reason   : ATR trailing stop triggered ($25.60 ≤ $26.06) | held 12 days | pnl=+0.71% from avg $25.42
-
-## 2026-07-13T19:11:00Z
-- SUMMARY: Market open — no trades (at max 4 positions). Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $100.96. Daily drawdown: 0.50%. Weekly drawdown: 0.50%. Surge tracker: AI=1, SNOW=1. WMT: +4.33% | DKNG: +5.00% | JPM: +0.56% | AUR: -2.67%. RSI SELLs not held: XOM conf=2, CVX conf=2, PYPL conf=2. RSI BUYs blocked by max-positions: IONQ(conf=2), QBTS(conf=2).
-
-## 2026-07-13T17:10:00Z
-- SUMMARY: Market open — no trades. At max 4 positions. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $101.03. Daily drawdown: 0.43%. Weekly drawdown: 0.43%. Surge tracker: empty (UBER removed — no longer in 10%+ surge signals). RSI sell signals (not held): CRM conf=2 (RSI=70.6), XOM conf=2 (RSI=73.6), CVX conf=2 (RSI=78.8), PYPL conf=2 (RSI=80.1). Net-buy SELL (not held): COHR, XOM. WMT: +3.77% | DKNG: +4.96% | JPM: +0.45% | AUR: -1.78% (held <3h). 🤖 RL: WMT=HOLD(91.8%), others=null.
-
-## 2026-07-13T16:17:00Z
-- SUMMARY: Market open — no trades. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $101.21. Daily drawdown: 0.26%. Weekly drawdown: 0.26%. Surge tracker: UBER=1.
-
-## 2026-07-13T15:13:03Z
-- SUMMARY: Market open — no trades. At max 4 positions. Buying power: $25.87. Positions: 4/4. Regime: normal. Account: $101.34. Daily drawdown: 0.13%. Weekly drawdown: 0.13%. Surge tracker: empty. RSI sell signals (not held): XOM, CVX, PYPL. No held positions triggered any exit. DKNG approaching take-profit ($26.98 vs $27.962).
-
-## 2026-07-13T14:13:18Z
-- Action   : BUY AUR
-- Price    : $6.18
-- Amount   : $15.00 | Shares: 2.42718
-- RSI      : 50.2 | EMA: BEARISH | BB: IN_BAND
-- RL       : null conf=n/a | null
-- Stop     : $5.94 | Target: $6.80
-- Strategy : normal | Sell date: null (ATR/signal)
-- Regime   : normal
-- Reason   : Net buy trend 4d streak (−2.88M→+0.92M→+7.03M), OBV +0.5M/day; priority-2 NET-BUY
-
-## 2026-07-13T14:12:46Z
-- Action   : SELL DELL
-- Price    : $431.39
-- Amount   : $14.10 | Shares: 0.032679
-- RSI      : 50.3 | EMA: BULLISH | BB: IN_BAND
-- RL       : BUY conf=97.4% | sell override (ATR trailing stop)
-- Stop     : $440.03 (triggered) | Target: $504.91
-- Strategy : normal | Sell date: ATR
-- Regime   : normal
-- Reason   : ATR trailing stop triggered ($431.39 ≤ $440.03), held ~3.5 days, pnl=−6.01%
