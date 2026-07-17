@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-17T15:15:18Z",
-  "buying_power": 69.94,
+  "updated_at": "2026-07-17T16:19:00Z",
+  "buying_power": 54.16,
   "market_regime": "normal",
-  "account_value": 100.40,
+  "account_value": 100.36,
   "peak_value": 101.68,
   "day_start_value": 100.53,
   "day_start_date": "2026-07-17",
@@ -13,13 +13,13 @@
       "ticker": "JPM",
       "quantity": 0.045043,
       "avg_cost": 333.02,
-      "current_price": 345.025,
-      "pnl_pct": 0.0360,
-      "value": 15.54,
+      "current_price": 344.79,
+      "pnl_pct": 0.0353,
+      "value": 15.53,
       "entry_atr_pct": 0.02,
       "entry_time": null,
       "trail_stop": 334.69,
-      "take_profit": 366.322,
+      "take_profit": 366.32,
       "strategy": "normal",
       "sell_date": null
     },
@@ -27,9 +27,9 @@
       "ticker": "DIS",
       "quantity": 0.152291,
       "avg_cost": 98.50,
-      "current_price": 97.985,
-      "pnl_pct": -0.00523,
-      "value": 14.92,
+      "current_price": 97.735,
+      "pnl_pct": -0.0078,
+      "value": 14.88,
       "entry_atr_pct": 0.0072,
       "entry_time": "2026-07-16T15:14:04Z",
       "trail_stop": 97.072,
@@ -39,12 +39,13 @@
     }
   ],
   "last_actions": [
-    "SELL WMT 0.135968 shares @ $116.09 — net_buy trend reversed (0.91M → -0.23M, OBV -0.8M/day). Profit +5.28%. Held 15 days.",
-    "No new buys: RKLB/PL/RDW/OKLO RSI BUY (conf=2) at $50 each — BP ~$69.94 post-sell leaves only $19.94 above $50 buffer.",
-    "ATR ratchet: JPM trail_stop $334.69 unchanged (profit +3.6%). DIS trail_stop $97.072 unchanged (price -0.52% below avg_cost).",
-    "Surge tracker: SNAP removed (no longer in 10%+ surge_signals).",
-    "Circuit breaker: INACTIVE | daily -0.1% | weekly -0.01%.",
-    "Regime: normal/BULLISH. SPY $745.05, EMA200 $744.72.",
-    "Positions: 2 (JPM, DIS). Buying power: ~$69.94. Account: ~$100.40. Peak: $101.68."
+    "No trades: market OPEN but buying_power $54.16 (WMT $15.79 proceeds settling T+2). Only $4.16 above $50 buffer < $15 min order.",
+    "RSI BUY candidates (all blocked by cash): QCOM $168.88 RSI=28.5 conf=2 rl=HOLD, SMCI $24.55 RSI=27.0 conf=2 rl=HOLD, IONQ $35.18 RSI=25.2 conf=2 rl=HOLD, QBTS $17.06 RSI=28.0 conf=2 rl=HOLD, UUUU $11.62 RSI=21.3 conf=2 rl=HOLD.",
+    "ATR ratchet: JPM trail_stop $334.69 unchanged (profit +3.5%, 2.5% ratchet already applied). DIS trail_stop $97.072 unchanged (price -0.78%).",
+    "Net-buy SELL signals (none held): CVX, AI, WMT, SBUX, CRM, NOW, MCD, ARM.",
+    "Surge tracker: no 10%+ intraday surges detected.",
+    "Circuit breaker: INACTIVE | daily -0.17% | weekly -0.05%.",
+    "Regime: normal/BULLISH. SPY $746.02, EMA200 $744.74.",
+    "Positions: 2 (JPM, DIS). Buying power: $54.16. Account: $100.36. Peak: $101.68."
   ]
 }
