@@ -3,10 +3,6 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
-## 2026-07-17T17:12:00Z
-- SUMMARY: Market OPEN. No trades executed. BUY MRNA (RSI 27.6, conf=2, rl=HOLD) BLOCKED — buying power $54.16 only $4.16 above $50 buffer (< $15 min order). SELL XOM RSI signal not held. Net-buy SELL signals (WFC, CVX, WMT, SBUX, MCD, CRM, C, NOW) not held. ATR: JPM +3.20% @ $343.67 trail=$334.69 (2.5% ratchet already applied, no change). DIS -0.90% @ $97.61 trail=$97.072 (stop not hit). Surge: no 10%+ surges detected. Circuit breaker: INACTIVE (daily -0.24% / weekly -0.12%). Regime: normal/BULLISH (SPY $746.33 > EMA200 $744.76). Buying power: $54.16. Equity positions: 2 (JPM, DIS). Account: $100.29. Peak: $101.68.
-
----
 ## 2026-07-17T16:19:00Z
 - SUMMARY: Market OPEN. No trades. No sells triggered: JPM +3.5% @ $344.79 (trail $334.69 safe), DIS -0.78% @ $97.74 (trail $97.072 safe). No buys: buying_power $54.16 − $50 buffer = $4.16 deployable < $15 min order (WMT sale $15.79 pending T+2 settlement). RSI BUY signals: QCOM/SMCI/IONQ/QBTS/UUUU (all conf=2, rl_action=HOLD) — all blocked by cash constraint. ATR: JPM trail_stop $334.69 unchanged (profit +3.5%, ratchet at 2.5% already applied). DIS trail_stop $97.072 unchanged (price -0.78%). Surge tracker: no 10%+ surges. CB: INACTIVE | daily -0.17% | weekly -0.05%. Regime: normal/BULLISH (SPY $746.02 > EMA200 $744.74). Buying power: $54.16. Positions: 2 (JPM, DIS). Account: $100.36. Peak: $101.68.
 
