@@ -3,6 +3,21 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-17T15:15:18Z
+- Action   : SELL WMT
+- Price    : $116.09
+- Amount   : $15.78 | Shares: 0.135968
+- RSI      : 64.7 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : HOLD conf=0.918 | null
+- Stop     : $113.078 | Target: $121.352
+- Strategy : normal | Sell date: net_buy_signal
+- Regime   : normal
+- Reason   : Net buy reversed 0.91M → -0.23M | OBV -0.8M/day
+
+## 2026-07-17T15:15:18Z
+- SUMMARY: Market OPEN. SELL WMT +5.28% @ $116.09 (net_buy trend reversed, held 15 days). No new buys: RKLB/PL/RDW/OKLO RSI BUY signals at $50 each would leave <$50 buffer (BP ~$69.94 post-sell). ATR: JPM +3.6% trail $334.69 (unchanged), DIS -0.5% trail $97.072 (unchanged). Surge: SNAP expired. CB: INACTIVE. Regime: normal/BULLISH (SPY $745.05 > EMA200 $744.72). Buying power: ~$69.94. Positions: 2 (JPM, DIS). Account: ~$100.40. Peak: $101.68.
+
+---
 ## 2026-07-16T20:10:15Z
 - SUMMARY: Market closed. No trades executed. DIS RSI SELL signal (RSI 71.1, conf=2, ABOVE_BAND) deferred — will execute at next market-open cycle. WMT +4.2% @ $114.93 (stop $110.872 safe), JPM +3.0% @ $343.16 (stop $334.69 safe), DIS +1.2% @ $99.72 (stop $97.072 safe). ATR stops unchanged. Surge tracker unchanged (PLTR count=1, CRM count=1 — market closed, no update). Circuit breaker: INACTIVE (daily +0.16% / weekly -0.12%). Regime: normal/BULLISH (SPY $750.98 > EMA200 $744.45). Buying power: $54.16. Equity positions: 3 (WMT, JPM, DIS). Account: $100.29.
 

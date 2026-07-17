@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-17T14:15:00Z",
-  "buying_power": 54.16,
+  "updated_at": "2026-07-17T15:15:18Z",
+  "buying_power": 69.94,
   "market_regime": "normal",
-  "account_value": 100.53,
+  "account_value": 100.40,
   "peak_value": 101.68,
   "day_start_value": 100.53,
   "day_start_date": "2026-07-17",
@@ -10,26 +10,12 @@
   "week_start_date": "2026-07-14",
   "positions": [
     {
-      "ticker": "WMT",
-      "quantity": 0.135968,
-      "avg_cost": 110.32,
-      "current_price": 116.04,
-      "pnl_pct": 0.0519,
-      "value": 15.78,
-      "entry_atr_pct": 0.009,
-      "entry_time": "2026-07-02T14:12:11Z",
-      "trail_stop": 113.078,
-      "take_profit": 121.352,
-      "strategy": "normal",
-      "sell_date": null
-    },
-    {
       "ticker": "JPM",
       "quantity": 0.045043,
       "avg_cost": 333.02,
-      "current_price": 343.705,
-      "pnl_pct": 0.0321,
-      "value": 15.48,
+      "current_price": 345.025,
+      "pnl_pct": 0.0360,
+      "value": 15.54,
       "entry_atr_pct": 0.02,
       "entry_time": null,
       "trail_stop": 334.69,
@@ -41,9 +27,9 @@
       "ticker": "DIS",
       "quantity": 0.152291,
       "avg_cost": 98.50,
-      "current_price": 98.96,
-      "pnl_pct": 0.00467,
-      "value": 15.07,
+      "current_price": 97.985,
+      "pnl_pct": -0.00523,
+      "value": 14.92,
       "entry_atr_pct": 0.0072,
       "entry_time": "2026-07-16T15:14:04Z",
       "trail_stop": 97.072,
@@ -53,13 +39,12 @@
     }
   ],
   "last_actions": [
-    "Market OPEN — no trades. Buying power $54.16 leaves only $4.16 deployable (< $15 min order).",
-    "ATR ratchet: WMT trail_stop $110.872 → $113.078 (profit 5.2%, ≥5% threshold).",
-    "No SELL triggers: WMT +5.2% @ $116.04 (stop $113.078), JPM +3.2% @ $343.71 (stop $334.69), DIS +0.5% @ $98.96 (stop $97.072).",
-    "RL HOLD on all 9 RSI BUY signals — QCOM, MRVL, RKLB, RGTI, INFQ, UUUU, NBIS, CRWV, ALAB (all rl_conf≥0.90).",
-    "Surge tracker: PLTR/CRM expired (yesterday), SNAP added (157% buy-vol surge, count=1, not yet ≥2).",
-    "Circuit breaker: INACTIVE | daily 0.0% | weekly −0.1%.",
-    "Regime: normal/BULLISH. SPY $748.61, EMA200 $744.72.",
-    "Positions: 3 (WMT, JPM, DIS). Buying power: $54.16. Account: $100.53. Peak: $101.68."
+    "SELL WMT 0.135968 shares @ $116.09 — net_buy trend reversed (0.91M → -0.23M, OBV -0.8M/day). Profit +5.28%. Held 15 days.",
+    "No new buys: RKLB/PL/RDW/OKLO RSI BUY (conf=2) at $50 each — BP ~$69.94 post-sell leaves only $19.94 above $50 buffer.",
+    "ATR ratchet: JPM trail_stop $334.69 unchanged (profit +3.6%). DIS trail_stop $97.072 unchanged (price -0.52% below avg_cost).",
+    "Surge tracker: SNAP removed (no longer in 10%+ surge_signals).",
+    "Circuit breaker: INACTIVE | daily -0.1% | weekly -0.01%.",
+    "Regime: normal/BULLISH. SPY $745.05, EMA200 $744.72.",
+    "Positions: 2 (JPM, DIS). Buying power: ~$69.94. Account: ~$100.40. Peak: $101.68."
   ]
 }
