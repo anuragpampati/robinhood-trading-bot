@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-17T19:15:00Z",
+  "updated_at": "2026-07-17T20:11:51Z",
   "buying_power": 54.16,
   "market_regime": "bearish_ema",
-  "account_value": 100.15,
+  "account_value": 100.19,
   "peak_value": 101.68,
   "day_start_value": 100.53,
   "day_start_date": "2026-07-17",
@@ -13,9 +13,9 @@
       "ticker": "JPM",
       "quantity": 0.045043,
       "avg_cost": 333.02,
-      "current_price": 341.79,
-      "pnl_pct": 0.0263,
-      "value": 15.40,
+      "current_price": 341.2,
+      "pnl_pct": 0.0246,
+      "value": 15.37,
       "entry_atr_pct": 0.02,
       "entry_time": null,
       "trail_stop": 334.69,
@@ -26,10 +26,10 @@
     {
       "ticker": "DIS",
       "quantity": 0.152291,
-      "avg_cost": 98.50,
-      "current_price": 97.24,
-      "pnl_pct": -0.0128,
-      "value": 14.81,
+      "avg_cost": 98.5,
+      "current_price": 97.665,
+      "pnl_pct": -0.0085,
+      "value": 14.87,
       "entry_atr_pct": 0.0072,
       "entry_time": "2026-07-16T15:14:04Z",
       "trail_stop": 97.072,
@@ -39,15 +39,14 @@
     }
   ],
   "last_actions": [
-    "Regime: BEARISH_EMA — SPY $744.37 below EMA200 $744.75. All buys require 3/3 confidence.",
-    "No sells triggered: JPM +2.6% @ $341.79 (trail $334.69 safe). DIS -1.3% @ $97.24 (trail $97.072 — gap $0.17 ⚠).",
-    "NFLX RSI BUY (RSI 29.0, conf=2/3) BLOCKED — bearish_ema requires 3/3.",
-    "MRNA RSI BUY (RSI 25.8, conf=2/3) BLOCKED — bearish_ema requires 3/3.",
-    "ISRG RSI BUY (RSI 25.1, conf=2/3) BLOCKED — bearish_ema requires 3/3.",
-    "No net-buy BUY candidates (0 of 103 tickers).",
-    "ATR: JPM trail $334.69 unchanged (2.6% profit, 2.5% ratchet already applied). DIS trail $97.072 unchanged (at loss).",
+    "Market closed at 2026-07-17T20:11:51Z. No trades executed.",
+    "Regime: bearish_ema (SPY $743.18 < EMA200 $744.74). All buys require 3/3 confidence.",
+    "No exit signals triggered: JPM +2.46% @ $341.20 (trail $334.69 safe). DIS -0.85% @ $97.67 (trail $97.072 \u2014 gap $0.60).",
+    "RSI BUY: NFLX RSI=27.8 (conf=2/3) BLOCKED \u2014 bearish_ema requires 3/3 AND market closed.",
+    "Net-buy sell signals: 13 (CVX, TSLA, PLTR, WMT, SBUX, MCD, NOW, AI, MU, WFC, C, ISRG, CRM \u2014 none held).",
+    "ATR: JPM trail $334.69 unchanged (profit 2.46% \u2014 below 2.5% ratchet threshold). DIS trail $97.072 unchanged (at loss).",
     "Surge tracker: no 10%+ intraday surges detected.",
-    "Circuit breaker: INACTIVE | daily −0.38% | weekly −0.26%.",
-    "Buying power: $54.16 ($4.16 above $50 buffer). Positions: 2 (JPM, DIS). Account: $100.15. Peak: $101.68."
+    "Circuit breaker: INACTIVE | daily \u22120.34% | weekly \u22120.22%.",
+    "Buying power: $54.16 ($4.16 above $50 buffer). Positions: 2 (JPM, DIS). Account: $100.19. Peak: $101.68."
   ]
 }

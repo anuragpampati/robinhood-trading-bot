@@ -3,6 +3,10 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-17T20:11:51Z
+- SUMMARY: Market closed. Buying power: $54.16. Equity positions: 2 (JPM +2.46% @ $341.20 trail $334.69, DIS -0.85% @ $97.67 ⚠ trail $97.072 — gap $0.60). Regime: bearish_ema (SPY $743.18 < EMA200 $744.74). Account: $100.19. RSI BUY: NFLX RSI=27.8 (conf=2/3) BLOCKED — bearish_ema requires 3/3 + market closed. Net-buy sell signals: 13 (CVX, TSLA, PLTR, WMT, SBUX, etc. — none held). ATR: JPM trail $334.69 unchanged (2.46% profit, below 2.5% ratchet). DIS trail $97.072 unchanged (at loss). Surge: 0 (no 10%+ intraday surges). CB: INACTIVE | daily −0.34% | weekly −0.22%. Peak: $101.68.
+
+---
 ## 2026-07-17T18:15:00Z
 - SUMMARY: Market OPEN. No trades. Regime flipped to BEARISH_EMA (SPY $744.59 < EMA200 $744.76) — all buys now require 3/3 confidence. No sells triggered: JPM +3.1% @ $343.20 (trail $334.69 safe), DIS -1.2% @ $97.34 (⚠ trail $97.072 — gap only $0.27). ISRG RSI BUY (RSI 22.6, conf=2/3) BLOCKED: bearish_ema requires 3/3 AND net-buy SELL signal active. No net-buy BUY candidates (0 of 103). ATR stops unchanged — JPM profit 3.1% (2.5% ratchet already applied), DIS at loss (stop holds). Surge tracker: no 10%+ intraday surges. CB: INACTIVE | daily −0.30% | weekly −0.18%. Buying power: $54.16 ($4.16 deployable). Positions: 2 (JPM, DIS). Account: $100.23. Peak: $101.68.
 
