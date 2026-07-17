@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,8 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 392,
+  "rl_training_samples": 394,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked). Prior 365d backtest metrics retained. RL: 392 samples (+12 today), 19 states. Config: NO_CHANGE (n_trades < 5 for all strategy types — only 2 confirmed closed trades in recent log)."
+  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked). Prior 365d backtest metrics retained. RL: 394 samples (+2 today), 19 states. Config: NO_CHANGE (n_trades < 5 for all strategy types — only 2 confirmed closed trades in recent log: WMT +5.28%, AUR -4.1%)."
 }

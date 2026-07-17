@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-17
+- Trades analysed: 2 closed (WMT +5.28%, AUR -4.10%; 2 open: JPM/DIS)
+- Win rate: 50.0% overall (normal: 50.0% — 1W/1L; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- Config changes: none — RSI_OVERSOLD: n=2 < 5 (need ≥5); MOMENTUM_VOL_MIN: no momentum-strategy closed trades (n<3); ATR_VOLATILITY_THRESHOLD: AUR held ~37d, not a fast stop-out
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior metrics retained: +9.29% 365d return, 15.3% drawdown, 39.6% win rate
+- RL samples: 394/200 (READY — +2 new rows today; 19 states in Q-table)
+- Notes: WMT exited 2026-07-17 at +5.28% via net_buy reversal (held 15 days). DIS entered 2026-07-16 at $98.49, now -0.85%. JPM +2.46%. Account $100.19 (peak $101.68). Regime: bearish_ema (SPY below EMA200). Log trimmed to 11 entries.
+
+---
+
 ## 2026-07-15
 - Trades analysed: 3 closed (DELL -6.01%, DKNG +0.71%, AUR -4.10%; 2 open: WMT/JPM)
 - Win rate: 33.3% overall (normal: 33.3% — 1W/2L; momentum: n/a — 0 trades; surge: n/a — 0 trades)
