@@ -3,25 +3,6 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
-## 2026-07-20T15:16:03Z
-- SUMMARY: Market OPEN. No trades. bearish_ema regime — all buys require 3/3 confidence (no signals met). No sells: JPM +2.03% @ $339.79 (trail $334.69 safe, ratchet not triggered: 2.03% < 2.5%). ATR: JPM trail $334.69 unchanged. RSI SELLs: XOM (RSI 70.7, 2/3) and CVX (RSI 80.0, 2/3) — not held. Net-buy SELLs: 18 tickers (IREN, NFLX, MBLY, MRVL, LITE, AAOI, DELL, SOUN, SNAP, SOFI, RGTI, SHOP, CIFR, LAZR, IONQ, GOOGL, AMKR, AUR — none held). Surge: none. CB: INACTIVE | daily 0.04% | weekly 0.04%. Regime: bearish_ema (SPY $744.07 < EMA200 $744.67). Buying power: $69.95 (unsettled $14.67 pending T+2). Positions: 1 (JPM). Account: $99.93. Peak: $101.68.
-
----
-## 2026-07-20T14:16:12Z
-- Action   : SELL DIS
-- Price    : $96.25
-- Amount   : $14.66 | Shares: 0.152291
-- RSI      : 51.0 | EMA: BULLISH | BB: IN_BAND
-- RL       : BUY conf=0.983 | null
-- Stop     : $97.072 (TRIGGERED — ATR trailing stop) | Target: $108.35
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : bearish_ema
-- Reason   : ATR trailing stop hit: $96.25 ≤ trail $97.072 | held 95h since 2026-07-16T15:14Z
-
-## 2026-07-20T14:16:12Z
-- SUMMARY: Market OPEN. SELL DIS (ATR trailing stop: $96.25 ≤ $97.072, held 95h, loss -2.28%). No new buys: bearish_ema regime requires 3/3 confidence — NFLX RSI=28.2 (2/3) and MRNA RSI=23.2 (2/3) both blocked. JPM +2.48% @ $341.29 (trail $334.69 safe, no ratchet — profit 2.48% < 2.5% threshold). ATR: JPM trail $334.69 unchanged. Surge: none. CB: INACTIVE | daily 0.0% (day reset) | weekly 0.0% (week reset — Monday). Regime: bearish_ema (SPY $743.18 < EMA200 $744.68). Buying power: ~$84.61 (post-DIS sell). Positions: 1 (JPM). Account: ~$99.97. Peak: $101.68. Net-buy sell signals: WFC, AI, ISRG, SBUX, MU, WMT, TSLA, C, MCD, CRM (none held).
-
----
 ## 2026-07-17T20:11:51Z
 - SUMMARY: Market closed. Buying power: $54.16. Equity positions: 2 (JPM +2.46% @ $341.20 trail $334.69, DIS -0.85% @ $97.67 ⚠ trail $97.072 — gap $0.60). Regime: bearish_ema (SPY $743.18 < EMA200 $744.74). Account: $100.19. RSI BUY: NFLX RSI=27.8 (conf=2/3) BLOCKED — bearish_ema requires 3/3 + market closed. Net-buy sell signals: 13 (CVX, TSLA, PLTR, WMT, SBUX, etc. — none held). ATR: JPM trail $334.69 unchanged (2.46% profit, below 2.5% ratchet). DIS trail $97.072 unchanged (at loss). Surge: 0 (no 10%+ intraday surges). CB: INACTIVE | daily −0.34% | weekly −0.22%. Peak: $101.68.
 
