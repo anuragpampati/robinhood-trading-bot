@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-20T14:16:12Z",
-  "buying_power": 84.61,
+  "updated_at": "2026-07-20T15:16:03Z",
+  "buying_power": 69.95,
   "market_regime": "bearish_ema",
-  "account_value": 99.97,
+  "account_value": 99.93,
   "peak_value": 101.68,
   "day_start_value": 99.97,
   "day_start_date": "2026-07-20",
@@ -13,9 +13,9 @@
       "ticker": "JPM",
       "quantity": 0.045043,
       "avg_cost": 333.02,
-      "current_price": 341.29,
-      "pnl_pct": 0.0248,
-      "value": 15.37,
+      "current_price": 339.79,
+      "pnl_pct": 0.0203,
+      "value": 15.31,
       "entry_atr_pct": 0.02,
       "entry_time": null,
       "trail_stop": 334.69,
@@ -25,12 +25,12 @@
     }
   ],
   "last_actions": [
+    "No trades: bearish_ema regime requires 3/3 confidence | no signals met. JPM +2.03% @ $339.79, trail $334.69 (no ratchet — profit 2.03% < 2.5%). CB: INACTIVE | daily 0.04% | weekly 0.04%.",
     "SELL DIS @ ~$96.25 (ATR trailing stop hit: $96.25 ≤ $97.072 | held 95h | loss -2.28%)",
     "JPM HOLD: +2.48% @ $341.29 | trail $334.69 (no ratchet — profit 2.48% < 2.5% threshold)",
     "No buys: bearish_ema regime | NFLX RSI=28.2 (2/3) and MRNA RSI=23.2 (2/3) both blocked (need 3/3)",
     "Circuit breaker: INACTIVE | daily 0.0% (reset) | weekly 0.0% (reset — Monday)",
     "Regime: bearish_ema (SPY $743.18 < EMA200 $744.68). All buys require 3/3 confidence.",
-    "Surge tracker: no 10%+ intraday surges. Net-buy sell signals: WFC, AI, ISRG, SBUX, MU, WMT, TSLA, C, MCD, CRM (none held).",
-    "Buying power: ~$84.61 (post-DIS sell). Positions: 1 (JPM). Account: ~$99.97. Peak: $101.68."
+    "Buying power: $69.95 (unsettled $14.67 pending T+2). Positions: 1 (JPM). Account: $99.93. Peak: $101.68."
   ]
 }

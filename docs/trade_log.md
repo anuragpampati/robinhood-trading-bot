@@ -3,6 +3,10 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-20T15:16:03Z
+- SUMMARY: Market OPEN. No trades. bearish_ema regime — all buys require 3/3 confidence (no signals met). No sells: JPM +2.03% @ $339.79 (trail $334.69 safe, ratchet not triggered: 2.03% < 2.5%). ATR: JPM trail $334.69 unchanged. RSI SELLs: XOM (RSI 70.7, 2/3) and CVX (RSI 80.0, 2/3) — not held. Net-buy SELLs: 18 tickers (IREN, NFLX, MBLY, MRVL, LITE, AAOI, DELL, SOUN, SNAP, SOFI, RGTI, SHOP, CIFR, LAZR, IONQ, GOOGL, AMKR, AUR — none held). Surge: none. CB: INACTIVE | daily 0.04% | weekly 0.04%. Regime: bearish_ema (SPY $744.07 < EMA200 $744.67). Buying power: $69.95 (unsettled $14.67 pending T+2). Positions: 1 (JPM). Account: $99.93. Peak: $101.68.
+
+---
 ## 2026-07-20T14:16:12Z
 - Action   : SELL DIS
 - Price    : $96.25
