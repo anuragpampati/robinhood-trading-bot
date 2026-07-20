@@ -35,3 +35,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
 - RL samples: 392/200 (READY — +12 new rows today; 19 states in Q-table)
 - Notes: 3 open positions: WMT +4.2%, JPM +3.1%, DIS +1.2% (entered today). DIS RSI SELL signal (RSI 71.1) deferred to next market open. Account $100.29. Log trimmed to 12 entries. RL well past 200 target — Q-agent training recommended.
+
+## 2026-07-20
+- Trades analysed: 8 closed cumulative (RKLB +2.93%, SMCI +2.41%, GS -2.46%, DELL -6.01%, DKNG +0.71%, AUR -4.10%, WMT +5.28%, DIS -2.28%) + 1 open (JPM +1.84%)
+- Win rate: 50.0% overall (normal: 50.0% — 4W/4L, avg_pnl -0.44%, avg_hold 175h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- Config changes: none — RSI_OVERSOLD: win_rate=50% in 40-65% range, NO_CHANGE; MOMENTUM_VOL_MIN: no momentum closed trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold 175h >> 2h threshold, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 392/200 (READY — 0 new rows today; 19 states in Q-table)
+- Notes: DIS exited at -2.28% via ATR trailing stop (held 95h). WMT exited at +5.28% via net_buy_signal reversal (held 15d). JPM currently +1.84% @ $339.15, trail $334.69. Account $99.89 (below $100 start). Bearish_EMA regime active. Log trimmed to 3 entries.
