@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-07-17T20:11:51Z",
-  "buying_power": 54.16,
+  "updated_at": "2026-07-20T14:16:12Z",
+  "buying_power": 84.61,
   "market_regime": "bearish_ema",
-  "account_value": 100.19,
+  "account_value": 99.97,
   "peak_value": 101.68,
-  "day_start_value": 100.53,
-  "day_start_date": "2026-07-17",
-  "week_start_value": 100.41,
-  "week_start_date": "2026-07-14",
+  "day_start_value": 99.97,
+  "day_start_date": "2026-07-20",
+  "week_start_value": 99.97,
+  "week_start_date": "2026-07-20",
   "positions": [
     {
       "ticker": "JPM",
       "quantity": 0.045043,
       "avg_cost": 333.02,
-      "current_price": 341.2,
-      "pnl_pct": 0.0246,
+      "current_price": 341.29,
+      "pnl_pct": 0.0248,
       "value": 15.37,
       "entry_atr_pct": 0.02,
       "entry_time": null,
@@ -22,31 +22,15 @@
       "take_profit": 366.32,
       "strategy": "normal",
       "sell_date": null
-    },
-    {
-      "ticker": "DIS",
-      "quantity": 0.152291,
-      "avg_cost": 98.5,
-      "current_price": 97.665,
-      "pnl_pct": -0.0085,
-      "value": 14.87,
-      "entry_atr_pct": 0.0072,
-      "entry_time": "2026-07-16T15:14:04Z",
-      "trail_stop": 97.072,
-      "take_profit": 108.35,
-      "strategy": "normal",
-      "sell_date": null
     }
   ],
   "last_actions": [
-    "Market closed at 2026-07-17T20:11:51Z. No trades executed.",
-    "Regime: bearish_ema (SPY $743.18 < EMA200 $744.74). All buys require 3/3 confidence.",
-    "No exit signals triggered: JPM +2.46% @ $341.20 (trail $334.69 safe). DIS -0.85% @ $97.67 (trail $97.072 \u2014 gap $0.60).",
-    "RSI BUY: NFLX RSI=27.8 (conf=2/3) BLOCKED \u2014 bearish_ema requires 3/3 AND market closed.",
-    "Net-buy sell signals: 13 (CVX, TSLA, PLTR, WMT, SBUX, MCD, NOW, AI, MU, WFC, C, ISRG, CRM \u2014 none held).",
-    "ATR: JPM trail $334.69 unchanged (profit 2.46% \u2014 below 2.5% ratchet threshold). DIS trail $97.072 unchanged (at loss).",
-    "Surge tracker: no 10%+ intraday surges detected.",
-    "Circuit breaker: INACTIVE | daily \u22120.34% | weekly \u22120.22%.",
-    "Buying power: $54.16 ($4.16 above $50 buffer). Positions: 2 (JPM, DIS). Account: $100.19. Peak: $101.68."
+    "SELL DIS @ ~$96.25 (ATR trailing stop hit: $96.25 ≤ $97.072 | held 95h | loss -2.28%)",
+    "JPM HOLD: +2.48% @ $341.29 | trail $334.69 (no ratchet — profit 2.48% < 2.5% threshold)",
+    "No buys: bearish_ema regime | NFLX RSI=28.2 (2/3) and MRNA RSI=23.2 (2/3) both blocked (need 3/3)",
+    "Circuit breaker: INACTIVE | daily 0.0% (reset) | weekly 0.0% (reset — Monday)",
+    "Regime: bearish_ema (SPY $743.18 < EMA200 $744.68). All buys require 3/3 confidence.",
+    "Surge tracker: no 10%+ intraday surges. Net-buy sell signals: WFC, AI, ISRG, SBUX, MU, WMT, TSLA, C, MCD, CRM (none held).",
+    "Buying power: ~$84.61 (post-DIS sell). Positions: 1 (JPM). Account: ~$99.97. Peak: $101.68."
   ]
 }
