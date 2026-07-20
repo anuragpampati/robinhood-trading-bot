@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-20T20:20:52.494388+00:00",
+  "timestamp": "2026-07-20T21:05:37.177130+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1569,10 +1569,10 @@
       "ticker": "EXPE",
       "price": 265.0799865722656,
       "net_buy_d2": -11410,
-      "net_buy_d3": -778421,
-      "obv_slope": -127527,
+      "net_buy_d3": -786485,
+      "obv_slope": -130822,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.01M \u2192 -0.78M | OBV -0.1M/day"
+      "reason": "Net buy reversed: -0.01M \u2192 -0.79M | OBV -0.1M/day"
     },
     {
       "ticker": "PH",
@@ -1593,6 +1593,15 @@
       "reason": "Net buy reversed: -0.34M \u2192 -4.19M | OBV -4.8M/day"
     },
     {
+      "ticker": "GS",
+      "price": 1055.030029296875,
+      "net_buy_d2": -147175,
+      "net_buy_d3": -1568926,
+      "obv_slope": -1201084,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.15M \u2192 -1.57M | OBV -1.2M/day"
+    },
+    {
       "ticker": "TROW",
       "price": 116.48999786376953,
       "net_buy_d2": -90617,
@@ -1602,22 +1611,13 @@
       "reason": "Net buy reversed: -0.09M \u2192 -0.74M | OBV -0.1M/day"
     },
     {
-      "ticker": "GS",
-      "price": 1055.030029296875,
-      "net_buy_d2": -147175,
-      "net_buy_d3": -1106735,
-      "obv_slope": -1100604,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.15M \u2192 -1.11M | OBV -1.1M/day"
-    },
-    {
       "ticker": "FTNT",
       "price": 160.36000061035156,
       "net_buy_d2": 530518,
-      "net_buy_d3": -2902966,
-      "obv_slope": -1255232,
+      "net_buy_d3": -3134186,
+      "obv_slope": -1310124,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.53M \u2192 -2.90M | OBV -1.3M/day"
+      "reason": "Net buy reversed: 0.53M \u2192 -3.13M | OBV -1.3M/day"
     },
     {
       "ticker": "TSLA",
