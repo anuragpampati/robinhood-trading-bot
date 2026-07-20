@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-20T16:13:13Z",
+  "updated_at": "2026-07-20T17:10:00Z",
   "buying_power": 69.95,
   "market_regime": "normal",
-  "account_value": 99.94,
+  "account_value": 99.93,
   "peak_value": 101.68,
   "day_start_value": 99.97,
   "day_start_date": "2026-07-20",
@@ -13,7 +13,7 @@
       "ticker": "JPM",
       "quantity": 0.045043,
       "avg_cost": 333.02,
-      "current_price": 340.17,
+      "current_price": 340.18,
       "pnl_pct": 0.0215,
       "value": 15.32,
       "entry_atr_pct": 0.02,
@@ -25,10 +25,10 @@
     }
   ],
   "last_actions": [
+    "No trades: market OPEN, regime normal/BULLISH. 0 RSI BUY, 0 net-buy BUY, 0 surge signals. JPM +2.15% @ $340.18 | trail $334.69 (no ratchet). XOM/CVX RSI SELL (not held). Net-buy SELL: 10 tickers (none held). CB: INACTIVE | daily 0.04% | weekly 0.04%. Account: $99.93.",
     "Regime CHANGED bearish_ema → normal/BULLISH (SPY $745.99 > EMA200 $744.69). No trades. JPM +2.15% @ $340.17 | trail $334.69 (no ratchet). No BUY signals (0/3 conf). CB: INACTIVE | daily 0.03% | weekly 0.03%. Account: $99.94.",
     "No trades: bearish_ema regime requires 3/3 confidence | no signals met. JPM +2.03% @ $339.79, trail $334.69 (no ratchet — profit 2.03% < 2.5%). CB: INACTIVE | daily 0.04% | weekly 0.04%.",
     "SELL DIS @ ~$96.25 (ATR trailing stop hit: $96.25 ≤ $97.072 | held 95h | loss -2.28%)",
-    "JPM HOLD: +2.48% @ $341.29 | trail $334.69 (no ratchet — profit 2.48% < 2.5% threshold)",
-    "No buys: bearish_ema regime | NFLX RSI=28.2 (2/3) and MRNA RSI=23.2 (2/3) both blocked (need 3/3)"
+    "JPM HOLD: +2.48% @ $341.29 | trail $334.69 (no ratchet — profit 2.48% < 2.5% threshold)"
   ]
 }
