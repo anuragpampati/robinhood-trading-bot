@@ -3,6 +3,10 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-21T15:17:00Z
+- SUMMARY: Market OPEN. No trades. Regime: normal/BULLISH (SPY $746.74 > EMA200 $744.68 — regime upgraded). RSI SELL signals: COIN (RSI 72.6, conf 2/3), XOM (RSI 77.4, conf 2/3), CVX (RSI 78.4, conf 2/3) — none held. Net-buy SELL: META, UUUU, ONDS — none held. Net-buy BUY: RDW — BLOCKED by cash buffer ($84.62 − $50 = $34.62 < $50 required). No surge signals. JPM +3.06% @ $343.21 | trail $334.69 (ratchet check: 3.06% ≥ 2.5% → new_stop = max($334.69, $333.02×1.005=$334.69) → unchanged) | TP $366.32. No SELL triggers for JPM. CB: INACTIVE | daily +0.02% | weekly +0.11%. Buying power: $84.62. Positions: 1 (JPM). Account: $100.08. Peak: $101.68.
+
+---
 ## 2026-07-20T18:13:00Z
 - SUMMARY: Market OPEN. No trades. Regime: bearish_ema (SPY $744.55 < EMA200 $744.69) — all buys require 3/3 confidence. RSI BUY: TSLA (RSI 28.1, conf=2/3) BLOCKED bearish_ema; NFLX (RSI 23.9, conf=2/3) BLOCKED bearish_ema + net-buy SELL active. 0 net-buy BUY signals. Surge: CRM 3.45% (< 5% threshold). No SELL triggers for JPM: price $339.15 > trail_stop $334.69, below TP $366.32, no signal. ATR ratchet: JPM profit 1.84% < 2.5% → trail unchanged at $334.69. CB: INACTIVE | daily −0.08% | weekly −0.08%. Buying power: $69.95. Positions: 1 (JPM +1.84% @ $339.15). Account: $99.89. Peak: $101.68.
 
