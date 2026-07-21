@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-21T20:18:52.271497+00:00",
+  "timestamp": "2026-07-21T21:00:58.123957+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1569,10 +1569,10 @@
       "ticker": "TTD",
       "price": 18.25,
       "net_buy_d2": 355027,
-      "net_buy_d3": -5600503,
-      "obv_slope": -4374103,
+      "net_buy_d3": -6341032,
+      "obv_slope": -4649157,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.36M \u2192 -5.60M | OBV -4.4M/day"
+      "reason": "Net buy reversed: 0.36M \u2192 -6.34M | OBV -4.6M/day"
     },
     {
       "ticker": "NRG",
@@ -1587,10 +1587,10 @@
       "ticker": "UAL",
       "price": 117.69999694824219,
       "net_buy_d2": 334933,
-      "net_buy_d3": -1931700,
-      "obv_slope": -1250176,
+      "net_buy_d3": -1972248,
+      "obv_slope": -1237157,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.33M \u2192 -1.93M | OBV -1.3M/day"
+      "reason": "Net buy reversed: 0.33M \u2192 -1.97M | OBV -1.2M/day"
     },
     {
       "ticker": "META",
@@ -1623,10 +1623,10 @@
       "ticker": "TTWO",
       "price": 235.92999267578125,
       "net_buy_d2": -155600,
-      "net_buy_d3": -743950,
-      "obv_slope": -830266,
+      "net_buy_d3": -822778,
+      "obv_slope": -853145,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.16M \u2192 -0.74M | OBV -0.8M/day"
+      "reason": "Net buy reversed: -0.16M \u2192 -0.82M | OBV -0.9M/day"
     },
     {
       "ticker": "CLX",
@@ -1641,10 +1641,10 @@
       "ticker": "MOS",
       "price": 21.969999313354492,
       "net_buy_d2": 4182312,
-      "net_buy_d3": -5953937,
-      "obv_slope": -3019431,
+      "net_buy_d3": -6134573,
+      "obv_slope": -3061803,
       "score": 0.0,
-      "reason": "Net buy reversed: 4.18M \u2192 -5.95M | OBV -3.0M/day"
+      "reason": "Net buy reversed: 4.18M \u2192 -6.13M | OBV -3.1M/day"
     },
     {
       "ticker": "CBOE",
@@ -1656,5 +1656,15 @@
       "reason": "Net buy reversed: 0.64M \u2192 -0.35M | OBV -0.2M/day"
     }
   ],
-  "surge_signals": []
+  "surge_signals": [
+    {
+      "ticker": "AMD",
+      "price": 544.4299926757812,
+      "buy_surge_pct": 15.4723,
+      "buy_vol_d2": 1412537,
+      "buy_vol_d3": 23267702,
+      "net_buy_d3": 19313453,
+      "reason": "Buy vol \u21911547.2% vs prior day | 0d streak | latest 19.31M | OBV -2.6M/day"
+    }
+  ]
 }
