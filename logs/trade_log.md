@@ -3,6 +3,10 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-21T18:15:07Z
+- SUMMARY: Market OPEN. No trades. Regime: normal/BULLISH (SPY $748.59 > EMA200 $744.77). RSI BUY: MRNA (conf=2, RSI 25.5, oversold) — BLOCKED ($84.62−$50=$34.62 < $50 buffer; RL: HOLD conf=0.906). Net-buy BUY: RDW — BLOCKED (same buffer). Intraday surge: RIVN (count=2, buy_vol +185.6%) — BLOCKED (same). RSI SELL: COIN (RSI 71.2, 2/3), GM (RSI 70.1, 2/3), XOM (RSI 73.9, 2/3), TER (RSI 73.6, 2/3) — none held. Net-buy SELL: SNOW, META — none held. Surge tracker: RIVN count→2 (candidate), RDW count=1 (new). JPM +3.53% @ $344.79 | trail $334.69 (unchanged) | TP $366.32. No SELL triggers for JPM. CB: INACTIVE | daily +0.09% | weekly +0.18%. Buying power: $84.62. Equity positions: 1 (JPM). Account: $100.15. Peak: $101.68.
+
+---
 ## 2026-07-21T16:15:49Z
 - SUMMARY: Market OPEN. No trades. Regime: normal/BULLISH (SPY $747.52 > EMA200 $744.71). RSI SELL: COIN (RSI 74.6, 2/3), GM (RSI 71.5, 2/3), XOM (RSI 76.5, 2/3), CVX (RSI 77.5, 2/3), TER (RSI 71.6, 2/3) — none held. Net-buy SELL: SNOW, META, UUUU — none held. Net-buy BUY: RDW — BLOCKED (buying_power $84.62 − $50 = $34.62 < $50 buffer). Surge: F +27.2% (count=1), RIVN +26.0% (count=1), AEHR +18.8% (count=1) — need ≥2. JPM +3.39% @ $344.31 | trail $334.69 (ratchet: 3.39% ≥ 2.5% → max($334.69, $334.69) = unchanged) | TP $366.32. No SELL triggers for JPM. CB: INACTIVE | daily −0.07% | weekly −0.16%. Buying power: $84.62. Equity positions: 1 (JPM). Account: $100.13. Peak: $101.68.
 

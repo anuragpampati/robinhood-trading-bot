@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-21T16:15:49Z",
+  "updated_at": "2026-07-21T18:15:07Z",
   "buying_power": 84.62,
   "market_regime": "normal",
-  "account_value": 100.13,
+  "account_value": 100.15,
   "peak_value": 101.68,
   "day_start_value": 100.06,
   "day_start_date": "2026-07-21",
@@ -13,9 +13,9 @@
       "ticker": "JPM",
       "quantity": 0.045043,
       "avg_cost": 333.02,
-      "current_price": 344.31,
-      "pnl_pct": 0.0339,
-      "value": 15.51,
+      "current_price": 344.79,
+      "pnl_pct": 0.0353,
+      "value": 15.53,
       "entry_atr_pct": 0.02,
       "entry_time": null,
       "trail_stop": 334.69,
@@ -25,10 +25,10 @@
     }
   ],
   "last_actions": [
+    "Market OPEN. No trades. Regime: normal/BULLISH (SPY $748.59 > EMA200 $744.77). RSI BUY: MRNA (conf=2, RSI 25.5) — BLOCKED ($84.62−$50=$34.62 < $50 buffer; RL: HOLD conf=0.906). Net-buy BUY: RDW — BLOCKED (same). Intraday surge: RIVN (count=2) — BLOCKED (same). RSI SELL: COIN (2/3), GM (2/3), XOM (2/3), TER (2/3) — none held. Net-buy SELL: SNOW, META — none held. JPM +3.53% @ $344.79 | trail $334.69 (no ratchet change) | TP $366.32. CB: INACTIVE | daily +0.09% | weekly +0.18%. Account: $100.15. Peak: $101.68.",
     "Market OPEN. No trades. Regime: normal/BULLISH (SPY $747.52 > EMA200 $744.71). RSI SELL: COIN (2/3), GM (2/3), XOM (2/3), CVX (2/3), TER (2/3) — none held. Net-buy SELL: SNOW, META, UUUU — none held. Net-buy BUY: RDW — BLOCKED (buying_power $84.62 − $50 = $34.62 < $50 buffer). Surge: F/RIVN/AEHR count=1 (need ≥2). JPM +3.39% @ $344.31 | trail $334.69 (no ratchet change) | TP $366.32. CB: INACTIVE | daily −0.07% | weekly −0.16%. Account: $100.13. Peak: $101.68.",
     "Market OPEN. No trades. Regime: normal/BULLISH (SPY $746.74 > EMA200 $744.68 — regime upgraded from bearish_ema). RSI SELL: COIN (2/3), XOM (2/3), CVX (2/3) — none held. Net-buy SELL: META, UUUU, ONDS — none held. Net-buy BUY: RDW — BLOCKED (buying_power $84.62 − $50 = $34.62 < $50 buffer). No surge. JPM +3.06% @ $343.21 | trail $334.69 (no ratchet change) | TP $366.32. CB: INACTIVE | daily +0.02% | weekly +0.11%. Account: $100.08. Peak: $101.68.",
     "Market OPEN. No trades. Regime: bearish_ema. 0 RSI BUY, 0 net-buy BUY. 21 net-buy SELL signals (none held). Surge: CIFR +28.0% tracker count=1 (needs ≥2). JPM +3.0% @ $343.00 | trail $334.69 (no ratchet) | TP $366.32. CB: INACTIVE | daily 0.00% (day reset) | weekly -0.09%. Account: $100.06. Peak: $101.68.",
-    "Market closed. bearish_ema regime. 0 RSI BUY, 0 net-buy BUY. 23 net-buy SELL signals (none held — not executed). Surge: CIFR +28.8%, CVX +32.3% (skipped — market closed). JPM +1.77% @ $338.91 | trail $334.69 (unchanged, market closed) | TP $366.32. CB: INACTIVE | daily -0.07% | weekly -0.07%. Account: $99.90. Peak: $101.68.",
-    "No trades: bearish_ema regime + no signals. MSFT buy_vol surge +34.8% → tracker count=1 (needs ≥2); surge BUY blocked by cash buffer ($69.95−$50=$19.95 < $50). 0 RSI BUY, 0 net-buy BUY. JPM +1.58% @ $338.28 | trail $334.69 (no ratchet — 1.58% < 2.5%). CB: INACTIVE | daily −0.12% | weekly −0.12%. Account: $99.85."
+    "Market closed. bearish_ema regime. 0 RSI BUY, 0 net-buy BUY. 23 net-buy SELL signals (none held — not executed). Surge: CIFR +28.8%, CVX +32.3% (skipped — market closed). JPM +1.77% @ $338.91 | trail $334.69 (unchanged, market closed) | TP $366.32. CB: INACTIVE | daily -0.07% | weekly -0.07%. Account: $99.90. Peak: $101.68."
   ]
 }
