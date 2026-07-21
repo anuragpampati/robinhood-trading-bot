@@ -3,6 +3,10 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
+## 2026-07-21T19:12:00Z
+- SUMMARY: Market OPEN. No trades. Regime: normal/BULLISH (SPY $748.37 > EMA200 $744.81). RSI BUY: WMT (conf=2→3 🤖 RL BOOST, RSI 28.1, BEARISH EMA, BELOW_BAND) — BLOCKED ($84.62−$50=$34.62 < $50 buffer). RSI BUY: CRWD (conf=2, RSI 28.4, RL=HOLD) — BLOCKED (same). Net-buy BUY: RDW (4d streak) — BLOCKED (same). RSI SELL: XOM (RSI 74.6, 2/3), TER (RSI 73.8, 2/3) — none held. Net-buy SELL: SNOW, META, ALAB, UUUU, IONQ — none held. Surge tracker: RIVN+RDW removed (no longer in ≥10% surge signals). No intraday surge candidates. JPM +3.53% @ $344.80 | trail $334.69 (ratchet: 3.53% ≥ 2.5% → max($334.69, $334.69) = unchanged) | TP $366.32. No SELL triggers for JPM. CB: INACTIVE | daily +0.09% | weekly +0.18%. Buying power: $84.62. Equity positions: 1 (JPM). Account: $100.15. Peak: $101.68.
+
+---
 ## 2026-07-21T18:15:07Z
 - SUMMARY: Market OPEN. No trades. Regime: normal/BULLISH (SPY $748.59 > EMA200 $744.77). RSI BUY: MRNA (conf=2, RSI 25.5, oversold) — BLOCKED ($84.62−$50=$34.62 < $50 buffer; RL: HOLD conf=0.906). Net-buy BUY: RDW — BLOCKED (same buffer). Intraday surge: RIVN (count=2, buy_vol +185.6%) — BLOCKED (same). RSI SELL: COIN (RSI 71.2, 2/3), GM (RSI 70.1, 2/3), XOM (RSI 73.9, 2/3), TER (RSI 73.6, 2/3) — none held. Net-buy SELL: SNOW, META — none held. Surge tracker: RIVN count→2 (candidate), RDW count=1 (new). JPM +3.53% @ $344.79 | trail $334.69 (ratchet: 3.53% ≥ 2.5% → max($334.69, $334.69) = unchanged) | TP $366.32. No SELL triggers for JPM. CB: INACTIVE | daily +0.09% | weekly +0.18%. Buying power: $84.62. Equity positions: 1 (JPM). Account: $100.15. Peak: $101.68.
 
