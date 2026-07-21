@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20",
+  "updated_at": "2026-07-21",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,8 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 392,
+  "rl_training_samples": 395,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403). Prior 365d backtest metrics retained. RL: 392 samples, 19 states. Config: NO_CHANGE (normal win_rate 50% in 40-65% range, n=8; momentum n<3; ATR avg_hold 175h >> 2h). Live trades analysed: 8 closed (4W/4L, -0.44% avg PnL)."
+  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403). Prior 365d backtest metrics retained. RL: 395 samples (+3 today), 19 states. Config: NO_CHANGE (normal win_rate 50% in 40-65% range, n=8; momentum n<3; ATR avg_hold 175h >> 2h). Live trades: 8 closed (4W/4L, -0.44% avg PnL). JPM still open +3.64%."
 }

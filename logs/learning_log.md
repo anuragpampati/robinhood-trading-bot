@@ -43,3 +43,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
 - RL samples: 392/200 (READY — 0 new rows today; 19 states in Q-table)
 - Notes: DIS exited at -2.28% via ATR trailing stop (held 95h). WMT exited at +5.28% via net_buy_signal reversal (held 15d). JPM currently +1.84% @ $339.15, trail $334.69. Account $99.89 (below $100 start). Bearish_EMA regime active. Log trimmed to 3 entries.
+
+## 2026-07-21
+- Trades analysed: 8 closed cumulative (same as 2026-07-20; no new exits today) + 1 open (JPM +3.64%)
+- Win rate: 50.0% overall (normal: 50.0% — 4W/4L, avg_pnl -0.44%, avg_hold 175h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- Config changes: none — RSI_OVERSOLD: win_rate=50% in [40%,65%], NO_CHANGE (n=8≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold 175h >> 2h, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 395/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: JPM now +3.64% @ $345.15, trail $334.69, TP $366.32. Regime: normal/BULLISH. All buys blocked today by cash buffer ($84.62 buying power — after JPM position only $34.62 available above $50 buffer). Account $100.17. Peak $101.68. Log trimmed to 7 entries. RL well past 200 — run python -m strategy.rl_agent --train to activate Q-agent.
