@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T16:14:04Z",
+  "updated_at": "2026-07-22T18:10:10Z",
   "buying_power": 84.62,
   "market_regime": "normal",
   "account_value": 100.24,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-21",
   "positions": [],
   "last_actions": [
+    "Market OPEN (2:10 ET). No trades — RSI BUY DKNG (conf 2/3, RSI 24.2, BELOW_BAND) BLOCKED ($84.62 - $50 = $34.62 < $50 buffer). RL: HOLD conf=0.93 (no veto, no boost). RSI SELL: AUR (conf 2/3, RSI 79.3) — not held. Net-buy SELL: CRM, PFE, C, ROK, ASML, WFC, KTOS, NOW, QQQ, SPY — none held. Surge: none. CB: INACTIVE (daily -0.06% / weekly -0.27%). Regime: normal/BULLISH (SPY $748.52 > EMA200 $745.00). Account: $100.24. Peak: $101.68.",
     "Market OPEN (12:14 ET). No trades — 0 equity positions, no BUY signals, buying power $84.62 insufficient ($50 order leaves $34.62 < $50 buffer). RSI SELL: NVDA, GM, XOM, CVX, DELL, AUR, LEU, LITE, NBIS — none held. Net-buy SELL: PFE, ROK, WMT, KTOS, SPY, JPM, NOW, WFC — none held. Surge: TXN (98.6% buy vol, count=1). CB: INACTIVE (daily +0.06% / weekly +0.27%). Regime: normal/BULLISH (SPY $749.76 > EMA200 $744.92). Account: $100.24. Peak: $101.68.",
     "Market OPEN (11:15 ET). SELL JPM 0.045043 shares @ $346.76 ($15.62). Net buy reversed 0.89M→0.01M | OBV -0.3M/day. JPM P&L: +4.11% ($346.76 vs $333.02 avg). No BUY signals. No surge signals — tracker cleared. CB: INACTIVE (daily gain / weekly +0.27%). Regime: normal/BULLISH (SPY $747.93 > EMA200 $744.87). Account: ~$100.24. Peak: $101.68.",
     "Market OPEN (10:16 ET). No trades — buying power $84.62 insufficient ($50 order leaves <$50 buffer). Net-buy BUY: RDW, SOUN — BLOCKED. RSI SELL: XOM, LEU — not held. Surge: RDW (105%), AAOI (983%) count=1. JPM +3.76% @ $345.54 | trail $334.69 | TP $366.32. CB: INACTIVE. Account: $100.18. Peak: $101.68.",
-    "Market closed (after hours). No trades. Regime: normal/BULLISH (SPY $748.28 > EMA200 $744.84). RSI BUY: CRWD (conf=2/3, RSI 28.9)—market closed. RSI SELL: XOM, CVX, LEU—none held. Net-buy BUY: RDW, SOUN—market closed. Net-buy SELL: META, SNOW, AMZN, GOOGL, ALAB—none held. JPM +3.64% @ $345.15 | trail $334.69 | TP $366.32. CB: INACTIVE. Account: $100.17. Peak: $101.68.",
-    "Market OPEN. No trades. Regime: normal/BULLISH (SPY $748.59). RSI BUY: MRNA (conf=2) -- BLOCKED. RDW net-buy -- BLOCKED. RIVN intraday surge count=2 -- BLOCKED. JPM +3.53% @ $344.79 | trail $334.69. Account: $100.15."
+    "Market closed (after hours). No trades. Regime: normal/BULLISH (SPY $748.28 > EMA200 $744.84). RSI BUY: CRWD (conf=2/3, RSI 28.9)—market closed. RSI SELL: XOM, CVX, LEU—none held. Net-buy BUY: RDW, SOUN—market closed. Net-buy SELL: META, SNOW, AMZN, GOOGL, ALAB—none held. JPM +3.64% @ $345.15 | trail $334.69 | TP $366.32. CB: INACTIVE. Account: $100.17. Peak: $101.68."
   ]
 }
