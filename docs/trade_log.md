@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-22T19:11:43Z
+- SUMMARY: Market OPEN (3:11 ET). No trades — RSI BUY DKNG (conf 2/3, RSI 26.65, BELOW_BAND) BLOCKED ($84.62 - $50 = $34.62 < $50 buffer). RSI BUY GEV (conf 2/3, RSI 29.91, BELOW_BAND) BLOCKED (same). RSI BUY NOW (conf 2/3, RSI 27.18) SKIPPED — net-buy SELL conflict. RL: HOLD conf=0.906 (no veto, no boost). RSI SELL: NVDA, GM, XOM, AUR, LEU (conf≥2) — none held. Net-buy SELL: CRM, PFE, C, ROK, WFC, EOSE, KTOS, NOW, AEHR, PLTR — none held. Surge: none. CB: INACTIVE (daily +0.06% / weekly +0.27%). Regime: normal/BULLISH (SPY $748.41). Buying power: $84.62. Equity positions: 0. Account: $100.24. Peak: $101.68.
+
+---
+
 ## 2026-07-22T18:10:10Z
 - SUMMARY: Market OPEN (2:10 ET). No trades — RSI BUY DKNG (conf 2/3, RSI 24.2, BELOW_BAND) BLOCKED ($84.62 - $50 = $34.62 < $50 buffer). RL: HOLD conf=0.93 (no veto, no boost). RSI SELL: AUR (conf 2/3, RSI 79.3) — not held. Net-buy SELL: CRM, PFE, C, ROK, ASML, WFC, KTOS, NOW, QQQ, SPY — none held. Surge: none. CB: INACTIVE (daily -0.06% / weekly -0.27%). Regime: normal/BULLISH (SPY $748.52 > EMA200 $745.00). Buying power: $84.62. Equity positions: 0. Account: $100.24. Peak: $101.68.
 
