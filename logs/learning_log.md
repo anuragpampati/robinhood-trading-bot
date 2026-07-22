@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-22
+- Trades analysed: 9 closed (RKLB +2.93%, SMCI +2.41%, GS -2.46%, DELL -6.01%, DKNG +0.71%, AUR -4.10%, WMT +5.28%, DIS -2.28%, JPM +4.13%); 0 open
+- Win rate: 55.6% overall (normal: 55.6% — 5W/4L, avg_pnl +0.07%, avg_hold ~182h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- EMA-trend win rate: BULLISH entry 55.6% (9/9 trades); BEARISH entry n/a (0 trades)
+- Config changes: none — RSI_OVERSOLD: win_rate=55.6% in [40%,65%] range, NO_CHANGE (n=9≥5); MOMENTUM_VOL_MIN: no momentum entries (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold ~182h >> 2h, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 401/200 (READY — +6 new rows today; 19 states in Q-table)
+- Notes: JPM closed today +4.13% via signal sell (net-buy reversal + OBV decline). Account $100.24 — above $100 start. No open equity positions; buying power $84.62 (cash-buffer bind preventing new entries at $50 order size). 3 strong RSI buy candidates visible after hours: PLTR, GEV, NOW. Log trimmed to 10 entries.
+
 ## 2026-07-15
 - Trades analysed: 3 closed (DELL -6.01%, DKNG +0.71%, AUR -4.10%; 2 open: WMT/JPM)
 - Win rate: 33.3% overall (normal: 33.3% — 1W/2L; momentum: n/a — 0 trades; surge: n/a — 0 trades)
