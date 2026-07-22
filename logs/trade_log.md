@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-22T20:11:34Z
+- SUMMARY: Market closed (after hours, 4:11 PM ET). No trades. RSI BUY candidates (deferred): PLTR ($124.58, RSI 29.7, conf 2/3), GEV ($987.43, RSI 28.0, conf 2/3), NOW ($95.46, RSI 27.2, conf 2/3) — market closed, no entry allowed. RSI SELL (conf≥2): XOM, CVX, AUR, SMCI — none held. Net-buy SELL: CRM, ASML, C, ROK, PFE, AMAT, TGT, WFC, QQQ, SPY — none held. Surge: TXN (+399%), CVX (+22%), NVDA (+12%). CB: INACTIVE (daily +0.06% / weekly +0.27%). Regime: normal/BULLISH (SPY $747.33 > EMA200 $745.06). Buying power: $84.62. Equity positions: 0. Account: $100.24. Peak: $101.68.
+
+---
+
 ## 2026-07-22T19:11:43Z
 - SUMMARY: Market OPEN (3:11 ET). No trades — RSI BUY DKNG (conf 2/3, RSI 26.65, BELOW_BAND) BLOCKED ($84.62 - $50 = $34.62 < $50 buffer). RSI BUY GEV (conf 2/3, RSI 29.91, BELOW_BAND) BLOCKED (same). RSI BUY NOW (conf 2/3, RSI 27.18) SKIPPED — net-buy SELL conflict. RL: HOLD conf=0.906 (no veto, no boost). RSI SELL: NVDA, GM, XOM, AUR, LEU (conf≥2) — none held. Net-buy SELL: CRM, PFE, C, ROK, WFC, EOSE, KTOS, NOW, AEHR, PLTR — none held. Surge: none. CB: INACTIVE (daily +0.06% / weekly +0.27%). Regime: normal/BULLISH (SPY $748.41). Buying power: $84.62. Equity positions: 0. Account: $100.24. Peak: $101.68.
 
