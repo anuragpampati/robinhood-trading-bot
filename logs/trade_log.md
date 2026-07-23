@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-23T19:13:00Z
+- SUMMARY: Market OPEN (3:13 ET) — PANIC+bearish_ema (SPY RSI 28.2 < 30, below EMA200 $744.72). No buys: PANIC mode suppresses all individual buys; buying power $50.24 = only $0.24 above $50 buffer. PLTR: $122.18 (trail_stop $120.52 not hit, pnl -1.12%, hours_held 4.9h). No exit triggered (ATR stop not hit, no SELL signal, no take-profit). RSI SELL (conf≥2): XOM (80.6) — not held. Net-buy SELLs: MBLY, ORCL, UBER, AAPL, TSLA, CRWD, RIVN, SPY, QBTS — not held. No surge signals. CB: INACTIVE | daily 0.58% | weekly 0.75%. Regime: bearish_ema/PANIC. Positions: 1 (PLTR). Buying power: $50.24. Account: $99.66. Peak: $101.68.
+
+---
+
 ## 2026-07-23T18:11:52Z
 - SUMMARY: Market OPEN (2:11 ET). No trades — PANIC regime (SPY RSI 28.4 < 30, bearish_ema), all individual stock buys suppressed. Also $50.24 buying power leaves only $0.24 above $50 buffer — no buys possible regardless. RSI SELL (conf≥2): XOM (81.9), CVX (75.1) — not held. Net-buy SELL: AAPL, CRWD, RIVN, TSLA, WMT, MBLY, ORCL — not held. PLTR: $122.27 (trail_stop $120.52 OK, pnl -1.04%, hours_held 3.9h). No exit triggered. CB: INACTIVE | daily 0.53% | weekly 0.70%. Regime: bearish_ema/PANIC (SPY $737.19 < EMA200 $744.80, RSI 28.4). Positions: 1 (PLTR). Buying power: $50.24. Account: $99.71. Peak: $101.68.
 
