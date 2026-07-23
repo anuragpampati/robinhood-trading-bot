@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-23
+- Trades analysed: 9 closed (same as prior day — no new exits); 1 open (PLTR -0.21%, bearish_ema regime)
+- Win rate: 55.6% overall (normal: 55.6% — 5W/4L, avg_pnl +0.07%, avg_hold ~182h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- EMA-trend win rate: BULLISH entry 55.6% (9/9 closed trades); BEARISH entry n/a (0 closed — PLTR bearish entry still open)
+- Config changes: none — RSI_OVERSOLD: win_rate=55.6% in [40%,65%] range, NO_CHANGE (n=9≥5); MOMENTUM_VOL_MIN: no momentum entries (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold ~182h >> 2h, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 407/200 (READY — +6 new rows today; 19 states in Q-table)
+- Notes: No new exits today. PLTR entered 2026-07-23 at $123.53, bearish_ema regime, $50 position. Market in PANIC (SPY RSI <30) + bearish_ema most of the day. Account $100.14, peak $101.68. Buying power $50.24 (at buffer limit). RL exceeds 200 target — run: python -m strategy.rl_agent --train
+
 ## 2026-07-22
 - Trades analysed: 9 closed (RKLB +2.93%, SMCI +2.41%, GS -2.46%, DELL -6.01%, DKNG +0.71%, AUR -4.10%, WMT +5.28%, DIS -2.28%, JPM +4.13%); 0 open
 - Win rate: 55.6% overall (normal: 55.6% — 5W/4L, avg_pnl +0.07%, avg_hold ~182h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
