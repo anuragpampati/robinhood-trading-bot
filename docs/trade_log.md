@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-23T15:16:14Z
+- SUMMARY: Market OPEN (11:16 AM ET). No trades — PANIC regime (SPY RSI 28.4 < 30, below EMA200 $745.01) suppresses all individual stock buys; no surge signals. PLTR held: $121.31 (trail_stop $120.52 OK, take_profit $135.92, hours_held 0.98h — trail/signal exits need >=3h). RSI SELL: XOM (84.8), CVX (83.6) — NOT HELD. Net-buy SELL: MBLY, AAPL, CRWD, WMT — NOT HELD. CB: INACTIVE (daily -0.9% / weekly -1.1%). Regime: bearish_ema/PANIC (SPY $738.31 < EMA200 $745.01, RSI 28.4). Buying power: $50.24. Equity positions: 1 (PLTR). Account: $99.33. Peak: $101.68.
+
+---
+
 ## 2026-07-23T14:17:22Z
 - Action   : BUY PLTR
 - Price    : $123.53
