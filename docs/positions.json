@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-23T16:14:06Z",
+  "updated_at": "2026-07-23T17:12:00Z",
   "buying_power": 50.24,
   "market_regime": "bearish_ema",
-  "account_value": 99.41,
+  "account_value": 99.65,
   "peak_value": 101.68,
   "day_start_value": 100.24,
   "day_start_date": "2026-07-23",
@@ -13,9 +13,9 @@
       "ticker": "PLTR",
       "quantity": 0.404663,
       "avg_cost": 123.56,
-      "current_price": 121.52,
-      "pnl_pct": -0.0165,
-      "value": 49.17,
+      "current_price": 122.10,
+      "pnl_pct": -0.0118,
+      "value": 49.41,
       "entry_atr_pct": 0.0122,
       "entry_time": "2026-07-23T14:17:22Z",
       "trail_stop": 120.52,
@@ -25,11 +25,12 @@
     }
   ],
   "last_actions": [
-    "No trades — PANIC regime (SPY RSI 27.8 < 30, bearish_ema). All individual stock buys suppressed.",
-    "PLTR: $121.52 (trail_stop $120.52 OK, pnl -1.65%, hours_held 1.92h <3). No exit triggered.",
-    "RSI SELL: XOM (84.3), MRCY (70.6) — not held. Net-buy SELL: MBLY, AAPL, CRWD, ORCL, SHOP — not held.",
-    "Circuit breaker: INACTIVE | daily 0.8% | weekly 1.0%.",
-    "Regime: bearish_ema/PANIC (SPY $738.67 < EMA200 $744.94, RSI 27.8).",
-    "Positions: 1 (PLTR). Buying power: $50.24. Account: $99.41. Peak: $101.68."
+    "No trades — bearish_ema regime requires 3/3 confidence. NOW (conf 2/3) and ISRG (conf 2/3) skipped.",
+    "Buying power $50.24 only $0.24 above $50 buffer — no buys possible.",
+    "PLTR: $122.10 (trail_stop $120.52 OK, pnl -1.18%, hours_held ~2.9h <3h). No exit triggered.",
+    "Panic lifted: SPY RSI 30.6 (was 27.8). Still bearish_ema regime.",
+    "RSI SELL: XOM (81.0), MRCY (71.4) — not held. Net-buy SELL: MBLY, AAPL, CRWD — not held.",
+    "Circuit breaker: INACTIVE | daily 0.56% | weekly 0.73%.",
+    "Regime: bearish_ema (SPY $738.63 < EMA200 $744.87). Positions: 1 (PLTR). Buying power: $50.24. Account: $99.65. Peak: $101.68."
   ]
 }

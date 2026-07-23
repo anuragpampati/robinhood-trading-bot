@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-23T17:12:00Z
+- SUMMARY: Market OPEN (13:12 ET). No trades — bearish_ema regime requires 3/3 confidence; RSI BUY candidates NOW (conf 2/3) and ISRG (conf 2/3) fail regime filter. Buying power $50.24 = only $0.24 above $50 buffer (insufficient for $15 min order). PLTR held: $122.10 > trail_stop $120.52, hours_held ~2.9h (<3h for ATR/signal exits). Panic lifted (SPY RSI 30.6 vs 27.8 prev). RSI SELL: XOM (81.0), MRCY (71.4) — not held. Net-buy SELL: MBLY, AAPL, CRWD — not held. No surge signals. CB: INACTIVE | daily 0.56% | weekly 0.73%. Regime: bearish_ema (SPY $738.63 < EMA200 $744.87). Positions: 1 (PLTR). Buying power: $50.24. Account: $99.65. Peak: $101.68.
+
+---
+
 ## 2026-07-23T16:14:06Z
 - SUMMARY: Market OPEN (12:14 ET). No trades — PANIC regime (SPY RSI 27.8 < 30, bearish_ema), all individual stock buys suppressed. RSI SELL (conf≥2): XOM (84.3), MRCY (70.6) — not held. Net-buy SELL: MBLY, AAPL, CRWD, ORCL, SHOP — not held. No BUY signals. No surge signals. PLTR: $121.52 (trail_stop $120.52 OK, pnl -1.65%, hours_held 1.92h <3). CB: INACTIVE | daily 0.8% | weekly 1.0%. Regime: bearish_ema/PANIC (SPY $738.67 < EMA200 $744.94, RSI 27.8). Positions: 1 (PLTR). Buying power: $50.24. Account: $99.41. Peak: $101.68.
 
