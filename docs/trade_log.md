@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-07-24T16:12:01Z
+- Action   : SELL PLTR
+- Price    : $123.66
+- Amount   : $50.04 | Shares: 0.404663
+- RSI      : 35.0 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $120.52 | Target: $135.92
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : Net buy reversed (1.30M → 0.04M) | OBV -4.0M/day | 25.9h held ≥ 3h → signal sell (rule c)
+
+---
+
+## 2026-07-24T16:12:30Z
+- SUMMARY: Market OPEN (12:12 PM ET). SOLD PLTR @ $123.66 (net buy reversed, 25.9h held). No new buys — bearish_ema requires 3/3 conf; best signals AMZN RSI BUY 2/3 (also net-buy SELL), MRNA RSI BUY 2/3, TXN net-buy only — none qualify. Regime: bearish_ema (SPY $743.00 < EMA200 $744.63). CB: INACTIVE | daily +0.39% | weekly -0.13%. Buying power: ~$100.28 (post-sell). Equity positions: 0. Account: $100.28. Peak: $101.68.
+
+---
+
 ## 2026-07-24T14:14:54Z
 - SUMMARY: Market OPEN (10:14 AM ET). No trades placed. Buying power $50.24 — only $0.24 above $50 buffer (min order $15, no buys possible). Regime: bearish_ema (SPY $738.24 < EMA200 $744.68). PLTR: $122.63 (trail_stop $120.52 OK, pnl -0.75%, hours_held ~24.0h). No exit triggered (above trail_stop, no SELL signal, no take-profit). RSI BUY signals (9 tickers, all 2/3 conf — excluded by bearish_ema 3/3 requirement): CRM, AMZN, GOOGL, META, TSLA, MRNA, DIS, SHOP. UBER: 2/3 RSI BUY + RL BOOST→3/3 (rl_confidence 0.952) — buying power insufficient ($0.24 available after buffer). Net-buy SELLs: ORCL, CRWD, MBLY, TSLA, SHOP, GOOGL, RIVN, AAPL, UBER — none held. No surge signals. CB: INACTIVE | daily 0.00% (new day reset) | weekly 0.52%. Positions: 1 (PLTR). Buying power: $50.24. Account: $99.89. Peak: $101.68.
 
