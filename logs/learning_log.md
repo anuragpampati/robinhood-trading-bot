@@ -69,3 +69,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
 - RL samples: 395/200 (READY — +3 new rows today; 19 states in Q-table)
 - Notes: JPM now +3.64% @ $345.15, trail $334.69, TP $366.32. Regime: normal/BULLISH. All buys blocked today by cash buffer ($84.62 buying power — after JPM position only $34.62 available above $50 buffer). Account $100.17. Peak $101.68. Log trimmed to 7 entries. RL well past 200 — run python -m strategy.rl_agent --train to activate Q-agent.
+
+## 2026-07-24
+- Trades analysed: 2 closed in trimmed log (JPM +4.1% BULLISH EMA/signal-sell; PLTR +0.105% BEARISH EMA/signal-sell)
+- Win rate: 100% in-log (normal: 100% — 2W/0L; momentum: n/a — 0 trades; surge: n/a — 0 trades) — note: insufficient n for statistical significance
+- Config changes: none — RSI_OVERSOLD: n=2 < 5 (need ≥5), NO_CHANGE; MOMENTUM_VOL_MIN: n=0 momentum trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_pnl > 0 (wins), rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 412/200 (READY — +5 new rows today; 19 states in Q-table)
+- Notes: Account $100.28, 0 open positions, regime bearish_ema (SPY $738.85 < EMA200 $744.44). Log trimmed to 9/15 entries. RL exceeds 200 target by 212 — Q-agent training recommended.
