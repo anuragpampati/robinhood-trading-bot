@@ -4,11 +4,6 @@
 
 ---
 
-## 2026-07-24T17:12:00Z
-- SUMMARY: Market open (13:10 ET). No trades executed. Regime: bearish_ema (SPY $741.46 < EMA200 $744.59). Buying power: $50.24 (unsettled ~$50.04 from PLTR sell T+2) — $0.24 available after $50 buffer (below $15 min). TXN net-buy signal fails regime filter (RSI conf 0/3, need 3/3). AAPL 25.2% intraday surge — surge_tracker count=1 (need ≥2 for entry). No positions to sell. CB: INACTIVE | daily +0.39% | weekly −0.13%. Account: $100.28. Peak: $101.68.
-
----
-
 ## 2026-07-24T16:12:01Z
 - Action   : SELL PLTR
 - Price    : $123.66
