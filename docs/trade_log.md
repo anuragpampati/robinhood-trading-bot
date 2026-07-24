@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-24T19:12:21Z
+- SUMMARY: Market OPEN (15:12 ET). No trades placed. Regime: bearish_ema (SPY $738.38 < EMA200 $744.50) — requires 3/3 conf for buys. RSI BUY signals: HOOD (2/3), MRNA (2/3) — both fail bearish_ema 3/3 rule AND buying power $50.24 is $0.24 above $50 buffer (below $15 min order). Net-buy SELLs: MBLY, META, MCD, AMZN, ALAB, SBUX, ISRG, AI, PYPL, IREN — none held. RSI SELLs: JNJ, EQIX — not held. Surge signals: none. CB: INACTIVE | daily +0.39% | weekly -0.13%. Positions: 0. Account: $100.28. Peak: $101.68.
+
+---
+
 ## 2026-07-24T18:12:06Z
 - SUMMARY: Market OPEN (14:12 ET). No trades placed. Regime: bearish_ema (SPY $740.98 < EMA200 $744.56) — requires 3/3 conf for buys. RSI BUY signals: TSLA (2/3, RL=HOLD), RIVN (2/3, RL=HOLD), MRNA (2/3, RL=HOLD) — all fail 3/3 regime requirement. Buying power: $50.24 ($0.24 above $50 buffer — below $15 min order). Net-buy SELLs: MCD, SBUX, META, AMZN, ISRG, AI, PYPL — none held. RSI SELLs: JPM, EQIX — not held. Surge signals: none. CB: INACTIVE | daily -0.39% (gain) | weekly +0.13%. Positions: 0. Account: $100.28. Peak: $101.68.
 
