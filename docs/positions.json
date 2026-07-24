@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-07-23T20:10:31Z",
+  "updated_at": "2026-07-24T14:14:54Z",
   "buying_power": 50.24,
   "market_regime": "bearish_ema",
-  "account_value": 100.14,
+  "account_value": 99.89,
   "peak_value": 101.68,
-  "day_start_value": 100.24,
-  "day_start_date": "2026-07-23",
+  "day_start_value": 99.89,
+  "day_start_date": "2026-07-24",
   "week_start_value": 100.41,
-  "week_start_date": "2026-07-14",
+  "week_start_date": "2026-07-21",
   "positions": [
     {
       "ticker": "PLTR",
       "quantity": 0.404663,
       "avg_cost": 123.56,
-      "current_price": 123.30,
-      "pnl_pct": -0.0021,
-      "value": 49.90,
+      "current_price": 122.63,
+      "pnl_pct": -0.0075,
+      "value": 49.65,
       "entry_atr_pct": 0.0122,
       "entry_time": "2026-07-23T14:17:22Z",
       "trail_stop": 120.52,
@@ -25,10 +25,10 @@
     }
   ],
   "last_actions": [
-    "Market CLOSED (after hours). SPY $738.24 RSI 32.8 — bearish_ema, PANIC lifted (RSI ≥ 30).",
-    "PLTR: $123.30 (trail_stop $120.52, pnl -0.21%, hours_held ~5.9h). No exit triggered. Trail_stop unchanged.",
-    "CB: INACTIVE | daily 0.10% | weekly 0.27%.",
-    "RSI BUYs (deferred, market closed): CRM, AMZN, GOOGL, META, TSLA, MRNA, DIS, TGT, UBER, SHOP. Net-buy BUY: JPM.",
-    "Regime: bearish_ema (SPY $738.24 < EMA200 $744.65). Positions: 1 (PLTR). Buying power: $50.24. Account: $100.14. Peak: $101.68."
+    "Market OPEN (10:14 AM ET). No trades — buying power $50.24 leaves only $0.24 above $50 buffer.",
+    "PLTR: $122.63 (trail_stop $120.52 OK, pnl -0.75%, hours_held ~24.0h). No exit triggered.",
+    "RSI BUY signals (2/3 conf) excluded: bearish_ema requires 3/3. UBER boosted to 3/3 by RL but buying power insufficient.",
+    "Net-buy SELLs: ORCL, CRWD, MBLY, TSLA, SHOP, GOOGL, RIVN, AAPL, UBER — none held.",
+    "CB: INACTIVE | daily 0.00% | weekly 0.52%. Regime: bearish_ema (SPY $738.24 < EMA200 $744.68). Account: $99.89. Peak: $101.68."
   ]
 }

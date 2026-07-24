@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-24T14:14:54Z
+- SUMMARY: Market OPEN (10:14 AM ET). No trades placed. Buying power $50.24 — only $0.24 above $50 buffer (min order $15, no buys possible). Regime: bearish_ema (SPY $738.24 < EMA200 $744.68). PLTR: $122.63 (trail_stop $120.52 OK, pnl -0.75%, hours_held ~24.0h). No exit triggered (above trail_stop, no SELL signal, no take-profit). RSI BUY signals (9 tickers, all 2/3 conf — excluded by bearish_ema 3/3 requirement): CRM, AMZN, GOOGL, META, TSLA, MRNA, DIS, SHOP. UBER: 2/3 RSI BUY + RL BOOST→3/3 (rl_confidence 0.952) — buying power insufficient ($0.24 available after buffer). Net-buy SELLs: ORCL, CRWD, MBLY, TSLA, SHOP, GOOGL, RIVN, AAPL, UBER — none held. No surge signals. CB: INACTIVE | daily 0.00% (new day reset) | weekly 0.52%. Positions: 1 (PLTR). Buying power: $50.24. Account: $99.89. Peak: $101.68.
+
+---
+
 ## 2026-07-23T20:10:31Z
 - SUMMARY: Market CLOSED (after hours, ~4:10 PM ET). No trades. SPY $738.24 (RSI 32.8, EMA BEARISH — below EMA200 $744.65). Regime: bearish_ema (RSI 32.8 ≥ 30 — PANIC mode lifted). RSI BUY candidates (deferred — market closed): CRM, AMZN, GOOGL, META, TSLA, MRNA, DIS, TGT, UBER, SHOP (conf 2/3 each). Net-buy BUY: JPM. Net-buy SELLs: ORCL, TSLA, GOOGL, SHOP, AAPL, RIVN, MBLY, CRWD, UBER, QBTS — none held. PLTR: $123.30 (trail_stop $120.52 OK, pnl -0.21%, hours_held ~5.9h). No exit triggered (above trail_stop, no SELL signal, no take-profit). Trail_stop unchanged (pnl < 2.5%). CB: INACTIVE | daily 0.10% | weekly 0.27%. Positions: 1 (PLTR). Buying power: $50.24. Account: $100.14. Peak: $101.68.
 
