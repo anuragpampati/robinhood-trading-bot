@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-24T14:14:54Z",
+  "updated_at": "2026-07-24T15:14:48Z",
   "buying_power": 50.24,
   "market_regime": "bearish_ema",
-  "account_value": 99.89,
+  "account_value": 100.49,
   "peak_value": 101.68,
   "day_start_value": 99.89,
   "day_start_date": "2026-07-24",
@@ -13,9 +13,9 @@
       "ticker": "PLTR",
       "quantity": 0.404663,
       "avg_cost": 123.56,
-      "current_price": 122.63,
-      "pnl_pct": -0.0075,
-      "value": 49.65,
+      "current_price": 124.195,
+      "pnl_pct": 0.0051,
+      "value": 50.26,
       "entry_atr_pct": 0.0122,
       "entry_time": "2026-07-23T14:17:22Z",
       "trail_stop": 120.52,
@@ -25,10 +25,9 @@
     }
   ],
   "last_actions": [
-    "Market OPEN (10:14 AM ET). No trades — buying power $50.24 leaves only $0.24 above $50 buffer.",
-    "PLTR: $122.63 (trail_stop $120.52 OK, pnl -0.75%, hours_held ~24.0h). No exit triggered.",
-    "RSI BUY signals (2/3 conf) excluded: bearish_ema requires 3/3. UBER boosted to 3/3 by RL but buying power insufficient.",
-    "Net-buy SELLs: ORCL, CRWD, MBLY, TSLA, SHOP, GOOGL, RIVN, AAPL, UBER — none held.",
-    "CB: INACTIVE | daily 0.00% | weekly 0.52%. Regime: bearish_ema (SPY $738.24 < EMA200 $744.68). Account: $99.89. Peak: $101.68."
+    "Market OPEN (11:14 AM ET). No trades — bearish_ema requires 3/3 conf; AMZN/GOOGL BUY at 2/3 (RL=HOLD, no boost). Buying power $50.24 insufficient ($50 buffer required).",
+    "PLTR: $124.20 (trail_stop $120.52 OK, pnl +0.51%, ~25h held). No exit triggered.",
+    "RSI SELLs (conf 2/3): JPM, JNJ, XOM, CVX, EQIX — none held. Net-buy SELLs: SBUX, AI, PYPL, ISRG, AMZN, META — none held.",
+    "No surge signals. CB: INACTIVE | daily -0.60% (gain) | weekly -0.08% (gain). Regime: bearish_ema (SPY $740.59 < EMA200 $744.64). Account: $100.49. Peak: $101.68."
   ]
 }

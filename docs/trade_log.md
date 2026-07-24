@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-24T15:14:48Z
+- SUMMARY: Market OPEN (11:14 AM ET). No trades — bearish_ema regime requires 3/3 confidence; best BUY signals (AMZN RSI 25.6, GOOGL RSI 23.8) are 2/3 with RL=HOLD. Buying power $50.24 insufficient for any new position ($50 buffer required). PLTR: $124.20 (trail_stop $120.52 OK, pnl +0.51%, ~25h held). No exits triggered. RSI SELLs (conf 2/3): JPM, JNJ, XOM, CVX, EQIX — none held. Net-buy SELLs: SBUX, AI, PYPL, ISRG, AMZN, META — none held. No surge signals. CB: INACTIVE | daily -0.60% (gain) | weekly -0.08% (gain). Regime: bearish_ema (SPY $740.59 < EMA200 $744.64). Positions: 1 (PLTR). Account: $100.49. Peak: $101.68.
+
+---
+
 ## 2026-07-23T20:10:31Z
 - SUMMARY: Market CLOSED (after hours, ~4:10 PM ET). No trades. SPY $738.24 (RSI 32.8, EMA BEARISH — below EMA200 $744.65). Regime: bearish_ema (RSI 32.8 ≥ 30 — PANIC mode lifted). RSI BUY candidates (deferred — market closed): CRM, AMZN, GOOGL, META, TSLA, MRNA, DIS, TGT, UBER, SHOP (conf 2/3 each). Net-buy BUY: JPM. Net-buy SELLs: ORCL, TSLA, GOOGL, SHOP, AAPL, RIVN, MBLY, CRWD, UBER, QBTS — none held. PLTR: $123.30 (trail_stop $120.52 OK, pnl -0.21%, hours_held ~5.9h). No exit triggered (above trail_stop, no SELL signal, no take-profit). Trail_stop unchanged (pnl < 2.5%). CB: INACTIVE | daily 0.10% | weekly 0.27%. Positions: 1 (PLTR). Buying power: $50.24. Account: $100.14. Peak: $101.68.
 
