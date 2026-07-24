@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T19:12:21Z",
+  "updated_at": "2026-07-24T20:13:07Z",
   "buying_power": 50.24,
   "market_regime": "bearish_ema",
   "account_value": 100.28,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-21",
   "positions": [],
   "last_actions": [
-    "No trades — bearish_ema regime requires 3/3 conf; RSI BUY signals HOOD (2/3) and MRNA (2/3) both excluded. Buying power $50.24 ($0.24 above $50 buffer, below $15 min).",
-    "RSI BUY: HOOD (RSI 29.7, 2/3, BB BELOW_BAND), MRNA (RSI 20.1, 2/3, BB BELOW_BAND) — both excluded by bearish_ema 3/3 rule.",
-    "Net-buy SELLs: MBLY, META, MCD, AMZN, ALAB, SBUX, ISRG, AI, PYPL, IREN — not held. RSI SELLs: JNJ (72.8), EQIX (72.8) — not held.",
-    "Surge signals: none. Surge tracker empty.",
-    "CB: INACTIVE | daily +0.39% | weekly -0.13%. Regime: bearish_ema (SPY $738.38 < EMA200 $744.50). Account: $100.28. Peak: $101.68."
+    "Market CLOSED — no trades placed.",
+    "Regime: bearish_ema (SPY $738.85 < EMA200 $744.44). Max position $50, requires 3/3 confidence.",
+    "RSI BUY: MRNA (2/3, RSI 19.2), RIVN (2/3, RSI 29.7) — both excluded by bearish_ema 3/3 rule.",
+    "RSI SELL: JPM (overbought 71.5), JNJ (overbought 73.1) — not held. Net-buy SELLs: MBLY, UBER, ALAB, MSFT, PLTR, MCD, META, AI, SBUX, AMZN — not held.",
+    "CB: INACTIVE | daily UP +0.39% | weekly -0.13%. Account: $100.28. Peak: $101.68."
   ]
 }
