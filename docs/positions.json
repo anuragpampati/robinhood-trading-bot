@@ -1,33 +1,18 @@
 {
-  "updated_at": "2026-07-24T15:14:48Z",
-  "buying_power": 50.24,
+  "updated_at": "2026-07-24T16:12:30Z",
+  "buying_power": 100.28,
   "market_regime": "bearish_ema",
-  "account_value": 100.49,
+  "account_value": 100.28,
   "peak_value": 101.68,
   "day_start_value": 99.89,
   "day_start_date": "2026-07-24",
   "week_start_value": 100.41,
   "week_start_date": "2026-07-21",
-  "positions": [
-    {
-      "ticker": "PLTR",
-      "quantity": 0.404663,
-      "avg_cost": 123.56,
-      "current_price": 124.195,
-      "pnl_pct": 0.0051,
-      "value": 50.26,
-      "entry_atr_pct": 0.0122,
-      "entry_time": "2026-07-23T14:17:22Z",
-      "trail_stop": 120.52,
-      "take_profit": 135.92,
-      "strategy": "normal",
-      "sell_date": null
-    }
-  ],
+  "positions": [],
   "last_actions": [
-    "Market OPEN (11:14 AM ET). No trades — bearish_ema requires 3/3 conf; AMZN/GOOGL BUY at 2/3 (RL=HOLD, no boost). Buying power $50.24 insufficient ($50 buffer required).",
-    "PLTR: $124.20 (trail_stop $120.52 OK, pnl +0.51%, ~25h held). No exit triggered.",
-    "RSI SELLs (conf 2/3): JPM, JNJ, XOM, CVX, EQIX — none held. Net-buy SELLs: SBUX, AI, PYPL, ISRG, AMZN, META — none held.",
-    "No surge signals. CB: INACTIVE | daily -0.60% (gain) | weekly -0.08% (gain). Regime: bearish_ema (SPY $740.59 < EMA200 $744.64). Account: $100.49. Peak: $101.68."
+    "SOLD PLTR @ $123.66 (0.404663 shares, ~$50.04). Net buy reversed 1.30M→0.04M | OBV -4.0M/day | 25.9h held ≥ 3h (rule c signal sell). Order ID: 6a638ed1-41a3-4a6f-ae4e-70742bc67e95.",
+    "No new buys — bearish_ema regime requires 3/3 conf; best signals AMZN/MRNA at 2/3 RSI only. Buying power ~$100.28 post-sell.",
+    "RSI SELLs (conf 2/3): JPM, EQIX — not held. Net-buy SELLs: PLTR (held, sold), META, SBUX, AMZN, AI, PYPL, ISRG — not held.",
+    "No surge signals. CB: INACTIVE | daily +0.39% | weekly -0.13%. Regime: bearish_ema (SPY $743.00 < EMA200 $744.63). Account: $100.28. Peak: $101.68."
   ]
 }
