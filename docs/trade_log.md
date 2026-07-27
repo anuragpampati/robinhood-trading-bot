@@ -4,8 +4,16 @@
 
 ---
 
-## 2026-07-27T19:14:10Z
-- SUMMARY: Market OPEN (3:14 PM ET). No sells — AMD: +1.3% ($488.95), stop=$457.71, <3h held (0.9h). No buys — ASML RSI BUY (2/3) fails bearish_ema 3/3 requirement; buying_power $50.28 insufficient (<$50 buffer after any $50 buy). Surge tracker cleared (MRCY, ISRG no longer in 10%+ surge). CB: INACTIVE | daily −0.9% (acct UP) | weekly −0.9%. Buying power: $50.28. Equity positions: 1. Regime: bearish_ema. Account: $101.17.
+## 2026-07-27T18:16:17Z
+- Action   : BUY AMD
+- Price    : $482.31
+- Amount   : $50.00 | Shares: 0.10366
+- RSI      : 26.8 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=1.0 | BOOST (2/3 → 3/3)
+- Stop     : $457.71 | Target: $530.54
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : RSI oversold+stabilizing (28.0≈26.8) | BB reversal: -0.03→0.04 (returning from band) | RL BOOST applied
 
 ---
 
