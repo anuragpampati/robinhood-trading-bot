@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-27T16:20:00Z
+- SUMMARY: Market OPEN (12:20 PM ET). No trades placed. Regime: bearish_ema (SPY $737.49 < EMA200 $744.38). RSI BUY signals: CVX (2/3) — excluded (bearish_ema requires 3/3). RSI SELLs: AAPL (RSI 70.5), CRM (RSI 70.9), JNJ (RSI 79.3) — not held. Net-buy SELLs: AMKR, GS, HOOD, C, ASML, TGT, SYM, WFC, SHOP, NOW — not held. Net-buy BUYs: none. Surge signals: none. CB: INACTIVE | daily 0.0% | weekly 0.0%. Buying power: $100.28. Equity positions: 0. Account: $100.28. Peak: $101.68.
+
+---
+
 ## 2026-07-27T15:21:29Z
 - SUMMARY: Market OPEN (11:21 AM ET). No trades placed — regime bearish_ema requires 3/3 confidence for buys; no qualifying signals. RSI SELLs (2/3, not held): AAPL (RSI 74.3 overbought), JPM (RSI 76.5 overbought), JNJ (RSI 79.7 overbought), GM (RSI 70.4 overbought). Net-buy BUY signals: none. Net-buy SELLs (not held): HOOD, AMKR, GEV, GS, TGT, CRM, NOW, SHOP, SYM. Surge signals: none. CB: INACTIVE | daily 0.00% | weekly 0.00%. Buying power: $100.28. Equity positions: 0. Regime: bearish_ema (SPY $739.69 < EMA200 $744.45). Account: $100.28. Peak: $101.68.
 

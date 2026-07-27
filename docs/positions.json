@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T15:21:29Z",
+  "updated_at": "2026-07-27T16:20:00Z",
   "buying_power": 100.28,
   "market_regime": "bearish_ema",
   "account_value": 100.28,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market OPEN (11:21 AM ET) — no trades placed. Regime: bearish_ema (SPY $739.69 < EMA200 $744.45).",
-    "RSI SELLs (2/3, not held): AAPL (RSI 74.3), JPM (RSI 76.5), JNJ (RSI 79.7), GM (RSI 70.4).",
-    "Net-buy SELLs (not held): HOOD, AMKR, GEV, GS, TGT, CRM, NOW, SHOP, SYM. Net-buy BUY signals: none. Surge: none.",
-    "CB: INACTIVE | daily 0.00% | weekly 0.00%. Regime requires 3/3 confidence for buys — no qualifying signals.",
-    "Account: $100.28. Peak: $101.68."
+    "Market OPEN (12:20 PM ET) — no trades placed. Regime: bearish_ema (SPY $737.49 < EMA200 $744.38).",
+    "RSI BUY: CVX (2/3) — excluded (bearish_ema regime requires 3/3 confidence).",
+    "RSI SELLs (not held): AAPL (RSI 70.5), CRM (RSI 70.9), JNJ (RSI 79.3).",
+    "Net-buy SELLs (not held): AMKR, GS, HOOD, C, ASML, TGT, SYM, WFC, SHOP, NOW. Net-buy BUYs: none. Surge: none.",
+    "CB: INACTIVE | daily 0.0% | weekly 0.0%. Account: $100.28. Peak: $101.68."
   ]
 }
