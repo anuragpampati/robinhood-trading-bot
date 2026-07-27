@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-27T19:14:10Z
+- SUMMARY: Market OPEN (3:14 PM ET). No sells — AMD: +1.3% ($488.95), stop=$457.71, <3h held (0.9h). No buys — ASML RSI BUY (2/3) fails bearish_ema 3/3 requirement; buying_power $50.28 insufficient (<$50 buffer after any $50 buy). Surge tracker cleared (MRCY, ISRG no longer in 10%+ surge). CB: INACTIVE | daily −0.9% (acct UP) | weekly −0.9%. Buying power: $50.28. Equity positions: 1. Regime: bearish_ema. Account: $101.17.
+
+---
+
 ## 2026-07-27T17:14:28Z
 - SUMMARY: Market OPEN (1:14 PM ET). No trades placed. Regime: bearish_ema (SPY $737.06 < EMA200 $744.31). RSI BUY: INTC (2/3, RSI 23.8, RL HOLD 0.886) — excluded (bearish_ema requires 3/3 confidence). RSI SELLs (not held): CRM (RSI 72.6), JNJ (RSI 79.0), GM (RSI 70.4), NOW (RSI 72.2). Net-buy SELLs (not held): GS, AMKR, C, HOOD, TGT, ASML, ONDS, NVDA, WFC, MU. Net-buy BUYs: none. Surge tracker: DIS count=1 buy-vol surge (needs count≥2 for intraday_surge entry). CB: INACTIVE | daily 0.0% | weekly 0.0%. Buying power: $100.28. Equity positions: 0. Account: $100.28. Peak: $101.68.
 
