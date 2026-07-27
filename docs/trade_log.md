@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-27T17:14:28Z
+- SUMMARY: Market OPEN (1:14 PM ET). No trades placed. Regime: bearish_ema (SPY $737.06 < EMA200 $744.31). RSI BUY: INTC (2/3, RSI 23.8, RL HOLD 0.886) — excluded (bearish_ema requires 3/3 confidence). RSI SELLs (not held): CRM (RSI 72.6), JNJ (RSI 79.0), GM (RSI 70.4), NOW (RSI 72.2). Net-buy SELLs (not held): GS, AMKR, C, HOOD, TGT, ASML, ONDS, NVDA, WFC, MU. Net-buy BUYs: none. Surge tracker: DIS count=1 buy-vol surge (needs count≥2 for intraday_surge entry). CB: INACTIVE | daily 0.0% | weekly 0.0%. Buying power: $100.28. Equity positions: 0. Account: $100.28. Peak: $101.68.
+
+---
+
 ## 2026-07-27T16:20:00Z
 - SUMMARY: Market OPEN (12:20 PM ET). No trades placed. Regime: bearish_ema (SPY $737.49 < EMA200 $744.38). RSI BUY signals: CVX (2/3) — excluded (bearish_ema requires 3/3). RSI SELLs: AAPL (RSI 70.5), CRM (RSI 70.9), JNJ (RSI 79.3) — not held. Net-buy SELLs: AMKR, GS, HOOD, C, ASML, TGT, SYM, WFC, SHOP, NOW — not held. Net-buy BUYs: none. Surge signals: none. CB: INACTIVE | daily 0.0% | weekly 0.0%. Buying power: $100.28. Equity positions: 0. Account: $100.28. Peak: $101.68.
 
