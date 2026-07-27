@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-27T20:15:53Z
+- SUMMARY: Market closed. Buying power: $50.28. Equity positions: 1 (AMD). Regime: bearish_ema. Account: $101.58.
+- AMD: $495.07 (+2.6% from avg $482.48), trail_stop ratcheted $457.71→$484.89 (profit≥2.5%).
+- Signals: BUY [NVDA RSI=29.1 conf=2, LITE RSI=28.1 conf=2] — not executed (market closed).
+- Net-sell: [GS, NVDA, CRM, SOUN, NOW, HOOD, GOOGL] — none held.
+- Surge: [RGTI, MCD] — not actioned (market closed).
+- CB: INACTIVE | daily +1.3% | weekly +1.3%
+
+---
+
 ## 2026-07-27T18:16:17Z
 - Action   : BUY AMD
 - Price    : $482.31
