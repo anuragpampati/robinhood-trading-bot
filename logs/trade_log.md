@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-27T18:16:17Z
+- Action   : BUY AMD
+- Price    : $482.31
+- Amount   : $50.00 | Shares: 0.10366
+- RSI      : 26.8 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=1.0 | BOOST (2/3 → 3/3)
+- Stop     : $457.71 | Target: $530.54
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : RSI oversold+stabilizing (28.0≈26.8) | BB reversal: -0.03→0.04 (returning from band) | RL BOOST applied
+
+---
+
 ## 2026-07-27T17:14:28Z
 - SUMMARY: Market OPEN (1:14 PM ET). No trades placed. Regime: bearish_ema (SPY $737.06 < EMA200 $744.31). RSI BUY: INTC (2/3, RSI 23.8, RL HOLD 0.886) — excluded (bearish_ema requires 3/3 confidence). RSI SELLs (not held): CRM (RSI 72.6), JNJ (RSI 79.0), GM (RSI 70.4), NOW (RSI 72.2). Net-buy SELLs (not held): GS, AMKR, C, HOOD, TGT, ASML, ONDS, NVDA, WFC, MU. Net-buy BUYs: none. Surge tracker: DIS count=1 buy-vol surge (needs count≥2 for intraday_surge entry). CB: INACTIVE | daily 0.0% | weekly 0.0%. Buying power: $100.28. Equity positions: 0. Account: $100.28. Peak: $101.68.
 
