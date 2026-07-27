@@ -4,6 +4,11 @@
 
 ---
 
+## 2026-07-27T15:21:29Z
+- SUMMARY: Market OPEN (11:21 AM ET). No trades placed — regime bearish_ema requires 3/3 confidence for buys; no qualifying signals. RSI SELLs (2/3, not held): AAPL (RSI 74.3 overbought), JPM (RSI 76.5 overbought), JNJ (RSI 79.7 overbought), GM (RSI 70.4 overbought). Net-buy BUY signals: none. Net-buy SELLs (not held): HOOD, AMKR, GEV, GS, TGT, CRM, NOW, SHOP, SYM. Surge signals: none. CB: INACTIVE | daily 0.00% | weekly 0.00%. Buying power: $100.28. Equity positions: 0. Regime: bearish_ema (SPY $739.69 < EMA200 $744.45). Account: $100.28. Peak: $101.68.
+
+---
+
 ## 2026-07-27T14:21:39Z
 - SUMMARY: Market OPEN (10:21 AM ET). No trades placed — regime bearish_ema requires 3/3 confidence for all buys. RSI BUY: RIVN (2/3, RSI 29.5, RL HOLD 0.919), MRNA (2/3, RSI 20.3, RL HOLD 0.886) — both excluded (bearish_ema 3/3 rule). RSI SELL: JPM (2/3, overbought 70.9), JNJ (2/3, overbought 72.8) — not held. Net-buy BUY: JNJ — conflicts with RSI SELL, skip. Net-buy SELLs: MBLY, UBER, MSFT, ALAB, PLTR, META, MCD, AI, SBUX, AMZN — not held. Surge signals: none. CB: INACTIVE | daily 0.00% | weekly 0.00% (new week reset — Monday 2026-07-27). Buying power: $100.28. Equity positions: 0. Regime: bearish_ema (SPY $738.85 < EMA200 $744.50). Account: $100.28. Peak: $101.68.
 
