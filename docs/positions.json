@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-07-24T20:13:07Z",
-  "buying_power": 50.24,
+  "updated_at": "2026-07-27T14:21:39Z",
+  "buying_power": 100.28,
   "market_regime": "bearish_ema",
   "account_value": 100.28,
   "peak_value": 101.68,
-  "day_start_value": 99.89,
-  "day_start_date": "2026-07-24",
-  "week_start_value": 100.41,
-  "week_start_date": "2026-07-21",
+  "day_start_value": 100.28,
+  "day_start_date": "2026-07-27",
+  "week_start_value": 100.28,
+  "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market CLOSED — no trades placed.",
-    "Regime: bearish_ema (SPY $738.85 < EMA200 $744.44). Max position $50, requires 3/3 confidence.",
-    "RSI BUY: MRNA (2/3, RSI 19.2), RIVN (2/3, RSI 29.7) — both excluded by bearish_ema 3/3 rule.",
-    "RSI SELL: JPM (overbought 71.5), JNJ (overbought 73.1) — not held. Net-buy SELLs: MBLY, UBER, ALAB, MSFT, PLTR, MCD, META, AI, SBUX, AMZN — not held.",
-    "CB: INACTIVE | daily UP +0.39% | weekly -0.13%. Account: $100.28. Peak: $101.68."
+    "Market OPEN (10:21 AM ET) — no trades placed. Regime: bearish_ema (SPY $738.85 < EMA200 $744.50).",
+    "RSI BUY: RIVN (2/3, RSI 29.5, RL HOLD 0.919), MRNA (2/3, RSI 20.3, RL HOLD 0.886) — both excluded (bearish_ema requires 3/3 confidence).",
+    "RSI SELL: JPM (2/3, overbought 70.9), JNJ (2/3, overbought 72.8) — not held. Net-buy BUY: JNJ — RSI SELL conflicts, skip.",
+    "Net-buy SELLs: MBLY, UBER, MSFT, ALAB, PLTR, META, MCD, AI, SBUX, AMZN — not held. Surge signals: none.",
+    "CB: INACTIVE | daily 0.00% | weekly 0.00% (new week reset — Monday 2026-07-27). Account: $100.28. Peak: $101.68."
   ]
 }
