@@ -77,3 +77,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
 - RL samples: 412/200 (READY — +5 new rows today; 19 states in Q-table)
 - Notes: Account $100.28, 0 open positions, regime bearish_ema (SPY $738.85 < EMA200 $744.44). Log trimmed to 9/15 entries. RL exceeds 200 target by 212 — Q-agent training recommended.
+
+## 2026-07-27
+- Trades analysed: 1 closed in trimmed log (PLTR +0.105% normal/BEARISH EMA/signal-sell — net buy reversed at 25.9h)
+- Win rate: 100% in-log (1W/0L) — insufficient n for statistical significance (n<5 normal, n=0 momentum/surge)
+- Config changes: none — RSI_OVERSOLD: n=1 < 5 (need ≥5), NO_CHANGE; MOMENTUM_VOL_MIN: n=0 momentum trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold 25.9h > 2h threshold and avg_pnl > 0, rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 415/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: Account $101.58, 1 open position (AMD +2.6% @ $495.07, trail $484.89, TP $530.73), regime bearish_ema. RL well past 200 target — run python -m strategy.rl_agent --train to activate Q-agent. Log trimmed to 6 entries.

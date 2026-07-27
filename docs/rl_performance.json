@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-07-27",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,8 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 412,
+  "rl_training_samples": 415,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403). Prior 365d backtest metrics retained. RL: 412 samples (+5 today), 19 states. Config: NO_CHANGE (log trimmed to 2 closed trades — JPM +4.1% BULLISH, PLTR +0.1% BEARISH; n<5 for normal strategy, n<3 for momentum/surge — all below min thresholds). Live account: $100.28, 0 open positions, regime bearish_ema."
+  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403). Prior 365d backtest metrics retained. RL: 415 samples (+3 today), 19 states. Config: NO_CHANGE (1 closed trade in log — PLTR +0.1% normal/BEARISH; n<5 for normal, n<3 for momentum/surge — all below min thresholds). Live account: $101.58, 1 open position (AMD +2.6%), regime bearish_ema."
 }
