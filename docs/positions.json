@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T16:20:00Z",
+  "updated_at": "2026-07-27T17:14:28Z",
   "buying_power": 100.28,
   "market_regime": "bearish_ema",
   "account_value": 100.28,
@@ -10,10 +10,11 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market OPEN (12:20 PM ET) — no trades placed. Regime: bearish_ema (SPY $737.49 < EMA200 $744.38).",
-    "RSI BUY: CVX (2/3) — excluded (bearish_ema regime requires 3/3 confidence).",
-    "RSI SELLs (not held): AAPL (RSI 70.5), CRM (RSI 70.9), JNJ (RSI 79.3).",
-    "Net-buy SELLs (not held): AMKR, GS, HOOD, C, ASML, TGT, SYM, WFC, SHOP, NOW. Net-buy BUYs: none. Surge: none.",
+    "Market OPEN (1:14 PM ET) — no trades placed. Regime: bearish_ema (SPY $737.06 < EMA200 $744.31).",
+    "RSI BUY: INTC (2/3, RSI 23.8) — excluded (bearish_ema regime requires 3/3 confidence).",
+    "RSI SELLs (not held): CRM (RSI 72.6), JNJ (RSI 79.0), GM (RSI 70.4), NOW (RSI 72.2).",
+    "Net-buy SELLs (not held): GS, AMKR, C, HOOD, TGT, ASML, ONDS, NVDA, WFC, MU. Net-buy BUYs: none.",
+    "Surge tracker: DIS count=1 buy-vol surge (needs count≥2 for intraday_surge entry).",
     "CB: INACTIVE | daily 0.0% | weekly 0.0%. Account: $100.28. Peak: $101.68."
   ]
 }
