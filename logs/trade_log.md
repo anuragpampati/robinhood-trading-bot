@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-28T14:20:51Z
+- SUMMARY: Market open (10:20 ET). No trades executed. Buying power: $50.28. Equity positions: 1 (AMD). Regime: bearish_ema. Account: $96.38.
+- AMD: $495.07 (+2.6% from avg $482.48), trail_stop=$484.89 (no change). No stop/take-profit triggers.
+- BUY candidates: LITE RSI=28.2 conf=2->3 (RL BOOST, rl_conf=1.0) -- skipped: buying_power $50.28 < $50 buffer + $15 min order. NVDA RSI=29.1 conf=2 -- skipped: net_buy SELL + RL HOLD.
+- SELL signals: JPM, GM (RSI overbought), GS/NVDA/CRM/SOUN/NOW/HOOD/GOOGL (net-buy sell) -- none held.
+- CB: INACTIVE | daily 0.0% | weekly -3.9% (week_start $100.28)
+
+---
+
 ## 2026-07-27T20:15:53Z
 - SUMMARY: Market closed. Buying power: $50.28. Equity positions: 1 (AMD). Regime: bearish_ema. Account: $101.58.
 - AMD: $495.07 (+2.6% from avg $482.48), trail_stop ratcheted $457.71→$484.89 (profit≥2.5%).
