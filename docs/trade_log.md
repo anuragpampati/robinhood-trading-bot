@@ -4,16 +4,6 @@
 
 ---
 
-## 2026-07-28T20:11:47Z
-- SUMMARY: Market closed (after hours). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
-- Signals: RSI BUY — AMD (conf=2, $454.85), AMAT (conf=2, $476.45). Both skipped: market closed.
-- RSI SELL — BA ($221.53), GM ($90.28). Net-buy SELL — XOM, ALAB, AVGO, IREN, TSLA, UBER, LRCX. No positions held.
-- Surge: AVAV +83.0% buy surge (count=1, needs ≥2 for entry). No 4b update (market closed).
-- CB: INACTIVE | daily +1.1% gain (day_start $96.38) | weekly −2.8% (week_start $100.28). Peak: $101.68.
-- Regime: bearish_ema (SPY $740.76 < EMA200 $743.89).
-
----
-
 ## 2026-07-28T19:13:06Z
 - SUMMARY: Market open (15:13 ET). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - No positions to sell. RSI SELL (no pos): CRM, BA, GM. Net-buy SELL (no pos): IREN, TSLA, ALAB, AVGO, VRT, UBER.
