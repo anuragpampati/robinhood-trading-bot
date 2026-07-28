@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-28T15:20:33Z
+- Action   : SELL AMD
+- Price    : $453.57
+- Amount   : $47.01 | Shares: 0.103631
+- RSI      : 23.7 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=1.0 | null (no veto)
+- Stop     : $484.89 (trail_stop) | Target: $530.73
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : ATR trailing stop triggered: $453.57 ≤ trail_stop $484.89. AMD fell -6.0% from avg $482.48. Trail_stop was ratcheted up to $484.89 when AMD hit +2.6% ($495.07). Hours held: ~21h (entry 2026-07-27T18:16Z).
+
+---
+
 ## 2026-07-28T14:20:51Z
 - SUMMARY: Market open (10:20 ET). No trades executed. Buying power: $50.28. Equity positions: 1 (AMD). Regime: bearish_ema. Account: $96.38.
 - AMD: $495.07 (+2.6% from avg $482.48), trail_stop=$484.89 (no change). No stop/take-profit triggers.

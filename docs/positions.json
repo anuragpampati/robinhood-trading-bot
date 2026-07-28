@@ -1,54 +1,31 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-07-23T20:10:31Z",
-  "buying_power": 50.24,
+  "updated_at": "2026-07-28T15:20:33Z",
+  "buying_power": 97.29,
   "market_regime": "bearish_ema",
-  "account_value": 100.14,
+  "account_value": 97.29,
   "peak_value": 101.68,
-  "day_start_value": 100.24,
-  "day_start_date": "2026-07-23",
-  "week_start_value": 100.41,
-  "week_start_date": "2026-07-14",
-=======
   "updated_at": "2026-07-28T14:20:51Z",
   "buying_power": 50.28,
   "market_regime": "bearish_ema",
   "account_value": 96.38,
   "peak_value": 101.68,
+=======
   "day_start_value": 96.38,
   "day_start_date": "2026-07-28",
   "week_start_value": 100.28,
   "week_start_date": "2026-07-27",
->>>>>>> Stashed changes
-  "positions": [
-    {
-      "ticker": "PLTR",
-      "quantity": 0.404663,
-      "avg_cost": 123.56,
-      "current_price": 123.30,
-      "pnl_pct": -0.0021,
-      "value": 49.90,
-      "entry_atr_pct": 0.0122,
-      "entry_time": "2026-07-23T14:17:22Z",
-      "trail_stop": 120.52,
-      "take_profit": 135.92,
-      "strategy": "normal",
-      "sell_date": null
-    }
-  ],
-  "last_actions": [
-<<<<<<< Updated upstream
-    "Market CLOSED (after hours). SPY $738.24 RSI 32.8 — bearish_ema, PANIC lifted (RSI ≥ 30).",
-    "PLTR: $123.30 (trail_stop $120.52, pnl -0.21%, hours_held ~5.9h). No exit triggered. Trail_stop unchanged.",
-    "CB: INACTIVE | daily 0.10% | weekly 0.27%.",
-    "RSI BUYs (deferred, market closed): CRM, AMZN, GOOGL, META, TSLA, MRNA, DIS, TGT, UBER, SHOP. Net-buy BUY: JPM.",
-    "Regime: bearish_ema (SPY $738.24 < EMA200 $744.65). Positions: 1 (PLTR). Buying power: $50.24. Account: $100.14. Peak: $101.68."
-=======
     "No trades — buying power $50.28 insufficient (need >$65 for min $15 order + $50 buffer).",
     "LITE: RSI BUY conf=2→3 (RL BOOST rl_conf=1.0), bearish_ema regime — skipped: buying_power $50.28 too low.",
     "NVDA: RSI BUY conf=2 + net_buy SELL (contradictory) + RL HOLD (conf=0.92) — skip.",
     "AMD HOLD: +2.6% ($495.07), trail_stop=$484.89 (no ratchet change), no stop/take-profit triggers.",
     "CB: INACTIVE | daily 0.0% | weekly -3.9%. Account: $96.38. Peak: $101.68."
->>>>>>> Stashed changes
+=======
+  "positions": [],
+  "last_actions": [
+    "SELL AMD @ $453.57 (0.103631 shares, ~$47.01). ATR trailing stop triggered: $453.57 ≤ trail_stop $484.89. AMD fell -6.0% from avg $482.48. Trail was ratcheted up when AMD hit +2.6% ($495.07). Hours held ~21h.",
+    "No buy signals (0 RSI BUY, 0 net-buy BUY). Bearish_ema regime requires 3/3 confidence and $50 max.",
+    "CB: INACTIVE | daily +0.95% (day_start $96.38) | weekly -2.98% (week_start $100.28). Account: $97.29. Peak: $101.68.",
+    "Regime: bearish_ema (SPY $738.64 < EMA200 $744.01). Positions: 0. Buying power after sell: ~$97.29."
+>>>>>>> a471dea (chore: trading cycle 2026-07-28T15:20:33Z)
   ]
 }
