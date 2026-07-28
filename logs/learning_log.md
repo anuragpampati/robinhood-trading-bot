@@ -85,3 +85,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
 - RL samples: 415/200 (READY — +3 new rows today; 19 states in Q-table)
 - Notes: Account $101.58, 1 open position (AMD +2.6% @ $495.07, trail $484.89, TP $530.73), regime bearish_ema. RL well past 200 target — run python -m strategy.rl_agent --train to activate Q-agent. Log trimmed to 6 entries.
+
+## 2026-07-28
+- Trades analysed: 1 closed (AMD -5.96% stop, 21.1h hold, normal/BEARISH)
+- Win rate: 0% overall (normal: 0% n=1, momentum: n/a n=0, surge: n/a n=0)
+- Config changes: none — all types below minimum sample thresholds (normal n<5, momentum n<3, ATR hold not <2h)
+- Backtest: SKIPPED — yfinance proxy blocked (403), prior metrics retained (return +9.3%, drawdown 15.3%, win_rate 39.6%)
+- RL samples: 417/200 — READY (exceeded target by 217)
+- Notes: bearish_ema regime active all day (SPY $741.45 < EMA200 $743.93); no new positions opened (buying power at buffer limit $50.28); AMD position closed by ATR trailing stop at -6.0% from avg; account at $97.45 (-2.8% weekly from $100.28 start)
