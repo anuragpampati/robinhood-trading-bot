@@ -14,16 +14,6 @@
 
 ---
 
-## 2026-07-28T18:12:31Z
-- SUMMARY: Market open (14:12 ET). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
-- No net-buy BUY signals. RSI SELL (held=0): CRM, BA, GM, SHOP. Net-buy SELL (held=0): VRT, IREN, AVGO, AUR, ALAB, TSLA, UBER, SYM, LRCX — no positions to sell.
-- BUY blocked: $50.28 buying power − $50 buffer = $0.28 available, below $15 min. 0 buy signals anyway (bearish_ema requires 3/3 conf, no qualifying signals).
-- Surge: CRM added to tracker (count=1, +52.0% buy surge). Needs count≥2 to trigger intraday buy.
-- CB: INACTIVE | daily −1.1% gain (day_start $96.38) | weekly −2.8% (week_start $100.28). Peak: $101.68.
-- Regime: bearish_ema (SPY $741.19 < EMA200 $743.95). Positions: 0.
-
----
-
 ## 2026-07-28T16:17:00Z
 - SUMMARY: Market open (12:17 ET). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - ASML: RSI BUY conf=2/3 — skipped: bearish_ema requires 3/3 AND RL=HOLD (conf=0.919).
