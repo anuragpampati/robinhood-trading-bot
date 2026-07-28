@@ -1,31 +1,18 @@
 {
-  "updated_at": "2026-07-28T15:20:33Z",
-  "buying_power": 97.29,
-  "market_regime": "bearish_ema",
-  "account_value": 97.29,
-  "peak_value": 101.68,
-  "updated_at": "2026-07-28T14:20:51Z",
+  "updated_at": "2026-07-28T16:17:00Z",
   "buying_power": 50.28,
   "market_regime": "bearish_ema",
-  "account_value": 96.38,
+  "account_value": 97.45,
   "peak_value": 101.68,
-=======
   "day_start_value": 96.38,
   "day_start_date": "2026-07-28",
   "week_start_value": 100.28,
   "week_start_date": "2026-07-27",
-    "No trades — buying power $50.28 insufficient (need >$65 for min $15 order + $50 buffer).",
-    "LITE: RSI BUY conf=2→3 (RL BOOST rl_conf=1.0), bearish_ema regime — skipped: buying_power $50.28 too low.",
-    "NVDA: RSI BUY conf=2 + net_buy SELL (contradictory) + RL HOLD (conf=0.92) — skip.",
-    "AMD HOLD: +2.6% ($495.07), trail_stop=$484.89 (no ratchet change), no stop/take-profit triggers.",
-    "CB: INACTIVE | daily 0.0% | weekly -3.9%. Account: $96.38. Peak: $101.68."
-=======
   "positions": [],
   "last_actions": [
-    "SELL AMD @ $453.57 (0.103631 shares, ~$47.01). ATR trailing stop triggered: $453.57 ≤ trail_stop $484.89. AMD fell -6.0% from avg $482.48. Trail was ratcheted up when AMD hit +2.6% ($495.07). Hours held ~21h.",
-    "No buy signals (0 RSI BUY, 0 net-buy BUY). Bearish_ema regime requires 3/3 confidence and $50 max.",
-    "CB: INACTIVE | daily +0.95% (day_start $96.38) | weekly -2.98% (week_start $100.28). Account: $97.29. Peak: $101.68.",
-    "Regime: bearish_ema (SPY $738.64 < EMA200 $744.01). Positions: 0. Buying power after sell: ~$97.29."
->>>>>>> a471dea (chore: trading cycle 2026-07-28T15:20:33Z)
+    "No trades — market open (12:17 ET). ASML RSI BUY conf=2/3 skipped: bearish_ema requires 3/3 AND RL HOLD (conf=0.919). Buying power $50.28 insufficient for min $15 order + $50 buffer.",
+    "No SELL triggers — 0 open equity positions.",
+    "CB: INACTIVE | daily +1.1% (day_start $96.38) | weekly -2.8% (week_start $100.28). Account: $97.45. Peak: $101.68.",
+    "Regime: bearish_ema (SPY $742.22 < EMA200 $743.99). Positions: 0. Net-buy BUY signals: 0. Surge signals: 0."
   ]
 }

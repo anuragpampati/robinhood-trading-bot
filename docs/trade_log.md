@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-28T16:17:00Z
+- SUMMARY: Market open (12:17 ET). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+- ASML: RSI BUY conf=2/3 — skipped: bearish_ema regime requires 3/3 confidence AND RL=HOLD (conf=0.919). Price: $1591.02, RSI=28.1, EMA=BEARISH, BB=BELOW_BAND.
+- No net-buy BUY signals (0 of 103 tickers). 7 net-buy SELL signals (TSLA, LRCX, UBER, VRT, ALAB, SYM, AUR) — none held.
+- 10 RSI SELL signals (GM, SHOP, PYPL, F, AI, NOW, BA, CRM, MCD, AAPL, TGT) — none held.
+- Buying power $50.28 ≤ $50 buffer + $15 min order → no buys possible regardless.
+- CB: INACTIVE | daily +1.1% (day_start $96.38) | weekly -2.8% (week_start $100.28, Mon 2026-07-27). Peak: $101.68.
+
+---
+
 ## 2026-07-28T15:20:33Z
 - Action   : SELL AMD
 - Price    : $453.57

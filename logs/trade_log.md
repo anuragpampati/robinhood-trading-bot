@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-07-28T16:17:00Z
+- SUMMARY: Market open (12:17 ET). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+- ASML: RSI BUY conf=2/3 — skipped: bearish_ema requires 3/3 AND RL=HOLD (conf=0.919).
+- No net-buy BUY signals. 7 net-buy SELL + 10 RSI SELL — none held.
+- CB: INACTIVE | daily +1.1% | weekly -2.8%. Peak: $101.68.
+
+---
+
 ## 2026-07-28T15:20:33Z
 - Action   : SELL AMD
 - Price    : $453.57
