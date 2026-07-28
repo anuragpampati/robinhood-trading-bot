@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T17:12:42Z",
+  "updated_at": "2026-07-28T18:12:31Z",
   "buying_power": 50.28,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "No trades — market open (13:12 ET). Buying power $50.28 − $50 buffer = $0.28 available, below $15 min. 0 buy signals (bearish_ema requires 3/3 conf).",
+    "No trades — market open (14:12 ET). Buying power $50.28 − $50 buffer = $0.28 available, below $15 min. 0 buy signals (bearish_ema requires 3/3 conf).",
     "No SELL triggers — 0 open equity positions.",
-    "Surge: NFLX added to tracker (count=1, +53.4% buy surge). Needs count≥2 to trigger intraday buy.",
-    "CB: INACTIVE | daily +1.1% (day_start $96.38) | weekly −2.8% (week_start $100.28). Account: $97.45. Peak: $101.68.",
-    "Regime: bearish_ema (SPY $742.61 < EMA200 $743.98). Positions: 0. Net-buy BUY signals: 0. RSI SELL: CRM,NFLX,TGT,BA,GM,PYPL,SHOP,NOW. Net-buy SELL: UBER,TSLA,VRT,ALAB,SYM,AUR."
+    "Surge: CRM added to tracker (count=1, +52.0% buy surge). Needs count≥2 to trigger intraday buy.",
+    "CB: INACTIVE | daily −1.1% gain (day_start $96.38) | weekly −2.8% (week_start $100.28). Account: $97.45. Peak: $101.68.",
+    "Regime: bearish_ema (SPY $741.19 < EMA200 $743.95). Positions: 0. Net-buy BUY signals: 0. RSI SELL: CRM,BA,GM,SHOP. Net-buy SELL: VRT,IREN,AVGO,AUR,ALAB,TSLA,UBER,SYM,LRCX."
   ]
 }
