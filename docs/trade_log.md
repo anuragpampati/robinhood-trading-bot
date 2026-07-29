@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-07-29T14:17:42Z
+- SUMMARY: Market open (10:17 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+- No positions to sell.
+- BUY candidates (post RL BOOST): AMD conf=2→3 (🤖 RL BOOST, rl_conf=1.00), AMAT conf=2→3 (🤖 RL BOOST, rl_conf=1.00). Amount $50 each (bearish_ema). BLOCKED: $97.45 − $50 = $47.45 < $50 cash buffer. Skipping all buys.
+- SURGE: DKNG +100.7% intraday surge — count=1 (need ≥2 for entry).
+- Net-buy SELL signals (no pos): XOM, ALAB, AVGO, IREN, TSLA, UBER, LRCX. RSI SELL (no pos): BA, GM.
+- CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68.
+
 ## 2026-07-28T19:13:06Z
 - SUMMARY: Market open (15:13 ET). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - No positions to sell. RSI SELL (no pos): CRM, BA, GM. Net-buy SELL (no pos): IREN, TSLA, ALAB, AVGO, VRT, UBER.

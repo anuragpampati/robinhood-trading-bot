@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-07-28T20:11:47Z",
-  "buying_power": 50.28,
+  "updated_at": "2026-07-29T14:17:42Z",
+  "buying_power": 97.45,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
   "peak_value": 101.68,
-  "day_start_value": 96.38,
-  "day_start_date": "2026-07-28",
+  "day_start_value": 97.45,
+  "day_start_date": "2026-07-29",
   "week_start_value": 100.28,
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market closed (after hours). No trades executed. Buying power $50.28. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
-    "RSI BUY signals: AMD (conf=2, $454.85), AMAT (conf=2, $476.45) — skipped: market closed.",
-    "RSI SELL: BA, GM. Net-buy SELL: XOM, ALAB, AVGO, IREN, TSLA, UBER, LRCX. No positions held.",
-    "Surge: AVAV +83.0% buy surge (count=1, needs ≥2). 4b skipped (market closed).",
-    "CB: INACTIVE | daily +1.1% gain (day_start $96.38) | weekly −2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema."
+    "Market open (10:17 ET). No trades executed. Buying power $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
+    "BUY candidates AMD+AMAT (RL BOOST → conf 3). BLOCKED: $97.45 − $50 = $47.45 < $50 cash buffer.",
+    "Surge: DKNG +100.7% (count=1, needs ≥2). No intraday surge buys.",
+    "Net-buy SELL (no pos): XOM, ALAB, AVGO, IREN, TSLA, UBER, LRCX. RSI SELL (no pos): BA, GM.",
+    "CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema."
   ]
 }
