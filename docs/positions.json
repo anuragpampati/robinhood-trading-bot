@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T17:12:24Z",
+  "updated_at": "2026-07-29T18:14:02Z",
   "buying_power": 97.45,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market open (13:12 ET). No trades executed. Buying power $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
-    "GE: RSI BUY conf 2/3 → SKIPPED — bearish_ema requires 3/3 RSI confidence.",
-    "SNOW: net-buy BUY + RSI SELL (RSI 70.1, overbought) → SKIPPED — conflicting signals.",
-    "RSI SELLs (no pos): SNOW (RSI 70.1), NOW (RSI 77.4). Net-buy SELLs (no pos): CRDO, ARM, RGTI, AMD, NVTS, IREN, LAZR, ALAB, AMAT, MRVL + 34 more.",
-    "CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema."
+    "Market open (14:14 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
+    "RSI BUY signals: ARM conf=2 (🤖 RL BOOST→3 but net-buy SELL conflicts → skip), LRCX conf=2 (🤖 RL BOOST→3, $97.45−$50=$47.45 < $50 buffer → skip), LAZR conf=2 (🤖 RL BOOST→3, same buffer constraint → skip). All buys blocked.",
+    "SNOW: net-buy BUY (11.7% buy surge, 4d streak) + RSI SELL (RSI 70.7, ABOVE_BAND) → conflicting signals → skip. Surge tracker: SNOW added count=1.",
+    "Net-buy SELLs (no pos): CRDO, RGTI, ARM, NVTS, IREN, MRVL, MU, VRT, ASTS, RDW. RSI SELLs (no pos): AAPL (77.7), TGT (73.8), NOW (73.8), SNOW (70.7).",
+    "CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema (SPY $736.41 < EMA200 $743.56)."
   ]
 }

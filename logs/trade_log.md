@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-07-29T18:14:02Z
+- SUMMARY: Market open (14:14 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+- No positions to sell.
+- RSI BUY signals: ARM conf=2 (🤖 RL BOOST→3 but net-buy SELL conflicts → SKIP), LRCX conf=2 (🤖 RL BOOST→3, $97.45−$50=$47.45 < $50 buffer → SKIP), LAZR conf=2 (🤖 RL BOOST→3, same buffer issue → SKIP). All buys blocked.
+- SNOW: net-buy BUY (11.7% buy surge, 4d streak) + RSI SELL (RSI 70.7, ABOVE_BAND) → conflicting signals → SKIP. Surge tracker: SNOW added count=1.
+- Net-buy SELLs (no pos): CRDO, RGTI, ARM, NVTS, IREN, MRVL, MU, VRT, ASTS, RDW. RSI SELLs (no pos): AAPL (77.7), TGT (73.8), NOW (73.8), SNOW (70.7).
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly −2.8% (week_start $100.28). Peak: $101.68.
+- Regime: bearish_ema (SPY $736.41 < EMA200 $743.56). Requires 3/3 conf + $50 position ≤ available above buffer.
+
 ## 2026-07-29T15:15:27Z
 - SUMMARY: Market open (11:15 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - No positions to sell.
