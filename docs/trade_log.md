@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-29T19:14:00Z
+- SUMMARY: Market open (15:14 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+- No positions to sell (0 held).
+- RSI SELL signals (no pos): AAPL (RSI 76.0 ABOVE_BAND conf=2), CRM (76.1 conf=2), F (71.1 conf=2), PYPL (76.8 conf=2), SNOW (73.6 conf=2), NOW (75.8 conf=2).
+- RSI BUY signals: NONE (bearish_ema regime requires 3/3 conf, none qualified).
+- Net-buy BUY: SNOW only (4d streak, OBV +). Net-buy SELL: WFC, ONDS, LEU, PL, VRT, MU, UUUU, COHR, AAOI, DELL.
+- Surge tracker: SNOW updated count=1→2 (63.7% buy surge, INTRADAY BUY CANDIDATE); NFLX added count=1 (1580.7% buy surge). SNOW buy BLOCKED: $97.45 − $50 = $47.45 < $50 cash buffer.
+- SNOW also has conflicting RSI SELL (RSI 73.6 overbought) — double reason to skip.
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly −2.8% (week_start $100.28). Peak: $101.68.
+- Regime: bearish_ema (SPY $741.87 < EMA200 $743.55). Next cycle: refresh buying power, monitor NFLX for count≥2.
+
 ## 2026-07-29T15:15:27Z
 - SUMMARY: Market open (11:15 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - No positions to sell.
