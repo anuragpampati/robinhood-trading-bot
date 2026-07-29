@@ -4,15 +4,6 @@
 
 ---
 
-## 2026-07-29T20:10:54Z
-- SUMMARY: Market closed (16:10 ET). No trades. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
-- No positions to sell.
-- No BUY signals: 0 net-buy-buy, 0 RSI-buy conf≥2, 0 surge (market closed, after 4PM ET).
-- 50 net-buy SELL signals (no positions held): CRDO, ARM, WFC, RGTI, AMD, ALAB, IREN, LAZR, AMAT, MRVL + 40 more.
-- Surge tracker carried forward: SNOW count=2 (2026-07-29, $292.40), NFLX count=1 (2026-07-29). Step 4b skipped (market closed).
-- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly −2.8% (week_start $100.28, 2026-07-27). Peak: $101.68.
-- Regime: bearish_ema (SPY $729.54 < EMA200 $743.41). 101/103 tickers fetched (RBLB, SQ failed proxy).
-
 ## 2026-07-29T18:14:02Z
 - SUMMARY: Market open (14:14 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - No positions to sell.
