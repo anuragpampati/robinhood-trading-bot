@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-29T15:15:27Z
+- SUMMARY: Market open (11:15 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+- No positions to sell.
+- No BUY signals in any strategy (0 net-buy-buy, 0 RSI-buy, 0 surge). 44 SELL signals — none held.
+- RSI SELLs (not held): CRM (RSI 74.2), DIS (71.5), TGT (74.9), F (81.4), GM (75.1), PYPL (70.2), NOW (73.6).
+- Net-buy SELLs (not held): AMD, IREN, NVTS, MRVL, LAZR, BE, CRWV, EOSE, CIFR, AMZN + 34 more.
+- Surge tracker: DKNG removed (no longer ≥10% surge). Tracker empty.
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly −2.8% (week_start $100.28). Peak: $101.68.
+- Regime: bearish_ema (SPY $734.82 < EMA200 $743.82). Would require 3/3 conf for any buy.
+
 ## 2026-07-29T14:17:42Z
 - SUMMARY: Market open (10:17 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - No positions to sell.

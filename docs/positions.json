@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T14:17:42Z",
+  "updated_at": "2026-07-29T15:15:27Z",
   "buying_power": 97.45,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market open (10:17 ET). No trades executed. Buying power $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
-    "BUY candidates AMD+AMAT (RL BOOST → conf 3). BLOCKED: $97.45 − $50 = $47.45 < $50 cash buffer.",
-    "Surge: DKNG +100.7% (count=1, needs ≥2). No intraday surge buys.",
-    "Net-buy SELL (no pos): XOM, ALAB, AVGO, IREN, TSLA, UBER, LRCX. RSI SELL (no pos): BA, GM.",
+    "Market open (11:15 ET). No trades executed. Buying power $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
+    "No BUY signals in any strategy. 44 SELL signals — none held.",
+    "RSI SELLs (no pos): CRM (74.2), DIS (71.5), TGT (74.9), F (81.4), GM (75.1), PYPL (70.2), NOW (73.6).",
+    "Net-buy SELLs (no pos): AMD, IREN, NVTS, MRVL, LAZR, BE, CRWV, EOSE, CIFR, AMZN + 34 more.",
     "CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema."
   ]
 }
