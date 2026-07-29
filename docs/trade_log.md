@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-29T16:13:05Z
+- SUMMARY: Market open (12:13 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+- No positions to sell.
+- BUY candidates: SNOW (NET-BUY only, RSI=0/3). SKIPPED — bearish_ema requires 3/3 RSI confidence.
+- RSI SELLs (not held): AAPL (RSI 73.8, ABOVE_BAND), CRM (77.6), TGT (76.9), F (73.0), NOW (76.7).
+- Net-buy SELLs (not held): CRDO, ARM, RGTI, AMD, IREN, LAZR, MRCY, NVTS, AMAT, MRVL + 38 more.
+- Surge tracker: Empty (no tickers ≥10% intraday surge).
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly −2.8% (week_start $100.28). Peak: $101.68.
+- Regime: bearish_ema (SPY $733.73 < EMA200 $743.72). Requires 3/3 conf for any buy.
+
 ## 2026-07-29T15:15:27Z
 - SUMMARY: Market open (11:15 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - No positions to sell.
