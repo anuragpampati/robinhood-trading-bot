@@ -93,3 +93,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403), prior metrics retained (return +9.3%, drawdown 15.3%, win_rate 39.6%)
 - RL samples: 417/200 — READY (exceeded target by 217)
 - Notes: bearish_ema regime active all day (SPY $741.45 < EMA200 $743.93); no new positions opened (buying power at buffer limit $50.28); AMD position closed by ATR trailing stop at -6.0% from avg; account at $97.45 (-2.8% weekly from $100.28 start)
+
+## 2026-07-29
+- Trades analysed: 1 (AMD only — normal/BEARISH EMA, -6.0% stop, ~21h hold)
+- Win rate: 0% overall (normal: 0% [n=1], momentum: n/a [n=0], surge: n/a [n=0])
+- Config changes: none (all strategy types below minimum n thresholds — normal n<5, momentum n<3, surge n<3)
+- Backtest: skipped — yfinance proxy blocked (403); prior metrics retained (return +9.29%, drawdown 15.29%, win_rate 39.6%)
+- RL samples: 418/200 (READY — RL training can be activated)
+- Notes: Account $97.45 cash-only, regime bearish_ema, no open positions. Multiple RL BOOST signals blocked by cash buffer constraint ($97.45 − $50 = $47.45 < $50 buffer required). RL fully ready (418 samples, 19 states); consider running `python -m strategy.rl_agent --train` to activate Q-learning. Trade log trimmed to 7 entries.
