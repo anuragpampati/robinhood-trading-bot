@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T19:14:00Z",
+  "updated_at": "2026-07-29T20:10:54Z",
   "buying_power": 97.45,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
+    "Market closed (16:10 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
     "Market open (15:14 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
     "SNOW surge count=1→2 (INTRADAY BUY CANDIDATE, 63.7% buy surge) but BLOCKED: $97.45−$50=$47.45 < $50 buffer. RSI SELL conflict (RSI 73.6 overbought).",
     "NFLX added to surge tracker count=1 (1580.7% buy surge). Needs count≥2 to qualify for entry.",
-    "RSI SELLs (no pos): AAPL (76.0), CRM (76.1), F (71.1), PYPL (76.8), SNOW (73.6), NOW (75.8). Net-buy SELLs (no pos): WFC, ONDS, LEU, PL, VRT, MU, UUUU, COHR, AAOI, DELL.",
-    "CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema (SPY $741.87 < EMA200 $743.55)."
+    "CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema (SPY $729.54 < EMA200 $743.41)."
   ]
 }
