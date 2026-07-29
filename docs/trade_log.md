@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-07-29T17:12:24Z
+- SUMMARY: Market open (13:12 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+- No positions to sell.
+- BUY candidates: GE (RSI BUY, conf 2/3) → SKIPPED — bearish_ema requires 3/3 RSI confidence. SNOW (net-buy BUY + RSI SELL) → SKIPPED — conflicting signals, RSI overbought (70.1).
+- RSI SELLs (not held): SNOW (RSI 70.1, above BB), NOW (RSI 77.4, above BB).
+- Net-buy SELLs (not held): CRDO, ARM, RGTI, AMD, NVTS, IREN, LAZR, ALAB, AMAT, MRVL + 34 more.
+- Surge tracker: empty (0 tickers ≥10% intraday surge).
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly −2.8% (week_start $100.28). Peak: $101.68.
+- Regime: bearish_ema (SPY $734.86 < EMA200 $743.63). Requires 3/3 conf for any new buy.
+
 ## 2026-07-29T15:15:27Z
 - SUMMARY: Market open (11:15 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
 - No positions to sell.

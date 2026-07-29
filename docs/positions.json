@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T16:13:05Z",
+  "updated_at": "2026-07-29T17:12:24Z",
   "buying_power": 97.45,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market open (12:13 ET). No trades executed. Buying power $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
-    "BUY candidate: SNOW (NET-BUY only, RSI=0/3). SKIPPED — bearish_ema requires 3/3 RSI confidence.",
-    "RSI SELLs (no pos): AAPL (RSI 73.8), CRM (77.6), TGT (76.9), F (73.0), NOW (76.7).",
-    "Net-buy SELLs (no pos): CRDO, ARM, RGTI, AMD, IREN, LAZR, MRCY, NVTS, AMAT, MRVL + 38 more.",
+    "Market open (13:12 ET). No trades executed. Buying power $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
+    "GE: RSI BUY conf 2/3 → SKIPPED — bearish_ema requires 3/3 RSI confidence.",
+    "SNOW: net-buy BUY + RSI SELL (RSI 70.1, overbought) → SKIPPED — conflicting signals.",
+    "RSI SELLs (no pos): SNOW (RSI 70.1), NOW (RSI 77.4). Net-buy SELLs (no pos): CRDO, ARM, RGTI, AMD, NVTS, IREN, LAZR, ALAB, AMAT, MRVL + 34 more.",
     "CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema."
   ]
 }
