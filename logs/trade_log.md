@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-07-30T19:12:22Z
+- SUMMARY: Market open (15:12 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.
+- Sells: SNOW RSI SELL (RSI=71.2, conf=2) — not held, no action. No positions to sell.
+- Buys: bearish_ema requires 3/3 conf. QCOM RSI BUY (conf=2/3, RL=HOLD 91.9%) — skipped, conf<3. No net-buy-buy signals. XOM (72.4%) and AVGO (1062.1%) surge added to tracker at count=1 — not yet ≥2 for intraday_surge buy. Available capital $47.45 < $50 min surge position.
+- Surge tracker: F/SNAP removed (no longer in 10%+ surge). XOM added (count=1, price=$156.86). AVGO added (count=1, price=$386.03).
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.8% (week_start $100.28). Peak: $101.68.
+
+## 2026-07-30T18:13:50Z
+- SUMMARY: Market open (14:13 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.
+- Sells: MSFT RSI SELL (RSI=82.9, conf=2) — not held, no action. No positions to sell.
+- Buys: Regime=bearish_ema (SPY $739.78 < EMA200 $743.21) requires 3/3 conf. QCOM RSI BUY (conf=2/3, RL=HOLD) — skipped, conf<3. META RSI BUY (conf=2/3, RL=HOLD) — skipped, conf<3. Surge: F (157.1%) and SNAP (95.4%) added to tracker at count=1 — not yet ≥2 for intraday_surge. Even if eligible, $97.45 buying power − $50 buffer = $47.45 available < $50 min surge position.
+- Surge tracker: F added (count=1, price=$14.79). SNAP added (count=1, price=$4.70).
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.8% (week_start $100.28). Peak: $101.68.
+
 ## 2026-07-30T17:11:59Z
 - SUMMARY: Market open (13:11 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.
 - Sells: MSFT RSI SELL (RSI=82.7, conf=2) — not held, no action. SNOW RSI SELL (RSI=71.5, conf=2) — not held, no action.
