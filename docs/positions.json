@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T19:12:22Z",
+  "updated_at": "2026-07-30T20:11:12Z",
   "buying_power": 97.45,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market open (15:12 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
-    "Sells: SNOW RSI SELL (RSI=71.2, conf=2) — not held, no action. No positions to sell.",
-    "Buys: bearish_ema requires 3/3 conf. QCOM RSI BUY (conf=2/3, RL=HOLD 91.9%) — skipped, conf<3. No net-buy-buy signals.",
-    "Surge tracker: F/SNAP removed (no longer in 10%+ surge_signals). XOM (72.4%) and AVGO (1062.1%) added at count=1 — not yet ≥2 for intraday_surge. Even if eligible, $47.45 available < $50 minimum surge position.",
+    "Market closed (16:10 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
+    "Sells: None — market closed, no positions held.",
+    "Buys: None — market closed.",
+    "Surge tracker: XOM (count=1) and AVGO (count=1) removed — market closed, surge_signals empty. Tracker now {}.",
     "CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.8% (week_start $100.28). Peak: $101.68."
   ]
 }
