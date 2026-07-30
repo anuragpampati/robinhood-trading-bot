@@ -94,6 +94,15 @@
 - RL samples: 417/200 — READY (exceeded target by 217)
 - Notes: bearish_ema regime active all day (SPY $741.45 < EMA200 $743.93); no new positions opened (buying power at buffer limit $50.28); AMD position closed by ATR trailing stop at -6.0% from avg; account at $97.45 (-2.8% weekly from $100.28 start)
 
+## 2026-07-30
+- Trades analysed: 11 total closed (normal: 6W/5L; momentum: n/a n=0; surge: n/a n=0)
+- Win rate: 54.5% overall (normal: 54.5% — 6W/5L, avg_pnl −0.48%, avg_hold ~153h; momentum: n/a; surge: n/a)
+- EMA-trend win rate: BULLISH entry 55.6% (5W/4L, n=9); BEARISH entry 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=54.5% in [40%,65%] range, NO_CHANGE (n=11≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold ~153h >> 2h, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403); prior 365d metrics retained (+9.29% return, 15.29% drawdown, 39.6% win rate)
+- RL samples: 419/200 (READY — +1 new row today; 19 states in Q-table)
+- Notes: Account $97.45 cash-only (−2.8% week from $100.28), regime bearish_ema (SPY below EMA200 all day). No positions. Multiple signals blocked by bearish_ema 3/3 conf rule + cash buffer bind. RL exceeds 200 target by 219 — run `python -m strategy.rl_agent --train`. Trade log trimmed to 9 entries.
+
 ## 2026-07-29
 - Trades analysed: 1 (AMD only — normal/BEARISH EMA, -6.0% stop, ~21h hold)
 - Win rate: 0% overall (normal: 0% [n=1], momentum: n/a [n=0], surge: n/a [n=0])
