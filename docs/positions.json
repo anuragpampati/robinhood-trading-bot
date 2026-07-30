@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T14:17:54.849414+00:00",
+  "updated_at": "2026-07-30T15:18:03.043964+00:00",
   "buying_power": 97.45,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
@@ -10,9 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market open (10:17 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
-    "SNOW NET-BUY + 52.7% buy surge (count=1) BLOCKED: $97.45\u2212$50=$47.45 < $50 buffer. SNOW RSI=69.9 HOLD.",
-    "CB: INACTIVE | daily 0.0% | weekly 2.8% (week_start $100.28). Peak: $101.68. Regime: bearish_ema.",
-    "Market closed (16:10 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45."
+    "Market open (11:18 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
+    "MSFT RSI SELL (conf=2, RSI=80.9) \u2014 NOT held, no action.",
+    "No BUY signals: bearish_ema requires 3/3 conf; no qualifying signals in any strategy.",
+    "Surge tracker: SNOW removed (no longer \u226510% intraday). Tracker now empty.",
+    "CB: INACTIVE | daily 0.0% | weekly 2.8% (week_start $100.28). Peak: $101.68."
   ]
 }

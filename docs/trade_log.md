@@ -1,5 +1,13 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-07-30T15:18:03.043964+00:00
+- SUMMARY: Market open (11:18 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.
+- Sells: MSFT RSI SELL (RSI=80.9, conf=2) — not held, no action. 0 positions to sell.
+- Buys: Regime=bearish_ema (SPY $736.23 < EMA200 $743.35) requires 3/3 conf. No qualifying BUY signals (0 net-buy-buy, 0 RSI-buy, 0 surge ≥5%).
+- Surge tracker: SNOW removed (no longer ≥10% intraday). Tracker empty.
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.8% (week_start $100.28). Peak: $101.68.
+
+
 ## 2026-07-30T14:17:54.849414+00:00
 - SUMMARY: Market open (10:17 ET). No new positions. Buying power: $97.45. 0 equity positions. Regime: bearish_ema (SPY $729.54 < EMA200 $743.42). Account: $97.45. CB: INACTIVE | daily 0.0% | weekly 2.8% (week_start $100.28). SNOW NET-BUY signal (4d streak, 52.7% buy surge) BLOCKED: $97.45−$50=$47.45 < $50 buffer. Surge tracker SNOW count=1 (need ≥2). Peak: $101.68. No sells — 0 positions.
 
