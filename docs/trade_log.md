@@ -1,5 +1,13 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-07-31T20:12:06Z
+- SUMMARY: Market closed (after-hours, ~16:12 ET). Buying power: $52.45. Equity positions: 1 (AAPL +2.35%). Regime: normal. Account: $98.18.
+- Sells: None — market closed. AAPL $309.03 above trail_stop $291.73; take-profit $332.15 not reached.
+- Buys: None — market closed. Top BUY candidates (deferred): MSFT net-buy 4d streak, CVX net-buy.
+- Surge tracker: No tickers with ≥10% intraday surge.
+- CB: INACTIVE | daily +0.75% gain | weekly −2.09% drawdown (week_start $100.28). Peak: $101.68.
+- AAPL note: Price down -7.3% from prior close $333.43 → $309.03. Still well above trail_stop $291.73.
+
 ## 2026-07-31T18:14:30Z
 - SUMMARY: Market open (14:14 ET). 2 buys placed. Buying power: ~$67.45. 2 equity positions. Regime: normal (SPY $745.44 > EMA200 $743.41). Account: ~$97.45.
 - Sells: None — no positions held.
