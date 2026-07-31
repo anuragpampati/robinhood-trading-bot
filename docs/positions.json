@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T14:17:18Z",
+  "updated_at": "2026-07-31T15:17:19Z",
   "buying_power": 97.45,
   "market_regime": "bearish_ema",
   "account_value": 97.45,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market open (10:17 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
+    "Market open (11:17 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
     "Sells: None — no positions held.",
-    "Buys: Regime=bearish_ema requires 3/3 conf. META RSI BUY (conf=2/3, RSI=25.2, RL=HOLD 0.919) — skipped, conf<3. SNOW net_buy_buy but RSI=SELL conflict, skipped. No qualifying buys.",
-    "Surge tracker: AI (buy_surge_pct=137.95%) — new, count=1, not yet ≥2 for intraday_surge buy.",
-    "CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.83% (week_start $100.28). Peak: $101.68."
+    "Buys: Regime=bearish_ema requires conf 3/3. RSI signals: 0 BUY. Net-buy: 0 BUY, 21 SELL signals. No surge. No qualifying buys.",
+    "Surge tracker: AI removed (not in ≥10% surge). Tracker cleared: {}.",
+    "CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.82% (week_start $100.28). Peak: $101.68."
   ]
 }
