@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-31T18:14:30Z",
-  "buying_power": 67.45,
+  "updated_at": "2026-07-31T19:14:02Z",
+  "buying_power": 52.45,
   "market_regime": "normal",
-  "account_value": 97.45,
+  "account_value": 97.72,
   "peak_value": 101.68,
   "day_start_value": 97.45,
   "day_start_date": "2026-07-31",
@@ -10,39 +10,25 @@
   "week_start_date": "2026-07-27",
   "positions": [
     {
-      "ticker": "MSFT",
-      "quantity": 0.032460,
-      "avg_cost": 462.02,
-      "current_price": 462.02,
-      "pnl_pct": 0.0,
-      "value": 14.99,
-      "entry_atr_pct": 0.0168,
-      "entry_time": "2026-07-31T18:14:21Z",
-      "trail_stop": 446.54,
-      "take_profit": 508.22,
-      "strategy": "normal",
-      "sell_date": null
-    },
-    {
       "ticker": "AAPL",
-      "quantity": 0.049650,
-      "avg_cost": 302.07,
-      "current_price": 302.07,
-      "pnl_pct": 0.0,
-      "value": 15.00,
+      "quantity": 0.099355,
+      "avg_cost": 301.95,
+      "current_price": 304.47,
+      "pnl_pct": 0.0083,
+      "value": 30.24,
       "entry_atr_pct": 0.0171,
       "entry_time": "2026-07-31T18:14:29Z",
       "trail_stop": 291.73,
-      "take_profit": 332.28,
+      "take_profit": 332.15,
       "strategy": "normal",
       "sell_date": null
     }
   ],
   "last_actions": [
-    "Market open (14:14 ET). 2 buys placed. Buying power: ~$67.45. 2 equity positions. Regime: normal (SPY $745.44 > EMA200 $743.41). Account: ~$97.45.",
-    "Sells: None — no positions held.",
-    "Buys: Regime=normal (max $100/position, conf≥2). MSFT NET-BUY ($15, 4d net-buy streak, OBV+). AAPL MODERATE BUY ($15, RSI=15.2 extremely oversold, BELOW_BAND, conf=2). Cash buffer maintained ≥$50.",
+    "Market open (15:14 ET). No trades — buying_power $52.45, only $2.45 after $50 buffer (min $15). 1 equity position. Regime: normal. Account: $97.72.",
+    "Sells: None — AAPL above trail_stop $291.73; no take-profit; hours_held ~1hr.",
+    "Buys skipped: MSFT net-buy (4d streak) — insufficient funds ($2.45 avail). AAPL RSI BUY — already held.",
     "Surge tracker: Empty — no tickers with ≥10% intraday surge.",
-    "CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.82% (week_start $100.28). Peak: $101.68."
+    "CB: INACTIVE | daily −0.28% (day_start $97.45) | weekly 2.55% (week_start $100.28). Peak: $101.68."
   ]
 }
