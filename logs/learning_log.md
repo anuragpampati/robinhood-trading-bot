@@ -110,3 +110,11 @@
 - Backtest: skipped — yfinance proxy blocked (403); prior metrics retained (return +9.29%, drawdown 15.29%, win_rate 39.6%)
 - RL samples: 418/200 (READY — RL training can be activated)
 - Notes: Account $97.45 cash-only, regime bearish_ema, no open positions. Multiple RL BOOST signals blocked by cash buffer constraint ($97.45 − $50 = $47.45 < $50 buffer required). RL fully ready (418 samples, 19 states); consider running `python -m strategy.rl_agent --train` to activate Q-learning. Trade log trimmed to 7 entries.
+
+## 2026-07-31
+- Trades analysed: 0 closed pairs (only 2 BUYs placed today: AAPL + MSFT — both still open). No completed trade history to analyze.
+- Win rate: n/a — no closed trades in log (normal: n/a, momentum: n/a, surge: n/a)
+- Config changes: none — 0 closed trade pairs (n < 3 for all strategy types); NO_CHANGE warranted
+- Backtest: SKIPPED — yfinance proxy blocked (403 again). Prior metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate, 227 trades
+- RL samples: 423/200 (READY — +4 new rows today; 19 states in Q-table)
+- Notes: Live account $98.18. Positions: AAPL +2.35% (entry $301.95, trail_stop $291.73), MSFT open (entry $462.02). Regime shifted bearish_ema → normal today (SPY $745.44 > EMA200 $743.41). RL exceeded 200 target days ago — Q-table has 19 states. Trade log trimmed to 12 entries (last 2 days). Run: python -m strategy.rl_agent --train to activate Q-learning.
