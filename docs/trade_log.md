@@ -1,12 +1,11 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-07-31T14:17:18Z
-- SUMMARY: Market open (10:17 ET). No trades. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
+## 2026-07-31T15:17:19Z
+- SUMMARY: Market open (11:17 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.
 - Sells: None — no positions held.
-- Buys: Regime=bearish_ema requires 3/3 conf. META RSI BUY (conf=2/3, RSI=25.2, RL=HOLD 0.919) — skipped, conf<3 and RL shows HOLD. SNOW net_buy_buy but RSI=SELL conflict — skipped. No qualifying buys.
-- Surge tracker: AI (buy_surge_pct=137.95%) — new, count=1 (not yet ≥2 for intraday_surge buy).
-- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.83% (week_start $100.28). Peak: $101.68.
-
+- Buys: Regime=bearish_ema requires conf 3/3. RSI signals: 0 BUY (MSFT/AMZN/GOOGL=SELL, rest=HOLD). Net-buy: 0 BUY signals, 21 SELL signals. No surge signals. No qualifying buys.
+- Surge tracker: AI removed (no longer in ≥10% surge signals). Tracker cleared: {}.
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.82% (week_start $100.28, peak $101.68).
 
 ## 2026-07-30T20:11:12Z
 - SUMMARY: Market closed (16:10 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema (last valid intraday). Account: $97.45.
@@ -81,43 +80,3 @@
 - SURGE: DKNG +100.7% intraday surge — count=1 (need ≥2 for entry).
 - Net-buy SELL signals (no pos): XOM, ALAB, AVGO, IREN, TSLA, UBER, LRCX. RSI SELL (no pos): BA, GM.
 - CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68.
-
-## 2026-07-28T19:13:06Z
-- SUMMARY: Market open (15:13 ET). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
-- No positions to sell. RSI SELL (no pos): CRM, BA, GM. Net-buy SELL (no pos): IREN, TSLA, ALAB, AVGO, VRT, UBER.
-- BUY blocked: $50.28 buying power − $50 buffer = $0.28 available, below $15 min. 0 buy signals (bearish_ema requires 3/3 conf, no qualifying signals).
-- Surge: BAC added to tracker (count=1, +106.7% buy surge). CRM removed (below 10% threshold). Needs count≥2 to trigger intraday buy.
-- CB: INACTIVE | daily +1.1% gain (day_start $96.38) | weekly −2.8% (week_start $100.28). Peak: $101.68.
-- Regime: bearish_ema (SPY $741.45 < EMA200 $743.93). Positions: 0.
-
----
-
-## 2026-07-28T16:17:00Z
-- SUMMARY: Market open (12:17 ET). No trades executed. Buying power: $50.28. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
-- ASML: RSI BUY conf=2/3 — skipped: bearish_ema requires 3/3 AND RL=HOLD (conf=0.919).
-- No net-buy BUY signals. 7 net-buy SELL + 10 RSI SELL — none held.
-- CB: INACTIVE | daily +1.1% | weekly -2.8%. Peak: $101.68.
-
----
-
-## 2026-07-28T15:20:33Z
-- Action   : SELL AMD
-- Price    : $453.57
-- Amount   : $47.01 | Shares: 0.103631
-- RSI      : 23.7 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=1.0 | null (no veto)
-- Stop     : $484.89 (trail_stop) | Target: $530.73
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : bearish_ema
-- Reason   : ATR trailing stop triggered: $453.57 ≤ trail_stop $484.89. AMD fell -6.0% from avg $482.48. Trail_stop ratcheted up to $484.89 when AMD was +2.6% ($495.07). Hours held: ~21h.
-
----
-
-## 2026-07-28T14:20:51Z
-- SUMMARY: Market open (10:20 ET). No trades executed. Buying power: $50.28. Equity positions: 1 (AMD). Regime: bearish_ema. Account: $96.38.
-- AMD: $495.07 (+2.6% from avg $482.48), trail_stop=$484.89 (no change). No stop/take-profit triggers.
-- BUY candidates: LITE RSI=28.2 conf=2->3 (RL BOOST, rl_conf=1.0) -- skipped: buying_power $50.28 < $50 buffer + $15 min order. NVDA RSI=29.1 conf=2 -- skipped: net_buy SELL + RL HOLD.
-- SELL signals: JPM, GM (RSI overbought), GS/NVDA/CRM/SOUN/NOW/HOOD/GOOGL (net-buy sell) -- none held.
-- CB: INACTIVE | daily 0.0% | weekly -3.9% (week_start $100.28)
-
----
