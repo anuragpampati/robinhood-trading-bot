@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-31T16:14:00Z",
+  "updated_at": "2026-07-31T17:12:33Z",
   "buying_power": 97.45,
-  "market_regime": "bearish_ema",
+  "market_regime": "normal",
   "account_value": 97.45,
   "peak_value": 101.68,
   "day_start_value": 97.45,
@@ -10,9 +10,9 @@
   "week_start_date": "2026-07-27",
   "positions": [],
   "last_actions": [
-    "Market open (12:14 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: bearish_ema. Account: $97.45.",
+    "Market open (13:12 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: normal (SPY $744.62 > EMA200 $743.15 — upgraded from bearish_ema). Account: $97.45.",
     "Sells: None — no positions held.",
-    "Buys: Regime=bearish_ema requires conf 3/3. RSI signals: 0 BUY (MSFT/AMZN/GOOGL=SELL conf2/3). Net-buy BUY: MSFT only but RSI=SELL (80 overbought) — contradictory, skipped. No surge signals. No qualifying buys.",
+    "Buys: Regime=normal (max $100/position, conf≥2). Net-buy BUY: MSFT only — RSI=SELL (RSI 78.7 overbought, above BB upper band, conf=2) contradicts net-buy signal. Skipped to protect capital. No RSI BUY signals. No surge/intraday_surge signals. No qualifying buys.",
     "Surge tracker: Empty — no tickers with ≥10% intraday surge.",
     "CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.82% (week_start $100.28). Peak: $101.68."
   ]
