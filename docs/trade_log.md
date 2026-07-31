@@ -1,5 +1,34 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-07-31T18:14:30Z
+- SUMMARY: Market open (14:14 ET). 2 buys placed. Buying power: ~$67.45. 2 equity positions. Regime: normal (SPY $745.44 > EMA200 $743.41). Account: ~$97.45.
+- Sells: None — no positions held.
+- Buys: Regime=normal (max $100/position, conf≥2). MSFT NET-BUY ($15, 4d net-buy streak, OBV+). AAPL MODERATE BUY ($15, RSI=15.2 extremely oversold, BELOW_BAND, conf=2). Cash buffer maintained ≥$50.
+- Surge tracker: Empty — no tickers with ≥10% intraday surge.
+- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.82% (week_start $100.28). Peak: $101.68.
+
+## 2026-07-31T18:14:21Z
+- Action   : BUY MSFT
+- Price    : $462.02
+- Amount   : $15.00 | Shares: 0.032460
+- RSI      : 76.92 | EMA: BULLISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $446.54 | Target: $508.22
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net buy ↑ 4d streak: -4.99M → 1.21M → 3.97M | OBV +10.0M/day
+
+## 2026-07-31T18:14:29Z
+- Action   : BUY AAPL
+- Price    : $302.07
+- Amount   : $15.00 | Shares: 0.049650
+- RSI      : 15.21 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.93 | null
+- Stop     : $291.73 | Target: $332.28
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (16.1≈15.2) | BB reversal: -0.07→0.01 (returning from band)
+
 ## 2026-07-31T17:12:33Z
 - SUMMARY: Market open (13:12 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: normal (SPY $744.62 > EMA200 $743.15 — upgraded from bearish_ema). Account: $97.45.
 - Sells: None — no positions held.

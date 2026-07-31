@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:12:33Z",
-  "buying_power": 97.45,
+  "updated_at": "2026-07-31T18:14:30Z",
+  "buying_power": 67.45,
   "market_regime": "normal",
   "account_value": 97.45,
   "peak_value": 101.68,
@@ -8,11 +8,40 @@
   "day_start_date": "2026-07-31",
   "week_start_value": 100.28,
   "week_start_date": "2026-07-27",
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "MSFT",
+      "quantity": 0.032460,
+      "avg_cost": 462.02,
+      "current_price": 462.02,
+      "pnl_pct": 0.0,
+      "value": 14.99,
+      "entry_atr_pct": 0.0168,
+      "entry_time": "2026-07-31T18:14:21Z",
+      "trail_stop": 446.54,
+      "take_profit": 508.22,
+      "strategy": "normal",
+      "sell_date": null
+    },
+    {
+      "ticker": "AAPL",
+      "quantity": 0.049650,
+      "avg_cost": 302.07,
+      "current_price": 302.07,
+      "pnl_pct": 0.0,
+      "value": 15.00,
+      "entry_atr_pct": 0.0171,
+      "entry_time": "2026-07-31T18:14:29Z",
+      "trail_stop": 291.73,
+      "take_profit": 332.28,
+      "strategy": "normal",
+      "sell_date": null
+    }
+  ],
   "last_actions": [
-    "Market open (13:12 ET). No trades. Buying power: $97.45. 0 equity positions. Regime: normal (SPY $744.62 > EMA200 $743.15 — upgraded from bearish_ema). Account: $97.45.",
+    "Market open (14:14 ET). 2 buys placed. Buying power: ~$67.45. 2 equity positions. Regime: normal (SPY $745.44 > EMA200 $743.41). Account: ~$97.45.",
     "Sells: None — no positions held.",
-    "Buys: Regime=normal (max $100/position, conf≥2). Net-buy BUY: MSFT only — RSI=SELL (RSI 78.7 overbought, above BB upper band, conf=2) contradicts net-buy signal. Skipped to protect capital. No RSI BUY signals. No surge/intraday_surge signals. No qualifying buys.",
+    "Buys: Regime=normal (max $100/position, conf≥2). MSFT NET-BUY ($15, 4d net-buy streak, OBV+). AAPL MODERATE BUY ($15, RSI=15.2 extremely oversold, BELOW_BAND, conf=2). Cash buffer maintained ≥$50.",
     "Surge tracker: Empty — no tickers with ≥10% intraday surge.",
     "CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly 2.82% (week_start $100.28). Peak: $101.68."
   ]
