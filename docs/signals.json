@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-31T20:20:29.494273+00:00",
+  "timestamp": "2026-07-31T20:58:13.419019+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -965,7 +965,7 @@
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0185,
+      "atr_pct": 0.0184,
       "reason": "RSI=46.9 (falling), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
