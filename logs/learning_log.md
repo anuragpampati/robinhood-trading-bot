@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-08-03
+- Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only 5 SUMMARY entries, no complete round-trips visible)
+- Win rate: n/a — no closed trades in log (normal: n/a, momentum: n/a — 0 trades, surge: n/a — 0 trades)
+- Config changes: none — all strategy types below minimum sample thresholds (n<3 for all types); NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403) again; prior 14d metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 439/200 (READY — +16 new rows today; 19 states in Q-table)
+- Notes: Account $97.74, 0 equity positions (AAPL sold between 14:21–16:18 ET today, proceeds settling $30.29). Regime: normal (SPY above EMA200). Multiple RSI SELL signals in market (MSFT 85.7, GOOGL 84.2, CRWD 84.0) but nothing held. RL exceeded 200 target long ago (439 samples) — run: python -m strategy.rl_agent --train to activate Q-learning. Trade log trimmed to 5 entries.
+
 ## 2026-07-23
 - Trades analysed: 9 closed (same as prior day — no new exits); 1 open (PLTR -0.21%, bearish_ema regime)
 - Win rate: 55.6% overall (normal: 55.6% — 5W/4L, avg_pnl +0.07%, avg_hold ~182h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
