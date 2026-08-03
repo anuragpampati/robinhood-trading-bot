@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-07-31T20:12:06Z",
-  "buying_power": 52.45,
+  "updated_at": "2026-08-03T14:21:29Z",
+  "buying_power": 67.45,
   "market_regime": "normal",
-  "account_value": 98.18,
+  "account_value": 97.88,
   "peak_value": 101.68,
-  "day_start_value": 97.45,
-  "day_start_date": "2026-07-31",
-  "week_start_value": 100.28,
-  "week_start_date": "2026-07-27",
+  "day_start_value": 97.88,
+  "day_start_date": "2026-08-03",
+  "week_start_value": 97.88,
+  "week_start_date": "2026-08-03",
   "positions": [
     {
       "ticker": "AAPL",
       "quantity": 0.099355,
       "avg_cost": 301.95,
       "current_price": 309.03,
-      "pnl_pct": 0.0235,
+      "pnl_pct": 0.0234,
       "value": 30.70,
       "entry_atr_pct": 0.0171,
       "entry_time": "2026-07-31T18:14:29Z",
@@ -25,10 +25,10 @@
     }
   ],
   "last_actions": [
-    "Market closed (~16:12 ET). No trades — market closed.",
-    "AAPL: $309.03 (+2.35% vs avg cost $301.95). Trail stop $291.73 unchanged (profit 2.35% < 2.5% ratchet). Take-profit: $332.15.",
-    "AAPL down -7.3% from prior close $333.43 — no stop triggered (trail_stop $291.73 well below current price).",
-    "Circuit breaker: INACTIVE | daily +0.75% gain | weekly −2.09% drawdown. Peak: $101.68.",
-    "Signals: MSFT net-buy (4d streak) + CVX net-buy — 25 SELL candidates — all deferred (market closed)."
+    "Market open. No trades — MSFT NET-BUY skipped (buying power $67.45 - $50 = $17.45 < $50 buffer).",
+    "AAPL: $309.03 (+2.34% vs avg cost $301.95). Trail stop $291.73 unchanged (profit 2.34% < 2.5% ratchet).",
+    "RSI SELL not held: AMZN conf 2, CVX conf 2. Net-buy SELLs: AMKR, BE, QCOM, AMAT, MU, OKLO, NFLX, IREN, GEV, MRVL.",
+    "Circuit breaker: INACTIVE | daily 0.0% (day reset) | weekly 0.0% (week reset Monday). Peak: $101.68.",
+    "Signals: MSFT net-buy 4d streak (sole BUY) | 10 net-buy SELLs | 2 RSI SELLs — all non-held."
   ]
 }
