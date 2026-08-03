@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T16:18:43Z",
+  "updated_at": "2026-08-03T17:15:04Z",
   "buying_power": 67.45,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "No trades \u2014 0 BUY signals, 0 positions. Buying power: $67.45 ($30.29 settling). Regime: normal.",
-    "RSI SELL (not held): SPY(71.7), MSFT(85.2), AMZN(86.2), GOOGL(83.7), SNAP(72.2), TGT(71.3), ORCL(77.6), SNOW(76.3), AI(72.3), ASTS(71.6), ISRG(73.7), IONQ(75.8), CRWD(79.4).",
-    "Net-buy SELL (not held): GS, DIS, GM, PYPL, PLTR, F, PFE, AAPL, BA, MBLY.",
-    "Surge tracker: No tickers with \u226510% intraday surge.",
+    "No trades — 0 BUY signals, 0 positions. Buying power: $67.45 (~$30.29 settling). Regime: normal.",
+    "RSI SELL (not held): SPY(72.0), MSFT(85.7), GOOGL(84.2), SNAP(73.3), SOFI(71.4), TGT(72.0), ORCL(79.9), SNOW(74.4), AI(74.3), ISRG(74.8), SYM(70.2), IONQ(75.0), AEHR(72.1), CRWD(80.5).",
+    "Net-buy SELL (not held): GS, DIS, GM, ROK, F, PFE, PYPL, C, MBLY, IWM.",
+    "Surge tracker: No tickers with ≥10% intraday surge.",
     "Circuit breaker: INACTIVE | daily -0.14% | weekly -0.14%. Peak: $101.68."
   ]
 }
