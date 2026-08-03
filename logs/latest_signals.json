@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-03T20:26:40.238075+00:00",
+  "timestamp": "2026-08-03T20:57:49.497490+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1616,15 +1616,6 @@
       "reason": "Net buy reversed: 0.06M \u2192 -0.65M | OBV -0.7M/day"
     },
     {
-      "ticker": "ABBV",
-      "price": 245.10000610351562,
-      "net_buy_d2": -544743,
-      "net_buy_d3": -6275796,
-      "obv_slope": -4397988,
-      "score": 0.0,
-      "reason": "Net buy reversed: -0.54M \u2192 -6.28M | OBV -4.4M/day"
-    },
-    {
       "ticker": "WAT",
       "price": 374.739990234375,
       "net_buy_d2": -57249,
@@ -1652,13 +1643,13 @@
       "reason": "Net buy reversed: 0.11M \u2192 -0.83M | OBV -1.0M/day"
     },
     {
-      "ticker": "MCK",
-      "price": 827.1400146484375,
-      "net_buy_d2": 199274,
-      "net_buy_d3": -988709,
-      "obv_slope": -950793,
+      "ticker": "ABBV",
+      "price": 245.10000610351562,
+      "net_buy_d2": -544743,
+      "net_buy_d3": -5128979,
+      "obv_slope": -4139625,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.20M \u2192 -0.99M | OBV -1.0M/day"
+      "reason": "Net buy reversed: -0.54M \u2192 -5.13M | OBV -4.1M/day"
     },
     {
       "ticker": "TTD",
@@ -1668,6 +1659,15 @@
       "obv_slope": -4117965,
       "score": 0.0,
       "reason": "Net buy reversed: 2.27M \u2192 -10.84M | OBV -4.1M/day"
+    },
+    {
+      "ticker": "MCK",
+      "price": 827.1400146484375,
+      "net_buy_d2": 199274,
+      "net_buy_d3": -794554,
+      "obv_slope": -901114,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.20M \u2192 -0.79M | OBV -0.9M/day"
     },
     {
       "ticker": "ABNB",
