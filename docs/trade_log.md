@@ -9,31 +9,13 @@
 - Surge tracker: No tickers with ≥10% intraday surge.
 - CB: INACTIVE | daily -0.14% (day_start $97.88) | weekly -0.14% (week_start $97.88). Peak: $101.68.
 
-## 2026-08-03T15:21:00Z
-- SUMMARY: Market open (11:21 ET). AAPL sold (net-buy reversal exit). Buying power: $67.45 (proceeds settling). Equity positions: 0. Regime: normal. Account: $97.74.
-- Sells: AAPL — net_buy_sell_signal (29.26M → -1.62M OBV -23.4M/day), hours_held 69h ≥ 3, filled $304.84 (+0.96% vs avg $301.95).
-- Buys: None — no net_buy_buy_signals, no RSI BUY signals (conf≥2), no surge signals.
-- CB: INACTIVE | daily -0.14% (day_start $97.88) | weekly -0.14% (week_start $97.88). Peak: $101.68.
-- Surge tracker: No tickers with ≥10% intraday surge.
-
-## 2026-08-03T15:20:57Z
-- Action   : SELL AAPL
-- Price    : $304.84
-- Amount   : $30.29 | Shares: 0.099355
-- RSI      : 28.9 | EMA: BEARISH | BB: IN_BAND
-- RL       : HOLD conf=0.906 | null
-- Stop     : $291.73 | Target: $332.15
-- Strategy : normal | Sell date: net_buy_signal
-- Regime   : normal
-- Reason   : Net buy reversed 29.26M → -1.62M | OBV -23.4M/day | hours_held 69h ≥ 3 | PnL +0.96%
-
 ## 2026-08-03T14:21:29Z
 - SUMMARY: Market open. No trades executed — insufficient buying power for BUY. Buying power: $67.45. Equity positions: 1 (AAPL +2.34%). Regime: normal. Account: $97.88.
 - Sells: None. AAPL $309.03 above trail_stop $291.73; RSI HOLD; not in net_buy_sell_signals. Take-profit $332.15 not reached.
-- Buys: MSFT NET-BUY signal (4d streak, score 49.8) SKIPPED — $67.45 buying power - $50 order = $17.45 < $50 cash buffer.
-- RSI SELL signals (not held): AMZN (RSI 81.2, conf 2), CVX (RSI 70.5, conf 2) — no positions to exit.
+- Buys: MSFT NET-BUY signal (4d streak, score 49.8) SKIPPED — $67.45 buying power - $50 = $17.45 < $50 cash buffer.
+- RSI SELL signals (not held): AMZN (RSI 81.2, conf 2), CVX (RSI 70.5, conf 2).
 - Surge tracker: No tickers with ≥10% intraday surge.
-- CB: INACTIVE | daily 0.0% (reset: new day) | weekly 0.0% (reset: new week/Monday). Peak: $101.68.
+- CB: INACTIVE | daily 0.0% (reset: new day 2026-08-03) | weekly 0.0% (reset: new week Monday). Peak: $101.68.
 - AAPL: $309.03 (+2.34% vs avg cost $301.95). Trail stop $291.73 unchanged (profit 2.34% < 2.5% ratchet). Take-profit: $332.15.
 
 ## 2026-07-31T20:12:06Z
@@ -133,30 +115,3 @@
 > Auto-maintained by Claude agent. One entry per trade action.
 
 ---
-
-## 2026-07-29T18:14:02Z
-- SUMMARY: Market open (14:14 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
-- No positions to sell.
-- RSI BUY signals: ARM conf=2 (🤖 RL BOOST→3 but net-buy SELL conflicts → SKIP), LRCX conf=2 (🤖 RL BOOST→3, $97.45−$50=$47.45 < $50 buffer → SKIP), LAZR conf=2 (🤖 RL BOOST→3, same buffer issue → SKIP). All buys blocked.
-- SNOW: net-buy BUY (11.7% buy surge, 4d streak) + RSI SELL (RSI 70.7, ABOVE_BAND) → conflicting signals → SKIP. Surge tracker: SNOW added count=1.
-- Net-buy SELLs (no pos): CRDO, RGTI, ARM, NVTS, IREN, MRVL, MU, VRT, ASTS, RDW. RSI SELLs (no pos): AAPL (77.7), TGT (73.8), NOW (73.8), SNOW (70.7).
-- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly −2.8% (week_start $100.28). Peak: $101.68.
-- Regime: bearish_ema (SPY $736.41 < EMA200 $743.56). Requires 3/3 conf + $50 position ≤ available above buffer.
-
-## 2026-07-29T15:15:27Z
-- SUMMARY: Market open (11:15 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
-- No positions to sell.
-- No BUY signals in any strategy (0 net-buy-buy, 0 RSI-buy, 0 surge). 44 SELL signals — none held.
-- RSI SELLs (not held): CRM (RSI 74.2), DIS (71.5), TGT (74.9), F (81.4), GM (75.1), PYPL (70.2), NOW (73.6).
-- Net-buy SELLs (not held): AMD, IREN, NVTS, MRVL, LAZR, BE, CRWV, EOSE, CIFR, AMZN + 34 more.
-- Surge tracker: DKNG removed (no longer ≥10% surge). Tracker empty.
-- CB: INACTIVE | daily 0.0% (day_start $97.45) | weekly −2.8% (week_start $100.28). Peak: $101.68.
-- Regime: bearish_ema (SPY $734.82 < EMA200 $743.82). Would require 3/3 conf for any buy.
-
-## 2026-07-29T14:17:42Z
-- SUMMARY: Market open (10:17 ET). No trades executed. Buying power: $97.45. Equity positions: 0. Regime: bearish_ema. Account: $97.45.
-- No positions to sell.
-- BUY candidates (post RL BOOST): AMD conf=2→3 (🤖 RL BOOST, rl_conf=1.00), AMAT conf=2→3 (🤖 RL BOOST, rl_conf=1.00). Amount $50 each (bearish_ema). BLOCKED: $97.45 − $50 = $47.45 < $50 cash buffer. Skipping all buys.
-- SURGE: DKNG +100.7% intraday surge — count=1 (need ≥2 for entry).
-- Net-buy SELL signals (no pos): XOM, ALAB, AVGO, IREN, TSLA, UBER, LRCX. RSI SELL (no pos): BA, GM.
-- CB: INACTIVE | daily 0.0% | weekly −2.8% (week_start $100.28). Peak: $101.68.
