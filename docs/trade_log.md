@@ -1,5 +1,23 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-03T15:21:00Z
+- SUMMARY: Market open (11:21 ET). AAPL sold (net-buy reversal exit). Buying power: $67.45 (proceeds settling). Equity positions: 0. Regime: normal. Account: $97.74.
+- Sells: AAPL — net_buy_sell_signal (29.26M → -1.62M OBV -23.4M/day), hours_held 69h ≥ 3, filled $304.84 (+0.96% vs avg $301.95).
+- Buys: None — no net_buy_buy_signals, no RSI BUY signals (conf≥2), no surge signals.
+- CB: INACTIVE | daily -0.14% (day_start $97.88) | weekly -0.14% (week_start $97.88). Peak: $101.68.
+- Surge tracker: No tickers with ≥10% intraday surge.
+
+## 2026-08-03T15:20:57Z
+- Action   : SELL AAPL
+- Price    : $304.84
+- Amount   : $30.29 | Shares: 0.099355
+- RSI      : 28.9 | EMA: BEARISH | BB: IN_BAND
+- RL       : HOLD conf=0.906 | null
+- Stop     : $291.73 | Target: $332.15
+- Strategy : normal | Sell date: net_buy_signal
+- Regime   : normal
+- Reason   : Net buy reversed 29.26M → -1.62M | OBV -23.4M/day | hours_held 69h ≥ 3 | PnL +0.96%
+
 ## 2026-08-03T14:21:29Z
 - SUMMARY: Market open. No trades executed — insufficient buying power for BUY. Buying power: $67.45. Equity positions: 1 (AAPL +2.34%). Regime: normal. Account: $97.88.
 - Sells: None. AAPL $309.03 above trail_stop $291.73; RSI HOLD; not in net_buy_sell_signals. Take-profit $332.15 not reached.

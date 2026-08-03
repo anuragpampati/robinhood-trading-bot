@@ -1,34 +1,19 @@
 {
-  "updated_at": "2026-08-03T14:21:29Z",
+  "updated_at": "2026-08-03T15:21:00Z",
   "buying_power": 67.45,
   "market_regime": "normal",
-  "account_value": 97.88,
+  "account_value": 97.74,
   "peak_value": 101.68,
   "day_start_value": 97.88,
   "day_start_date": "2026-08-03",
   "week_start_value": 97.88,
   "week_start_date": "2026-08-03",
-  "positions": [
-    {
-      "ticker": "AAPL",
-      "quantity": 0.099355,
-      "avg_cost": 301.95,
-      "current_price": 309.03,
-      "pnl_pct": 0.0234,
-      "value": 30.70,
-      "entry_atr_pct": 0.0171,
-      "entry_time": "2026-07-31T18:14:29Z",
-      "trail_stop": 291.73,
-      "take_profit": 332.15,
-      "strategy": "normal",
-      "sell_date": null
-    }
-  ],
+  "positions": [],
   "last_actions": [
-    "Market open. No trades — MSFT NET-BUY skipped (buying power $67.45 - $50 = $17.45 < $50 buffer).",
-    "AAPL: $309.03 (+2.34% vs avg cost $301.95). Trail stop $291.73 unchanged (profit 2.34% < 2.5% ratchet).",
-    "RSI SELL not held: AMZN conf 2, CVX conf 2. Net-buy SELLs: AMKR, BE, QCOM, AMAT, MU, OKLO, NFLX, IREN, GEV, MRVL.",
-    "Circuit breaker: INACTIVE | daily 0.0% (day reset) | weekly 0.0% (week reset Monday). Peak: $101.68.",
-    "Signals: MSFT net-buy 4d streak (sole BUY) | 10 net-buy SELLs | 2 RSI SELLs — all non-held."
+    "SELL AAPL $304.84 (+0.96%) — net buy reversed 29.26M → -1.62M | OBV -23.4M/day | hours_held 69h. Proceeds $30.29 (settling).",
+    "No BUY signals — 0 net_buy_buy_signals, 0 RSI BUY conf≥2, 0 surge candidates.",
+    "RSI SELL signals (not held): SPY, AMZN, GOOGL, ORCL, SNOW, RDW, ISRG, ROK, IONQ, RGTI, INFQ, CRWD — none held.",
+    "Net-buy SELLs (not held): DIS, PYPL, UBER, PFE, F, META, COIN, MBLY, SNAP, IWM, BA, SOFI, PLTR, ONDS, EOSE.",
+    "Circuit breaker: INACTIVE | daily -0.14% | weekly -0.14%. Peak: $101.68."
   ]
 }
