@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T18:15:37Z",
+  "updated_at": "2026-08-03T19:15:35Z",
   "buying_power": 67.45,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -11,9 +11,9 @@
   "positions": [],
   "last_actions": [
     "No trades — 0 BUY signals, 0 positions. Buying power: $67.45. Regime: normal.",
-    "RSI SELL (not held): SPY(73.3), MSFT(84.5), NVDA(70.6), GOOGL(80.8), SOFI(72.5), TGT(72.7), BA(70.7), ORCL(80.5), AI(74.7), RDW(74.6), ISRG(72.8), LAZR(70.1), IONQ(75.7), QBTS(70.5), AEHR(73.7).",
-    "Net-buy SELL (not held): DKNG, DIS, ROK, UBER, PYPL, GM, F, PFE, META, AAPL.",
-    "Surge tracker: SNAP 40.3% (count=1), UUUU 59.9% (count=1) — need count≥2 to buy.",
+    "No intraday surge candidates (META count=1, ASML count=1, BA count=1; need count>=2).",
+    "RSI SELL (not held): SPY(73.6), NVDA(70.6), GOOGL(81.4), SNAP(71.3), SOFI(73.8), TGT(71.7), BA(71.8), ORCL(79.4), AI(76.0), ISRG(72.0), LAZR(70.4), IONQ(71.8), CRWV(74.0), CRWD(84.0).",
+    "Net-buy SELL (not held): DKNG, GM, F, ROK, XOM, PFE, AAPL, MRNA, COIN, UBER.",
     "Circuit breaker: INACTIVE | daily -0.14% | weekly -0.14%. Peak: $101.68."
   ]
 }
