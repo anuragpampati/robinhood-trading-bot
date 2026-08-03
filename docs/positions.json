@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T15:21:00Z",
+  "updated_at": "2026-08-03T16:18:43Z",
   "buying_power": 67.45,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "SELL AAPL $304.84 (+0.96%) — net buy reversed 29.26M → -1.62M | OBV -23.4M/day | hours_held 69h. Proceeds $30.29 (settling).",
-    "No BUY signals — 0 net_buy_buy_signals, 0 RSI BUY conf≥2, 0 surge candidates.",
-    "RSI SELL signals (not held): SPY, AMZN, GOOGL, ORCL, SNOW, RDW, ISRG, ROK, IONQ, RGTI, INFQ, CRWD — none held.",
-    "Net-buy SELLs (not held): DIS, PYPL, UBER, PFE, F, META, COIN, MBLY, SNAP, IWM, BA, SOFI, PLTR, ONDS, EOSE.",
+    "No trades \u2014 0 BUY signals, 0 positions. Buying power: $67.45 ($30.29 settling). Regime: normal.",
+    "RSI SELL (not held): SPY(71.7), MSFT(85.2), AMZN(86.2), GOOGL(83.7), SNAP(72.2), TGT(71.3), ORCL(77.6), SNOW(76.3), AI(72.3), ASTS(71.6), ISRG(73.7), IONQ(75.8), CRWD(79.4).",
+    "Net-buy SELL (not held): GS, DIS, GM, PYPL, PLTR, F, PFE, AAPL, BA, MBLY.",
+    "Surge tracker: No tickers with \u226510% intraday surge.",
     "Circuit breaker: INACTIVE | daily -0.14% | weekly -0.14%. Peak: $101.68."
   ]
 }
