@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-04T20:23:52.573934+00:00",
+  "timestamp": "2026-08-04T21:05:39.229003+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1602,11 +1602,11 @@
       "price": 218.6300048828125,
       "net_buy_d1": 127023,
       "net_buy_d2": 372300,
-      "net_buy_d3": 1204243,
+      "net_buy_d3": 1356218,
       "trend_days": 4,
-      "obv_slope": 812536,
-      "score": 40.81,
-      "reason": "Net buy \u2191 4d streak: 0.13M \u2192 0.37M \u2192 1.20M | OBV +0.8M/day"
+      "obv_slope": 850197,
+      "score": 40.85,
+      "reason": "Net buy \u2191 4d streak: 0.13M \u2192 0.37M \u2192 1.36M | OBV +0.9M/day"
     },
     {
       "ticker": "URI",
@@ -1647,10 +1647,10 @@
       "ticker": "DECK",
       "price": 99.87000274658203,
       "net_buy_d2": -26825,
-      "net_buy_d3": -633365,
-      "obv_slope": -235472,
+      "net_buy_d3": -971731,
+      "obv_slope": -111280,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.03M \u2192 -0.63M | OBV -0.2M/day"
+      "reason": "Net buy reversed: -0.03M \u2192 -0.97M | OBV -0.1M/day"
     },
     {
       "ticker": "PODD",
@@ -1665,28 +1665,28 @@
       "ticker": "ACGL",
       "price": 99.5199966430664,
       "net_buy_d2": 228034,
-      "net_buy_d3": -161191,
-      "obv_slope": -851359,
+      "net_buy_d3": -166122,
+      "obv_slope": -862894,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.23M \u2192 -0.16M | OBV -0.9M/day"
+      "reason": "Net buy reversed: 0.23M \u2192 -0.17M | OBV -0.9M/day"
     },
     {
       "ticker": "TGT",
       "price": 148.11000061035156,
       "net_buy_d2": 2114179,
-      "net_buy_d3": -124719,
-      "obv_slope": -671375,
+      "net_buy_d3": -93533,
+      "obv_slope": -535254,
       "score": 0.0,
-      "reason": "Net buy reversed: 2.11M \u2192 -0.12M | OBV -0.7M/day"
+      "reason": "Net buy reversed: 2.11M \u2192 -0.09M | OBV -0.5M/day"
     },
     {
       "ticker": "CRH",
       "price": 98.83999633789062,
       "net_buy_d2": 4733597,
-      "net_buy_d3": 180347,
-      "obv_slope": -1020772,
+      "net_buy_d3": 135098,
+      "obv_slope": -1229882,
       "score": 0.0,
-      "reason": "Net buy reversed: 4.73M \u2192 0.18M | OBV -1.0M/day"
+      "reason": "Net buy reversed: 4.73M \u2192 0.14M | OBV -1.2M/day"
     },
     {
       "ticker": "NCLH",
@@ -1698,51 +1698,41 @@
       "reason": "Net buy reversed: 19.01M \u2192 1.13M | OBV -4.5M/day"
     },
     {
-      "ticker": "LYV",
-      "price": 183.6999969482422,
-      "net_buy_d2": 2935099,
-      "net_buy_d3": 223476,
-      "obv_slope": -936438,
-      "score": 0.0,
-      "reason": "Net buy reversed: 2.94M \u2192 0.22M | OBV -0.9M/day"
-    },
-    {
       "ticker": "SYK",
       "price": 335.9599914550781,
       "net_buy_d2": 2241730,
-      "net_buy_d3": 256515,
-      "obv_slope": -1734228,
+      "net_buy_d3": 214636,
+      "obv_slope": -1634948,
       "score": 0.0,
-      "reason": "Net buy reversed: 2.24M \u2192 0.26M | OBV -1.7M/day"
+      "reason": "Net buy reversed: 2.24M \u2192 0.21M | OBV -1.6M/day"
+    },
+    {
+      "ticker": "LYV",
+      "price": 183.6999969482422,
+      "net_buy_d2": 2935099,
+      "net_buy_d3": 311152,
+      "obv_slope": -767365,
+      "score": 0.0,
+      "reason": "Net buy reversed: 2.94M \u2192 0.31M | OBV -0.8M/day"
     },
     {
       "ticker": "KIM",
       "price": 25.010000228881836,
       "net_buy_d2": -2587772,
-      "net_buy_d3": -4703569,
-      "obv_slope": -6782863,
+      "net_buy_d3": -4624033,
+      "obv_slope": -6811604,
       "score": 0.0,
-      "reason": "Net buy reversed: -2.59M \u2192 -4.70M | OBV -6.8M/day"
+      "reason": "Net buy reversed: -2.59M \u2192 -4.62M | OBV -6.8M/day"
     },
     {
-      "ticker": "ZBH",
-      "price": 95.80999755859375,
-      "net_buy_d2": 2131045,
-      "net_buy_d3": 577910,
-      "obv_slope": -1064102,
+      "ticker": "VMC",
+      "price": 285.1000061035156,
+      "net_buy_d2": 1486797,
+      "net_buy_d3": 414992,
+      "obv_slope": -298298,
       "score": 0.0,
-      "reason": "Net buy reversed: 2.13M \u2192 0.58M | OBV -1.1M/day"
+      "reason": "Net buy reversed: 1.49M \u2192 0.41M | OBV -0.3M/day"
     }
   ],
-  "surge_signals": [
-    {
-      "ticker": "AMD",
-      "price": 518.5800170898438,
-      "buy_surge_pct": 0.0874,
-      "buy_vol_d2": 20099592,
-      "buy_vol_d3": 21855460,
-      "net_buy_d3": 6444580,
-      "reason": "Buy vol \u21918.7% vs prior day | 1d streak | latest 6.44M | OBV 14.2M/day"
-    }
-  ]
+  "surge_signals": []
 }
