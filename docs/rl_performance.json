@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-04",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,8 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 439,
+  "rl_training_samples": 472,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403) — prior backtest metrics retained. RL: 439 samples (+16 today), 19 states. Config: NO_CHANGE — insufficient closed trade pairs in trimmed log (n<3 for all strategy types). Live: $97.74, 0 equity positions, regime normal. RL READY — run: python -m strategy.rl_agent --train"
+  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403) — prior backtest metrics retained. RL: 472 samples (+33 today), 19 states. Config: NO_CHANGE — normal strategy win_rate=54.5% in [40%,65%] range (n=11); momentum n=0<3; ATR avg_hold~153h>>2h. Live: $97.74, 0 equity positions, regime normal. RL READY — run: python -m strategy.rl_agent --train"
 }

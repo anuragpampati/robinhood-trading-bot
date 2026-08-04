@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-08-04
+- Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only SUMMARY entries, no complete round-trips visible)
+- Win rate: n/a — no closed trades in log (normal: n/a; momentum: n/a — 0 trades; surge: n/a — 0 trades); historical reference: normal 54.5% (n=11), BULLISH EMA 55.6%, BEARISH EMA 50.0%
+- Config changes: none — RSI_OVERSOLD: historical win_rate=54.5% in [40%,65%] (NO_CHANGE, n=11≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold~153h>>2h (NO_CHANGE); NO_CHANGE applied
+- Backtest: SKIPPED — yfinance proxy blocked (403) again; prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 472/200 (READY — +33 new rows today; 19 states in Q-table)
+- Notes: Account $97.74 (-2.3% from $100 start), 0 equity positions, regime normal. All RSI signals overbought (massive RSI SELL list — SPY 83.1, CRWD 86.5, ORCL 85.7) but nothing held. INTC/AVAV signals skipped due to insufficient buying power ($47.74 above buffer < $50 min). RL far exceeds 200 target (472 samples) — run: python -m strategy.rl_agent --train to activate Q-learning.
+
 ## 2026-08-03
 - Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only 5 SUMMARY entries, no complete round-trips visible)
 - Win rate: n/a — no closed trades in log (normal: n/a, momentum: n/a — 0 trades, surge: n/a — 0 trades)
