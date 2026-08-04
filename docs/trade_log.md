@@ -1,13 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-04T16:17:24Z
-- SUMMARY: Market open (12:17 ET). No trades — no BUY signals met threshold, 0 positions to exit. Buying power: $97.74. Equity positions: 0. Regime: normal. Account: $97.74.
-- Sells: None — no open equity positions.
-- Buys: None — NET-BUY candidates INTC($99.60) and AVAV($168.41) skipped: $97.74 buying_power − $50 = $47.74 < $50 buffer required. SNOW skipped: RSI SELL (conf 2/3, overbought 72.5). No STRONG BUY (RSI has no BUY signals). Surge tracker: INTC(16.0%), AVAV(17.6%), SNOW(205.2%) all count=1 (need ≥2 for intraday surge entry).
-- RSI SELL (not held): SPY(81.3), QQQ(79.7), IWM(73.5), MSFT(85.2), NVDA(71.8), INTC(70.1), AVGO(77.8), SNAP(87.0), SOFI(78.2), BAC(71.3), C(72.2), WFC(73.8), PFE(71.8), BA(75.1), GE(74.4), ORCL(85.0), SNOW(72.5), AI(76.2), DELL(76.8), MRVL(76.6), RKLB(77.8), ASTS(75.1), PL(78.2), RDW(80.7), SYM(74.9), TER(71.1), LAZR(81.1), IONQ(73.5), RGTI(74.1), QBTS(77.1), INFQ(73.6), ONDS(74.0), AVAV(76.8), KTOS(72.8), MRCY(74.6), UUUU(73.2), LITE(77.7), NVTS(74.2), CRDO(76.6), CRWD(88.8), CRWV(81.2).
-- Net-buy BUY (not purchased): INTC ($97.74 BP insufficient for $50 + $50 buffer), AVAV (same).
-- CB: INACTIVE | daily 0.00% (day_start $97.74) | weekly -0.14% (week_start $97.88). Peak: $101.68.
-
 ## 2026-08-04T15:21:58Z
 - SUMMARY: Market open (11:21 ET). No trades — 0 BUY signals, 0 positions to exit. Buying power: $97.74. Equity positions: 0. Regime: normal. Account: $97.74.
 - Sells: None — no open equity positions.
