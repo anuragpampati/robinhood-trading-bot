@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T19:13:55Z",
+  "updated_at": "2026-08-04T20:15:55Z",
   "buying_power": 97.74,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "Market open (15:13 ET). No trades — buying power $97.74 − $50 buffer = $47.74 < $50 min buy. 0 positions. Regime: normal.",
-    "Net-buy BUY signals: INTC(score 50.9), DELL(score 40.9), AVAV(score 40.2) — all skipped (insufficient buying power).",
-    "Intraday surge candidates (count≥2): INTC(count=4), AVAV(count=4) — skipped (insufficient buying power).",
-    "Surge tracker updated: INTC→4, AVAV→4, DELL→1(new), MSFT→1(new). Removed: ASTS (no longer in ≥10% surge).",
+    "Market closed (20:14 ET). No trades placed. 0 equity positions. Regime: normal.",
+    "Net-buy BUY signals (not traded \u2014 market closed): INTC(score 52.5), AVAV(score 40.3), ASML(score 40.0).",
+    "Surge signals detected (Step 4b skipped \u2014 market closed): INTC(+164%), AVAV(+118%), NBIS(+513%), ASTS(+106%), AEHR(+83%), ASML(+19%).",
+    "RSI SELL signals: 37 overbought tickers (none held).",
     "Circuit breaker: INACTIVE | daily 0.00% (day_start $97.74) | weekly 0.14% (week_start $97.88). Peak: $101.68."
   ]
 }
