@@ -1,5 +1,17 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-04T19:13:55Z
+- SUMMARY: Market open (15:13 ET). No trades — buying power $97.74 − $50 buffer = $47.74 < $50 min buy. 0 positions. Regime: normal. Account: $97.74.
+- Sells: None — no open equity positions.
+- Buys: None — all buy candidates require $50 but only $47.74 available above buffer.
+  - NET-BUY: INTC ($100.92, score 50.9) SKIPPED (insufficient buying power)
+  - NET-BUY: DELL ($471.34, score 40.9) SKIPPED (insufficient buying power)
+  - NET-BUY: AVAV ($168.59, score 40.2) SKIPPED (insufficient buying power)
+  - INTRADAY_SURGE (count≥2): INTC(4), AVAV(4) SKIPPED (insufficient buying power)
+- RSI SELL (not held): SPY(83.4), QQQ(81.9), IWM(75.4), NVDA(74.6), AMD(70.2), INTC(72.0), AVGO(77.9), SNAP(79.0), PLTR(88.9), ARM(73.6), BA(74.3), GE(78.9), ORCL(81.3), SNOW(71.9), AI(81.0), SMCI(71.6), DELL(76.1), AMAT(70.9), MRVL(75.8), RKLB(78.9), ASTS(77.6), SYM(74.4), LAZR(80.4), IONQ(74.7), RGTI(76.8), QBTS(79.4), INFQ(73.1), ONDS(72.1), AVAV(74.6), KTOS(73.3), MRCY(76.0), UUUU(76.2), LITE(76.5), NBIS(70.8), EOSE(78.1), NVTS(75.7), ALAB(80.0).
+- Surge tracker: INTC→4, AVAV→4 (intraday candidates), DELL→1(new), MSFT→1(new). Removed: ASTS (no longer in ≥10% surge).
+- CB: INACTIVE | daily 0.00% (day_start $97.74) | weekly 0.14% (week_start $97.88). Peak: $101.68.
+
 ## 2026-08-04T18:15:24Z
 - SUMMARY: Market open (14:15 ET). No trades — buying power $97.74 insufficient ($97.74 − $50 = $47.74 < $50 min buy). 0 positions. Regime: normal. Account: $97.74.
 - Sells: None — no open equity positions.
