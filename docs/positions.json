@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T16:17:24Z",
+  "updated_at": "2026-08-04T17:16:07Z",
   "buying_power": 97.74,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "Market open (12:17 ET). No trades — buying power $97.74 insufficient for $50 buy + $50 buffer. 0 positions to exit. Regime: normal. Account: $97.74.",
-    "Net-buy BUY candidates: INTC($99.60), AVAV($168.41) — skipped: $97.74 - $50 = $47.74 < $50 buffer required.",
-    "Surge tracker: INTC(16.0%), AVAV(17.6%), SNOW(205.2%) — all count=1 first seen today, need >=2 for intraday_surge entry.",
-    "RSI SELL signals (not held): SPY(81.3), QQQ(79.7), MSFT(85.2), NVDA(71.8), AVGO(77.8), SNAP(87.0), CRWD(88.8), ORCL(85.0), many others overbought.",
-    "Circuit breaker: INACTIVE | daily 0.00% (day_start $97.74) | weekly -0.14% (week_start $97.88). Peak: $101.68."
+    "Market open (13:16 ET). No trades — buying power $97.74 too low for $50 buy + $50 buffer. 0 positions. Regime: normal.",
+    "Intraday surge candidates: INTC(count=2), AVAV(count=2), SNOW(count=2) — all skipped: $97.74 − $50 = $47.74 < $50 buffer. Also all overbought (RSI >70, ABOVE_BAND).",
+    "Net-buy BUY signals: INTC, DELL, AVAV — all skipped (insufficient buying power).",
+    "Surge tracker updated: INTC→2, AVAV→2, SNOW→2, DELL→1(new), MRVL→1(new).",
+    "Circuit breaker: INACTIVE | daily 0.00% (day_start $97.74) | weekly −0.14% (week_start $97.88). Peak: $101.68."
   ]
 }
