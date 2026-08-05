@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T16:19:34Z",
+  "updated_at": "2026-08-05T17:13:27Z",
   "buying_power": 97.74,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,11 +10,11 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "Market open (12:19 ET). No trades placed. 0 equity positions. Regime: normal. Account: $97.74.",
+    "Market open (1:13 ET). No trades placed. 0 equity positions. Regime: normal. Account: $97.74.",
     "Sells: None — no open equity positions.",
-    "Buys: None — 0 BUY signals (0 RSI BUY, 0 net-buy BUY, 0 intraday surge count≥2). No surge candidates ≥10%.",
-    "RSI SELL (not held, 6): NVDA(76.3), AVGO(72.4), C(70.2), LAZR(80.1), COHR(75.3), KTOS(78.3).",
-    "Net-buy SELL (not held): MRNA, F, CVX, SOUN, MU.",
+    "Buys: None — 0 BUY signals (0 RSI BUY conf≥2, 0 net-buy BUY, 0 intraday surge count≥2). No surge candidates ≥10%.",
+    "RSI SELL (not held, 6): NVDA(78.4), AVGO(74.0), C(70.1), GE(74.9), DELL(71.2), KTOS(71.8).",
+    "Net-buy SELL (not held, 5): MRNA, CVX, F, SOUN, MU.",
     "CB: INACTIVE | daily 0.00% | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68."
   ]
 }
