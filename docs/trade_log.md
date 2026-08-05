@@ -1,25 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-05T15:19:25Z
-- SUMMARY: Market open (11:19 ET). No trades placed. Buying power: $97.74. Equity positions: 0. Regime: normal. Account: $97.74.
-- Sells: None — no open equity positions.
-- Buys: None — 0 RSI BUY signals, 0 net-buy BUY signals, 0 intraday surge (count≥2). Surge tracker cleared (no tickers ≥10% surge this cycle).
-- RSI SELL (not held, 10): SPY(82.6), QQQ(80.3), CRM(70.3), DIS(74.8), GE(81.1), DELL(78.2), AVAV(75.4), KTOS(82.8), UUUU(70.1), CRWD(88.5).
-- Net-buy SELL (not held): MRNA, CVX, SOUN, F, ISRG, MU.
-- CB: INACTIVE | daily 0.00% (day_start $97.74 2026-08-05) | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68.
-
-## 2026-08-05T14:24:45Z
-- SUMMARY: Market open (10:24 ET). No trades placed. Buying power: $97.74. Equity positions: 0. Regime: normal. Account: $97.74.
-- Sells: None — no open equity positions.
-- Buys: None — all candidates require $50 min but $97.74 − $50 = $47.74 < $50 cash buffer.
-  - NET-BUY: ASML ($1710.32, score 40.0) SKIPPED — insufficient buying power after buffer.
-  - NET-BUY: INTC ($100.85, score 52.0) SKIPPED — RSI SELL conflict (RSI 71.9, overbought above BB).
-  - NET-BUY: AVAV ($169.07, score 40.3) SKIPPED — RSI SELL conflict (RSI 75.7, overbought above BB).
-  - Intraday surge: All 5 tickers (INTC, AVAV, ASML, TXN, MRCY) at count=1 (need ≥2). Surge tracker reset (new ET day).
-- RSI SELL (not held, 39 tickers): SPY(81.1), QQQ(81.6), IWM(74.9), INTC(71.9), AVGO(74.1), SNAP(81.3), PLTR(88.2), SOFI(80.7), ARM(72.7), GE(76.2), AI(77.8), SOUN(70.2), SMCI(72.9), DELL(74.6), AMAT(70.1), MRVL(73.6), RKLB(76.2), ASTS(75.5), PL(78.1), RDW(82.6), SYM(77.7), AUR(76.9), IONQ(74.9), RGTI(73.5), QBTS(79.9), INFQ(73.5), ONDS(72.1), AVAV(75.7), KTOS(72.9), MRCY(75.9), UUUU(73.8), LITE(73.5), AEHR(84.3), EOSE(78.2), NVTS(76.0), ALAB(78.9), CRDO(73.6), NOW(70.1), CRWD(87.7).
-- Surge tracker reset: INTC(1,+148%), AVAV(1,+112%), ASML(1,+11%), TXN(1,+33%), MRCY(1,+126%). Removed stale entries (date 08-04): INTC(4), AVAV(4), DELL(1), MSFT(1).
-- CB: INACTIVE | daily 0.00% (day_start $97.74, new day) | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68.
-
 ## 2026-08-04T18:15:24Z
 - SUMMARY: Market open (14:15 ET). No trades — buying power $97.74 insufficient ($97.74 − $50 = $47.74 < $50 min buy). 0 positions. Regime: normal. Account: $97.74.
 - Sells: None — no open equity positions.
