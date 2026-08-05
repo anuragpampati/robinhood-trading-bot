@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T19:15:06Z",
+  "updated_at": "2026-08-05T20:14:39Z",
   "buying_power": 97.74,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "Market open (15:15 ET). No trades placed. 0 equity positions. Regime: normal. Account: $97.74.",
-    "Sells: None — no open equity positions.",
-    "Buys: DKNG RSI BUY (conf=2, MODERATE $50) SKIPPED — $97.74 − $50 = $47.74 < $50 cash buffer.",
-    "RSI SELL (not held, 3): NVDA(77.7), SHOP(83.7), KTOS(78.2). Net-buy SELL (not held, 6): MRNA, F, CVX, SOUN, UBER, MU.",
+    "Market closed (after 16:00 ET). No trades placed. 0 equity positions. Regime: normal. Account: $97.74.",
+    "Sells: None — market closed.",
+    "Buys: None — market closed. DKNG RSI BUY conf=2 MODERATE $50 WOULD SKIP ($97.74 − $50 = $47.74 < $50 buffer).",
+    "RSI SELL (not held, 3): DIS(72.2), SHOP(75.8), KTOS(71.0). Net-buy SELL (not held, 6): MU, DKNG, F, MRNA, CVX, SOUN.",
     "CB: INACTIVE | daily 0.00% | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68."
   ]
 }
