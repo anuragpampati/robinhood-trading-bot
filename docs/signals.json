@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-05T20:26:24.313186+00:00",
+  "timestamp": "2026-08-05T21:01:52.382092+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -55,7 +55,7 @@
       "ema_trend": "BEARISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0081,
+      "atr_pct": 0.0079,
       "reason": "RSI=49.5 (stable), BB=ABOVE_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
@@ -69,7 +69,7 @@
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0093,
+      "atr_pct": 0.0091,
       "reason": "RSI=60.9 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": "HOLD",
@@ -629,7 +629,7 @@
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0059,
+      "atr_pct": 0.0058,
       "reason": "RSI=50.6 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": "HOLD",
@@ -825,7 +825,7 @@
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0161,
+      "atr_pct": 0.016,
       "reason": "RSI=55.0 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
@@ -1315,8 +1315,8 @@
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0377,
-      "reason": "ATR too high (3.8%) \u2014 skipping",
+      "atr_pct": 0.0371,
+      "reason": "ATR too high (3.7%) \u2014 skipping",
       "fib_target": 17,
       "rl_action": null,
       "rl_confidence": null
@@ -1565,6 +1565,17 @@
   },
   "net_buy_buy_signals": [
     {
+      "ticker": "ALLE",
+      "price": 168.5800018310547,
+      "net_buy_d1": 672700,
+      "net_buy_d2": 965371,
+      "net_buy_d3": 1257857,
+      "trend_days": 4,
+      "obv_slope": 1146816,
+      "score": 41.15,
+      "reason": "Net buy \u2191 4d streak: 0.67M \u2192 0.97M \u2192 1.26M | OBV +1.1M/day"
+    },
+    {
       "ticker": "AVY",
       "price": 175.5800018310547,
       "net_buy_d1": 113767,
@@ -1581,37 +1592,37 @@
       "ticker": "ABNB",
       "price": 152.49000549316406,
       "net_buy_d2": 0,
-      "net_buy_d3": -727755,
-      "obv_slope": -2037252,
-      "score": 0.73,
-      "reason": "Net buy reversed: 0.00M \u2192 -0.73M | OBV -2.0M/day"
+      "net_buy_d3": -752630,
+      "obv_slope": -2016453,
+      "score": 0.75,
+      "reason": "Net buy reversed: 0.00M \u2192 -0.75M | OBV -2.0M/day"
     },
     {
       "ticker": "FANG",
       "price": 186.1699981689453,
       "net_buy_d2": -40515,
-      "net_buy_d3": -1458230,
-      "obv_slope": -2025493,
+      "net_buy_d3": -1521924,
+      "obv_slope": -2044977,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.04M \u2192 -1.46M | OBV -2.0M/day"
+      "reason": "Net buy reversed: -0.04M \u2192 -1.52M | OBV -2.0M/day"
     },
     {
       "ticker": "HII",
       "price": 317.70001220703125,
       "net_buy_d2": -33550,
-      "net_buy_d3": -322354,
-      "obv_slope": -260102,
+      "net_buy_d3": -441913,
+      "obv_slope": -290530,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.03M \u2192 -0.32M | OBV -0.3M/day"
+      "reason": "Net buy reversed: -0.03M \u2192 -0.44M | OBV -0.3M/day"
     },
     {
       "ticker": "SRE",
       "price": 84.66000366210938,
       "net_buy_d2": -385981,
-      "net_buy_d3": -3051605,
-      "obv_slope": -4486205,
+      "net_buy_d3": -2339151,
+      "obv_slope": -4256604,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.39M \u2192 -3.05M | OBV -4.5M/day"
+      "reason": "Net buy reversed: -0.39M \u2192 -2.34M | OBV -4.3M/day"
     },
     {
       "ticker": "DOC",
@@ -1626,8 +1637,8 @@
       "ticker": "WYNN",
       "price": 101.1500015258789,
       "net_buy_d2": -680409,
-      "net_buy_d3": -3407980,
-      "obv_slope": -768137,
+      "net_buy_d3": -3411735,
+      "obv_slope": -767347,
       "score": 0.0,
       "reason": "Net buy reversed: -0.68M \u2192 -3.41M | OBV -0.8M/day"
     },
@@ -1644,10 +1655,10 @@
       "ticker": "EQT",
       "price": 51.22999954223633,
       "net_buy_d2": 1837498,
-      "net_buy_d3": -4768736,
-      "obv_slope": -328532,
+      "net_buy_d3": -3948930,
+      "obv_slope": -137463,
       "score": 0.0,
-      "reason": "Net buy reversed: 1.84M \u2192 -4.77M | OBV -0.3M/day"
+      "reason": "Net buy reversed: 1.84M \u2192 -3.95M | OBV -0.1M/day"
     },
     {
       "ticker": "DVN",
@@ -1659,13 +1670,13 @@
       "reason": "Net buy reversed: 7.56M \u2192 -11.42M | OBV -6.4M/day"
     },
     {
-      "ticker": "COP",
-      "price": 115.04000091552734,
-      "net_buy_d2": 3959622,
-      "net_buy_d3": -5524925,
-      "obv_slope": -4238720,
+      "ticker": "ADM",
+      "price": 77.58000183105469,
+      "net_buy_d2": 3753487,
+      "net_buy_d3": -5435527,
+      "obv_slope": -2375020,
       "score": 0.0,
-      "reason": "Net buy reversed: 3.96M \u2192 -5.52M | OBV -4.2M/day"
+      "reason": "Net buy reversed: 3.75M \u2192 -5.44M | OBV -2.4M/day"
     }
   ],
   "surge_signals": []
