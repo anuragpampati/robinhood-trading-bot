@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T14:25:16Z",
+  "updated_at": "2026-08-06T15:34:37Z",
   "buying_power": 97.74,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "Market open (10:25 ET). No trades — buying power $97.74 insufficient ($97.74 − $50 = $47.74 < $50 buffer). 0 positions. Regime: normal. Account: $97.74.",
+    "Market open (11:34 ET). No trades — 0 RSI/net-buy BUY signals; surge candidates (RKLB/SNOW/AAOI/SPY) all count=1 (need≥2 for intraday buy). All $50 buys breach $50 buffer ($47.74 available). 0 positions. Regime: normal. Account: $97.74.",
     "Sells: None — no open equity positions.",
-    "Buys: None — DKNG RSI BUY conf=2 MODERATE $50 SKIPPED: $97.74 − $50 = $47.74 < $50 buffer. RL HOLD conf=0.906 (no veto/boost).",
-    "RSI SELL (not held, 2): DIS(73.4), SHOP(75.7). Net-buy SELL (not held, 6): MU, DKNG, F, MRNA, CVX, SOUN.",
+    "Buys: None — RKLB surge 17.7% skipped (RSI SELL conf=2); SNOW/AAOI/SPY surges skipped (capital: $97.74 − $50 = $47.74 < $50 buffer).",
+    "RSI SELL (not held, 14): PFE, DIS, SHOP, SOUN, RKLB, ASTS, PL, LAZR, AVAV, KTOS, LITE, COHR, BE, NVTS.",
     "CB: INACTIVE | daily 0.00% | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68."
   ]
 }
