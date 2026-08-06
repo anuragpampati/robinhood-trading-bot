@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T17:14:05Z",
+  "updated_at": "2026-08-06T18:16:18Z",
   "buying_power": 97.74,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "Market open (13:14 ET). No trades — 0 RSI/net-buy BUY signals; surge candidates (LRCX/LITE) count=1 (need≥2). 0 positions. Regime: normal (BULLISH). Account: $97.74.",
-    "Sells: None — no open equity positions.",
-    "Buys: None — 0 RSI BUY, 0 net-buy BUY, 0 intraday surge. Surge: LRCX 159.8% count=1, LITE 4380.7% count=1.",
-    "RSI SELL (not held): DIS(78.6), SOUN(78.6), RKLB(73.7). Net-buy SELL (not held): MRNA.",
+    "Market open (14:16 ET). No trades \u2014 buying_power $97.74 insufficient for $50 TSLA buy ($47.74 available < $50 buffer). 0 positions. Regime: normal (BULLISH).",
+    "RSI BUY: TSLA conf=2 MODERATE $50 \u2014 SKIPPED: $97.74-$50=$47.74 < $50 buffer. RL: HOLD conf=0.91 (no veto/boost).",
+    "Surge: AVGO +69% count=1 updated in surge_tracker.json (need count\u22652 for intraday entry). LRCX/LITE removed from tracker.",
+    "RSI SELL (not held): DIS(RSI=80.3), SOUN(RSI=72.1). Net-buy SELL (not held): MRNA.",
     "CB: INACTIVE | daily 0.00% | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68."
   ]
 }
