@@ -1,5 +1,14 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-06T14:25:16Z
+- SUMMARY: Market open (10:25 ET). No trades — buying power $97.74 insufficient ($97.74 − $50 = $47.74 < $50 buffer). 0 positions. Regime: normal. Account: $97.74.
+- Sells: None — no open equity positions.
+- Buys: None — DKNG RSI BUY conf=2 MODERATE $50 SKIPPED: $97.74 − $50 = $47.74 < $50 buffer. RL: HOLD conf=0.906 (no veto/boost). DKNG net-buy conflicts (SELL), RSI 28.16 oversold — insufficient capital.
+- RSI SELL (not held, 2): DIS(73.4), SHOP(75.7).
+- Net-buy SELL (not held, 6): MU, DKNG, F, MRNA, CVX, SOUN.
+- Surge tracker: empty (no tickers ≥10% intraday surge).
+- CB: INACTIVE | daily 0.00% (day_start $97.74 new day 2026-08-06) | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68.
+
 ## 2026-08-05T20:14:39Z
 - SUMMARY: Market closed (after 16:00 ET). No trades placed. Buying power: $97.74. Equity positions: 0. Regime: normal. Account: $97.74.
 - Sells: None — market closed.
