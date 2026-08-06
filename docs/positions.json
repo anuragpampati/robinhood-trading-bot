@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T19:11:24Z",
+  "updated_at": "2026-08-06T20:14:00Z",
   "buying_power": 97.74,
   "market_regime": "normal",
   "account_value": 97.74,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "Market open (15:11 ET). No trades \u2014 zero BUY signals (RSI/net-buy/surge all HOLD or SELL). 0 positions. Regime: normal (BULLISH).",
-    "SELL signals (not held): PFE RSI=70.7 ABOVE_BAND, DIS RSI=81.4 ABOVE_BAND, SOUN RSI=71.3 ABOVE_BAND, MRNA net-buy-sell, F net-buy-sell.",
-    "No BUY signals: RSI strategy 0 buys, net-buy 0 buys, surge 0 candidates.",
-    "Surge tracker: AVGO removed (no longer in \u226510% intraday surge signals this cycle).",
+    "Market closed (after hours 20:14 ET). No trades \u2014 market_open=false.",
+    "RSI SELL signals (not held): MSFT(72.3 ABOVE_BAND), PFE(74.8 ABOVE_BAND), DIS(82.6 ABOVE_BAND), PYPL(71.8 ABOVE_BAND), RDW(77.3 ABOVE_BAND).",
+    "Net-buy SELL signals (not held): NBIS, MRNA, F, COIN, CIFR.",
+    "No BUY signals this cycle. 0 positions. Surge tracker empty.",
     "CB: INACTIVE | daily 0.0% | weekly 0.1% (week_start $97.88 2026-08-03). Peak: $101.68."
   ]
 }

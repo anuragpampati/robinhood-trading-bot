@@ -1,5 +1,14 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-06T20:14:00Z
+- SUMMARY: Market closed (after hours). No trades. Buying power: $97.74. Equity positions: 0. Regime: normal (BULLISH). Account: $97.74.
+- Sells: None — no open equity positions.
+- Buys: None — market closed (market_open=false). Skipping all order execution.
+- RSI SELL signals (not held): MSFT(RSI=72.3 ABOVE_BAND), PFE(RSI=74.8 ABOVE_BAND), DIS(RSI=82.6 ABOVE_BAND), PYPL(RSI=71.8 ABOVE_BAND), RDW(RSI=77.3 ABOVE_BAND).
+- Net-buy SELL signals (not held): NBIS(-4.1M→-10.2M OBV↓), MRNA(-0.89M→-1.94M OBV↓), F(-17.2M→-25.9M OBV↓), COIN(-1.32M→-1.66M OBV↓), CIFR(-10.8M→-11.4M OBV↓).
+- No RSI or net-buy BUY signals. Surge tracker: {}.
+- CB: INACTIVE | daily 0.0% (day_start $97.74 2026-08-06) | weekly 0.1% (week_start $97.88 2026-08-03). Peak: $101.68.
+
 ## 2026-08-06T19:11:24Z
 - SUMMARY: Market open (15:11 ET). No trades — zero BUY signals (RSI/net-buy/surge all HOLD or SELL). SELL signals for PFE/DIS/SOUN/MRNA/F — not held. Buying power: $97.74. Equity positions: 0. Regime: normal (BULLISH). Account: $97.74.
 - Sells: None — no open equity positions.
