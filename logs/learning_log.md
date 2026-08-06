@@ -142,3 +142,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403 again). Prior metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate, 227 trades
 - RL samples: 423/200 (READY — +4 new rows today; 19 states in Q-table)
 - Notes: Live account $98.18. Positions: AAPL +2.35% (entry $301.95, trail_stop $291.73), MSFT open (entry $462.02). Regime shifted bearish_ema → normal today (SPY $745.44 > EMA200 $743.41). RL exceeded 200 target days ago — Q-table has 19 states. Trade log trimmed to 12 entries (last 2 days). Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-06
+- Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only SUMMARY entries, no complete round-trips visible); historical reference: normal 54.5% (n=11), BULLISH EMA 55.6%, BEARISH EMA 50.0%
+- Win rate: n/a in-log (normal: 54.5% historical [n=11], momentum: n/a [n=0 trades ever], surge: n/a [n=0 trades ever])
+- Config changes: none — RSI_OVERSOLD: historical win_rate=54.5% in [40%,65%] (NO_CHANGE, n=11≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~153h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403) again (16th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 479/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: Account $97.74 cash-only (−2.3% from $100 start), 0 equity positions, regime normal (BULLISH EMA). Capital bind persists: $97.74 − $50 buffer = only $47.74 available above buffer, all $50 min-buy trades blocked. RSI signals all overbought (DIS 82.6, MSFT 72.3, PFE 74.8). RL exceeds 200 target by 279 samples (479 total, 19 states). Backtest blocked by proxy 403 for 16+ sessions. Run: python -m strategy.rl_agent --train to activate Q-learning.
