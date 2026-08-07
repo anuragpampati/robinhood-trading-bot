@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-07T14:28:28Z",
-  "buying_power": 97.74,
+  "updated_at": "2026-08-07T15:20:39Z",
+  "buying_power": 82.74,
   "market_regime": "normal",
   "account_value": 97.74,
   "peak_value": 101.68,
@@ -8,13 +8,27 @@
   "day_start_date": "2026-08-07",
   "week_start_value": 97.88,
   "week_start_date": "2026-08-03",
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "SYM",
+      "quantity": 0.3723,
+      "avg_cost": 40.29,
+      "current_price": 40.29,
+      "pnl_pct": 0.0,
+      "value": 15.0,
+      "entry_atr_pct": 0.0264,
+      "entry_time": "2026-08-07T15:20:39Z",
+      "trail_stop": 38.16,
+      "take_profit": 44.32,
+      "strategy": "normal",
+      "sell_date": null
+    }
+  ],
   "last_actions": [
-    "Market open (10:28 ET). No trades — zero BUY signals (RSI/net-buy/surge all HOLD or SELL).",
-    "RSI SELL (not held): MSFT(73.4 ABOVE_BAND), PFE(74.8 ABOVE_BAND), DIS(82.6 ABOVE_BAND), PYPL(71.8 ABOVE_BAND), RDW(77.3 ABOVE_BAND).",
-    "Net-buy SELL (not held): NBIS, MRNA, F, COIN, TXN, CIFR.",
-    "Surge tracker empty — no tickers with ≥10% intraday surge.",
-    "Capital constraint: $97.74 − $50 = $47.74 < $50 buffer (any $50 buy blocked).",
+    "BUY SYM $40.29 x 0.3723sh = $15.00 | RSI 28.4 oversold+stabilizing | MODERATE BUY (capital-constrained $15 min order).",
+    "RSI SELL (not held): MSFT(75.9), NVDA(72.8), UBER(72.3), PLTR(79.9), PFE(79.0), DIS(83.8), SNOW(71.3), AI(71.8), RKLB(72.4), LAZR(72.2), OKLO(72.2), UUUU(78.4), NOW(78.2) - all ABOVE_BAND.",
+    "Net-buy SELL (not held): AI(0.3M->-0.1M OBV down), CRWD(1.5M->-0.3M OBV down).",
+    "Surge: AMAT +6.7% (< 10% threshold, no tracker entry).",
     "CB: INACTIVE | daily 0.0% | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68."
   ]
 }

@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-07T15:20:39Z
+- Action   : BUY SYM
+- Price    : $40.29
+- Amount   : $15.00 | Shares: 0.3723
+- RSI      : 28.4 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.922 | null
+- Stop     : $38.16 | Target: $44.32
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH)
+- Reason   : RSI oversold+stabilizing (27.2↑28.4) | BB reversal returning from band (0.02→0.12); capital-constrained to $15 (min order; $97.74−$50=$47.74 buffer blocks full $50)
+
 ## 2026-08-06T20:14:00Z
 - SUMMARY: Market closed (after hours). No trades. Buying power: $97.74. Equity positions: 0. Regime: normal (BULLISH). Account: $97.74.
 - Sells: None — no open equity positions.
