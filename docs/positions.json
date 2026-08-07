@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-07T15:20:39Z",
-  "buying_power": 82.74,
+  "updated_at": "2026-08-07T16:22:00Z",
+  "buying_power": 52.74,
   "market_regime": "normal",
-  "account_value": 97.74,
+  "account_value": 97.68,
   "peak_value": 101.68,
   "day_start_value": 97.74,
   "day_start_date": "2026-08-07",
@@ -11,24 +11,54 @@
   "positions": [
     {
       "ticker": "SYM",
-      "quantity": 0.3723,
-      "avg_cost": 40.29,
-      "current_price": 40.29,
-      "pnl_pct": 0.0,
-      "value": 15.0,
+      "quantity": 0.372024,
+      "avg_cost": 40.32,
+      "current_price": 40.16,
+      "pnl_pct": -0.004,
+      "value": 14.94,
       "entry_atr_pct": 0.0264,
       "entry_time": "2026-08-07T15:20:39Z",
       "trail_stop": 38.16,
-      "take_profit": 44.32,
+      "take_profit": 44.35,
+      "strategy": "normal",
+      "sell_date": null
+    },
+    {
+      "ticker": "MU",
+      "quantity": 0.01714,
+      "avg_cost": 874.92,
+      "current_price": 875.9,
+      "pnl_pct": 0.001,
+      "value": 15.01,
+      "entry_atr_pct": 0.0214,
+      "entry_time": "2026-08-07T16:21:15Z",
+      "trail_stop": 837.39,
+      "take_profit": 962.41,
+      "strategy": "normal",
+      "sell_date": null
+    },
+    {
+      "ticker": "TER",
+      "quantity": 0.03914,
+      "avg_cost": 383.16,
+      "current_price": 383.42,
+      "pnl_pct": 0.0007,
+      "value": 15.01,
+      "entry_atr_pct": 0.0214,
+      "entry_time": "2026-08-07T16:21:19Z",
+      "trail_stop": 366.76,
+      "take_profit": 421.48,
       "strategy": "normal",
       "sell_date": null
     }
   ],
   "last_actions": [
-    "BUY SYM $40.29 x 0.3723sh = $15.00 | RSI 28.4 oversold+stabilizing | MODERATE BUY (capital-constrained $15 min order).",
-    "RSI SELL (not held): MSFT(75.9), NVDA(72.8), UBER(72.3), PLTR(79.9), PFE(79.0), DIS(83.8), SNOW(71.3), AI(71.8), RKLB(72.4), LAZR(72.2), OKLO(72.2), UUUU(78.4), NOW(78.2) - all ABOVE_BAND.",
-    "Net-buy SELL (not held): AI(0.3M->-0.1M OBV down), CRWD(1.5M->-0.3M OBV down).",
-    "Surge: AMAT +6.7% (< 10% threshold, no tracker entry).",
-    "CB: INACTIVE | daily 0.0% | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68."
+    "BUY MU $874.92 x 0.01714sh = $15.00 | RSI 48.2 BB-reversal+EMA-bullish | MODERATE BUY + 🤖 RL BOOST (rl_conf=0.974→conf3). Stop $837.39 | Target $962.41.",
+    "BUY TER $383.16 x 0.03914sh = $15.00 | RSI 49.8 BB-reversal+EMA-bullish | MODERATE BUY + 🤖 RL BOOST (rl_conf=0.974→conf3). Stop $366.76 | Target $421.48.",
+    "HOLD SYM: price $40.16 vs stop $38.16 (above), take-profit $44.35 (not reached). Hours held ~1h (< 3h min for signal-sell). No sell triggers.",
+    "CB: INACTIVE | daily -0.07% ($97.74→$97.68) | weekly -0.21% ($97.88). Peak: $101.68.",
+    "Surge tracker: COHR(+306%), TSM(+178%), ONDS(+90%) — all count=1 (need 2 for intraday buy). No surge BUY candidates.",
+    "RSI SELL (not held): MSFT(75.7), PFE(76.8), RKLB(78.0), LAZR(75.9), PL(72.4), INFQ(71.1), AVAV(78.8), KTOS(76.0), OKLO(79.8), UUUU(81.5), CRDO(70.2), NOW(74.3).",
+    "Net-buy SELL (not held): ISRG(-0.11M→-0.29M OBV↓), AI(0.32M→-0.10M OBV↓), CRWD(1.54M→-0.27M OBV↓)."
   ]
 }

@@ -1,5 +1,27 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-07T16:21:15Z
+- Action   : BUY MU
+- Price    : $874.92
+- Amount   : $15.00 | Shares: 0.01714
+- RSI      : 48.2 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.974 | 🤖 RL BOOST (signal_conf 2→3)
+- Stop     : $837.39 | Target: $962.41
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH)
+- Reason   : BB reversal: 0.08→0.18 (returning from band) | EMA bullish crossover | RL BOOST; capital-constrained $15 (buying_power $82.74−$50 buffer=$32.74 available)
+
+## 2026-08-07T16:21:19Z
+- Action   : BUY TER
+- Price    : $383.16
+- Amount   : $15.00 | Shares: 0.03914
+- RSI      : 49.8 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.974 | 🤖 RL BOOST (signal_conf 2→3)
+- Stop     : $366.76 | Target: $421.48
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH)
+- Reason   : BB reversal: 0.12→0.19 (returning from band) | EMA bullish crossover | RL BOOST; capital-constrained $15
+
 ## 2026-08-07T15:20:39Z
 - Action   : BUY SYM
 - Price    : $40.29
