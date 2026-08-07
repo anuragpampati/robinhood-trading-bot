@@ -1,19 +1,20 @@
 {
-  "updated_at": "2026-08-06T20:14:00Z",
+  "updated_at": "2026-08-07T14:28:28Z",
   "buying_power": 97.74,
   "market_regime": "normal",
   "account_value": 97.74,
   "peak_value": 101.68,
   "day_start_value": 97.74,
-  "day_start_date": "2026-08-06",
+  "day_start_date": "2026-08-07",
   "week_start_value": 97.88,
   "week_start_date": "2026-08-03",
   "positions": [],
   "last_actions": [
-    "Market closed (after hours 20:14 ET). No trades \u2014 market_open=false.",
-    "RSI SELL signals (not held): MSFT(72.3 ABOVE_BAND), PFE(74.8 ABOVE_BAND), DIS(82.6 ABOVE_BAND), PYPL(71.8 ABOVE_BAND), RDW(77.3 ABOVE_BAND).",
-    "Net-buy SELL signals (not held): NBIS, MRNA, F, COIN, CIFR.",
-    "No BUY signals this cycle. 0 positions. Surge tracker empty.",
-    "CB: INACTIVE | daily 0.0% | weekly 0.1% (week_start $97.88 2026-08-03). Peak: $101.68."
+    "Market open (10:28 ET). No trades — zero BUY signals (RSI/net-buy/surge all HOLD or SELL).",
+    "RSI SELL (not held): MSFT(73.4 ABOVE_BAND), PFE(74.8 ABOVE_BAND), DIS(82.6 ABOVE_BAND), PYPL(71.8 ABOVE_BAND), RDW(77.3 ABOVE_BAND).",
+    "Net-buy SELL (not held): NBIS, MRNA, F, COIN, TXN, CIFR.",
+    "Surge tracker empty — no tickers with ≥10% intraday surge.",
+    "Capital constraint: $97.74 − $50 = $47.74 < $50 buffer (any $50 buy blocked).",
+    "CB: INACTIVE | daily 0.0% | weekly 0.14% (week_start $97.88 2026-08-03). Peak: $101.68."
   ]
 }
