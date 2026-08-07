@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-08-07
+- Trades analysed: 0 closed pairs (3 positions opened today — SYM/MU/TER — all still open; no complete BUY→SELL round-trips in log)
+- Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
+- Config changes: none — n_trades < 3 for all strategy types; NO_CHANGE (insufficient data for any threshold adjustment)
+- Backtest: SKIPPED — yfinance proxy blocked (403) consecutive sessions; prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 493/200 (READY — +14 new rows today; 19 states in Q-table)
+- Notes: Account $97.78 (+0.04% today), 3 equity positions (SYM pnl=-0.37%, MU pnl=+0.26%, TER pnl=-1.06%), buying power $52.74. Regime: normal (BULLISH EMA). Capital fully deployed with $50 buffer. RL far exceeds 200 target (493 samples, 19 Q-states) — run: python -m strategy.rl_agent --train to activate Q-learning. Trade log trimmed to 12 entries.
+
 ## 2026-08-05
 - Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only SUMMARY entries, no complete round-trips visible); historical reference from accumulated log: normal 54.5% (n=11), BULLISH EMA 55.6%, BEARISH EMA 50.0%
 - Win rate: n/a in-log (normal: 54.5% historical [n=11], momentum: n/a [n=0 trades ever], surge: n/a [n=0 trades ever])
