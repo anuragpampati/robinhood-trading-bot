@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-10T17:15:41Z",
+  "updated_at": "2026-08-10T18:18:01Z",
   "buying_power": 52.74,
   "market_regime": "normal",
-  "account_value": 97.23,
+  "account_value": 97.08,
   "peak_value": 101.68,
   "day_start_value": 97.26,
   "day_start_date": "2026-08-10",
@@ -13,9 +13,9 @@
       "ticker": "SYM",
       "quantity": 0.372024,
       "avg_cost": 40.32,
-      "current_price": 40.66,
-      "pnl_pct": 0.00844,
-      "value": 15.13,
+      "current_price": 40.26,
+      "pnl_pct": -0.00149,
+      "value": 14.98,
       "entry_atr_pct": 0.0264,
       "entry_time": "2026-08-07T15:20:39Z",
       "trail_stop": 38.16,
@@ -25,8 +25,8 @@
     }
   ],
   "last_actions": [
-    "HOLD SYM @ $40.66 (+0.84%). RSI=34.2 BEARISH IN_BAND, no sell signal. trail_stop $38.16 / TP $44.35.",
-    "No BUY signals — 0 RSI/net-buy/surge. Buying_power $52.74 ($2.74 above $50 buffer).",
-    "CB: INACTIVE | daily 0.03% / weekly 0.03%. Peak: $101.68. Regime: normal (BULLISH)."
+    "HOLD SYM @ $40.26 (-0.15%). RSI=33.4 BEARISH IN_BAND (low vol skip), no sell trigger. trail_stop $38.16 / TP $44.35.",
+    "LITE BUY skipped — 🤖 RL BOOST conf 3 but buying_power $52.74 only $2.74 above $50 buffer (need ≥$15 order).",
+    "CB: INACTIVE | daily 0.18% / weekly 0.18%. Peak: $101.68. Regime: normal (BULLISH, SPY > EMA200)."
   ]
 }
