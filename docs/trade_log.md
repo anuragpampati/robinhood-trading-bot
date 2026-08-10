@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-10T20:15:17Z
+- SUMMARY: Market closed (after hours 20:15 UTC). No trades. Buying power: $52.74. Equity positions: 1 (SYM $40.07 pnl=-0.62%, trail_stop $38.16 / TP $44.35). Regime: normal (BULLISH, SPY $773.06 > EMA200 $751.62). Account: $97.02. CB: INACTIVE daily 0.25% / weekly 0.25%. Peak: $101.68. Net-buy BUY: JPM (4d streak, not bought — market closed). RSI SELLs (none held): NFLX(74.0), UBER(74.7), PFE(76.7), XOM(73.0), SHOP(74.7), ORCL(74.6), SNOW(74.0), AI(70.6), ISRG(80.4), AVAV(77.3), KTOS(74.0), CRWD(78.3).
+
 ## 2026-08-10T16:21:00Z
 - SUMMARY: Market open (12:21 ET). No trades — buying_power $52.74 ($2.74 above $50 buffer, insufficient for min $15 order). 1 position held: SYM $40.36 pnl=+0.10%, trail_stop $38.16 / TP $44.35. No sell triggers on SYM (RSI HOLD, not in net-buy SELL, above trail stop, below TP). No surge signals. RSI BUYs (RL BOOST→conf 3, blocked by funds): INTC@$98.28 (BB reversal+EMA cross), AMKR@$54.10 (BB reversal+EMA cross). RSI SELLs (not held): MSFT(75.9), PLTR(84.1), PFE(85.0), TGT(73.5), SNOW(81.3), AI(72.8), ISRG(75.8), MBLY(72.5), ONDS(70.3), KTOS(81.4), UUUU(75.9), CRDO(71.6), NOW(76.0), CRWD(81.5). CB: INACTIVE daily 0.14% / weekly 0.14%. Regime: normal (BULLISH). Buying power: $52.74. Equity positions: 1 (SYM). Account: $97.12.
 
