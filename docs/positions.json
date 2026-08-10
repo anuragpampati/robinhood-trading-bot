@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-10T15:24:26Z",
-  "buying_power": 82.13,
+  "updated_at": "2026-08-10T16:21:00Z",
+  "buying_power": 52.74,
   "market_regime": "normal",
-  "account_value": 97.20,
+  "account_value": 97.12,
   "peak_value": 101.68,
   "day_start_value": 97.26,
   "day_start_date": "2026-08-10",
@@ -13,9 +13,9 @@
       "ticker": "SYM",
       "quantity": 0.372024,
       "avg_cost": 40.32,
-      "current_price": 40.50,
-      "pnl_pct": 0.0045,
-      "value": 15.07,
+      "current_price": 40.36,
+      "pnl_pct": 0.001,
+      "value": 15.01,
       "entry_atr_pct": 0.0264,
       "entry_time": "2026-08-07T15:20:39Z",
       "trail_stop": 38.16,
@@ -25,10 +25,8 @@
     }
   ],
   "last_actions": [
-    "SELL TER @ $368.66 (net-buy SELL, rule c, ~71h hold). Proceeds ~$14.42. pnl=-3.84%.",
-    "SELL MU @ $873.40 (net-buy SELL, rule c, ~71h hold). Proceeds ~$14.97. pnl=-0.22%.",
-    "HOLD SYM @ $40.50. RSI 33.3 BEARISH, no sell signal. trail_stop $38.16 / TP $44.35.",
-    "No BUY signals (0 RSI/net-buy/surge). Buying power ~$82.13 est. post-fills.",
-    "CB: INACTIVE | daily 0.05% / weekly 0.05%. Peak: $101.68. Regime: normal (BULLISH)."
+    "HOLD SYM @ $40.36. RSI=33.0 BEARISH IN_BAND, no sell signal. trail_stop $38.16 / TP $44.35.",
+    "No BUY signals executed — buying_power $52.74 only $2.74 above $50 buffer. INTC/AMKR RSI BUY (RL BOOST→conf 3) noted but unfilled.",
+    "CB: INACTIVE | daily 0.14% / weekly 0.14%. Peak: $101.68. Regime: normal (BULLISH)."
   ]
 }
