@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-10T17:15:41Z
-- SUMMARY: Market open (13:15 ET). No trades — buying_power $52.74 ($2.74 above $50 buffer, insufficient for min $15 order). 1 position held: SYM $40.66 pnl=+0.84%, trail_stop $38.16 / TP $44.35. No sell triggers on SYM (RSI HOLD 34.2, not in net-buy SELL, price $40.66 above trail_stop $38.16, below TP $44.35). No BUY signals (0 RSI/net-buy/surge). Net-buy SELLs (not held): TER, GS, TSLA, MRCY, AMD, MRVL, SMCI, DELL, QQQ, LRCX. RSI SELLs (not held): MSFT(71.1), PLTR(79.2), PFE(86.3), TGT(76.0), XOM(71.3), ORCL(73.9), ISRG(77.5), MBLY(72.6), RGTI(70.3), AVAV(84.8), KTOS(82.6), NOW(76.8), CRWD(81.1). CB: INACTIVE | daily 0.03% / weekly 0.03%. Regime: normal (BULLISH). Buying power: $52.74. Equity positions: 1 (SYM). Account: $97.23.
-
 ## 2026-08-10T16:21:00Z
 - SUMMARY: Market open (12:21 ET). No trades — buying_power $52.74 ($2.74 above $50 buffer, insufficient for min $15 order). 1 position held: SYM $40.36 pnl=+0.10%, trail_stop $38.16 / TP $44.35. No sell triggers on SYM (RSI HOLD, not in net-buy SELL, above trail stop, below TP). No surge signals. RSI BUYs (RL BOOST→conf 3, blocked by funds): INTC@$98.28 (BB reversal+EMA cross), AMKR@$54.10 (BB reversal+EMA cross). RSI SELLs (not held): MSFT(75.9), PLTR(84.1), PFE(85.0), TGT(73.5), SNOW(81.3), AI(72.8), ISRG(75.8), MBLY(72.5), ONDS(70.3), KTOS(81.4), UUUU(75.9), CRDO(71.6), NOW(76.0), CRWD(81.5). CB: INACTIVE daily 0.14% / weekly 0.14%. Regime: normal (BULLISH). Buying power: $52.74. Equity positions: 1 (SYM). Account: $97.12.
 
