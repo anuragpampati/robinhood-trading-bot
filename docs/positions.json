@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-11T17:15:12Z",
-  "buying_power": 82.10,
+  "updated_at": "2026-08-11T18:15:59Z",
+  "buying_power": 82.1,
   "market_regime": "normal",
-  "account_value": 97.40,
+  "account_value": 97.4,
   "peak_value": 101.68,
   "day_start_value": 97.63,
   "day_start_date": "2026-08-11",
@@ -10,8 +10,8 @@
   "week_start_date": "2026-08-10",
   "positions": [],
   "last_actions": [
-    "No BUY signals (0 RSI/net-buy/surge). No positions to sell (0 held).",
-    "RSI SELLs (not held): ISRG(84.7), BAC(70.7). Net-Buy SELLs (not held): CIFR, COIN, SYM, WFC, GEV, INTC, VRT.",
-    "CB: INACTIVE | daily -0.24% / weekly +0.14% (gain). Peak: $101.68. Regime: normal (BULLISH, SPY $771.14 > EMA200 $752.22)."
+    "No BUY signals (0 RSI/net-buy). Surge: BAC count=1, PL count=1 (need 2). No positions to sell (0 held).",
+    "RSI SELLs (not held): ISRG(84.8). Net-Buy SELLs (not held): COIN, SYM, INTC, WFC, VRT, GEV, RGTI, AMAT.",
+    "CB: INACTIVE | daily -0.24% / weekly +0.14% (gain). Peak: $101.68. Regime: normal (BULLISH, SPY $771.24 > EMA200 $752.41)."
   ]
 }
