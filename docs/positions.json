@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T16:31:47Z",
+  "updated_at": "2026-08-11T17:15:12Z",
   "buying_power": 82.10,
   "market_regime": "normal",
   "account_value": 97.40,
@@ -11,8 +11,7 @@
   "positions": [],
   "last_actions": [
     "No BUY signals (0 RSI/net-buy/surge). No positions to sell (0 held).",
-    "RSI SELLs (not held): XOM(75.4), CVX(74.5), ASML(70.3), ISRG(84.5). Net-Buy SELLs (not held): CIFR, SYM, COIN, INTC, WFC, VRT, GEV.",
-    "Surge tracker cleared (RDW no longer in 10%+ intraday surge).",
-    "CB: INACTIVE | daily -0.23% / weekly +0.14% (gain). Peak: $101.68. Regime: normal (BULLISH, SPY $772.01 > EMA200 $752.03)."
+    "RSI SELLs (not held): ISRG(84.7), BAC(70.7). Net-Buy SELLs (not held): CIFR, COIN, SYM, WFC, GEV, INTC, VRT.",
+    "CB: INACTIVE | daily -0.24% / weekly +0.14% (gain). Peak: $101.68. Regime: normal (BULLISH, SPY $771.14 > EMA200 $752.22)."
   ]
 }
