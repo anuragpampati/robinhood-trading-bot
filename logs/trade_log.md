@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-11T15:23:38Z
+- Action   : SELL SYM
+- Price    : $41.18
+- Amount   : $15.32 | Shares: 0.372024
+- RSI      : 46.4 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $38.16 | Target: $44.35
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net-buy SELL signal — 0.07M→-0.10M, OBV -0.4M/day | rule c: net_buy_sell_signals, hours_held ~96h | entry $40.32 pnl=+2.13%
+
+## 2026-08-11T15:23:38Z
+- SUMMARY: Market OPEN (11:23 ET). SOLD SYM (+2.13%) — net-buy SELL signal (rule c, 96h held). No BUY signals (0 RSI/net-buy/surge). Regime: normal (BULLISH, SPY $773.62 > EMA200 $751.83). CB: INACTIVE — daily -0.22% / weekly +0.16%. Buying power: ~$97.42 est. post-fill. Equity positions: 0. Account: ~$97.42.
+
 ## 2026-08-11T14:30:06Z
 - SUMMARY: Market OPEN (10:30 ET). No trades executed. HOLD SYM @ $40.07 (pnl -0.62%), trail_stop $38.16 / TP $44.35 — no sell triggers (above ATR stop, RSI HOLD, not in net-buy SELL, below TP). JPM NET-BUY SKIPPED: $82.10 BP - $50 = $32.10 < $50 buffer. Surge tracker: JPM 14.3%↑ count=1 (need 2), ISRG 90.0%↑ count=1. No INTRADAY_SURGE buys (need count≥2). RSI SELLs (not held): NFLX(74.0), UBER(74.8), XOM(73.0), SHOP(77.4), ORCL(74.6), SNOW(74.0), ISRG(80.4), KTOS(74.0), CRWD(78.3). CB: INACTIVE — daily 0.0% / weekly -0.4% (gain). Regime: normal (BULLISH, SPY $773.12 > EMA200 $751.61). Buying power: $82.10. Equity positions: 1 (SYM). Account: $97.63.
 
