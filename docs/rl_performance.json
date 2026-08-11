@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-08-11",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,8 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 500,
+  "rl_training_samples": 506,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403, 18+ consecutive sessions) — prior backtest metrics retained. Config: NO_CHANGE — live win_rate 46.2% (n=13) in [40%,65%] range; momentum entries n=2 <3; ATR avg_hold ~140h >>2h. Live trades analysed today: MU -0.22% (BULLISH/71h/net-buy-SELL), TER -3.84% (BULLISH/71h/net-buy-SELL). RL: 500 samples (+7 today), 19 states. Live account $97.12, SYM position (-0.62%). RL READY — run: python -m strategy.rl_agent --train"
+  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403, 19+ consecutive sessions) — prior backtest metrics retained. Config: NO_CHANGE — live win_rate 50.0% (n=14) in [40%,65%] range; momentum entries n=0 <3; ATR avg_hold ~137h >>2h. Live trade added today: SYM +2.13% (BULLISH EMA/96h/net-buy-SELL). Cumulative 14 closed (7W/7L, 50.0% win rate). RL: 506 samples (+6 today), 19 states. Live account $97.40. RL READY — run: python -m strategy.rl_agent --train"
 }

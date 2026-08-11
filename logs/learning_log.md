@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-11
+- Trades analysed: 14 closed (7W/7L); +1 new exit today: SYM +2.13% (96h/net-buy-SELL/BULLISH EMA)
+- Win rate: 50.0% overall (normal: 50.0% [n=14, 7W/7L, avg_pnl -0.51%, avg_hold ~137h]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH entry 50.0% (6W/6L, n=12); BEARISH entry 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=50.0% in [40%,65%] (NO_CHANGE, n=14≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~137h >>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 19+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 506/200 (READY — +6 new rows today; 19 states in Q-table)
+- Notes: Account $97.40, 0 equity positions (SYM closed +2.13% via net-buy SELL signal, 96h hold). Win rate improved from 46.2% to 50.0% with SYM exit. All thresholds unchanged — win rate stable in [40%,65%] hold band. Backtest proxy blocked 19+ sessions; prior metrics retained. RL far exceeds 200 target (506 samples) — run: python -m strategy.rl_agent --train to activate Q-learning. Log trimmed to 11 entries.
+
 ## 2026-08-07
 - Trades analysed: 0 closed pairs (3 positions opened today — SYM/MU/TER — all still open; no complete BUY→SELL round-trips in log)
 - Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
