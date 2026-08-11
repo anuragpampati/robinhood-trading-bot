@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-10T20:15:17Z",
-  "buying_power": 52.74,
+  "updated_at": "2026-08-11T14:30:06Z",
+  "buying_power": 82.1,
   "market_regime": "normal",
-  "account_value": 97.02,
+  "account_value": 97.63,
   "peak_value": 101.68,
-  "day_start_value": 97.26,
-  "day_start_date": "2026-08-10",
+  "day_start_value": 97.63,
+  "day_start_date": "2026-08-11",
   "week_start_value": 97.26,
   "week_start_date": "2026-08-10",
   "positions": [
@@ -25,8 +25,8 @@
     }
   ],
   "last_actions": [
-    "HOLD SYM @ $40.07 (-0.62%). RSI=31.1 BEARISH IN_BAND, no sell trigger. trail_stop $38.16 / TP $44.35.",
-    "Market CLOSED. No trades executed. Net-buy BUY: JPM (4d streak). RSI SELLs (none held): NFLX, UBER, PFE, XOM, SHOP, ORCL, SNOW, AI, ISRG, AVAV, KTOS, CRWD.",
-    "CB: INACTIVE | daily 0.25% / weekly 0.25%. Peak: $101.68. Regime: normal (BULLISH, SPY > EMA200)."
+    "HOLD SYM @ $40.07 (-0.62%). RSI=31.1 BEARISH IN_BAND. trail_stop $38.16 / TP $44.35. No sell triggers.",
+    "JPM NET-BUY SKIPPED: BP $82.10 - $50 = $32.10 < $50 buffer. No BUY executed.",
+    "CB: INACTIVE | daily 0.0% / weekly -0.4% (gain). Peak: $101.68. Regime: normal (BULLISH, SPY > EMA200)."
   ]
 }
