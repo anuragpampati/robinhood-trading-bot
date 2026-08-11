@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T19:17:33Z",
+  "updated_at": "2026-08-11T20:16:06Z",
   "buying_power": 82.1,
   "market_regime": "normal",
   "account_value": 97.4,
@@ -10,8 +10,8 @@
   "week_start_date": "2026-08-10",
   "positions": [],
   "last_actions": [
-    "No trades executed. Market OPEN (15:17 ET). No BUY signals (0 RSI/net-buy). Surge RKLB count=1 (need 2; also cash buffer violation). RSI SELLs (not held): ISRG(81.9), AEHR(72.3). Net-Buy SELLs (not held): CIFR, COIN, INTC, SYM, WFC, GEV, VRT, GE, AMAT.",
-    "CB: INACTIVE | daily -0.24% / weekly +0.14% (gain). Peak: $101.68. Regime: normal (BULLISH, SPY $770.08 > EMA200 $752.59).",
-    "Surge tracker: RKLB count=1 (7150% buy surge). BAC/PL removed (no longer surging)."
+    "Market CLOSED (after 16:00 ET). No trades executed. Buying power: $82.10. Equity positions: 0. Regime: normal (BULLISH, SPY $770.42 > EMA200 $752.76). Account: $97.40.",
+    "RSI SELLs (not held): AI(72.1), ISRG(83.2), ONDS(74.3), AVAV(78.6), UUUU(75.3), AEHR(73.8). Net-Buy SELLs (not held): CIFR, F, COIN, WFC, AAPL, GEV, INTC. Net-Buy BUY candidate: HOOD (market closed).",
+    "CB: INACTIVE — daily -0.24% / weekly +0.14% (gain). Peak: $101.68. Surge tracker: RKLB count=1 (from prior cycle, market now closed)."
   ]
 }
