@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-12T19:16:40Z",
+  "updated_at": "2026-08-12T20:15:10Z",
   "buying_power": 50.4,
   "market_regime": "normal",
-  "account_value": 97.6,
+  "account_value": 97.37,
   "peak_value": 101.68,
   "day_start_value": 97.4,
   "day_start_date": "2026-08-12",
@@ -13,9 +13,9 @@
       "ticker": "GOOGL",
       "quantity": 0.137058,
       "avg_cost": 342.92,
-      "current_price": 344.35,
-      "pnl_pct": 0.0042,
-      "value": 47.2,
+      "current_price": 343.54,
+      "pnl_pct": 0.0018,
+      "value": 47.08,
       "entry_atr_pct": 0.0069,
       "entry_time": "2026-08-12T17:16:05Z",
       "trail_stop": 338.18,
@@ -25,8 +25,8 @@
     }
   ],
   "last_actions": [
-    "Market OPEN (15:16 ET). No trades. RSI BUY=0, Net-buy BUY=0 (HOOD skipped \u2014 funds), Surge confirmed=0. GOOGL held $344.35 (entry $342.92) \u2014 above trail stop $338.18, below target $377.21, <3h hold. RSI SELLs (not held): JPM/BAC/MRNA/WMT/SMCI/KLAC/ASML/INFQ/IREN/CRWV/CRDO. Surge: MCD count=1, TGT count=1 (need \u22652). CB: INACTIVE \u2014 daily -0.21% / weekly -0.35%. Account: $97.60.",
-    "Market OPEN (14:16 ET). No trades. RSI BUY=0, Net-buy BUY=0, Surge confirmed=0. GOOGL held $342.34 (entry $342.92) \u2014 above trail stop $338.18, below target $377.20, no exit. RSI SELLs (not held): MU/BAC/MRNA/WMT/ORCL/SMCI/VRT/LRCX/KLAC/ASML/LAZR/INFQ/ONDS/LITE/IREN/CRDO. Surge: EQIX count=1 (need \u22652). CB: INACTIVE \u2014 daily 0.09% / weekly -0.06%. Account: $97.31.",
-    "BUY GOOGL $47 @ $342.91 (0.13706 shares). RSI=26.54 (deeply oversold), RL BOOST BUY conf=0.928 \u2192 effective conf 3/3. Trail stop $338.18, target $377.20. Regime: normal. 1:14 PM ET."
+    "Market CLOSED (after 4:00 PM ET). No trades. RSI BUY=0, Net-buy BUY=0, Surge confirmed=0. GOOGL held $343.54 (entry $342.92) — above trail stop $338.18, below target $377.21, no exit. RSI SELLs (not held): JPM/BAC/MRNA/WMT/SMCI/KLAC/INFQ/IREN/CRWV. CB: INACTIVE — daily 0.03% / weekly -0.11%. Account: $97.37.",
+    "Market OPEN (15:16 ET). No trades. RSI BUY=0, Net-buy BUY=0 (HOOD skipped — funds), Surge confirmed=0. GOOGL held $344.35 (entry $342.92) — above trail stop $338.18, below target $377.21, <3h hold. RSI SELLs (not held): JPM/BAC/MRNA/WMT/SMCI/KLAC/ASML/INFQ/IREN/CRWV/CRDO. Surge: MCD count=1, TGT count=1 (need ≥2). CB: INACTIVE — daily -0.21% / weekly -0.35%. Account: $97.60.",
+    "BUY GOOGL $47 @ $342.91 (0.13706 shares). RSI=26.54 (deeply oversold), RL BOOST BUY conf=0.928 → effective conf 3/3. Trail stop $338.18, target $377.20. Regime: normal. 1:14 PM ET."
   ]
 }
