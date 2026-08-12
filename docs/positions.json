@@ -1,17 +1,51 @@
 {
-  "updated_at": "2026-08-12T16:22:00Z",
-  "buying_power": 97.4,
+<<<<<<< Updated upstream
+  "updated_at": "2026-08-06T20:14:00Z",
+  "buying_power": 97.74,
   "market_regime": "normal",
-  "account_value": 97.4,
+  "account_value": 97.74,
   "peak_value": 101.68,
-  "day_start_value": 97.4,
+  "day_start_value": 97.74,
+  "day_start_date": "2026-08-06",
+  "week_start_value": 97.88,
+  "week_start_date": "2026-08-03",
+  "positions": [],
+  "last_actions": [
+    "Market closed (after hours 20:14 ET). No trades \u2014 market_open=false.",
+    "RSI SELL signals (not held): MSFT(72.3 ABOVE_BAND), PFE(74.8 ABOVE_BAND), DIS(82.6 ABOVE_BAND), PYPL(71.8 ABOVE_BAND), RDW(77.3 ABOVE_BAND).",
+    "Net-buy SELL signals (not held): NBIS, MRNA, F, COIN, CIFR.",
+    "No BUY signals this cycle. 0 positions. Surge tracker empty.",
+    "CB: INACTIVE | daily 0.0% | weekly 0.1% (week_start $97.88 2026-08-03). Peak: $101.68."
+=======
+  "updated_at": "2026-08-12T17:16:05Z",
+  "buying_power": 50.40,
+  "market_regime": "normal",
+  "account_value": 97.41,
+  "peak_value": 101.68,
+  "day_start_value": 97.40,
   "day_start_date": "2026-08-12",
   "week_start_value": 97.26,
   "week_start_date": "2026-08-10",
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "GOOGL",
+      "quantity": 0.137060,
+      "avg_cost": 342.91,
+      "current_price": 342.97,
+      "pnl_pct": 0.00018,
+      "value": 47.01,
+      "entry_atr_pct": 0.0069,
+      "entry_time": "2026-08-12T17:16:05Z",
+      "trail_stop": 338.18,
+      "take_profit": 377.20,
+      "strategy": "normal",
+      "sell_date": null
+    }
+  ],
   "last_actions": [
+    "BUY GOOGL $47 @ $342.91 (0.13706 shares). RSI=26.54 (deeply oversold), RL BOOST BUY conf=0.928 → effective conf 3/3. Trail stop $338.18, target $377.20. Regime: normal. 1:14 PM ET.",
     "Market OPEN (12:22 ET). No trades. No BUY signals (RSI=0, net-buy=0, surge=0 buy cands). RSI SELLs (not held): JPM(72.8), BAC(76.7), MRNA(79.3), WMT(75.4), VRT(73.3), LRCX(72.0), KLAC(73.3), ASML(72.4), LAZR(75.8), ONDS(70.0), LITE(72.9), CRDO(81.5). Net-buy SELLs (not held): AAPL, MCD. Surge: BAC count=1 (32.9%). CB: INACTIVE — daily 0.0% / weekly -0.14%. Account: $97.40.",
-    "Market OPEN (11:21 ET). No trades executed. No BUY signals (RSI=0, net-buy=0, surge=0). RSI SELLs (not held): JPM, BAC, MRNA, WMT, SNOW, VRT, LRCX, KLAC, ASML, LAZR, ONDS, LITE, CRDO. Net-buy SELLs (not held): MCD, AAPL. Surge tracker cleared. CB: INACTIVE — daily 0.0% / weekly -0.14%. Buying power: $97.40. Equity positions: 0. Account: $97.40.",
-    "Market OPEN (10:27 ET). BUY HOOD NET-BUY $50 SKIPPED: $97.40 − $50 = $47.40 < $50 buffer. 0 equity positions. Account: $97.40."
+    "Market OPEN (11:21 ET). No trades executed. No BUY signals (RSI=0, net-buy=0, surge=0). RSI SELLs (not held): JPM, BAC, MRNA, WMT, SNOW, VRT, LRCX, KLAC, ASML, LAZR, ONDS, LITE, CRDO. Net-buy SELLs (not held): MCD, AAPL. Surge tracker cleared. CB: INACTIVE — daily 0.0% / weekly -0.14%. Buying power: $97.40. Equity positions: 0. Account: $97.40."
+>>>>>>> Stashed changes
   ]
 }
