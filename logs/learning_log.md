@@ -175,3 +175,12 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403, 18th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
 - RL samples: 500/200 (READY — +7 new rows today; 19 states in Q-table)
 - Notes: 2 positions closed today (MU/TER via net-buy SELL, ~71h hold each; both losses). SYM still open (-0.62%, trail $38.16/TP $44.35). Buying power $52.74 (tight — only $2.74 above $50 buffer, insufficient for $15 min order on new buys). Account $97.12. Normal strategy win_rate dipped to 46.2% (within hold band — no adjustment). RL now at 500 samples, 300 above 200 target. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-12
+- Trades analysed: 14 total closed (cumulative); 0 new closures today — GOOGL BUY opened today, still open
+- Win rate: 50.0% overall (normal: 50.0% [7W/7L, n=14]; momentum: n/a [n<3]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH 50.0% (6W/6L, n=12); BEARISH 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=50.0% in [40%,65%] (NO_CHANGE, n=14≥5); MOMENTUM_VOL_MIN: n<3 momentum trades (NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~140h >>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked 403 (20th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 513/200 (READY — +7 new rows today; 19 states in Q-table)
+- Notes: GOOGL BUY opened @ $342.92 ($47, RSI 26.54 deeply oversold, RL BOOST conf 0.928). Account $97.37, 1 open position. Trail stop $338.18, target $377.20. Trade log trimmed to 4 entries. Capital bind: $50.40 buying power → $0.40 above $50 buffer. Proxy has blocked backtest for 20+ sessions. Run: python -m strategy.rl_agent --train to activate Q-learning.
