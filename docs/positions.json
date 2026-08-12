@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T14:27:27Z",
+  "updated_at": "2026-08-12T15:21:00Z",
   "buying_power": 97.4,
   "market_regime": "normal",
   "account_value": 97.4,
@@ -10,8 +10,8 @@
   "week_start_date": "2026-08-10",
   "positions": [],
   "last_actions": [
+    "Market OPEN (11:21 ET). No trades executed. No BUY signals (RSI=0, net-buy=0, surge=0). RSI SELLs (not held): JPM, BAC, MRNA, WMT, SNOW, VRT, LRCX, KLAC, ASML, LAZR, ONDS, LITE, CRDO. Net-buy SELLs (not held): MCD, AAPL. Surge tracker cleared. CB: INACTIVE — daily 0.0% / weekly -0.14%. Buying power: $97.40. Equity positions: 0. Account: $97.40.",
     "Market OPEN (10:27 ET). BUY HOOD NET-BUY $50 SKIPPED: $97.40 − $50 = $47.40 < $50 buffer. 0 equity positions. Account: $97.40.",
-    "RSI SELLs (not held): AI(72.3), ISRG(83.2), ONDS(74.3), AVAV(78.6), UUUU(76.8), AEHR(72.6). Net-Buy SELLs (not held): CIFR, F, COIN, WFC, AAPL, AVGO, GEV, INTC, AMAT. Surge tracker: HOOD count=1, RDW count=1. CB: INACTIVE.",
-    "Regime: normal (BULLISH, SPY $770.42 > EMA200 $752.63). Peak: $101.68. daily_dd=0.0% / weekly_dd=-0.14% (gain)."
+    "RSI SELLs (not held): AI(72.3), ISRG(83.2), ONDS(74.3), AVAV(78.6), UUUU(76.8), AEHR(72.6). Net-Buy SELLs (not held): CIFR, F, COIN, WFC, AAPL, AVGO, GEV, INTC, AMAT. Surge tracker: HOOD count=1, RDW count=1. CB: INACTIVE."
   ]
 }
