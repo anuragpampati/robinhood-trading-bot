@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-08-13",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,8 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 513,
+  "rl_training_samples": 516,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403, 20+ consecutive sessions) — prior backtest metrics retained. Config: NO_CHANGE — live win_rate 50.0% (n=14) in [40%,65%] range; momentum entries n<3; ATR avg_hold ~140h >>2h. GOOGL BUY opened today @ $342.92 (RSI 26.54, RL BOOST conf 0.928). Cumulative 14 closed (7W/7L, 50.0% win rate). RL: 513 samples (+7 today), 19 states. Live account $97.37. RL READY — run: python -m strategy.rl_agent --train"
+  "note": "Updated by daily learning CCR. Backtest skipped (yfinance proxy blocked 403, consecutive sessions) — prior backtest metrics retained from 2026-08-12. Config: NO_CHANGE — 0 closed trades in log (GOOGL BUY open since 2026-08-12, n<3 for all strategy types). RL: 516 samples (+3 today), 19 states. Live account $97.89 (+0.65% week). RL READY — run: python -m strategy.rl_agent --train"
 }

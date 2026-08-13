@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-08-13
+- Trades analysed: 0 closed pairs (1 open position: GOOGL BUY @ $342.92 on 2026-08-12, still held; no complete BUY→SELL round-trips in log)
+- Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
+- Config changes: none — n_trades < 3 for all strategy types; NO_CHANGE (insufficient data for any threshold adjustment)
+- Backtest: SKIPPED — yfinance proxy blocked (403, consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 516/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: Account $97.89 (+0.65% week), 1 equity position (GOOGL +1.02%, trail_stop $338.18, target $377.21), buying power $50.40 (only $0.40 above buffer — no new buys possible). Regime: normal (BULLISH EMA). Log trimmed to 9 entries. RL exceeds 200 target (516 samples, 19 Q-states) — run: python -m strategy.rl_agent --train to activate Q-learning.
+
 ## 2026-08-11
 - Trades analysed: 14 closed (7W/7L); +1 new exit today: SYM +2.13% (96h/net-buy-SELL/BULLISH EMA)
 - Win rate: 50.0% overall (normal: 50.0% [n=14, 7W/7L, avg_pnl -0.51%, avg_hold ~137h]; momentum: n/a [n=0]; surge: n/a [n=0])
