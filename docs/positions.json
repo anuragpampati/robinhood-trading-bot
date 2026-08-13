@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-13T15:36:55Z",
-  "buying_power": 50.4,
+  "updated_at": "2026-08-13T16:36:28Z",
+  "buying_power": 50.40,
   "market_regime": "normal",
-  "account_value": 97.60,
+  "account_value": 97.84,
   "peak_value": 101.68,
   "day_start_value": 97.90,
   "day_start_date": "2026-08-13",
@@ -13,9 +13,9 @@
       "ticker": "GOOGL",
       "quantity": 0.137058,
       "avg_cost": 342.92,
-      "current_price": 344.39,
-      "pnl_pct": 0.0043,
-      "value": 47.20,
+      "current_price": 346.11,
+      "pnl_pct": 0.0093,
+      "value": 47.44,
       "entry_atr_pct": 0.0069,
       "entry_time": "2026-08-12T17:16:05Z",
       "trail_stop": 338.18,
@@ -25,10 +25,9 @@
     }
   ],
   "last_actions": [
-    "Market OPEN (11:37 ET). No trades — buying power $50.40 ($0.40 usable above $50 buffer). No BUY signals.",
-    "GOOGL held: $344.39 (+0.43%), trail_stop $338.18, target $377.21. HOLD.",
-    "RSI SELL (not held): SPY(71.1), QQQ(72.2), IWM(73.1), NFLX(70.0), HOOD(74.7), MRNA(77.7), SBUX(76.0), WMT(72.7), TGT(71.6), ORCL(75.1), DELL(75.7), LRCX(75.1), KLAC(75.9), ASML(76.1), IONQ(73.6), RGTI(73.0), INFQ(84.9), BE(70.1), CRDO(77.3).",
-    "Net-buy SELL (not held): SPY, EOSE, RKLB, PLTR, NVDA, BA, SOFI, RDW, SOUN, PFE, COIN, DIS.",
-    "CB: INACTIVE | daily -0.30% / weekly +0.36% gain (week_start $97.26 2026-08-10). Peak: $101.68."
+    "Market OPEN (12:36 ET). No trades — no BUY signals. GOOGL HOLD: $346.11 (+0.93%), trail_stop $338.18, target $377.21.",
+    "RSI SELL (not held): MU(70.7), LRCX(76.9), KLAC(76.1), ASML(74.5), TER(71.5), CRDO(73.8).",
+    "Net-buy SELL (not held): SPY, RKLB, EOSE, RDW, SOUN, COIN, BA, DIS, NVDA, SOFI.",
+    "CB: INACTIVE | daily -0.06% / weekly +0.60% gain (week_start $97.26 2026-08-10). Peak: $101.68."
   ]
 }
