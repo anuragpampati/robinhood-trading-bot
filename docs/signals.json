@@ -1,48 +1,85 @@
 {
-  "timestamp": "2026-08-13T19:04:32.941115+00:00",
+<<<<<<< Updated upstream
+  "timestamp": "2026-08-07T00:51:21.136600+00:00",
   "mode": "full_universe",
   "universe_size": 503,
+  "market_open": false,
+=======
+  "timestamp": "2026-08-13T19:20:06.850921+00:00",
+  "mode": "quick",
+  "universe_size": 103,
   "market_open": true,
+>>>>>>> Stashed changes
   "market_regime": "normal",
   "rsi_signals": [
     {
       "ticker": "SPY",
       "action": "HOLD",
-      "price": 777.885009765625,
-      "rsi": 64.96,
+<<<<<<< Updated upstream
+      "price": 768.530029296875,
+      "rsi": 59.64,
+=======
+      "price": 777.73,
+      "rsi": 66.72,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0022,
-      "reason": "low volume (0.25x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0026,
+      "reason": "RSI=59.6 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0023,
+      "reason": "RSI=66.7 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": "HOLD",
       "rl_confidence": 0.918
     },
     {
       "ticker": "QQQ",
+<<<<<<< Updated upstream
       "action": "HOLD",
-      "price": 733.2899780273438,
-      "rsi": 69.65,
+      "price": 714.6199951171875,
+      "rsi": 55.42,
+      "ema_trend": "BULLISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0046,
+      "reason": "low volume (0.65x avg) \u2014 skipping",
+=======
+      "action": "SELL",
+      "price": 733.29,
+      "rsi": 70.77,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 0,
+      "confidence": 2,
       "atr_pct": 0.0034,
-      "reason": "low volume (0.37x avg) \u2014 skipping",
+      "reason": "RSI overbought (70.8) | price above BB upper band",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "IWM",
       "action": "HOLD",
-      "price": 303.7550048828125,
-      "rsi": 62.61,
+<<<<<<< Updated upstream
+      "price": 298.2449951171875,
+      "rsi": 48.13,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0034,
+      "reason": "RSI=48.1 (falling), BB=BELOW_BAND, EMA=NEUTRAL",
+=======
+      "price": 303.65,
+      "rsi": 67.98,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0028,
-      "reason": "low volume (0.25x avg) \u2014 skipping",
+      "atr_pct": 0.0025,
+      "reason": "RSI=68.0 (stable), BB=ABOVE_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": "HOLD",
       "rl_confidence": 0.918
@@ -50,27 +87,52 @@
     {
       "ticker": "AAPL",
       "action": "HOLD",
-      "price": 303.239990234375,
-      "rsi": 43.74,
+      "price": 303.18,
+      "rsi": 42.41,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0053,
-      "reason": "low volume (0.42x avg) \u2014 skipping",
+      "atr_pct": 0.0055,
+      "reason": "RSI=42.4 (stable), BB=IN_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
     },
     {
-      "ticker": "MSFT",
+      "ticker": "AAPL",
       "action": "HOLD",
-      "price": 496.8800048828125,
-      "rsi": 50.43,
+<<<<<<< Updated upstream
+      "price": 312.45001220703125,
+      "rsi": 52.87,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0067,
+      "reason": "RSI=52.9 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "fib_target": null,
+      "rl_action": "HOLD",
+      "rl_confidence": 0.91
+    },
+    {
+      "ticker": "MSFT",
+      "action": "SELL",
+      "price": 499.8599853515625,
+      "rsi": 70.01,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0083,
+      "reason": "RSI overbought (70.0) | price above BB upper band",
+=======
+      "price": 496.9208,
+      "rsi": 51.44,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0069,
-      "reason": "low volume (0.50x avg) \u2014 skipping",
+      "atr_pct": 0.007,
+      "reason": "RSI=51.4 (stable), BB=IN_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -78,27 +140,47 @@
     {
       "ticker": "NVDA",
       "action": "HOLD",
-      "price": 225.8000030517578,
-      "rsi": 62.92,
+<<<<<<< Updated upstream
+      "price": 218.99000549316406,
+      "rsi": 63.04,
+=======
+      "price": 225.735,
+      "rsi": 66.69,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0072,
-      "reason": "low volume (0.34x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0102,
+      "reason": "low volume (0.65x avg) \u2014 skipping",
+=======
+      "atr_pct": 0.0069,
+      "reason": "RSI=66.7 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 192,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "AMD",
       "action": "HOLD",
-      "price": 490.0238952636719,
-      "rsi": 55.92,
+<<<<<<< Updated upstream
+      "price": 489.6700134277344,
+      "rsi": 47.86,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0182,
+      "reason": "low volume (0.42x avg) \u2014 skipping",
+=======
+      "price": 490.58,
+      "rsi": 56.34,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0105,
-      "reason": "low volume (0.46x avg) \u2014 skipping",
+      "atr_pct": 0.0104,
+      "reason": "RSI=56.3 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 515,
       "rl_action": null,
       "rl_confidence": null
@@ -106,13 +188,23 @@
     {
       "ticker": "INTC",
       "action": "HOLD",
-      "price": 105.08000183105469,
-      "rsi": 64.99,
+<<<<<<< Updated upstream
+      "price": 99.70999908447266,
+      "rsi": 55.12,
+=======
+      "price": 105.2,
+      "rsi": 64.36,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.016,
-      "reason": "low volume (0.28x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0186,
+      "reason": "low volume (0.56x avg) \u2014 skipping",
+=======
+      "atr_pct": 0.0161,
+      "reason": "low volume (0.55x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 120,
       "rl_action": null,
       "rl_confidence": null
@@ -120,27 +212,47 @@
     {
       "ticker": "QCOM",
       "action": "HOLD",
-      "price": 164.80999755859375,
-      "rsi": 55.88,
+<<<<<<< Updated upstream
+      "price": 160.42999267578125,
+      "rsi": 56.12,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0083,
-      "reason": "low volume (0.37x avg) \u2014 skipping",
+      "atr_pct": 0.0128,
+      "reason": "RSI=56.1 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 165.085,
+      "rsi": 56.93,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0087,
+      "reason": "RSI=56.9 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "AVGO",
       "action": "HOLD",
-      "price": 421.0470886230469,
-      "rsi": 52.17,
+<<<<<<< Updated upstream
+      "price": 420.4700012207031,
+      "rsi": 60.36,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0111,
+      "reason": "RSI=60.4 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 420.86,
+      "rsi": 52.52,
       "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0082,
-      "reason": "low volume (0.50x avg) \u2014 skipping",
+      "atr_pct": 0.0081,
+      "reason": "RSI=52.5 (stable), BB=IN_BAND, EMA=NEUTRAL",
+>>>>>>> Stashed changes
       "fib_target": 334,
       "rl_action": null,
       "rl_confidence": null
@@ -148,27 +260,47 @@
     {
       "ticker": "MU",
       "action": "HOLD",
-      "price": 962.989990234375,
-      "rsi": 68.36,
+<<<<<<< Updated upstream
+      "price": 880.6500244140625,
+      "rsi": 47.9,
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0169,
-      "reason": "low volume (0.30x avg) \u2014 skipping",
+      "atr_pct": 0.0231,
+      "reason": "low volume (0.58x avg) \u2014 skipping",
+=======
+      "price": 963.1,
+      "rsi": 68.92,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0154,
+      "reason": "RSI=68.9 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 869,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "CRM",
       "action": "HOLD",
-      "price": 199.85000610351562,
-      "rsi": 66.82,
+<<<<<<< Updated upstream
+      "price": 186.82000732421875,
+      "rsi": 47.89,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0108,
+      "reason": "RSI=47.9 (stable), BB=IN_BAND, EMA=BEARISH",
+=======
+      "price": 199.99,
+      "rsi": 65.0,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.014,
-      "reason": "RSI=66.8 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "atr_pct": 0.0144,
+      "reason": "RSI=65.0 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -176,13 +308,23 @@
     {
       "ticker": "AMZN",
       "action": "HOLD",
-      "price": 265.9200134277344,
-      "rsi": 33.58,
+<<<<<<< Updated upstream
+      "price": 272.20001220703125,
+      "rsi": 52.33,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0069,
+      "reason": "low volume (0.63x avg) \u2014 skipping",
+=======
+      "price": 266.16,
+      "rsi": 37.74,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0064,
-      "reason": "low volume (0.43x avg) \u2014 skipping",
+      "atr_pct": 0.0062,
+      "reason": "RSI=37.7 (stable), BB=IN_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": 230,
       "rl_action": null,
       "rl_confidence": null
@@ -190,13 +332,23 @@
     {
       "ticker": "GOOGL",
       "action": "HOLD",
-      "price": 345.94000244140625,
-      "rsi": 43.17,
+<<<<<<< Updated upstream
+      "price": 357.8900146484375,
+      "rsi": 40.36,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0061,
-      "reason": "low volume (0.26x avg) \u2014 skipping",
+      "atr_pct": 0.0083,
+      "reason": "low volume (0.57x avg) \u2014 skipping",
+=======
+      "price": 345.79,
+      "rsi": 41.61,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0065,
+      "reason": "low volume (0.62x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 357,
       "rl_action": null,
       "rl_confidence": null
@@ -204,55 +356,98 @@
     {
       "ticker": "META",
       "action": "HOLD",
-      "price": 594.1199951171875,
-      "rsi": 55.51,
+<<<<<<< Updated upstream
+      "price": 589.8400268554688,
+      "rsi": 56.83,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0078,
+      "reason": "low volume (0.70x avg) \u2014 skipping",
+=======
+      "price": 592.81,
+      "rsi": 52.95,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0079,
-      "reason": "low volume (0.48x avg) \u2014 skipping",
+      "atr_pct": 0.0089,
+      "reason": "RSI=52.9 (stable), BB=IN_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "HOLD",
+      "rl_confidence": 0.918
     },
     {
       "ticker": "TSLA",
       "action": "HOLD",
-      "price": 340.07000732421875,
-      "rsi": 70.43,
+<<<<<<< Updated upstream
+      "price": 319.6199951171875,
+      "rsi": 48.6,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0086,
+      "reason": "RSI=48.6 (stable), BB=IN_BAND, EMA=BEARISH",
+=======
+      "price": 339.535,
+      "rsi": 67.84,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0084,
-      "reason": "low volume (0.53x avg) \u2014 skipping",
+      "atr_pct": 0.0095,
+      "reason": "RSI=67.8 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 382,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "HOLD",
+      "rl_confidence": 0.918
     },
     {
       "ticker": "NFLX",
       "action": "HOLD",
-      "price": 77.54499816894531,
-      "rsi": 70.59,
+<<<<<<< Updated upstream
+      "price": 73.68000030517578,
+      "rsi": 54.44,
+=======
+      "price": 77.485,
+      "rsi": 68.78,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0087,
-      "reason": "low volume (0.54x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0081,
+      "reason": "RSI=54.4 (stable), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "HOLD",
+      "rl_confidence": 0.91
+=======
+      "atr_pct": 0.0099,
+      "reason": "RSI=68.8 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "fib_target": null,
+      "rl_action": "HOLD",
+      "rl_confidence": 0.918
+>>>>>>> Stashed changes
     },
     {
       "ticker": "UBER",
       "action": "HOLD",
-      "price": 75.75499725341797,
-      "rsi": 52.17,
+<<<<<<< Updated upstream
+      "price": 70.48999786376953,
+      "rsi": 55.0,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0121,
+      "reason": "RSI=55.0 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 75.72,
+      "rsi": 53.05,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0085,
-      "reason": "low volume (0.37x avg) \u2014 skipping",
+      "atr_pct": 0.0091,
+      "reason": "low volume (0.58x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -260,13 +455,23 @@
     {
       "ticker": "COIN",
       "action": "HOLD",
-      "price": 151.73500061035156,
-      "rsi": 58.75,
-      "ema_trend": "BULLISH",
+<<<<<<< Updated upstream
+      "price": 145.35000610351562,
+      "rsi": 35.19,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0165,
+      "reason": "RSI=35.2 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 151.1901,
+      "rsi": 57.02,
+      "ema_trend": "NEUTRAL",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0138,
-      "reason": "low volume (0.68x avg) \u2014 skipping",
+      "atr_pct": 0.0131,
+      "reason": "RSI=57.0 (stable), BB=ABOVE_BAND, EMA=NEUTRAL",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -274,13 +479,23 @@
     {
       "ticker": "SNAP",
       "action": "HOLD",
-      "price": 5.300000190734863,
-      "rsi": 51.17,
+<<<<<<< Updated upstream
+      "price": 5.204999923706055,
+      "rsi": 48.26,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0129,
-      "reason": "low volume (0.63x avg) \u2014 skipping",
+      "atr_pct": 0.0168,
+      "reason": "RSI=48.3 (falling), BB=IN_BAND, EMA=BEARISH",
+=======
+      "price": 5.29,
+      "rsi": 49.73,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0131,
+      "reason": "RSI=49.7 (stable), BB=IN_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -288,41 +503,73 @@
     {
       "ticker": "PLTR",
       "action": "HOLD",
-      "price": 178.60499572753906,
-      "rsi": 65.63,
+<<<<<<< Updated upstream
+      "price": 155.97999572753906,
+      "rsi": 64.68,
+=======
+      "price": 178.55,
+      "rsi": 67.78,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0127,
-      "reason": "RSI=65.6 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0139,
+      "reason": "low volume (0.31x avg) \u2014 skipping",
+=======
+      "atr_pct": 0.013,
+      "reason": "RSI=67.8 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 121,
       "rl_action": null,
       "rl_confidence": null
     },
     {
       "ticker": "SOFI",
+<<<<<<< Updated upstream
+      "action": "BUY",
+      "price": 18.100000381469727,
+      "rsi": 52.47,
+      "ema_trend": "BULLISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0104,
+      "reason": "BB reversal: -0.03\u21920.08 (returning from band) | EMA bullish crossover",
+=======
       "action": "HOLD",
-      "price": 18.514999389648438,
-      "rsi": 63.42,
+      "price": 18.505,
+      "rsi": 64.34,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0117,
-      "reason": "low volume (0.70x avg) \u2014 skipping",
+      "atr_pct": 0.0105,
+      "reason": "RSI=64.3 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "HOOD",
+<<<<<<< Updated upstream
       "action": "HOLD",
-      "price": 99.16000366210938,
-      "rsi": 68.69,
+      "price": 90.69999694824219,
+      "rsi": 43.64,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0131,
+      "reason": "RSI=43.6 (stable), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "action": "SELL",
+      "price": 98.945,
+      "rsi": 73.01,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0144,
-      "reason": "low volume (0.36x avg) \u2014 skipping",
+      "confidence": 2,
+      "atr_pct": 0.0135,
+      "reason": "RSI overbought (73.0) | price above BB upper band",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -330,13 +577,23 @@
     {
       "ticker": "RIVN",
       "action": "HOLD",
-      "price": 15.98859977722168,
-      "rsi": 49.39,
+<<<<<<< Updated upstream
+      "price": 15.395000457763672,
+      "rsi": 41.7,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0117,
+      "reason": "RSI=41.7 (falling), BB=IN_BAND, EMA=BEARISH",
+=======
+      "price": 15.995,
+      "rsi": 49.67,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0089,
-      "reason": "low volume (0.29x avg) \u2014 skipping",
+      "reason": "low volume (0.61x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -344,13 +601,23 @@
     {
       "ticker": "ARM",
       "action": "HOLD",
-      "price": 282.739990234375,
-      "rsi": 60.25,
+<<<<<<< Updated upstream
+      "price": 286.67999267578125,
+      "rsi": 62.49,
+=======
+      "price": 283.275,
+      "rsi": 61.66,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0166,
-      "reason": "low volume (0.21x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0213,
+      "reason": "RSI=62.5 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0168,
+      "reason": "low volume (0.38x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 304,
       "rl_action": null,
       "rl_confidence": null
@@ -358,167 +625,300 @@
     {
       "ticker": "JPM",
       "action": "HOLD",
-      "price": 363.4200134277344,
-      "rsi": 55.25,
+<<<<<<< Updated upstream
+      "price": 356.29998779296875,
+      "rsi": 48.14,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0054,
+      "reason": "RSI=48.1 (stable), BB=BELOW_BAND, EMA=NEUTRAL",
+=======
+      "price": 363.07,
+      "rsi": 56.86,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.005,
-      "reason": "low volume (0.39x avg) \u2014 skipping",
+      "atr_pct": 0.0042,
+      "reason": "RSI=56.9 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "BAC",
       "action": "HOLD",
-      "price": 64.08080291748047,
-      "rsi": 50.41,
+<<<<<<< Updated upstream
+      "price": 63.005001068115234,
+      "rsi": 52.73,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0052,
+      "reason": "RSI=52.7 (stable), BB=IN_BAND, EMA=NEUTRAL",
+=======
+      "price": 64.005,
+      "rsi": 50.77,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0049,
-      "reason": "low volume (0.36x avg) \u2014 skipping",
+      "atr_pct": 0.0043,
+      "reason": "RSI=50.8 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.91
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "GS",
       "action": "HOLD",
-      "price": 1046.783203125,
-      "rsi": 54.39,
+<<<<<<< Updated upstream
+      "price": 1032.5,
+      "rsi": 37.73,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0081,
+      "reason": "RSI=37.7 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 1044.41,
+      "rsi": 53.16,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0069,
-      "reason": "low volume (0.35x avg) \u2014 skipping",
+      "atr_pct": 0.0065,
+      "reason": "low volume (0.55x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.91
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "C",
       "action": "HOLD",
-      "price": 138.72000122070312,
-      "rsi": 63.21,
+<<<<<<< Updated upstream
+      "price": 133.84500122070312,
+      "rsi": 40.64,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0079,
+      "reason": "RSI=40.6 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 138.53,
+      "rsi": 65.14,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.006,
-      "reason": "low volume (0.46x avg) \u2014 skipping",
+      "atr_pct": 0.0058,
+      "reason": "RSI=65.1 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "WFC",
       "action": "HOLD",
-      "price": 88.2300033569336,
-      "rsi": 52.52,
+<<<<<<< Updated upstream
+      "price": 87.58000183105469,
+      "rsi": 45.63,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0073,
+      "reason": "RSI=45.6 (stable), BB=BELOW_BAND, EMA=NEUTRAL",
+=======
+      "price": 88.095,
+      "rsi": 50.68,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0054,
-      "reason": "low volume (0.37x avg) \u2014 skipping",
+      "atr_pct": 0.0049,
+      "reason": "RSI=50.7 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.91
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "JNJ",
       "action": "HOLD",
-      "price": 260.760009765625,
-      "rsi": 54.85,
+<<<<<<< Updated upstream
+      "price": 257.0150146484375,
+      "rsi": 52.38,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0047,
-      "reason": "low volume (0.39x avg) \u2014 skipping",
+      "atr_pct": 0.0063,
+      "reason": "RSI=52.4 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 260.7499,
+      "rsi": 54.86,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0045,
+      "reason": "low volume (0.62x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": "HOLD",
       "rl_confidence": 0.91
     },
     {
       "ticker": "PFE",
+<<<<<<< Updated upstream
+      "action": "SELL",
+      "price": 26.200000762939453,
+      "rsi": 76.86,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0067,
+      "reason": "RSI overbought (76.9) | price above BB upper band",
+      "fib_target": null,
+      "rl_action": null,
+      "rl_confidence": null
+=======
       "action": "HOLD",
-      "price": 26.655000686645508,
-      "rsi": 54.82,
+      "price": 26.685,
+      "rsi": 56.3,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0059,
-      "reason": "low volume (0.43x avg) \u2014 skipping",
+      "atr_pct": 0.0064,
+      "reason": "RSI=56.3 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": "HOLD",
-      "rl_confidence": 0.91
+      "rl_confidence": 0.918
+>>>>>>> Stashed changes
     },
     {
       "ticker": "MRNA",
       "action": "HOLD",
-      "price": 62.755001068115234,
-      "rsi": 58.57,
+<<<<<<< Updated upstream
+      "price": 53.849998474121094,
+      "rsi": 34.34,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0163,
+      "reason": "RSI=34.3 (stable), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 62.83,
+      "rsi": 58.1,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0169,
-      "reason": "low volume (0.42x avg) \u2014 skipping",
+      "reason": "RSI=58.1 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
     },
     {
       "ticker": "DIS",
+<<<<<<< Updated upstream
+      "action": "SELL",
+      "price": 104.66999816894531,
+      "rsi": 81.55,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0093,
+      "reason": "RSI overbought (81.5) | price above BB upper band",
+=======
       "action": "HOLD",
-      "price": 104.3499984741211,
-      "rsi": 59.61,
+      "price": 104.32,
+      "rsi": 60.24,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0058,
-      "reason": "low volume (0.46x avg) \u2014 skipping",
+      "atr_pct": 0.0063,
+      "reason": "RSI=60.2 (stable), BB=ABOVE_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": "HOLD",
       "rl_confidence": 0.918
     },
     {
       "ticker": "SBUX",
-      "action": "HOLD",
-      "price": 109.45999908447266,
-      "rsi": 66.25,
+      "action": "SELL",
+      "price": 109.63,
+      "rsi": 70.83,
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0065,
-      "reason": "low volume (0.49x avg) \u2014 skipping",
-      "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
-    },
-    {
-      "ticker": "MCD",
-      "action": "HOLD",
-      "price": 272.3493957519531,
-      "rsi": 43.53,
-      "ema_trend": "NEUTRAL",
-      "bb_signal": "IN_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0053,
-      "reason": "low volume (0.40x avg) \u2014 skipping",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0067,
+      "reason": "RSI overbought (70.8) | price above BB upper band",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
     },
     {
+      "ticker": "MCD",
+      "action": "HOLD",
+      "price": 272.545,
+      "rsi": 46.12,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0047,
+      "reason": "RSI=46.1 (stable), BB=IN_BAND, EMA=NEUTRAL",
+>>>>>>> Stashed changes
+      "fib_target": null,
+      "rl_action": null,
+      "rl_confidence": null
+    },
+    {
+      "ticker": "SBUX",
+      "action": "HOLD",
+      "price": 105.16000366210938,
+      "rsi": 50.49,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0078,
+      "reason": "RSI=50.5 (stable), BB=IN_BAND, EMA=NEUTRAL",
+      "fib_target": null,
+      "rl_action": null,
+      "rl_confidence": null
+    },
+    {
+      "ticker": "MCD",
+      "action": "HOLD",
+      "price": 276.2900085449219,
+      "rsi": 64.73,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.007,
+      "reason": "RSI=64.7 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "fib_target": null,
+      "rl_action": "HOLD",
+      "rl_confidence": 0.918
+    },
+    {
       "ticker": "WMT",
       "action": "HOLD",
-      "price": 115.12000274658203,
-      "rsi": 65.31,
+<<<<<<< Updated upstream
+      "price": 112.0719985961914,
+      "rsi": 55.49,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0055,
-      "reason": "low volume (0.42x avg) \u2014 skipping",
+      "atr_pct": 0.007,
+      "reason": "RSI=55.5 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 115.075,
+      "rsi": 65.33,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0051,
+      "reason": "RSI=65.3 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": "HOLD",
       "rl_confidence": 0.918
@@ -526,69 +926,119 @@
     {
       "ticker": "TGT",
       "action": "HOLD",
-      "price": 155.39999389648438,
-      "rsi": 68.21,
+<<<<<<< Updated upstream
+      "price": 147.08999633789062,
+      "rsi": 48.31,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0068,
+      "reason": "RSI=48.3 (stable), BB=IN_BAND, EMA=NEUTRAL",
+=======
+      "price": 155.35,
+      "rsi": 66.1,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0062,
-      "reason": "low volume (0.27x avg) \u2014 skipping",
+      "atr_pct": 0.0068,
+      "reason": "low volume (0.35x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "BA",
       "action": "HOLD",
-      "price": 230.36000061035156,
-      "rsi": 44.19,
+<<<<<<< Updated upstream
+      "price": 232.14999389648438,
+      "rsi": 47.82,
+      "ema_trend": "BULLISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0093,
+      "reason": "RSI=47.8 (stable), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "price": 230.36,
+      "rsi": 43.8,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.006,
-      "reason": "low volume (0.51x avg) \u2014 skipping",
+      "reason": "RSI=43.8 (stable), BB=IN_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "HOLD",
+      "rl_confidence": 0.91
     },
     {
       "ticker": "GE",
       "action": "HOLD",
-      "price": 360.3999938964844,
-      "rsi": 35.82,
+<<<<<<< Updated upstream
+      "price": 374.5899963378906,
+      "rsi": 50.59,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0085,
+      "reason": "RSI=50.6 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 361.0,
+      "rsi": 32.06,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.007,
-      "reason": "low volume (0.57x avg) \u2014 skipping",
+      "atr_pct": 0.0059,
+      "reason": "RSI=32.1 (stable), BB=BELOW_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "HOLD",
+      "rl_confidence": 0.91
     },
     {
       "ticker": "F",
       "action": "HOLD",
-      "price": 13.885000228881836,
-      "rsi": 45.51,
+<<<<<<< Updated upstream
+      "price": 13.78499984741211,
+      "rsi": 29.04,
+=======
+      "price": 13.875,
+      "rsi": 43.81,
+>>>>>>> Stashed changes
       "ema_trend": "BEARISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0058,
-      "reason": "low volume (0.25x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0083,
+      "reason": "RSI=29.0 (stable), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "atr_pct": 0.0063,
+      "reason": "low volume (0.56x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.928
     },
     {
       "ticker": "GM",
       "action": "HOLD",
-      "price": 86.58999633789062,
-      "rsi": 37.91,
+<<<<<<< Updated upstream
+      "price": 86.94000244140625,
+      "rsi": 40.24,
       "ema_trend": "BEARISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0059,
-      "reason": "low volume (0.38x avg) \u2014 skipping",
+      "atr_pct": 0.0072,
+      "reason": "RSI=40.2 (stable), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 86.51,
+      "rsi": 38.39,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0063,
+      "reason": "RSI=38.4 (falling), BB=BELOW_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -596,55 +1046,87 @@
     {
       "ticker": "XOM",
       "action": "HOLD",
-      "price": 158.3300018310547,
-      "rsi": 48.69,
+<<<<<<< Updated upstream
+      "price": 154.8300018310547,
+      "rsi": 58.12,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0065,
+      "reason": "RSI=58.1 (stable), BB=ABOVE_BAND, EMA=NEUTRAL",
+=======
+      "price": 158.26,
+      "rsi": 50.04,
       "ema_trend": "BULLISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0055,
-      "reason": "low volume (0.24x avg) \u2014 skipping",
-      "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.91
-    },
-    {
-      "ticker": "CVX",
-      "action": "HOLD",
-      "price": 197.14999389648438,
-      "rsi": 64.95,
-      "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0046,
-      "reason": "low volume (0.48x avg) \u2014 skipping",
-      "fib_target": null,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
-    },
-    {
-      "ticker": "PYPL",
-      "action": "SELL",
-      "price": 60.380001068115234,
-      "rsi": 72.45,
-      "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0068,
-      "reason": "RSI overbought (72.5) | price above BB upper band",
+      "atr_pct": 0.0058,
+      "reason": "low volume (0.51x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
     },
     {
-      "ticker": "SHOP",
+      "ticker": "CVX",
+      "action": "HOLD",
+<<<<<<< Updated upstream
+      "price": 189.22999572753906,
+      "rsi": 48.07,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0069,
+      "reason": "RSI=48.1 (stable), BB=IN_BAND, EMA=BEARISH",
+=======
+      "price": 197.06,
+      "rsi": 64.61,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0038,
+      "reason": "RSI=64.6 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
+      "fib_target": null,
+      "rl_action": null,
+      "rl_confidence": null
+    },
+    {
+      "ticker": "PYPL",
+<<<<<<< Updated upstream
       "action": "SELL",
-      "price": 157.80050659179688,
-      "rsi": 70.05,
+      "price": 59.7599983215332,
+      "rsi": 71.8,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 2,
-      "atr_pct": 0.0114,
-      "reason": "RSI overbought (70.0) | price above BB upper band",
+      "atr_pct": 0.0074,
+      "reason": "RSI overbought (71.8) | price above BB upper band",
+=======
+      "action": "HOLD",
+      "price": 60.31,
+      "rsi": 69.82,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.007,
+      "reason": "RSI=69.8 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
+      "fib_target": null,
+      "rl_action": "HOLD",
+      "rl_confidence": 0.918
+    },
+    {
+      "ticker": "SHOP",
+<<<<<<< Updated upstream
+      "action": "HOLD",
+      "price": 147.49000549316406,
+      "rsi": 72.33,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0203,
+      "reason": "RSI=72.3 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -652,13 +1134,23 @@
     {
       "ticker": "RBLX",
       "action": "HOLD",
-      "price": 37.88999938964844,
-      "rsi": 66.18,
+      "price": 36.040000915527344,
+      "rsi": 36.05,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0155,
+      "reason": "RSI=36.1 (falling), BB=IN_BAND, EMA=BEARISH",
+=======
+      "action": "SELL",
+      "price": 157.47,
+      "rsi": 71.71,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0139,
-      "reason": "RSI=66.2 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "confidence": 2,
+      "atr_pct": 0.0121,
+      "reason": "RSI overbought (71.7) | price above BB upper band",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -666,13 +1158,23 @@
     {
       "ticker": "DKNG",
       "action": "HOLD",
-      "price": 25.30500030517578,
-      "rsi": 57.24,
+<<<<<<< Updated upstream
+      "price": 22.235000610351562,
+      "rsi": 46.41,
+      "ema_trend": "BEARISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0178,
+      "reason": "RSI=46.4 (stable), BB=IN_BAND, EMA=BEARISH",
+=======
+      "price": 25.315,
+      "rsi": 57.9,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0125,
-      "reason": "low volume (0.51x avg) \u2014 skipping",
+      "atr_pct": 0.013,
+      "reason": "low volume (0.68x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -680,13 +1182,23 @@
     {
       "ticker": "ORCL",
       "action": "HOLD",
-      "price": 155.7100067138672,
-      "rsi": 64.8,
+<<<<<<< Updated upstream
+      "price": 143.4199981689453,
+      "rsi": 57.87,
+=======
+      "price": 155.85,
+      "rsi": 67.14,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0162,
-      "reason": "low volume (0.55x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.013,
+      "reason": "low volume (0.66x avg) \u2014 skipping",
+=======
+      "atr_pct": 0.0156,
+      "reason": "low volume (0.56x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -694,27 +1206,47 @@
     {
       "ticker": "SNOW",
       "action": "HOLD",
-      "price": 338.8900146484375,
-      "rsi": 63.16,
+<<<<<<< Updated upstream
+      "price": 317.94000244140625,
+      "rsi": 57.89,
+=======
+      "price": 338.435,
+      "rsi": 63.31,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0101,
-      "reason": "low volume (0.67x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.013,
+      "reason": "RSI=57.9 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0097,
+      "reason": "RSI=63.3 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 181,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "HOLD",
+      "rl_confidence": 0.918
     },
     {
       "ticker": "AI",
       "action": "HOLD",
-      "price": 10.069999694824219,
-      "rsi": 49.6,
+<<<<<<< Updated upstream
+      "price": 9.859999656677246,
+      "rsi": 56.27,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0132,
+      "reason": "RSI=56.3 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 10.0,
+      "rsi": 47.41,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.018,
-      "reason": "RSI=49.6 (stable), BB=IN_BAND, EMA=BEARISH",
+      "atr_pct": 0.0197,
+      "reason": "RSI=47.4 (stable), BB=IN_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -722,13 +1254,23 @@
     {
       "ticker": "SOUN",
       "action": "HOLD",
-      "price": 7.375,
-      "rsi": 52.96,
-      "ema_trend": "BEARISH",
+<<<<<<< Updated upstream
+      "price": 7.061299800872803,
+      "rsi": 67.36,
+      "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0146,
-      "reason": "low volume (0.69x avg) \u2014 skipping",
+      "atr_pct": 0.0315,
+      "reason": "ATR too high (3.2%) \u2014 skipping",
+=======
+      "price": 7.38,
+      "rsi": 54.06,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0137,
+      "reason": "RSI=54.1 (stable), BB=IN_BAND, EMA=NEUTRAL",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -736,13 +1278,23 @@
     {
       "ticker": "SMCI",
       "action": "HOLD",
-      "price": 39.73500061035156,
-      "rsi": 68.89,
+<<<<<<< Updated upstream
+      "price": 29.3799991607666,
+      "rsi": 41.28,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0183,
+      "reason": "RSI=41.3 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 39.825,
+      "rsi": 73.5,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0312,
-      "reason": "low volume (0.30x avg) \u2014 skipping",
+      "atr_pct": 0.0314,
+      "reason": "low volume (0.55x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -750,27 +1302,47 @@
     {
       "ticker": "VRT",
       "action": "HOLD",
-      "price": 291.6050109863281,
-      "rsi": 61.5,
+<<<<<<< Updated upstream
+      "price": 275.32000732421875,
+      "rsi": 53.45,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0113,
-      "reason": "low volume (0.30x avg) \u2014 skipping",
+      "atr_pct": 0.0186,
+      "reason": "RSI=53.5 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 291.66,
+      "rsi": 65.25,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0115,
+      "reason": "RSI=65.2 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 282,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "DELL",
       "action": "HOLD",
-      "price": 493.54998779296875,
-      "rsi": 66.2,
+<<<<<<< Updated upstream
+      "price": 437.6099853515625,
+      "rsi": 42.81,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0233,
+      "reason": "RSI=42.8 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 494.145,
+      "rsi": 67.44,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0172,
-      "reason": "low volume (0.49x avg) \u2014 skipping",
+      "atr_pct": 0.017,
+      "reason": "RSI=67.4 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -778,13 +1350,23 @@
     {
       "ticker": "EQIX",
       "action": "HOLD",
-      "price": 1071.9224853515625,
-      "rsi": 64.06,
+<<<<<<< Updated upstream
+      "price": 1053.239990234375,
+      "rsi": 55.96,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0052,
-      "reason": "low volume (0.39x avg) \u2014 skipping",
+      "atr_pct": 0.008,
+      "reason": "RSI=56.0 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 1072.11,
+      "rsi": 66.1,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0053,
+      "reason": "RSI=66.1 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": "HOLD",
       "rl_confidence": 0.918
@@ -792,125 +1374,220 @@
     {
       "ticker": "AMAT",
       "action": "HOLD",
-      "price": 551.0150146484375,
-      "rsi": 56.68,
+<<<<<<< Updated upstream
+      "price": 527.6500244140625,
+      "rsi": 47.69,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0158,
+      "reason": "RSI=47.7 (falling), BB=BELOW_BAND, EMA=NEUTRAL",
+=======
+      "price": 554.03,
+      "rsi": 63.22,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0126,
-      "reason": "RSI=56.7 (falling), BB=IN_BAND, EMA=BULLISH",
+      "atr_pct": 0.0119,
+      "reason": "RSI=63.2 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
     },
     {
       "ticker": "LRCX",
+<<<<<<< Updated upstream
       "action": "HOLD",
-      "price": 339.5400085449219,
-      "rsi": 70.26,
+      "price": 305.3399963378906,
+      "rsi": 48.47,
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0135,
-      "reason": "low volume (0.45x avg) \u2014 skipping",
+      "atr_pct": 0.0182,
+      "reason": "RSI=48.5 (falling), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "action": "SELL",
+      "price": 340.775,
+      "rsi": 74.93,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.014,
+      "reason": "RSI overbought (74.9) | price above BB upper band",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "KLAC",
       "action": "HOLD",
-      "price": 210.3800048828125,
-      "rsi": 63.34,
+<<<<<<< Updated upstream
+      "price": 193.16000366210938,
+      "rsi": 51.7,
+=======
+      "price": 211.2,
+      "rsi": 69.98,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0122,
-      "reason": "low volume (0.39x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0184,
+      "reason": "RSI=51.7 (falling), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0118,
+      "reason": "RSI=70.0 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "MRVL",
       "action": "HOLD",
-      "price": 224.99000549316406,
-      "rsi": 58.93,
+<<<<<<< Updated upstream
+      "price": 210.50999450683594,
+      "rsi": 52.36,
+=======
+      "price": 225.175,
+      "rsi": 59.89,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0177,
-      "reason": "low volume (0.35x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0215,
+      "reason": "low volume (0.67x avg) \u2014 skipping",
+=======
+      "atr_pct": 0.0195,
+      "reason": "RSI=59.9 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 225,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "TXN",
       "action": "HOLD",
-      "price": 274.7900085449219,
-      "rsi": 35.64,
+<<<<<<< Updated upstream
+      "price": 278.33099365234375,
+      "rsi": 48.43,
+      "ema_trend": "BULLISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0121,
+      "reason": "RSI=48.4 (falling), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "price": 275.63,
+      "rsi": 39.03,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0079,
-      "reason": "low volume (0.63x avg) \u2014 skipping",
+      "atr_pct": 0.0071,
+      "reason": "RSI=39.0 (stable), BB=BELOW_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "ASML",
+<<<<<<< Updated upstream
       "action": "HOLD",
-      "price": 1864.405029296875,
-      "rsi": 70.62,
+      "price": 1703.0999755859375,
+      "rsi": 53.7,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0123,
+      "reason": "low volume (0.65x avg) \u2014 skipping",
+=======
+      "action": "SELL",
+      "price": 1867.88,
+      "rsi": 77.13,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
-      "confidence": 0,
+      "confidence": 2,
       "atr_pct": 0.0079,
-      "reason": "low volume (0.39x avg) \u2014 skipping",
+      "reason": "RSI overbought (77.1) | price above BB upper band",
+>>>>>>> Stashed changes
       "fib_target": 1732,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "RKLB",
       "action": "HOLD",
-      "price": 80.97000122070312,
-      "rsi": 53.29,
+<<<<<<< Updated upstream
+      "price": 75.66999816894531,
+      "rsi": 57.87,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0214,
-      "reason": "low volume (0.22x avg) \u2014 skipping",
+      "atr_pct": 0.0222,
+      "reason": "RSI=57.9 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 80.88,
+      "rsi": 54.94,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0178,
+      "reason": "low volume (0.50x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 92,
-      "rl_action": "BUY",
-      "rl_confidence": 0.974
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "ASTS",
       "action": "HOLD",
-      "price": 72.20999908447266,
-      "rsi": 53.73,
+<<<<<<< Updated upstream
+      "price": 67.38999938964844,
+      "rsi": 50.28,
+=======
+      "price": 72.26,
+      "rsi": 56.13,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0191,
-      "reason": "low volume (0.28x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0293,
+      "reason": "RSI=50.3 (falling), BB=BELOW_BAND, EMA=BULLISH",
       "fib_target": 79,
       "rl_action": "BUY",
-      "rl_confidence": 0.974
+      "rl_confidence": 1.0
+=======
+      "atr_pct": 0.0175,
+      "reason": "low volume (0.62x avg) \u2014 skipping",
+      "fib_target": 79,
+      "rl_action": null,
+      "rl_confidence": null
+>>>>>>> Stashed changes
     },
     {
       "ticker": "PL",
       "action": "HOLD",
-      "price": 24.8700008392334,
-      "rsi": 67.45,
+<<<<<<< Updated upstream
+      "price": 22.729999542236328,
+      "rsi": 57.24,
+=======
+      "price": 24.871,
+      "rsi": 66.7,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0146,
-      "reason": "low volume (0.28x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0186,
+      "reason": "RSI=57.2 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0135,
+      "reason": "RSI=66.7 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 26,
       "rl_action": null,
       "rl_confidence": null
@@ -918,13 +1595,23 @@
     {
       "ticker": "RDW",
       "action": "HOLD",
-      "price": 13.515000343322754,
-      "rsi": 58.55,
+<<<<<<< Updated upstream
+      "price": 11.824999809265137,
+      "rsi": 71.53,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0217,
-      "reason": "low volume (0.28x avg) \u2014 skipping",
+      "atr_pct": 0.0308,
+      "reason": "ATR too high (3.1%) \u2014 skipping",
+=======
+      "price": 13.495,
+      "rsi": 62.15,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0184,
+      "reason": "low volume (0.40x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 8,
       "rl_action": null,
       "rl_confidence": null
@@ -932,13 +1619,23 @@
     {
       "ticker": "ISRG",
       "action": "HOLD",
-      "price": 400.82501220703125,
-      "rsi": 67.78,
+<<<<<<< Updated upstream
+      "price": 373.8399963378906,
+      "rsi": 58.94,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.006,
-      "reason": "low volume (0.38x avg) \u2014 skipping",
+      "atr_pct": 0.007,
+      "reason": "RSI=58.9 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 400.64,
+      "rsi": 69.23,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0054,
+      "reason": "low volume (0.45x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 397,
       "rl_action": "HOLD",
       "rl_confidence": 0.918
@@ -946,55 +1643,110 @@
     {
       "ticker": "SYM",
       "action": "HOLD",
-      "price": 42.349998474121094,
-      "rsi": 59.18,
+<<<<<<< Updated upstream
+      "price": 39.58000183105469,
+      "rsi": 20.55,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.026,
+      "reason": "RSI=20.6 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 42.28,
+      "rsi": 58.58,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0126,
-      "reason": "low volume (0.38x avg) \u2014 skipping",
+      "atr_pct": 0.0124,
+      "reason": "low volume (0.60x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "HOLD",
+      "rl_confidence": 0.946
     },
     {
       "ticker": "MBLY",
       "action": "HOLD",
-      "price": 8.944999694824219,
-      "rsi": 60.34,
+<<<<<<< Updated upstream
+      "price": 8.414999961853027,
+      "rsi": 52.2,
+=======
+      "price": 8.9488,
+      "rsi": 60.55,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0112,
-      "reason": "low volume (0.41x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0116,
+      "reason": "RSI=52.2 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0124,
+      "reason": "low volume (0.68x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "TER",
       "action": "HOLD",
-      "price": 414.69000244140625,
-      "rsi": 64.73,
+<<<<<<< Updated upstream
+      "price": 384.9100036621094,
+      "rsi": 49.36,
+=======
+      "price": 416.51,
+      "rsi": 69.71,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0217,
+      "reason": "RSI=49.4 (falling), BB=BELOW_BAND, EMA=BULLISH",
+      "fib_target": null,
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
+    },
+    {
+      "ticker": "ROK",
+      "action": "HOLD",
+      "price": 441.7749938964844,
+      "rsi": 35.69,
+      "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0152,
-      "reason": "low volume (0.38x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0104,
+      "reason": "RSI=35.7 (stable), BB=IN_BAND, EMA=BEARISH",
+=======
+      "atr_pct": 0.0149,
+      "reason": "low volume (0.65x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
     },
     {
+<<<<<<< Updated upstream
+      "ticker": "AUR",
+      "action": "HOLD",
+      "price": 6.78000020980835,
+      "rsi": 53.48,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0196,
+      "reason": "RSI=53.5 (stable), BB=IN_BAND, EMA=NEUTRAL",
+=======
       "ticker": "ROK",
       "action": "HOLD",
-      "price": 446.8599853515625,
-      "rsi": 49.64,
+      "price": 447.03,
+      "rsi": 49.74,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0053,
-      "reason": "low volume (0.45x avg) \u2014 skipping",
+      "atr_pct": 0.0054,
+      "reason": "low volume (0.61x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": "HOLD",
       "rl_confidence": 0.91
@@ -1002,13 +1754,14 @@
     {
       "ticker": "AUR",
       "action": "HOLD",
-      "price": 6.954999923706055,
-      "rsi": 53.94,
+      "price": 6.955,
+      "rsi": 54.42,
       "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0151,
-      "reason": "low volume (0.36x avg) \u2014 skipping",
+      "atr_pct": 0.0149,
+      "reason": "low volume (0.54x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -1016,13 +1769,23 @@
     {
       "ticker": "LAZR",
       "action": "HOLD",
-      "price": 46.71390151977539,
-      "rsi": 58.39,
+<<<<<<< Updated upstream
+      "price": 43.52000045776367,
+      "rsi": 60.8,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0112,
-      "reason": "low volume (0.24x avg) \u2014 skipping",
+      "atr_pct": 0.0158,
+      "reason": "RSI=60.8 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 46.7139,
+      "rsi": 58.52,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0117,
+      "reason": "RSI=58.5 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -1030,41 +1793,72 @@
     {
       "ticker": "IONQ",
       "action": "HOLD",
-      "price": 46.029998779296875,
-      "rsi": 61.78,
+<<<<<<< Updated upstream
+      "price": 39.66999816894531,
+      "rsi": 48.51,
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0219,
-      "reason": "low volume (0.32x avg) \u2014 skipping",
-      "fib_target": 44,
-      "rl_action": null,
-      "rl_confidence": null
-    },
-    {
-      "ticker": "RGTI",
-      "action": "HOLD",
-      "price": 18.810800552368164,
-      "rsi": 63.02,
+      "atr_pct": 0.023,
+      "reason": "RSI=48.5 (falling), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "price": 46.04,
+      "rsi": 67.34,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
+      "atr_pct": 0.0189,
+      "reason": "RSI=67.3 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
+      "fib_target": 44,
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
+    },
+    {
+      "ticker": "RGTI",
+<<<<<<< Updated upstream
+      "action": "BUY",
+      "price": 16.55500030517578,
+      "rsi": 50.56,
+      "ema_trend": "BULLISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 2,
       "atr_pct": 0.0195,
-      "reason": "low volume (0.61x avg) \u2014 skipping",
+      "reason": "BB reversal: 0.15\u21920.17 (returning from band) | EMA bullish crossover",
+=======
+      "action": "HOLD",
+      "price": 18.78,
+      "rsi": 68.7,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0169,
+      "reason": "RSI=68.7 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 16,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "QBTS",
       "action": "HOLD",
-      "price": 21.17009925842285,
-      "rsi": 59.84,
+<<<<<<< Updated upstream
+      "price": 19.405000686645508,
+      "rsi": 36.77,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0272,
+      "reason": "RSI=36.8 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 21.145,
+      "rsi": 64.18,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0185,
-      "reason": "low volume (0.34x avg) \u2014 skipping",
+      "atr_pct": 0.0151,
+      "reason": "low volume (0.62x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 20,
       "rl_action": null,
       "rl_confidence": null
@@ -1072,13 +1866,23 @@
     {
       "ticker": "INFQ",
       "action": "HOLD",
-      "price": 12.404999732971191,
-      "rsi": 58.3,
+<<<<<<< Updated upstream
+      "price": 11.100000381469727,
+      "rsi": 56.78,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0284,
-      "reason": "low volume (0.27x avg) \u2014 skipping",
+      "atr_pct": 0.0213,
+      "reason": "low volume (0.64x avg) \u2014 skipping",
+=======
+      "price": 12.38,
+      "rsi": 59.32,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0252,
+      "reason": "RSI=59.3 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 10,
       "rl_action": null,
       "rl_confidence": null
@@ -1086,27 +1890,47 @@
     {
       "ticker": "ONDS",
       "action": "HOLD",
-      "price": 8.90999984741211,
-      "rsi": 37.06,
+<<<<<<< Updated upstream
+      "price": 8.724200248718262,
+      "rsi": 53.12,
+      "ema_trend": "BULLISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0242,
+      "reason": "low volume (0.44x avg) \u2014 skipping",
+=======
+      "price": 8.8801,
+      "rsi": 37.7,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0266,
-      "reason": "low volume (0.27x avg) \u2014 skipping",
+      "atr_pct": 0.0247,
+      "reason": "low volume (0.60x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 7,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "AVAV",
       "action": "HOLD",
-      "price": 190.36000061035156,
-      "rsi": 56.33,
+<<<<<<< Updated upstream
+      "price": 171.27999877929688,
+      "rsi": 65.56,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0154,
-      "reason": "low volume (0.39x avg) \u2014 skipping",
+      "atr_pct": 0.0148,
+      "reason": "RSI=65.6 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 190.435,
+      "rsi": 57.26,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0152,
+      "reason": "low volume (0.62x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 174,
       "rl_action": null,
       "rl_confidence": null
@@ -1114,13 +1938,23 @@
     {
       "ticker": "KTOS",
       "action": "HOLD",
-      "price": 63.119998931884766,
-      "rsi": 58.92,
+<<<<<<< Updated upstream
+      "price": 57.40999984741211,
+      "rsi": 68.26,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0141,
-      "reason": "low volume (0.34x avg) \u2014 skipping",
+      "atr_pct": 0.0224,
+      "reason": "RSI=68.3 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 63.33,
+      "rsi": 61.69,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0143,
+      "reason": "low volume (0.50x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 52,
       "rl_action": null,
       "rl_confidence": null
@@ -1128,27 +1962,47 @@
     {
       "ticker": "MRCY",
       "action": "HOLD",
-      "price": 109.42500305175781,
-      "rsi": 49.12,
+<<<<<<< Updated upstream
+      "price": 108.95999908447266,
+      "rsi": 53.08,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0123,
-      "reason": "RSI=49.1 (stable), BB=IN_BAND, EMA=BULLISH",
+      "atr_pct": 0.0148,
+      "reason": "RSI=53.1 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 110.23,
+      "rsi": 55.25,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0118,
+      "reason": "RSI=55.2 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 104,
-      "rl_action": "BUY",
-      "rl_confidence": 0.974
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "OKLO",
       "action": "HOLD",
-      "price": 47.41999816894531,
-      "rsi": 61.05,
+<<<<<<< Updated upstream
+      "price": 42.18000030517578,
+      "rsi": 47.74,
+      "ema_trend": "NEUTRAL",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0193,
+      "reason": "RSI=47.7 (falling), BB=BELOW_BAND, EMA=NEUTRAL",
+=======
+      "price": 47.462,
+      "rsi": 62.11,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0206,
-      "reason": "RSI=61.0 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "atr_pct": 0.0186,
+      "reason": "RSI=62.1 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 50,
       "rl_action": null,
       "rl_confidence": null
@@ -1156,27 +2010,48 @@
     {
       "ticker": "UUUU",
       "action": "HOLD",
-      "price": 14.625,
-      "rsi": 61.01,
+<<<<<<< Updated upstream
+      "price": 12.90999984741211,
+      "rsi": 64.56,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0137,
-      "reason": "low volume (0.37x avg) \u2014 skipping",
+      "atr_pct": 0.02,
+      "reason": "RSI=64.6 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 14.595,
+      "rsi": 63.33,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0134,
+      "reason": "RSI=63.3 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 12,
       "rl_action": null,
       "rl_confidence": null
     },
     {
       "ticker": "GEV",
+<<<<<<< Updated upstream
       "action": "HOLD",
-      "price": 1060.6600341796875,
-      "rsi": 69.69,
-      "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "price": 999.260009765625,
+      "rsi": 42.19,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
       "atr_pct": 0.0114,
-      "reason": "RSI=69.7 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "reason": "RSI=42.2 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "action": "SELL",
+      "price": 1058.3925,
+      "rsi": 70.27,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 2,
+      "atr_pct": 0.0109,
+      "reason": "RSI overbought (70.3) | price above BB upper band",
+>>>>>>> Stashed changes
       "fib_target": 906,
       "rl_action": null,
       "rl_confidence": null
@@ -1184,13 +2059,23 @@
     {
       "ticker": "LEU",
       "action": "HOLD",
-      "price": 191.89999389648438,
-      "rsi": 60.81,
+<<<<<<< Updated upstream
+      "price": 178.14999389648438,
+      "rsi": 39.34,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0242,
+      "reason": "RSI=39.3 (stable), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 191.79,
+      "rsi": 61.96,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0156,
-      "reason": "RSI=60.8 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "atr_pct": 0.0143,
+      "reason": "RSI=62.0 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 132,
       "rl_action": null,
       "rl_confidence": null
@@ -1198,13 +2083,23 @@
     {
       "ticker": "AAOI",
       "action": "HOLD",
-      "price": 136.0800018310547,
-      "rsi": 51.0,
+<<<<<<< Updated upstream
+      "price": 124.52999877929688,
+      "rsi": 51.36,
+=======
+      "price": 135.515,
+      "rsi": 52.28,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0288,
-      "reason": "low volume (0.25x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0381,
+      "reason": "ATR too high (3.8%) \u2014 skipping",
+=======
+      "atr_pct": 0.0269,
+      "reason": "low volume (0.56x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 103,
       "rl_action": "BUY",
       "rl_confidence": 1.0
@@ -1212,27 +2107,47 @@
     {
       "ticker": "LITE",
       "action": "HOLD",
-      "price": 893.2899780273438,
-      "rsi": 52.45,
+<<<<<<< Updated upstream
+      "price": 838.510009765625,
+      "rsi": 54.71,
+=======
+      "price": 890.795,
+      "rsi": 52.5,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.024,
-      "reason": "low volume (0.31x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0268,
+      "reason": "RSI=54.7 (falling), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.026,
+      "reason": "low volume (0.55x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 636,
       "rl_action": "BUY",
-      "rl_confidence": 0.974
+      "rl_confidence": 1.0
     },
     {
       "ticker": "COHR",
       "action": "HOLD",
-      "price": 332.4798889160156,
-      "rsi": 42.13,
+<<<<<<< Updated upstream
+      "price": 334.1300048828125,
+      "rsi": 60.2,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0285,
+      "reason": "RSI=60.2 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 331.7,
+      "rsi": 44.21,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0248,
-      "reason": "low volume (0.43x avg) \u2014 skipping",
+      "atr_pct": 0.024,
+      "reason": "RSI=44.2 (falling), BB=IN_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": 311,
       "rl_action": null,
       "rl_confidence": null
@@ -1240,55 +2155,95 @@
     {
       "ticker": "AEHR",
       "action": "HOLD",
-      "price": 126.99500274658203,
-      "rsi": 61.08,
+<<<<<<< Updated upstream
+      "price": 99.68000030517578,
+      "rsi": 51.79,
+=======
+      "price": 127.29,
+      "rsi": 63.77,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
+<<<<<<< Updated upstream
+      "atr_pct": 0.0318,
+      "reason": "ATR too high (3.2%) \u2014 skipping",
+=======
       "atr_pct": 0.0299,
-      "reason": "low volume (0.26x avg) \u2014 skipping",
+      "reason": "low volume (0.68x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 59,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 1.0
     },
     {
       "ticker": "AMKR",
       "action": "HOLD",
-      "price": 58.005001068115234,
-      "rsi": 64.73,
+<<<<<<< Updated upstream
+      "price": 54.15999984741211,
+      "rsi": 51.27,
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0145,
-      "reason": "low volume (0.30x avg) \u2014 skipping",
+      "atr_pct": 0.0198,
+      "reason": "RSI=51.3 (falling), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "price": 58.03,
+      "rsi": 65.73,
+      "ema_trend": "BULLISH",
+      "bb_signal": "ABOVE_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0153,
+      "reason": "low volume (0.50x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 64,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "TSM",
       "action": "HOLD",
-      "price": 433.1600036621094,
-      "rsi": 62.34,
+<<<<<<< Updated upstream
+      "price": 418.07000732421875,
+      "rsi": 55.74,
+=======
+      "price": 433.7,
+      "rsi": 65.96,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0065,
-      "reason": "low volume (0.29x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0112,
+      "reason": "RSI=55.7 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0067,
+      "reason": "low volume (0.48x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 419,
-      "rl_action": "HOLD",
-      "rl_confidence": 0.918
+      "rl_action": null,
+      "rl_confidence": null
     },
     {
       "ticker": "IREN",
       "action": "HOLD",
-      "price": 44.56999969482422,
-      "rsi": 58.75,
+<<<<<<< Updated upstream
+      "price": 37.915000915527344,
+      "rsi": 41.24,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0261,
+      "reason": "RSI=41.2 (falling), BB=BELOW_BAND, EMA=BEARISH",
+=======
+      "price": 44.465,
+      "rsi": 65.59,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0316,
-      "reason": "low volume (0.33x avg) \u2014 skipping",
+      "atr_pct": 0.0297,
+      "reason": "RSI=65.6 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 31,
       "rl_action": null,
       "rl_confidence": null
@@ -1296,13 +2251,23 @@
     {
       "ticker": "NBIS",
       "action": "HOLD",
-      "price": 252.05999755859375,
-      "rsi": 66.53,
+<<<<<<< Updated upstream
+      "price": 189.85000610351562,
+      "rsi": 31.14,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0363,
+      "reason": "ATR too high (3.6%) \u2014 skipping",
+=======
+      "price": 249.67,
+      "rsi": 67.43,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0339,
-      "reason": "low volume (0.25x avg) \u2014 skipping",
+      "atr_pct": 0.0338,
+      "reason": "ATR too high (3.4%) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 213,
       "rl_action": null,
       "rl_confidence": null
@@ -1310,13 +2275,23 @@
     {
       "ticker": "CIFR",
       "action": "HOLD",
-      "price": 16.55500030517578,
-      "rsi": 36.36,
+<<<<<<< Updated upstream
+      "price": 18.200000762939453,
+      "rsi": 32.1,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0273,
-      "reason": "low volume (0.40x avg) \u2014 skipping",
+      "atr_pct": 0.0376,
+      "reason": "ATR too high (3.8%) \u2014 skipping",
+=======
+      "price": 16.525,
+      "rsi": 34.12,
+      "ema_trend": "BEARISH",
+      "bb_signal": "BELOW_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0285,
+      "reason": "RSI=34.1 (falling), BB=BELOW_BAND, EMA=BEARISH",
+>>>>>>> Stashed changes
       "fib_target": 17,
       "rl_action": null,
       "rl_confidence": null
@@ -1324,97 +2299,170 @@
     {
       "ticker": "CRWV",
       "action": "HOLD",
-      "price": 107.94000244140625,
-      "rsi": 70.06,
+<<<<<<< Updated upstream
+      "price": 85.3499984741211,
+      "rsi": 45.72,
+=======
+      "price": 108.4517,
+      "rsi": 74.13,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0265,
-      "reason": "low volume (0.23x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0224,
+      "reason": "RSI=45.7 (falling), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0245,
+      "reason": "low volume (0.54x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 67,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 0.974
     },
     {
       "ticker": "EOSE",
       "action": "HOLD",
-      "price": 4.224999904632568,
-      "rsi": 55.09,
+<<<<<<< Updated upstream
+      "price": 3.940000057220459,
+      "rsi": 53.12,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.023,
-      "reason": "low volume (0.60x avg) \u2014 skipping",
+      "atr_pct": 0.0416,
+      "reason": "low volume (0.65x avg) \u2014 skipping",
+=======
+      "price": 4.22,
+      "rsi": 55.48,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0203,
+      "reason": "RSI=55.5 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 4,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 1.0
     },
     {
       "ticker": "BE",
       "action": "HOLD",
-      "price": 238.10499572753906,
-      "rsi": 57.21,
+<<<<<<< Updated upstream
+      "price": 228.88999938964844,
+      "rsi": 49.9,
+=======
+      "price": 238.11,
+      "rsi": 58.8,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0285,
-      "reason": "low volume (0.35x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0299,
+      "reason": "RSI=49.9 (falling), BB=BELOW_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0245,
+      "reason": "RSI=58.8 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 265,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 1.0
     },
     {
       "ticker": "NVTS",
       "action": "HOLD",
-      "price": 13.789999961853027,
-      "rsi": 52.24,
+<<<<<<< Updated upstream
+      "price": 12.404999732971191,
+      "rsi": 52.69,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0188,
-      "reason": "low volume (0.36x avg) \u2014 skipping",
+      "atr_pct": 0.0269,
+      "reason": "low volume (0.65x avg) \u2014 skipping",
       "fib_target": 13,
       "rl_action": "BUY",
-      "rl_confidence": 0.974
+      "rl_confidence": 1.0
+=======
+      "price": 13.815,
+      "rsi": 55.07,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0191,
+      "reason": "low volume (0.66x avg) \u2014 skipping",
+      "fib_target": 13,
+      "rl_action": null,
+      "rl_confidence": null
+>>>>>>> Stashed changes
     },
     {
       "ticker": "ALAB",
       "action": "HOLD",
-      "price": 325.79998779296875,
-      "rsi": 49.82,
+<<<<<<< Updated upstream
+      "price": 331.3900146484375,
+      "rsi": 51.06,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0216,
-      "reason": "low volume (0.31x avg) \u2014 skipping",
+      "atr_pct": 0.0346,
+      "reason": "ATR too high (3.5%) \u2014 skipping",
+=======
+      "price": 327.16,
+      "rsi": 51.97,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0217,
+      "reason": "low volume (0.48x avg) \u2014 skipping",
+>>>>>>> Stashed changes
       "fib_target": 341,
       "rl_action": "BUY",
-      "rl_confidence": 0.974
+      "rl_confidence": 1.0
     },
     {
       "ticker": "CRDO",
       "action": "HOLD",
-      "price": 271.9100036621094,
-      "rsi": 60.92,
+<<<<<<< Updated upstream
+      "price": 230.14999389648438,
+      "rsi": 53.44,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.022,
-      "reason": "low volume (0.42x avg) \u2014 skipping",
+      "atr_pct": 0.0281,
+      "reason": "RSI=53.4 (falling), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 271.91,
+      "rsi": 66.74,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0209,
+      "reason": "RSI=66.7 (falling), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 210,
-      "rl_action": null,
-      "rl_confidence": null
+      "rl_action": "BUY",
+      "rl_confidence": 1.0
     },
     {
       "ticker": "NOW",
       "action": "HOLD",
-      "price": 127.7615966796875,
-      "rsi": 63.05,
-      "ema_trend": "NEUTRAL",
-      "bb_signal": "ABOVE_BAND",
+<<<<<<< Updated upstream
+      "price": 117.36000061035156,
+      "rsi": 59.48,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0156,
-      "reason": "RSI=63.0 (stable), BB=ABOVE_BAND, EMA=NEUTRAL",
+      "atr_pct": 0.0118,
+      "reason": "RSI=59.5 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "price": 127.41,
+      "rsi": 62.44,
+      "ema_trend": "BULLISH",
+      "bb_signal": "IN_BAND",
+      "confidence": 0,
+      "atr_pct": 0.0163,
+      "reason": "RSI=62.4 (stable), BB=IN_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 104,
       "rl_action": null,
       "rl_confidence": null
@@ -1422,13 +2470,23 @@
     {
       "ticker": "CRWD",
       "action": "HOLD",
-      "price": 226.4250030517578,
-      "rsi": 62.61,
+<<<<<<< Updated upstream
+      "price": 207.4499969482422,
+      "rsi": 57.07,
+=======
+      "price": 226.105,
+      "rsi": 65.3,
+>>>>>>> Stashed changes
       "ema_trend": "BULLISH",
-      "bb_signal": "ABOVE_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0127,
-      "reason": "low volume (0.67x avg) \u2014 skipping",
+<<<<<<< Updated upstream
+      "atr_pct": 0.0123,
+      "reason": "RSI=57.1 (stable), BB=IN_BAND, EMA=BULLISH",
+=======
+      "atr_pct": 0.0113,
+      "reason": "RSI=65.3 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+>>>>>>> Stashed changes
       "fib_target": 171,
       "rl_action": null,
       "rl_confidence": null
@@ -1561,110 +2619,159 @@
   "rl_stats": {
     "live": true,
     "states": 19,
-    "training_samples": 513
+    "training_samples": 479
   },
   "net_buy_buy_signals": [],
   "net_buy_sell_signals": [
     {
+<<<<<<< Updated upstream
+      "ticker": "BF-B",
+      "price": 28.270000457763672,
+      "net_buy_d2": -80750,
+      "net_buy_d3": -806601,
+      "obv_slope": -529134,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.08M \u2192 -0.81M | OBV -0.5M/day"
+    },
+    {
+      "ticker": "MDT",
+      "price": 85.91999816894531,
+      "net_buy_d2": 364125,
+      "net_buy_d3": -2650607,
+      "obv_slope": -2732453,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.36M \u2192 -2.65M | OBV -2.7M/day"
+    },
+    {
+      "ticker": "HST",
+      "price": 23.3799991607666,
+      "net_buy_d2": 2791434,
+      "net_buy_d3": -11104577,
+      "obv_slope": -5457402,
+      "score": 0.0,
+      "reason": "Net buy reversed: 2.79M \u2192 -11.10M | OBV -5.5M/day"
+    },
+    {
+      "ticker": "O",
+      "price": 62.36000061035156,
+      "net_buy_d2": 1263364,
+      "net_buy_d3": -4429617,
+      "obv_slope": -5455515,
+      "score": 0.0,
+      "reason": "Net buy reversed: 1.26M \u2192 -4.43M | OBV -5.5M/day"
+    },
+    {
+      "ticker": "WEC",
+      "price": 107.97000122070312,
+      "net_buy_d2": -299248,
+      "net_buy_d3": -1526614,
+      "obv_slope": -2278273,
+      "score": 0.0,
+      "reason": "Net buy reversed: -0.30M \u2192 -1.53M | OBV -2.3M/day"
+    },
+    {
+      "ticker": "EG",
+      "price": 370.3500061035156,
+      "net_buy_d2": 53193,
+      "net_buy_d3": -158954,
+      "obv_slope": -106137,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.05M \u2192 -0.16M | OBV -0.1M/day"
+    },
+    {
+      "ticker": "TTD",
+      "price": 17.670000076293945,
+      "net_buy_d2": -6658133,
+      "net_buy_d3": -32475098,
+      "obv_slope": -5322854,
+      "score": 0.0,
+      "reason": "Net buy reversed: -6.66M \u2192 -32.48M | OBV -5.3M/day"
+    },
+    {
+      "ticker": "CMS",
+      "price": 71.19999694824219,
+      "net_buy_d2": 371270,
+      "net_buy_d3": -872916,
+      "obv_slope": -3638051,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.37M \u2192 -0.87M | OBV -3.6M/day"
+    },
+    {
+      "ticker": "HPQ",
+      "price": 28.18000030517578,
+      "net_buy_d2": -3245603,
+      "net_buy_d3": -10703185,
+      "obv_slope": -5729655,
+      "score": 0.0,
+      "reason": "Net buy reversed: -3.25M \u2192 -10.70M | OBV -5.7M/day"
+    },
+    {
+      "ticker": "KDP",
+      "price": 30.3700008392334,
+      "net_buy_d2": -4779453,
+      "net_buy_d3": -15536795,
+      "obv_slope": -5851924,
+      "score": 0.0,
+      "reason": "Net buy reversed: -4.78M \u2192 -15.54M | OBV -5.9M/day"
+    }
+  ],
+  "surge_signals": []
+=======
+      "ticker": "RKLB",
+      "price": 80.88,
+      "net_buy_d2": 978621,
+      "net_buy_d3": -3113990,
+      "obv_slope": -3490013,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.98M \u2192 -3.11M | OBV -3.5M/day"
+    },
+    {
       "ticker": "PFE",
-      "price": 26.65999984741211,
-      "net_buy_d2": -239,
-      "net_buy_d3": -1808757,
-      "obv_slope": -6311321,
-      "score": 0.01,
-      "reason": "Net buy reversed: -0.00M \u2192 -1.81M | OBV -6.3M/day"
+      "price": 26.685,
+      "net_buy_d2": 5205225,
+      "net_buy_d3": -4530126,
+      "obv_slope": -3555060,
+      "score": 0.0,
+      "reason": "Net buy reversed: 5.21M \u2192 -4.53M | OBV -3.6M/day"
     },
     {
-      "ticker": "SNA",
-      "price": 403.2300109863281,
-      "net_buy_d2": -4684,
-      "net_buy_d3": -82652,
-      "obv_slope": -51516,
+      "ticker": "AVAV",
+      "price": 190.435,
+      "net_buy_d2": 176400,
+      "net_buy_d3": 24064,
+      "obv_slope": -6590,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.00M \u2192 -0.08M | OBV -0.1M/day"
+      "reason": "Net buy reversed: 0.18M \u2192 0.02M | OBV -0.0M/day"
     },
     {
-      "ticker": "L",
-      "price": 112.69999694824219,
-      "net_buy_d2": 25931,
-      "net_buy_d3": -132947,
-      "obv_slope": -518132,
+      "ticker": "NVDA",
+      "price": 225.735,
+      "net_buy_d2": 13047622,
+      "net_buy_d3": 6046808,
+      "obv_slope": -359342,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.03M \u2192 -0.13M | OBV -0.5M/day"
+      "reason": "Net buy reversed: 13.05M \u2192 6.05M | OBV -0.4M/day"
     },
     {
-      "ticker": "SWK",
-      "price": 102.36499786376953,
-      "net_buy_d2": 70464,
-      "net_buy_d3": -288618,
-      "obv_slope": -482989,
+      "ticker": "BA",
+      "price": 230.36,
+      "net_buy_d2": 290268,
+      "net_buy_d3": 155967,
+      "obv_slope": -327357,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.07M \u2192 -0.29M | OBV -0.5M/day"
-    },
-    {
-      "ticker": "WST",
-      "price": 347.0,
-      "net_buy_d2": 99947,
-      "net_buy_d3": -340675,
-      "obv_slope": -188539,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.10M \u2192 -0.34M | OBV -0.2M/day"
-    },
-    {
-      "ticker": "WTW",
-      "price": 334.1300048828125,
-      "net_buy_d2": 62621,
-      "net_buy_d3": -191853,
-      "obv_slope": -447475,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.06M \u2192 -0.19M | OBV -0.4M/day"
-    },
-    {
-      "ticker": "CINF",
-      "price": 172.36000061035156,
-      "net_buy_d2": 66592,
-      "net_buy_d3": -118017,
-      "obv_slope": -403568,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.07M \u2192 -0.12M | OBV -0.4M/day"
-    },
-    {
-      "ticker": "DLTR",
-      "price": 129.47999572753906,
-      "net_buy_d2": 221656,
-      "net_buy_d3": -364540,
-      "obv_slope": -303537,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.22M \u2192 -0.36M | OBV -0.3M/day"
-    },
-    {
-      "ticker": "TXT",
-      "price": 87.48999786376953,
-      "net_buy_d2": 265605,
-      "net_buy_d3": -433795,
-      "obv_slope": -535407,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.27M \u2192 -0.43M | OBV -0.5M/day"
-    },
-    {
-      "ticker": "CL",
-      "price": 92.63999938964844,
-      "net_buy_d2": 543597,
-      "net_buy_d3": -807467,
-      "obv_slope": -438035,
-      "score": 0.0,
-      "reason": "Net buy reversed: 0.54M \u2192 -0.81M | OBV -0.4M/day"
+      "reason": "Net buy reversed: 0.29M \u2192 0.16M | OBV -0.3M/day"
     }
   ],
   "surge_signals": [
     {
-      "ticker": "AMD",
-      "price": 489.82501220703125,
-      "buy_surge_pct": 1.0623,
-      "buy_vol_d2": 3524330,
-      "buy_vol_d3": 7268109,
-      "net_buy_d3": 551810,
-      "reason": "Buy vol \u2191106.2% vs prior day | 0d streak | latest 0.55M | OBV 9.9M/day"
+      "ticker": "UUUU",
+      "price": 14.595,
+      "buy_surge_pct": 6.4829,
+      "buy_vol_d2": 220668,
+      "buy_vol_d3": 1651229,
+      "net_buy_d3": 1458296,
+      "reason": "Buy vol \u2191648.3% vs prior day | 0d streak | latest 1.46M | OBV 0.8M/day"
     }
   ]
+>>>>>>> Stashed changes
 }
