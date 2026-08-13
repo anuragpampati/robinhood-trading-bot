@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-13T17:30:00Z",
+  "updated_at": "2026-08-13T18:24:19Z",
   "buying_power": 50.40,
   "market_regime": "normal",
-  "account_value": 97.78,
+  "account_value": 97.82,
   "peak_value": 101.68,
   "day_start_value": 97.90,
   "day_start_date": "2026-08-13",
@@ -13,9 +13,9 @@
       "ticker": "GOOGL",
       "quantity": 0.137058,
       "avg_cost": 342.92,
-      "current_price": 345.665,
-      "pnl_pct": 0.008,
-      "value": 47.38,
+      "current_price": 345.98,
+      "pnl_pct": 0.009,
+      "value": 47.42,
       "entry_atr_pct": 0.0069,
       "entry_time": "2026-08-12T17:16:05Z",
       "trail_stop": 338.18,
@@ -25,9 +25,10 @@
     }
   ],
   "last_actions": [
-    "Market OPEN (13:30 ET). No trades — no BUY/SELL signals triggered. GOOGL HOLD: $345.67 (+0.80%), trail_stop $338.18, target $377.21.",
-    "RSI SELL (not held): MU(72.5), HOOD(72.4), SBUX(74.5), LRCX(79.7), ASML(76.8), CRDO(73.5).",
-    "Net-buy SELL (not held): RKLB, SOUN, RDW, COIN, EOSE, DIS, BA, NVDA, SOFI, PLTR.",
-    "CB: INACTIVE | daily -0.13% / weekly +0.54% gain (week_start $97.26 2026-08-10). Peak: $101.68."
+    "Market OPEN (14:24 ET). No trades — buying power $50.40 ($0.40 above $50 buffer; min order $15). 0 RSI/net-buy BUY signals. GOOGL HOLD: $345.98 (+0.89%), trail_stop $338.18, target $377.21.",
+    "Surge tracker: SHOP 10.6% intraday (count=1, need ≥2 for buy candidate).",
+    "RSI SELL (not held): MU(72.8), HOOD(73.2), LRCX(80.6), ASML(76.9), GEV(70.2).",
+    "Net-buy SELL (not held): RKLB, SOUN, RDW, NVDA, PFE, BA, EOSE.",
+    "CB: INACTIVE | daily -0.08% / weekly +0.58% gain (week_start $97.26 2026-08-10). Peak: $101.68."
   ]
 }
