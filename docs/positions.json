@@ -1,27 +1,9 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-08-06T20:14:00Z",
-  "buying_power": 97.74,
-=======
-  "updated_at": "2026-08-13T19:25:00Z",
+  "updated_at": "2026-08-13T20:23:45Z",
   "buying_power": 50.40,
->>>>>>> Stashed changes
   "market_regime": "normal",
-  "account_value": 97.74,
+  "account_value": 97.89,
   "peak_value": 101.68,
-<<<<<<< Updated upstream
-  "day_start_value": 97.74,
-  "day_start_date": "2026-08-06",
-  "week_start_value": 97.88,
-  "week_start_date": "2026-08-03",
-  "positions": [],
-  "last_actions": [
-    "Market closed (after hours 20:14 ET). No trades \u2014 market_open=false.",
-    "RSI SELL signals (not held): MSFT(72.3 ABOVE_BAND), PFE(74.8 ABOVE_BAND), DIS(82.6 ABOVE_BAND), PYPL(71.8 ABOVE_BAND), RDW(77.3 ABOVE_BAND).",
-    "Net-buy SELL signals (not held): NBIS, MRNA, F, COIN, CIFR.",
-    "No BUY signals this cycle. 0 positions. Surge tracker empty.",
-    "CB: INACTIVE | daily 0.0% | weekly 0.1% (week_start $97.88 2026-08-03). Peak: $101.68."
-=======
   "day_start_value": 97.90,
   "day_start_date": "2026-08-13",
   "week_start_value": 97.26,
@@ -31,9 +13,9 @@
       "ticker": "GOOGL",
       "quantity": 0.137058,
       "avg_cost": 342.92,
-      "current_price": 345.79,
-      "pnl_pct": 0.00837,
-      "value": 47.42,
+      "current_price": 346.42,
+      "pnl_pct": 0.01021,
+      "value": 47.49,
       "entry_atr_pct": 0.0069,
       "entry_time": "2026-08-12T17:16:05Z",
       "trail_stop": 338.18,
@@ -43,11 +25,9 @@
     }
   ],
   "last_actions": [
-    "Market OPEN (15:25 ET). No trades — buying power $50.40 ($0.40 above $50 buffer; min order $15 — insufficient). 0 RSI/net-buy BUY signals. GOOGL HOLD: $345.79 (+0.84%), trail_stop $338.18, target $377.21.",
-    "Surge: UUUU 6.48% (below 10% tracker threshold). SHOP removed from tracker (no longer in surge signals).",
-    "RSI SELL (not held): QQQ(70.8), HOOD(73.0), SBUX(70.8), LRCX(74.9), SHOP(71.7), GEV(70.3), ASML(77.1).",
-    "Net-buy SELL (not held): RKLB, PFE, AVAV, NVDA, BA.",
-    "CB: INACTIVE | daily -0.08% / weekly +0.58% gain (week_start $97.26 2026-08-10). Peak: $101.68."
->>>>>>> Stashed changes
+    "Market closed (after hours 20:23 ET). No trades — market_open=false. GOOGL: $346.42 (+1.02%), trail_stop $338.18, target $377.21. HOLD.",
+    "RSI SELL (not held): NFLX(72.2 ABOVE_BAND), HOOD(74.4 ABOVE_BAND), PYPL(72.2 ABOVE_BAND), SHOP(73.6 ABOVE_BAND).",
+    "Net-buy SELL (not held): AMAT, RDW, RKLB, EOSE, AVAV, PFE, BA.",
+    "CB: INACTIVE | daily -0.01% / weekly +0.65% gain (week_start $97.26 2026-08-10). Peak: $101.68."
   ]
 }
