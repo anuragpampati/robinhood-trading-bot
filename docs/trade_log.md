@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-13T15:36:55Z
-- SUMMARY: Market OPEN (11:37 ET). No trades. Regime: normal (BULLISH, SPY $777.76 above EMA200 $754.15). RSI BUY=0, Net-buy BUY=0, Surge confirmed=0. GOOGL held: $344.39 (entry $342.92, +0.43%), trail_stop $338.18, target $377.21 — no exit triggered. No BUY: buying power $50.40 ($0.40 usable above $50 buffer, insufficient for any order ≥$15). RSI SELLs (not held): SPY(71.1), QQQ(72.2), IWM(73.1), NFLX(70.0), HOOD(74.7), MRNA(77.7), SBUX(76.0), WMT(72.7), TGT(71.6), ORCL(75.1), DELL(75.7), LRCX(75.1), KLAC(75.9), ASML(76.1), IONQ(73.6), RGTI(73.0), INFQ(84.9), BE(70.1), CRDO(77.3). Net-buy SELLs (not held): SPY, EOSE, RKLB, PLTR, NVDA, BA, SOFI, RDW, SOUN, PFE, COIN, DIS. Surge tracker: cleared (MCD/TGT were from 2026-08-12, stale). CB: INACTIVE — daily -0.30% / weekly +0.36% gain (week_start $97.26 2026-08-10). Peak: $101.68. Buying power: $50.40. Equity positions: 1 (GOOGL). Account: $97.60.
-
 ## 2026-08-13T14:44:21Z
 - SUMMARY: Market open (10:44 ET). No trades — buying power $50.40 (only $0.40 usable above $50 buffer, min order $15). No RSI or net-buy BUY signals. 1 equity position (GOOGL). Regime: normal (BULLISH). Account: $97.90.
 - Sells: None — GOOGL at $346.585 (+1.07%), above trail_stop $338.18, below take_profit $377.21, no SELL signal.
