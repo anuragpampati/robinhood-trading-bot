@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-14T15:44:38Z",
-  "buying_power": 97.76,
+  "updated_at": "2026-08-14T16:35:00Z",
+  "buying_power": 50.40,
   "market_regime": "normal",
-  "account_value": 97.76,
+  "account_value": 97.75,
   "peak_value": 101.68,
   "day_start_value": 97.88,
   "day_start_date": "2026-08-14",
@@ -10,8 +10,9 @@
   "week_start_date": "2026-08-10",
   "positions": [],
   "last_actions": [
-    "Market OPEN (11:44 ET). SOLD GOOGL $345.49 (+0.75%, +$0.35). Net buy reversed: 0.26M → -0.91M, OBV -3.3M/day. No BUY signals.",
-    "No BUY signals — 0 RSI, 0 net-buy, 0 surge. Buying power ~$97.76 post-fill. Positions: 0.",
-    "CB: INACTIVE | daily −0.12% / weekly +0.52% gain (week_start $97.26 2026-08-10). Peak: $101.68."
+    "Market OPEN (12:35 ET). No trades. Buying power $50.40 at floor ($0.40 above $50 buffer; min order $15 — insufficient). No positions held.",
+    "No BUY signals — 0 RSI BUY, 0 net-buy BUY. BAC surge 16.2% (count=1, need ≥2 for intraday candidate).",
+    "RSI SELL (not held): DIS(71.2), CVX(78.6), EQIX(75.9), UUUU(73.7). Net-buy SELL (not held): GOOGL, TSLA, SOFI, SHOP, AAPL, F, CRWD.",
+    "CB: INACTIVE | daily −0.13% ($97.88→$97.75) / weekly +0.50% gain (week_start $97.26 2026-08-10). Peak: $101.68."
   ]
 }
