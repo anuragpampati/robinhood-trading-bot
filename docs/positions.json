@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:35:00Z",
-  "buying_power": 50.40,
+  "updated_at": "2026-08-14T17:20:00Z",
+  "buying_power": 50.4,
   "market_regime": "normal",
   "account_value": 97.75,
   "peak_value": 101.68,
@@ -10,9 +10,9 @@
   "week_start_date": "2026-08-10",
   "positions": [],
   "last_actions": [
-    "Market OPEN (12:35 ET). No trades. Buying power $50.40 at floor ($0.40 above $50 buffer; min order $15 — insufficient). No positions held.",
-    "No BUY signals — 0 RSI BUY, 0 net-buy BUY. BAC surge 16.2% (count=1, need ≥2 for intraday candidate).",
-    "RSI SELL (not held): DIS(71.2), CVX(78.6), EQIX(75.9), UUUU(73.7). Net-buy SELL (not held): GOOGL, TSLA, SOFI, SHOP, AAPL, F, CRWD.",
-    "CB: INACTIVE | daily −0.13% ($97.88→$97.75) / weekly +0.50% gain (week_start $97.26 2026-08-10). Peak: $101.68."
+    "Market OPEN (13:20 ET). No trades. Buying power $50.40 at floor ($0.40 above $50 buffer; min order $15 \u2014 insufficient). No positions held.",
+    "No BUY signals \u2014 0 RSI BUY, 0 net-buy BUY. RDW surge 6.1% (below 10% threshold for intraday tracker).",
+    "RSI SELL (not held): CVX(79.5), UUUU(74.0), NBIS(75.3). Net-buy SELL (not held): GOOGL, TSLA, CRWD, META, SOFI, SHOP, NFLX, JPM, AAPL, WFC.",
+    "CB: INACTIVE | daily -0.13% ($97.88->$97.75) / weekly +0.50% gain (week_start $97.26 2026-08-10). Peak: $101.68."
   ]
 }
