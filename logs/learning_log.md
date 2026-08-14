@@ -192,3 +192,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked 403 (20th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
 - RL samples: 513/200 (READY — +7 new rows today; 19 states in Q-table)
 - Notes: GOOGL BUY opened @ $342.92 ($47, RSI 26.54 deeply oversold, RL BOOST conf 0.928). Account $97.37, 1 open position. Trail stop $338.18, target $377.20. Trade log trimmed to 4 entries. Capital bind: $50.40 buying power → $0.40 above $50 buffer. Proxy has blocked backtest for 20+ sessions. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-14
+- Trades analysed: 1 closed (GOOGL normal +0.75%, ~46.5h, exit: signal-sell)
+- Win rate: 100% overall (1/1) — normal: 100% (1/1), momentum: N/A (0 trades), surge: N/A (0 trades)
+- Config changes: none (n<3 for all strategy types — insufficient data for threshold tuning)
+- Backtest: skipped — yfinance proxy blocked (403). Prior metrics retained: +9.29% return, 15.29% max drawdown, 39.6% win rate
+- RL samples: 520/200 (RL READY — exceeds target by 2.6×; run python -m strategy.rl_agent --train)
+- Notes: Account $97.75 (+0.50% week). Circuit breaker INACTIVE. Buying power $50.40 (only $0.40 above $50 buffer — no room for new buys). Surge: MRVL +990.2% vol surge (market closed, not executed).
