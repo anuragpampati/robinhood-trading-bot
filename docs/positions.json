@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T18:17:37Z",
+  "updated_at": "2026-08-14T19:15:26Z",
   "buying_power": 50.4,
   "market_regime": "normal",
   "account_value": 97.75,
@@ -10,9 +10,8 @@
   "week_start_date": "2026-08-10",
   "positions": [],
   "last_actions": [
-    "Market OPEN (14:16 ET). No trades. Buying power $50.40 at floor ($0.40 above $50 buffer; min order $15 \u2014 insufficient). AMAT BUY signal (RSI 29.6, conf 2/3) blocked \u2014 insufficient buying power. RL=HOLD 0.906.",
-    "No BUY signals executable \u2014 1 RSI BUY (AMAT) blocked by cash constraint. 0 net-buy BUY.",
-    "RSI SELL (not held): CVX(73.1), EQIX(79.0), UUUU(74.8). Net-buy SELL (not held): GOOGL, XOM, META, SOFI, NFLX, CRWD, SHOP, WFC, JPM, AAPL.",
+    "Market OPEN (15:15 ET). No trades. Buying power $50.40 at floor ($0.40 above $50 buffer; min order $15 — insufficient). No BUY signals (0 RSI BUY, 0 net-buy BUY). Surge tracker: KTOS+96.2%, BAC+292.8%, INFQ+572.0%, DKNG+42.9% — all count=1 (need ≥2 for intraday_surge entry).",
+    "RSI SELL (not held): F(70.5), CVX(73.3), DKNG(70.7). Net-buy SELL (not held): XOM, GOOGL, SOFI, AVGO, META, CRWD, NFLX, SHOP, AAPL, RIVN.",
     "CB: INACTIVE | daily -0.13% ($97.88->$97.75) / weekly +0.50% gain (week_start $97.26 2026-08-10). Peak: $101.68."
   ]
 }
