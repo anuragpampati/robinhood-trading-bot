@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-13T20:23:45Z",
+  "updated_at": "2026-08-14T14:42:01Z",
   "buying_power": 50.40,
   "market_regime": "normal",
-  "account_value": 97.89,
+  "account_value": 97.88,
   "peak_value": 101.68,
-  "day_start_value": 97.90,
-  "day_start_date": "2026-08-13",
+  "day_start_value": 97.88,
+  "day_start_date": "2026-08-14",
   "week_start_value": 97.26,
   "week_start_date": "2026-08-10",
   "positions": [
@@ -13,9 +13,9 @@
       "ticker": "GOOGL",
       "quantity": 0.137058,
       "avg_cost": 342.92,
-      "current_price": 346.42,
-      "pnl_pct": 0.01021,
-      "value": 47.49,
+      "current_price": 346.41,
+      "pnl_pct": 0.01018,
+      "value": 47.48,
       "entry_atr_pct": 0.0069,
       "entry_time": "2026-08-12T17:16:05Z",
       "trail_stop": 338.18,
@@ -25,9 +25,9 @@
     }
   ],
   "last_actions": [
-    "Market closed (after hours 20:23 ET). No trades — market_open=false. GOOGL: $346.42 (+1.02%), trail_stop $338.18, target $377.21. HOLD.",
-    "RSI SELL (not held): NFLX(72.2 ABOVE_BAND), HOOD(74.4 ABOVE_BAND), PYPL(72.2 ABOVE_BAND), SHOP(73.6 ABOVE_BAND).",
-    "Net-buy SELL (not held): AMAT, RDW, RKLB, EOSE, AVAV, PFE, BA.",
-    "CB: INACTIVE | daily -0.01% / weekly +0.65% gain (week_start $97.26 2026-08-10). Peak: $101.68."
+    "Market OPEN (10:42 ET). No trades — buying power $50.40 ($0.40 above $50 buffer). No BUY signals. GOOGL: $346.41 (+1.02%), trail_stop $338.18, target $377.21. HOLD.",
+    "RSI SELL (not held): HOOD(74.4 ABOVE_BAND), PYPL(72.3 ABOVE_BAND), SHOP(73.6 ABOVE_BAND).",
+    "Net-buy SELL (not held): AMAT, RDW, RKLB, EOSE, PFE, BA.",
+    "CB: INACTIVE | daily 0.00% (day-start reset) / weekly +0.64% gain (week_start $97.26 2026-08-10). Peak: $101.68."
   ]
 }
