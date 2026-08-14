@@ -1,6 +1,17 @@
 # Trade Log — Robinhood Agentic Account
 
 
+## 2026-08-14T20:14:05Z
+- SUMMARY: Market closed (after hours). Buying power: $50.40. Equity positions: 0. Regime: normal (SPY $776.30 > EMA200 $756.61). Account: $97.75.
+- Sells: None — no positions held.
+- Buys: None — market closed.
+- RSI BUY signals (market closed, not executed): AVGO(RSI 28.8, conf 2/3, EMA BEARISH — also net-buy SELL, conflict).
+- RSI SELL signals (not held): DIS(71.5, ABOVE_BAND), PYPL(74.3, ABOVE_BAND), EQIX(81.0, ABOVE_BAND).
+- Net-buy BUY (not executed): LRCX(4d streak, OBV+1.4M/day), MRCY(4d streak, OBV+0.0M/day).
+- Net-buy SELL (not held): XOM, GOOGL, CRWD, SOFI, META, RIVN, SHOP, NFLX, JPM, AVGO.
+- Surge signals: MRVL +990.2% buy vol surge, F +385.1%, AVAV +59.3% (surge_tracker N/A, market closed).
+- CB: INACTIVE | daily -0.13% ($97.88→$97.75) / weekly +0.50% gain ($97.26→$97.75). Peak: $101.68.
+
 ## 2026-08-14T17:20:00Z
 - SUMMARY: Market OPEN (13:20 ET). No trades — buying power $50.40 ($0.40 above $50 buffer; min order $15 — insufficient). 0 RSI BUY, 0 net-buy BUY. No surge candidates (RDW 6.1% below 10% threshold). No equity positions held. Regime: normal (BULLISH). Account: $97.75.
 - Sells: None — no positions held.
