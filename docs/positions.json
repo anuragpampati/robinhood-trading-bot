@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T19:15:26Z",
+  "updated_at": "2026-08-14T20:14:05Z",
   "buying_power": 50.4,
   "market_regime": "normal",
   "account_value": 97.75,
@@ -10,8 +10,9 @@
   "week_start_date": "2026-08-10",
   "positions": [],
   "last_actions": [
-    "Market OPEN (15:15 ET). No trades. Buying power $50.40 at floor ($0.40 above $50 buffer; min order $15 — insufficient). No BUY signals (0 RSI BUY, 0 net-buy BUY). Surge tracker: KTOS+96.2%, BAC+292.8%, INFQ+572.0%, DKNG+42.9% — all count=1 (need ≥2 for intraday_surge entry).",
-    "RSI SELL (not held): F(70.5), CVX(73.3), DKNG(70.7). Net-buy SELL (not held): XOM, GOOGL, SOFI, AVGO, META, CRWD, NFLX, SHOP, AAPL, RIVN.",
+    "Market CLOSED (after hours 2026-08-14). No trades. Buying power $50.40. 0 equity positions. Regime: normal (BULLISH, SPY $776.30 > EMA200 $756.61).",
+    "RSI BUY pending (market closed): AVGO(RSI 28.8, 2/3 conf, but EMA BEARISH + net-buy SELL conflict). RSI SELL not held: DIS(71.5), PYPL(74.3), EQIX(81.0).",
+    "Net-buy BUY pending: LRCX(4d streak), MRCY(4d streak). Net-buy SELL not held: XOM, GOOGL, CRWD, SOFI, META, RIVN, SHOP, NFLX, JPM, AVGO.",
     "CB: INACTIVE | daily -0.13% ($97.88->$97.75) / weekly +0.50% gain (week_start $97.26 2026-08-10). Peak: $101.68."
   ]
 }
