@@ -1,16 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-14T14:42:01Z
-- SUMMARY: Market OPEN (10:42 ET). No trades — buying power $50.40 ($0.40 above $50 buffer; min order $15 — insufficient). 0 RSI BUY, 0 net-buy BUY, 0 surge candidates. 1 equity position (GOOGL). Regime: normal (BULLISH). Account: $97.88.
-- Sells: None — GOOGL $346.41 (+1.02%), trail_stop $338.18 (OK), take_profit $377.21 (not reached), no SELL signal, hours_held ~45h.
-- Buys: None — buying_power $50.40 − $50 buffer = $0.40 usable (< $15 min order). No RSI/net-buy BUY signals. No surge signals (≥10%).
-- ATR stop: profit_pct +1.02% < 2.5% — trail_stop unchanged at $338.18.
-- RSI SELL (not held): HOOD(74.4 ABOVE_BAND), PYPL(72.3 ABOVE_BAND), SHOP(73.6 ABOVE_BAND).
-- Net-buy SELL (not held): AMAT, RDW, RKLB, EOSE, PFE, BA.
-- Surge tracker: No 10%+ intraday surges detected.
-- CB: INACTIVE | daily 0.00% (day-start reset to $97.88 for 2026-08-14) / weekly +0.64% gain (week_start $97.26, 2026-08-10). Peak: $101.68.
-- Buying power: $50.40. Equity positions: 1 (GOOGL). Regime: normal. Account: $97.88.
-
 ## 2026-08-13T20:23:45Z
 - SUMMARY: Market closed (after hours 20:23 ET). No trades — market_open=false. Buying power: $50.40. Equity positions: 1 (GOOGL). Regime: normal (BULLISH). Account: $97.89.
 - GOOGL: $346.42 (+1.02%), trail_stop $338.18, target $377.21. HOLD — no SELL signal, not at stop/target.
