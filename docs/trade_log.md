@@ -1,15 +1,6 @@
 # Trade Log — Robinhood Agentic Account
 
 
-## 2026-08-14T19:15:26Z
-- SUMMARY: Market OPEN (15:15 ET). No trades — buying power $50.40 ($0.40 above $50 buffer; min order $15 — insufficient). 0 RSI BUY, 0 net-buy BUY. No intraday surge candidates (KTOS/BAC/INFQ/DKNG all count=1, need ≥2). No equity positions held. Regime: normal (BULLISH). Account: $97.75.
-- Sells: None — no positions held.
-- Buys: None — buying_power $50.40 - $50 buffer = $0.40 usable (< $15 min order). No BUY signals.
-- RSI SELL signals (not held): F(RSI 70.5, ABOVE_BAND, conf 2/3), CVX(73.3, ABOVE_BAND, conf 2/3), DKNG(70.7, ABOVE_BAND, conf 2/3).
-- Net-buy SELL (not held): XOM, GOOGL, SOFI, AVGO, META, CRWD, NFLX, SHOP, AAPL, RIVN.
-- Surge tracker (new entries, count=1): KTOS+96.2%, BAC+292.8%, INFQ+572.0%, DKNG+42.9%.
-- CB: INACTIVE | daily -0.13% ($97.88->$97.75) / weekly +0.50% gain ($97.26->$97.75). Peak: $101.68.
-
 ## 2026-08-14T17:20:00Z
 - SUMMARY: Market OPEN (13:20 ET). No trades — buying power $50.40 ($0.40 above $50 buffer; min order $15 — insufficient). 0 RSI BUY, 0 net-buy BUY. No surge candidates (RDW 6.1% below 10% threshold). No equity positions held. Regime: normal (BULLISH). Account: $97.75.
 - Sells: None — no positions held.
