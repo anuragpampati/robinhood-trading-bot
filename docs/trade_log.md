@@ -4,11 +4,27 @@
 - SUMMARY: Market OPEN (12:35 ET). No trades — buying power $50.40 ($0.40 above $50 buffer; min order $15 — insufficient). 0 RSI BUY, 0 net-buy BUY. BAC surge 16.2% (count=1, need ≥2). No equity positions. Regime: normal (BULLISH). Account: $97.75.
 - Sells: None — no positions held.
 - Buys: None — buying_power $50.40 − $50 buffer = $0.40 usable (< $15 min order). No RSI/net-buy BUY signals.
-- RSI SELL signals (not held): DIS(RSI=71.2 ABOVE_BAND conf=2), CVX(RSI=78.6 ABOVE_BAND conf=2), EQIX(RSI=75.9 ABOVE_BAND conf=2), UUUU(RSI=73.7 ABOVE_BAND conf=2).
-- Net-buy SELL signals (not held): GOOGL, TSLA, SOFI, SHOP, AAPL, F, CRWD.
-- Surge tracker: BAC +16.2% intraday (count=1, need ≥2 for intraday buy candidate).
-- CB: INACTIVE | daily −0.13% ($97.88→$97.75) / weekly +0.50% gain (week_start $97.26, 2026-08-10). Peak: $101.68.
-- Buying power: $50.40. Equity positions: 0. Regime: normal. Account: $97.75.
+- RSI SELL signals (not held): DIS(71.2), CVX(78.6), EQIX(75.9), UUUU(73.7).
+- Net-buy SELL (not held): GOOGL, TSLA, SOFI, SHOP, AAPL, F, CRWD.
+- Surge tracker: BAC +16.2% intraday (count=1, need ≥2).
+- CB: INACTIVE | daily −0.13% ($97.88→$97.75) / weekly +0.50% gain. Peak: $101.68.
+
+## 2026-08-14T15:44:38Z
+- Action   : SELL GOOGL
+- Price    : $345.49
+- Amount   : $47.36 | Shares: 0.137058
+- RSI      : 42.5 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $338.18 | Target: $377.21
+- Strategy : normal | Sell date: signal
+- Regime   : normal
+- Reason   : Net buy reversed: 0.26M → -0.91M | OBV -3.3M/day. Entry $342.92 → exit $345.49. P&L: +0.75% (+$0.35).
+
+## 2026-08-14T15:44:38Z
+- SUMMARY: Market OPEN (11:44 ET). SOLD GOOGL $345.49 (+0.75%, +$0.35 on $47.01 cost). No BUY signals (0 RSI, 0 net-buy, 0 surge). Buying power ~$97.76 (post-fill est.). Equity positions: 0. Regime: normal (BULLISH). Account: ~$97.76.
+- RSI SELL (not held): DIS(72.8 ABOVE_BAND), CVX(76.6 ABOVE_BAND), EQIX(75.3 ABOVE_BAND), UUUU(73.3 ABOVE_BAND).
+- Net-buy SELL (not held): AAPL, PFE, SHOP, NFLX, SOFI, XOM, F, CRWD.
+- CB: INACTIVE | daily −0.12% / weekly +0.52% gain (week_start $97.26 2026-08-10). Peak: $101.68.
 
 ## 2026-08-13T20:23:45Z
 - SUMMARY: Market closed (after hours 20:23 ET). No trades — market_open=false. Buying power: $50.40. Equity positions: 1 (GOOGL). Regime: normal (BULLISH). Account: $97.89.
