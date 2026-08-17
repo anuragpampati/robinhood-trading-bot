@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-17T14:22:10Z",
+  "updated_at": "2026-08-17T15:18:00Z",
   "buying_power": 50.75,
   "market_regime": "normal",
-  "account_value": 97.75,
+  "account_value": 98.71,
   "peak_value": 101.68,
   "day_start_value": 97.75,
   "day_start_date": "2026-08-17",
@@ -11,25 +11,24 @@
   "positions": [
     {
       "ticker": "LRCX",
-      "quantity": 0.140530,
-      "avg_cost": 334.44,
-      "current_price": 334.44,
-      "pnl_pct": 0.0,
-      "value": 47.00,
+      "quantity": 0.140528,
+      "avg_cost": 334.45,
+      "current_price": 341.31,
+      "pnl_pct": 0.0205,
+      "value": 47.96,
       "entry_atr_pct": 0.0125,
       "entry_time": "2026-08-17T14:22:10Z",
       "trail_stop": 326.08,
-      "take_profit": 367.88,
+      "take_profit": 367.90,
       "strategy": "normal",
       "sell_date": null
     }
   ],
   "last_actions": [
-    "BUY LRCX $47.00 (0.1405 shares @ ~$334.44). Net-buy 4d streak, OBV +1.3M/day. Trail stop: $326.08 (-2.5%), Target: $367.88 (+10%).",
-    "RSI BUY pending (capital used): AVGO(RSI 28.2, conf 2/3, EMA BEARISH) — no capital remaining after LRCX.",
-    "Net-buy BUY pending: MRCY(4d streak) — insufficient capital ($0.75 usable after LRCX buy).",
-    "Surge tracker: SYM +24.8% (count=1, need ≥2). Stale entries cleared (KTOS/BAC/INFQ/DKNG from 2026-08-14).",
-    "RSI SELL (not held): IWM(70.5), PYPL(74.3), EQIX(81.0). Net-buy SELL (not held): XOM, GOOGL, CRWD, SOFI, META, SHOP, RIVN, NFLX, JPM, AAPL.",
-    "CB: INACTIVE | daily 0.0% | weekly 0.0% (new week/day start 2026-08-17). Peak: $101.68."
+    "No trades. LRCX already held (net-buy BUY signal but position exists). Capital: $0.75 usable < $15 min.",
+    "LRCX: $334.45 → $341.31 (+2.05%). Trail stop: $326.08. Target: $367.90. No stop/TP triggered.",
+    "RSI SELL (not held): MU(77.7), EQIX(76.6), AMKR(74.4), LAZR(74.0), GEV(73.8), TER(73.4), MRVL(72.7), UUUU(70.3), ASML(70.2), CVX(70.1).",
+    "Net-buy SELL (not held): AVAV, RDW, AI, CRWV, TXN, ASTS, CRDO.",
+    "CB: INACTIVE | daily +1.0% / weekly +1.0%. Peak: $101.68."
   ]
 }
