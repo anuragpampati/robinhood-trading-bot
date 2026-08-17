@@ -1,6 +1,15 @@
 # Trade Log — Robinhood Agentic Account
 
 
+## 2026-08-17T16:14:47Z
+- SUMMARY: Market OPEN (12:14 ET). No trades executed. Buying power: $50.75. Equity positions: 1 (LRCX). Regime: normal (BULLISH, SPY $775.30 > EMA200 $756.82). Account: $98.74.
+- LRCX: 0.1405 shares @ $334.45 → $341.24 (+2.03%). Trail stop: $326.08. Target: $367.90. Hours held: ~1.9h (< 3h minimum for ATR/signal sells). No stop-loss/TP triggered.
+- No buys: LRCX already held (net-buy BUY signal, position exists). MRCY (net-buy 4d) → $50.75 − $50 buffer = $0.75 usable < $15 min order.
+- RSI SELL (not held): GEV(74.5 ABOVE_BAND), LAZR(74.5 ABOVE_BAND), MU(77.8 ABOVE_BAND), MBLY(72.8 ABOVE_BAND), IREN(70.7 ABOVE_BAND).
+- Net-buy SELL (not held): ASTS, RDW, TXN, GM.
+- Surge tracker: MRCY(+46.3% count=1), LAZR(+114.3% count=1), IONQ(+14.4% count=1). Need count≥2 for intraday surge buy.
+- CB: INACTIVE | daily +1.0% ($97.75→$98.74) / weekly +1.0%. Peak: $101.68.
+
 ## 2026-08-17T15:18:00Z
 - SUMMARY: Market OPEN (11:18 ET). No trades executed. Buying power: $50.75. Equity positions: 1 (LRCX). Regime: normal (SPY $775.27 > EMA200 $756.63). Account: $98.71.
 - LRCX: 0.1405 shares @ $334.45 → $341.31 (+2.05%). Trail stop: $326.08. Target: $367.90. No sell triggered.
