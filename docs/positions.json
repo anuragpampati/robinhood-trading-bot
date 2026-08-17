@@ -1,18 +1,35 @@
 {
-  "updated_at": "2026-08-14T20:14:05Z",
-  "buying_power": 50.4,
+  "updated_at": "2026-08-17T14:22:10Z",
+  "buying_power": 50.75,
   "market_regime": "normal",
   "account_value": 97.75,
   "peak_value": 101.68,
-  "day_start_value": 97.88,
-  "day_start_date": "2026-08-14",
-  "week_start_value": 97.26,
-  "week_start_date": "2026-08-10",
-  "positions": [],
+  "day_start_value": 97.75,
+  "day_start_date": "2026-08-17",
+  "week_start_value": 97.75,
+  "week_start_date": "2026-08-17",
+  "positions": [
+    {
+      "ticker": "LRCX",
+      "quantity": 0.140530,
+      "avg_cost": 334.44,
+      "current_price": 334.44,
+      "pnl_pct": 0.0,
+      "value": 47.00,
+      "entry_atr_pct": 0.0125,
+      "entry_time": "2026-08-17T14:22:10Z",
+      "trail_stop": 326.08,
+      "take_profit": 367.88,
+      "strategy": "normal",
+      "sell_date": null
+    }
+  ],
   "last_actions": [
-    "Market CLOSED (after hours 2026-08-14). No trades. Buying power $50.40. 0 equity positions. Regime: normal (BULLISH, SPY $776.30 > EMA200 $756.61).",
-    "RSI BUY pending (market closed): AVGO(RSI 28.8, 2/3 conf, but EMA BEARISH + net-buy SELL conflict). RSI SELL not held: DIS(71.5), PYPL(74.3), EQIX(81.0).",
-    "Net-buy BUY pending: LRCX(4d streak), MRCY(4d streak). Net-buy SELL not held: XOM, GOOGL, CRWD, SOFI, META, RIVN, SHOP, NFLX, JPM, AVGO.",
-    "CB: INACTIVE | daily -0.13% ($97.88->$97.75) / weekly +0.50% gain (week_start $97.26 2026-08-10). Peak: $101.68."
+    "BUY LRCX $47.00 (0.1405 shares @ ~$334.44). Net-buy 4d streak, OBV +1.3M/day. Trail stop: $326.08 (-2.5%), Target: $367.88 (+10%).",
+    "RSI BUY pending (capital used): AVGO(RSI 28.2, conf 2/3, EMA BEARISH) — no capital remaining after LRCX.",
+    "Net-buy BUY pending: MRCY(4d streak) — insufficient capital ($0.75 usable after LRCX buy).",
+    "Surge tracker: SYM +24.8% (count=1, need ≥2). Stale entries cleared (KTOS/BAC/INFQ/DKNG from 2026-08-14).",
+    "RSI SELL (not held): IWM(70.5), PYPL(74.3), EQIX(81.0). Net-buy SELL (not held): XOM, GOOGL, CRWD, SOFI, META, SHOP, RIVN, NFLX, JPM, AAPL.",
+    "CB: INACTIVE | daily 0.0% | weekly 0.0% (new week/day start 2026-08-17). Peak: $101.68."
   ]
 }

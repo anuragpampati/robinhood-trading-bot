@@ -1,6 +1,24 @@
 # Trade Log — Robinhood Agentic Account
 
 
+## 2026-08-17T14:22:10Z
+- Action   : BUY LRCX
+- Price    : $334.44 (est. fill)
+- Amount   : $47.00 | Shares: 0.1405
+- RSI      : 59.3 | EMA: BULLISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $326.08 | Target: $367.88
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (SPY $776.00 > EMA200 $756.45, BULLISH)
+- Reason   : Net buy ↑ 4d streak: -0.32M → 0.03M → 0.05M | OBV +1.3M/day
+- SUMMARY  : Market OPEN (10:19 ET). Buying power $97.75 (settled). ONE BUY: LRCX $47.00 (max usable = $97.75 − $50 buffer = $47.75, placed $47.00). Positions: 1 after trade. Account: ~$97.75.
+- Sells    : None — no positions held prior to this cycle.
+- Pending buys skipped (no capital after LRCX): MRCY (net-buy 4d, $50.75−$50=$0.75 usable < $15 min), AVGO (RSI 28.2 conf 2/3, same constraint).
+- Surge    : SYM +24.8% count=1 (need ≥2). No intraday surge buys.
+- RSI SELL (not held): IWM(70.5 ABOVE_BAND), PYPL(74.3 ABOVE_BAND), EQIX(81.0 ABOVE_BAND).
+- Net-buy SELL (not held): XOM, GOOGL, CRWD, SOFI, META, SHOP, RIVN, NFLX, JPM, AAPL.
+- CB: INACTIVE | daily 0.0% / weekly 0.0% (new day+week start 2026-08-17, Monday reset). Peak: $101.68.
+
 ## 2026-08-14T20:14:05Z
 - SUMMARY: Market closed (after hours). Buying power: $50.40. Equity positions: 0. Regime: normal (SPY $776.30 > EMA200 $756.61). Account: $97.75.
 - Sells: None — no positions held.

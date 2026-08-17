@@ -1,6 +1,3 @@
 {
-  "KTOS": {"count": 1, "date": "2026-08-14", "first_seen": "2026-08-14T19:15:26Z", "price": 64.14},
-  "BAC": {"count": 1, "date": "2026-08-14", "first_seen": "2026-08-14T19:15:26Z", "price": 64.495},
-  "INFQ": {"count": 1, "date": "2026-08-14", "first_seen": "2026-08-14T19:15:26Z", "price": 12.8621},
-  "DKNG": {"count": 1, "date": "2026-08-14", "first_seen": "2026-08-14T19:15:26Z", "price": 26.38}
+  "SYM": {"count": 1, "date": "2026-08-17", "first_seen": "2026-08-17T14:19:44Z", "price": 42.71}
 }
