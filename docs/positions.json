@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-17T15:18:00Z",
+  "updated_at": "2026-08-17T16:14:47Z",
   "buying_power": 50.75,
   "market_regime": "normal",
-  "account_value": 98.71,
+  "account_value": 98.74,
   "peak_value": 101.68,
   "day_start_value": 97.75,
   "day_start_date": "2026-08-17",
@@ -13,9 +13,9 @@
       "ticker": "LRCX",
       "quantity": 0.140528,
       "avg_cost": 334.45,
-      "current_price": 341.31,
-      "pnl_pct": 0.0205,
-      "value": 47.96,
+      "current_price": 341.24,
+      "pnl_pct": 0.0203,
+      "value": 47.99,
       "entry_atr_pct": 0.0125,
       "entry_time": "2026-08-17T14:22:10Z",
       "trail_stop": 326.08,
@@ -25,10 +25,11 @@
     }
   ],
   "last_actions": [
-    "No trades. LRCX already held (net-buy BUY signal but position exists). Capital: $0.75 usable < $15 min.",
-    "LRCX: $334.45 → $341.31 (+2.05%). Trail stop: $326.08. Target: $367.90. No stop/TP triggered.",
-    "RSI SELL (not held): MU(77.7), EQIX(76.6), AMKR(74.4), LAZR(74.0), GEV(73.8), TER(73.4), MRVL(72.7), UUUU(70.3), ASML(70.2), CVX(70.1).",
-    "Net-buy SELL (not held): AVAV, RDW, AI, CRWV, TXN, ASTS, CRDO.",
-    "CB: INACTIVE | daily +1.0% / weekly +1.0%. Peak: $101.68."
+    "No trades. LRCX held (+2.03%, $341.24). Hours held ~1.9h (<3h min for ATR/signal sells). No stop/TP triggered.",
+    "No buys: LRCX already held. MRCY (net-buy 4d) → $0.75 usable < $15 min.",
+    "Surge tracker: MRCY(+46.3% c=1), LAZR(+114.3% c=1), IONQ(+14.4% c=1). No intraday surge buys (need c≥2).",
+    "RSI SELL (not held): GEV(74.5), LAZR(74.5), MU(77.8), MBLY(72.8), IREN(70.7).",
+    "Net-buy SELL (not held): ASTS, RDW, TXN, GM.",
+    "CB: INACTIVE | daily +1.0% ($97.75→$98.74) / weekly +1.0%. Peak: $101.68."
   ]
 }
