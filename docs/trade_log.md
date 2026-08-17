@@ -1,6 +1,9 @@
 # Trade Log — Robinhood Agentic Account
 
 
+## 2026-08-17T20:12:00Z
+- SUMMARY: Market closed (after-hours). No trades placed. Buying power: $50.75. Equity positions: 1 (LRCX $343.98, +2.85%). Regime: normal/BULLISH. Account: $99.08. LRCX trail_stop: $336.12 (unchanged, profit 2.85% ≥ 2.5% → floor already at $336.12). BUY signals (market closed, skipped): RIVN(RSI 28.6, conf=2/3), MRCY(net-buy 4d streak). SELL (not held): CVX(RSI 70.4), TER(RSI 75.9), LAZR(RSI 70.8), AEHR(RSI 71.4). Net-buy SELL (not held): UBER, ALAB, ASTS, AVAV, RDW, GM, CRWV, TXN, SNOW, JPM. CB: INACTIVE | daily +1.37% / weekly +1.37%. Peak: $101.68.
+
 ## 2026-08-17T19:11:00Z
 - SUMMARY: Market open (15:10 ET, regime: normal/BULLISH). No trades placed. LRCX held (+2.45%, $342.63, ~4.8h held, trail_stop=$336.12, TP=$367.90). No sell triggered (price > trail_stop, no signal sell, no TP). NO BUYS: BP $50.75 − $50 buffer = $0.75 usable < $15 min order. Candidates: MCD(RSI conf=2+🤖 RL BOOST→3, rl_conf=0.928), MRCY(surge count=4+net-buy 4d), LRCX(already held). Surge tracker: LRCX(count=3), MRCY(count=4), IONQ(count=1 new). RSI SELL (not held): CVX(77.6), TER(75.6), LAZR(73.7), ASML(73.7), GEV(73.2), AEHR(71.7). Net-buy SELL (not held): ASTS, AVAV, RDW, GM, RIVN, TXN, EOSE, META, JPM, MSFT. CB: INACTIVE | daily +1.17% / weekly +1.17%. Peak: $101.68. Buying power: $50.75. Equity positions: 1. Account: $98.89.
 
