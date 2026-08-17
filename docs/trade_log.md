@@ -1,15 +1,6 @@
 # Trade Log — Robinhood Agentic Account
 
 
-## 2026-08-17T18:14:24Z
-- SUMMARY: Market OPEN (14:14 ET). No trades. Buying power: $50.75. Equity positions: 1 (LRCX). Regime: normal (BULLISH). Account: $99.06.
-- LRCX: 0.1405 shares @ $334.45 → $343.79 (+2.79%). Trail stop ratcheted $326.08 → $336.12 (profit ≥2.5%, locked above breakeven+0.5%). Target: $367.90. No stop/TP triggered. Hours held: ~3.9h.
-- NO BUYS: Max spend $0.75 ($50.75 BP − $50 buffer) < $15 min order. Candidates blocked: RIVN (RSI BUY conf=2 $15), MCD (RSI BUY conf=2 + 🤖 RL BOOST → conf=3, $50 needed), MRCY (intraday_surge count=3 + net_buy, $50 needed), LRCX (surge count=2 — already held).
-- Surge tracker updated: LRCX count 1→2 (already held, no action), MRCY count 2→3 (insufficient BP). LITE removed (no longer ≥10% surge).
-- RSI SELL (not held): MU(72.6), CVX(76.4), TER(76.3), GEV(75.6), LAZR(75.3), AAOI(73.9), AEHR(70.9), ASML(72.2), CRDO(71.2).
-- Net-buy SELL (not held): ASTS, AVAV, RDW, GM, TXN, MSFT, META, AI, AMZN.
-- CB: INACTIVE | daily +1.3% / weekly +1.3% (account up from $97.75). Peak: $101.68.
-
 ## 2026-08-17T17:17:17Z
 - SUMMARY: Market open (regime: normal/BULLISH). No trades placed. LRCX held (2.32%, $342.22, 2.9h held, trail_stop=$326.08). MRCY intraday-surge count=2 (BUY candidate) but buying_power $50.75 − $50 = $0.75 < $50 buffer → SKIP. LITE surge count=1 (need ≥2). RSI SELL (not held): MU,CVX,EQIX,MRVL,TER,LAZR,GEV,AAOI,IREN,CRDO. Net-buy: LRCX(held), MRCY(insufficient cash). Circuit breaker INACTIVE (daily +1.1% / weekly +1.1%). Peak: $101.68. Buying power: $50.75. Equity positions: 1. Account: $98.84.
 
