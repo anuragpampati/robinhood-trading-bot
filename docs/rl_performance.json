@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14",
+  "updated_at": "2026-08-17",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,8 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 520,
+  "rl_training_samples": 525,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped (yfinance proxy blocked 403) — prior metrics retained from 2026-08-12. Config: NO_CHANGE (1 closed trade in trimmed log, n<3 for all types). RL: 520 samples (+4 today), 19 states. RL READY. Updated by daily learning CCR"
+  "note": "Backtest skipped (yfinance proxy blocked 403) — prior metrics retained. Config: NO_CHANGE (normal win_rate 53.3% in [40%,65%] hold band, n=15; momentum n=0<3; ATR avg_hold ~131h>>2h). RL: 525 samples (+5 today), 19 states. RL READY. Updated by daily learning CCR"
 }
