@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T16:15:00Z",
+  "updated_at": "2026-08-18T17:12:11Z",
   "buying_power": 50.75,
   "market_regime": "normal",
   "account_value": 95.58,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-17",
   "positions": [],
   "last_actions": [
+    "NO BUYS (2026-08-18 13:12 ET): BP $50.75 - $50 buffer = $0.75 < $15 min. LRCX proceeds unsettled (T+1, settle 2026-08-19). No positions. RSI BUY skipped: GM(conf=2, $50 req). RSI SELL (not held): JNJ(76.5), XOM(72.7), CVX(78.0). Net-buy SELL (not held): CRWV, NBIS, DELL, CRDO, TSM, AMAT, VRT, ONDS. SPY RSI=33.1 (no panic). CB INACTIVE (daily 0.14%, weekly 2.22%). Peak: $101.68.",
     "NO BUYS (2026-08-18 12:15 ET): BP $50.75 - $50 buffer = $0.75 < $15 min. LRCX proceeds unsettled (T+1). No positions. RSI BUY signals skipped: LRCX(conf=2), MRVL(conf=2), GEV(conf=2), MBLY(conf=2), IREN(conf=2). SPY RSI=31.8 (no panic). CB INACTIVE (daily 0.1%, weekly 2.2%). Peak: $101.68.",
     "SELL LRCX (2026-08-18 11:20 ET): ATR trailing stop triggered — $319.04 ≤ trail_stop $336.12. Sold 0.140528 shares @ $319.0385. Proceeds: $44.83. PnL: -$2.17 (-4.61%). Hours held: ~25h. Regime: normal (SPY RSI=29.7 < 30 panic filter). CB INACTIVE (daily 0.13%, weekly 2.22%). Peak: $101.68.",
     "NO BUYS: Panic regime (SPY RSI=29.7 < 30) — all individual stock buys suppressed. No surge signals. 0 net-buy BUY signals. BP now $95.58, no positions.",
-    "NO TRADES (2026-08-18 10:19 ET): Market open, new day. BP $50.75 − $50 buffer = $0.75 < $15 min. LRCX held (+2.85%, trail_stop=$336.12). Surge reset: LRCX/MRCY count=1. CB INACTIVE (daily 0%, weekly -2.09%). Peak: $101.68.",
-    "Market closed. No trades. LRCX $343.98 (+2.85%), trail_stop=$336.12. BUY signals (skipped-closed): RIVN(RSI conf=2/3), MRCY(net-buy 4d). SELL (not held): CVX(70.4), TER(75.9), LAZR(70.8), AEHR(71.4)."
+    "NO TRADES (2026-08-18 10:19 ET): Market open, new day. BP $50.75 − $50 buffer = $0.75 < $15 min. LRCX held (+2.85%, trail_stop=$336.12). Surge reset: LRCX/MRCY count=1. CB INACTIVE (daily 0%, weekly -2.09%). Peak: $101.68."
   ]
 }
