@@ -1,6 +1,17 @@
 # Trade Log — Robinhood Agentic Account
 
 
+## 2026-08-18T15:21:30Z
+- Action   : SELL LRCX
+- Price    : $319.04
+- Amount   : $44.83 | Shares: 0.140528
+- RSI      : 39.1 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.974 | null (trail stop is mandatory exit)
+- Stop     : $336.12 TRIGGERED (trail_stop) | Target: $367.90
+- Strategy : normal | Sell date: ATR trail-stop triggered
+- Regime   : normal (SPY RSI=29.7 < 30 panic filter)
+- Reason   : ATR trailing stop hit — LRCX -7.2% from prev close ($343.84→$319.04), below trail_stop $336.12. Hours held: ~25h. PnL: -$2.17 (-4.61%). No new buys: panic regime. CB INACTIVE (daily -0.13%, weekly -2.22%). Account: $95.58.
+
 ## 2026-08-18T14:19:16Z
 - SUMMARY: Market OPEN (10:19 ET, new day — day_start reset to $95.71). No trades placed. Regime: normal (BULLISH, SPY $772.93 > EMA200 $757.48). Buying power: $50.75. Equity positions: 1 (LRCX). Account: $95.71.
 - LRCX: 0.140528 shares @ $334.45 → $343.98 (+2.85%). Trail stop: $336.12. Target: $367.90. No sell triggered.
