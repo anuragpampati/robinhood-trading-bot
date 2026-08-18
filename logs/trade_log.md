@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-18T18:11:30Z
+- SUMMARY: Market open (14:11 ET). Regime: normal/BULLISH (SPY $767.64 > EMA200 $757.90, RSI=30.7 — no panic). NO BUYS: Buying power $50.75 − $50 buffer = $0.75 < $15 min order (LRCX proceeds unsettled T+1, settle 2026-08-19). NO SELLS: No positions held. RSI BUY skipped (insufficient BP): ROK conf=2 ($50 req). RSI SELL (not held): XOM conf=2 ($165.10). Net-buy SELL (not held): CRWV, TSM, ONDS, NBIS, CRDO, DELL, INTC, AMAT, EOSE, VRT. Surge: JNJ +29.1% (count=1/2, not yet intraday candidate). Buying power: $50.75. Equity positions: 0. Account: $95.58. CB INACTIVE (daily 0.14% / weekly 2.22%). Peak: $101.68.
+
 ## 2026-08-18T17:12:11Z
 - SUMMARY: Market open (13:12 ET). Regime: normal/BULLISH (SPY $768.63 > EMA200 $757.80, RSI=33.1 — no panic). NO BUYS: Buying power $50.75 − $50 buffer = $0.75 < $15 min order (LRCX proceeds unsettled T+1, settle 2026-08-19). NO SELLS: No positions held. RSI BUY skipped (insufficient BP): GM conf=2 ($50 req). RSI SELL (not held): JNJ(76.5), XOM(72.7), CVX(78.0). Net-buy SELL (not held): CRWV, NBIS, DELL, CRDO, TSM, AMAT, VRT, ONDS. No surge signals. Buying power: $50.75. Equity positions: 0. Account: $95.58. CB INACTIVE (daily 0.14% / weekly 2.22%). Peak: $101.68.
 
