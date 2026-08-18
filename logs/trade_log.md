@@ -1,5 +1,7 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-18T16:15:00Z
+- SUMMARY: Market open (12:15 ET). Regime: normal. SPY RSI=31.8 (no panic filter). NO BUYS: Buying power $50.75 − $50 buffer = $0.75 < $15 min order (LRCX proceeds unsettled T+1). NO SELLS: No positions held. RSI BUY signals skipped (insufficient BP): LRCX conf=2, MRVL conf=2, GEV conf=2, MBLY conf=2, IREN conf=2. Net-buy SELL signals (not held): CRWV, NBIS, CRDO, DELL, AUR, ONDS. Buying power: $50.75. Equity positions: 0. Account: $95.58. CB INACTIVE (daily 0.1% / weekly 2.2%). Peak: $101.68.
 
 ## 2026-08-18T15:21:30Z
 - Action   : SELL LRCX
