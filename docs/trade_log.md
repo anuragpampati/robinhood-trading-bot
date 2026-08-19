@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-19T18:11:36Z
-- SUMMARY: Market open (14:11 ET). No trades executed. BP=$50.00 at minimum buffer — AVGO (RSI=20 conf=2 RL=HOLD 0.93), INTC (RSI=25.9 conf=2 RL=HOLD 0.906), VRT (RSI=25.8 conf=2 RL=HOLD 0.906), AMKR (RSI=29.9 conf=2 RL=HOLD 0.922), KLAC (RSI=25.9 conf=2 RL=HOLD 0.906) all skipped (would breach $50 floor). BA held: $222.30 > trail_stop $219.80, hours_held ~2.9h (need ≥3 for signal exits). MRVL surge +10.1% count=1/2 (new, not confirmed). Net-buy SELL (not held): C, JPM, MSFT, GOOGL, AMKR, UUUU. RSI SELL (not held): PFE, CVX, TGT. CB INACTIVE (daily 0.15%, weekly 2.36%). Regime: normal (SPY RSI=42.6, BULLISH EMA). Account: ~$95.44. Peak: $101.68.
-
 ## 2026-08-19T17:14:00Z
 - SUMMARY: Market open (13:14 ET). No trades executed. Buying power at $50 floor — AVAV (RSI conf=2) and ROK (RSI conf=2) skipped: BP=$50 would breach $50 cash buffer. BA held: $220.95 > trail_stop $219.80. TSLA surge +191.9% count=1/2 (not confirmed). Net-buy SELL signals (not held): C, JPM, MSFT, GOOGL, MBLY, RIVN, CRWD, UUUU. RSI SELL (not held): PFE, CVX, TGT, COIN, JNJ. CB INACTIVE (daily 0.34%, weekly 2.55%). Account: ~$95.26. Peak: $101.68. Regime: normal (SPY RSI=43.1).
 
