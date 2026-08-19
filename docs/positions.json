@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-19T14:18:01Z",
-  "buying_power": 95.58,
+  "updated_at": "2026-08-19T15:19:34Z",
+  "buying_power": 50.00,
   "market_regime": "normal",
   "account_value": 95.58,
   "peak_value": 101.68,
@@ -8,12 +8,27 @@
   "day_start_date": "2026-08-19",
   "week_start_value": 97.75,
   "week_start_date": "2026-08-17",
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "BA",
+      "quantity": 0.204880,
+      "avg_cost": 222.47,
+      "current_price": 222.40,
+      "pnl_pct": -0.0003,
+      "value": 45.57,
+      "entry_atr_pct": 0.006,
+      "entry_time": "2026-08-19T15:19:34Z",
+      "trail_stop": 219.80,
+      "take_profit": 244.72,
+      "strategy": "normal",
+      "sell_date": null
+    }
+  ],
   "last_actions": [
+    "BUY BA (2026-08-19 11:19 ET): RSI oversold (RSI=27.1, BB=BELOW_BAND, EMA=BEARISH). conf=2 RL-BOOST (rl_action=BUY conf=0.928 → conf boosted to 3). MODERATE BUY $45.58 (max after $50 buffer; BP $95.58). 0.2049 shares @ $222.47. Trail stop: $219.80. Target: $244.72. Regime: normal (BULLISH SPY $772.19 > EMA200 $758.12). CB INACTIVE (daily 0.00%, weekly 2.22%). Account: ~$95.58. Peak: $101.68.",
     "NO BUYS (2026-08-19 10:18 ET): PANIC regime (SPY RSI=29.48 < 30). CVX surge +48.8% count=1/2 (not confirmed). No positions. RSI BUY suppressed: SPY(conf=2, RL-BUY 0.928). Net-buy BUY suppressed: LRCX, GS. RSI SELL (not held): JNJ(75.0), GE(71.7), XOM(75.3), CVX(80.3). CB INACTIVE (daily 0.00%, weekly 2.22%). BP $95.58. Account: $95.58. Peak: $101.68.",
     "NO TRADES (2026-08-18 16:08 ET): Market closed. BP $50.75. No positions. Regime: normal (SPY RSI=30.5). Net-buy BUY signals (closed): LRCX, GS. RSI BUY signals (closed): OKLO(conf=2), TSLA(conf=2), LRCX(conf=1). No surge. CB INACTIVE (daily 0.14%, weekly 2.22%). Peak: $101.68.",
     "NO BUYS (2026-08-18 15:13 ET): BP $50.75 - $50 buffer = $0.75 < $15 min. LRCX proceeds $44.83 unsettled (T+1, settle 2026-08-19). No positions. RSI BUY skipped (insufficient BP): ARM(conf=2, RSI=28.9), OKLO(conf=2, RSI=28.1), EOSE(conf=2, RSI=26.4). RSI SELL (not held): JNJ(RSI=74.0), XOM(RSI=75.0), CVX(RSI=79.2). Net-buy SELL (not held): CRWV, TSM, ONDS, NBIS, GOOGL, CRDO, DELL, EOSE, INTC, VRT. Surge: WMT +2.05% (below 10% threshold). SPY RSI=31.2 (no panic). CB INACTIVE (daily 0.14%, weekly 2.22%). Peak: $101.68.",
-    "NO BUYS (2026-08-18 14:11 ET): BP $50.75 - $50 buffer = $0.75 < $15 min. LRCX proceeds unsettled (T+1, settle 2026-08-19). No positions. RSI BUY skipped: ROK(conf=2, $50 req). RSI SELL (not held): XOM(74.6). Net-buy SELL (not held): CRWV, TSM, ONDS, NBIS, CRDO, DELL, INTC, AMAT, EOSE, VRT. Surge: JNJ +29.1% count=1/2. SPY RSI=30.7 (no panic). CB INACTIVE (daily 0.14%, weekly 2.22%). Peak: $101.68.",
     "SELL LRCX (2026-08-18 11:20 ET): ATR trailing stop triggered — $319.04 ≤ trail_stop $336.12. Sold 0.140528 shares @ $319.0385. Proceeds: $44.83. PnL: -$2.17 (-4.61%). Hours held: ~25h. Regime: normal (SPY RSI=29.7 < 30 panic filter). CB INACTIVE (daily 0.13%, weekly 2.22%). Peak: $101.68."
   ]
 }

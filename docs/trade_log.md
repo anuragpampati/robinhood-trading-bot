@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-19T15:19:34Z
+- Action   : BUY BA
+- Price    : $222.47
+- Amount   : $45.58 | Shares: 0.204880
+- RSI      : 27.1 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (signal conf 2→3)
+- Stop     : $219.80 | Target: $244.72
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $772.19 > EMA200 $758.12, RSI=50.6)
+- Reason   : RSI oversold+stabilizing (28.5≈27.1) | BB reversal: returning from band | RL BOOST conf=0.928 | MODERATE BUY $45.58 (max after $50 buffer). CB INACTIVE (daily 0.00%, weekly 2.22%).
+
 ## 2026-08-19T14:18:01Z
 - SUMMARY: Market open (10:18 ET, new day — day_start reset to $95.58). Regime: normal/PANIC (SPY RSI=29.48 < 30 — all buys suppressed except confirmed surge/intraday_surge). NO BUYS: PANIC regime active; CVX surge +48.8% count=1/2 (needs 2 consecutive cycles for confirmation). NO SELLS: No positions held. RSI BUY: SPY conf=2 RL-BOOST (rl_action=BUY conf=0.928) — suppressed by panic regime. RSI SELL (not held): JNJ(RSI=75.0), GE(71.7), XOM(75.3), CVX(80.3). Net-buy BUY suppressed: LRCX(4d streak), GS(4d streak). Net-buy SELL (not held): CRWV, MRNA, CRDO, NBIS, ORCL, DELL, SBUX, VRT, MCD. Surge tracker: CVX first seen (count=1). CB INACTIVE (daily 0.00% / weekly 2.22%). Buying power: $95.58. Equity positions: 0. Account: $95.58. Peak: $101.68.
 
