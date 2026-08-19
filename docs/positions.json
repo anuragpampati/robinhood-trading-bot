@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-19T18:11:36Z",
+  "updated_at": "2026-08-19T19:10:19Z",
   "buying_power": 50.00,
   "market_regime": "normal",
-  "account_value": 95.44,
+  "account_value": 95.48,
   "peak_value": 101.68,
   "day_start_value": 95.58,
   "day_start_date": "2026-08-19",
@@ -13,9 +13,9 @@
       "ticker": "BA",
       "quantity": 0.204880,
       "avg_cost": 222.47,
-      "current_price": 222.30,
-      "pnl_pct": -0.0008,
-      "value": 45.54,
+      "current_price": 221.99,
+      "pnl_pct": -0.0022,
+      "value": 45.48,
       "entry_atr_pct": 0.006,
       "entry_time": "2026-08-19T15:19:34Z",
       "trail_stop": 219.80,
@@ -25,10 +25,10 @@
     }
   ],
   "last_actions": [
+    "NO BUYS (2026-08-19 15:10 ET): BP=$50.00 at minimum buffer — INTC (RSI=26.5 conf=2 RL=HOLD 0.906), AVGO (RSI=20.8 conf=2 RL=HOLD 0.93), WFC (RSI=28.7 conf=2 RL=BUY 0.928), VRT (RSI=24.5 conf=2 RL=HOLD 0.93), KLAC (RSI=26.8 conf=2 RL=HOLD 0.906) all skipped (BP floor). BA held: $221.99 > trail_stop $219.80. NFLX surge +11.8% count=1/2 (not confirmed). CB INACTIVE (daily 0.14%, weekly 2.35%). Account: ~$95.48. Peak: $101.68.",
     "NO BUYS (2026-08-19 14:11 ET): BP=$50.00 at minimum buffer — AVGO (RSI=20 conf=2 RL=HOLD 0.93), INTC (RSI=25.9 conf=2 RL=HOLD 0.906), VRT (RSI=25.8 conf=2 RL=HOLD 0.906), AMKR (RSI=29.9 conf=2 RL=HOLD 0.922), KLAC (RSI=25.9 conf=2 RL=HOLD 0.906) all skipped (BP floor). BA held: $222.30 > trail_stop $219.80. MRVL surge +10.1% count=1/2 (not confirmed). CB INACTIVE (daily 0.15%, weekly 2.36%). Account: ~$95.44. Peak: $101.68.",
     "NO BUYS (2026-08-19 13:14 ET): BP=$50.00 at minimum buffer — AVAV RSI-BUY conf=2 and ROK RSI-BUY conf=2 skipped (would breach $50 floor). BA held: $220.95 > trail_stop $219.80. TSLA surge +191.9% count=1/2 (not confirmed). CB INACTIVE (daily 0.34%, weekly 2.55%). Account: ~$95.26. Peak: $101.68.",
     "NO BUYS (2026-08-19 12:14 ET): BP=$50.00 at minimum buffer — QBTS RSI-BUY conf=2 (RL=HOLD 0.906) needs $50 but would breach $50 floor. BA held: $221.97 > trail_stop $219.80 (HOLD signal RSI=23.8). Surge: none. CB INACTIVE (daily 0.10%, weekly 2.32%). Account: ~$95.48. Peak: $101.68.",
-    "BUY BA (2026-08-19 11:19 ET): RSI oversold (RSI=27.1, BB=BELOW_BAND, EMA=BEARISH). conf=2 RL-BOOST (rl_action=BUY conf=0.928 → conf boosted to 3). MODERATE BUY $45.58 (max after $50 buffer; BP $95.58). 0.2049 shares @ $222.47. Trail stop: $219.80. Target: $244.72. Regime: normal (BULLISH SPY $772.19 > EMA200 $758.12). CB INACTIVE (daily 0.00%, weekly 2.22%). Account: ~$95.58. Peak: $101.68.",
-    "NO BUYS (2026-08-19 10:18 ET): PANIC regime (SPY RSI=29.48 < 30). CVX surge +48.8% count=1/2 (not confirmed). No positions. RSI BUY suppressed: SPY(conf=2, RL-BUY 0.928). Net-buy BUY suppressed: LRCX, GS. RSI SELL (not held): JNJ(75.0), GE(71.7), XOM(75.3), CVX(80.3). CB INACTIVE (daily 0.00%, weekly 2.22%). BP $95.58. Account: $95.58. Peak: $101.68."
+    "BUY BA (2026-08-19 11:19 ET): RSI oversold (RSI=27.1, BB=BELOW_BAND, EMA=BEARISH). conf=2 RL-BOOST (rl_action=BUY conf=0.928 → conf boosted to 3). MODERATE BUY $45.58 (max after $50 buffer; BP $95.58). 0.2049 shares @ $222.47. Trail stop: $219.80. Target: $244.72. Regime: normal (BULLISH SPY $772.19 > EMA200 $758.12). CB INACTIVE (daily 0.00%, weekly 2.22%). Account: ~$95.58. Peak: $101.68."
   ]
 }
