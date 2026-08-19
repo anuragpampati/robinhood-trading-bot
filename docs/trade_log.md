@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-19T16:16:00Z
+- SUMMARY: Market OPEN. No SELLs — BA held: $221.97, above trail_stop $219.80, HOLD signal (RSI=23.8). No BUYs — BP=$50.00 at minimum buffer; QBTS RSI-BUY conf=2 (RL=HOLD 0.906) would need $50 but BP at limit. Surge: none. CB INACTIVE (daily 0.10%, weekly 2.32%). Buying power: $50.00. Equity positions: 1 (BA). Regime: normal (SPY RSI=45.8, above EMA200 $758.25). Account: ~$95.48. Peak: $101.68.
+
 ## 2026-08-19T15:19:34Z
 - Action   : BUY BA
 - Price    : $222.47
