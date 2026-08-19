@@ -217,3 +217,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403, 21st+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
 - RL samples: 529/200 (READY — +4 new rows today; 19 states in Q-table)
 - Notes: LRCX closed today via ATR trail-stop (-4.61%, ~25h hold). Account $95.58 (below $100 start). Capital bind continues: $50.75 BP - $50 buffer = $0.75 unusable until LRCX proceeds settle 2026-08-19. Multiple RSI BUY signals (ARM, OKLO, EOSE) skipped due to insufficient buying power. Normal win_rate at 50% (hold band, no tuning). RL well past 200 target — run python -m strategy.rl_agent --train. Trade log trimmed to 11 entries.
+
+## 2026-08-19
+- Trades analysed: 1 closed (LRCX -4.61% trail_stop, 25h, EMA=BULLISH)
+- Win rate: n/a overall (n<3 for all strategy types — insufficient data for adjustment)
+- Config changes: none (NO_CHANGE — normal n=1<5, momentum n=1<3, ATR avg_hold=25h>>2h)
+- Backtest: skipped (yfinance 403, 22nd+ consecutive session) — prior: +9.29% return, 39.6% win_rate, 15.29% drawdown
+- RL samples: 531/200 (RL READY — exceeded target)
+- Notes: BA position open (-0.11%, trail_stop $219.80, target $244.72). Buying power at $50 floor. Multiple RSI oversold signals skipped (INTC, AVGO, WFC, VRT, KLAC) due to capital constraint. +2 RL rows added today.

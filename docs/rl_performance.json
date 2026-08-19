@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18",
+  "updated_at": "2026-08-19",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": 0.2046,
@@ -12,8 +12,8 @@
   "losses": 137,
   "circuit_breaker_halts": 14,
   "max_drawdown": 0.1529,
-  "rl_training_samples": 529,
+  "rl_training_samples": 531,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped (yfinance proxy blocked 403, 21st+ consecutive session) — prior metrics retained. Config: NO_CHANGE (normal win_rate 50.0% [8W/8L, n=16] in [40%,65%] hold band; momentum n=0<3; ATR avg_hold >>2h). Live: LRCX closed -4.61% trail_stop (25h hold). RL: 529 samples (+4 today), 19 states. RL READY. Updated by daily learning CCR"
+  "note": "Backtest skipped (yfinance proxy blocked 403, 22nd+ consecutive session) — prior metrics retained. Config: NO_CHANGE (only 1 closed live trade, n<3 for all strategy types). Live: BA open -0.11% (entry RSI=27.1, BEARISH EMA). LRCX closed -4.61% trail_stop (25h hold). RL: 531 samples (+2 today), 19 states. RL READY. Updated by daily learning CCR"
 }
