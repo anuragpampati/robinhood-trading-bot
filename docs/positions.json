@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T19:11:28Z",
+  "updated_at": "2026-08-20T20:12:10Z",
   "buying_power": 50.0,
   "market_regime": "normal",
   "account_value": 94.85,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-17",
   "positions": [],
   "last_actions": [
+    "NO TRADES (2026-08-20 16:12 ET): Market CLOSED (closed at 16:00). BP=$50.00 at floor ($44.85 BA proceeds settle 2026-08-21). 0 positions. Signals from 101/103 tickers (SQ, RBLB not found). RSI BUY conf≥2: none. RSI SELL conf≥2 not-held: MRVL(70.3). Net-buy BUY: none. Net-buy SELL not-held (10): QQQ, BA, QCOM, KTOS, UUUU, DKNG, QBTS, RKLB, AVAV, ROK. Surge ≥10%: none. Surge tracker: empty. CB INACTIVE (daily=0.00%, weekly=2.97%). Account $94.85, peak $101.68.",
     "NO TRADES (2026-08-20 15:11 ET): BP=$50.00 at floor ($44.85 unsettled from BA, settle 2026-08-21). 0 positions. PANIC regime: SPY RSI=28.4 < 30 — all buys suppressed. No surge signals. RSI BUY conf≥2: none. Net-buy BUY: none. Net-buy SELL not-held (27): QQQ, EQIX, ROK, TSLA, CIFR, BA, SNOW, RDW, ALAB, NBIS, MU, DKNG, NVTS, ARM, QBTS, ASTS, AUR, SYM, UUUU, AVAV, RKLB, AMD, CRWV, QCOM, WMT, KTOS, PL. CB INACTIVE (daily=0.00%, weekly=2.97%). Account $94.85, peak $101.68.",
     "NO TRADES (2026-08-20 14:15 ET): BP=$50.00 at buffer floor (BA proceeds $44.85 unsettled, settle 2026-08-21). 0 positions to sell. RSI BUY conf>=2 (6): C(22.6), PL(26.6), RDW(28.4), RGTI(22.3), KTOS(25.9), WMT(31.5) — all RL=HOLD (no VETO). Net-buy BUY: none. Net-buy SELL not-held (10): QQQ, BA, QCOM, UUUU, KTOS, AVAV, AMD, RDW, DKNG, SYM. Surge signals >=10%: none. Surge tracker: TGT removed (no longer surging). RL notable BUY (no RSI conf==2 overlap): QQQ, QCOM, AVGO, META, TSLA, JPM, BAC, WFC, TXN. CB INACTIVE (daily=0.00%, weekly=2.97%). Regime normal (SPY RSI=30.97, EMA=BEARISH, BB=BELOW_BAND, $764.54). Account $94.85, peak $101.68.",
     "NO TRADES (2026-08-20 13:15 ET): BP=$50.00 at floor (BA proceeds settle 2026-08-21). 0 positions to sell. RSI BUY conf>=2: none. Net-buy BUY: none. RSI SELL not-held: COIN(77.3). Net-buy SELL not-held (10): BA, KTOS, AVAV, RDW, AMD, PL, DKNG, UUUU, RKLB, UBER. Surge tracker: TGT buy_vol +197.5% count=1/2 (added), CVX removed (no longer 10%+). RL notable BUY (no signal conf=2 to boost): QQQ/QCOM/META/TSLA/TXN/WFC. CB INACTIVE (daily=0.00%, weekly=2.97%). Regime normal (SPY RSI=35.37, EMA=BEARISH, $765.54). Account $94.85, peak $101.68.",
-    "NO TRADES (2026-08-20 12:14 ET): BP=$50.00 at minimum buffer — cannot open new positions (BA proceeds $44.85 unsettled, settle 2026-08-21). 0 positions to sell. RSI BUY conf≥2: none. Net-buy BUY: none. RSI SELL not-held: CVX(77.35). Net-buy SELL not-held (10): QQQ, BA, RDW, UUUU, PL, KTOS, AMD, RKLB, AVAV, UBER. Surge: CVX +32.4% buy_vol count=1/2. RL notable BUY: PLTR/HOOD/F/MBLY (no RSI conf≥2 to boost). CB INACTIVE (daily=0.00%, weekly=2.97%). Regime normal (SPY RSI=32.52). Account $94.85, peak $101.68.",
-    "SELL BA (2026-08-20 10:20 ET): ATR trailing stop triggered. Entry $222.47 → Exit $218.91 (0.2049 shares, $44.85 proceeds). PnL: -1.60% (-$0.73). trail_stop=$219.80, current_price=$219.09. Held ~23h."
+    "NO TRADES (2026-08-20 12:14 ET): BP=$50.00 at minimum buffer — cannot open new positions (BA proceeds $44.85 unsettled, settle 2026-08-21). 0 positions to sell. RSI BUY conf≥2: none. Net-buy BUY: none. RSI SELL not-held: CVX(77.35). Net-buy SELL not-held (10): QQQ, BA, RDW, UUUU, PL, KTOS, AMD, RKLB, AVAV, UBER. Surge: CVX +32.4% buy_vol count=1/2. RL notable BUY: PLTR/HOOD/F/MBLY (no RSI conf≥2 to boost). CB INACTIVE (daily=0.00%, weekly=2.97%). Regime normal (SPY RSI=32.52). Account $94.85, peak $101.68."
   ]
 }
