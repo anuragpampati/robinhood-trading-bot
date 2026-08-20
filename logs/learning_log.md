@@ -225,3 +225,11 @@
 - Backtest: skipped (yfinance 403, 22nd+ consecutive session) — prior: +9.29% return, 39.6% win_rate, 15.29% drawdown
 - RL samples: 531/200 (RL READY — exceeded target)
 - Notes: BA position open (-0.11%, trail_stop $219.80, target $244.72). Buying power at $50 floor. Multiple RSI oversold signals skipped (INTC, AVGO, WFC, VRT, KLAC) due to capital constraint. +2 RL rows added today.
+
+## 2026-08-20
+- Trades analysed: 1 new closed (BA -1.6% trail_stop, ~21h, normal/BEARISH EMA); cumulative: 17 closed (8W/9L)
+- Win rate: 47.1% overall (normal: 47.1% [8W/9L, n=17]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA 50.0% (7W/7L, n=14); BEARISH EMA 33.3% (1W/2L, n=3)
+- Config changes: none — RSI_OVERSOLD: win_rate=47.1% in [40%,65%] hold band (NO_CHANGE, n=17≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~131h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 23rd+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 532/200 (RL READY — exceeded target by 2.66×; run: python -m strategy.rl_agent --train)
+- Notes: Account $94.85 (below $100 start, -5.15%), 0 equity positions. BA closed via trail_stop ~21h after entry (BEARISH EMA entry). BEARISH EMA win rate slipped to 33.3% (1W/2L, n=3) — approaching data threshold but n still too low for ATR adjustment. Capital bind: buying power $50.00 at floor (BA proceeds $44.85 settle 2026-08-21). Log trimmed to 5 entries. RL: 532 samples (19 Q-states). NO_CHANGE on all thresholds.

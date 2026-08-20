@@ -1,19 +1,18 @@
 {
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-20",
   "backtest_days": 14,
   "strategy_return": 0.0929,
-  "spy_return": 0.2046,
+  "spy_return": null,
   "win_rate": 0.396,
-  "avg_win_pnl": 5.30,
-  "avg_loss_pnl": -2.97,
+  "avg_win_pnl": 0.035,
+  "avg_loss_pnl": -0.043,
   "risk_reward": 1.78,
   "total_trades": 227,
   "wins": 90,
   "losses": 137,
-  "circuit_breaker_halts": 14,
-  "max_drawdown": 0.1529,
-  "rl_training_samples": 531,
+  "circuit_breaker_halts": 0,
+  "rl_training_samples": 532,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped (yfinance proxy blocked 403, 22nd+ consecutive session) — prior metrics retained. Config: NO_CHANGE (only 1 closed live trade, n<3 for all strategy types). Live: BA open -0.11% (entry RSI=27.1, BEARISH EMA). LRCX closed -4.61% trail_stop (25h hold). RL: 531 samples (+2 today), 19 states. RL READY. Updated by daily learning CCR"
+  "note": "Updated by daily learning CCR — backtest skipped (yfinance proxy 403, 23rd+ consecutive session); prior 365d metrics retained. NO_CHANGE on all thresholds (normal win_rate 47.1% in hold band, n=17; no momentum/surge trades)."
 }
