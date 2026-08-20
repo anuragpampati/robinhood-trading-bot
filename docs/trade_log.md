@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-20T14:20:11Z
+- SUMMARY: Market OPEN (10:20 ET, new day — day_start reset). SOLD BA (ATR trailing stop). NO BUYS: BP=$50.00 (BA proceeds unsettled T+1, settle 2026-08-21). RSI BUY signals: AVGO(RSI=19.9 conf=2 RL=HOLD 0.93 → VETO), GE(RSI=30.0 conf=2 RL=BUY 0.928 → BOOST conf=3) — skipped (BP at floor). Net-BUY: ONDS(4d streak) — skipped (BP at floor). Surge 10%+: COIN(+4068%) count=1/2 (not confirmed). RSI SELL (not held): TSLA(RSI=71.2), PFE(RSI=74.4). Net-buy SELL (not held): WMT, C, AMKR, JPM, MSFT, NVDA, SPY, ISRG, UUUU. CB INACTIVE (daily=0.00%, weekly=2.97%). Regime: normal (BULLISH SPY $769.06 > EMA200 $758.70). Buying power: $50.00. Equity positions: 0. Account: ~$94.85. Peak: $101.68.
+
+## 2026-08-20T14:20:11Z
+- Action   : SELL BA
+- Price    : $218.91
+- Amount   : $44.85 | Shares: 0.204880
+- RSI      : 31.2 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $219.80 (trail stop hit) | Target: $244.72 (not reached)
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH)
+- Reason   : ATR trailing stop triggered — current_price $219.09 ≤ trail_stop $219.80 (hours_held ~23h ≥ 3). Entry $222.47 → Exit $218.91. PnL: -1.60% (-$0.73). BA RSI=31.2 trending toward BUY but stop triggered first.
+
 ## 2026-08-19T20:11:13Z
 - SUMMARY: Market CLOSED (16:08 ET). No trades — market closed. BA held @ $222.23 (trail_stop=$219.80, PnL=-0.11%). RSI BUY signals (market closed — not traded): AVGO(RSI=19.9 conf=2 RL=HOLD 0.93), GE(RSI=30.0 conf=2 RL=BUY 0.928). Net-BUY (not traded): ONDS (4d streak, score=41.8). Surge 10%+: MBLY(+13.7%), DIS(+704%) — skipped (market closed). RSI SELL (not held): TSLA(RSI=71.2 conf=2), PFE(RSI=74.4 conf=2). Net-buy SELL (not held): NVDA, WMT, C, AMKR, JPM, MSFT, SPY, ISRG, UUUU. CB INACTIVE (daily=0.05%, weekly=2.27%). Regime: normal (BULLISH SPY $769.06 > EMA200 $758.69). Buying power: $50.00. Equity positions: 1 (BA). Account: ~$95.53. Peak: $101.68.
 
