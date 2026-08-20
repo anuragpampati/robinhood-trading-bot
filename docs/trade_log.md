@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-20T15:18:00Z
+- SUMMARY: Market OPEN. No trades — zero BUY candidates (0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge ≥5%). No sells — no equity positions held (BA closed 2026-08-20 10:20 ET). Signals: SPY RSI=35.76 EMA=BEARISH, regime=normal. RSI SELL (not held): XOM(RSI=70.6 conf=2), CVX(RSI=74.3 conf=2). Net-buy SELL (not held): BA, QBTS, UBER, AVAV, RDW, AMD, KTOS, RKLB, PL, DKNG. Surge tracker cleared (COIN no longer in 10%+ surge list). CB INACTIVE (daily=0.00%, weekly=2.97%). Buying power: $50.00 (proceeds settle 2026-08-21). Equity positions: 0. Account: $94.85. Peak: $101.68.
+
 ## 2026-08-19T20:11:13Z
 - SUMMARY: Market CLOSED (16:08 ET). No trades — market closed. BA held @ $222.23 (trail_stop=$219.80, PnL=-0.11%). RSI BUY signals (market closed — not traded): AVGO(RSI=19.9 conf=2 RL=HOLD 0.93), GE(RSI=30.0 conf=2 RL=BUY 0.928). Net-BUY (not traded): ONDS (4d streak, score=41.8). Surge 10%+: MBLY(+13.7%), DIS(+704%) — skipped (market closed). RSI SELL (not held): TSLA(RSI=71.2 conf=2), PFE(RSI=74.4 conf=2). Net-buy SELL (not held): NVDA, WMT, C, AMKR, JPM, MSFT, SPY, ISRG, UUUU. CB INACTIVE (daily=0.05%, weekly=2.27%). Regime: normal (BULLISH SPY $769.06 > EMA200 $758.69). Buying power: $50.00. Equity positions: 1 (BA). Account: ~$95.53. Peak: $101.68.
 

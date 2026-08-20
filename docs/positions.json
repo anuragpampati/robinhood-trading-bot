@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T14:20:30Z",
+  "updated_at": "2026-08-20T15:18:00Z",
   "buying_power": 50.00,
   "market_regime": "normal",
   "account_value": 94.85,
@@ -10,10 +10,10 @@
   "week_start_date": "2026-08-17",
   "positions": [],
   "last_actions": [
+    "NO TRADES (2026-08-20 11:18 ET): No BUY candidates (0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge ≥5%). No positions to sell. Signals: SPY RSI=35.76 EMA=BEARISH, regime=normal. RSI SELL not-held: XOM(70.6), CVX(74.3). Net-buy SELL not-held: BA, QBTS, UBER, AVAV, RDW, AMD, KTOS, RKLB, PL, DKNG. Surge tracker cleared. CB INACTIVE (daily=0.00%, weekly=2.97%). BP=$50 (BA proceeds settle 2026-08-21). Account $94.85.",
     "SELL BA (2026-08-20 10:20 ET): ATR trailing stop triggered. Entry $222.47 → Exit $218.91 (0.2049 shares, $44.85 proceeds). PnL: -1.60% (-$0.73). trail_stop=$219.80, current_price=$219.09. Held ~23h.",
     "NO BUYS (2026-08-20 10:20 ET): BP=$50.00 at minimum after BA sale (proceeds unsettled T+1, settle 2026-08-21). RSI BUY signals: AVGO(RSI=19.9 conf=2 RL=HOLD 0.93 → VETO), GE(RSI=30.0 conf=2 RL=BUY 0.928 → BOOST). Net-BUY: ONDS(4d streak). All skipped (BP floor). Surge: COIN +4068% count=1/2. CB INACTIVE (daily=0.00%, weekly=2.97%). Regime: normal (BULLISH SPY $769.06 > EMA200 $758.70).",
     "MARKET CLOSED (2026-08-19 16:08 ET): No trades. BA held @ $222.23 (trail_stop=$219.80, PnL=-0.11%). RSI BUY (not traded): AVGO(RSI=19.9 conf=2), GE(RSI=30.0 conf=2 RL=BUY). Net-BUY: ONDS(4d streak). Surge 10%+: MBLY(+13.7%), DIS(+704%) — market closed. CB INACTIVE (daily=0.05%, weekly=2.27%). Account: ~$95.53. Peak: $101.68.",
-    "NO BUYS (2026-08-19 15:10 ET): BP=$50.00 at minimum buffer — INTC (RSI=26.5 conf=2 RL=HOLD 0.906), AVGO (RSI=20.8 conf=2 RL=HOLD 0.93), WFC (RSI=28.7 conf=2 RL=BUY 0.928), VRT (RSI=24.5 conf=2 RL=HOLD 0.93), KLAC (RSI=26.8 conf=2 RL=HOLD 0.906) all skipped (BP floor). BA held: $221.99 > trail_stop $219.80. NFLX surge +11.8% count=1/2 (not confirmed). CB INACTIVE (daily 0.14%, weekly 2.35%). Account: ~$95.48. Peak: $101.68.",
-    "NO BUYS (2026-08-19 14:11 ET): BP=$50.00 at minimum buffer — AVGO (RSI=20 conf=2 RL=HOLD 0.93), INTC (RSI=25.9 conf=2 RL=HOLD 0.906), VRT (RSI=25.8 conf=2 RL=HOLD 0.906), AMKR (RSI=29.9 conf=2 RL=HOLD 0.922), KLAC (RSI=25.9 conf=2 RL=HOLD 0.906) all skipped (BP floor). BA held: $222.30 > trail_stop $219.80. MRVL surge +10.1% count=1/2 (not confirmed). CB INACTIVE (daily 0.15%, weekly 2.36%). Account: ~$95.44. Peak: $101.68."
+    "NO BUYS (2026-08-19 15:10 ET): BP=$50.00 at minimum buffer — INTC (RSI=26.5 conf=2 RL=HOLD 0.906), AVGO (RSI=20.8 conf=2 RL=HOLD 0.93), WFC (RSI=28.7 conf=2 RL=BUY 0.928), VRT (RSI=24.5 conf=2 RL=HOLD 0.93), KLAC (RSI=26.8 conf=2 RL=HOLD 0.906) all skipped (BP floor). BA held: $221.99 > trail_stop $219.80. NFLX surge +11.8% count=1/2 (not confirmed). CB INACTIVE (daily 0.14%, weekly 2.35%). Account: ~$95.48. Peak: $101.68."
   ]
 }
