@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-20T18:15:00Z
-- SUMMARY: Market OPEN (14:15 ET). No trades — BP=$50.00 at cash buffer floor (BA proceeds $44.85 unsettled, settle 2026-08-21). 0 positions to sell. RSI BUY conf>=2 (6): C(RSI=22.6), PL(26.6), RDW(28.4), RGTI(22.3), KTOS(25.9), WMT(31.5) — all RL=HOLD (no VETO, no BOOST). Net-buy BUY: none. Net-buy SELL (not held, 10): QQQ, BA, QCOM, UUUU, KTOS, AVAV, AMD, RDW, DKNG, SYM. Surge signals >=10%: none. Surge tracker: TGT removed. RL notable BUY (no RSI conf==2 overlap): QQQ/QCOM/AVGO/META/TSLA/JPM/BAC/WFC/TXN. CB INACTIVE (daily=0.00%, weekly=2.97%). Regime: normal (SPY RSI=30.97, EMA=BEARISH, BB=BELOW_BAND, $764.54). Account: $94.85. Peak: $101.68.
-
 ## 2026-08-19T20:11:13Z
 - SUMMARY: Market CLOSED (16:08 ET). No trades — market closed. BA held @ $222.23 (trail_stop=$219.80, PnL=-0.11%). RSI BUY signals (market closed — not traded): AVGO(RSI=19.9 conf=2 RL=HOLD 0.93), GE(RSI=30.0 conf=2 RL=BUY 0.928). Net-BUY (not traded): ONDS (4d streak, score=41.8). Surge 10%+: MBLY(+13.7%), DIS(+704%) — skipped (market closed). RSI SELL (not held): TSLA(RSI=71.2 conf=2), PFE(RSI=74.4 conf=2). Net-buy SELL (not held): NVDA, WMT, C, AMKR, JPM, MSFT, SPY, ISRG, UUUU. CB INACTIVE (daily=0.05%, weekly=2.27%). Regime: normal (BULLISH SPY $769.06 > EMA200 $758.69). Buying power: $50.00. Equity positions: 1 (BA). Account: ~$95.53. Peak: $101.68.
 
