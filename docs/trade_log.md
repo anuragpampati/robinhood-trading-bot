@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-21T15:18:07Z
+- SUMMARY: Market OPEN (11:18 ET). Normal regime (SPY RSI=40.4, EMA=BEARISH, above EMA200). NO TRADES — buying power $94.85 insufficient for any trade without breaching $50 cash buffer ($94.85−$50=$44.85<$50). RSI BUY conf≥2: JPM (RSI=29.0, 🤖 RL BOOST conf→3, SKIP: buffer), CRWD (RSI=24.2, RL=HOLD, SKIP: buffer). RSI SELL conf≥2 (not held): COIN(RSI=83.3), RIVN(RSI=72.8), TGT(RSI=70.6). Net-buy SELL (not held): CRDO, CIFR, AEHR, IREN, EQIX, COHR, AAOI, GEV, LITE, LAZR. No surge signals. Surge tracker: PYPL removed (no longer 10%+ surge). CB INACTIVE (daily=0.00%, weekly=2.97%). Buying power: $94.85. Equity positions: 0. Account: $94.85. Peak: $101.68. Regime: normal.
+
 ## 2026-08-21T14:22:00Z
 - SUMMARY: Market OPEN (10:18 ET). PANIC regime: SPY RSI=25.7 < 30 — all individual stock buys suppressed. PYPL buy-volume surge +169.1% count=1/2 (not confirmed, needs 2 consecutive cycles). 0 positions held, no sells needed. Buying power: $94.85 (BA proceeds settled today). RSI SELL conf≥2 (not held): COIN(RSI=72.4), MRVL(RSI=71.6). Net-buy SELL (not held): QQQ, BA, QCOM, KTOS, DKNG, UUUU, RKLB, AVAV, ROK, SNOW, CRWV, ALAB, ASTS, EQIX, SYM, MU, JPM, AUR, TSLA, WFC. CB INACTIVE (daily=0.00%, weekly=2.97%). Account: $94.85. Peak: $101.68. Regime: normal/PANIC (SPY $762.65 > EMA200 $759.18 but RSI=25.7).
 
