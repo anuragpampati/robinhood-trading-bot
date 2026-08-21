@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-21T14:22:00Z
+- SUMMARY: Market OPEN (10:18 ET). PANIC regime: SPY RSI=25.7 < 30 — all individual stock buys suppressed. PYPL buy-volume surge +169.1% count=1/2 (not confirmed, needs 2 consecutive cycles). 0 positions held, no sells needed. Buying power: $94.85 (BA proceeds settled today). RSI SELL conf≥2 (not held): COIN(RSI=72.4), MRVL(RSI=71.6). Net-buy SELL (not held): QQQ, BA, QCOM, KTOS, DKNG, UUUU, RKLB, AVAV, ROK, SNOW, CRWV, ALAB, ASTS, EQIX, SYM, MU, JPM, AUR, TSLA, WFC. CB INACTIVE (daily=0.00%, weekly=2.97%). Account: $94.85. Peak: $101.68. Regime: normal/PANIC (SPY $762.65 > EMA200 $759.18 but RSI=25.7).
+
 ## 2026-08-19T20:11:13Z
 - SUMMARY: Market CLOSED (16:08 ET). No trades — market closed. BA held @ $222.23 (trail_stop=$219.80, PnL=-0.11%). RSI BUY signals (market closed — not traded): AVGO(RSI=19.9 conf=2 RL=HOLD 0.93), GE(RSI=30.0 conf=2 RL=BUY 0.928). Net-BUY (not traded): ONDS (4d streak, score=41.8). Surge 10%+: MBLY(+13.7%), DIS(+704%) — skipped (market closed). RSI SELL (not held): TSLA(RSI=71.2 conf=2), PFE(RSI=74.4 conf=2). Net-buy SELL (not held): NVDA, WMT, C, AMKR, JPM, MSFT, SPY, ISRG, UUUU. CB INACTIVE (daily=0.05%, weekly=2.27%). Regime: normal (BULLISH SPY $769.06 > EMA200 $758.69). Buying power: $50.00. Equity positions: 1 (BA). Account: ~$95.53. Peak: $101.68.
 
