@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-24T14:17:55Z
+- SUMMARY: Market OPEN (10:17 ET). Normal regime (BULLISH — SPY RSI=42.1, SPY $765.69 > EMA200 $759.87). No buys — buying power $94.85 minus $50 trade = $44.85 < $50 cash buffer. RSI BUY conf≥2: INTC (conf=2, rl=HOLD 0.906, skip: buffer). Net-buy BUY: SHOP (skip: buffer). RSI SELL conf≥2 (not held): COIN(RSI=74.4), HOOD(RSI=74.2), RIVN(RSI=72.9), TGT(RSI=70.9). Net-buy SELL (not held): EQIX, CIFR, GEV, META, NVTS, MRCY, NBIS, LITE, COHR, AAOI. Surge: UUUU 92.8% count=1/2, ORCL 34.9% count=1/2, TGT 849.1% count=1/2 (not confirmed — needs 2 consecutive cycles). CB INACTIVE (daily=0.00%, weekly=0.00%). Account $94.85, peak $101.68.
+
 ## 2026-08-21T17:12:00Z
 - SUMMARY: Market OPEN (1:12 ET). Normal regime (BULLISH — SPY RSI=43.1, SPY $766.39 > EMA200 $759.39). No buys — buying power $94.85 minus $50 trade = $44.85 < $50 cash buffer. RSI BUY conf≥2: WFC (conf=2 rl=HOLD 0.936, skip: buffer), BA (conf=2 rl=HOLD 0.936, skip: buffer). RSI SELL conf≥2 (not held): COIN(RSI=76.0). Net-buy SELL (not held): IREN, EQIX, CIFR, COHR, NBIS, LITE, AAOI, LAZR, NVTS, VRT, TER, AEHR, GEV, INFQ, META. Surge: AAPL +252.7% count=1/2 (not confirmed — needs 2 consecutive cycles). No net-buy BUY signals. CB INACTIVE (daily=0.00%, weekly=2.97%). Account $94.85, peak $101.68.
 
