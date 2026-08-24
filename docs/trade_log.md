@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-24T17:16:57Z
+- Action   : BUY INTC
+- Price    : $87.36
+- Amount   : $15.00 | Shares: 0.1714
+- RSI      : 26.4 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.906 | null
+- Stop     : $84.69 | Target: $96.10
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $764.18 > EMA200 $759.99)
+- Reason   : RSI oversold+stabilizing (28.0≈26.4) | BB reversal returning from band | MODERATE BUY conf=2/3 | buffer OK ($79.85→$64.85)
+
 ## 2026-08-24T16:21:25Z
 - Action   : BUY CRWV
 - Price    : $86.49
