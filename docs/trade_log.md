@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-24T20:17:00Z
+- SUMMARY: Market closed. Buying power: $64.85. Equity positions: 2 (CRWV, INTC). Regime: normal (BULLISH — SPY $763.46 > EMA200 $760.10). Account: $94.71. No trade triggers. CRWV $86.18 (stop $82.68, tp $95.14). INTC $87.26 (stop $84.84, tp $96.27). RSI BUY signals (not tradeable): AUR conf=2, AMKR conf=2. RSI SELL signals (not held): SNAP/DIS/TGT. CB INACTIVE (daily=0.15%, weekly=0.15%). Peak: $101.68.
+
 ## 2026-08-24T17:16:57Z
 - Action   : BUY INTC
 - Price    : $87.36
