@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-24T16:21:25Z
+- Action   : BUY CRWV
+- Price    : $86.49
+- Amount   : $15.00 | Shares: 0.1734
+- RSI      : 29.9 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.906 | null
+- Stop     : $82.68 | Target: $95.14
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $764.52 > EMA200 $759.95)
+- Reason   : RSI oversold (29.9) | price below BB lower band | stabilizing (31.4→29.9) | MODERATE BUY conf=2/3
+
 ## 2026-08-24T15:14:45Z
 - SUMMARY: Market OPEN (11:14 ET). Normal regime (BULLISH — SPY RSI=36.6, SPY $763.64 > EMA200 $759.90). No buys — buying power $94.85 minus $50 trade = $44.85 < $50 cash buffer. RSI BUY signals: none (0/3 confidence for all tickers). Net-buy BUY: none (0 found). RSI SELL conf≥2 (not held): HOOD(RSI=72.2), DIS(RSI=78.3), TGT(RSI=78.0). Net-buy SELL (not held): SBUX, ASML, GS, AMAT, AMKR, AEHR, C, WMT, DELL, TXN, SMCI, ISRG, TER. Surge: no signals this cycle — tracker cleared (UUUU/ORCL/TGT not confirmed). CB INACTIVE (daily=0.00%, weekly=0.00%). Account $94.85, peak $101.68.
 
