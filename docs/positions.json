@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-25T14:22:30Z",
+  "updated_at": "2026-08-25T15:22:00Z",
   "buying_power": 64.85,
   "market_regime": "normal",
-  "account_value": 95.55,
+  "account_value": 95.34,
   "peak_value": 101.68,
   "day_start_value": 95.55,
   "day_start_date": "2026-08-25",
@@ -13,36 +13,22 @@
       "ticker": "CRWV",
       "quantity": 0.173423,
       "avg_cost": 86.49,
-      "current_price": 88.65,
-      "pnl_pct": 0.025,
-      "value": 15.37,
+      "current_price": 88.51,
+      "pnl_pct": 0.023,
+      "value": 15.35,
       "entry_atr_pct": 0.022,
       "entry_time": "2026-08-24T16:21:25Z",
       "trail_stop": 82.68,
       "take_profit": 95.14,
       "strategy": "normal",
       "sell_date": null
-    },
-    {
-      "ticker": "INTC",
-      "quantity": 0.171389,
-      "avg_cost": 87.52,
-      "current_price": 88.87,
-      "pnl_pct": 0.015,
-      "value": 15.23,
-      "entry_atr_pct": 0.0153,
-      "entry_time": "2026-08-24T17:16:57Z",
-      "trail_stop": 84.84,
-      "take_profit": 96.27,
-      "strategy": "normal",
-      "sell_date": null
     }
   ],
   "last_actions": [
+    "SELL INTC $15.13 @ $88.32 (2026-08-25 11:19 ET): Net-buy reversal signal (6.60M→-0.49M OBV). P&L +0.87%. NO BUYS: BP $64.85−$15=$49.85<$50 buffer. AVAV/KTOS RSI conf=2 blocked. CRWV $88.51 ▲2.34% (stop $82.68, tp $95.14). CB INACTIVE (daily=0.22%, weekly=-0.52%). Account $95.34, peak $101.68.",
     "NO TRADES (2026-08-25 10:22 ET): Market OPEN. Normal regime (BULLISH — SPY $765.11 > EMA200 $760.09). RSI BUY: AUR conf=2 (rl=HOLD 0.922), AMKR conf=2 (rl=HOLD 0.906) — BLOCKED by $50 buffer ($64.85−$15=$49.85<$50). No sell triggers on held positions (CRWV $88.65 ▲2.5%, INTC $88.87 ▲1.5%). Net-buy SELL (not held): ISRG/AAPL/AUR/ASML/C/GE/AMAT/AEHR/GS/DELL. Surge: PFE 31.7% count=1 (needs ≥2). CB INACTIVE (daily=0.00%, weekly=-0.74%). Account $95.55, peak $101.68.",
     "NO TRADES (2026-08-24 20:17 UTC): Market CLOSED. Normal regime (BULLISH — SPY $763.46 > EMA200 $760.10). Positions: CRWV $86.18 (stop $82.68, tp $95.14), INTC $87.26 (stop $84.84, tp $96.27). No sell triggers. RSI BUY (not tradeable): AUR conf=2, AMKR conf=2. CB INACTIVE (daily=0.15%, weekly=0.15%). Account $94.71, peak $101.68.",
     "NO TRADES (2026-08-24 15:15 ET): Market OPEN. Normal regime (BULLISH — SPY RSI=40.0, SPY $764.00 > EMA200 $760.06). Buffer blocked all buys: NVDA(RSI=23.8,conf=2,rl=HOLD 0.936), GE(RSI=26.2,conf=2,rl=BUY→BOOST→conf3 but net-buy SELL conflict), RKLB(RSI=25.2,conf=2,rl=HOLD 0.906), AVAV(RSI=19.1,conf=2,rl=HOLD 0.930) — $64.85−$15=$49.85<$50 buffer. No sell triggers (CRWV/INTC both <3h held, above trail stops). Surge: none. CB INACTIVE (daily=0.03%, weekly=0.03%). Account $94.82, peak $101.68.",
-    "BUY INTC $15 @ $87.36 (2026-08-24 13:16 ET): RSI oversold+stabilizing (28.0≈26.4) | BB reversal from lower band | conf=2/3 | RL=HOLD 0.906. Stop $84.69, Target $96.10. Regime: normal (BULLISH). CB INACTIVE (daily=0.00%, weekly=0.00%). BP $79.85→$64.85.",
-    "BUY CRWV $15 @ $86.49 (2026-08-24 12:21 ET): RSI oversold (29.9) | BB below lower band | conf=2/3 | RL=HOLD. Stop $82.68, Target $95.14. Regime: normal (BULLISH). CB INACTIVE (daily=0.00%, weekly=0.00%)."
+    "BUY INTC $15 @ $87.36 (2026-08-24 13:16 ET): RSI oversold+stabilizing (28.0≈26.4) | BB reversal from lower band | conf=2/3 | RL=HOLD 0.906. Stop $84.69, Target $96.10. Regime: normal (BULLISH). CB INACTIVE (daily=0.00%, weekly=0.00%). BP $79.85→$64.85."
   ]
 }
