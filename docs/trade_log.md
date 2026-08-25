@@ -1,19 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-25T15:22:00Z
-- SUMMARY: Market OPEN (11:22 ET). Regime: normal (BULLISH — SPY $764.72 > EMA200 $760.14). Account: $95.34. Buying power: $64.85 (unsettled: $15.14). Equity positions: 1 (CRWV $88.51 ▲2.34%). SOLD INTC (net-buy reversal signal). NO BUYS: BP $64.85−$15=$49.85<$50 buffer (AVAV RSI 20.8 conf=2 rl=HOLD, KTOS RSI 20.9 conf=2 rl=HOLD — both blocked). Surge: none. CB INACTIVE (daily=0.22%, weekly=-0.52%). Peak: $101.68.
-
-## 2026-08-25T15:19:53Z
-- Action   : SELL INTC
-- Price    : $88.32
-- Amount   : $15.13 | Shares: 0.171389
-- RSI      : 37.4 | EMA: BEARISH | BB: IN_BAND
-- RL       : HOLD conf=0.93 | null
-- Stop     : $84.84 | Target: $96.27
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal (BULLISH)
-- Reason   : Net-buy SELL signal — net buy reversed: 6.60M → -0.49M | OBV -13.6M/day | hours_held=22h | P&L: +$0.13 (+0.87%)
-
 ## 2026-08-25T14:22:30Z
 - SUMMARY: Market OPEN (10:22 ET). Buying power: $64.85. Equity positions: 2 (CRWV $88.65 ▲2.5%, INTC $88.87 ▲1.5%). Regime: normal (BULLISH — SPY $765.11 > EMA200 $760.09). Account: $95.55. No sell triggers. RSI BUY: AUR conf=2, AMKR conf=2 — BLOCKED ($64.85−$15=$49.85<$50 buffer). Surge: PFE 31.7% (count=1). CB INACTIVE (daily=0.00%, weekly=-0.74%). Peak: $101.68.
 
