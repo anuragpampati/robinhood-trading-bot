@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T19:15:00Z",
+  "updated_at": "2026-08-25T20:12:00Z",
   "buying_power": 64.85,
   "market_regime": "normal",
   "account_value": 95.42,
@@ -10,8 +10,8 @@
   "week_start_date": "2026-08-25",
   "positions": [],
   "last_actions": [
+    "NO TRADES (2026-08-25 20:12 UTC): Market CLOSED. Normal regime (BULLISH — SPY $765.85 > EMA200 $760.40). RSI BUY: RKLB rsi=23.9 conf=2 (not tradeable). RSI SELL (not held): SNAP conf=2, UBER conf=2. 17 net-buy SELL signals (not held). Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68.",
     "NO TRADES (2026-08-25 15:15 ET): Market OPEN. Normal regime (BULLISH — SPY $765.64 > EMA200 $760.35). CRWD RSI BUY conf=2 (rl=HOLD 0.906) BLOCKED (BP $64.85−$15=$49.85<$50 buffer + conflicting net-buy SELL). 0 net-buy BUY signals. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68.",
-    "NO TRADES (2026-08-25 14:14 ET): Market OPEN. Normal regime (BULLISH — SPY $765.03 > EMA200 $760.30). RKLB RSI BUY conf=2 (rl=HOLD 0.906) blocked (BP $64.85−$15=$49.85<$50 buffer). GS surge +53.7% count=1/2 (needs ≥2). 0 net-buy BUY signals. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68.",
     "SELL CRWV $15.44 @ $89.00 (2026-08-25 12:19 ET): Net-buy reversal 3.01M→0.67M | OBV -5.2M/day. P&L +2.90% (+$0.44). NO BUYS: BP $64.85−$15=$49.85<$50 buffer. RSI BUY: AVAV(rsi=21.9,conf=2), KTOS(rsi=24.8,conf=2), NOW(rsi=49.3,conf=2,rl=BUY BOOST→conf3) — blocked. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68."
   ]
 }
