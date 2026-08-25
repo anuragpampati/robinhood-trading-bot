@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-25T20:12:00Z
-- SUMMARY: Market closed (20:12 UTC). Buying power: $64.85. Equity positions: 0. Regime: normal (BULLISH — SPY $765.85 > EMA200 $760.40). RSI BUY: RKLB rsi=23.9 conf=2 (not tradeable - market closed). RSI SELL (not held): SNAP rsi=82.2 conf=2, UBER rsi=70.2 conf=2. Net-buy SELL (not held): 17 signals (INTC/CRWV/MRVL/PLTR/F/GEV/BA/CVX/DKNG/CRWD/AMAT/ROK/EQIX/ALAB/KLAC/CRDO/SNAP). Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account: $95.42, peak $101.68.
-
 ## 2026-08-25T16:22:00Z
 - SUMMARY: Market OPEN (12:22 ET). SOLD CRWV at $89.00 (+2.90%). No buys: BP $64.85−$15=$49.85<$50 buffer. RSI BUY: AVAV rsi=21.9 conf=2, KTOS rsi=24.8 conf=2, NOW rsi=49.3 conf=2 (rl=BUY BOOST→conf3) — all blocked by buffer. Net-buy SELL (not held): AMAT/CRWD/DKNG/MRVL/INTC/DELL/ALAB/KLAC/CRDO/MU. RSI SELL (not held): SNAP/HOOD/DIS. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Buying power: $64.85. Equity positions: 0. Account: $95.42, peak $101.68.
 
