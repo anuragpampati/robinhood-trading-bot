@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-25T17:11:13Z
+- SUMMARY: Market OPEN (13:11 ET). No trades. 0 RSI BUY signals, 0 net-buy BUY signals. NFLX volume surge +632.5% (OBV bearish, count=1/2 needed). 20 SELL signals — no held positions. BP $64.85 − $15 min = $49.85 < $50 buffer → no buys possible. CB INACTIVE (daily=0.14%, weekly=-0.60%). Buying power: $64.85. Equity positions: 0. Regime: normal (BULLISH SPY $765.76 > EMA200 $760.25). Account: $95.42, peak $101.68.
+
 ## 2026-08-25T16:22:00Z
 - SUMMARY: Market OPEN (12:22 ET). SOLD CRWV at $89.00 (+2.90%). No buys: BP $64.85−$15=$49.85<$50 buffer. RSI BUY: AVAV rsi=21.9 conf=2, KTOS rsi=24.8 conf=2, NOW rsi=49.3 conf=2 (rl=BUY BOOST→conf3) — all blocked by buffer. Net-buy SELL (not held): AMAT/CRWD/DKNG/MRVL/INTC/DELL/ALAB/KLAC/CRDO/MU. RSI SELL (not held): SNAP/HOOD/DIS. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Buying power: $64.85. Equity positions: 0. Account: $95.42, peak $101.68.
 

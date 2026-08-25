@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T16:22:00Z",
+  "updated_at": "2026-08-25T17:11:13Z",
   "buying_power": 64.85,
   "market_regime": "normal",
   "account_value": 95.42,
@@ -10,9 +10,9 @@
   "week_start_date": "2026-08-25",
   "positions": [],
   "last_actions": [
+    "NO TRADES (2026-08-25 13:11 ET): Market OPEN. Normal regime (BULLISH — SPY $765.76 > EMA200 $760.25). 0 RSI BUY, 0 net-buy BUY signals. NFLX vol surge +632.5% count=1/2 (OBV bearish, need ≥2 cycles). 20 SELL signals (none held). BP $64.85−$15=$49.85<$50 buffer → no buys. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68.",
     "SELL CRWV $15.44 @ $89.00 (2026-08-25 12:19 ET): Net-buy reversal 3.01M→0.67M | OBV -5.2M/day. P&L +2.90% (+$0.44). NO BUYS: BP $64.85−$15=$49.85<$50 buffer. RSI BUY: AVAV(rsi=21.9,conf=2), KTOS(rsi=24.8,conf=2), NOW(rsi=49.3,conf=2,rl=BUY BOOST→conf3) — blocked. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68.",
     "SELL INTC $15.13 @ $88.32 (2026-08-25 11:19 ET): Net-buy reversal signal (6.60M→-0.49M OBV). P&L +0.87%. NO BUYS: BP $64.85−$15=$49.85<$50 buffer. AVAV/KTOS RSI conf=2 blocked. CRWV $88.51 ▲2.34% (stop $82.68, tp $95.14). CB INACTIVE (daily=0.22%, weekly=-0.52%). Account $95.34, peak $101.68.",
-    "NO TRADES (2026-08-25 10:22 ET): Market OPEN. Normal regime (BULLISH — SPY $765.11 > EMA200 $760.09). RSI BUY: AUR conf=2 (rl=HOLD 0.922), AMKR conf=2 (rl=HOLD 0.906) — BLOCKED by $50 buffer ($64.85−$15=$49.85<$50). No sell triggers on held positions (CRWV $88.65 ▲2.5%, INTC $88.87 ▲1.5%). Net-buy SELL (not held): ISRG/AAPL/AUR/ASML/C/GE/AMAT/AEHR/GS/DELL. Surge: PFE 31.7% count=1 (needs ≥2). CB INACTIVE (daily=0.00%, weekly=-0.74%). Account $95.55, peak $101.68.",
-    "BUY INTC $15 @ $87.36 (2026-08-24 13:16 ET): RSI oversold+stabilizing (28.0≈26.4) | BB reversal from lower band | conf=2/3 | RL=HOLD 0.906. Stop $84.69, Target $96.10. Regime: normal (BULLISH). CB INACTIVE (daily=0.00%, weekly=0.00%). BP $79.85→$64.85."
+    "NO TRADES (2026-08-25 10:22 ET): Market OPEN. Normal regime (BULLISH — SPY $765.11 > EMA200 $760.09). RSI BUY: AUR conf=2 (rl=HOLD 0.922), AMKR conf=2 (rl=HOLD 0.906) — BLOCKED by $50 buffer ($64.85−$15=$49.85<$50). No sell triggers on held positions (CRWV $88.65 ▲2.5%, INTC $88.87 ▲1.5%). Net-buy SELL (not held): ISRG/AAPL/AUR/ASML/C/GE/AMAT/AEHR/GS/DELL. Surge: PFE 31.7% count=1 (needs ≥2). CB INACTIVE (daily=0.00%, weekly=-0.74%). Account $95.55, peak $101.68."
   ]
 }
