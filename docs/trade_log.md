@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-25T14:22:30Z
+- SUMMARY: Market OPEN (10:22 ET). Buying power: $64.85. Equity positions: 2 (CRWV $88.65 ▲2.5%, INTC $88.87 ▲1.5%). Regime: normal (BULLISH — SPY $765.11 > EMA200 $760.09). Account: $95.55. No sell triggers (both above ATR stops, no RSI/net-buy sell signals on held tickers). RSI BUY candidates: AUR conf=2 (rl=HOLD 0.922), AMKR conf=2 (rl=HOLD 0.906) — BLOCKED: $64.85−$15=$49.85<$50 buffer. Net-buy SELL (not held): ISRG, AAPL, AUR, ASML, C, GE, AMAT, AEHR, GS, DELL. Surge: PFE 31.7% (count=1, needs 2). CB INACTIVE (daily=0.00%, weekly=-0.74%). Peak: $101.68.
+
 ## 2026-08-24T20:17:00Z
 - SUMMARY: Market closed. Buying power: $64.85. Equity positions: 2 (CRWV, INTC). Regime: normal (BULLISH — SPY $763.46 > EMA200 $760.10). Account: $94.71. No trade triggers. CRWV $86.18 (stop $82.68, tp $95.14). INTC $87.26 (stop $84.84, tp $96.27). RSI BUY signals (not tradeable): AUR conf=2, AMKR conf=2. RSI SELL signals (not held): SNAP/DIS/TGT. CB INACTIVE (daily=0.15%, weekly=0.15%). Peak: $101.68.
 
