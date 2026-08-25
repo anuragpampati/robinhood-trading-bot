@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24",
+  "updated_at": "2026-08-25",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": null,
@@ -11,8 +11,8 @@
   "wins": null,
   "losses": null,
   "circuit_breaker_halts": 0,
-  "rl_training_samples": 543,
+  "rl_training_samples": 546,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR — backtest skipped (yfinance proxy 403, 25th+ consecutive session); prior 365d metrics retained. NO_CHANGE on all thresholds (normal win_rate=47.1% in hold band [40%,65%], n=17; momentum n=0<3; ATR avg_hold~131h>>2h)."
+  "note": "Updated by daily learning CCR — backtest skipped (yfinance proxy 403, consecutive sessions); prior 14d metrics retained. NO_CHANGE on all thresholds (n_trades_visible=1 < 3 for all strategy types; prior analysis normal win_rate=47.1% in hold band [40%,65%], n=17; momentum n<3; ATR avg_hold>>2h)."
 }

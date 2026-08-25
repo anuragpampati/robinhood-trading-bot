@@ -251,3 +251,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403, 25th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
 - RL samples: 543/200 (RL READY — +4 new rows today; 19 states in Q-table; 2.7× target)
 - Notes: Account $94.71 (-5.29% from $100 start). 2 open positions (CRWV -0.36%, INTC -0.30%, both opened today). Buying power $64.85 (buffer-constrained — $64.85-$50=$14.85, insufficient for $15 min-order). Trade log trimmed to 5 entries (last 2 days). All thresholds in hold band — NO_CHANGE. RL READY: 543 samples, 19 Q-states. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-25
+- Trades analysed: 1 closed (CRWV +2.90% normal) — log trimmed to 48h, limited history
+- Win rate: N/A overall (normal: 1/1=100% but n=1<3 threshold; momentum: n=0; surge: n=0)
+- Config changes: none (n_trades < 3 for all strategy types — insufficient data for adjustment)
+- Backtest: skipped (yfinance proxy 403); prior metrics retained: +9.29% return, 39.6% win_rate, R:R 1.78
+- RL samples: 546/200 (RL READY — target exceeded)
+- Notes: rl_collector added 3 new rows (543→546). q_table has 19 states. Trade log kept 8/8 entries (last 48h). Account $95.42, peak $101.68, buying power $64.85, 0 open positions post-CRWV sell.
