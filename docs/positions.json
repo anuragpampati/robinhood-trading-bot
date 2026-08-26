@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-26T16:18:26Z",
+  "updated_at": "2026-08-26T17:11:43Z",
   "buying_power": 80.42,
   "market_regime": "normal",
-  "account_value": 95.36,
+  "account_value": 95.39,
   "peak_value": 101.68,
   "day_start_value": 95.42,
   "day_start_date": "2026-08-26",
@@ -13,9 +13,9 @@
       "ticker": "RKLB",
       "quantity": 0.224584,
       "avg_cost": 66.79,
-      "current_price": 66.53,
-      "pnl_pct": -0.0039,
-      "value": 14.94,
+      "current_price": 66.6964,
+      "pnl_pct": -0.0014,
+      "value": 14.98,
       "entry_atr_pct": 0.0126,
       "entry_time": "2026-08-26T14:19:12Z",
       "trail_stop": 65.07,
@@ -25,8 +25,8 @@
     }
   ],
   "last_actions": [
-    "NO TRADES (2026-08-26 16:18 UTC): Market OPEN (12:18 ET). No sell triggers for RKLB (price $66.53 > stop $65.07, held ~2h < 3h min). JPM NET-BUY $50 SKIPPED ($80.42−$50=$30.42 < $50 buffer). 0 RSI BUY, 1 net-buy BUY (JPM), 0 surge. CB INACTIVE (daily=+0.06%, weekly=−0.54% gain). Account $95.36, peak $101.68.",
-    "NO TRADES (2026-08-26 15:18 UTC): Market OPEN (11:18 ET). No sell triggers for RKLB (price $66.53 > stop $65.07, held <3h). No buy signals (0 RSI BUY, 0 net-buy BUY, 0 surge). CB INACTIVE (daily=0.14%, weekly=-0.46%). Account $95.29, peak $101.68.",
+    "NO TRADES (2026-08-26 17:11 UTC): Market OPEN (13:11 ET). No sell triggers for RKLB (price $66.70 > stop $65.07, held ~2h 52m; trail/signal require ≥3h; TP $73.47 not reached). 0 RSI BUY, 0 net-buy BUY, 0 surge. CB INACTIVE (daily=+0.03%, weekly=−0.57% gain). Account $95.39, peak $101.68.",
+    "NO TRADES (2026-08-26 16:18 UTC): Market OPEN (12:18 ET). No sell triggers for RKLB (price $66.53 > stop $65.07, held ~2h < 3h minimum). JPM NET-BUY $50 SKIPPED ($80.42−$50=$30.42 < $50 buffer). 0 RSI BUY, 1 net-buy BUY (JPM), 0 surge. CB INACTIVE (daily=+0.06%, weekly=−0.54% gain). Account $95.36, peak $101.68.",
     "BUY RKLB $15.00 @ $66.76 (2026-08-26 14:19 UTC): RSI oversold+stabilizing (23.0↑24.6) | BB reversal below band. Stop $65.07 | Target $73.44. RL=HOLD 0.93 (no veto). CB INACTIVE (daily=0.0%, weekly=-0.60%). Account $95.42, peak $101.68."
   ]
 }
