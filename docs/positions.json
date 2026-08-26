@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-26T15:18:37Z",
+  "updated_at": "2026-08-26T16:18:26Z",
   "buying_power": 80.42,
   "market_regime": "normal",
-  "account_value": 95.29,
+  "account_value": 95.36,
   "peak_value": 101.68,
   "day_start_value": 95.42,
   "day_start_date": "2026-08-26",
@@ -15,7 +15,7 @@
       "avg_cost": 66.79,
       "current_price": 66.53,
       "pnl_pct": -0.0039,
-      "value": 14.87,
+      "value": 14.94,
       "entry_atr_pct": 0.0126,
       "entry_time": "2026-08-26T14:19:12Z",
       "trail_stop": 65.07,
@@ -25,8 +25,8 @@
     }
   ],
   "last_actions": [
+    "NO TRADES (2026-08-26 16:18 UTC): Market OPEN (12:18 ET). No sell triggers for RKLB (price $66.53 > stop $65.07, held ~2h < 3h min). JPM NET-BUY $50 SKIPPED ($80.42−$50=$30.42 < $50 buffer). 0 RSI BUY, 1 net-buy BUY (JPM), 0 surge. CB INACTIVE (daily=+0.06%, weekly=−0.54% gain). Account $95.36, peak $101.68.",
     "NO TRADES (2026-08-26 15:18 UTC): Market OPEN (11:18 ET). No sell triggers for RKLB (price $66.53 > stop $65.07, held <3h). No buy signals (0 RSI BUY, 0 net-buy BUY, 0 surge). CB INACTIVE (daily=0.14%, weekly=-0.46%). Account $95.29, peak $101.68.",
-    "BUY RKLB $15.00 @ $66.76 (2026-08-26 14:19 UTC): RSI oversold+stabilizing (23.0↑24.6) | BB reversal below band. Stop $65.07 | Target $73.44. RL=HOLD 0.93 (no veto). CB INACTIVE (daily=0.0%, weekly=-0.60%). Account $95.42, peak $101.68.",
-    "NO TRADES (2026-08-25 20:12 UTC): Market CLOSED. Normal regime (BULLISH — SPY $765.85 > EMA200 $760.40). RSI BUY: RKLB rsi=23.9 conf=2 (not tradeable). RSI SELL (not held): SNAP conf=2, UBER conf=2. 17 net-buy SELL signals (not held). Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68."
+    "BUY RKLB $15.00 @ $66.76 (2026-08-26 14:19 UTC): RSI oversold+stabilizing (23.0↑24.6) | BB reversal below band. Stop $65.07 | Target $73.44. RL=HOLD 0.93 (no veto). CB INACTIVE (daily=0.0%, weekly=-0.60%). Account $95.42, peak $101.68."
   ]
 }
