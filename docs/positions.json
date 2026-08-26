@@ -1,17 +1,32 @@
 {
-  "updated_at": "2026-08-25T20:12:00Z",
-  "buying_power": 64.85,
+  "updated_at": "2026-08-26T14:19:12Z",
+  "buying_power": 80.42,
   "market_regime": "normal",
   "account_value": 95.42,
   "peak_value": 101.68,
-  "day_start_value": 95.55,
-  "day_start_date": "2026-08-25",
+  "day_start_value": 95.42,
+  "day_start_date": "2026-08-26",
   "week_start_value": 94.85,
   "week_start_date": "2026-08-25",
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "RKLB",
+      "quantity": 0.22468,
+      "avg_cost": 66.76,
+      "current_price": 66.76,
+      "pnl_pct": 0.0,
+      "value": 15.0,
+      "entry_atr_pct": 0.0126,
+      "entry_time": "2026-08-26T14:19:12Z",
+      "trail_stop": 65.07,
+      "take_profit": 73.44,
+      "strategy": "normal",
+      "sell_date": null
+    }
+  ],
   "last_actions": [
+    "BUY RKLB $15.00 @ $66.76 (2026-08-26 14:19 UTC): RSI oversold+stabilizing (23.0↑24.6) | BB reversal below band. Stop $65.07 | Target $73.44. RL=HOLD 0.93 (no veto). CB INACTIVE (daily=0.0%, weekly=-0.60%). Account $95.42, peak $101.68.",
     "NO TRADES (2026-08-25 20:12 UTC): Market CLOSED. Normal regime (BULLISH — SPY $765.85 > EMA200 $760.40). RSI BUY: RKLB rsi=23.9 conf=2 (not tradeable). RSI SELL (not held): SNAP conf=2, UBER conf=2. 17 net-buy SELL signals (not held). Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68.",
-    "NO TRADES (2026-08-25 15:15 ET): Market OPEN. Normal regime (BULLISH — SPY $765.64 > EMA200 $760.35). CRWD RSI BUY conf=2 (rl=HOLD 0.906) BLOCKED (BP $64.85−$15=$49.85<$50 buffer + conflicting net-buy SELL). 0 net-buy BUY signals. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68.",
-    "SELL CRWV $15.44 @ $89.00 (2026-08-25 12:19 ET): Net-buy reversal 3.01M→0.67M | OBV -5.2M/day. P&L +2.90% (+$0.44). NO BUYS: BP $64.85−$15=$49.85<$50 buffer. RSI BUY: AVAV(rsi=21.9,conf=2), KTOS(rsi=24.8,conf=2), NOW(rsi=49.3,conf=2,rl=BUY BOOST→conf3) — blocked. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68."
+    "NO TRADES (2026-08-25 15:15 ET): Market OPEN. Normal regime (BULLISH — SPY $765.64 > EMA200 $760.35). CRWD RSI BUY conf=2 (rl=HOLD 0.906) BLOCKED (BP $64.85−$15=$49.85<$50 buffer + conflicting net-buy SELL). 0 net-buy BUY signals. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Account $95.42, peak $101.68."
   ]
 }
