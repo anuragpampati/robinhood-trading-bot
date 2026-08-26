@@ -259,3 +259,11 @@
 - Backtest: skipped (yfinance proxy 403); prior metrics retained: +9.29% return, 39.6% win_rate, R:R 1.78
 - RL samples: 546/200 (RL READY — target exceeded)
 - Notes: rl_collector added 3 new rows (543→546). q_table has 19 states. Trade log kept 8/8 entries (last 48h). Account $95.42, peak $101.68, buying power $64.85, 0 open positions post-CRWV sell.
+
+## 2026-08-26
+- Trades analysed: 1 closed trade visible in trimmed log (CRWV +2.90%, normal strategy, EMA BEARISH entry, 24h hold, signal-sell exit)
+- Win rate: 100% on 1 trade — insufficient data; INTC trade result not in log (trimmed)
+- Config changes: none (n_trades < 3 for all strategy types — normal: 1 trade, momentum: 0, surge: 0)
+- Backtest: SKIPPED — yfinance proxy 403 (recurring network block in CCR); prior metrics retained (return +9.29%, 14d, win_rate 39.6%)
+- RL samples: 547/200 — RL READY (>= 200 threshold exceeded; run python -m strategy.rl_agent --train)
+- Notes: Backtest network failure is consistent across sessions; yfinance blocked at proxy. 1 open position: RKLB ($66.76 entry, stop $65.07, TP $73.47, currently −0.88%). Account $95.32, peak $101.68.
