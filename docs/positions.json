@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T15:18:17Z",
+  "updated_at": "2026-08-27T16:12:22Z",
   "buying_power": 80.42,
   "market_regime": "normal",
   "account_value": 95.36,
@@ -10,8 +10,8 @@
   "week_start_date": "2026-08-25",
   "positions": [],
   "last_actions": [
+    "NO TRADES (2026-08-27 16:12 UTC): Market OPEN (12:12 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). SELL signals for NVDA/CRM/NOW/CRWD (not held). CB INACTIVE (daily DD≈0.02%, weekly=+0.54% gain). Account $95.36, peak $101.68.",
     "NO TRADES (2026-08-27 15:18 UTC): Market OPEN (11:18 ET). 0 positions. 0 BUY signals. SELL signals on MSFT/CRM/ALAB/NOW (not held). CB INACTIVE (daily=0.02%, weekly=+0.54% gain). Account $95.36, peak $101.68.",
-    "SELL RKLB (2026-08-27 14:19 UTC): $66.63 | -0.24% from $66.79 cost | -$0.04 P&L. Net-buy reversed -1.16M→-2.63M, OBV -3.7M/day. Held ~24h (rule c signal sell). 0 BUY signals. CB INACTIVE (daily reset, weekly=+0.56% gain). Account $95.38, peak $101.68.",
-    "NO TRADES (2026-08-26 20:12 UTC): Market CLOSED (after hours). RKLB held: $66.20 (−0.88% from $66.79 cost). Net-buy SELL signal active for RKLB — pending next market open. MSFT RSI SELL (overbought, not held). 0 BUY signals. CB INACTIVE (daily DD≈0.10%, weekly gain). Account $95.32, peak $101.68."
+    "SELL RKLB (2026-08-27 14:19 UTC): $66.63 | -0.24% from $66.79 cost | -$0.04 P&L. Net-buy reversed -1.16M→-2.63M, OBV -3.7M/day. Held ~24h (rule c signal sell). 0 BUY signals. CB INACTIVE (daily reset, weekly=+0.56% gain). Account $95.38, peak $101.68."
   ]
 }
