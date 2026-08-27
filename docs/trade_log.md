@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-27T14:19:19Z
+- Action   : SELL RKLB
+- Price    : $66.63
+- Amount   : $14.96 | Shares: 0.224584
+- RSI      : 22.8 | EMA: BEARISH | BB: IN_BAND
+- RL       : HOLD conf=0.93 | null
+- Stop     : $65.07 | Target: $73.47
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $765.95 > EMA200 $760.67)
+- Reason   : Net-buy reversed -1.16M → -2.63M | OBV -3.7M/day | held ~24h | P&L -0.24% (-$0.04)
+
 ## 2026-08-26T19:10:25Z
 - SUMMARY: Market OPEN (15:10 ET). No sell triggers for RKLB (price $66.62 > stop $65.07, TP $73.47 not reached, not in SELL signals; held ~4h 51m). BAC NET-BUY $50 SKIPPED: $80.42−$50=$30.42 < $50 cash buffer. 0 RSI BUY, 1 net-buy BUY (BAC 4d streak), 0 surge. CB INACTIVE (daily DD=0.04%, weekly=gain). Buying power: $80.42. Equity positions: 1 (RKLB $66.62 −0.25%). Regime: normal (BULLISH — SPY $766.51 > EMA200 $760.65). Account: $95.38, peak $101.68.
 
