@@ -267,3 +267,11 @@
 - Backtest: SKIPPED — yfinance proxy 403 (recurring network block in CCR); prior metrics retained (return +9.29%, 14d, win_rate 39.6%)
 - RL samples: 547/200 — RL READY (>= 200 threshold exceeded; run python -m strategy.rl_agent --train)
 - Notes: Backtest network failure is consistent across sessions; yfinance blocked at proxy. 1 open position: RKLB ($66.76 entry, stop $65.07, TP $73.47, currently −0.88%). Account $95.32, peak $101.68.
+
+## 2026-08-27
+- Trades analysed: 3 new closed since 2026-08-20 (CRWV +2.90% WIN/23h/signal-sell/BEARISH EMA; INTC +1.7% WIN/24h/net-buy-sell/BEARISH EMA; RKLB -0.25% LOSS/23h/signal-sell/BEARISH EMA); cumulative: 20 closed (10W/10L)
+- Win rate: 50.0% overall (normal: 50.0% [n=20, 10W/10L, ~+0.6% avg_pnl]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA 50.0% (7W/7L, n=14); BEARISH EMA 50.0% (3W/3L, n=6)
+- Config changes: none — RSI_OVERSOLD: win_rate=50.0% in [40%,65%] hold band (NO_CHANGE, n=20≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~120h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, recurring network block, 27+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 552/200 (RL READY — exceeded target by 2.76×; run: python -m strategy.rl_agent --train to activate Q-learning)
+- Notes: Account $95.36 (−6.4% from peak $101.68). 0 positions. BP $80.42. Regime: BULLISH EMA (SPY > EMA200). 3 small trades this week: 2 wins, 1 loss, all BEARISH EMA entry — wins on net-buy reversal exits, loss on ATR trailing stop. Market showing heavy RSI overbought signals (CRM RSI=87, CRWD RSI=83) — no buys triggered due to 0 RSI oversold setups.
