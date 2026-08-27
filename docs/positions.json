@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T18:14:17Z",
+  "updated_at": "2026-08-27T19:11:47Z",
   "buying_power": 80.42,
   "market_regime": "normal",
   "account_value": 95.36,
@@ -10,8 +10,8 @@
   "week_start_date": "2026-08-25",
   "positions": [],
   "last_actions": [
-    "NO TRADES (2026-08-27 18:14 UTC): Market OPEN (14:14 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). RSI SELL (unowned): MSFT/NVDA/CRM/PLTR/NOW/CRWD. Net-buy SELL (unowned): AUR/SOUN/COIN/MCD/AVGO/GOOGL/F/ISRG/GM. Surge tracker reset. CB INACTIVE (daily DD≈0.02%, weekly=+0.54% gain). Account $95.36, peak $101.68.",
-    "NO TRADES (2026-08-27 17:10 UTC): Market OPEN (13:10 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge count<2). Sell signals on unowned tickers (MSFT/NVDA/CRM/PLTR/TSM/NOW/CRWD+net-buy). Surge: LEU 1st seen 92.4%, CRM 1st seen 130.3% (count=1, need ≥2). CB INACTIVE (daily DD≈0.02%, weekly=+0.54% gain). Account $95.36, peak $101.68.",
-    "NO TRADES (2026-08-27 16:12 UTC): Market OPEN (12:12 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). SELL signals for NVDA/CRM/NOW/CRWD (not held). CB INACTIVE (daily DD≈0.02%, weekly=+0.54% gain). Account $95.36, peak $101.68."
+    "NO TRADES (2026-08-27 19:11 UTC): Market OPEN (15:11 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). RSI SELL on unowned: CRM/NOW/CRWD. Net-buy SELL on unowned: AUR/SOUN/ISRG/GOOGL/GM/AVGO/MCD/PLTR/F/AMAT/COIN/AEHR. CB INACTIVE (daily DD=0.02%, weekly=+0.54% gain). Account $95.36, peak $101.68.",
+    "NO TRADES (2026-08-27 18:14 UTC): Market OPEN (14:14 ET). 0 positions. 0 BUY signals. RSI SELL on unowned: MSFT/NVDA/CRM/PLTR/NOW/CRWD. Net-buy SELL: AUR/SOUN/COIN/MCD/AVGO/GOOGL/F/ISRG/GM. CB INACTIVE. Account $95.36, peak $101.68.",
+    "NO TRADES (2026-08-27 17:10 UTC): Market OPEN (13:10 ET). 0 positions. 0 BUY signals. Sell signals on unowned tickers. CB INACTIVE. Account $95.36, peak $101.68."
   ]
 }

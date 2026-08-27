@@ -1,58 +1,30 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-08-27T18:14:17Z
-- SUMMARY: Market OPEN (14:14 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). RSI SELL signals on unowned: MSFT/NVDA/CRM/PLTR/NOW/CRWD (conf≥2). Net-buy SELL: AUR/SOUN/COIN/MCD/AVGO/GOOGL/F/ISRG/GM (not held). Surge tracker reset (LEU/CRM no longer in 10%+ surge list). CB INACTIVE (daily DD≈0.02%, weekly=+0.54% gain). Buying power: $80.42. Equity positions: 0. Regime: normal (BULLISH — SPY $771.23 > EMA200 $761.08). Account: $95.36, peak $101.68.
+## 2026-08-27T19:11:47Z
+- SUMMARY: Market OPEN (15:11 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). RSI SELL on unowned: CRM (RSI 83.3)/NOW (73.1)/CRWD (82.0) conf=2. Net-buy SELL on unowned: AUR/SOUN/ISRG/GOOGL/GM/AVGO/MCD/PLTR/F/AMAT/COIN/AEHR. CB INACTIVE (daily DD=0.02%, weekly=+0.54% gain). Buying power: $80.42. Equity positions: 0. Regime: normal (BULLISH — SPY $769.65 > EMA200 $761.17). Account: $95.36, peak $101.68.
 
-## 2026-08-27T16:12:22Z
-- SUMMARY: Market OPEN (12:12 ET). No positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). No sell triggers (no positions). SELL signals for NVDA/CRM/NOW/CRWD (not held). CB INACTIVE (daily DD≈0.02%, weekly=+0.54% gain). Buying power: $80.42. Equity positions: 0. Regime: normal (BULLISH — SPY $770.64 > EMA200 $760.87). Account: $95.36, peak $101.68.
+## 2026-08-21T14:22:00Z
+- SUMMARY: Market OPEN (10:18 ET). PANIC regime: SPY RSI=25.7 < 30 — all individual stock buys suppressed. PYPL buy-volume surge +169.1% count=1/2 (not confirmed, needs 2 consecutive cycles). 0 positions held, no sells needed. Buying power: $94.85 (BA proceeds settled today). RSI SELL conf≥2 (not held): COIN(RSI=72.4), MRVL(RSI=71.6). Net-buy SELL (not held): QQQ, BA, QCOM, KTOS, DKNG, UUUU, RKLB, AVAV, ROK, SNOW, CRWV, ALAB, ASTS, EQIX, SYM, MU, JPM, AUR, TSLA, WFC. CB INACTIVE (daily=0.00%, weekly=2.97%). Account: $94.85. Peak: $101.68. Regime: normal/PANIC (SPY $762.65 > EMA200 $759.18 but RSI=25.7).
 
-## 2026-08-27T15:18:17Z
-- SUMMARY: Market OPEN (11:18 ET). No positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). No sell triggers (no positions). SELL signals for MSFT/CRM/ALAB/NOW (not held). CB INACTIVE (daily DD≈0.02%, weekly=+0.54% gain). Buying power: $80.42 (cash $95.36, ~$14.94 unsettled). Equity positions: 0. Regime: normal (BULLISH — SPY $770.39 > EMA200 $760.77). Account: $95.36, peak $101.68.
+## 2026-08-19T20:11:13Z
+- SUMMARY: Market CLOSED (16:08 ET). No trades — market closed. BA held @ $222.23 (trail_stop=$219.80, PnL=-0.11%). RSI BUY signals (market closed — not traded): AVGO(RSI=19.9 conf=2 RL=HOLD 0.93), GE(RSI=30.0 conf=2 RL=BUY 0.928). Net-BUY (not traded): ONDS (4d streak, score=41.8). Surge 10%+: MBLY(+13.7%), DIS(+704%) — skipped (market closed). RSI SELL (not held): TSLA(RSI=71.2 conf=2), PFE(RSI=74.4 conf=2). Net-buy SELL (not held): NVDA, WMT, C, AMKR, JPM, MSFT, SPY, ISRG, UUUU. CB INACTIVE (daily=0.05%, weekly=2.27%). Regime: normal (BULLISH SPY $769.06 > EMA200 $758.69). Buying power: $50.00. Equity positions: 1 (BA). Account: ~$95.53. Peak: $101.68.
 
-## 2026-08-27T14:19:19Z
-- Action   : SELL RKLB
-- Price    : $66.63
-- Amount   : $14.96 | Shares: 0.224584
-- RSI      : 22.8 | EMA: BEARISH | BB: IN_BAND
-- RL       : HOLD conf=0.93 | null
-- Stop     : $65.07 | Target: $73.47
+## 2026-08-19T19:10:19Z
+- SUMMARY: Market OPEN (15:10 ET). No trades — buying power at minimum ($50.00). BA held @ $221.99 > trail_stop $219.80 (no ratchet, PnL=-0.22%). RSI BUYs: INTC(RSI=26.5 conf=2 RL=HOLD 0.906), AVGO(RSI=20.8 conf=2 RL=HOLD 0.93), WFC(RSI=28.7 conf=2 RL=BUY 0.928), VRT(RSI=24.5 conf=2 RL=HOLD 0.93), KLAC(RSI=26.8 conf=2 RL=HOLD 0.906) — all skipped (BP=$50.00 at floor). NFLX surge +11.8% count=1/2 (not confirmed). MRVL removed from surge tracker (no longer 10%+ surge). CB INACTIVE (daily=0.14%, weekly=2.35%). Regime: normal (BULLISH SPY $769.51 > EMA200 $758.58). Account: ~$95.48. Peak: $101.68.
+
+## 2026-08-19T17:14:00Z
+- SUMMARY: Market open (13:14 ET). No trades executed. Buying power at $50 floor — AVAV (RSI conf=2) and ROK (RSI conf=2) skipped: BP=$50 would breach $50 cash buffer. BA held: $220.95 > trail_stop $219.80. TSLA surge +191.9% count=1/2 (not confirmed). Net-buy SELL signals (not held): C, JPM, MSFT, GOOGL, MBLY, RIVN, CRWD, UUUU. RSI SELL (not held): PFE, CVX, TGT, COIN, JNJ. CB INACTIVE (daily 0.34%, weekly 2.55%). Account: ~$95.26. Peak: $101.68. Regime: normal (SPY RSI=43.1).
+
+## 2026-08-19T15:19:34Z
+- Action   : BUY BA
+- Price    : $222.47
+- Amount   : $45.58 | Shares: 0.204880
+- RSI      : 27.1 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (signal conf 2→3)
+- Stop     : $219.80 | Target: $244.72
 - Strategy : normal | Sell date: ATR/signal
-- Regime   : normal (BULLISH — SPY $765.95 > EMA200 $760.67)
-- Reason   : Net-buy reversed -1.16M → -2.63M | OBV -3.7M/day | held ~24h | P&L -0.24% (-$0.04)
+- Regime   : normal (BULLISH — SPY $772.19 > EMA200 $758.12, RSI=50.6)
+- Reason   : RSI oversold+stabilizing (28.5≈27.1) | BB reversal: returning from band | RL BOOST conf=0.928 | MODERATE BUY $45.58 (max after $50 buffer). CB INACTIVE (daily 0.00%, weekly 2.22%).
 
-## 2026-08-26T19:10:25Z
-- SUMMARY: Market OPEN (15:10 ET). No sell triggers for RKLB (price $66.62 > stop $65.07, TP $73.47 not reached, not in SELL signals; held ~4h 51m). BAC NET-BUY $50 SKIPPED: $80.42−$50=$30.42 < $50 cash buffer. 0 RSI BUY, 1 net-buy BUY (BAC 4d streak), 0 surge. CB INACTIVE (daily DD=0.04%, weekly=gain). Buying power: $80.42. Equity positions: 1 (RKLB $66.62 −0.25%). Regime: normal (BULLISH — SPY $766.51 > EMA200 $760.65). Account: $95.38, peak $101.68.
-
-## 2026-08-26T17:11:43Z
-- SUMMARY: Market OPEN (13:11 ET). No sell triggers for RKLB (price $66.70 > stop $65.07, held ~2h 52m; trail/signal require ≥3h; take-profit $73.47 not reached). No buy signals: 0 RSI BUY, 0 net-buy BUY, 0 surge. Available to spend $30.42 ($80.42−$50 buffer). CB INACTIVE (daily=+0.03%, weekly=−0.57% gain). Buying power: $80.42. Equity positions: 1 (RKLB $66.70 −0.1%). Regime: normal (BULLISH — SPY $764.72 > EMA200 $760.54). Account: $95.39, peak $101.68.
-
-## 2026-08-26T16:18:26Z
-- SUMMARY: Market OPEN (12:18 ET). No trades. No sell triggers for RKLB (price $66.53 > stop $65.07, held ~2h < 3h minimum). JPM NET-BUY $50 SKIPPED: $80.42−$50=$30.42 < $50 cash buffer. 0 RSI BUY (conf≥2), 1 net-buy BUY (JPM 4d streak), 0 surge. CB INACTIVE (daily=+0.06%, weekly=−0.54% gain). Buying power: $80.42. Equity positions: 1 (RKLB $66.53 −0.4%). Regime: normal (BULLISH — SPY $764.91 > EMA200 $760.50). Account: $95.36, peak $101.68.
-
-## 2026-08-26T14:19:12Z
-- Action   : BUY RKLB
-- Price    : $66.76
-- Amount   : $15.00 | Shares: 0.22468
-- RSI      : 24.6 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : HOLD conf=0.93 | null
-- Stop     : $65.07 | Target: $73.44
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal (BULLISH — SPY $765.85 > EMA200 $760.40)
-- Reason   : RSI oversold+stabilizing (23.0↑24.6) | BB reversal: 0.17→0.19 (returning from band)
-
-## 2026-08-25T16:22:00Z
-- SUMMARY: Market OPEN (12:22 ET). SOLD CRWV at $89.00 (+2.90%). No buys: BP $64.85−$15=$49.85<$50 buffer. RSI BUY: AVAV rsi=21.9 conf=2, KTOS rsi=24.8 conf=2, NOW rsi=49.3 conf=2 (rl=BUY BOOST→conf3) — all blocked by buffer. Net-buy SELL (not held): AMAT/CRWD/DKNG/MRVL/INTC/DELL/ALAB/KLAC/CRDO/MU. RSI SELL (not held): SNAP/HOOD/DIS. Surge: none. CB INACTIVE (daily=0.14%, weekly=-0.60%). Buying power: $64.85. Equity positions: 0. Account: $95.42, peak $101.68.
-
-## 2026-08-25T16:19:43Z
-- Action   : SELL CRWV
-- Price    : $89.00
-- Amount   : $15.44 | Shares: 0.173423
-- RSI      : 47.1 | EMA: BEARISH | BB: IN_BAND
-- RL       : null conf=null | null
-- Stop     : $86.92 (ratcheted) | Target: $95.14
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal (BULLISH — SPY $765.44 > EMA200 $760.19)
-- Reason   : Net-buy reversal: 3.01M→0.67M | OBV -5.2M/day | P&L +2.90% (+$0.44)
-
-## 2026-08-25T14:22:30Z
-- SUMMARY: Market OPEN (10:22 ET). Buying power: $64.85. Equity positions: 2 (CRWV $88.65 ▲2.5%, INTC $88.87 ▲1.5%). Regime: normal (BULLISH — SPY $765.11 > EMA200 $760.09). Account: $95.55. No sell triggers. RSI BUY: AUR conf=2, AMKR conf=2 — BLOCKED ($64.85−$15=$49.85<$50 buffer). Surge: PFE 31.7% (count=1). CB INACTIVE (daily=0.00%, weekly=-0.74%). Peak: $101.68.
+## 2026-08-19T14:18:01Z
+- SUMMARY: Market open (10:18 ET, new day — day_start reset to $95.58). Regime: normal/PANIC (SPY RSI=29.48 < 30 — all buys suppressed except confirmed surge/intraday_surge). NO BUYS: PANIC regime active; CVX surge +48.8% count=1/2 (needs 2 consecutive cycles for confirmation). NO SELLS: No positions held. RSI BUY: SPY conf=2 RL-BOOST (rl_action=BUY conf=0.928) — suppressed by panic regime. RSI SELL (not held): JNJ(RSI=75.0), GE(71.7), XOM(75.3), CVX(80.3). Net-buy BUY suppressed: LRCX(4d streak), GS(4d streak). Net-buy SELL (not held): CRWV, MRNA, CRDO, NBIS, ORCL, DELL, SBUX, VRT, MCD. Surge tracker: CVX first seen (count=1). CB INACTIVE (daily 0.00% / weekly 2.22%). Buying power: $95.58. Equity positions: 0. Account: $95.58. Peak: $101.68.
