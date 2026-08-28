@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-28T17:16:39Z",
-  "buying_power": 65.36,
+  "updated_at": "2026-08-28T18:13:56Z",
+  "buying_power": 50.36,
   "market_regime": "normal",
-  "account_value": 95.36,
+  "account_value": 95.40,
   "peak_value": 101.68,
   "day_start_value": 95.36,
   "day_start_date": "2026-08-28",
@@ -11,11 +11,11 @@
   "positions": [
     {
       "ticker": "HOOD",
-      "quantity": 0.14197,
-      "avg_cost": 105.66,
-      "current_price": 105.66,
-      "pnl_pct": 0.0,
-      "value": 15.0,
+      "quantity": 0.141978,
+      "avg_cost": 105.65,
+      "current_price": 105.30,
+      "pnl_pct": -0.0033,
+      "value": 14.95,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T17:16:33Z",
       "trail_stop": 101.86,
@@ -25,22 +25,36 @@
     },
     {
       "ticker": "BE",
-      "quantity": 0.071,
-      "avg_cost": 211.26,
-      "current_price": 211.26,
-      "pnl_pct": 0.0,
-      "value": 15.0,
+      "quantity": 0.071014,
+      "avg_cost": 211.23,
+      "current_price": 212.28,
+      "pnl_pct": 0.0050,
+      "value": 15.07,
       "entry_atr_pct": 0.019,
       "entry_time": "2026-08-28T17:16:39Z",
       "trail_stop": 203.23,
       "take_profit": 232.39,
       "strategy": "normal",
       "sell_date": null
+    },
+    {
+      "ticker": "PYPL",
+      "quantity": 0.27875,
+      "avg_cost": 53.81,
+      "current_price": 53.865,
+      "pnl_pct": 0.0010,
+      "value": 15.02,
+      "entry_atr_pct": 0.018,
+      "entry_time": "2026-08-28T18:13:56Z",
+      "trail_stop": 51.87,
+      "take_profit": 59.19,
+      "strategy": "normal",
+      "sell_date": null
     }
   ],
   "last_actions": [
+    "BUY PYPL $15 @ $53.81 (2026-08-28 18:13 UTC): RSI BUY conf=2, RSI=9.63 (extreme oversold) | rl_action=HOLD | ATR stop $51.87 | Target $59.19. Market OPEN (14:13 ET). Regime: normal (BULLISH).",
     "BUY HOOD $15 @ $105.66 (2026-08-28 17:16 UTC): RSI BUY conf=2 | 🤖 RL BOOST (conf→3) | ATR stop $101.86 | Target $116.23. Market OPEN (13:16 ET). Regime: normal (BULLISH).",
-    "BUY BE $15 @ $211.26 (2026-08-28 17:16 UTC): RSI BUY conf=2 | 🤖 RL BOOST (conf→3) | ATR stop $203.23 | Target $232.39. Market OPEN (13:16 ET). Regime: normal (BULLISH).",
-    "NO TRADES (2026-08-28 16:12 UTC): Market OPEN (12:12 ET). 0 positions. XOM RSI BUY conf=2 SKIPPED — RL BOOST (conf→3) | $95.36−$50=$45.36<$50 cash buffer. SBUX surge 31.7% count=1 (needs ≥2). RSI SELL unowned: AAPL(RSI=73.7)/MSFT(RSI=79.7)/CRM(RSI=88.0)/PLTR(RSI=70.1)/NOW(RSI=80.6) conf=2. Net-buy SELL: AMKR/GEV/AMAT/JNJ/MRVL (not held). CB INACTIVE (daily=0.0%, weekly=-0.54% gain). Account $95.36, peak $101.68."
+    "BUY BE $15 @ $211.26 (2026-08-28 17:16 UTC): RSI BUY conf=2 | 🤖 RL BOOST (conf→3) | ATR stop $203.23 | Target $232.39. Market OPEN (13:16 ET). Regime: normal (BULLISH)."
   ]
 }

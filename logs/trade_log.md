@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-28T18:13:56Z
+- Action   : BUY PYPL
+- Price    : $53.81
+- Amount   : $15.00 | Shares: 0.27875
+- RSI      : 9.63 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.93 | null
+- Stop     : $51.87 | Target: $59.19
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $769.54 > EMA200 $761.70)
+- Reason   : RSI extreme oversold (9.63) | price below BB lower band
+
 ## 2026-08-28T17:16:39Z
 - Action   : BUY BE
 - Price    : $211.26
