@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-28T14:20:27Z
+- SUMMARY: Market OPEN (10:20 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). RSI SELL on unowned: MSFT(RSI=72.6)/NVDA(RSI=71.4)/CRM(RSI=86.7)/ALAB(RSI=70.5)/NOW(RSI=76.4)/CRWD(RSI=81.1) conf=2. Net-buy SELL: GE/AUR/SNOW/ISRG/MCD/SOUN/GM/F/AEHR/GOOGL (not held). Surge tracker cleared (PYPL stale). CB INACTIVE (daily=0.0%, weekly=-0.54% gain). Buying power: $95.36. Equity positions: 0. Regime: normal (BULLISH — SPY $771.07 > EMA200 $761.31). Account: $95.36, peak $101.68.
+
 ## 2026-08-27T18:14:17Z
 - SUMMARY: Market OPEN (14:14 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). RSI SELL signals on unowned: MSFT/NVDA/CRM/PLTR/NOW/CRWD (conf≥2). Net-buy SELL: AUR/SOUN/COIN/MCD/AVGO/GOOGL/F/ISRG/GM (not held). Surge tracker reset (LEU/CRM no longer in 10%+ surge list). CB INACTIVE (daily DD≈0.02%, weekly=+0.54% gain). Buying power: $80.42. Equity positions: 0. Regime: normal (BULLISH — SPY $771.23 > EMA200 $761.08). Account: $95.36, peak $101.68.
 
