@@ -1,5 +1,27 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-28T17:16:39Z
+- Action   : BUY BE
+- Price    : $211.26
+- Amount   : $15.00 | Shares: 0.071
+- RSI      : 45.4 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.974 | BOOST (conf 2→3)
+- Stop     : $203.23 | Target: $232.39
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $769.69 > EMA200 $761.62)
+- Reason   : BB reversal: 0.01→0.07 (returning from band) | EMA bullish crossover
+
+## 2026-08-28T17:16:33Z
+- Action   : BUY HOOD
+- Price    : $105.66
+- Amount   : $15.00 | Shares: 0.14197
+- RSI      : 43.3 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.974 | BOOST (conf 2→3)
+- Stop     : $101.86 | Target: $116.23
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $769.69 > EMA200 $761.62)
+- Reason   : BB reversal: -0.14→-0.07 (returning from band) | EMA bullish crossover
+
 ## 2026-08-28T16:12:49Z
 - SUMMARY: Market OPEN (12:12 ET). 0 positions. XOM RSI BUY conf=2 SKIPPED — RL BOOST (conf→3) | $95.36−$50=$45.36<$50 cash buffer. SBUX surge 31.7% count=1 (needs ≥2, tracker updated). RSI SELL unowned: AAPL(RSI=73.7)/MSFT(RSI=79.7)/CRM(RSI=88.0)/PLTR(RSI=70.1)/NOW(RSI=80.6) conf=2. Net-buy SELL unowned: AMKR/GEV/AMAT/JNJ/MRVL. CB INACTIVE (daily=0.0%, weekly=−0.54% gain). Buying power: $95.36. Equity positions: 0. Regime: normal (BULLISH — SPY $771.08 > EMA200 $761.54). Account: $95.36, peak $101.68.
 

@@ -1,5 +1,27 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-28T17:16:39Z
+- Action   : BUY BE
+- Price    : $211.26
+- Amount   : $15.00 | Shares: 0.071
+- RSI      : 45.4 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.974 | BOOST (conf 2→3)
+- Stop     : $203.23 | Target: $232.39
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $769.69 > EMA200 $761.62)
+- Reason   : BB reversal: 0.01→0.07 (returning from band) | EMA bullish crossover
+
+## 2026-08-28T17:16:33Z
+- Action   : BUY HOOD
+- Price    : $105.66
+- Amount   : $15.00 | Shares: 0.14197
+- RSI      : 43.3 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.974 | BOOST (conf 2→3)
+- Stop     : $101.86 | Target: $116.23
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal (BULLISH — SPY $769.69 > EMA200 $761.62)
+- Reason   : BB reversal: -0.14→-0.07 (returning from band) | EMA bullish crossover
+
 ## 2026-08-28T15:19:34Z
 - SUMMARY: Market OPEN (11:18 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). RSI SELL on unowned: AAPL(RSI=72.5)/MSFT(RSI=81.2)/CRM(RSI=89.1)/META(RSI=70.7)/PLTR(RSI=70.9)/ORCL(RSI=71.7)/NOW(RSI=83.0) conf=2. Net-buy SELL: AMKR/JNJ/GEV/CVX/AMAT (not held). No positions to sell. No buy candidates. CB INACTIVE (daily=0.0%, weekly=-0.54% gain). Buying power: $95.36. Equity positions: 0. Regime: normal (BULLISH — SPY $774.96 > EMA200 $761.45). Account: $95.36, peak $101.68.
 
