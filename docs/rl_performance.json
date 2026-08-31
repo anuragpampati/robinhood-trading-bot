@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-31",
   "backtest_days": 14,
   "strategy_return": 0.0929,
   "spy_return": null,
@@ -11,8 +11,8 @@
   "wins": null,
   "losses": null,
   "circuit_breaker_halts": 0,
-  "rl_training_samples": 558,
+  "rl_training_samples": 561,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR — backtest skipped (yfinance proxy 403, recurring network block); prior 14d metrics retained. NO_CHANGE: 0 closed trades in last 30 log entries (all positions open), n_trades < 3 for all strategy types — thresholds unchanged."
+  "note": "Updated by daily learning CCR — backtest skipped (yfinance proxy 403, recurring network block); prior 14d metrics retained. NO_CHANGE: 0 closed trades in last 30 log entries (all 3 positions still open), n_trades < 3 for all strategy types — thresholds unchanged."
 }

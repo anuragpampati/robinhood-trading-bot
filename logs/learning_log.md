@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-08-31
+- Trades analysed: 0 closed pairs (3 open positions: PYPL -2.15%, HOOD -0.80%, BE -2.36%; no complete BUY→SELL round-trips in last 30 log entries)
+- Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
+- Config changes: none — n_trades < 3 for all strategy types; NO_CHANGE (insufficient data for any threshold adjustment)
+- Backtest: SKIPPED — yfinance proxy blocked (403, recurring); prior metrics retained (+9.29% return, 39.6% win rate, R:R 1.78, 227 trades)
+- RL samples: 561/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: Account $94.56, buying power $50.36 (only $0.36 above buffer — no new buys possible). All 3 positions slightly underwater but above stop-loss levels. BE close to ATR stop ($203.23). Regime: normal (BULLISH EMA). Trade log trimmed: 1 entry remains. RL exceeds 200 target — run: python -m strategy.rl_agent --train to activate Q-learning.
+
 ## 2026-08-28
 - Trades analysed: 0 closed pairs (4 open positions: PYPL, HOOD, BE [opened today], RKLB [opened 2026-08-26, last trimmed entry]; no complete BUY→SELL round-trips in last 30 log entries)
 - Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
