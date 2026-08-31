@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-28T20:15:00Z",
+  "updated_at": "2026-08-31T14:18:46Z",
   "buying_power": 50.36,
   "market_regime": "normal",
-  "account_value": 95.08,
+  "account_value": 93.91,
   "peak_value": 101.68,
-  "day_start_value": 95.36,
-  "day_start_date": "2026-08-28",
-  "week_start_value": 94.85,
-  "week_start_date": "2026-08-25",
+  "day_start_value": 93.91,
+  "day_start_date": "2026-08-31",
+  "week_start_value": 93.91,
+  "week_start_date": "2026-08-31",
   "positions": [
     {
       "ticker": "PYPL",
@@ -28,7 +28,7 @@
       "quantity": 0.141978,
       "avg_cost": 105.65,
       "current_price": 104.27,
-      "pnl_pct": -0.0131,
+      "pnl_pct": -0.013,
       "value": 14.80,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T17:16:33Z",
@@ -41,9 +41,9 @@
       "ticker": "BE",
       "quantity": 0.071014,
       "avg_cost": 211.23,
-      "current_price": 210.66,
-      "pnl_pct": -0.0027,
-      "value": 14.96,
+      "current_price": 211.72,
+      "pnl_pct": 0.002,
+      "value": 15.03,
       "entry_atr_pct": 0.019,
       "entry_time": "2026-08-28T17:16:39Z",
       "trail_stop": 203.23,
@@ -53,10 +53,10 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-08-31T14:18:46Z: Market OPEN (10:18 ET). Buying power $50.36 — only $0.36 above $50 buffer, insufficient for new buys (min $15). 3 positions held (PYPL, HOOD, BE). Regime: normal (BULLISH). RSI BUY signals (NVTS conf=2, IREN conf=2, MRVL conf=2) — cannot execute. No exit conditions met.",
     "NO TRADE 2026-08-28T20:15:00Z: Market CLOSED (after hours). Buying power $50.36. 3 positions held (PYPL, HOOD, BE). Regime: normal (BULLISH). RSI BUY signals detected (PYPL, KLAC, MRVL, IREN, NVTS) — cannot execute, market closed.",
     "NO TRADE 2026-08-28T19:13:57Z: Market OPEN, buying power $50.36 < $50 buffer + $15 min order. 3 positions held <3h. Regime: normal (BULLISH). No exits triggered.",
     "BUY PYPL $15 @ $53.82 (2026-08-28 18:13 UTC): RSI BUY conf=2, RSI=9.63 (extreme oversold) | rl_action=HOLD | ATR stop $51.87 | Target $59.20. Market OPEN (14:13 ET). Regime: normal (BULLISH).",
-    "BUY HOOD $15 @ $105.66 (2026-08-28 17:16 UTC): RSI BUY conf=2 | RL BOOST (conf→3) | ATR stop $101.86 | Target $116.22. Market OPEN (13:16 ET). Regime: normal (BULLISH).",
-    "BUY BE $15 @ $211.26 (2026-08-28 17:16 UTC): RSI BUY conf=2 | RL BOOST (conf→3) | ATR stop $203.23 | Target $232.35. Market OPEN (13:16 ET). Regime: normal (BULLISH)."
+    "BUY HOOD $15 @ $105.66 (2026-08-28 17:16 UTC): RSI BUY conf=2 | RL BOOST (conf→3) | ATR stop $101.86 | Target $116.22. Market OPEN (13:16 ET). Regime: normal (BULLISH)."
   ]
 }

@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-08-31T14:18:46Z
+- SUMMARY: Market OPEN (10:18 ET). No trades executed. Buying power: $50.36 (only $0.36 above $50 buffer — insufficient for any new buy, min $15). Equity positions: 3 (PYPL, HOOD, BE). Regime: normal (BULLISH — SPY $769.29 > EMA200). Account: $93.91. Circuit breaker: INACTIVE (day/week reset). RSI BUY signals (NVTS conf=2, IREN conf=2, MRVL conf=2) — cannot buy, insufficient capital. MRVL also in net-sell. RSI SELL NOW (conf=2, RSI=80.7) — not held. No exit conditions met on held positions (all above trail stops, no take-profit reached).
+
 ## 2026-08-28T20:15:00Z
 - SUMMARY: Market CLOSED (after hours). No trades placed. Buying power: $50.36. Equity positions: 3 (PYPL, HOOD, BE). Regime: normal (BULLISH — SPY $769.39 > EMA200 $761.85). Account: $95.08. Signals: RSI BUY (PYPL conf=2, KLAC conf=2, MRVL conf=2, IREN conf=2, NVTS conf=2) — cannot execute, market closed. RSI SELL NOW conf=2 — not held.
 
