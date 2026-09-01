@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-01T14:19:40Z",
-  "buying_power": 64.48,
+  "updated_at": "2026-09-01T15:20:00Z",
+  "buying_power": 50.36,
   "market_regime": "normal",
-  "account_value": 94.06,
+  "account_value": 94.17,
   "peak_value": 101.68,
   "day_start_value": 94.06,
   "day_start_date": "2026-09-01",
@@ -13,9 +13,9 @@
       "ticker": "PYPL",
       "quantity": 0.278707,
       "avg_cost": 53.82,
-      "current_price": 52.595,
-      "pnl_pct": -0.0228,
-      "value": 14.66,
+      "current_price": 52.53,
+      "pnl_pct": -0.024,
+      "value": 14.64,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T18:13:56Z",
       "trail_stop": 51.87,
@@ -27,9 +27,9 @@
       "ticker": "HOOD",
       "quantity": 0.141978,
       "avg_cost": 105.65,
-      "current_price": 105.125,
-      "pnl_pct": -0.0050,
-      "value": 14.92,
+      "current_price": 106.00,
+      "pnl_pct": 0.0033,
+      "value": 15.05,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T17:16:33Z",
       "trail_stop": 101.86,
@@ -39,10 +39,10 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-01T15:20:00Z: Market OPEN (11:20 ET). RSI SELL signals (AAPL conf=2, CVX conf=2) — not held. No BUY signals. Buying power $50.36 ($0.36 above $50 buffer — too small for any buy). 2 positions: PYPL $52.53 -2.4%, HOOD $106.00 +0.3%. No stop/take-profit/ATR-stop triggers. Regime: normal (BULLISH). Circuit breaker INACTIVE.",
     "SELL BE $14.12 @ $198.79 (2026-09-01 14:19 UTC): ATR trailing stop hit ($198.79 ≤ $203.23) + 5% stop-loss ($198.79 ≤ $200.67). P&L ≈ -5.9%. Regime: normal (BULLISH). Order ID: 6a96dedf-b23a-46a5-9b16-bb99b6f99897.",
     "NO TRADE 2026-09-01T14:19:40Z: Market OPEN (10:19 ET). No buy signals. 2 positions held (PYPL $52.60 -2.3%, HOOD $105.13 -0.5%). Buying power ~$64.48. Regime: normal (BULLISH). Circuit breaker INACTIVE.",
     "NO TRADE 2026-08-31T20:11:32Z: Market CLOSED (after hours). Buying power $50.36. 3 positions held (PYPL $52.67 -2.15%, HOOD $104.81 -0.80%, BE $206.24 -2.36%). Regime: normal (BULLISH). Circuit breaker INACTIVE.",
-    "NO TRADE 2026-08-31T19:11:00Z: Market OPEN (15:11 ET). Buying power $50.36 — only $0.36 above $50 buffer, insufficient for new buys (min $15). 3 positions held (PYPL $53.20, HOOD $105.07, BE $203.87). BE WARNING: $203.87 only $0.64 above ATR stop $203.23.",
     "BUY PYPL $15 @ $53.82 (2026-08-28 18:13 UTC): RSI BUY conf=2, RSI=9.63 (extreme oversold) | ATR stop $51.87 | Target $59.20. Regime: normal (BULLISH)."
   ]
 }
