@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "timestamp": "2026-09-01T19:09:20.974241+00:00",
   "mode": "full_universe",
   "universe_size": 503,
@@ -1434,6 +1435,14 @@
       "rl_confidence": null
     }
   ],
+=======
+  "timestamp": "2026-09-01T19:11:25.118840+00:00",
+  "mode": "quick",
+  "universe_size": 103,
+  "market_open": true,
+  "market_regime": "normal",
+  "rsi_signals": [],
+>>>>>>> Stashed changes
   "fib_targets": {
     "RKLB": 92,
     "ASTS": 79,
@@ -1564,6 +1573,7 @@
     "training_samples": 561
   },
   "net_buy_buy_signals": [],
+<<<<<<< Updated upstream
   "net_buy_sell_signals": [
     {
       "ticker": "LH",
@@ -1656,5 +1666,8 @@
       "reason": "Net buy reversed: 0.99M \u2192 -2.25M | OBV -1.5M/day"
     }
   ],
+=======
+  "net_buy_sell_signals": [],
+>>>>>>> Stashed changes
   "surge_signals": []
 }
