@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-01T20:12:32Z
+- SUMMARY: Market CLOSED (16:12 ET). ⚠️ REGIME SHIFT: now BEARISH_EMA (SPY $761.65 fell below EMA200 $762.12). 10 RSI BUY signals (all conf=2/3, blocked by bearish_ema 3/3 requirement): IWM RSI=20.6, SOFI RSI=22.2, AMAT RSI=25.3, LRCX RSI=29.6, RDW RSI=27.1, ROK RSI=24.8, ONDS RSI=18.9, KTOS RSI=25.6, EOSE RSI=25.7, NVTS RSI=24.6. 0 net-buy BUY signals. 10 net-buy SELL signals (GE, DIS, JPM, CIFR, AUR, BA, EQIX, NVTS, BAC, GOOGL) + CVX RSI SELL — none held. No sell triggers (PYPL trail $51.87 not hit @ $52.43, HOOD trail $101.86 not hit @ $103.49). Buying power: $50.36. 2 positions: PYPL $52.43 (-2.6%, stop=$51.87), HOOD $103.49 (-2.0%, stop=$101.86). Circuit breaker INACTIVE (daily -0.30%, weekly -0.14%). Account: $93.78.
+
 ## 2026-09-01T18:12:00Z
 - SUMMARY: Market OPEN (14:12 ET). No trades executed. No sell triggers (PYPL trail $51.87 not hit @ $52.81; HOOD trail $101.86 not hit @ $103.49). RSI SELL signals: QCOM (conf=2, RSI=73.4), AI (conf=2, RSI=71.9) — not held. 0 net-buy BUY signals. Buying power: $50.36 ($0.36 above $50 buffer — insufficient for any buy ≥$15). Surge: TSLA count=1 (needs 2, buy_surge_pct=10.68%). 2 positions: PYPL $52.81 (-1.9%, stop=$51.87), HOOD $103.49 (-2.0%, stop=$101.86). Regime: normal (BULLISH, SPY $766.93 above EMA200 $762.11). Circuit breaker INACTIVE (daily -0.18%, weekly -0.02%). Account: $93.89.
 
