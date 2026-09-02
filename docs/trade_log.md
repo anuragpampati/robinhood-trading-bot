@@ -1,5 +1,14 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-02T14:21:00Z
+- SUMMARY: Market OPEN (10:21 ET). NO TRADES. REGIME: BEARISH_EMA (SPY $761.25 below EMA200 $762.22). 10 RSI BUY signals (all conf=2/3, rl=HOLD — no RL BOOST, blocked by bearish_ema 3/3 requirement): IWM RSI=19.3, SOFI RSI=22.4, AMAT RSI=27.0, LRCX RSI=29.6, RDW RSI=25.4, ROK RSI=24.8, ONDS RSI=18.9, KTOS RSI=25.6, EOSE RSI=26.1, NVTS RSI=24.6. 0 net-buy BUY signals. 0 surge signals. ATR trail stops: PYPL $53.47 > $51.87 (OK), HOOD $106.07 > $101.86 (OK). Take-profit: PYPL $53.47 < $59.20 (OK), HOOD $106.07 < $116.22 (OK). No signal SELL on held tickers. Circuit breaker INACTIVE (daily 0.0%, weekly -0.57%). Buying power: $64.48. 2 positions: PYPL $53.47 (-0.65%, stop=$51.87), HOOD $106.07 (+0.40%, stop=$101.86). Account: $94.45.
+
+## 2026-09-01T20:12:32Z
+- SUMMARY: Market CLOSED (16:12 ET). ⚠️ REGIME SHIFT: now BEARISH_EMA (SPY $761.65 fell below EMA200 $762.12). 10 RSI BUY signals (all conf=2/3, blocked by bearish_ema 3/3 requirement): IWM RSI=20.6, SOFI RSI=22.2, AMAT RSI=25.3, LRCX RSI=29.6, RDW RSI=27.1, ROK RSI=24.8, ONDS RSI=18.9, KTOS RSI=25.6, EOSE RSI=25.7, NVTS RSI=24.6. 0 net-buy BUY signals. 10 net-buy SELL signals (GE, DIS, JPM, CIFR, AUR, BA, EQIX, NVTS, BAC, GOOGL) + CVX RSI SELL — none held. No sell triggers (PYPL trail $51.87 not hit @ $52.43, HOOD trail $101.86 not hit @ $103.49). Buying power: $50.36. 2 positions: PYPL $52.43 (-2.6%, stop=$51.87), HOOD $103.49 (-2.0%, stop=$101.86). Circuit breaker INACTIVE (daily -0.30%, weekly -0.14%). Account: $93.78.
+
+## 2026-08-28T14:20:27Z
+- SUMMARY: Market OPEN (10:20 ET). 0 positions. 0 BUY signals (net_buy_buy=0, RSI BUY=0, surge=0). RSI SELL on unowned: MSFT(RSI=72.6)/NVDA(RSI=71.4)/CRM(RSI=86.7)/ALAB(RSI=70.5)/NOW(RSI=76.4)/CRWD(RSI=81.1) conf=2. Net-buy SELL: GE/AUR/SNOW/ISRG/MCD/SOUN/GM/F/AEHR/GOOGL (not held). Surge tracker cleared (PYPL stale). CB INACTIVE (daily=0.0%, weekly=-0.54% gain). Buying power: $95.36. Equity positions: 0. Regime: normal (BULLISH — SPY $771.07 > EMA200 $761.31). Account: $95.36, peak $101.68.
+
 ## 2026-09-01T20:12:32Z
 - SUMMARY: Market CLOSED (16:12 ET). ⚠️ REGIME SHIFT: now BEARISH_EMA (SPY $761.65 fell below EMA200 $762.12). 10 RSI BUY signals (all conf=2/3, blocked by bearish_ema 3/3 requirement): IWM RSI=20.6, SOFI RSI=22.2, AMAT RSI=25.3, LRCX RSI=29.6, RDW RSI=27.1, ROK RSI=24.8, ONDS RSI=18.9, KTOS RSI=25.6, EOSE RSI=25.7, NVTS RSI=24.6. 0 net-buy BUY signals. 10 net-buy SELL signals (GE, DIS, JPM, CIFR, AUR, BA, EQIX, NVTS, BAC, GOOGL) + CVX RSI SELL — none held. No sell triggers (PYPL trail $51.87 not hit @ $52.43, HOOD trail $101.86 not hit @ $103.49). Buying power: $50.36. 2 positions: PYPL $52.43 (-2.6%, stop=$51.87), HOOD $103.49 (-2.0%, stop=$101.86). Circuit breaker INACTIVE (daily -0.30%, weekly -0.14%). Account: $93.78.
 
