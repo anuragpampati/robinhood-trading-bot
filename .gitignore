@@ -23,3 +23,6 @@ cloudflared
 logs/dashboard.log
 logs/tunnel.log
 logs/tunnel_url.txt
+
+# Intermediate data cache files (fetched during trading cycles, not for repo)
+logs/all_historicals.json
