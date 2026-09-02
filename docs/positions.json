@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-02T16:14:00Z",
+  "updated_at": "2026-09-02T17:12:00Z",
   "buying_power": 64.48,
   "market_regime": "normal",
-  "account_value": 94.61,
+  "account_value": 94.62,
   "peak_value": 101.68,
   "day_start_value": 94.45,
   "day_start_date": "2026-09-02",
@@ -13,9 +13,9 @@
       "ticker": "PYPL",
       "quantity": 0.278707,
       "avg_cost": 53.82,
-      "current_price": 54.22,
-      "pnl_pct": 0.0074,
-      "value": 15.11,
+      "current_price": 54.26,
+      "pnl_pct": 0.0082,
+      "value": 15.12,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T18:13:56Z",
       "trail_stop": 51.87,
@@ -27,8 +27,8 @@
       "ticker": "HOOD",
       "quantity": 0.141978,
       "avg_cost": 105.65,
-      "current_price": 105.81,
-      "pnl_pct": 0.0015,
+      "current_price": 105.755,
+      "pnl_pct": 0.001,
       "value": 15.02,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T17:16:33Z",
@@ -39,10 +39,10 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-02T17:12:00Z: Market OPEN (13:10 ET). REGIME: NORMAL. 1 RSI BUY (CRM conf=2) — skipped: BP $64.48 insufficient (need $50 buffer, only $14.48 available). 0 net-buy BUY. 0 surge. JNJ/CVX RSI SELL (not held). PYPL $54.26 +0.82% trail safe, HOOD $105.76 +0.10% trail safe. CB INACTIVE. BP $64.48. Acct $94.62.",
     "NO TRADE 2026-09-02T16:14:00Z: Market OPEN (12:14 ET). REGIME: NORMAL. 2 RSI BUY (AMAT conf=2 rl=HOLD 0.906, MRCY conf=2 rl=HOLD 0.93) — skipped: BP $64.48 insufficient (need $50 buffer, only $14.48 available). 0 net-buy BUY. 0 surge. PYPL $54.22 +0.74% trail safe, HOOD $105.81 +0.15% trail safe. CB INACTIVE. BP $64.48. Acct $94.61.",
     "NO TRADE 2026-09-02T15:14:00Z: Market OPEN (11:14 ET). REGIME: NORMAL. 1 RSI BUY (SHOP conf=2, rl=HOLD 0.906) — skipped: BP $64.48 insufficient (need $50 buffer, only $14.48 available). 0 net-buy BUY. 0 surge. PYPL $53.96 +0.26% trail safe, HOOD $105.45 -0.19% trail safe. CB INACTIVE. BP $64.48. Acct $94.49.",
     "NO TRADE 2026-09-02T14:21:00Z: Market OPEN (10:21 ET). REGIME: BEARISH_EMA. 10 RSI BUY (conf=2/3, rl=HOLD, blocked 3/3 req). 0 net-buy BUY. 0 surge. PYPL $53.47 -0.65% trail safe, HOOD $106.07 +0.40% trail safe. CB INACTIVE. BP $64.48. Acct $94.45.",
-    "NO TRADE 2026-09-01T20:12:32Z: Market CLOSED. REGIME SHIFT BEARISH_EMA. 10 RSI BUY blocked. PYPL $52.43 -2.6%, HOOD $103.49 -2.0%. CB INACTIVE. BP $50.36. Acct $93.78.",
     "SELL BE @ $198.79 (2026-09-01 14:19 UTC): ATR stop hit. P&L -5.9%."
   ]
 }
