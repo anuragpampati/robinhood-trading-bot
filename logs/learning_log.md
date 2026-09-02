@@ -299,3 +299,11 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403, 28th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
 - RL samples: 568/200 (RL READY — exceeded target by 2.84×; 19 states in Q-table; +7 new rows today)
 - Notes: Account $93.78 (-7.6% from $100 start, peak $101.68). ⚠️ REGIME SHIFT: SPY $761.65 fell below EMA200 $762.12 → BEARISH_EMA now active. 10 RSI BUY signals (all conf=2/3, blocked by 3/3 requirement). BE stop-loss hit at -5.9%. Buying power $50.36 (at buffer floor). 2 positions: PYPL $52.43 trail_stop=$51.87, HOOD $103.49 trail_stop=$101.86. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-09-02
+- Trades analysed: 18 total closed (8W/10L); 0 new closures today — PYPL and HOOD still open (+1.56%, +1.30%)
+- Win rate: 44.4% overall (normal: 44.4% [8W/10L, n=18, avg_hold≈131h]; momentum: n/a [n=0, n<3]; surge: n/a [n=0]); BULLISH EMA 50.0% (7W/7L, n=14); BEARISH EMA 25.0% (1W/3L, n=4)
+- Config changes: none — RSI_OVERSOLD: win_rate=44.4% in [40%,65%] hold band (NO_CHANGE, n=18≥5); MOMENTUM_VOL_MIN: n=0 live momentum trades (NO_CHANGE, n<3); ATR_VOLATILITY_THRESHOLD: avg_hold ~131h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 25th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 572/200 (READY — +4 new rows today; 19 states in Q-table)
+- Notes: +4 RL rows added (572 total, 2.86× target). Trade log trimmed to 10 entries (last 2 days). NO_CHANGE all thresholds. Account $94.91 — 2 open positions (PYPL +1.56%, HOOD +1.30%). BEARISH EMA win_rate dropped to 25% (n=4) — monitoring but n too low for ATR adjustment. Regime shifted to BEARISH_EMA (SPY below EMA200) then recovered. RL READY: run python -m strategy.rl_agent --train to activate Q-learning.
