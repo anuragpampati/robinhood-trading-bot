@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-02T18:11:40Z
+- SUMMARY: Market OPEN (14:11 ET). NO TRADES. REGIME: NORMAL (SPY $765.18 > EMA200 $762.34). 3 RSI BUY: PLTR RSI=29.2 (conf=2, rl=HOLD 0.906), KTOS RSI=20.1 (conf=2, rl=HOLD 0.930), MRCY RSI=26.8 (conf=2, rl=HOLD 0.906) — all skipped: buying power ($64.48) − $50 buffer = $14.48 available < $15 min order. 0 net-buy BUY signals. SURGE: MU buy_surge_pct=10.35% (count=1, needs 2). No sell triggers on PYPL or HOOD (no stop/TP/signal). ATR trail stops: PYPL $54.28 > $51.87 (OK), HOOD $105.98 > $101.86 (OK). Take-profit: PYPL $54.28 < $59.20 (OK), HOOD $105.98 < $116.22 (OK). SELL signals (not held): WFC RSI=70.1 conf=2, EOSE RSI=70.8 conf=2. Net-buy SELL: CRDO, SOUN, RKLB, AVGO, AAOI, COHR, LITE, AMD, VRT, RDW (none held). Circuit breaker INACTIVE (daily +0.20%, weekly +0.78%). Buying power: $64.48. 2 positions: PYPL $54.28 (+0.85%, stop=$51.87), HOOD $105.98 (+0.31%, stop=$101.86). Account: $94.64.
+
 ## 2026-09-02T16:14:00Z
 - SUMMARY: Market OPEN (12:14 ET). NO TRADES. REGIME: NORMAL (SPY $765.92 > EMA200 $762.29). 2 RSI BUY: AMAT RSI=27.8 (conf=2, rl=HOLD 0.906), MRCY RSI=20.8 (conf=2, rl=HOLD 0.93) — both skipped: buying power ($64.48) − $50 buffer = $14.48 available < $15 min order. 0 net-buy BUY signals. 0 surge signals. ATR trail stops: PYPL $54.22 > $51.87 (OK), HOOD $105.81 > $101.86 (OK). No ratchet (PYPL +0.74%, HOOD +0.15%). Take-profit: PYPL $54.22 < $59.20 (OK), HOOD $105.81 < $116.22 (OK). No signal SELL on held tickers (WFC RSI SELL not held). Circuit breaker INACTIVE (daily -0.17%, weekly -0.74%). Buying power: $64.48. 2 positions: PYPL $54.22 (+0.74%, stop=$51.87), HOOD $105.81 (+0.15%, stop=$101.86). Account: $94.61.
 
