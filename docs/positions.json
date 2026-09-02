@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-02T19:17:00Z",
+  "updated_at": "2026-09-02T20:10:40Z",
   "buying_power": 64.48,
   "market_regime": "normal",
-  "account_value": 94.70,
+  "account_value": 94.91,
   "peak_value": 101.68,
   "day_start_value": 94.45,
   "day_start_date": "2026-09-02",
@@ -13,9 +13,9 @@
       "ticker": "PYPL",
       "quantity": 0.278707,
       "avg_cost": 53.82,
-      "current_price": 54.23,
-      "pnl_pct": 0.0076,
-      "value": 15.12,
+      "current_price": 54.66,
+      "pnl_pct": 0.0156,
+      "value": 15.24,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T18:13:56Z",
       "trail_stop": 51.87,
@@ -27,9 +27,9 @@
       "ticker": "HOOD",
       "quantity": 0.141978,
       "avg_cost": 105.65,
-      "current_price": 106.35,
-      "pnl_pct": 0.0066,
-      "value": 15.10,
+      "current_price": 107.02,
+      "pnl_pct": 0.013,
+      "value": 15.19,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T17:16:33Z",
       "trail_stop": 101.86,
@@ -39,10 +39,10 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-02T20:10:40Z: Market CLOSED. REGIME: NORMAL. 2 RSI BUY (SNOW conf=2 rl=HOLD, KTOS conf=2 rl=HOLD) skipped: market closed. 0 net-buy BUY. SURGE: NFLX 1081%. No sell triggers: PYPL $54.66 +1.56% (stop=$51.87), HOOD $107.02 +1.30% (stop=$101.86). CB INACTIVE. BP $64.48. Acct $94.91.",
     "NO TRADE 2026-09-02T19:17:00Z: Market OPEN (15:17 ET). REGIME: NORMAL. 3 RSI BUY (PLTR conf=2, SNOW conf=2, MRCY conf=2) — skipped: BP $64.48 insufficient (need $50 buffer, only $14.48 available). SURGE: IREN 61.8% (count=1). Net-buy SELL: CRDO/SOUN/RKLB/AMD/VRT (none held). CB INACTIVE. BP $64.48. Acct $94.70.",
     "NO TRADE 2026-09-02T18:11:40Z: Market OPEN (14:11 ET). REGIME: NORMAL. 3 RSI BUY (PLTR conf=2, KTOS conf=2, MRCY conf=2) — skipped: BP $64.48 insufficient (need $50 buffer, only $14.48 available). SURGE: MU 10.35% (count=1). SELL signals (not held): WFC RSI=70.1, EOSE RSI=70.8. Net-buy SELL signals: CRDO/SOUN/RKLB/AVGO/AAOI (none held). CB INACTIVE. BP $64.48. Acct $94.64.",
     "NO TRADE 2026-09-02T17:12:00Z: Market OPEN (13:10 ET). REGIME: NORMAL. 1 RSI BUY (CRM conf=2) — skipped: BP $64.48 insufficient (need $50 buffer, only $14.48 available). 0 net-buy BUY. 0 surge. JNJ/CVX RSI SELL (not held). PYPL $54.26 +0.82% trail safe, HOOD $105.76 +0.10% trail safe. CB INACTIVE. BP $64.48. Acct $94.62.",
-    "NO TRADE 2026-09-02T16:14:00Z: Market OPEN (12:14 ET). REGIME: NORMAL. 2 RSI BUY (AMAT conf=2 rl=HOLD 0.906, MRCY conf=2 rl=HOLD 0.93) — skipped: BP $64.48 insufficient (need $50 buffer, only $14.48 available). 0 net-buy BUY. 0 surge. PYPL $54.22 +0.74% trail safe, HOOD $105.81 +0.15% trail safe. CB INACTIVE. BP $64.48. Acct $94.61.",
     "SELL BE @ $198.79 (2026-09-01 14:19 UTC): ATR stop hit. P&L -5.9%."
   ]
 }
