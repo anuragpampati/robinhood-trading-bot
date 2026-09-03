@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-03T14:21:28Z",
-  "buying_power": 81.75,
+  "updated_at": "2026-09-03T15:18:30Z",
+  "buying_power": 64.48,
   "market_regime": "normal",
-  "account_value": 96.84,
+  "account_value": 97.19,
   "peak_value": 101.68,
   "day_start_value": 96.84,
   "day_start_date": "2026-09-03",
@@ -13,22 +13,22 @@
       "ticker": "PYPL",
       "quantity": 0.278707,
       "avg_cost": 53.82,
-      "current_price": 54.13,
-      "pnl_pct": 0.0058,
-      "value": 15.09,
+      "current_price": 55.34,
+      "pnl_pct": 0.0282,
+      "value": 15.43,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T18:13:56Z",
-      "trail_stop": 51.87,
+      "trail_stop": 54.09,
       "take_profit": 59.20,
       "strategy": "normal",
       "sell_date": null
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-03T15:18:30Z: Market OPEN (11:18 ET). REGIME: NORMAL. 0 RSI BUY. Net-buy BUY: INTC $90.09 (4d streak) — SKIP BP $64.48-$50=$14.48<$50 buffer. 12 RSI SELL (none held). PYPL $55.34 +2.82% — trail ratcheted $51.87→$54.09 (profit≥2.5%). No sell trigger. CB INACTIVE (daily +0.36%, weekly +3.49%). BP $64.48. Acct $97.19.",
     "SELL HOOD @ $121.64 (2026-09-03T14:21:28Z): TAKE-PROFIT +15.1% (avg_cost=$105.65, TP=$116.22 hit). Proceeds ~$17.27.",
     "NO TRADE 2026-09-03T14:21:28Z: Market OPEN (10:21 ET). REGIME: NORMAL. 3 RSI BUY (PLTR conf=2, SNOW conf=2, KTOS conf=2) — PLTR/SNOW stale (gapped +9.3%/+21.9%), KTOS BP insufficient (~$81.75-$50=$31.75<$50 buffer). 0 net-buy BUY. 0 surge. CB INACTIVE. BP ~$81.75. Acct ~$96.84.",
     "NO TRADE 2026-09-02T20:10:40Z: Market CLOSED. REGIME: NORMAL. 2 RSI BUY (SNOW conf=2 rl=HOLD, KTOS conf=2 rl=HOLD) skipped: market closed. 0 net-buy BUY. SURGE: NFLX 1081%. No sell triggers: PYPL $54.66 +1.56% (stop=$51.87), HOOD $107.02 +1.30% (stop=$101.86). CB INACTIVE. BP $64.48. Acct $94.91.",
-    "NO TRADE 2026-09-02T19:17:00Z: Market OPEN (15:17 ET). REGIME: NORMAL. 3 RSI BUY (PLTR conf=2, SNOW conf=2, MRCY conf=2) — skipped: BP $64.48 insufficient (need $50 buffer, only $14.48 available). SURGE: IREN 61.8% (count=1). Net-buy SELL: CRDO/SOUN/RKLB/AMD/VRT (none held). CB INACTIVE. BP $64.48. Acct $94.70.",
     "SELL BE @ $198.79 (2026-09-01 14:19 UTC): ATR stop hit. P&L -5.9%."
   ]
 }
