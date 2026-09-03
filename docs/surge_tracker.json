@@ -1,18 +1,26 @@
-<<<<<<< Updated upstream
-{}
-=======
 {
   "INTC": {
-    "count": 3,
+    "count": 4,
     "date": "2026-09-03",
     "first_seen": "2026-09-03T16:13:50Z",
     "price": 90.9643
   },
   "BE": {
-    "count": 1,
+    "count": 2,
     "date": "2026-09-03",
     "first_seen": "2026-09-03T18:13:35Z",
     "price": 237.6
+  },
+  "PYPL": {
+    "count": 1,
+    "date": "2026-09-03",
+    "first_seen": "2026-09-03T19:13:06Z",
+    "price": 56.64
+  },
+  "MSFT": {
+    "count": 1,
+    "date": "2026-09-03",
+    "first_seen": "2026-09-03T19:13:06Z",
+    "price": 512.355
   }
 }
->>>>>>> Stashed changes
