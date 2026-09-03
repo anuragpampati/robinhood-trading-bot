@@ -1,10 +1,10 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-03T17:09:46Z
+- SUMMARY: Market OPEN (13:09 ET). NO TRADES. REGIME: NORMAL (SPY $772.88 > EMA200 $762.60). 0 RSI BUY conf>=2. 0 net-buy BUY signals. Surge: INTC 96.3% count=2 (INTRADAY_SURGE) — SKIP: BP $64.48-$50=$14.48<$15 min order. META 89.3% count=1 (needs 2). RSI SELL (none held): CRM/TSLA/HOOD/C/JNJ/WMT/F/SNOW/DELL/AUR/CIFR/BE. Net-buy SELL (none held): UBER/IONQ/QBTS/TSM/MSFT/ROK. PYPL $55.63 +3.35% — trail_stop $54.09 (unchanged, profit 3.35%>=2.5%, max(54.09,53.82x1.005=54.09)). No sell trigger (stop safe, TP=$59.20 not hit). CB INACTIVE (daily +0.47%, weekly +3.60%). BP $64.48. Positions: 1 (PYPL). Acct $97.29.
+
 ## 2026-09-03T16:13:50Z
 - SUMMARY: Market OPEN (12:13 ET). NO TRADES. REGIME: NORMAL (SPY $773.31 > EMA200 $762.49). 0 RSI BUY conf≥2. Net-buy BUY: INTC $90.37 (4d streak, score=43.2) — SKIP: BP $64.48 − $50 = $14.48 < $50 buffer. Surge: INTC 34.7% (count=1, needs 2). Net-buy SELL: UBER/TSM/QBTS (none held). 14 RSI SELL (AAPL/CRM/META/TSLA/HOOD/C/JNJ/WMT/F/DELL/AUR/IREN/CIFR/BE — none held). PYPL $55.71 +3.50% — trail stop unchanged $54.09 (profit 3.50% ≥2.5%, stop=avg_cost×1.005=$54.09). No sell trigger (stop safe, TP=$59.20 not hit). CB INACTIVE (daily +0.49%, weekly +3.63%). BP $64.48. Positions: 1 (PYPL). Acct $97.32.
-
-## 2026-09-03T15:18:30Z
-- SUMMARY: Market OPEN (11:18 ET). NO TRADES. REGIME: NORMAL (SPY $769.28 > EMA200 $762.38). 0 RSI BUY conf≥2. Net-buy BUY: INTC $90.09 (4d streak, score=42) — SKIP: BP $64.48 − $50 = $14.48 < $50 buffer required. Net-buy SELL: UBER/MSFT/TSM/QBTS/ROK (none held). 12 RSI SELL signals (CRM/META/TSLA/HOOD/C/JNJ/WMT/F/DELL/AUR/IREN/CIFR — none held). PYPL $55.34 +2.82% — trail stop ratcheted $51.87→$54.09 (profit ≥2.5%, stop=avg_cost×1.005=$54.09). No sell trigger (trail safe, TP=$59.20 not hit). Surge: none. CB INACTIVE (daily +0.36%, weekly +3.49%). BP $64.48. Positions: 1 (PYPL). Acct $97.19.
 
 ## 2026-09-03T14:21:28Z
 - Action   : SELL HOOD
@@ -18,7 +18,7 @@
 - Reason   : TAKE-PROFIT triggered: $121.64 ≥ avg_cost × 1.10 = $116.22 (+15.1%)
 
 ## 2026-09-03T14:21:28Z
-- SUMMARY: Market OPEN (10:21 ET). SOLD HOOD +15.1% take-profit. Regime: NORMAL (SPY $765.14 above EMA200 $762.31). 3 RSI BUY (PLTR conf=2, SNOW conf=2, KTOS conf=2): PLTR/SNOW stale — gapped +9.3%/$+21.9% today; KTOS skipped BP insufficient (post-sell ~$81.75 − $50 order = $31.75 < $50 buffer). 0 net-buy BUY. 0 surge. PYPL $54.13 +0.58% trail safe (stop=$51.87). CB INACTIVE (daily 0%, weekly +3.1%). BP ~$81.75. Positions: 1 (PYPL). Acct ~$96.84.
+- SUMMARY: Market OPEN (10:21 ET). SOLD HOOD +15.1% take-profit. Regime: NORMAL (SPY $765.14 above EMA200 $762.31). 3 RSI BUY (PLTR conf=2, SNOW conf=2, KTOS conf=2): PLTR/SNOW stale (gapped +9.3%/+21.9% from signal price), KTOS skipped BP insufficient (~$81.75 − $50 = $31.75 < $50 buffer). 0 net-buy BUY. 0 surge. PYPL $54.13 +0.58% trail safe (stop=$51.87). CB INACTIVE (daily 0%, weekly +3.1%). BP ~$81.75. 1 position. Acct ~$96.84.
 
 ## 2026-09-02T18:11:40Z
 - SUMMARY: Market OPEN (14:11 ET). NO TRADES. REGIME: NORMAL (SPY $765.18 > EMA200 $762.34). 3 RSI BUY: PLTR RSI=29.2 (conf=2, rl=HOLD 0.906), KTOS RSI=20.1 (conf=2, rl=HOLD 0.930), MRCY RSI=26.8 (conf=2, rl=HOLD 0.906) — all skipped: buying power ($64.48) − $50 buffer = $14.48 available < $15 min order. 0 net-buy BUY signals. SURGE: MU buy_surge_pct=10.35% (count=1, needs 2). No sell triggers on PYPL or HOOD (no stop/TP/signal). ATR trail stops: PYPL $54.28 > $51.87 (OK), HOOD $105.98 > $101.86 (OK). Take-profit: PYPL $54.28 < $59.20 (OK), HOOD $105.98 < $116.22 (OK). SELL signals (not held): WFC RSI=70.1 conf=2, EOSE RSI=70.8 conf=2. Net-buy SELL: CRDO, SOUN, RKLB, AVGO, AAOI, COHR, LITE, AMD, VRT, RDW (none held). Circuit breaker INACTIVE (daily +0.20%, weekly +0.78%). Buying power: $64.48. 2 positions: PYPL $54.28 (+0.85%, stop=$51.87), HOOD $105.98 (+0.31%, stop=$101.86). Account: $94.64.
