@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-03T14:21:28Z
+- Action   : SELL HOOD
+- Price    : $121.64 (market, est.)
+- Amount   : $17.27 | Shares: 0.141978
+- RSI      : 55.3 | EMA: NEUTRAL | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $101.86 | Target: $116.22
+- Strategy : normal | Sell date: TAKE-PROFIT
+- Regime   : normal
+- Reason   : TAKE-PROFIT triggered: $121.64 ≥ avg_cost × 1.10 = $116.22 (+15.1%)
+
+## 2026-09-03T14:21:28Z
+- SUMMARY: Market OPEN (10:21 ET). SOLD HOOD +15.1% take-profit. Regime: NORMAL (SPY $765.14 above EMA200 $762.31). 3 RSI BUY (PLTR conf=2, SNOW conf=2, KTOS conf=2): PLTR/SNOW stale (gapped +9.3%/+21.9% from signal price), KTOS skipped BP insufficient (~$81.75 − $50 = $31.75 < $50 buffer). 0 net-buy BUY. 0 surge. PYPL $54.13 +0.58% trail safe (stop=$51.87). CB INACTIVE (daily 0%, weekly +3.1%). BP ~$81.75. 1 position. Acct ~$96.84.
+
 ## 2026-09-02T18:11:40Z
 - SUMMARY: Market OPEN (14:11 ET). NO TRADES. REGIME: NORMAL (SPY $765.18 > EMA200 $762.34). 3 RSI BUY: PLTR RSI=29.2 (conf=2, rl=HOLD 0.906), KTOS RSI=20.1 (conf=2, rl=HOLD 0.930), MRCY RSI=26.8 (conf=2, rl=HOLD 0.906) — all skipped: buying power ($64.48) − $50 buffer = $14.48 available < $15 min order. 0 net-buy BUY signals. SURGE: MU buy_surge_pct=10.35% (count=1, needs 2). No sell triggers on PYPL or HOOD (no stop/TP/signal). ATR trail stops: PYPL $54.28 > $51.87 (OK), HOOD $105.98 > $101.86 (OK). Take-profit: PYPL $54.28 < $59.20 (OK), HOOD $105.98 < $116.22 (OK). SELL signals (not held): WFC RSI=70.1 conf=2, EOSE RSI=70.8 conf=2. Net-buy SELL: CRDO, SOUN, RKLB, AVGO, AAOI, COHR, LITE, AMD, VRT, RDW (none held). Circuit breaker INACTIVE (daily +0.20%, weekly +0.78%). Buying power: $64.48. 2 positions: PYPL $54.28 (+0.85%, stop=$51.87), HOOD $105.98 (+0.31%, stop=$101.86). Account: $94.64.
 
