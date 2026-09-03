@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-03T20:11:14Z
-- SUMMARY: Market CLOSED (after hours). NO TRADES. REGIME: NORMAL (SPY $773.16 > EMA200 $762.91). RSI SELL conf≥2 (unowned): HOOD/C/JNJ/DELL/AUR/IREN/CIFR/BE. RSI BUY: none. Net-buy BUY: INTC (4d) / PYPL (4d) / ARM (4d) / RGTI (4d). Net-buy SELL (unowned): UBER/MSFT/MBLY/IONQ. PYPL $56.82 +5.57% — trail_stop $55.17 (ratchet: profit≥5%, max($55.17,$53.82×1.025=$55.17)). No sell trigger. CB INACTIVE (daily +0.74%, weekly +3.88%). BP $64.48. Positions: 1 (PYPL). Acct $97.56.
-
 ## 2026-09-03T17:09:46Z
 - SUMMARY: Market OPEN (13:09 ET). NO TRADES. REGIME: NORMAL (SPY $772.88 > EMA200 $762.60). 0 RSI BUY conf>=2. 0 net-buy BUY signals. Surge: INTC 96.3% count=2 (INTRADAY_SURGE) — SKIP: BP $64.48-$50=$14.48<$15 min order. META 89.3% count=1 (needs 2). RSI SELL (none held): CRM/TSLA/HOOD/C/JNJ/WMT/F/SNOW/DELL/AUR/CIFR/BE. Net-buy SELL (none held): UBER/IONQ/QBTS/TSM/MSFT/ROK. PYPL $55.63 +3.35% — trail_stop $54.09 (unchanged, profit 3.35%>=2.5%, max(54.09,53.82x1.005=54.09)). No sell trigger (stop safe, TP=$59.20 not hit). CB INACTIVE (daily +0.47%, weekly +3.60%). BP $64.48. Positions: 1 (PYPL). Acct $97.29.
 
