@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-03T19:13:06Z",
+  "updated_at": "2026-09-03T20:11:14Z",
   "buying_power": 64.48,
   "market_regime": "normal",
-  "account_value": 97.55,
+  "account_value": 97.56,
   "peak_value": 101.68,
   "day_start_value": 96.84,
   "day_start_date": "2026-09-03",
@@ -13,9 +13,9 @@
       "ticker": "PYPL",
       "quantity": 0.278707,
       "avg_cost": 53.82,
-      "current_price": 56.575,
-      "pnl_pct": 0.0512,
-      "value": 15.77,
+      "current_price": 56.82,
+      "pnl_pct": 0.0557,
+      "value": 15.84,
       "entry_atr_pct": 0.018,
       "entry_time": "2026-08-28T18:13:56Z",
       "trail_stop": 55.17,
@@ -25,6 +25,7 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-03T20:11:14Z: Market CLOSED. REGIME: NORMAL. RSI SELL conf≥2 (unowned): HOOD/C/JNJ/DELL/AUR/IREN/CIFR/BE. RSI BUY: none. Net-buy BUY: INTC/PYPL/ARM/RGTI (4d streaks). Net-buy SELL (unowned): UBER/MSFT/MBLY/IONQ. PYPL $56.82 +5.57% — trail_stop $55.17 (ratchet: profit≥5%, max($55.17,$53.82×1.025=$55.17)). No sell trigger. CB INACTIVE (daily +0.74%, weekly +3.88%). BP $64.48. Acct $97.56.",
     "NO TRADE 2026-09-03T19:13:06Z: Market OPEN (15:13 ET). REGIME: NORMAL. 0 RSI BUY. Net-buy BUY: INTC/SMCI/BE/ARM/PYPL — SKIP: BP $64.48-$50=$14.48 < $15 min order. Surge (≥10%): INTC count=4, BE count=2 — SKIP: BP insufficient. RSI SELL (unowned): CRM/META/TSLA/HOOD/C/JNJ/ORCL/DELL/AUR/IREN/CIFR/BE. Net-buy SELL (unowned): UBER/QBTS/IONQ/MSFT/MBLY. PYPL $56.575 +5.12% — trail_stop $55.17 (unchanged, profit≥5% ratchet = $55.17 already higher). No sell trigger. CB INACTIVE (daily +0.74%, weekly +3.88%). BP $64.48. Acct $97.55.",
     "NO TRADE 2026-09-03T18:13:35Z: Market OPEN (14:13 ET). REGIME: NORMAL. 0 RSI BUY. Net-buy BUY: INTC $91.50 count=3 (INTRADAY_SURGE) — SKIP BP $64.48-$50=$14.48<$50. BE count=1 (RSI SELL). 10 RSI SELL (none held). PYPL $56.83 +5.58% — trail_stop RATCHETED $54.09→$55.17. No sell. CB INACTIVE. BP $64.48. Acct $97.62.",
     "NO TRADE 2026-09-03T17:09:46Z: Market OPEN (13:09 ET). REGIME: NORMAL. 0 RSI BUY. Surge: INTC 96.3% count=2 (INTRADAY_SURGE) — SKIP BP $64.48-$50=$14.48<$50 buffer. META 89.3% count=1 (needs 2). 12 RSI SELL (none held). PYPL $55.63 +3.35% — trail_stop $54.09 (unchanged). No sell trigger. CB INACTIVE (daily +0.47%, weekly +3.60%). BP $64.48. Acct $97.29.",
