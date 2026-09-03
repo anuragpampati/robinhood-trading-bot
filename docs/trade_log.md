@@ -31,29 +31,3 @@
 
 ## 2026-09-02T14:21:00Z
 - SUMMARY: Market OPEN (10:21 ET). NO TRADES. REGIME: BEARISH_EMA (SPY $761.25 below EMA200 $762.22). 10 RSI BUY signals (all conf=2/3, rl=HOLD — no RL BOOST, blocked by bearish_ema 3/3 requirement): IWM RSI=19.3, SOFI RSI=22.4, AMAT RSI=27.0, LRCX RSI=29.6, RDW RSI=25.4, ROK RSI=24.8, ONDS RSI=18.9, KTOS RSI=25.6, EOSE RSI=26.1, NVTS RSI=24.6. 0 net-buy BUY signals. 0 surge signals. ATR trail stops: PYPL $53.47 > $51.87 (OK), HOOD $106.07 > $101.86 (OK). Take-profit: PYPL $53.47 < $59.20 (OK), HOOD $106.07 < $116.22 (OK). No signal SELL on held tickers. Circuit breaker INACTIVE (daily 0.0%, weekly -0.57%). Buying power: $64.48. 2 positions: PYPL $53.47 (-0.65%, stop=$51.87), HOOD $106.07 (+0.40%, stop=$101.86). Account: $94.45.
-
-## 2026-09-01T20:12:32Z
-- SUMMARY: Market CLOSED (16:12 ET). ⚠️ REGIME SHIFT: now BEARISH_EMA (SPY $761.65 fell below EMA200 $762.12). 10 RSI BUY signals (all conf=2/3, blocked by bearish_ema 3/3 requirement): IWM RSI=20.6, SOFI RSI=22.2, AMAT RSI=25.3, LRCX RSI=29.6, RDW RSI=27.1, ROK RSI=24.8, ONDS RSI=18.9, KTOS RSI=25.6, EOSE RSI=25.7, NVTS RSI=24.6. 0 net-buy BUY signals. 10 net-buy SELL signals (GE, DIS, JPM, CIFR, AUR, BA, EQIX, NVTS, BAC, GOOGL) + CVX RSI SELL — none held. No sell triggers (PYPL trail $51.87 not hit @ $52.43, HOOD trail $101.86 not hit @ $103.49). Buying power: $50.36. 2 positions: PYPL $52.43 (-2.6%, stop=$51.87), HOOD $103.49 (-2.0%, stop=$101.86). Circuit breaker INACTIVE (daily -0.30%, weekly -0.14%). Account: $93.78.
-
-## 2026-09-01T19:13:51Z
-- SUMMARY: Market OPEN (15:13 ET). No trades. 0 signals. No sell triggers. BP $50.36 insufficient. PYPL $52.50 -2.5%, HOOD $103.285 -2.2%. CB INACTIVE. Acct $93.75.
-
-## 2026-09-01T18:12:00Z
-- SUMMARY: Market OPEN (14:12 ET). No trades executed. No sell triggers (PYPL trail $51.87 not hit @ $52.81; HOOD trail $101.86 not hit @ $103.49). RSI SELL signals: QCOM (conf=2, RSI=73.4), AI (conf=2, RSI=71.9) — not held. 0 net-buy BUY signals. Buying power: $50.36 ($0.36 above $50 buffer — insufficient for any buy ≥$15). Surge: TSLA count=1 (needs 2, buy_surge_pct=10.68%). 2 positions: PYPL $52.81 (-1.9%, stop=$51.87), HOOD $103.49 (-2.0%, stop=$101.86). Regime: normal (BULLISH, SPY $766.93 above EMA200 $762.11). Circuit breaker INACTIVE (daily -0.18%, weekly -0.02%). Account: $93.89.
-
-## 2026-09-01T15:20:00Z
-- SUMMARY: Market OPEN (11:20 ET). No trades executed. RSI SELL signals: AAPL (conf=2, RSI=70.0), CVX (conf=2, RSI=72.2) — not held, no action. Positions held: PYPL $52.53 (-2.4%, stop=$51.87), HOOD $106.00 (+0.3%, stop=$101.86). Buying power: $50.36 (only $0.36 above $50 buffer — insufficient for any new buy, min $15). No BUY signals (0 net-buy BUY, 0 RSI BUY). No surge signals (ALAB tracker cleared — no longer in 10%+ surge). Regime: normal (BULLISH, SPY above EMA200). Circuit breaker INACTIVE (daily +0.1%, weekly +0.3%). Account: $94.17.
-
-## 2026-09-01T14:19:11Z
-- Action   : SELL BE
-- Price    : $198.79
-- Amount   : $14.12 | Shares: 0.071014
-- RSI      : 38.5 | EMA: BEARISH | BB: IN_BAND
-- RL       : null conf=null | null
-- Stop     : $203.23 | Target: $232.35
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : ATR trailing stop hit ($198.79 ≤ $203.23) + 5% stop-loss breached ($198.79 ≤ $200.67 = $211.23×0.95). Entry avg_cost $211.23, P&L ≈ -5.9%.
-
-## 2026-09-01T14:19:40Z
-- SUMMARY: Market OPEN (10:19 ET). SOLD BE (ATR trailing stop + 5% stop-loss triggered). No buy signals (0 net-buy BUY, 0 RSI BUY). Surge: ALAB count=1 (needs 2). Buying power: ~$64.48 post-sell. Equity positions: 2 (PYPL -2.3%, HOOD -0.5%). Regime: normal (BULLISH). Circuit breaker INACTIVE (daily 0.0%, weekly -0.2%). Account: ~$94.06.
