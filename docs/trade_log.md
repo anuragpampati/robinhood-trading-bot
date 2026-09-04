@@ -1,14 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-04T17:13:00Z
-- SUMMARY: Market OPEN (13:13 ET). NO TRADES. REGIME: NORMAL (SPY $770.89 > EMA200 $763.08). RSI BUY: none. Net-buy BUY: none. Surge: TSM +19.9% (surge_tracker count=1, need ≥2). RSI SELL (none held): INTC/MU/F/ORCL/SMCI/KLAC/TSM/IREN/CIFR/CRWV/BE/ALAB. INTC RSI SELL conf=2 — HOLD: hours_held 2.9h < 3h (min 3h req). INTC $95.28 +0.19% vs avg_cost $95.10 — trail_stop $93.20 (unchanged, profit 0.19% < 2.5% ratchet). Take-profit $104.61 not hit. CB INACTIVE (daily +0.13%, weekly +3.58%). BP $51.79 ($1.79 above $50 buffer — insufficient for any buy ≥$15). Positions: 1 (INTC). Acct $97.27.
-
-## 2026-09-04T16:12:00Z
-- SUMMARY: Market OPEN (12:12 ET). NO TRADES. REGIME: NORMAL (SPY $769.96 > EMA200 $763.00). RSI BUY: AAPL conf 2/3 — SKIP: BP $51.79 - $50 buffer = $1.79 < $15 min order. Net-buy BUY: none. Surge: none. RSI SELL (none held): F/SMCI/VRT/KLAC/SYM/AUR/IREN/BE/ALAB. INTC RSI SELL conf≥2 — HOLD: hours_held 1.9h < 3h (min 3h req). Net-buy SELL (none held): NFLX/PLTR/QCOM/QBTS/ISRG/MRCY/LRCX/CRWD/NOW/GE. INTC $95.38 +0.29% vs avg_cost $95.10 — trail_stop $93.20 (unchanged, profit 0.29% < 2.5% ratchet). No sell trigger (ATR stop safe, TP $104.61 not hit). CB INACTIVE (daily +0.09%, weekly +3.53%). BP $51.79 ($1.79 above $50 buffer). Positions: 1 (INTC). Acct $97.23.
-
-## 2026-09-04T15:16:22Z
-- SUMMARY: Market OPEN (11:16 ET). NO TRADES. REGIME: NORMAL (SPY $770.46 > EMA200 $762.94). 0 RSI BUY conf≥2. 0 net-buy BUY signals. 0 surge signals. RSI SELL (none held): ARM/F/ORCL/VRT/KLAC/SYM/CIFR/BE/ALAB. INTC RSI SELL conf≥2 — HOLD: hours_held<3 (bought 2026-09-04T14:18 UTC, 58 min ago). Net-buy SELL (none held): NFLX/ISRG/NOW/PLTR/QCOM/AAOI/MCD/LRCX/MRCY/QBTS. INTC $95.33 +0.24% — trail_stop $93.20 (unchanged, profit<2.5%). No sell trigger. CB INACTIVE (daily +0.13%, weekly +3.58%). BP $51.79 ($1.79 available above $50 buffer). Positions: 1 (INTC). Acct $97.27.
-
 ## 2026-09-04T14:18:19Z
 - Action   : BUY INTC
 - Price    : $95.10
