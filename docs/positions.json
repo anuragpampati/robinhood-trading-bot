@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-04T17:13:00Z",
+  "updated_at": "2026-09-04T19:12:00Z",
   "buying_power": 51.79,
   "market_regime": "normal",
-  "account_value": 97.27,
+  "account_value": 96.95,
   "peak_value": 101.68,
   "day_start_value": 97.14,
   "day_start_date": "2026-09-04",
@@ -13,9 +13,9 @@
       "ticker": "INTC",
       "quantity": 0.315459,
       "avg_cost": 95.10,
-      "current_price": 95.28,
-      "pnl_pct": 0.0019,
-      "value": 30.06,
+      "current_price": 94.50,
+      "pnl_pct": -0.0063,
+      "value": 29.81,
       "entry_atr_pct": 0.010,
       "entry_time": "2026-09-04T14:18:19Z",
       "trail_stop": 93.20,
@@ -25,9 +25,9 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-04T19:12:00Z: Market OPEN (15:09 ET). REGIME: NORMAL. INTC $94.50 — no sell trigger (trail_stop=$93.20 safe, TP=$104.61 not hit, HOLD signal, hours_held=4.85h≥3h). TSM intraday_surge count=2 — SKIP: BP $51.79−$50=$1.79<$50 min. OKLO/META surge count=1 (needs ≥2). CB INACTIVE (daily −0.2%, weekly +3.2%). BP $51.79. Acct $96.95.",
     "NO TRADE 2026-09-04T17:13:00Z: Market OPEN (13:13 ET). REGIME: NORMAL. INTC RSI SELL conf=2 — HOLD: hours_held 2.9h < 3h. No sell trigger (ATR stop safe at $93.20, TP $104.61 not hit). TSM surge +19.9% — tracker count=1 (need ≥2 for buy). BP $51.79 ($1.79 above $50 buffer). CB INACTIVE. Acct $97.27.",
     "NO TRADE 2026-09-04T16:12:00Z: Market OPEN (12:12 ET). REGIME: NORMAL. RSI BUY AAPL conf 2/3 — SKIP: BP $1.79 above buffer, below $15 min. INTC RSI SELL conf≥2 — HOLD: hours_held 1.9h < 3h. No sell trigger. CB INACTIVE (daily +0.09%, weekly +3.53%). BP $51.79. Acct $97.23.",
-    "NO TRADE 2026-09-04T15:16:22Z: Market OPEN (11:16 ET). REGIME: NORMAL. 0 RSI BUY. 0 net-buy BUY. 0 surge. INTC RSI SELL conf≥2 — HOLD: hours_held<3. BP $51.79 ($1.79 above $50 buffer). Acct $97.27.",
     "BUY INTC $30.00 @ $95.10 (2026-09-04T14:18:19Z): Net-buy 4d streak + 180.5% buy surge. Trail stop $93.20, target $104.61.",
     "SELL PYPL $15.36 @ $55.10 (2026-09-04T14:17:35Z): ATR trail stop hit ($55.10 ≤ $55.17). P&L +2.38%."
   ]
