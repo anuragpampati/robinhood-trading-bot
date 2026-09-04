@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-04T15:16:22Z",
+  "updated_at": "2026-09-04T16:12:00Z",
   "buying_power": 51.79,
   "market_regime": "normal",
-  "account_value": 97.27,
+  "account_value": 97.23,
   "peak_value": 101.68,
   "day_start_value": 97.14,
   "day_start_date": "2026-09-04",
@@ -13,9 +13,9 @@
       "ticker": "INTC",
       "quantity": 0.315459,
       "avg_cost": 95.10,
-      "current_price": 95.33,
-      "pnl_pct": 0.0024,
-      "value": 30.07,
+      "current_price": 95.38,
+      "pnl_pct": 0.0029,
+      "value": 30.09,
       "entry_atr_pct": 0.010,
       "entry_time": "2026-09-04T14:18:19Z",
       "trail_stop": 93.20,
@@ -25,10 +25,10 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-04T16:12:00Z: Market OPEN (12:12 ET). REGIME: NORMAL. RSI BUY AAPL conf 2/3 — SKIP: BP $1.79 above buffer, below $15 min. INTC RSI SELL conf≥2 — HOLD: hours_held 1.9h < 3h. No sell trigger. CB INACTIVE (daily +0.09%, weekly +3.53%). BP $51.79. Acct $97.23.",
     "NO TRADE 2026-09-04T15:16:22Z: Market OPEN (11:16 ET). REGIME: NORMAL. 0 RSI BUY. 0 net-buy BUY. 0 surge. INTC RSI SELL conf≥2 — HOLD: hours_held<3. BP $51.79 ($1.79 above $50 buffer). Acct $97.27.",
     "BUY INTC $30.00 @ $95.10 (2026-09-04T14:18:19Z): Net-buy 4d streak + 180.5% buy surge. Trail stop $93.20, target $104.61.",
     "SELL PYPL $15.36 @ $55.10 (2026-09-04T14:17:35Z): ATR trail stop hit ($55.10 ≤ $55.17). P&L +2.38%.",
-    "NO TRADE 2026-09-03T20:11:14Z: Market CLOSED. REGIME: NORMAL. RSI SELL conf≥2 (unowned): HOOD/C/JNJ/DELL/AUR/IREN/CIFR/BE. RSI BUY: none. Net-buy BUY: INTC/PYPL/ARM/RGTI (4d streaks). Net-buy SELL (unowned): UBER/MSFT/MBLY/IONQ. PYPL $56.82 +5.57% — trail_stop $55.17 (ratchet: profit≥5%, max($55.17,$53.82×1.025=$55.17)). No sell trigger. CB INACTIVE (daily +0.74%, weekly +3.88%). BP $64.48. Acct $97.56.",
     "SELL HOOD @ $121.64 (2026-09-03T14:21:28Z): TAKE-PROFIT +15.1%."
   ]
 }
