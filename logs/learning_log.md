@@ -308,6 +308,15 @@
 - RL samples: 572/200 (READY — +4 new rows today; 19 states in Q-table)
 - Notes: +4 RL rows added (572 total, 2.86× target). Trade log trimmed to 10 entries (last 2 days). NO_CHANGE all thresholds. Account $94.91 — 2 open positions (PYPL +1.56%, HOOD +1.30%). BEARISH EMA win_rate dropped to 25% (n=4) — monitoring but n too low for ATR adjustment. Regime shifted to BEARISH_EMA (SPY below EMA200) then recovered. RL READY: run python -m strategy.rl_agent --train to activate Q-learning.
 
+## 2026-09-04
+- Trades analysed: 2 visible closed in trimmed log (HOOD +15.1% take-profit/normal; PYPL +2.38% trail-stop/normal); cumulative ~23 (12W/11L)
+- Win rate: 52.2% overall (normal: 52.2% [n≈23, 12W/11L]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH ~50% (unchanged); BEARISH ~50% (unchanged)
+- Config changes: none — RSI_OVERSOLD: 52.2% in [40%,65%] hold band (NO_CHANGE, n≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold >>2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance 403 blocked (30+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 580/200 (RL READY — exceeded target 2.9×; 19 states in Q-table; RL collector failed today: yfinance not installed, pip timed out)
+- Notes: Account $96.95, 1 open position (INTC +0.75%, stop $93.20, TP $104.61). Buying power $51.79 ($1.79 above buffer — very tight). HOOD closed +15.1% take-profit; PYPL closed +2.38% ATR trail stop. Win rate ticked up to ~52% on 2 recent wins. Trade log trimmed to 7 entries. RL READY: 580 samples (2.9× target), 19 Q-states. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
 ## 2026-09-03
 - Trades analysed: 2 (HOOD +15.1% take-profit, BE -5.9% stop-loss) — trimmed log, prior trades not visible
 - Win rate: 50% overall (normal: 50%, momentum: n/a, surge: n/a)
