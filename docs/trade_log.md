@@ -1,5 +1,27 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-04T14:18:19Z
+- Action   : BUY INTC
+- Price    : $95.10
+- Amount   : $30.00 | Shares: 0.315450
+- RSI      : 61.7 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $93.20 | Target: $104.61
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net-buy 4d streak (2.82M→3.56M→15.67M) | Buy vol ↑180.5% intraday surge | OBV +5.6M/day
+
+## 2026-09-04T14:17:35Z
+- Action   : SELL PYPL
+- Price    : $55.10
+- Amount   : $15.36 | Shares: 0.278707
+- RSI      : 65.5 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $55.17 | Target: $59.20
+- Strategy : normal | Sell date: ATR trail stop
+- Regime   : normal
+- Reason   : ATR trailing stop triggered — price $55.10 ≤ trail_stop $55.17 (+2.38% P&L from avg_cost $53.82)
+
 ## 2026-09-03T17:09:46Z
 - SUMMARY: Market OPEN (13:09 ET). NO TRADES. REGIME: NORMAL (SPY $772.88 > EMA200 $762.60). 0 RSI BUY conf>=2. 0 net-buy BUY signals. Surge: INTC 96.3% count=2 (INTRADAY_SURGE) — SKIP: BP $64.48-$50=$14.48<$15 min order. META 89.3% count=1 (needs 2). RSI SELL (none held): CRM/TSLA/HOOD/C/JNJ/WMT/F/SNOW/DELL/AUR/CIFR/BE. Net-buy SELL (none held): UBER/IONQ/QBTS/TSM/MSFT/ROK. PYPL $55.63 +3.35% — trail_stop $54.09 (unchanged, profit 3.35%>=2.5%, max(54.09,53.82x1.005=54.09)). No sell trigger (stop safe, TP=$59.20 not hit). CB INACTIVE (daily +0.47%, weekly +3.60%). BP $64.48. Positions: 1 (PYPL). Acct $97.29.
 
