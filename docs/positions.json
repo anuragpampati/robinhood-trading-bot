@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-04T14:18:30Z",
+  "updated_at": "2026-09-04T15:16:22Z",
   "buying_power": 51.79,
   "market_regime": "normal",
-  "account_value": 97.14,
+  "account_value": 97.27,
   "peak_value": 101.68,
   "day_start_value": 97.14,
   "day_start_date": "2026-09-04",
@@ -11,11 +11,11 @@
   "positions": [
     {
       "ticker": "INTC",
-      "quantity": 0.315450,
+      "quantity": 0.315459,
       "avg_cost": 95.10,
-      "current_price": 95.195,
-      "pnl_pct": 0.001,
-      "value": 30.01,
+      "current_price": 95.33,
+      "pnl_pct": 0.0024,
+      "value": 30.07,
       "entry_atr_pct": 0.010,
       "entry_time": "2026-09-04T14:18:19Z",
       "trail_stop": 93.20,
@@ -25,10 +25,10 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-04T15:16:22Z: Market OPEN (11:16 ET). REGIME: NORMAL. 0 RSI BUY. 0 net-buy BUY. 0 surge. INTC RSI SELL conf≥2 — HOLD: hours_held<3. BP $51.79 ($1.79 above $50 buffer). Acct $97.27.",
     "BUY INTC $30.00 @ $95.10 (2026-09-04T14:18:19Z): Net-buy 4d streak + 180.5% buy surge. Trail stop $93.20, target $104.61.",
     "SELL PYPL $15.36 @ $55.10 (2026-09-04T14:17:35Z): ATR trail stop hit ($55.10 ≤ $55.17). P&L +2.38%.",
     "NO TRADE 2026-09-03T20:11:14Z: Market CLOSED. REGIME: NORMAL. RSI SELL conf≥2 (unowned): HOOD/C/JNJ/DELL/AUR/IREN/CIFR/BE. RSI BUY: none. Net-buy BUY: INTC/PYPL/ARM/RGTI (4d streaks). Net-buy SELL (unowned): UBER/MSFT/MBLY/IONQ. PYPL $56.82 +5.57% — trail_stop $55.17 (ratchet: profit≥5%, max($55.17,$53.82×1.025=$55.17)). No sell trigger. CB INACTIVE (daily +0.74%, weekly +3.88%). BP $64.48. Acct $97.56.",
-    "NO TRADE 2026-09-03T19:13:06Z: Market OPEN (15:13 ET). REGIME: NORMAL. 0 RSI BUY. Net-buy BUY: INTC/SMCI/BE/ARM/PYPL — SKIP: BP $64.48-$50=$14.48 < $15 min order. Surge (≥10%): INTC count=4, BE count=2 — SKIP: BP insufficient. RSI SELL (unowned): CRM/META/TSLA/HOOD/C/JNJ/ORCL/DELL/AUR/IREN/CIFR/BE. Net-buy SELL (unowned): UBER/QBTS/IONQ/MSFT/MBLY. PYPL $56.575 +5.12% — trail_stop $55.17 (unchanged, profit≥5% ratchet = $55.17 already higher). No sell trigger. CB INACTIVE (daily +0.74%, weekly +3.88%). BP $64.48. Acct $97.55.",
     "SELL HOOD @ $121.64 (2026-09-03T14:21:28Z): TAKE-PROFIT +15.1%."
   ]
 }
