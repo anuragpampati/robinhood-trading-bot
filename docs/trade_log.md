@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-07T19:11:31Z
-- SUMMARY: Market CLOSED (Labor Day). REGIME: NORMAL (SPY $770.23 > EMA200 $763.04, RSI=55.0). INTC GFD sell order queued (placed 2026-09-07T16:13Z during holiday, awaiting market open 2026-09-08). RSI SELL conf≥2 (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. Net-buy SELL (not held): MSFT/NFLX/PLTR/QCOM/GOOGL/COIN. Net-buy BUY: INTC (already have GFD sell queued). Surge candidates (market closed, 4b skipped): MRVL +143.3%, AMD +304.9%. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Positions: 1 (INTC, GFD sell pending). Acct $97.39.
-
 ## 2026-09-04T19:12:00Z
 - SUMMARY: Market OPEN (15:09 ET). NO TRADES. REGIME: NORMAL. INTC $94.50 — no sell trigger (trail_stop=$93.20 safe, TP=$104.61 not hit, HOLD signal, hours_held=4.85h≥3h). TSM intraday_surge count=2 — SKIP: BP $51.79−$50=$1.79<$50 min (intraday_surge needs $50). OKLO/META surge count=1 (needs ≥2). RSI SELL (not held): F/VRT/SYM/TSM/IREN/NBIS. Net-buy SELL (not held): MSFT/NFLX/PLTR/QCOM/ALAB/EQIX/AMAT/COIN/MRCY/LRCX. CB INACTIVE (daily −0.2%, weekly +3.2%). BP $51.79. Positions: 1 (INTC). Acct $96.95.
 
