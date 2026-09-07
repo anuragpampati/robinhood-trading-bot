@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T16:14:00Z",
+  "updated_at": "2026-09-07T17:14:00Z",
   "buying_power": 51.79,
   "market_regime": "normal",
   "account_value": 97.39,
@@ -8,12 +8,28 @@
   "day_start_date": "2026-09-07",
   "week_start_value": 97.39,
   "week_start_date": "2026-09-07",
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "INTC",
+      "quantity": 0.315459,
+      "avg_cost": 95.10,
+      "current_price": 95.81,
+      "pnl_pct": 0.0075,
+      "value": 30.24,
+      "entry_atr_pct": 0.01,
+      "entry_time": "2026-09-04T14:18:19Z",
+      "trail_stop": 93.20,
+      "take_profit": 104.61,
+      "strategy": "normal",
+      "sell_date": null,
+      "note": "GFD sell order pending from 2026-09-07T16:13Z — shares_available_for_sells=0, shares_held_for_sells=0.315459. Will execute at next market open (2026-09-08)."
+    }
+  ],
   "last_actions": [
+    "NO TRADE 2026-09-07T17:14:00Z: Market CLOSED (Labor Day). Naive market_open() returned True but last trade was 2026-09-04. INTC GFD sell order pending (placed 16:13 UTC). Cannot sell (shares_available=0). Cannot buy: BP $51.79 − $50 buffer = $1.79 available < $15 min. RSI SELL signals (not held): IREN/BE/SYM/NBIS/CRWV/EOSE/F. CB INACTIVE (daily 0.0%, weekly 0.0%). Acct $97.39.",
     "SELL INTC 0.315459 @ ~$95.81 (2026-09-07T16:13:56Z): RSI overbought (70.6), ABOVE_BAND, conf=2/3, hours_held≈74h. PnL +0.75%. Order queued (market sell GFD).",
     "NO BUY 2026-09-07T16:14:00Z: No qualifying BUY signals. Only net-buy BUY was INTC (just sold). Surge: MU/WFC/DELL count=1 (need ≥2). CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39.",
     "NO TRADE 2026-09-07T15:11:06Z: Market CLOSED (Labor Day). REGIME: NORMAL. SPY $770.23 > EMA200 $763.04. INTC $95.81 +0.75% — RSI SELL conf=2 (RSI=70.6, ABOVE_BAND) deferred (market closed); trail_stop $93.20 safe, TP $104.61 not hit. Net-buy BUY INTC (1 signal, market closed). CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Positions: 1 (INTC). Acct $97.39.",
-    "NO TRADE 2026-09-07T14:14:00Z: Market CLOSED (Labor Day — US federal holiday). REGIME: NORMAL. INTC $95.81 +0.75% — RSI SELL conf=2 (RSI=70.55) deferred. trail_stop $93.20 safe, TP $104.61 not hit. CB INACTIVE (daily 0.0%, weekly 0.0% — new day/week baseline reset to $97.39). BP $51.79. Acct $97.39.",
     "BUY INTC $30.00 @ $95.10 (2026-09-04T14:18:19Z): Net-buy 4d streak + 180.5% buy surge. Trail stop $93.20, target $104.61."
   ]
 }
