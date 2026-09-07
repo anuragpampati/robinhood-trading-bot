@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-04T20:10:00Z",
+  "updated_at": "2026-09-07T14:14:00Z",
   "buying_power": 51.79,
   "market_regime": "normal",
-  "account_value": 97.35,
+  "account_value": 97.39,
   "peak_value": 101.68,
-  "day_start_value": 97.14,
-  "day_start_date": "2026-09-04",
-  "week_start_value": 93.91,
-  "week_start_date": "2026-08-31",
+  "day_start_value": 97.39,
+  "day_start_date": "2026-09-07",
+  "week_start_value": 97.39,
+  "week_start_date": "2026-09-07",
   "positions": [
     {
       "ticker": "INTC",
@@ -25,9 +25,9 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-07T14:14:00Z: Market CLOSED (Labor Day — US federal holiday). REGIME: NORMAL. INTC $95.81 +0.75% — RSI SELL conf=2 (RSI=70.55) deferred. trail_stop $93.20 safe, TP $104.61 not hit. CB INACTIVE (daily 0.0%, weekly 0.0% — new day/week baseline reset to $97.39). BP $51.79. Acct $97.39.",
     "NO TRADE 2026-09-04T20:10:00Z: Market CLOSED (after hours). REGIME: NORMAL. INTC $95.81 +0.75% — trail_stop $93.20 safe, TP $104.61 not hit. RSI SELL on INTC (held) deferred — market closed. CB INACTIVE (daily +0.2%, weekly +3.7%). BP $51.79. Acct $97.35.",
     "NO TRADE 2026-09-04T19:12:00Z: Market OPEN (15:09 ET). REGIME: NORMAL. INTC $94.50 — no sell trigger (trail_stop=$93.20 safe, TP=$104.61 not hit, HOLD signal, hours_held=4.85h≥3h). TSM intraday_surge count=2 — SKIP: BP $51.79−$50=$1.79<$50 min. OKLO/META surge count=1 (needs ≥2). CB INACTIVE (daily −0.2%, weekly +3.2%). BP $51.79. Positions: 1 (INTC). Acct $96.95.",
-    "NO TRADE 2026-09-04T17:13:00Z: Market OPEN (13:13 ET). REGIME: NORMAL. INTC RSI SELL conf=2 — HOLD: hours_held 2.9h < 3h. No sell trigger (ATR stop safe at $93.20, TP $104.61 not hit). TSM surge +19.9% — tracker count=1 (need ≥2 for buy). BP $51.79 ($1.79 above $50 buffer). CB INACTIVE. Acct $97.27.",
     "BUY INTC $30.00 @ $95.10 (2026-09-04T14:18:19Z): Net-buy 4d streak + 180.5% buy surge. Trail stop $93.20, target $104.61.",
     "SELL PYPL $15.36 @ $55.10 (2026-09-04T14:17:35Z): ATR trail stop hit ($55.10 ≤ $55.17). P&L +2.38%."
   ]

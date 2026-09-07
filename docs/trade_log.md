@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-07T14:14:00Z
+- SUMMARY: Market CLOSED (Labor Day — US federal holiday). NO TRADES. REGIME: NORMAL. INTC $95.81 +0.75% — RSI SELL conf=2 (RSI=70.55) deferred (market closed). trail_stop $93.20 safe, TP $104.61 not hit. Net-buy: INTC in BUY streak (contradicting RSI SELL). CB INACTIVE (daily 0.0%, weekly 0.0% — new day/week baseline reset to $97.39). BP $51.79. Positions: 1 (INTC). Acct $97.39. Day/week baseline reset (Labor Day Monday).
+
 ## 2026-09-04T19:12:00Z
 - SUMMARY: Market OPEN (15:09 ET). NO TRADES. REGIME: NORMAL. INTC $94.50 — no sell trigger (trail_stop=$93.20 safe, TP=$104.61 not hit, HOLD signal, hours_held=4.85h≥3h). TSM intraday_surge count=2 — SKIP: BP $51.79−$50=$1.79<$50 min (intraday_surge needs $50). OKLO/META surge count=1 (needs ≥2). RSI SELL (not held): F/VRT/SYM/TSM/IREN/NBIS. Net-buy SELL (not held): MSFT/NFLX/PLTR/QCOM/ALAB/EQIX/AMAT/COIN/MRCY/LRCX. CB INACTIVE (daily −0.2%, weekly +3.2%). BP $51.79. Positions: 1 (INTC). Acct $96.95.
 
