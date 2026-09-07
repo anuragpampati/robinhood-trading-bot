@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-07T16:13:56Z
+- Action   : SELL INTC
+- Price    : $95.81
+- Amount   : $30.24 | Shares: 0.315459
+- RSI      : 70.6 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $93.20 | Target: $104.61
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI overbought (70.6) | price above BB upper band | conf=2/3 | hours_held≈74h | PnL +0.75% (+$0.22)
+
+## 2026-09-07T16:14:00Z
+- SUMMARY: Market OPEN (12:14 ET). SELL INTC placed (market order queued). No BUY: only net-buy BUY was INTC (just sold); surge tracker MU/WFC/DELL count=1 (need ≥2). REGIME: NORMAL. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79 (→~$82 post-settlement). Positions: 0. Acct $97.39.
+
 ## 2026-09-07T15:11:06Z
 - SUMMARY: Market CLOSED (Labor Day — US federal holiday). NO TRADES. REGIME: NORMAL (SPY $770.23 > EMA200 $763.04). INTC $95.81 +0.75% — RSI SELL conf=2 (RSI=70.6, BB ABOVE_BAND) deferred (market closed); trail_stop $93.20 safe, TP $104.61 not hit. Net-buy BUY: INTC (1 signal, market closed). CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Positions: 1 (INTC). Acct $97.39.
 

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-07T15:13:37.726709+00:00",
+  "timestamp": "2026-09-07T16:16:12.893336+00:00",
   "mode": "quick",
   "universe_size": 103,
   "market_open": true,
@@ -1656,13 +1656,31 @@
   ],
   "surge_signals": [
     {
-      "ticker": "TSM",
-      "price": 427.405,
-      "buy_surge_pct": 0.2776,
-      "buy_vol_d2": 1090718,
-      "buy_vol_d3": 1393540,
-      "net_buy_d3": 644664,
-      "reason": "Buy vol \u219127.8% vs prior day | 3d streak | latest 0.64M | OBV 1.0M/day"
+      "ticker": "TGT",
+      "price": 164.425,
+      "buy_surge_pct": 0.9721,
+      "buy_vol_d2": 231972,
+      "buy_vol_d3": 457468,
+      "net_buy_d3": 303681,
+      "reason": "Buy vol \u219197.2% vs prior day | 1d streak | latest 0.30M | OBV 0.3M/day"
+    },
+    {
+      "ticker": "BA",
+      "price": 212.2299,
+      "buy_surge_pct": 0.4874,
+      "buy_vol_d2": 568482,
+      "buy_vol_d3": 845562,
+      "net_buy_d3": 834800,
+      "reason": "Buy vol \u219148.7% vs prior day | 0d streak | latest 0.83M | OBV 0.6M/day"
+    },
+    {
+      "ticker": "AMD",
+      "price": 477.45,
+      "buy_surge_pct": 3.0485,
+      "buy_vol_d2": 992012,
+      "buy_vol_d3": 4016174,
+      "net_buy_d3": 3373958,
+      "reason": "Buy vol \u2191304.9% vs prior day | 1d streak | latest 3.37M | OBV -0.4M/day"
     }
   ]
 }
