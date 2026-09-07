@@ -1,31 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-07T18:09:48Z
-- SUMMARY: Market CLOSED (Labor Day — US federal holiday). Naive is_market_open() returned True (no holiday calendar). Last exchange trade: 2026-09-04T20:00Z. INTC 0.315459 shares — GFD sell order still pending (shares_available=0, shares_held_for_sells=0.315459). No new orders placed. Surge: OKLO 17.29% (count=1, needs ≥2 for intraday_surge entry). Regime: NORMAL (SPY $770.23 > EMA200 $763.04). RSI SELL signals (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. Net-buy BUY: INTC (in pending sell). CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Positions: 1 (INTC pending GFD sell @ market open 2026-09-08). Acct $97.39.
-
-## 2026-09-07T17:14:00Z
-- SUMMARY: Market CLOSED (Labor Day — US federal holiday). Naive is_market_open() returned True (no holiday calendar). Last exchange trade: 2026-09-04T20:00Z. INTC 0.315459 shares still held with GFD sell order pending from 16:13 UTC (shares_available=0, shares_held_for_sells=0.315459). No new orders placed. Regime: BULLISH (SPY $770.23 > EMA200 $762.99). RSI sell signals (not held): IREN/BE/SYM/NBIS/CRWV/EOSE/F. Net-buy signals: SELL SPY/MSFT/PLTR/NFLX/GOOGL. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Positions: 1 (INTC pending sell). Acct $97.39.
-
-## 2026-09-07T16:13:56Z
-- Action   : SELL INTC
-- Price    : $95.81
-- Amount   : $30.24 | Shares: 0.315459
-- RSI      : 70.6 | EMA: BULLISH | BB: ABOVE_BAND
-- RL       : null conf=null | null
-- Stop     : $93.20 | Target: $104.61
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI overbought (70.6) | price above BB upper band | conf=2/3 | hours_held≈74h | PnL +0.75% (+$0.22)
-
-## 2026-09-07T16:14:00Z
-- SUMMARY: Market OPEN (12:14 ET). SELL INTC placed (market order queued). No BUY: only net-buy BUY was INTC (just sold); surge tracker MU/WFC/DELL count=1 (need ≥2). REGIME: NORMAL. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79 (→~$82 post-settlement). Positions: 0. Acct $97.39.
-
-## 2026-09-07T15:11:06Z
-- SUMMARY: Market CLOSED (Labor Day — US federal holiday). NO TRADES. REGIME: NORMAL (SPY $770.23 > EMA200 $763.04). INTC $95.81 +0.75% — RSI SELL conf=2 (RSI=70.6, BB ABOVE_BAND) deferred (market closed); trail_stop $93.20 safe, TP $104.61 not hit. Net-buy BUY: INTC (1 signal, market closed). CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Positions: 1 (INTC). Acct $97.39.
-
-## 2026-09-07T14:14:00Z
-- SUMMARY: Market CLOSED (Labor Day — US federal holiday). NO TRADES. REGIME: NORMAL. INTC $95.81 +0.75% — RSI SELL conf=2 (RSI=70.55) deferred (market closed). trail_stop $93.20 safe, TP $104.61 not hit. Net-buy: INTC in BUY streak (contradicting RSI SELL). CB INACTIVE (daily 0.0%, weekly 0.0% — new day/week baseline reset to $97.39). BP $51.79. Positions: 1 (INTC). Acct $97.39. Day/week baseline reset (Labor Day Monday).
-
 ## 2026-09-04T19:12:00Z
 - SUMMARY: Market OPEN (15:09 ET). NO TRADES. REGIME: NORMAL. INTC $94.50 — no sell trigger (trail_stop=$93.20 safe, TP=$104.61 not hit, HOLD signal, hours_held=4.85h≥3h). TSM intraday_surge count=2 — SKIP: BP $51.79−$50=$1.79<$50 min (intraday_surge needs $50). OKLO/META surge count=1 (needs ≥2). RSI SELL (not held): F/VRT/SYM/TSM/IREN/NBIS. Net-buy SELL (not held): MSFT/NFLX/PLTR/QCOM/ALAB/EQIX/AMAT/COIN/MRCY/LRCX. CB INACTIVE (daily −0.2%, weekly +3.2%). BP $51.79. Positions: 1 (INTC). Acct $96.95.
 
