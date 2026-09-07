@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04",
+  "updated_at": "2026-09-07",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
@@ -11,8 +11,8 @@
   "wins": null,
   "losses": null,
   "circuit_breaker_halts": null,
-  "rl_training_samples": 580,
+  "rl_training_samples": 590,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — Yahoo Finance network access blocked by environment policy (recurring 403 from egress proxy, 30+ consecutive sessions). RL collector failed — yfinance not installed (pip install timed out). Config NO_CHANGE: normal win_rate 52.2% (n≈23) in [40%,65%] hold band; momentum n=0 (insufficient data); ATR avg_hold >>2h. RL READY (580/200 samples, 19 Q-states)."
+  "note": "Backtest skipped — Yahoo Finance network access blocked by environment policy (recurring 403 from egress proxy, 31+ consecutive sessions). Config NO_CHANGE: normal win_rate 52.2% (n=23) in [40%,65%] hold band; momentum n=0 (insufficient data); ATR avg_hold ~130h >> 2h. RL READY (590/200 samples, 19 Q-states). Updated by daily learning CCR"
 }

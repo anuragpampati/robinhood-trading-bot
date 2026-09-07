@@ -324,3 +324,12 @@
 - Backtest: SKIPPED — Yahoo Finance network access blocked by environment policy
 - RL samples: 580/200 (RL READY — 580 samples collected, Q-table has 19 states learned)
 - Notes: Backtest cannot run in this CCR environment (Yahoo Finance 403 from egress proxy). Trade log trimmed to 8 entries (last 2 days). +8 new RL training rows added today. Account at $97.56, 1 open position (PYPL +5.57%). RL Q-learning agent ready to train.
+
+## 2026-09-07
+- Trades analysed: 23 closed cumulative (12W/11L); 0 new closures today (INTC GFD sell queued for 2026-09-08 open — Labor Day holiday)
+- Win rate: 52.2% overall (normal: 52.2% [n=23, 12W/11L, avg_hold≈130h]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH ~50%, BEARISH ~50%
+- Config changes: none — RSI_OVERSOLD: 52.2% in [40%,65%] hold band (NO_CHANGE, n=23≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~130h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance 403 proxy block (31+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 590/200 (RL READY — +10 new rows today; 19 states in Q-table; 2.95× target)
+- Notes: Market CLOSED (Labor Day). INTC GFD sell order queued (RSI=70.6 overbought, placed 2026-09-07T16:13Z, executes at 2026-09-08 open). Account $97.39, 1 position (INTC +0.75%). BP $51.79. Backtest network failure persists (31+ sessions). Trade log trimmed to 1 entry. Run: python -m strategy.rl_agent --train to activate Q-learning.
