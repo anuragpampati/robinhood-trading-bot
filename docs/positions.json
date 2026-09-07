@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T19:11:31Z",
+  "updated_at": "2026-09-07T20:10:00Z",
   "buying_power": 51.79,
   "market_regime": "normal",
   "account_value": 97.39,
@@ -26,10 +26,10 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-07T20:10:00Z: Market CLOSED (Labor Day). REGIME: NORMAL. SPY $770.23 > EMA200 $763.04. INTC GFD sell still queued (order 6a9ee2c4, awaiting 2026-09-08 open). RSI SELL (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. Net-buy BUY: INTC (already selling). Surge (step 4b skipped): TGT +97.2%/BA +48.7%/DELL +14.8%. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39.",
     "NO TRADE 2026-09-07T19:11:31Z: Market CLOSED (Labor Day). REGIME: NORMAL. SPY $770.23 > EMA200 $763.04. INTC GFD sell queued (order 6a9ee2c4, awaiting 2026-09-08 open). RSI SELL (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. Net-buy BUY: INTC (already selling). Surge (step 4b skipped, market closed): MRVL +143.3%, AMD +304.9%. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39.",
     "NO TRADE 2026-09-07T18:09:48Z: Market CLOSED (Labor Day). Naive market_open() returned True. INTC GFD sell pending (shares_available=0). Surge: OKLO count=1 (need ≥2). RSI SELL (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39.",
     "NO TRADE 2026-09-07T17:14:00Z: Market CLOSED (Labor Day). Naive market_open() returned True but last trade was 2026-09-04. INTC GFD sell order pending (placed 16:13 UTC). Cannot sell (shares_available=0). Cannot buy: BP $51.79 − $50 buffer = $1.79 available < $15 min. RSI SELL signals (not held): IREN/BE/SYM/NBIS/CRWV/EOSE/F. CB INACTIVE (daily 0.0%, weekly 0.0%). Acct $97.39.",
-    "SELL INTC 0.315459 @ ~$95.81 (2026-09-07T16:13:56Z): RSI overbought (70.6), ABOVE_BAND, conf=2/3, hours_held≈74h. PnL +0.75%. Order queued (market sell GFD).",
-    "NO BUY 2026-09-07T16:14:00Z: No qualifying BUY signals. Only net-buy BUY was INTC (just sold). Surge: MU/WFC/DELL count=1 (need ≥2). CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39."
+    "SELL INTC 0.315459 @ ~$95.81 (2026-09-07T16:13:56Z): RSI overbought (70.6), ABOVE_BAND, conf=2/3, hours_held≈74h. PnL +0.75%. Order queued (market sell GFD)."
   ]
 }
