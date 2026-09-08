@@ -1,35 +1,18 @@
 {
-  "updated_at": "2026-09-07T20:10:00Z",
-  "buying_power": 51.79,
+  "updated_at": "2026-09-08T14:13:29Z",
+  "buying_power": 67.14,
   "market_regime": "normal",
-  "account_value": 97.39,
+  "account_value": 98.99,
   "peak_value": 101.68,
-  "day_start_value": 97.39,
-  "day_start_date": "2026-09-07",
+  "day_start_value": 98.99,
+  "day_start_date": "2026-09-08",
   "week_start_value": 97.39,
   "week_start_date": "2026-09-07",
-  "positions": [
-    {
-      "ticker": "INTC",
-      "quantity": 0.315459,
-      "avg_cost": 95.10,
-      "current_price": 95.81,
-      "pnl_pct": 0.0075,
-      "value": 30.24,
-      "entry_atr_pct": 0.01,
-      "entry_time": "2026-09-04T14:18:19Z",
-      "trail_stop": 93.20,
-      "take_profit": 104.61,
-      "strategy": "normal",
-      "sell_date": null,
-      "note": "GFD market sell order QUEUED (id=6a9ee2c4-60de-41e2-88fb-f7c92aa0e3f4, placed 2026-09-07T16:13Z during Labor Day holiday). Will execute at market open 2026-09-08. RSI SELL conf=2 (RSI=70.6, ABOVE_BAND). shares_available=0, shares_held_for_sells=0.315459."
-    }
-  ],
+  "positions": [],
   "last_actions": [
+    "NO TRADE 2026-09-08T14:13:29Z: Market OPEN. INTC GFD sell (queued 2026-09-07) executed — 0 positions. BP $67.14 (unsettled $31.85). RSI BUY: none. Net-buy BUY: INTC only (conflicting RSI SELL overbought, RSI=70.2, ABOVE_BAND — SKIP). Available $17.14 < $50 min. CB INACTIVE. Acct $98.99.",
     "NO TRADE 2026-09-07T20:10:00Z: Market CLOSED (Labor Day). REGIME: NORMAL. SPY $770.23 > EMA200 $763.04. INTC GFD sell still queued (order 6a9ee2c4, awaiting 2026-09-08 open). RSI SELL (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. Net-buy BUY: INTC (already selling). Surge (step 4b skipped): TGT +97.2%/BA +48.7%/DELL +14.8%. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39.",
     "NO TRADE 2026-09-07T19:11:31Z: Market CLOSED (Labor Day). REGIME: NORMAL. SPY $770.23 > EMA200 $763.04. INTC GFD sell queued (order 6a9ee2c4, awaiting 2026-09-08 open). RSI SELL (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. Net-buy BUY: INTC (already selling). Surge (step 4b skipped, market closed): MRVL +143.3%, AMD +304.9%. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39.",
-    "NO TRADE 2026-09-07T18:09:48Z: Market CLOSED (Labor Day). Naive market_open() returned True. INTC GFD sell pending (shares_available=0). Surge: OKLO count=1 (need ≥2). RSI SELL (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39.",
-    "NO TRADE 2026-09-07T17:14:00Z: Market CLOSED (Labor Day). Naive market_open() returned True but last trade was 2026-09-04. INTC GFD sell order pending (placed 16:13 UTC). Cannot sell (shares_available=0). Cannot buy: BP $51.79 − $50 buffer = $1.79 available < $15 min. RSI SELL signals (not held): IREN/BE/SYM/NBIS/CRWV/EOSE/F. CB INACTIVE (daily 0.0%, weekly 0.0%). Acct $97.39.",
     "SELL INTC 0.315459 @ ~$95.81 (2026-09-07T16:13:56Z): RSI overbought (70.6), ABOVE_BAND, conf=2/3, hours_held≈74h. PnL +0.75%. Order queued (market sell GFD)."
   ]
 }
