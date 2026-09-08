@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T15:15:00Z",
+  "updated_at": "2026-09-08T16:12:58Z",
   "buying_power": 67.14,
   "market_regime": "normal",
   "account_value": 98.99,
@@ -10,9 +10,9 @@
   "week_start_date": "2026-09-07",
   "positions": [],
   "last_actions": [
+    "NO TRADE 2026-09-08T16:12:58Z: Market OPEN (12:12 ET). RSI BUY: none. Net-buy BUY: QBTS (RSI SELL conflict overbought 74.4 ABOVE_BAND — SKIP). RSI SELL (not held, many). 0 positions. BP $67.14 (unsettled ~$31.85). CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99.",
     "NO TRADE 2026-09-08T15:15:00Z: Market OPEN (11:15 ET). RSI BUY: none. Net-buy BUY: none. Surge: none. 0 positions. BP $67.14 (unsettled ~$31.85). Available $17.14 but no BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99.",
     "NO TRADE 2026-09-08T14:13:29Z: Market OPEN. INTC GFD sell (queued 2026-09-07) executed — 0 positions. BP $67.14 (unsettled $31.85). RSI BUY: none. Net-buy BUY: INTC only (conflicting RSI SELL overbought, RSI=70.2, ABOVE_BAND — SKIP). Available $17.14 < $50 min. CB INACTIVE. Acct $98.99.",
-    "NO TRADE 2026-09-07T20:10:00Z: Market CLOSED (Labor Day). REGIME: NORMAL. SPY $770.23 > EMA200 $763.04. INTC GFD sell still queued (order 6a9ee2c4, awaiting 2026-09-08 open). RSI SELL (not held): F/SYM/IREN/NBIS/CRWV/EOSE/BE. Net-buy BUY: INTC (already selling). Surge (step 4b skipped): TGT +97.2%/BA +48.7%/DELL +14.8%. CB INACTIVE (daily 0.0%, weekly 0.0%). BP $51.79. Acct $97.39.",
     "SELL INTC 0.315459 @ ~$95.81 (2026-09-07T16:13:56Z): RSI overbought (70.6), ABOVE_BAND, conf=2/3, hours_held≈74h. PnL +0.75%. Order queued (market sell GFD)."
   ]
 }
