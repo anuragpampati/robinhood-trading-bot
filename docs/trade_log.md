@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-08T18:12:57Z
+- Action   : BUY NFLX
+- Price    : $76.83
+- Amount   : $15.00 | Shares: 0.195230
+- RSI      : 25.4 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $75.40 | Target: $84.51
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (22.0↑25.4) | BB reversal: 0.08→0.12 (returning from band)
+
 ## 2026-09-08T17:11:08Z
 - SUMMARY: Market OPEN (13:11 ET). No trades executed. RSI BUY: NONE. Net-buy BUY: NONE. Surge: NONE. 0 equity positions. BP $67.14 (unsettled ~$31.85). No qualifying BUY signals in either strategy. CB INACTIVE (daily 0.0%, weekly −1.6% gain). Regime: NORMAL (SPY $767.69 > EMA200 $763.18). Account: $98.99.
 

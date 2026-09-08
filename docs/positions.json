@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-08T17:11:08Z",
-  "buying_power": 67.14,
+  "updated_at": "2026-09-08T18:12:57Z",
+  "buying_power": 52.14,
   "market_regime": "normal",
   "account_value": 98.99,
   "peak_value": 101.68,
@@ -8,11 +8,26 @@
   "day_start_date": "2026-09-08",
   "week_start_value": 97.39,
   "week_start_date": "2026-09-07",
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "NFLX",
+      "quantity": 0.19523,
+      "avg_cost": 76.83,
+      "current_price": 76.83,
+      "pnl_pct": 0.0,
+      "value": 15.0,
+      "entry_atr_pct": 0.0093,
+      "entry_time": "2026-09-08T18:12:57Z",
+      "trail_stop": 75.40,
+      "take_profit": 84.51,
+      "strategy": "normal",
+      "sell_date": null
+    }
+  ],
   "last_actions": [
+    "BUY NFLX 2026-09-08T18:12:57Z: RSI=25.4 oversold+stabilizing BELOW_BAND BEARISH. RL BOOST (BUY conf=0.928, signal 2→3). $15.00 @ ~$76.83. Stop $75.40, target $84.51. BP after: ~$52.14. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct ~$98.99.",
     "NO TRADE 2026-09-08T17:11:08Z: Market OPEN (13:11 ET). RSI BUY: none. Net-buy BUY: none. Surge: none. 0 positions. BP $67.14 (unsettled ~$31.85). No qualifying BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99.",
     "NO TRADE 2026-09-08T16:12:58Z: Market OPEN (12:12 ET). RSI BUY: none. Net-buy BUY: QBTS (RSI SELL conflict overbought 74.4 ABOVE_BAND — SKIP). RSI SELL (not held, many). 0 positions. BP $67.14 (unsettled ~$31.85). Available $17.14 but no BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99.",
-    "NO TRADE 2026-09-08T15:15:00Z: Market OPEN (11:15 ET). RSI BUY: none. Net-buy BUY: none. Surge: none. 0 positions. BP $67.14 (unsettled ~$31.85). Available $17.14 but no BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99.",
-    "NO TRADE 2026-09-08T14:13:29Z: Market OPEN. INTC GFD sell (queued 2026-09-07) executed — 0 positions. BP $67.14 (unsettled $31.85). RSI BUY: none. Net-buy BUY: INTC only (conflicting RSI SELL overbought, RSI=70.2, ABOVE_BAND — SKIP). Available $17.14 < $50 min. CB INACTIVE. Acct $98.99."
+    "NO TRADE 2026-09-08T15:15:00Z: Market OPEN (11:15 ET). RSI BUY: none. Net-buy BUY: none. Surge: none. 0 positions. BP $67.14 (unsettled ~$31.85). Available $17.14 but no BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99."
   ]
 }
