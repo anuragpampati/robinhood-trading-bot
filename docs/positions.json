@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T18:12:57Z",
+  "updated_at": "2026-09-08T19:12:37Z",
   "buying_power": 52.14,
   "market_regime": "normal",
   "account_value": 98.99,
@@ -11,11 +11,11 @@
   "positions": [
     {
       "ticker": "NFLX",
-      "quantity": 0.19523,
+      "quantity": 0.195238,
       "avg_cost": 76.83,
-      "current_price": 76.83,
-      "pnl_pct": 0.0,
-      "value": 15.0,
+      "current_price": 76.805,
+      "pnl_pct": -0.0003,
+      "value": 14.99,
       "entry_atr_pct": 0.0093,
       "entry_time": "2026-09-08T18:12:57Z",
       "trail_stop": 75.40,
@@ -25,9 +25,9 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-08T19:12:37Z: Market OPEN (15:12 ET). RSI BUY: NFLX (already held). Net-buy BUY: none. Surge: RIVN (+112% count=1, need 2). No qualifying new BUYs. NFLX held 1hr, price $76.81 vs stop $75.40 — no exit. CB INACTIVE (daily ~0%, weekly -1.6% gain). Regime NORMAL. BP $52.14. 1 position. Acct $98.99.",
     "BUY NFLX 2026-09-08T18:12:57Z: RSI=25.4 oversold+stabilizing BELOW_BAND BEARISH. RL BOOST (BUY conf=0.928, signal 2→3). $15.00 @ ~$76.83. Stop $75.40, target $84.51. BP after: ~$52.14. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct ~$98.99.",
     "NO TRADE 2026-09-08T17:11:08Z: Market OPEN (13:11 ET). RSI BUY: none. Net-buy BUY: none. Surge: none. 0 positions. BP $67.14 (unsettled ~$31.85). No qualifying BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99.",
-    "NO TRADE 2026-09-08T16:12:58Z: Market OPEN (12:12 ET). RSI BUY: none. Net-buy BUY: QBTS (RSI SELL conflict overbought 74.4 ABOVE_BAND — SKIP). RSI SELL (not held, many). 0 positions. BP $67.14 (unsettled ~$31.85). Available $17.14 but no BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99.",
-    "NO TRADE 2026-09-08T15:15:00Z: Market OPEN (11:15 ET). RSI BUY: none. Net-buy BUY: none. Surge: none. 0 positions. BP $67.14 (unsettled ~$31.85). Available $17.14 but no BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99."
+    "NO TRADE 2026-09-08T16:12:58Z: Market OPEN (12:12 ET). RSI BUY: none. Net-buy BUY: QBTS (RSI SELL conflict overbought 74.4 ABOVE_BAND — SKIP). RSI SELL (not held, many). 0 positions. BP $67.14 (unsettled ~$31.85). Available $17.14 but no BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99."
   ]
 }
