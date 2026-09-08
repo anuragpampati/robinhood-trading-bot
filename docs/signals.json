@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-08T21:35:53.748917+00:00",
+  "timestamp": "2026-09-08T22:17:09.699510+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1561,7 +1561,7 @@
   "rl_stats": {
     "live": true,
     "states": 19,
-    "training_samples": 590
+    "training_samples": 600
   },
   "net_buy_buy_signals": [],
   "net_buy_sell_signals": [
@@ -1656,15 +1656,5 @@
       "reason": "Net buy reversed: 0.16M \u2192 -1.02M | OBV -0.6M/day"
     }
   ],
-  "surge_signals": [
-    {
-      "ticker": "AMD",
-      "price": 505.739990234375,
-      "buy_surge_pct": 0.1265,
-      "buy_vol_d2": 18463182,
-      "buy_vol_d3": 20799635,
-      "net_buy_d3": 13620030,
-      "reason": "Buy vol \u219112.7% vs prior day | 0d streak | latest 13.62M | OBV 4.6M/day"
-    }
-  ]
+  "surge_signals": []
 }
