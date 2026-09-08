@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-08
+- Trades analysed: 0 closed pairs (1 open position: NFLX BUY @ $76.83 on 2026-09-08, still held; no complete BUY→SELL round-trips in last 30 log entries)
+- Win rate: n/a — no closed trades in log (normal: n/a [n=0 new]; momentum: n/a [n=0 trades ever]; surge: n/a [n=0 trades ever]); historical reference (from 2026-08-11): normal 50.0% (7W/7L, n=14, avg_pnl −0.51%, avg_hold ~137h)
+- EMA-trend win rate: historical BULLISH entry 50.0% (n=12); BEARISH entry 50.0% (n=2)
+- Config changes: none — RSI_OVERSOLD: historical win_rate=50.0% in [40%,65%] (NO_CHANGE, n=14≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~137h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy blocked (403, 32+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 600/200 (READY — +10 new rows today; 19 states in Q-table)
+- Notes: Account $98.99, 1 equity position (NFLX BUY @ $76.83, pnl=−0.07%, stop $75.40, target $84.51). Buying power $52.14 ($2.14 above buffer — very limited new buys). RSI BUY candidates deferred (SBUX RSI 22.8, SHOP RSI 29.2). Trade log trimmed: 4 entries remain. RL READY (600/200 samples, 19 Q-states) — run: python -m strategy.rl_agent --train to activate Q-learning.
+
 ## 2026-08-31
 - Trades analysed: 0 closed pairs (3 open positions: PYPL -2.15%, HOOD -0.80%, BE -2.36%; no complete BUY→SELL round-trips in last 30 log entries)
 - Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
