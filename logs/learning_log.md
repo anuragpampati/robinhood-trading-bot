@@ -342,3 +342,11 @@
 - Backtest: SKIPPED — Yahoo Finance 403 proxy block (31+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
 - RL samples: 590/200 (RL READY — +10 new rows today; 19 states in Q-table; 2.95× target)
 - Notes: Market CLOSED (Labor Day). INTC GFD sell order queued (RSI=70.6 overbought, placed 2026-09-07T16:13Z, executes at 2026-09-08 open). Account $97.39, 1 position (INTC +0.75%). BP $51.79. Backtest network failure persists (31+ sessions). Trade log trimmed to 1 entry. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-09-09
+- Trades analysed: 2 new closed (INTC ~WIN/normal/BULLISH EMA; NFLX -0.31% LOSS/21h/signal-sell/normal/BEARISH EMA); cumulative ~25 closed (13W/12L)
+- Win rate: 52.0% overall (normal: 52.0% [n=25, 13W/12L, avg_hold≈130h]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA ~50%; BEARISH EMA ~50%
+- Config changes: none — RSI_OVERSOLD: 52.0% in [40%,65%] hold band (NO_CHANGE, n=25≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~130h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance network access blocked (403, 33rd+ consecutive session); prior metrics retained (null — blocked before persisting)
+- RL samples: 602/200 (RL READY — exceeded target 3.01×; 19 states in Q-table; +2 new rows today)
+- Notes: Account $98.65 (-1.35% from $100 start, +1.27% from weekly low $97.39). 1 open position: SBUX ($33.66, -0.98%, stop $99.61, TP $111.14). Buying power $50.00 (at buffer floor). Regime: BEARISH_EMA. NFLX closed at -0.31% loss on net-buy reversal (signal sell). Trade log trimmed to 5 entries. Run: python -m strategy.rl_agent --train to activate Q-learning.
