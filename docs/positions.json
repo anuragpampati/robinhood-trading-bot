@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-08T20:10:51Z",
-  "buying_power": 52.14,
+  "updated_at": "2026-09-09T14:13:36Z",
+  "buying_power": 83.99,
   "market_regime": "normal",
-  "account_value": 98.99,
+  "account_value": 98.93,
   "peak_value": 101.68,
-  "day_start_value": 98.99,
-  "day_start_date": "2026-09-08",
+  "day_start_value": 98.93,
+  "day_start_date": "2026-09-09",
   "week_start_value": 97.39,
   "week_start_date": "2026-09-07",
   "positions": [
@@ -13,9 +13,9 @@
       "ticker": "NFLX",
       "quantity": 0.195238,
       "avg_cost": 76.83,
-      "current_price": 76.78,
-      "pnl_pct": -0.0007,
-      "value": 14.99,
+      "current_price": 76.46,
+      "pnl_pct": -0.0048,
+      "value": 14.94,
       "entry_atr_pct": 0.0093,
       "entry_time": "2026-09-08T18:12:57Z",
       "trail_stop": 75.40,
@@ -25,9 +25,9 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-09T14:13:36Z: Market OPEN (10:13 ET). RSI BUY: SBUX (RSI 22.8 conf 2, RL HOLD — also net_buy_sell conflict; $83.99 BP − $50 = $33.99 < $50 buffer → SKIP), SHOP (RSI 28.83 conf 2, RL HOLD — same buffer issue → SKIP). Surge: ARM 58% count=1 (need 2). NFLX $76.46 vs stop $75.40 / target $84.51 — no exit. CB INACTIVE (daily 0%, weekly -1.6% gain). BP $83.99. 1 position. Acct $98.93.",
     "NO TRADE 2026-09-08T20:10:51Z: Market CLOSED. RSI BUY candidates: SBUX (RSI 22.8 conf 2/3), SHOP (RSI 29.2 conf 2/3) — deferred. Net-buy BUY: none. Surge: none. NFLX held $76.78 vs stop $75.40 / target $84.51 — no exit. CB INACTIVE (daily ~0%, weekly +1.6%). Regime NORMAL. BP $52.14. 1 position. Acct $98.99.",
     "NO TRADE 2026-09-08T19:12:37Z: Market OPEN (15:12 ET). RSI BUY: NFLX (already held). Net-buy BUY: none. Surge: RIVN (+112% count=1, need 2). No qualifying new BUYs. NFLX held 1hr, price $76.81 vs stop $75.40 — no exit. CB INACTIVE (daily ~0%, weekly -1.6% gain). Regime NORMAL. BP $52.14. 1 position. Acct $98.99.",
-    "BUY NFLX 2026-09-08T18:12:57Z: RSI=25.4 oversold+stabilizing BELOW_BAND BEARISH. RL BOOST (BUY conf=0.928, signal 2→3). $15.00 @ ~$76.83. Stop $75.40, target $84.51. BP after: ~$52.14. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct ~$98.99.",
-    "NO TRADE 2026-09-08T17:11:08Z: Market OPEN (13:11 ET). RSI BUY: none. Net-buy BUY: none. Surge: none. 0 positions. BP $67.14 (unsettled ~$31.85). No qualifying BUY signals. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct $98.99."
+    "BUY NFLX 2026-09-08T18:12:57Z: RSI=25.4 oversold+stabilizing BELOW_BAND BEARISH. RL BOOST (BUY conf=0.928, signal 2→3). $15.00 @ ~$76.83. Stop $75.40, target $84.51. BP after: ~$52.14. CB INACTIVE (daily 0.0%, weekly -1.6% gain). Regime NORMAL. Acct ~$98.99."
   ]
 }
