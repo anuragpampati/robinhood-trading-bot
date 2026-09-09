@@ -1,11 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-09T17:11:01Z
-- SUMMARY: Market OPEN (13:11 ET). No trades executed — bearish_ema regime requires 3/3 confidence for all buys; 0 RSI BUY signals qualify. No positions held; SELL signals (AMD RSI 78.3, META RSI 78.0, MRVL RSI 71.2, TER RSI 75.4, AUR RSI 71.8, LITE RSI 73.6 — none held). Net-buy SELL: CRM/NFLX/MBLY/MSFT/XOM — none held. CB INACTIVE (daily +0.01%, weekly +1.6% gain). Buying power: $83.99 (unsettled $14.95). Equity positions: 0. Regime: bearish_ema. Account: $98.94.
-
-## 2026-09-09T16:12:40Z
-- SUMMARY: Market OPEN (12:12 ET). No trades executed — bearish_ema regime requires 3/3 confidence for all buys; 0 RSI BUY signals qualify. No positions held; SELL signals (AMD RSI 80.4, INTC RSI 77.4, META RSI 78.9, MRVL RSI 72.1, TER RSI 75.1, LITE RSI 72.8 — not held). CB INACTIVE (daily +0.01%, weekly +1.6% gain). Buying power: $83.99 (unsettled $14.95). Equity positions: 0. Regime: bearish_ema. Account: $98.94.
-
 ## 2026-09-09T15:12:49Z
 - Action   : SELL NFLX
 - Price    : $76.59
@@ -16,9 +10,6 @@
 - Strategy : normal | Sell date: ATR/signal
 - Regime   : normal
 - Reason   : Net buy trend reversed (5.01M → 0.01M | OBV -5.7M/day) | held 21h → rule c (signal SELL)
-
-## 2026-09-09T14:13:36Z
-- SUMMARY: Market OPEN (10:13 ET). No trades executed. RSI BUY: SBUX (RSI 22.8 conf 2/3, RL HOLD — also in net_buy_sell; $83.99 BP − $50 = $33.99 < $50 buffer → SKIP), SHOP (RSI 28.83 conf 2/3, RL HOLD — same buffer issue → SKIP). Surge: ARM 58% count=1 (need 2). NFLX $76.46 > stop $75.40 / target $84.51 — no exit (held ~20h). CB INACTIVE (daily 0%, weekly -1.6% gain). Buying power: $83.99. Equity positions: 1. Regime: normal. Account: $98.93.
 
 ## 2026-09-08T20:10:51Z
 - SUMMARY: Market closed (after 16:00 ET). No trades executed. RSI BUY candidates: SBUX (RSI 22.8, conf 2/3), SHOP (RSI 29.2, conf 2/3) — deferred to next open session. Net-buy BUY: none. Surge: none. NFLX held: $76.78 vs stop $75.40 / target $84.51 — no exit triggered. CB INACTIVE (daily ~0%, weekly +1.6% gain). Buying power: $52.14. Equity positions: 1. Regime: normal. Account: $98.99.
