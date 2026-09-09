@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-09T19:12:30Z
+- SUMMARY: Market OPEN (15:12 ET). Bearish_ema regime — 3/3 confidence required. RSI BUY candidates: IWM (RSI 27.2, conf 2→3 RL BOOST, but net_buy SELL conflict + $0 headroom after $50 buffer), UBER (RSI 28.0, conf 2/3, HOLD RL), SHOP (RSI 21.2, conf 2/3, HOLD RL) — none qualify. Net-buy SELL signals: CRM/MBLY/NFLX/SHOP/F/AVAV/MSFT/IWM/UBER — none held. SBUX held: $100.62 vs stop $99.61 / target $111.14 — no exit triggered (held <3h, price above stop). Surge tracker cleared (ORCL expired). CB INACTIVE (daily -0.09%, weekly +1.5% gain). Buying power: $50.00 (at buffer minimum). Equity positions: 1 (SBUX). Regime: bearish_ema. Account: $98.84.
+
 ## 2026-09-09T15:12:49Z
 - Action   : SELL NFLX
 - Price    : $76.59

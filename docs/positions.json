@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-09T18:13:43Z",
+  "updated_at": "2026-09-09T19:12:30Z",
   "buying_power": 50.0,
   "market_regime": "bearish_ema",
-  "account_value": 98.94,
+  "account_value": 98.84,
   "peak_value": 101.68,
   "day_start_value": 98.93,
   "day_start_date": "2026-09-09",
@@ -11,23 +11,22 @@
   "positions": [
     {
       "ticker": "SBUX",
-      "quantity": 0.33646,
-      "avg_cost": 101.02,
-      "current_price": 100.75,
-      "pnl_pct": -0.0027,
-      "value": 33.89,
+      "quantity": 0.336408,
+      "avg_cost": 101.04,
+      "current_price": 100.62,
+      "pnl_pct": -0.0042,
+      "value": 33.84,
       "entry_atr_pct": 0.007,
       "entry_time": "2026-09-09T18:13:43Z",
       "trail_stop": 99.61,
-      "take_profit": 111.12,
+      "take_profit": 111.14,
       "strategy": "normal",
       "sell_date": null
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-09T19:12:30Z: Market OPEN (15:12 ET). Bearish_ema regime — IWM RSI BUY RL-boosted to 3/3 but net_buy SELL conflict + BP at $50 buffer minimum. SBUX held: $100.62 vs stop $99.61 — no exit. CB INACTIVE (daily -0.09%, weekly +1.5% gain). BP $50.00. 1 position. Acct $98.84.",
     "BUY SBUX 2026-09-09T18:13:43Z: RSI 26.9 oversold | BB BELOW_BAND | RL BOOST BUY 0.952 (conf 2→3) | bearish_ema regime. $33.99 @ ~$101.02 (0.3365 shares). Stop $99.61 / Target $111.12. BP $50.00. 1 position. Acct ~$98.94.",
-    "NO TRADE 2026-09-09T17:11:01Z: Market OPEN (13:11 ET). Bearish_ema regime — 0 BUY signals at 3/3 confidence. No positions held; SELL signals (AMD/META/MRVL/TER/AUR/LITE — RSI overbought) not held. Net-buy SELL: CRM/NFLX/MBLY/MSFT/XOM — not held. CB INACTIVE (daily +0.01%, weekly +1.6% gain). BP $83.99 (unsettled $14.95). 0 positions. Acct $98.94.",
-    "NO TRADE 2026-09-09T16:12:40Z: Market OPEN (12:12 ET). Bearish_ema regime — 0 BUY signals at 3/3 confidence. No positions held; SELL signals for AMD/INTC/META/MRVL/TER/LITE not held. CB INACTIVE (daily +0.01%, weekly +1.6% gain). BP $83.99 (unsettled $14.95). 0 positions. Acct $98.94.",
-    "SELL NFLX 2026-09-09T15:12:49Z: Net buy trend reversed (5.01M → 0.01M | OBV -5.7M/day) | held 21h → rule c. SELL 0.195238 shares @ ~$76.59 ($14.95). RSI 25.5 BEARISH IN_BAND (RL BUY conf=0.928, overridden by net-buy SELL). CB INACTIVE (daily 0%, weekly -1.6% gain). Regime NORMAL. BP $98.94. 0 positions. Acct $98.94."
+    "NO TRADE 2026-09-09T17:11:01Z: Market OPEN (13:11 ET). Bearish_ema regime — 0 BUY signals at 3/3 confidence. No positions held; SELL signals (AMD/META/MRVL/TER/AUR/LITE — RSI overbought) not held. Net-buy SELL: CRM/NFLX/MBLY/MSFT/XOM — not held. CB INACTIVE (daily +0.01%, weekly +1.6% gain). BP $83.99 (unsettled $14.95). 0 positions. Acct $98.94."
   ]
 }
