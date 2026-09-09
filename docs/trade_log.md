@@ -1,16 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-09T18:13:43Z
-- Action   : BUY SBUX
-- Price    : $101.02
-- Amount   : $33.99 | Shares: 0.336460
-- RSI      : 26.9 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.952 | BOOST (conf 2→3)
-- Stop     : $99.61 | Target: $111.12
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : bearish_ema
-- Reason   : RSI oversold+stabilizing (22.8→26.9) | BB below band reversal | RL BOOST to 3/3 | not in net-buy sell
-
 ## 2026-09-09T15:12:49Z
 - Action   : SELL NFLX
 - Price    : $76.59
