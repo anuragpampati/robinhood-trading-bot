@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T16:12:40Z",
+  "updated_at": "2026-09-09T17:11:01Z",
   "buying_power": 83.99,
   "market_regime": "bearish_ema",
   "account_value": 98.94,
@@ -10,9 +10,9 @@
   "week_start_date": "2026-09-07",
   "positions": [],
   "last_actions": [
+    "NO TRADE 2026-09-09T17:11:01Z: Market OPEN (13:11 ET). Bearish_ema regime — 0 BUY signals at 3/3 confidence. No positions held; SELL signals (AMD/META/MRVL/TER/AUR/LITE — RSI overbought) not held. Net-buy SELL: CRM/NFLX/MBLY/MSFT/XOM — not held. CB INACTIVE (daily +0.01%, weekly +1.6% gain). BP $83.99 (unsettled $14.95). 0 positions. Acct $98.94.",
     "NO TRADE 2026-09-09T16:12:40Z: Market OPEN (12:12 ET). Bearish_ema regime — 0 BUY signals at 3/3 confidence. No positions held; SELL signals for AMD/INTC/META/MRVL/TER/LITE not held. CB INACTIVE (daily +0.01%, weekly +1.6% gain). BP $83.99 (unsettled $14.95). 0 positions. Acct $98.94.",
     "SELL NFLX 2026-09-09T15:12:49Z: Net buy trend reversed (5.01M → 0.01M | OBV -5.7M/day) | held 21h → rule c. SELL 0.195238 shares @ ~$76.59 ($14.95). RSI 25.5 BEARISH IN_BAND (RL BUY conf=0.928, overridden by net-buy SELL). CB INACTIVE (daily 0%, weekly -1.6% gain). Regime NORMAL. BP $98.94. 0 positions. Acct $98.94.",
-    "NO TRADE 2026-09-09T14:13:36Z: Market OPEN (10:13 ET). No trades executed. RSI BUY: SBUX (RSI 22.8 conf 2/3, RL HOLD — also in net_buy_sell; $83.99 BP − $50 = $33.99 < $50 buffer → SKIP), SHOP (RSI 28.83 conf 2/3, RL HOLD — same buffer issue → SKIP). Surge: ARM 58% count=1 (need 2). NFLX $76.46 > stop $75.40 / target $84.51 — no exit (held ~20h). CB INACTIVE (daily 0%, weekly -1.6% gain). Buying power: $83.99. Equity positions: 1. Regime: normal. Account: $98.93.",
-    "NO TRADE 2026-09-08T20:10:51Z: Market CLOSED. RSI BUY candidates: SBUX (RSI 22.8, conf 2/3), SHOP (RSI 29.2, conf 2/3) — deferred. Net-buy BUY: none. Surge: none. NFLX held $76.78 vs stop $75.40 / target $84.51 — no exit. CB INACTIVE (daily ~0%, weekly +1.6%). Regime NORMAL. BP $52.14. 1 position. Acct $98.99."
+    "NO TRADE 2026-09-09T14:13:36Z: Market OPEN (10:13 ET). No trades executed. RSI BUY: SBUX (RSI 22.8 conf 2/3, RL HOLD — also in net_buy_sell; $83.99 BP − $50 = $33.99 < $50 buffer → SKIP), SHOP (RSI 28.83 conf 2/3, RL HOLD — same buffer issue → SKIP). Surge: ARM 58% count=1 (need 2). NFLX $76.46 > stop $75.40 / target $84.51 — no exit (held ~20h). CB INACTIVE (daily 0%, weekly -1.6% gain). Buying power: $83.99. Equity positions: 1. Regime: normal. Account: $98.93."
   ]
 }
