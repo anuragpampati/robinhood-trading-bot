@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-09T20:37:51.139158+00:00",
+  "timestamp": "2026-09-09T21:30:36.651440+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -657,7 +657,7 @@
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0139,
+      "atr_pct": 0.014,
       "reason": "RSI=61.1 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
@@ -1569,8 +1569,8 @@
       "ticker": "DD",
       "price": 127.91999816894531,
       "net_buy_d2": -28991,
-      "net_buy_d3": -1113962,
-      "obv_slope": -389158,
+      "net_buy_d3": -1114444,
+      "obv_slope": -389263,
       "score": 0.0,
       "reason": "Net buy reversed: -0.03M \u2192 -1.11M | OBV -0.4M/day"
     },
@@ -1578,17 +1578,17 @@
       "ticker": "NEE",
       "price": 82.6500015258789,
       "net_buy_d2": -287798,
-      "net_buy_d3": -8511867,
-      "obv_slope": -400870,
+      "net_buy_d3": -8525154,
+      "obv_slope": -403629,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.29M \u2192 -8.51M | OBV -0.4M/day"
+      "reason": "Net buy reversed: -0.29M \u2192 -8.53M | OBV -0.4M/day"
     },
     {
       "ticker": "VTRS",
       "price": 16.5,
       "net_buy_d2": 376680,
-      "net_buy_d3": -3547319,
-      "obv_slope": -5945216,
+      "net_buy_d3": -3547355,
+      "obv_slope": -5945230,
       "score": 0.0,
       "reason": "Net buy reversed: 0.38M \u2192 -3.55M | OBV -5.9M/day"
     },
@@ -1596,8 +1596,8 @@
       "ticker": "CMG",
       "price": 36.029998779296875,
       "net_buy_d2": -868451,
-      "net_buy_d3": -7806741,
-      "obv_slope": -6511994,
+      "net_buy_d3": -7811045,
+      "obv_slope": -6512989,
       "score": 0.0,
       "reason": "Net buy reversed: -0.87M \u2192 -7.81M | OBV -6.5M/day"
     },
@@ -1605,17 +1605,17 @@
       "ticker": "NFLX",
       "price": 76.02999877929688,
       "net_buy_d2": -2058273,
-      "net_buy_d3": -14124621,
-      "obv_slope": -31548406,
+      "net_buy_d3": -14155262,
+      "obv_slope": -31558234,
       "score": 0.0,
-      "reason": "Net buy reversed: -2.06M \u2192 -14.12M | OBV -31.5M/day"
+      "reason": "Net buy reversed: -2.06M \u2192 -14.16M | OBV -31.6M/day"
     },
     {
       "ticker": "PSKY",
       "price": 10.220000267028809,
       "net_buy_d2": -1743084,
-      "net_buy_d3": -11689725,
-      "obv_slope": -7564642,
+      "net_buy_d3": -11693911,
+      "obv_slope": -7565570,
       "score": 0.0,
       "reason": "Net buy reversed: -1.74M \u2192 -11.69M | OBV -7.6M/day"
     },
@@ -1623,8 +1623,8 @@
       "ticker": "VRTX",
       "price": 521.1199951171875,
       "net_buy_d2": 196953,
-      "net_buy_d3": -690108,
-      "obv_slope": -603008,
+      "net_buy_d3": -691868,
+      "obv_slope": -603482,
       "score": 0.0,
       "reason": "Net buy reversed: 0.20M \u2192 -0.69M | OBV -0.6M/day"
     },
@@ -1632,8 +1632,8 @@
       "ticker": "FRT",
       "price": 115.16000366210938,
       "net_buy_d2": 343772,
-      "net_buy_d3": -1131370,
-      "obv_slope": -126258,
+      "net_buy_d3": -1131399,
+      "obv_slope": -126265,
       "score": 0.0,
       "reason": "Net buy reversed: 0.34M \u2192 -1.13M | OBV -0.1M/day"
     },
@@ -1641,8 +1641,8 @@
       "ticker": "PSA",
       "price": 294.6000061035156,
       "net_buy_d2": -117747,
-      "net_buy_d3": -611205,
-      "obv_slope": -354833,
+      "net_buy_d3": -614867,
+      "obv_slope": -355706,
       "score": 0.0,
       "reason": "Net buy reversed: -0.12M \u2192 -0.61M | OBV -0.4M/day"
     },
@@ -1650,8 +1650,8 @@
       "ticker": "J",
       "price": 141.75,
       "net_buy_d2": -128892,
-      "net_buy_d3": -659979,
-      "obv_slope": -463317,
+      "net_buy_d3": -664929,
+      "obv_slope": -464463,
       "score": 0.0,
       "reason": "Net buy reversed: -0.13M \u2192 -0.66M | OBV -0.5M/day"
     }
