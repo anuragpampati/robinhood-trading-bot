@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-09T15:12:49Z
+- Action   : SELL NFLX
+- Price    : $76.59
+- Amount   : $14.95 | Shares: 0.195238
+- RSI      : 25.5 | EMA: BEARISH | BB: IN_BAND
+- RL       : BUY conf=0.928 | null
+- Stop     : $75.40 | Target: $84.51
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net buy trend reversed (5.01M → 0.01M | OBV -5.7M/day) | held 21h → rule c (signal SELL)
+
 ## 2026-09-08T20:10:51Z
 - SUMMARY: Market closed (after 16:00 ET). No trades executed. RSI BUY candidates: SBUX (RSI 22.8, conf 2/3), SHOP (RSI 29.2, conf 2/3) — deferred to next open session. Net-buy BUY: none. Surge: none. NFLX held: $76.78 vs stop $75.40 / target $84.51 — no exit triggered. CB INACTIVE (daily ~0%, weekly +1.6% gain). Buying power: $52.14. Equity positions: 1. Regime: normal. Account: $98.99.
 
