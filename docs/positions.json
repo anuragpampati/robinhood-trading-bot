@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-10T15:15:28Z",
+  "updated_at": "2026-09-10T16:12:35Z",
   "buying_power": 64.99,
   "market_regime": "bearish_ema",
-  "account_value": 98.71,
+  "account_value": 98.64,
   "peak_value": 101.68,
   "day_start_value": 98.92,
   "day_start_date": "2026-09-10",
@@ -13,9 +13,9 @@
       "ticker": "SBUX",
       "quantity": 0.336408,
       "avg_cost": 101.04,
-      "current_price": 100.45,
-      "pnl_pct": -0.0058,
-      "value": 33.79,
+      "current_price": 99.97,
+      "pnl_pct": -0.0106,
+      "value": 33.65,
       "entry_atr_pct": 0.007,
       "entry_time": "2026-09-09T18:13:43Z",
       "trail_stop": 99.61,
@@ -25,8 +25,8 @@
     }
   ],
   "last_actions": [
+    "NO TRADE 2026-09-10T16:12:35Z: Market OPEN (~12:12 ET). PANIC (SPY RSI 26.7) + bearish_ema. Surge tracker cleared (MRVL/ARM no longer surging). Deployable $14.99 < $15 min. SBUX $99.97 vs stop $99.61 — safe. CB INACTIVE (daily -0.28%, weekly +1.28% gain). BP $64.99. 1 position. Acct $98.64.",
     "NO TRADE 2026-09-10T15:15:28Z: Market OPEN (11:15 ET). PANIC (SPY RSI 28.2) + bearish_ema. Surge: MRVL/ARM cycle 1 (count<2). Deployable $14.99 < $15 min. SBUX $100.45 vs stop $99.61 — safe. CB INACTIVE (daily -0.21%, weekly +1.36% gain). BP $64.99. 1 position. Acct $98.71.",
-    "NO TRADE 2026-09-10T14:15:00Z: Market OPEN (10:11 ET). Bearish_ema regime. RSI BUY: IWM (RSI 27.2, conf 2→3 RL BOOST) + UBER (RSI 27.2, conf 2→3 RL BOOST) — both have net_buy SELL conflicts + $14.99 deployable (below $15 min). Net-buy SELL: TSLA/CRM/MBLY/SHOP/F/NFLX/UBER/MSFT/AVAV/IWM — none held. SBUX: $100.86 vs stop $99.61 — safe. CB INACTIVE (daily 0%, weekly +1.6% gain). BP $64.99. 1 position. Acct $98.92.",
     "BUY SBUX 2026-09-09T18:13:43Z: RSI 26.9 oversold | BB BELOW_BAND | RL BOOST BUY 0.952 (conf 2→3) | bearish_ema regime. $33.99 @ ~$101.02 (0.3365 shares). Stop $99.61 / Target $111.12. BP $50.00. 1 position. Acct ~$98.94."
   ]
 }
