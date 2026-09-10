@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-10
+- Trades analysed: 2 closed pairs (NFLX BUY→SELL -0.33%; SBUX BUY→SELL -1.4%)
+- Win rate: 0% overall (normal: 0% [n=2]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BEARISH entry 0% (n=2); BULLISH entry n/a (n=0)
+- Config changes: none — RSI_OVERSOLD: n_trades=2 < 5 required (NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~22.5h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy blocked (403, recurring); prior metrics retained (null — backtest never succeeded in this environment)
+- RL samples: 603/200 (READY — +1 new row today; 19 states in Q-table)
+- Notes: Account $98.49, 0 equity positions. PANIC regime (SPY RSI ~27) + bearish_ema suppressed all buys. Both recent trades were losses on BEARISH EMA entries in oversold conditions — consistent with bearish regime. Backtest blocked by network policy. Trade log trimmed: 5 entries remain.
+
 ## 2026-09-08
 - Trades analysed: 0 closed pairs (1 open position: NFLX BUY @ $76.83 on 2026-09-08, still held; no complete BUY→SELL round-trips in last 30 log entries)
 - Win rate: n/a — no closed trades in log (normal: n/a [n=0 new]; momentum: n/a [n=0 trades ever]; surge: n/a [n=0 trades ever]); historical reference (from 2026-08-11): normal 50.0% (7W/7L, n=14, avg_pnl −0.51%, avg_hold ~137h)
