@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-10T21:25:56.341288+00:00",
+  "timestamp": "2026-09-10T22:11:11.747716+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -867,7 +867,7 @@
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0093,
+      "atr_pct": 0.0092,
       "reason": "RSI=38.5 (falling), BB=BELOW_BAND, EMA=BEARISH",
       "fib_target": 1732,
       "rl_action": null,
@@ -909,7 +909,7 @@
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0185,
+      "atr_pct": 0.0184,
       "reason": "RSI=27.6 (falling), BB=BELOW_BAND, EMA=BEARISH",
       "fib_target": 26,
       "rl_action": "HOLD",
@@ -1561,7 +1561,7 @@
   "rl_stats": {
     "live": true,
     "states": 19,
-    "training_samples": 602
+    "training_samples": 603
   },
   "net_buy_buy_signals": [
     {
