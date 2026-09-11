@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-10T20:10:37Z",
-  "buying_power": 64.99,
+  "updated_at": "2026-09-11T14:12:00Z",
+  "buying_power": 98.49,
   "market_regime": "bearish_ema",
   "account_value": 98.49,
   "peak_value": 101.68,
-  "day_start_value": 98.92,
-  "day_start_date": "2026-09-10",
+  "day_start_value": 98.49,
+  "day_start_date": "2026-09-11",
   "week_start_value": 97.39,
   "week_start_date": "2026-09-07",
   "positions": [],
   "last_actions": [
-    "NO TRADE 2026-09-10T20:10:37Z: Market CLOSED (~4:10 PM ET). bearish_ema regime. 0 RSI/net-buy/surge signals. No positions. CB INACTIVE (daily -0.43%, weekly gain +1.13%). BP $64.99. 0 positions. Acct $98.49.",
-    "NO TRADE 2026-09-10T19:09:00Z: Market OPEN (~3:09 PM ET). PANIC (SPY RSI 27.1 < 30) + bearish_ema. 0 positions — nothing to sell. No surge signals. Deployable $14.99 < $15 min. CB INACTIVE (daily -0.43%, weekly +1.13% gain). BP $64.99. 0 positions. Acct $98.49.",
+    "NO TRADE 2026-09-11T14:12:00Z: Market OPEN (~10:12 AM ET). PANIC (SPY RSI 25.2 < 30) + bearish_ema. 0 positions — nothing to sell. No surge signals. All buys suppressed (PANIC). CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.",
+    "NO TRADE 2026-09-10T19:09:00Z: Market OPEN (~3:09 PM ET). PANIC (SPY RSI 27.1 < 30) + bearish_ema. 0 positions — nothing to sell. No surge signals. Deployable $14.99 < $15 min. CB INACTIVE (daily -0.43%, weekly gain +1.13%). BP $64.99. 0 positions. Acct $98.49.",
     "SELL SBUX 2026-09-10T18:10:34Z: Net buy reversal signal (SBUX -0.69M→-0.83M, OBV ↓) | hours_held ~24h | trail_stop $99.61 near breach | Sold 0.336408 sh @ ~$99.67 | PnL ≈ -1.4% (-$0.46) | BP ~$98.51. 0 positions. Acct ~$98.51."
   ]
 }
