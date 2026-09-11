@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-11T21:33:21.149637+00:00",
+  "timestamp": "2026-09-11T22:09:07.831163+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -685,7 +685,7 @@
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0194,
+      "atr_pct": 0.0193,
       "reason": "RSI=32.5 (falling), BB=BELOW_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
@@ -1656,15 +1656,5 @@
       "reason": "Net buy reversed: 0.31M \u2192 -2.64M | OBV -6.6M/day"
     }
   ],
-  "surge_signals": [
-    {
-      "ticker": "AMD",
-      "price": 516.1300048828125,
-      "buy_surge_pct": 14.0659,
-      "buy_vol_d2": 935241,
-      "buy_vol_d3": 14090248,
-      "net_buy_d3": 9390327,
-      "reason": "Buy vol \u21911406.6% vs prior day | 0d streak | latest 9.39M | OBV 11.2M/day"
-    }
-  ]
+  "surge_signals": []
 }
