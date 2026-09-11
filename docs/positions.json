@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T18:10:00Z",
+  "updated_at": "2026-09-11T19:12:51Z",
   "buying_power": 98.49,
   "market_regime": "normal",
   "account_value": 98.49,
@@ -10,8 +10,8 @@
   "week_start_date": "2026-09-07",
   "positions": [],
   "last_actions": [
+    "NO TRADE 2026-09-11T19:12:51Z: Market OPEN (~3:12 PM ET). Regime normal (SPY RSI 53.1). RSI BUY: OKLO (conf 2/3)+LEU (conf 2/3) SKIPPED ($48.49 < $50 buffer). Net Buy BUY: 0. Net-buy SELL: NVDA/F/AAPL/GM/ROK/UBER/BAC/MRNA/CIFR/SOFI/ORCL/PFE none held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.",
     "NO TRADE 2026-09-11T18:10:00Z: Market OPEN (~2:10 PM ET). Regime normal (SPY RSI 55.5). RSI BUY: 0 | Net Buy BUY: 0 | Surge: 0. Net-buy SELL: NVDA/ROK/PYPL/GM/F/AAPL/UBER/MRNA/BAC/PFE none held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.",
-    "NO TRADE 2026-09-11T17:12:44Z: Market OPEN (~1:12 PM ET). Regime normal (SPY RSI 56.1). RSI BUY: 0 | Net Buy BUY: 0. Surge tracker cleared (MRNA no longer in 10%+ surge). TXN RSI SELL (70.9) not held. Net-buy SELL: NVDA/GM/UBER/ROK/MRNA/F/PYPL/AAPL/PFE/BAC none held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.",
-    "NO TRADE 2026-09-11T16:13:20Z: Market OPEN (~12:13 PM ET). Regime normal. RSI BUY: 0. MRNA surge count=1 (need 2). TXN RSI SELL not held. CB INACTIVE. BP $98.49. 0 positions. Acct $98.49."
+    "NO TRADE 2026-09-11T17:12:44Z: Market OPEN (~1:12 PM ET). Regime normal (SPY RSI 56.1). RSI BUY: 0 | Net Buy BUY: 0. Surge tracker cleared (MRNA no longer in 10%+ surge). TXN RSI SELL (70.9) not held. Net-buy SELL: NVDA/GM/UBER/ROK/MRNA/F/PYPL/AAPL/PFE/BAC none held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49."
   ]
 }
