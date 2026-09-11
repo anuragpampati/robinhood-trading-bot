@@ -1,17 +1,7 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-11T17:12:44Z
-- SUMMARY: Market OPEN (~1:12 PM ET). Regime: normal (SPY RSI 56.1, EMA BEARISH). RSI BUY: 0 | Net Buy BUY: 0. Surge tracker cleared (MRNA no longer in 10%+ surge signals). TXN RSI SELL (70.9, conf 2/3) — not held. Net-buy SELL signals: NVDA/GM/UBER/ROK/MRNA/F/PYPL/AAPL/PFE/BAC — none held. 0 positions to sell. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.
-
-
 ## 2026-09-11T16:13:20Z
 - SUMMARY: Market OPEN (~12:13 PM ET). Regime: normal (SPY $765.73 > EMA200 $762.70). RSI BUY: 0 | Net Buy BUY: 0. MRNA surge 18.9% → tracker count=1 (need ≥2 for intraday_surge buy; surge ≥5% buy also blocked: $98.49 − $50 = $48.49 < $50 buffer). TXN RSI SELL (72.6, conf 2/3) — not held. Net-buy SELL signals: NVDA/UBER/JPM/BAC/AAPL/WFC/PFE/PYPL/F/ROK — none held. 0 positions to sell. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.
-
-## 2026-09-11T15:14:31Z
-- SUMMARY: Market OPEN (~11:14 AM ET). Regime: normal (SPY $763.96 > EMA200 $763.57, flipped from bearish_ema). BUY candidates PLTR (RSI 25.9, RL BOOST conf→3) & TGT (RSI 27.2, RL BOOST conf→3) each sized $50 MODERATE BUY, but insufficient buying power ($98.49 − $50 buffer = $48.49 < $50 min deployable). No positions to sell. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.
-
-## 2026-09-11T14:12:00Z
-- SUMMARY: Market OPEN (~10:12 AM ET). PANIC (SPY RSI 25.2 < 30) + bearish_ema — all individual stock buys suppressed. 0 positions held — nothing to sell. No surge/intraday_surge signals. Net-buy SELL signals: MRCY/WMT/KTOS/PLTR/QQQ/SBUX/CRWD/GE/NOW/SPY/SNOW/GEV — none held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). New day start: $98.49. BP $98.49. 0 positions. Acct $98.49. Peak $101.68.
 
 ## 2026-09-10T19:09:00Z
 - SUMMARY: Market OPEN (~3:09 PM ET). PANIC regime (SPY RSI 27.1 < 30) + bearish_ema — all individual stock buys suppressed. 0 positions held — nothing to sell. No surge/intraday_surge signals. Deployable $14.99 (BP $64.99 − $50 buffer) below $15 min order. Net-buy SELL: JPM/KTOS/WMT/GE/MRCY/MSFT/AI/SBUX/CRWD/SPY/SNAP/C/NOW — none held. CB INACTIVE (daily −0.43%, weekly gain +1.13%). BP $64.99. 0 positions. Acct $98.49.
