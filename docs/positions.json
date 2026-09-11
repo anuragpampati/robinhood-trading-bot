@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T15:14:31Z",
+  "updated_at": "2026-09-11T16:13:20Z",
   "buying_power": 98.49,
   "market_regime": "normal",
   "account_value": 98.49,
@@ -10,8 +10,8 @@
   "week_start_date": "2026-09-07",
   "positions": [],
   "last_actions": [
+    "NO TRADE 2026-09-11T16:13:20Z: Market OPEN (~12:13 PM ET). Regime normal (SPY $765.73 > EMA200 $762.70). RSI BUY: 0 | Net Buy BUY: 0. MRNA surge 18.9% (count=1, need ≥2 for intraday_surge; surge $50 buy blocked — BP $98.49 − $50 buffer = $48.49 < $50). TXN RSI SELL (RSI 72.6) — not held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.",
     "NO TRADE 2026-09-11T15:14:31Z: Market OPEN (~11:14 AM ET). Regime flipped to normal (SPY $763.96 > EMA200 $763.57). BUY candidates PLTR (RSI 25.9, RL BOOST conf→3) & TGT (RSI 27.2, RL BOOST conf→3) blocked — BP $98.49 − $50 buffer = $48.49 < $50 min deployable. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.",
-    "NO TRADE 2026-09-11T14:12:00Z: Market OPEN (~10:12 AM ET). PANIC (SPY RSI 25.2 < 30) + bearish_ema. 0 positions — nothing to sell. No surge signals. All buys suppressed (PANIC). CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.",
-    "NO TRADE 2026-09-10T19:09:00Z: Market OPEN (~3:09 PM ET). PANIC (SPY RSI 27.1 < 30) + bearish_ema. 0 positions — nothing to sell. No surge signals. Deployable $14.99 < $15 min. CB INACTIVE (daily -0.43%, weekly gain +1.13%). BP $64.99. 0 positions. Acct $98.49."
+    "NO TRADE 2026-09-11T14:12:00Z: Market OPEN (~10:12 AM ET). PANIC (SPY RSI 25.2 < 30) + bearish_ema. 0 positions — nothing to sell. No surge signals. All buys suppressed (PANIC). CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49."
   ]
 }
