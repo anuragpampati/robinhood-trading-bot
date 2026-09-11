@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-11",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
@@ -14,5 +14,5 @@
   "rl_training_samples": 603,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — Yahoo Finance network access blocked by environment policy (recurring 403 from egress proxy). Config NO_CHANGE: n_trades=2 for normal strategy (< 5 required); momentum n=0 (< 3 required); ATR avg_hold ~22.5h >> 2h threshold. RL READY (603/200 samples, 19 Q-states). Updated by daily learning CCR"
+  "note": "Backtest skipped — Yahoo Finance network access blocked by environment policy (recurring 403 from egress proxy, 35th+ consecutive session). Config NO_CHANGE: normal win_rate=50.0% in [40%,65%] hold band (n≈26≥5); momentum n=0 (< 3 required); ATR avg_hold ~22-130h >> 2h threshold. RL READY (603/200 samples, 19 Q-states). Updated by daily learning CCR"
 }

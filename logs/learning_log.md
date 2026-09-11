@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-11
+- Trades analysed: 0 new closed pairs today (trade log trimmed to last 2 days; no new BUY→SELL exits since SBUX close on 2026-09-10); cumulative ~26 closed (13W/13L)
+- Win rate: 50.0% overall (normal: 50.0% [n≈26]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH ~50% (historical); BEARISH ~50% (historical)
+- Config changes: none — RSI_OVERSOLD: 50.0% in [40%,65%] hold band (NO_CHANGE, n≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold>>2h, n<3 (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance network access blocked by environment policy (403, 35th+ consecutive session); prior metrics retained (null — blocked before first persist)
+- RL samples: 603/200 (READY — RL collector failed: yfinance not installed, pip network timeout; no new rows added today; 19 states in Q-table)
+- Notes: Account $98.49 (0 positions). Market regime shifted PANIC+bearish_ema → normal today (SPY RSI 50.3, SPY > EMA200). Both recent trades (NFLX, SBUX) were losses in BEARISH EMA / PANIC regime — regime suppression working as designed. All BUY signals today blocked by $0.49 buying-power headroom above $50 buffer. pip install timing out in this environment (PyPI blocked); yfinance unavailable so rl_collector and backtest cannot run. Run: python -m strategy.rl_agent --train to activate Q-learning (603 samples, 19 Q-states ready).
+
 ## 2026-09-10
 - Trades analysed: 2 closed pairs (NFLX BUY→SELL -0.33%; SBUX BUY→SELL -1.4%)
 - Win rate: 0% overall (normal: 0% [n=2]; momentum: n/a [n=0]; surge: n/a [n=0])
