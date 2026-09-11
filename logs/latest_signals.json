@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-11T20:38:30.295879+00:00",
+  "timestamp": "2026-09-11T21:33:21.149637+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1569,8 +1569,8 @@
       "ticker": "LOW",
       "price": 196.82000732421875,
       "net_buy_d2": 16356,
-      "net_buy_d3": -3030296,
-      "obv_slope": -1395857,
+      "net_buy_d3": -3032426,
+      "obv_slope": -1395395,
       "score": 0.0,
       "reason": "Net buy reversed: 0.02M \u2192 -3.03M | OBV -1.4M/day"
     },
@@ -1578,53 +1578,53 @@
       "ticker": "CARR",
       "price": 57.459999084472656,
       "net_buy_d2": -52868,
-      "net_buy_d3": -3193280,
-      "obv_slope": -3307677,
+      "net_buy_d3": -3203784,
+      "obv_slope": -3303702,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.05M \u2192 -3.19M | OBV -3.3M/day"
+      "reason": "Net buy reversed: -0.05M \u2192 -3.20M | OBV -3.3M/day"
     },
     {
       "ticker": "GILD",
       "price": 143.72000122070312,
       "net_buy_d2": 107469,
-      "net_buy_d3": -3278096,
-      "obv_slope": -5192898,
+      "net_buy_d3": -3448535,
+      "obv_slope": -5234302,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.11M \u2192 -3.28M | OBV -5.2M/day"
+      "reason": "Net buy reversed: 0.11M \u2192 -3.45M | OBV -5.2M/day"
     },
     {
       "ticker": "IP",
       "price": 34.36000061035156,
       "net_buy_d2": -113954,
-      "net_buy_d3": -3022586,
-      "obv_slope": -2855155,
+      "net_buy_d3": -3074429,
+      "obv_slope": -2839687,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.11M \u2192 -3.02M | OBV -2.9M/day"
+      "reason": "Net buy reversed: -0.11M \u2192 -3.07M | OBV -2.8M/day"
     },
     {
       "ticker": "DECK",
       "price": 81.2699966430664,
       "net_buy_d2": -100291,
-      "net_buy_d3": -1965236,
-      "obv_slope": -2090427,
+      "net_buy_d3": -1979067,
+      "obv_slope": -2086205,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.10M \u2192 -1.97M | OBV -2.1M/day"
+      "reason": "Net buy reversed: -0.10M \u2192 -1.98M | OBV -2.1M/day"
     },
     {
       "ticker": "PCAR",
       "price": 122.7300033569336,
       "net_buy_d2": -89236,
-      "net_buy_d3": -1527106,
-      "obv_slope": -63862,
+      "net_buy_d3": -1535280,
+      "obv_slope": -61692,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.09M \u2192 -1.53M | OBV -0.1M/day"
+      "reason": "Net buy reversed: -0.09M \u2192 -1.54M | OBV -0.1M/day"
     },
     {
       "ticker": "GPC",
       "price": 133.67999267578125,
       "net_buy_d2": -36786,
-      "net_buy_d3": -585692,
-      "obv_slope": -281902,
+      "net_buy_d3": -585699,
+      "obv_slope": -281904,
       "score": 0.0,
       "reason": "Net buy reversed: -0.04M \u2192 -0.59M | OBV -0.3M/day"
     },
@@ -1632,8 +1632,8 @@
       "ticker": "GL",
       "price": 171.1699981689453,
       "net_buy_d2": 18800,
-      "net_buy_d3": -216645,
-      "obv_slope": -9356,
+      "net_buy_d3": -217011,
+      "obv_slope": -9242,
       "score": 0.0,
       "reason": "Net buy reversed: 0.02M \u2192 -0.22M | OBV -0.0M/day"
     },
@@ -1641,20 +1641,30 @@
       "ticker": "COIN",
       "price": 175.25999450683594,
       "net_buy_d2": -345494,
-      "net_buy_d3": -3648135,
-      "obv_slope": -2906625,
+      "net_buy_d3": -3658106,
+      "obv_slope": -2902379,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.35M \u2192 -3.65M | OBV -2.9M/day"
+      "reason": "Net buy reversed: -0.35M \u2192 -3.66M | OBV -2.9M/day"
     },
     {
       "ticker": "MDT",
       "price": 90.95999908447266,
       "net_buy_d2": 313434,
-      "net_buy_d3": -2635830,
-      "obv_slope": -6572773,
+      "net_buy_d3": -2643657,
+      "obv_slope": -6575973,
       "score": 0.0,
       "reason": "Net buy reversed: 0.31M \u2192 -2.64M | OBV -6.6M/day"
     }
   ],
-  "surge_signals": []
+  "surge_signals": [
+    {
+      "ticker": "AMD",
+      "price": 516.1300048828125,
+      "buy_surge_pct": 14.0659,
+      "buy_vol_d2": 935241,
+      "buy_vol_d3": 14090248,
+      "net_buy_d3": 9390327,
+      "reason": "Buy vol \u21911406.6% vs prior day | 0d streak | latest 9.39M | OBV 11.2M/day"
+    }
+  ]
 }
