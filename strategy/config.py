@@ -147,8 +147,13 @@ DAILY_LOSS_HALT   = 0.03   # 3 % drop from prior-day close → no new buys today
 WEEKLY_LOSS_HALT  = 0.05   # 5 % drop from Monday open → no new buys this week
 CONCENTRATION_MAX = 0.20   # single-position value / account_value ceiling (= $50 / $250)
 
-# ── Momentum signal thresholds ────────────────────────────────────────────────
-# Catches EMA-trending stocks with elevated volume (e.g. META) — complements RSI mean-reversion
+# ── Momentum signal thresholds — never wired in, tested 2026-09-13 ───────────
+# Idea: catch EMA-trending stocks with elevated volume (e.g. META) as a BUY
+# alongside RSI mean-reversion, using these thresholds. Backtested as an extra
+# BUY path in strategy/signals.py: net negative in 3 of 4 windows (30d, 60d,
+# 90d worse; only 180d better) — it added trade volume that diluted returns
+# more often than not. Left unwired. Re-test with real data before reviving,
+# don't just re-enable on intuition.
 MOMENTUM_RSI_MIN = 45   # must have some upside momentum already
 MOMENTUM_RSI_MAX = 62   # not yet overbought
 MOMENTUM_VOL_MIN = 1.3  # volume ≥ 30% above 20-bar average confirms real buying interest

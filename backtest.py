@@ -166,6 +166,9 @@ def run():
                     continue
 
                 pos_max = BEARISH_EMA_MAX_POSITION if market_bearish_ema else MAX_POSITION_SIZE
+                if sig.confidence < 3:
+                    pos_max *= 0.6   # weaker (2/3) signals get smaller size -- they're the
+                                      # ones that make up most of the trailing-stop losers
                 amount = min(pos_max, cash - CASH_BUFFER)
                 if amount < MIN_TRADE_SIZE:
                     continue

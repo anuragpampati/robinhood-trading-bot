@@ -5,7 +5,7 @@ import pandas as pd
 from .config import (
     RSI_OVERSOLD, RSI_OVERBOUGHT,
     ATR_VOLATILITY_THRESHOLD, MIN_SIGNALS_TO_TRADE,
-    MARKET_REGIME_RSI_MIN,
+    MARKET_REGIME_RSI_MIN, BEARISH_EMA_MIN_CONFIDENCE,
 )
 
 VOL_GATE = 0.7   # skip signal if volume < 70% of 20-bar average (thin/noise bar)
@@ -129,6 +129,12 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False,
         if market_bearish and ticker != "SPY":
             return Signal(ticker, "HOLD", price, rsi_val, trend, bb_pos, buy_score, atr_pct,
                           f"BUY suppressed — SPY RSI < {MARKET_REGIME_RSI_MIN} (market panic)")
+        # SPY below its own 200-EMA (bearish trend) → require full 3/3 confidence,
+        # not just the normal 2/3. Was previously accepted as a parameter and
+        # silently ignored -- config's BEARISH_EMA_MIN_CONFIDENCE was never enforced.
+        if market_bearish_ema and buy_score < BEARISH_EMA_MIN_CONFIDENCE:
+            return Signal(ticker, "HOLD", price, rsi_val, trend, bb_pos, buy_score, atr_pct,
+                          f"BUY suppressed — bearish EMA regime requires {BEARISH_EMA_MIN_CONFIDENCE}/3 confidence, got {buy_score}/3")
         return Signal(ticker, "BUY", price, rsi_val, trend, bb_pos,
                       buy_score, atr_pct, " | ".join(buy_reasons))
 
