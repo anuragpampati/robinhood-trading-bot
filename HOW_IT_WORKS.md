@@ -169,7 +169,7 @@ RSI_OVERSOLD = 35        # lower = stricter buy signal (e.g. change to 30)
 RSI_OVERBOUGHT = 65      # higher = stricter sell signal (e.g. change to 70)
 STOP_LOSS_PCT = 0.05     # 5% stop-loss
 TAKE_PROFIT_PCT = 0.10   # 10% take-profit
-MAX_POSITION_SIZE = 20.0 # max $ per trade
+MAX_POSITION_SIZE = 50.0 # max $ per trade
 WATCHLIST = ["SPY", "QQQ", "AAPL", "MSFT", "NVDA"]
 ```
 

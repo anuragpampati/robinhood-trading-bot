@@ -24,7 +24,7 @@ from strategy.config import (
     ATR_STOP_MULTIPLIER, TRAIL_LOCK1_PROFIT, TRAIL_LOCK1_STOP,
     TRAIL_LOCK2_PROFIT, TRAIL_LOCK2_STOP,
     BEARISH_EMA_MAX_POSITION, BEARISH_EMA_MIN_CONFIDENCE, MIN_HOLD_BARS,
-    DAILY_LOSS_HALT, WEEKLY_LOSS_HALT,
+    DAILY_LOSS_HALT, WEEKLY_LOSS_HALT, TOTAL_CAPITAL,
 )
 
 TEST_DAYS = 30
@@ -34,7 +34,8 @@ for i, arg in enumerate(sys.argv):
         TEST_DAYS = int(sys.argv[i + 1])
 
 WARMUP_DAYS = 60   # extra history for indicator warmup (RSI needs ~14+ bars)
-INITIAL_CASH = 500.0
+INITIAL_CASH = TOTAL_CAPITAL   # was hardcoded 500.0 -- drifted from config after the real
+                                # account turned out to be $250, not $500
 
 
 def in_trade_window(ts: pd.Timestamp) -> bool:

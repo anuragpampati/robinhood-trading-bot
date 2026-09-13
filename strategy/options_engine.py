@@ -34,19 +34,16 @@ except ImportError:
     _HAS_TABULATE = False
 
 from .market_data import fetch_ohlcv, is_market_open
+from .circuit_breaker import check as check_kill_switch
+# Shared risk parameters live in options_signals.py -- options_backtest.py reads
+# the same names from there. This file used to redefine them locally too, so a
+# change here silently didn't reach the backtest. Import instead of duplicate.
+from .options_signals import (
+    OPTIONS_TICKERS, MAX_SPEND, MAX_POSITIONS, TARGET_DTE, OTM_PCT,
+    TAKE_PROFIT_PCT, STOP_LOSS_PCT, MIN_DTE,
+)
 
-# ── Tickers — liquid options with contracts affordable at ≤$75 each ───────────
-# QQQ (~$515), MSFT (~$470): 5% OTM 14-DTE contracts cost $150-400 — excluded
-OPTIONS_TICKERS = ["NVDA", "AAPL", "AMZN", "META"]
-
-# ── Risk parameters (also read by CCR and backtest) ──────────────────────────
-MAX_SPEND        = 75.0   # max premium per 1-contract purchase ($)
-MAX_POSITIONS    = 2      # max concurrent positions across all tickers
-TARGET_DTE       = 14     # target days-to-expiry when opening
-OTM_PCT          = 0.055  # ~5.5% OTM for strike selection
-TAKE_PROFIT_PCT  = 0.50   # close when premium gained +50%
-STOP_LOSS_PCT    = 0.50   # close when premium lost -50%
-MIN_DTE          = 5      # force-close at or below this DTE
+OPTIONS_CONFIG_FILE = "docs/options_config.json"
 
 # ── Signal thresholds — RSI + Bollinger Band double-confirmation ─────────────
 # Entry requires BOTH RSI extreme AND price at BB extreme (2 std-dev band).
@@ -163,10 +160,28 @@ def analyse_ticker(ticker: str) -> dict:
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+def _strategy_gate() -> tuple[bool, str]:
+    """docs/options_config.json's trading_enabled -- set false when a backtest
+    doesn't clear the quality bar (min_win_rate / min_rr / min_trades_to_qualify).
+    Was previously decorative (nothing read this file); now enforced here."""
+    try:
+        cfg = json.loads(open(OPTIONS_CONFIG_FILE).read())
+    except (OSError, json.JSONDecodeError):
+        return True, ""
+    if cfg.get("trading_enabled") is False:
+        return False, cfg.get("disabled_reason") or "trading_enabled=false in docs/options_config.json"
+    return True, ""
+
+
 def run_analysis() -> dict:
     market_open = is_market_open()
     timestamp   = datetime.now(timezone.utc).isoformat()
     quick       = "--quick" in sys.argv
+
+    account_ok, account_halt_reason = check_kill_switch()
+    strategy_ok, strategy_halt_reason = _strategy_gate()
+    trading_allowed = account_ok and strategy_ok
+    halt_reason = account_halt_reason or strategy_halt_reason
 
     print(f"\n{'='*60}")
     print(f"  Options Signal Engine  {timestamp[:16]} UTC")
@@ -174,6 +189,10 @@ def run_analysis() -> dict:
     print(f"  Tickers  : {OPTIONS_TICKERS}")
     print(f"  Market   : {'OPEN' if market_open else 'CLOSED'}")
     print(f"{'='*60}\n")
+
+    if not trading_allowed:
+        print(f"  TRADING HALTED — {halt_reason}")
+        print(f"  Signals below are for reference only. Do not open new positions.\n")
 
     signals = []
     for ticker in OPTIONS_TICKERS:
@@ -190,6 +209,8 @@ def run_analysis() -> dict:
 
     print()
     actionable = [s for s in signals if s["action"] != "HOLD" and s["confidence"] >= 2]
+    if not trading_allowed:
+        actionable = []
 
     if _HAS_TABULATE:
         rows = [
@@ -223,6 +244,8 @@ def run_analysis() -> dict:
     report = {
         "timestamp":     timestamp,
         "market_open":   market_open,
+        "trading_halted": not trading_allowed,
+        "halt_reason":   halt_reason or None,
         "tickers":       OPTIONS_TICKERS,
         "signals":       signals,
         "actionable":    actionable,

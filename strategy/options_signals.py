@@ -6,11 +6,15 @@ This file exists only so backtest and CCR can share the same risk parameters wit
 importing the full engine.
 """
 
-# Tickers: liquid options where 1 contract costs ≤$75 at 14 DTE, ~5.5% OTM
+# Tickers: liquid options where 1 contract costs ≤$35 at 14 DTE, ~5.5% OTM
 OPTIONS_TICKERS = ["NVDA", "AAPL", "AMZN", "META"]
 
-MAX_SPEND        = 75.0   # max premium per 1-contract purchase ($)
-MAX_POSITIONS    = 2      # max concurrent positions across all tickers
+# Account is $250 total (see strategy/config.py), shared with the equity system.
+# One options contract can lose 100% of its premium -- kept small (~14% of
+# account) and capped at 1 concurrent position so a total loss never exceeds
+# what the account can absorb without approaching the equity kill switch.
+MAX_SPEND        = 35.0   # max premium per 1-contract purchase ($)
+MAX_POSITIONS    = 1      # max concurrent positions across all tickers
 TARGET_DTE       = 14     # target days-to-expiry when opening
 OTM_PCT          = 0.055  # ~5.5% OTM for strike selection
 TAKE_PROFIT_PCT  = 0.50   # close when premium gained +50%

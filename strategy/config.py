@@ -1,13 +1,25 @@
-"""Trading strategy configuration for a $100 Robinhood agentic account."""
+"""Trading strategy configuration for a $250 Robinhood agentic account."""
 
 # ── Capital & position sizing ─────────────────────────────────────────────────
-TOTAL_CAPITAL = 500.0          # USD funded in agentic account
-CASH_BUFFER = 50.0             # always keep this much uninvested (10%)
-TRADEABLE_CAPITAL = TOTAL_CAPITAL - CASH_BUFFER  # $450
+# Matches the live "Agentic" account (837287598) balance as of 2026-09-13: $248.49
+# cash, zero open positions. Re-check via get_portfolio before trusting this if
+# it's been a while -- this constant drifts from reality, it doesn't sync to it.
+TOTAL_CAPITAL = 250.0          # USD funded in agentic account
+CASH_BUFFER = 50.0             # always keep this much uninvested (20%)
+TRADEABLE_CAPITAL = TOTAL_CAPITAL - CASH_BUFFER  # $200
 
-MAX_POSITION_SIZE = 100.0      # max dollars per position (20% of capital)
+MAX_POSITION_SIZE = 50.0       # max dollars per position (20% of capital) -- sized so
+                                # min(MAX_POSITION_SIZE, cash - CASH_BUFFER) can fill
+                                # ~4 diversified positions before the buffer stops it
 MIN_TRADE_SIZE = 15.0          # don't place orders smaller than this
-MAX_OPEN_POSITIONS = 5         # max concurrent holdings
+MAX_OPEN_POSITIONS = 5         # max concurrent holdings (buffer check above binds first)
+
+# ── Hard kill switch (does not reset -- unlike DAILY/WEEKLY_LOSS_HALT below) ──
+# Permanently blocks new BUYs once account_value drops this fraction below
+# TOTAL_CAPITAL. Tripped state is persisted to docs/positions.json and stays
+# tripped across runs/restarts until a human sets trading_enabled back to true
+# there. See strategy/circuit_breaker.py.
+ACCOUNT_KILL_SWITCH_PCT = 0.20   # 20% drawdown from $250 = $200 floor
 
 # ── Watchlist ─────────────────────────────────────────────────────────────────
 # 103 tickers: core + sector themes (Space, Quantum, Drones, Nuclear, Photonics,
@@ -133,7 +145,7 @@ MIN_SIGNALS_TO_TRADE = 2       # need at least 2/3 indicators aligned
 # CCR writes peak_value + week_start_value to positions.json each cycle.
 DAILY_LOSS_HALT   = 0.03   # 3 % drop from prior-day close → no new buys today
 WEEKLY_LOSS_HALT  = 0.05   # 5 % drop from Monday open → no new buys this week
-CONCENTRATION_MAX = 0.20   # single-position value / account_value ceiling (= $20 / $100)
+CONCENTRATION_MAX = 0.20   # single-position value / account_value ceiling (= $50 / $250)
 
 # ── Momentum signal thresholds ────────────────────────────────────────────────
 # Catches EMA-trending stocks with elevated volume (e.g. META) — complements RSI mean-reversion
@@ -150,9 +162,9 @@ VOLUME_LOOKBACK = 20           # days for avg-volume filter
 # RSI panic filter (extreme only)
 MARKET_REGIME_RSI_MIN = 30
 # 200-period EMA regime: if SPY close < SPY EMA200 → bearish trend
-# Effect: max position $10 (halved), require 3/3 signal confidence
+# Effect: max position $25 (halved), require 3/3 signal confidence
 EMA200_PERIOD = 200
-BEARISH_EMA_MAX_POSITION = 50.0   # halved from MAX_POSITION_SIZE
+BEARISH_EMA_MAX_POSITION = 25.0   # halved from MAX_POSITION_SIZE
 BEARISH_EMA_MIN_CONFIDENCE = 3    # require 3/3 vs normal 2/3
 
 # ── ATR trailing stop ─────────────────────────────────────────────────────────

@@ -18,7 +18,11 @@ from .signals import generate_signal
 from .net_buy import run_net_buy_scan, NetBuySignal, BUY_SURGE_MIN
 from .risk import risk_summary
 from .universe import full_universe
-from .config import WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN, BEARISH_EMA_MAX_POSITION, FIB_TARGETS, SECTOR_GROUPS
+from .circuit_breaker import check as check_kill_switch
+from .config import (
+    WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN, BEARISH_EMA_MAX_POSITION,
+    FIB_TARGETS, SECTOR_GROUPS, MAX_POSITION_SIZE, MIN_TRADE_SIZE,
+)
 try:
     from .rl_agent import predict as _rl_predict
     _RL_LIVE = True
@@ -47,6 +51,7 @@ def run_analysis() -> dict:
     market_open = is_market_open()
     timestamp = datetime.now(timezone.utc).isoformat()
     mode = "QUICK (watchlist only)" if QUICK_MODE else "FULL UNIVERSE (S&P 500 + NASDAQ 100)"
+    trading_allowed, halt_reason = check_kill_switch()
 
     print(f"\n{'='*65}")
     print(f"  Robinhood Agentic Trading Signal Report")
@@ -57,6 +62,13 @@ def run_analysis() -> dict:
 
     if not market_open:
         print("[INFO] Market is currently closed. No trades will be placed.\n")
+
+    if not trading_allowed:
+        print(f"{'!'*65}")
+        print(f"  TRADING HALTED — {halt_reason}")
+        print(f"  New BUYs are suppressed below. Existing positions may still")
+        print(f"  be sold (stop-loss / take-profit / SELL signal still apply).")
+        print(f"{'!'*65}\n")
 
     # ── Determine universe ────────────────────────────────────────────────────
     if QUICK_MODE:
@@ -214,17 +226,24 @@ def run_analysis() -> dict:
         if s.ticker not in rsi_signals:
             actionable.append((s.ticker, "BUY", s.price, "NET-BUY", None, s))
 
+    # Position sizing derives from config.py (single source of truth — also what
+    # backtest.py uses). STRONG gets the full cap; MODERATE/NET-BUY get half.
+    strong_amt   = MAX_POSITION_SIZE
+    moderate_amt = max(MIN_TRADE_SIZE, round(MAX_POSITION_SIZE * 0.5, 2))
+
     if not actionable:
         print("  No actionable signals right now. HOLD all positions.")
     else:
         for ticker, action, price, tag, rs, nb in actionable:
+            if action == "BUY" and not trading_allowed:
+                continue  # kill switch active — SELL-side info below still prints
             print(f"\n  [{tag}] {action} {ticker} @ ${price:.2f}")
             if rs and rs.action == action:
                 print(f"    RSI strategy : {rs.reason}")
             if nb and nb.action == action:
                 print(f"    Net buy trend: {nb.reason}")
             if action == "BUY":
-                dollar_amt = 20.0 if tag == "STRONG" else 15.0
+                dollar_amt = strong_amt if tag == "STRONG" else moderate_amt
                 rr = risk_summary(price, dollar_amt)
                 print(f"    Amount       : ${dollar_amt}  |  Stop: ${rr['stop_loss']:.2f}  |  Target: ${rr['take_profit']:.2f}  |  R:R 1:{rr['risk_reward']}")
 
@@ -234,6 +253,8 @@ def run_analysis() -> dict:
         "mode": "quick" if QUICK_MODE else "full_universe",
         "universe_size": len(universe),
         "market_open": market_open,
+        "trading_halted": not trading_allowed,
+        "halt_reason": halt_reason or None,
         "market_regime": "bearish_ema" if market_bearish_ema else "normal",
         "rsi_signals": [
             {"ticker": s.ticker, "action": s.action, "price": s.price,
@@ -287,10 +308,14 @@ def run_analysis() -> dict:
     print("\n[OK] Full report saved → logs/latest_signals.json + docs/signals.json")
 
     print("\n── CLAUDE AGENT INSTRUCTIONS ──")
-    print("  STRONG BUY  → buy up to $20 (both strategies agree)")
-    print("  NET-BUY     → buy up to $15 (net buy trend only, strong streak)")
-    print("  MODERATE BUY→ buy up to $15 (one strategy)")
-    print("  Any SELL on a held position → sell full position immediately")
+    if not trading_allowed:
+        print(f"  TRADING HALTED — {halt_reason}")
+        print("  DO NOT place any new BUY orders this cycle.")
+    else:
+        print(f"  STRONG BUY  → buy up to ${strong_amt:.0f} (both strategies agree)")
+        print(f"  NET-BUY     → buy up to ${moderate_amt:.0f} (net buy trend only, strong streak)")
+        print(f"  MODERATE BUY→ buy up to ${moderate_amt:.0f} (one strategy)")
+    print("  Any SELL on a held position → sell full position immediately (kill switch does not block exits)")
     print("  DO NOT trade if market_open is False.\n")
 
     return report

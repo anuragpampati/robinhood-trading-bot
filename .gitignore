@@ -23,3 +23,8 @@ cloudflared
 logs/dashboard.log
 logs/tunnel.log
 logs/tunnel_url.txt
+
+# Qanat integration spike (see qanat_project/) — isolated venv + regenerable data
+.qanat-venv/
+qanat_project/data/
+qanat_project/seed/
