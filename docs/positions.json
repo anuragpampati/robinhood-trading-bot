@@ -14,7 +14,7 @@
   "disabled_reason": null,
   "positions": [],
   "last_actions": [
-    "Resynced from live account via get_portfolio/get_equity_positions: $248.49 cash, 0 open positions (prior WMT/JPM/AUR positions from 2026-07-14 are gone -- closed at some point without this file being updated).",
+    "Resynced from live account via get_portfolio/get_equity_positions: $248.49 cash, 0 open positions -- account was topped up from ~$98 (last known 2026-09-11 cycle) to ~$250 between 2026-09-11 and 2026-09-13.",
     "strategy/config.py recalibrated for real $250 account (was stale at $500): MAX_POSITION_SIZE $100->$50, TOTAL_CAPITAL $500->$250, CASH_BUFFER stays $50 (now 20%).",
     "Added hard kill switch (strategy/circuit_breaker.py): trips trading_enabled=false if account_value <= $200 (20% drawdown). Persists until manually reset here.",
     "options_engine.py MAX_SPEND $75->$35, MAX_POSITIONS 2->1. docs/options_config.json's trading_enabled is now actually enforced (was decorative before) -- currently false, so options are halted pending a bigger backtest sample (13 trades < 20 required)."

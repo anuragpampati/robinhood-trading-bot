@@ -28,3 +28,6 @@ logs/tunnel_url.txt
 .qanat-venv/
 qanat_project/data/
 qanat_project/seed/
+
+# Intermediate data cache files (fetched during trading cycles, not for repo)
+logs/all_historicals.json

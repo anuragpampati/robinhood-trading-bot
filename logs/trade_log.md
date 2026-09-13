@@ -1,98 +1,31 @@
 # Trade Log — Robinhood Agentic Account
 
-> Auto-maintained by Claude agent. One entry per trade action.
+## 2026-09-11T20:10:23Z
+- SUMMARY: Market CLOSED (~4:10 PM ET). Regime: normal (SPY RSI 50.3, SPY $764.20 > EMA200 $762.81). RSI BUY: SBUX (RSI 26.7, conf 2/3) + UUUU (RSI 21.2, conf 2/3) — no trade (market closed). Net Buy BUY: 0. Surge: AMD 8.4%/WMT 8.7% (below 10%). Net-buy SELL: GE/ORCL/F/UBER/GM/MRCY/COIN/SPY/OKLO/ROK/CIFR/IWM/NBIS/HOOD/PFE/LEU/NVDA/MCD — none held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.
 
----
-## 2026-07-14T20:13:00Z
-- SUMMARY: Market closed — no trades. Buying power: $24.93. Positions: 3 (WMT, JPM, AUR). Regime: normal. Account: $100.51. Daily drawdown: -0.10% (gain). Weekly drawdown: -0.10% (gain). Surge tracker: empty.
-- RSI BUY signals (market closed, not executed): ISRG conf=2 RSI=20.9 BELOW_BAND | 🤖 RL: HOLD conf=93.0% | CRWV conf=2 RSI=29.4 BELOW_BAND | 🤖 RL: HOLD conf=90.6%
-- RSI SELL signals not held: GS conf=2 (RSI=82.4, overbought), CRWD conf=2 (RSI=74.5, overbought)
-- Net-buy SELL signals not held: NBIS, RDW, MRCY, QCOM, RKLB, PL, MU, ARM, ALAB
-- Surge signals (market closed): MBLY +29.4% | LRCX +103.4% — not processed (market closed)
-- ATR trail stops: WMT=$110.872 (unchanged, +3.03% @ $113.665), JPM=$334.685 (unchanged, +3.00% @ $343.000), AUR=$5.938 (unchanged, -0.89% @ $6.125)
-- Circuit breaker: INACTIVE | daily_dd=-0.10% (gain) | weekly_dd=-0.10% (gain)
-- 🤖 RL(WMT): HOLD conf=91.8% | 🤖 RL(JPM): HOLD conf=91.0% | 🤖 RL(AUR): null conf=n/a
+## 2026-09-11T19:12:51Z
+- SUMMARY: Market OPEN (~3:12 PM ET). Regime: normal (SPY $765.04 > EMA200 $762.80). RSI BUY: OKLO (RSI 24.3, conf 2/3, RL=HOLD 0.93) + LEU (RSI 22.1, conf 2/3, RL=HOLD 0.93) — SKIPPED (BP $98.49 − $50 order = $48.49 < $50 buffer; RL neutral, no veto). Net Buy BUY: 0. Net-buy SELL: NVDA/F/AAPL/GM/ROK/UBER/BAC/MRNA/CIFR/SOFI/ORCL/PFE — none held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.
 
 
-## 2026-07-14T18:11:53Z
-- SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $100.45. Daily drawdown: -0.04% (gain). Weekly drawdown: -0.04% (gain). Surge tracker: empty.
-- RSI BUY signals not traded: ORCL conf=2 (max positions) | 🤖 RL: HOLD conf=90.6% | ISRG conf=2 (max positions) | 🤖 RL: HOLD conf=93.0%
-- RSI SELL signals not held: GS conf=2 (RSI=78.8, overbought), CRWD conf=2 (RSI=71.7, overbought)
-- Net-buy SELL signals not held: NBIS, NVTS, MU
-- ATR trail stops: WMT=$110.872 (unchanged, +3.46% @ $114.14), JPM=$334.685 (unchanged, +1.67% @ $338.59), RKLB=$77.38 (unchanged, -0.57% @ $79.82), AUR=$5.938 (unchanged, -1.86% @ $6.065)
-- Circuit breaker: INACTIVE | daily_dd=-0.04% (gain) | weekly_dd=-0.04% (gain)
-- 🤖 RL(WMT): HOLD conf=91.8% | 🤖 RL(JPM): HOLD conf=91.0% | 🤖 RL(RKLB): null conf=n/a | 🤖 RL(AUR): null conf=n/a
+## 2026-09-11T18:10:00Z
+- SUMMARY: Market OPEN (~2:10 PM ET). Regime: normal (SPY $765.74 > EMA200 $762.77). RSI BUY: 0 | Net Buy BUY: 0 | Surge: 0. Net-buy SELL signals: NVDA/ROK/PYPL/GM/F/AAPL/UBER/MRNA/BAC/PFE — none held. No positions to sell. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.
 
-## 2026-07-14T17:10:18Z
-- SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $100.41. Daily drawdown: 0.0% (new day reset). Weekly drawdown: 0.0% (new week — Monday reset). Surge tracker: empty.
-- RSI BUY signals not traded: ORCL conf=2 (max positions) | 🤖 RL: HOLD conf=90.6%
-- RSI SELL signals not held: GS conf=2 (RSI=78.8), CRWD conf=2 (RSI=71.7)
-- Net-buy SELL signals not held: NBIS, NVTS, RDW, MU
-- ATR trail stops: WMT=$110.872 (unchanged, profit=+3.64%), JPM=$334.685 (unchanged, profit=+2.30%), RKLB=$77.38 (unchanged, loss=-0.93%), AUR=$5.938 (unchanged, loss=-2.47%)
-- Circuit breaker: INACTIVE | daily_dd=0.0% (new day) | weekly_dd=0.0% (new week/Monday)
+## 2026-09-11T16:13:20Z
+- SUMMARY: Market OPEN (~12:13 PM ET). Regime: normal (SPY $765.73 > EMA200 $762.70). RSI BUY: 0 | Net Buy BUY: 0. MRNA surge 18.9% → tracker count=1 (need ≥2 for intraday_surge buy; surge ≥5% buy also blocked: $98.49 − $50 = $48.49 < $50 buffer). TXN RSI SELL (72.6, conf 2/3) — not held. Net-buy SELL signals: NVDA/UBER/JPM/BAC/AAPL/WFC/PFE/PYPL/F/ROK — none held. 0 positions to sell. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.
 
-## 2026-07-14T15:10:50Z
-- SUMMARY: Market open — no trades. 4 positions at max capacity (WMT, JPM, RKLB, AUR) — no buys possible. No sell triggers (all within stop/target bands). Buying power: $24.93. Positions: 4. Regime: normal. Account: $101.03. Daily drawdown: -0.0%. Weekly drawdown: -0.0%. Surge tracker: empty.
-- RSI BUY signals not traded: IONQ conf=2 (max positions), INFQ conf=2 (max positions)
-- 🤖 RL(IONQ): HOLD conf=93.0% — not a SELL veto; no trade (max positions)
-- 🤖 RL(INFQ): HOLD conf=94.6% — not a SELL veto; no trade (max positions)
-- RSI SELL signals not held: BAC conf=2 (RSI=70.5), GS conf=2 (RSI=79.9), XOM conf=2 (RSI=71.4), CVX conf=2 (RSI=72.8), CRWD conf=2 (RSI=72.3)
-- Net-buy SELL signals not held: MU, NBIS, NVTS
-- ATR trail stops: WMT=$110.872 (unchanged, profit=4.12%), JPM=$334.685 (unchanged, profit=3.25%), RKLB=$77.38 (unchanged, profit=0.67%), AUR=$5.938 (unchanged, loss=-1.29%)
-- Circuit breaker: INACTIVE | daily_dd=-0.0% | weekly_dd=-0.0%
+## 2026-09-10T19:09:00Z
+- SUMMARY: Market OPEN (~3:09 PM ET). PANIC regime (SPY RSI 27.1 < 30) + bearish_ema — all individual stock buys suppressed. 0 positions held — nothing to sell. No surge/intraday_surge signals. Deployable $14.99 (BP $64.99 − $50 buffer) below $15 min order. Net-buy SELL: JPM/KTOS/WMT/GE/MRCY/MSFT/AI/SBUX/CRWD/SPY/SNAP/C/NOW — none held. CB INACTIVE (daily −0.43%, weekly gain +1.13%). BP $64.99. 0 positions. Acct $98.49.
 
-## 2026-07-14T14:16:53Z
-- Action   : BUY RKLB
-- Price    : $80.28
-- Amount   : $15.00 | Shares: 0.186846
-- RSI      : 29.9 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : HOLD conf=90.6% | null
-- Stop     : $77.38 | Target: $88.31
-- Strategy : normal | Sell date: null (ATR/signal)
-- Regime   : normal
-- Reason   : RSI oversold+stabilizing (29.5↑29.9) | BB reversal (0.04→0.14, returning from band) | priority-3 MODERATE BUY
+## 2026-09-10T18:10:34Z
+- Action   : SELL SBUX
+- Price    : $99.67
+- Amount   : $33.52 | Shares: 0.336408
+- RSI      : 25.6 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $99.61 | Target: $111.14
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : Net buy reversal (SBUX -0.69M→-0.83M, OBV ↓) | hours_held ~24h ≥ 3h | trail_stop $99.61 near breach | PnL ≈ -1.4%
 
-## 2026-07-14T14:16:44Z
-- Action   : SELL DKNG
-- Price    : $25.60
-- Amount   : $15.11 | Shares: 0.590088
-- RSI      : 49.0 | EMA: BULLISH | BB: IN_BAND
-- RL       : BUY conf=97.4% | sell override (ATR trailing stop)
-- Stop     : $26.06 (triggered) | Target: $27.96
-- Strategy : normal | Sell date: ATR
-- Regime   : normal
-- Reason   : ATR trailing stop triggered ($25.60 ≤ $26.06) | held 12 days | pnl=+0.71% from avg $25.42
-
-## 2026-07-13T19:11:00Z
-- SUMMARY: Market open — no trades (at max 4 positions). Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $100.96. Daily drawdown: 0.50%. Weekly drawdown: 0.50%. Surge tracker: AI=1, SNOW=1. WMT: +4.33% | DKNG: +5.00% | JPM: +0.56% | AUR: -2.67%. RSI SELLs not held: XOM conf=2, CVX conf=2, PYPL conf=2. RSI BUYs blocked by max-positions: IONQ(conf=2), QBTS(conf=2).
-
-## 2026-07-13T17:10:00Z
-- SUMMARY: Market open — no trades. At max 4 positions. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $101.03. Daily drawdown: 0.43%. Weekly drawdown: 0.43%. Surge tracker: empty (UBER removed — no longer in 10%+ surge signals). RSI sell signals (not held): CRM conf=2 (RSI=70.6), XOM conf=2 (RSI=73.6), CVX conf=2 (RSI=78.8), PYPL conf=2 (RSI=80.1). Net-buy SELL (not held): COHR, XOM. WMT: +3.77% | DKNG: +4.96% | JPM: +0.45% | AUR: -1.78% (held <3h). 🤖 RL: WMT=HOLD(91.8%), others=null.
-
-## 2026-07-13T16:17:00Z
-- SUMMARY: Market open — no trades. Buying power: $25.87. Positions: 4 (WMT, DKNG, JPM, AUR). Regime: normal. Account: $101.21. Daily drawdown: 0.26%. Weekly drawdown: 0.26%. Surge tracker: UBER=1.
-
-## 2026-07-13T15:13:03Z
-- SUMMARY: Market open — no trades. At max 4 positions. Buying power: $25.87. Positions: 4/4. Regime: normal. Account: $101.34. Daily drawdown: 0.13%. Weekly drawdown: 0.13%. Surge tracker: empty. RSI sell signals (not held): XOM, CVX, PYPL. No held positions triggered any exit. DKNG approaching take-profit ($26.98 vs $27.962).
-
-## 2026-07-13T14:13:18Z
-- Action   : BUY AUR
-- Price    : $6.18
-- Amount   : $15.00 | Shares: 2.42718
-- RSI      : 50.2 | EMA: BEARISH | BB: IN_BAND
-- RL       : null conf=n/a | null
-- Stop     : $5.94 | Target: $6.80
-- Strategy : normal | Sell date: null (ATR/signal)
-- Regime   : normal
-- Reason   : Net buy trend 4d streak (−2.88M→+0.92M→+7.03M), OBV +0.5M/day; priority-2 NET-BUY
-
-## 2026-07-13T14:12:46Z
-- Action   : SELL DELL
-- Price    : $431.39
-- Amount   : $14.10 | Shares: 0.032679
-- RSI      : 50.3 | EMA: BULLISH | BB: IN_BAND
-- RL       : BUY conf=97.4% | sell override (ATR trailing stop)
-- Stop     : $440.03 (triggered) | Target: $504.91
-- Strategy : normal | Sell date: ATR
-- Regime   : normal
-- Reason   : ATR trailing stop triggered ($431.39 ≤ $440.03), held ~3.5 days, pnl=−6.01%
+## 2026-09-10T16:12:35Z
+- SUMMARY: Market OPEN (~12:12 ET). PANIC regime (SPY RSI 26.7 < 30) + bearish_ema — all individual stock buys suppressed. No RSI BUY signals. Surge tracker cleared (MRVL/ARM no longer in 10%+ surge signals). Deployable $14.99 (below $15 min order). RSI SELL: QCOM (RSI 73.1) — not held. Net-buy SELL: WMT/GE/MRCY/GOOGL/KTOS/AI/JPM — none held. SBUX held: $99.97 vs stop $99.61 / target $111.14 — no exit. CB INACTIVE (daily -0.28%, weekly +1.28% gain). BP $64.99. 1 position. Acct $98.64.

@@ -4,6 +4,124 @@
 
 ---
 
+## 2026-09-11
+- Trades analysed: 0 new closed pairs today (trade log trimmed to last 2 days; no new BUY→SELL exits since SBUX close on 2026-09-10); cumulative ~26 closed (13W/13L)
+- Win rate: 50.0% overall (normal: 50.0% [n≈26]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH ~50% (historical); BEARISH ~50% (historical)
+- Config changes: none — RSI_OVERSOLD: 50.0% in [40%,65%] hold band (NO_CHANGE, n≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold>>2h, n<3 (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance network access blocked by environment policy (403, 35th+ consecutive session); prior metrics retained (null — blocked before first persist)
+- RL samples: 603/200 (READY — RL collector failed: yfinance not installed, pip network timeout; no new rows added today; 19 states in Q-table)
+- Notes: Account $98.49 (0 positions). Market regime shifted PANIC+bearish_ema → normal today (SPY RSI 50.3, SPY > EMA200). Both recent trades (NFLX, SBUX) were losses in BEARISH EMA / PANIC regime — regime suppression working as designed. All BUY signals today blocked by $0.49 buying-power headroom above $50 buffer. pip install timing out in this environment (PyPI blocked); yfinance unavailable so rl_collector and backtest cannot run. Run: python -m strategy.rl_agent --train to activate Q-learning (603 samples, 19 Q-states ready).
+
+## 2026-09-10
+- Trades analysed: 2 closed pairs (NFLX BUY→SELL -0.33%; SBUX BUY→SELL -1.4%)
+- Win rate: 0% overall (normal: 0% [n=2]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BEARISH entry 0% (n=2); BULLISH entry n/a (n=0)
+- Config changes: none — RSI_OVERSOLD: n_trades=2 < 5 required (NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~22.5h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy blocked (403, recurring); prior metrics retained (null — backtest never succeeded in this environment)
+- RL samples: 603/200 (READY — +1 new row today; 19 states in Q-table)
+- Notes: Account $98.49, 0 equity positions. PANIC regime (SPY RSI ~27) + bearish_ema suppressed all buys. Both recent trades were losses on BEARISH EMA entries in oversold conditions — consistent with bearish regime. Backtest blocked by network policy. Trade log trimmed: 5 entries remain.
+
+## 2026-09-08
+- Trades analysed: 0 closed pairs (1 open position: NFLX BUY @ $76.83 on 2026-09-08, still held; no complete BUY→SELL round-trips in last 30 log entries)
+- Win rate: n/a — no closed trades in log (normal: n/a [n=0 new]; momentum: n/a [n=0 trades ever]; surge: n/a [n=0 trades ever]); historical reference (from 2026-08-11): normal 50.0% (7W/7L, n=14, avg_pnl −0.51%, avg_hold ~137h)
+- EMA-trend win rate: historical BULLISH entry 50.0% (n=12); BEARISH entry 50.0% (n=2)
+- Config changes: none — RSI_OVERSOLD: historical win_rate=50.0% in [40%,65%] (NO_CHANGE, n=14≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~137h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy blocked (403, 32+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 600/200 (READY — +10 new rows today; 19 states in Q-table)
+- Notes: Account $98.99, 1 equity position (NFLX BUY @ $76.83, pnl=−0.07%, stop $75.40, target $84.51). Buying power $52.14 ($2.14 above buffer — very limited new buys). RSI BUY candidates deferred (SBUX RSI 22.8, SHOP RSI 29.2). Trade log trimmed: 4 entries remain. RL READY (600/200 samples, 19 Q-states) — run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-31
+- Trades analysed: 0 closed pairs (3 open positions: PYPL -2.15%, HOOD -0.80%, BE -2.36%; no complete BUY→SELL round-trips in last 30 log entries)
+- Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
+- Config changes: none — n_trades < 3 for all strategy types; NO_CHANGE (insufficient data for any threshold adjustment)
+- Backtest: SKIPPED — yfinance proxy blocked (403, recurring); prior metrics retained (+9.29% return, 39.6% win rate, R:R 1.78, 227 trades)
+- RL samples: 561/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: Account $94.56, buying power $50.36 (only $0.36 above buffer — no new buys possible). All 3 positions slightly underwater but above stop-loss levels. BE close to ATR stop ($203.23). Regime: normal (BULLISH EMA). Trade log trimmed: 1 entry remains. RL exceeds 200 target — run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-28
+- Trades analysed: 0 closed pairs (4 open positions: PYPL, HOOD, BE [opened today], RKLB [opened 2026-08-26, last trimmed entry]; no complete BUY→SELL round-trips in last 30 log entries)
+- Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
+- Config changes: none — n_trades < 3 for all strategy types; NO_CHANGE (insufficient data for any threshold adjustment)
+- Backtest: SKIPPED — yfinance proxy blocked (403, recurring); prior metrics retained (+9.29% return, 39.6% win rate, R:R 1.78, 227 trades)
+- RL samples: 558/200 (READY — +6 new rows today; 19 states in Q-table)
+- Notes: Account $95.08 (3 open positions: PYPL -0.3%, HOOD -1.3%, BE -0.3%; all entered today at RSI oversold). Buying power $50.36 (only $0.36 above buffer — no new buys possible). Regime: normal (BULLISH EMA). Log trimmed: 7 entries remain (last 48h). RL exceeds 200 target (558 samples) — run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-13
+- Trades analysed: 0 closed pairs (1 open position: GOOGL BUY @ $342.92 on 2026-08-12, still held; no complete BUY→SELL round-trips in log)
+- Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
+- Config changes: none — n_trades < 3 for all strategy types; NO_CHANGE (insufficient data for any threshold adjustment)
+- Backtest: SKIPPED — yfinance proxy blocked (403, consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 516/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: Account $97.89 (+0.65% week), 1 equity position (GOOGL +1.02%, trail_stop $338.18, target $377.21), buying power $50.40 (only $0.40 above buffer — no new buys possible). Regime: normal (BULLISH EMA). Log trimmed to 9 entries. RL exceeds 200 target (516 samples, 19 Q-states) — run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-11
+- Trades analysed: 14 closed (7W/7L); +1 new exit today: SYM +2.13% (96h/net-buy-SELL/BULLISH EMA)
+- Win rate: 50.0% overall (normal: 50.0% [n=14, 7W/7L, avg_pnl -0.51%, avg_hold ~137h]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH entry 50.0% (6W/6L, n=12); BEARISH entry 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=50.0% in [40%,65%] (NO_CHANGE, n=14≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~137h >>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 19+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 506/200 (READY — +6 new rows today; 19 states in Q-table)
+- Notes: Account $97.40, 0 equity positions (SYM closed +2.13% via net-buy SELL signal, 96h hold). Win rate improved from 46.2% to 50.0% with SYM exit. All thresholds unchanged — win rate stable in [40%,65%] hold band. Backtest proxy blocked 19+ sessions; prior metrics retained. RL far exceeds 200 target (506 samples) — run: python -m strategy.rl_agent --train to activate Q-learning. Log trimmed to 11 entries.
+
+## 2026-08-07
+- Trades analysed: 0 closed pairs (3 positions opened today — SYM/MU/TER — all still open; no complete BUY→SELL round-trips in log)
+- Win rate: n/a — no closed trades (normal: n/a [n=0]; momentum: n/a [n=0]; surge: n/a [n=0])
+- Config changes: none — n_trades < 3 for all strategy types; NO_CHANGE (insufficient data for any threshold adjustment)
+- Backtest: SKIPPED — yfinance proxy blocked (403) consecutive sessions; prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 493/200 (READY — +14 new rows today; 19 states in Q-table)
+- Notes: Account $97.78 (+0.04% today), 3 equity positions (SYM pnl=-0.37%, MU pnl=+0.26%, TER pnl=-1.06%), buying power $52.74. Regime: normal (BULLISH EMA). Capital fully deployed with $50 buffer. RL far exceeds 200 target (493 samples, 19 Q-states) — run: python -m strategy.rl_agent --train to activate Q-learning. Trade log trimmed to 12 entries.
+
+## 2026-08-05
+- Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only SUMMARY entries, no complete round-trips visible); historical reference from accumulated log: normal 54.5% (n=11), BULLISH EMA 55.6%, BEARISH EMA 50.0%
+- Win rate: n/a in-log (normal: 54.5% historical [n=11], momentum: n/a [n=0 trades ever], surge: n/a [n=0 trades ever])
+- Config changes: none — RSI_OVERSOLD: historical win_rate=54.5% in [40%,65%] (NO_CHANGE, n=11≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~182h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403) again; prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 476/200 (READY — +4 new rows today; 19 states in Q-table)
+- Notes: Account $97.74 cash-only (−2.3% from $100 start), 0 equity positions, regime normal. All recent RSI signals overbought (CRWD 86.5%, ORCL 85.7%, SHOP 84.2%). Capital bind persists: only $47.74 above $50 buffer — any $50 BUY would breach buffer. RL far exceeds 200 target (476 samples, 19 states). Backtest proxy blocked for 15+ consecutive sessions; live performance shows normal strategy win_rate stable at 54.5%. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-04
+- Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only SUMMARY entries, no complete round-trips visible)
+- Win rate: n/a — no closed trades in log (normal: n/a; momentum: n/a — 0 trades; surge: n/a — 0 trades); historical reference: normal 54.5% (n=11), BULLISH EMA 55.6%, BEARISH EMA 50.0%
+- Config changes: none — RSI_OVERSOLD: historical win_rate=54.5% in [40%,65%] (NO_CHANGE, n=11≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold~153h>>2h (NO_CHANGE); NO_CHANGE applied
+- Backtest: SKIPPED — yfinance proxy blocked (403) again; prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 472/200 (READY — +33 new rows today; 19 states in Q-table)
+- Notes: Account $97.74 (-2.3% from $100 start), 0 equity positions, regime normal. All RSI signals overbought (massive RSI SELL list — SPY 83.1, CRWD 86.5, ORCL 85.7) but nothing held. INTC/AVAV signals skipped due to insufficient buying power ($47.74 above buffer < $50 min). RL far exceeds 200 target (472 samples) — run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-03
+- Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only 5 SUMMARY entries, no complete round-trips visible)
+- Win rate: n/a — no closed trades in log (normal: n/a, momentum: n/a — 0 trades, surge: n/a — 0 trades)
+- Config changes: none — all strategy types below minimum sample thresholds (n<3 for all types); NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403) again; prior 14d metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 439/200 (READY — +16 new rows today; 19 states in Q-table)
+- Notes: Account $97.74, 0 equity positions (AAPL sold between 14:21–16:18 ET today, proceeds settling $30.29). Regime: normal (SPY above EMA200). Multiple RSI SELL signals in market (MSFT 85.7, GOOGL 84.2, CRWD 84.0) but nothing held. RL exceeded 200 target long ago (439 samples) — run: python -m strategy.rl_agent --train to activate Q-learning. Trade log trimmed to 5 entries.
+
+## 2026-07-23
+- Trades analysed: 9 closed (same as prior day — no new exits); 1 open (PLTR -0.21%, bearish_ema regime)
+- Win rate: 55.6% overall (normal: 55.6% — 5W/4L, avg_pnl +0.07%, avg_hold ~182h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- EMA-trend win rate: BULLISH entry 55.6% (9/9 closed trades); BEARISH entry n/a (0 closed — PLTR bearish entry still open)
+- Config changes: none — RSI_OVERSOLD: win_rate=55.6% in [40%,65%] range, NO_CHANGE (n=9≥5); MOMENTUM_VOL_MIN: no momentum entries (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold ~182h >> 2h, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 407/200 (READY — +6 new rows today; 19 states in Q-table)
+- Notes: No new exits today. PLTR entered 2026-07-23 at $123.53, bearish_ema regime, $50 position. Market in PANIC (SPY RSI <30) + bearish_ema most of the day. Account $100.14, peak $101.68. Buying power $50.24 (at buffer limit). RL exceeds 200 target — run: python -m strategy.rl_agent --train
+
+## 2026-07-22
+- Trades analysed: 9 closed (RKLB +2.93%, SMCI +2.41%, GS -2.46%, DELL -6.01%, DKNG +0.71%, AUR -4.10%, WMT +5.28%, DIS -2.28%, JPM +4.13%); 0 open
+- Win rate: 55.6% overall (normal: 55.6% — 5W/4L, avg_pnl +0.07%, avg_hold ~182h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- EMA-trend win rate: BULLISH entry 55.6% (9/9 trades); BEARISH entry n/a (0 trades)
+- Config changes: none — RSI_OVERSOLD: win_rate=55.6% in [40%,65%] range, NO_CHANGE (n=9≥5); MOMENTUM_VOL_MIN: no momentum entries (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold ~182h >> 2h, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 401/200 (READY — +6 new rows today; 19 states in Q-table)
+- Notes: JPM closed today +4.13% via signal sell (net-buy reversal + OBV decline). Account $100.24 — above $100 start. No open equity positions; buying power $84.62 (cash-buffer bind preventing new entries at $50 order size). 3 strong RSI buy candidates visible after hours: PLTR, GEV, NOW. Log trimmed to 10 entries.
+
+## 2026-07-15
+- Trades analysed: 3 closed (DELL -6.01%, DKNG +0.71%, AUR -4.10%; 2 open: WMT/JPM)
+- Win rate: 33.3% overall (normal: 33.3% — 1W/2L; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- Config changes: none — RSI_OVERSOLD: n=3 < 5 (need ≥5); MOMENTUM_VOL_MIN: no momentum-strategy closed trades (n<3); ATR_VOLATILITY_THRESHOLD: avg_hold ~140h > 2h, rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior metrics retained: +9.29% 365d return, 15.3% drawdown, 39.6% win rate
+- RL samples: 380/200 (READY — +4 new rows collected today; 19 states in Q-table)
+- Notes: AUR exited 2026-07-15 at -4.1% via ATR trailing stop (held ~48h). RKLB sold between 2026-07-14T18:11 and 2026-07-15T15:15 (explicit entry trimmed from log). WMT +1.8%/JPM +4.2% still held. Account $100.11. Log trimmed to 12 entries. RL exceeds 200 target — ready to train Q-agent.
+
 ## 2026-07-13
 - Trades analysed: 4 cumulative closed (SMCI +2.41%, GS -2.46%, RKLB +2.93%, DELL -6.01%; 4 open: WMT/DKNG/JPM/AUR)
 - Win rate: 50.0% overall (normal: 50.0% — 2W/2L; momentum: n/a — 0 trades; surge: n/a — 0 trades)
@@ -19,3 +137,234 @@
 - Backtest: SKIPPED — yfinance proxy blocked (403). Prior metrics retained: +9.29% 365d return, 15.3% drawdown, 39.6% win rate
 - RL samples: 366/200 (READY — exceeds target)
 - Notes: RL READY for Q-learning activation. DELL position at -5.27%, flagged below stop $440.03 — sell at next market open. Account $101.34. Log trimmed to 9/15 entries.
+
+## 2026-07-16
+- Trades analysed: 2 confirmed closed in recent log (DKNG +0.71% ATR trail, held 12d; AUR -4.1% ATR trail, held ~48h)
+- Win rate: 50.0% overall (normal: 50.0% — 1W/1L; momentum: n/a — 0 closed; surge: n/a — 0 closed)
+- Config changes: none — RSI_OVERSOLD: n=2 < 5 (need ≥5); MOMENTUM_VOL_MIN: no momentum entries (n<3); ATR_VOLATILITY_THRESHOLD: avg_hold ~144h >> 2h threshold, rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 392/200 (READY — +12 new rows today; 19 states in Q-table)
+- Notes: 3 open positions: WMT +4.2%, JPM +3.1%, DIS +1.2% (entered today). DIS RSI SELL signal (RSI 71.1) deferred to next market open. Account $100.29. Log trimmed to 12 entries. RL well past 200 target — Q-agent training recommended.
+
+## 2026-07-20
+- Trades analysed: 8 closed cumulative (RKLB +2.93%, SMCI +2.41%, GS -2.46%, DELL -6.01%, DKNG +0.71%, AUR -4.10%, WMT +5.28%, DIS -2.28%) + 1 open (JPM +1.84%)
+- Win rate: 50.0% overall (normal: 50.0% — 4W/4L, avg_pnl -0.44%, avg_hold 175h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- Config changes: none — RSI_OVERSOLD: win_rate=50% in 40-65% range, NO_CHANGE; MOMENTUM_VOL_MIN: no momentum closed trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold 175h >> 2h threshold, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 392/200 (READY — 0 new rows today; 19 states in Q-table)
+- Notes: DIS exited at -2.28% via ATR trailing stop (held 95h). WMT exited at +5.28% via net_buy_signal reversal (held 15d). JPM currently +1.84% @ $339.15, trail $334.69. Account $99.89 (below $100 start). Bearish_EMA regime active. Log trimmed to 3 entries.
+
+## 2026-07-21
+- Trades analysed: 8 closed cumulative (same as 2026-07-20; no new exits today) + 1 open (JPM +3.64%)
+- Win rate: 50.0% overall (normal: 50.0% — 4W/4L, avg_pnl -0.44%, avg_hold 175h; momentum: n/a — 0 trades; surge: n/a — 0 trades)
+- Config changes: none — RSI_OVERSOLD: win_rate=50% in [40%,65%], NO_CHANGE (n=8≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold 175h >> 2h, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 395/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: JPM now +3.64% @ $345.15, trail $334.69, TP $366.32. Regime: normal/BULLISH. All buys blocked today by cash buffer ($84.62 buying power — after JPM position only $34.62 available above $50 buffer). Account $100.17. Peak $101.68. Log trimmed to 7 entries. RL well past 200 — run python -m strategy.rl_agent --train to activate Q-agent.
+
+## 2026-07-24
+- Trades analysed: 2 closed in trimmed log (JPM +4.1% BULLISH EMA/signal-sell; PLTR +0.105% BEARISH EMA/signal-sell)
+- Win rate: 100% in-log (normal: 100% — 2W/0L; momentum: n/a — 0 trades; surge: n/a — 0 trades) — note: insufficient n for statistical significance
+- Config changes: none — RSI_OVERSOLD: n=2 < 5 (need ≥5), NO_CHANGE; MOMENTUM_VOL_MIN: n=0 momentum trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_pnl > 0 (wins), rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 412/200 (READY — +5 new rows today; 19 states in Q-table)
+- Notes: Account $100.28, 0 open positions, regime bearish_ema (SPY $738.85 < EMA200 $744.44). Log trimmed to 9/15 entries. RL exceeds 200 target by 212 — Q-agent training recommended.
+
+## 2026-07-27
+- Trades analysed: 1 closed in trimmed log (PLTR +0.105% normal/BEARISH EMA/signal-sell — net buy reversed at 25.9h)
+- Win rate: 100% in-log (1W/0L) — insufficient n for statistical significance (n<5 normal, n=0 momentum/surge)
+- Config changes: none — RSI_OVERSOLD: n=1 < 5 (need ≥5), NO_CHANGE; MOMENTUM_VOL_MIN: n=0 momentum trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold 25.9h > 2h threshold and avg_pnl > 0, rule not triggered
+- Backtest: SKIPPED — yfinance proxy blocked (403). Prior 365d metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate
+- RL samples: 415/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: Account $101.58, 1 open position (AMD +2.6% @ $495.07, trail $484.89, TP $530.73), regime bearish_ema. RL well past 200 target — run python -m strategy.rl_agent --train to activate Q-agent. Log trimmed to 6 entries.
+
+## 2026-07-28
+- Trades analysed: 1 closed (AMD -5.96% stop, 21.1h hold, normal/BEARISH)
+- Win rate: 0% overall (normal: 0% n=1, momentum: n/a n=0, surge: n/a n=0)
+- Config changes: none — all types below minimum sample thresholds (normal n<5, momentum n<3, ATR hold not <2h)
+- Backtest: SKIPPED — yfinance proxy blocked (403), prior metrics retained (return +9.3%, drawdown 15.3%, win_rate 39.6%)
+- RL samples: 417/200 — READY (exceeded target by 217)
+- Notes: bearish_ema regime active all day (SPY $741.45 < EMA200 $743.93); no new positions opened (buying power at buffer limit $50.28); AMD position closed by ATR trailing stop at -6.0% from avg; account at $97.45 (-2.8% weekly from $100.28 start)
+
+## 2026-07-30
+- Trades analysed: 11 total closed (normal: 6W/5L; momentum: n/a n=0; surge: n/a n=0)
+- Win rate: 54.5% overall (normal: 54.5% — 6W/5L, avg_pnl −0.48%, avg_hold ~153h; momentum: n/a; surge: n/a)
+- EMA-trend win rate: BULLISH entry 55.6% (5W/4L, n=9); BEARISH entry 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=54.5% in [40%,65%] range, NO_CHANGE (n=11≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3), NO_CHANGE; ATR_VOLATILITY_THRESHOLD: avg_hold ~153h >> 2h, NO_CHANGE
+- Backtest: SKIPPED — yfinance proxy blocked (403); prior 365d metrics retained (+9.29% return, 15.29% drawdown, 39.6% win rate)
+- RL samples: 419/200 (READY — +1 new row today; 19 states in Q-table)
+- Notes: Account $97.45 cash-only (−2.8% week from $100.28), regime bearish_ema (SPY below EMA200 all day). No positions. Multiple signals blocked by bearish_ema 3/3 conf rule + cash buffer bind. RL exceeds 200 target by 219 — run `python -m strategy.rl_agent --train`. Trade log trimmed to 9 entries.
+
+## 2026-07-29
+- Trades analysed: 1 (AMD only — normal/BEARISH EMA, -6.0% stop, ~21h hold)
+- Win rate: 0% overall (normal: 0% [n=1], momentum: n/a [n=0], surge: n/a [n=0])
+- Config changes: none (all strategy types below minimum n thresholds — normal n<5, momentum n<3, surge n<3)
+- Backtest: skipped — yfinance proxy blocked (403); prior metrics retained (return +9.29%, drawdown 15.29%, win_rate 39.6%)
+- RL samples: 418/200 (READY — RL training can be activated)
+- Notes: Account $97.45 cash-only, regime bearish_ema, no open positions. Multiple RL BOOST signals blocked by cash buffer constraint ($97.45 − $50 = $47.45 < $50 buffer required). RL fully ready (418 samples, 19 states); consider running `python -m strategy.rl_agent --train` to activate Q-learning. Trade log trimmed to 7 entries.
+
+## 2026-07-31
+- Trades analysed: 0 closed pairs (only 2 BUYs placed today: AAPL + MSFT — both still open). No completed trade history to analyze.
+- Win rate: n/a — no closed trades in log (normal: n/a, momentum: n/a, surge: n/a)
+- Config changes: none — 0 closed trade pairs (n < 3 for all strategy types); NO_CHANGE warranted
+- Backtest: SKIPPED — yfinance proxy blocked (403 again). Prior metrics retained: +9.29% return, 15.3% drawdown, 39.6% win rate, 227 trades
+- RL samples: 423/200 (READY — +4 new rows today; 19 states in Q-table)
+- Notes: Live account $98.18. Positions: AAPL +2.35% (entry $301.95, trail_stop $291.73), MSFT open (entry $462.02). Regime shifted bearish_ema → normal today (SPY $745.44 > EMA200 $743.41). RL exceeded 200 target days ago — Q-table has 19 states. Trade log trimmed to 12 entries (last 2 days). Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-06
+- Trades analysed: 0 closed pairs (trade log trimmed to last 48h — only SUMMARY entries, no complete round-trips visible); historical reference: normal 54.5% (n=11), BULLISH EMA 55.6%, BEARISH EMA 50.0%
+- Win rate: n/a in-log (normal: 54.5% historical [n=11], momentum: n/a [n=0 trades ever], surge: n/a [n=0 trades ever])
+- Config changes: none — RSI_OVERSOLD: historical win_rate=54.5% in [40%,65%] (NO_CHANGE, n=11≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~153h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403) again (16th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 479/200 (READY — +3 new rows today; 19 states in Q-table)
+- Notes: Account $97.74 cash-only (−2.3% from $100 start), 0 equity positions, regime normal (BULLISH EMA). Capital bind persists: $97.74 − $50 buffer = only $47.74 available above buffer, all $50 min-buy trades blocked. RSI signals all overbought (DIS 82.6, MSFT 72.3, PFE 74.8). RL exceeds 200 target by 279 samples (479 total, 19 states). Backtest blocked by proxy 403 for 16+ sessions. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-10
+- Trades analysed: 2 (MU -0.22% BULLISH/71h/net-buy-SELL, TER -3.84% BULLISH/71h/net-buy-SELL); cumulative: 13 closed (6W/7L)
+- Win rate: 46.2% overall (normal: 46.2% [n=13, 6W/7L]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA 45.5% (5W/6L, n=11); BEARISH EMA 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=46.2% in [40%,65%] (NO_CHANGE, n=13≥5); MOMENTUM_VOL_MIN: n=2 momentum-range entries <3 (NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~140h >>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 18th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 500/200 (READY — +7 new rows today; 19 states in Q-table)
+- Notes: 2 positions closed today (MU/TER via net-buy SELL, ~71h hold each; both losses). SYM still open (-0.62%, trail $38.16/TP $44.35). Buying power $52.74 (tight — only $2.74 above $50 buffer, insufficient for $15 min order on new buys). Account $97.12. Normal strategy win_rate dipped to 46.2% (within hold band — no adjustment). RL now at 500 samples, 300 above 200 target. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-12
+- Trades analysed: 14 total closed (cumulative); 0 new closures today — GOOGL BUY opened today, still open
+- Win rate: 50.0% overall (normal: 50.0% [7W/7L, n=14]; momentum: n/a [n<3]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH 50.0% (6W/6L, n=12); BEARISH 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=50.0% in [40%,65%] (NO_CHANGE, n=14≥5); MOMENTUM_VOL_MIN: n<3 momentum trades (NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~140h >>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked 403 (20th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 513/200 (READY — +7 new rows today; 19 states in Q-table)
+- Notes: GOOGL BUY opened @ $342.92 ($47, RSI 26.54 deeply oversold, RL BOOST conf 0.928). Account $97.37, 1 open position. Trail stop $338.18, target $377.20. Trade log trimmed to 4 entries. Capital bind: $50.40 buying power → $0.40 above $50 buffer. Proxy has blocked backtest for 20+ sessions. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-14
+- Trades analysed: 1 closed (GOOGL normal +0.75%, ~46.5h, exit: signal-sell)
+- Win rate: 100% overall (1/1) — normal: 100% (1/1), momentum: N/A (0 trades), surge: N/A (0 trades)
+- Config changes: none (n<3 for all strategy types — insufficient data for threshold tuning)
+- Backtest: skipped — yfinance proxy blocked (403). Prior metrics retained: +9.29% return, 15.29% max drawdown, 39.6% win rate
+- RL samples: 520/200 (RL READY — exceeds target by 2.6×; run python -m strategy.rl_agent --train)
+- Notes: Account $97.75 (+0.50% week). Circuit breaker INACTIVE. Buying power $50.40 (only $0.40 above $50 buffer — no room for new buys). Surge: MRVL +990.2% vol surge (market closed, not executed).
+
+## 2026-08-17
+- Trades analysed: 15 total closed (8W/7L); 0 new closures today (LRCX still open +2.85%)
+- Win rate: 53.3% overall (normal: 53.3% [8W/7L, n=15, avg_pnl≈-0.43%, avg_hold≈131h]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH entry 53.8% (7W/6L, n=13); BEARISH entry 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=53.3% in [40%,65%] hold band (NO_CHANGE, n=15≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~131h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403), consecutive sessions; prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 525/200 (READY — +5 new rows today; 19 states in Q-table)
+- Notes: Account $98.89 (+1.37% today), 1 equity position (LRCX +2.85%, trail_stop=$336.12, TP=$367.90). Buying power $50.75 (only $0.75 above $50 buffer — no new buys possible). Regime: normal (BULLISH EMA). Trade log trimmed to 5 entries. All thresholds in hold band — no tuning warranted. RL READY: 525 samples (2.6× target), 19 Q-states. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-18
+- Trades analysed: 1 new closed (LRCX -4.61% trail_stop, 25h, normal/BULLISH EMA); cumulative: 16 closed (8W/8L)
+- Win rate: 50.0% overall (normal: 50.0% [8W/8L, n=16, avg_hold≈131h]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA 50.0% (7W/7L, n=14); BEARISH EMA 50.0% (1W/1L, n=2)
+- Config changes: none — RSI_OVERSOLD: win_rate=50.0% in [40%,65%] hold band (NO_CHANGE, n=16≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~131h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 21st+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 529/200 (READY — +4 new rows today; 19 states in Q-table)
+- Notes: LRCX closed today via ATR trail-stop (-4.61%, ~25h hold). Account $95.58 (below $100 start). Capital bind continues: $50.75 BP - $50 buffer = $0.75 unusable until LRCX proceeds settle 2026-08-19. Multiple RSI BUY signals (ARM, OKLO, EOSE) skipped due to insufficient buying power. Normal win_rate at 50% (hold band, no tuning). RL well past 200 target — run python -m strategy.rl_agent --train. Trade log trimmed to 11 entries.
+
+## 2026-08-19
+- Trades analysed: 1 closed (LRCX -4.61% trail_stop, 25h, EMA=BULLISH)
+- Win rate: n/a overall (n<3 for all strategy types — insufficient data for adjustment)
+- Config changes: none (NO_CHANGE — normal n=1<5, momentum n=1<3, ATR avg_hold=25h>>2h)
+- Backtest: skipped (yfinance 403, 22nd+ consecutive session) — prior: +9.29% return, 39.6% win_rate, 15.29% drawdown
+- RL samples: 531/200 (RL READY — exceeded target)
+- Notes: BA position open (-0.11%, trail_stop $219.80, target $244.72). Buying power at $50 floor. Multiple RSI oversold signals skipped (INTC, AVGO, WFC, VRT, KLAC) due to capital constraint. +2 RL rows added today.
+
+## 2026-08-20
+- Trades analysed: 1 new closed (BA -1.6% trail_stop, ~21h, normal/BEARISH EMA); cumulative: 17 closed (8W/9L)
+- Win rate: 47.1% overall (normal: 47.1% [8W/9L, n=17]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA 50.0% (7W/7L, n=14); BEARISH EMA 33.3% (1W/2L, n=3)
+- Config changes: none — RSI_OVERSOLD: win_rate=47.1% in [40%,65%] hold band (NO_CHANGE, n=17≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~131h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 23rd+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 532/200 (RL READY — exceeded target by 2.66×; run: python -m strategy.rl_agent --train)
+- Notes: Account $94.85 (below $100 start, -5.15%), 0 equity positions. BA closed via trail_stop ~21h after entry (BEARISH EMA entry). BEARISH EMA win rate slipped to 33.3% (1W/2L, n=3) — approaching data threshold but n still too low for ATR adjustment. Capital bind: buying power $50.00 at floor (BA proceeds $44.85 settle 2026-08-21). Log trimmed to 5 entries. RL: 532 samples (19 Q-states). NO_CHANGE on all thresholds.
+
+## 2026-08-21
+- Trades analysed: 0 new closures today (cumulative: 17 closed, 8W/9L); BA closed 2026-08-20 counted in prior entry
+- Win rate: 47.1% overall (normal: 47.1% [8W/9L, n=17]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH 50.0% (7W/7L, n=14); BEARISH 33.3% (1W/2L, n=3)
+- Config changes: none — RSI_OVERSOLD: 47.1% in [40%,65%] hold band (NO_CHANGE, n=17≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~131h>>2h (NO_CHANGE)
+- Backtest: skipped (yfinance proxy 403, 24th+ consecutive session) — prior: +9.29% return, 15.29% max drawdown, 39.6% win_rate, 227 trades, R:R 1.78
+- RL samples: 539/200 (RL READY — +7 new rows today; 19 states in Q-table; 2.7× target)
+- Notes: 0 open positions (BA closed via trail_stop 2026-08-20, -1.6%). Account $94.85 (below $100 start, -5.15%). Buying power $94.85 — plenty of room for new buys once market opens, but buying power constraints blocked entries today. BEARISH EMA win rate 33.3% (n=3) approaching threshold but n still <5 for RSI_OVERSOLD rule. Trade log trimmed to 3 entries. RL READY: 539 samples, 19 Q-states. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-24
+- Trades analysed: 0 new closures (cumulative: 17 closed, 8W/9L); 2 new BUYs today (CRWV, INTC — still open)
+- Win rate: 47.1% overall (normal: 47.1% [8W/9L, n=17]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH 50.0% (7W/7L, n=14); BEARISH 33.3% (1W/2L, n=3)
+- Config changes: none — RSI_OVERSOLD: 47.1% in [40%,65%] hold band (NO_CHANGE, n=17≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~131h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 25th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 543/200 (RL READY — +4 new rows today; 19 states in Q-table; 2.7× target)
+- Notes: Account $94.71 (-5.29% from $100 start). 2 open positions (CRWV -0.36%, INTC -0.30%, both opened today). Buying power $64.85 (buffer-constrained — $64.85-$50=$14.85, insufficient for $15 min-order). Trade log trimmed to 5 entries (last 2 days). All thresholds in hold band — NO_CHANGE. RL READY: 543 samples, 19 Q-states. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-08-25
+- Trades analysed: 1 closed (CRWV +2.90% normal) — log trimmed to 48h, limited history
+- Win rate: N/A overall (normal: 1/1=100% but n=1<3 threshold; momentum: n=0; surge: n=0)
+- Config changes: none (n_trades < 3 for all strategy types — insufficient data for adjustment)
+- Backtest: skipped (yfinance proxy 403); prior metrics retained: +9.29% return, 39.6% win_rate, R:R 1.78
+- RL samples: 546/200 (RL READY — target exceeded)
+- Notes: rl_collector added 3 new rows (543→546). q_table has 19 states. Trade log kept 8/8 entries (last 48h). Account $95.42, peak $101.68, buying power $64.85, 0 open positions post-CRWV sell.
+
+## 2026-08-26
+- Trades analysed: 1 closed trade visible in trimmed log (CRWV +2.90%, normal strategy, EMA BEARISH entry, 24h hold, signal-sell exit)
+- Win rate: 100% on 1 trade — insufficient data; INTC trade result not in log (trimmed)
+- Config changes: none (n_trades < 3 for all strategy types — normal: 1 trade, momentum: 0, surge: 0)
+- Backtest: SKIPPED — yfinance proxy 403 (recurring network block in CCR); prior metrics retained (return +9.29%, 14d, win_rate 39.6%)
+- RL samples: 547/200 — RL READY (>= 200 threshold exceeded; run python -m strategy.rl_agent --train)
+- Notes: Backtest network failure is consistent across sessions; yfinance blocked at proxy. 1 open position: RKLB ($66.76 entry, stop $65.07, TP $73.47, currently −0.88%). Account $95.32, peak $101.68.
+
+## 2026-08-27
+- Trades analysed: 3 new closed since 2026-08-20 (CRWV +2.90% WIN/23h/signal-sell/BEARISH EMA; INTC +1.7% WIN/24h/net-buy-sell/BEARISH EMA; RKLB -0.25% LOSS/23h/signal-sell/BEARISH EMA); cumulative: 20 closed (10W/10L)
+- Win rate: 50.0% overall (normal: 50.0% [n=20, 10W/10L, ~+0.6% avg_pnl]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA 50.0% (7W/7L, n=14); BEARISH EMA 50.0% (3W/3L, n=6)
+- Config changes: none — RSI_OVERSOLD: win_rate=50.0% in [40%,65%] hold band (NO_CHANGE, n=20≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~120h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, recurring network block, 27+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 552/200 (RL READY — exceeded target by 2.76×; run: python -m strategy.rl_agent --train to activate Q-learning)
+- Notes: Account $95.36 (−6.4% from peak $101.68). 0 positions. BP $80.42. Regime: BULLISH EMA (SPY > EMA200). 3 small trades this week: 2 wins, 1 loss, all BEARISH EMA entry — wins on net-buy reversal exits, loss on ATR trailing stop. Market showing heavy RSI overbought signals (CRM RSI=87, CRWD RSI=83) — no buys triggered due to 0 RSI oversold setups.
+
+## 2026-09-01
+- Trades analysed: 1 closed (BE -5.9% stop-loss/ATR trail, normal, ~48h hold, BULLISH EMA entry); cumulative: 21 closed (10W/11L); 2 open (PYPL -2.6%, HOOD -2.0%)
+- Win rate: 47.6% overall (normal: 47.6% [10W/11L, n=21]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA ~50% (unchanged); BEARISH EMA ~50% (unchanged)
+- Config changes: none — n_trades < 3 for new period (1 closed trade = BE only); RSI_OVERSOLD: 47.6% win_rate in [40%,65%] hold band (NO_CHANGE, n=21≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 28th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 568/200 (RL READY — exceeded target by 2.84×; 19 states in Q-table; +7 new rows today)
+- Notes: Account $93.78 (-7.6% from $100 start, peak $101.68). ⚠️ REGIME SHIFT: SPY $761.65 fell below EMA200 $762.12 → BEARISH_EMA now active. 10 RSI BUY signals (all conf=2/3, blocked by 3/3 requirement). BE stop-loss hit at -5.9%. Buying power $50.36 (at buffer floor). 2 positions: PYPL $52.43 trail_stop=$51.87, HOOD $103.49 trail_stop=$101.86. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-09-02
+- Trades analysed: 18 total closed (8W/10L); 0 new closures today — PYPL and HOOD still open (+1.56%, +1.30%)
+- Win rate: 44.4% overall (normal: 44.4% [8W/10L, n=18, avg_hold≈131h]; momentum: n/a [n=0, n<3]; surge: n/a [n=0]); BULLISH EMA 50.0% (7W/7L, n=14); BEARISH EMA 25.0% (1W/3L, n=4)
+- Config changes: none — RSI_OVERSOLD: win_rate=44.4% in [40%,65%] hold band (NO_CHANGE, n=18≥5); MOMENTUM_VOL_MIN: n=0 live momentum trades (NO_CHANGE, n<3); ATR_VOLATILITY_THRESHOLD: avg_hold ~131h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance proxy blocked (403, 25th+ consecutive session); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 572/200 (READY — +4 new rows today; 19 states in Q-table)
+- Notes: +4 RL rows added (572 total, 2.86× target). Trade log trimmed to 10 entries (last 2 days). NO_CHANGE all thresholds. Account $94.91 — 2 open positions (PYPL +1.56%, HOOD +1.30%). BEARISH EMA win_rate dropped to 25% (n=4) — monitoring but n too low for ATR adjustment. Regime shifted to BEARISH_EMA (SPY below EMA200) then recovered. RL READY: run python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-09-04
+- Trades analysed: 2 visible closed in trimmed log (HOOD +15.1% take-profit/normal; PYPL +2.38% trail-stop/normal); cumulative ~23 (12W/11L)
+- Win rate: 52.2% overall (normal: 52.2% [n≈23, 12W/11L]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH ~50% (unchanged); BEARISH ~50% (unchanged)
+- Config changes: none — RSI_OVERSOLD: 52.2% in [40%,65%] hold band (NO_CHANGE, n≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold >>2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance 403 blocked (30+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 580/200 (RL READY — exceeded target 2.9×; 19 states in Q-table; RL collector failed today: yfinance not installed, pip timed out)
+- Notes: Account $96.95, 1 open position (INTC +0.75%, stop $93.20, TP $104.61). Buying power $51.79 ($1.79 above buffer — very tight). HOOD closed +15.1% take-profit; PYPL closed +2.38% ATR trail stop. Win rate ticked up to ~52% on 2 recent wins. Trade log trimmed to 7 entries. RL READY: 580 samples (2.9× target), 19 Q-states. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-09-03
+- Trades analysed: 2 (HOOD +15.1% take-profit, BE -5.9% stop-loss) — trimmed log, prior trades not visible
+- Win rate: 50% overall (normal: 50%, momentum: n/a, surge: n/a)
+- Config changes: none — n_trades < 3 for all strategy types, insufficient data for threshold adjustments
+- Backtest: SKIPPED — Yahoo Finance network access blocked by environment policy
+- RL samples: 580/200 (RL READY — 580 samples collected, Q-table has 19 states learned)
+- Notes: Backtest cannot run in this CCR environment (Yahoo Finance 403 from egress proxy). Trade log trimmed to 8 entries (last 2 days). +8 new RL training rows added today. Account at $97.56, 1 open position (PYPL +5.57%). RL Q-learning agent ready to train.
+
+## 2026-09-07
+- Trades analysed: 23 closed cumulative (12W/11L); 0 new closures today (INTC GFD sell queued for 2026-09-08 open — Labor Day holiday)
+- Win rate: 52.2% overall (normal: 52.2% [n=23, 12W/11L, avg_hold≈130h]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH ~50%, BEARISH ~50%
+- Config changes: none — RSI_OVERSOLD: 52.2% in [40%,65%] hold band (NO_CHANGE, n=23≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~130h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance 403 proxy block (31+ consecutive sessions); prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 590/200 (RL READY — +10 new rows today; 19 states in Q-table; 2.95× target)
+- Notes: Market CLOSED (Labor Day). INTC GFD sell order queued (RSI=70.6 overbought, placed 2026-09-07T16:13Z, executes at 2026-09-08 open). Account $97.39, 1 position (INTC +0.75%). BP $51.79. Backtest network failure persists (31+ sessions). Trade log trimmed to 1 entry. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-09-09
+- Trades analysed: 2 new closed (INTC ~WIN/normal/BULLISH EMA; NFLX -0.31% LOSS/21h/signal-sell/normal/BEARISH EMA); cumulative ~25 closed (13W/12L)
+- Win rate: 52.0% overall (normal: 52.0% [n=25, 13W/12L, avg_hold≈130h]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA ~50%; BEARISH EMA ~50%
+- Config changes: none — RSI_OVERSOLD: 52.0% in [40%,65%] hold band (NO_CHANGE, n=25≥5); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~130h>>2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance network access blocked (403, 33rd+ consecutive session); prior metrics retained (null — blocked before persisting)
+- RL samples: 602/200 (RL READY — exceeded target 3.01×; 19 states in Q-table; +2 new rows today)
+- Notes: Account $98.65 (-1.35% from $100 start, +1.27% from weekly low $97.39). 1 open position: SBUX ($33.66, -0.98%, stop $99.61, TP $111.14). Buying power $50.00 (at buffer floor). Regime: BEARISH_EMA. NFLX closed at -0.31% loss on net-buy reversal (signal sell). Trade log trimmed to 5 entries. Run: python -m strategy.rl_agent --train to activate Q-learning.
