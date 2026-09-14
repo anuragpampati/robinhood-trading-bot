@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-14T20:10:00Z
-- SUMMARY: Market CLOSED (after 4 PM ET). Regime: bearish_ema (SPY $760.77 below EMA200 $763.29 — max $25/pos, 3/3 conf required). RSI BUY: 0. Net Buy BUY: 0. Surge: none (market closed, skipped). No trades placed. CB INACTIVE (daily −0.15%, weekly −0.15%). Holdings: SBUX 0.5049sh @ $99.08 (+0.05%, stop $97.85, TP $108.93); UUUU 2.0080sh @ $12.35 (−0.82%, stop $12.09, TP $13.70); NVDA 0.1177sh @ $210.89 (−0.72%, stop $209.19, TP $233.66). No exit triggers fired (all above ATR stops). ATR trail stops unchanged (none ratcheted — all below +2.5% threshold). BP $148.49. 3 positions. Acct $248.13.
-
 ## 2026-09-14T19:12:10Z
 - Action   : BUY NVDA
 - Price    : $212.42
