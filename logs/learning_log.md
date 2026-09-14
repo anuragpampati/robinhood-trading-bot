@@ -368,3 +368,11 @@
 - Backtest: SKIPPED — Yahoo Finance network access blocked (403, 33rd+ consecutive session); prior metrics retained (null — blocked before persisting)
 - RL samples: 602/200 (RL READY — exceeded target 3.01×; 19 states in Q-table; +2 new rows today)
 - Notes: Account $98.65 (-1.35% from $100 start, +1.27% from weekly low $97.39). 1 open position: SBUX ($33.66, -0.98%, stop $99.61, TP $111.14). Buying power $50.00 (at buffer floor). Regime: BEARISH_EMA. NFLX closed at -0.31% loss on net-buy reversal (signal sell). Trade log trimmed to 5 entries. Run: python -m strategy.rl_agent --train to activate Q-learning.
+
+## 2026-09-14
+- Trades analysed: 1 closed (SBUX -1.4%, normal/signal-sell); 3 open (SBUX/UUUU/NVDA)
+- Win rate: n/a overall (normal: n=1 <3 required; momentum: n=0; surge: n=0)
+- Config changes: none (all strategy types below n=3 minimum for adjustment)
+- Backtest: SKIPPED — Yahoo Finance blocked by egress proxy (403, consistent across sessions)
+- RL samples: 610/200 (+7 new rows from rl_collector)
+- Notes: Kill switch active ($248.13 acct, bearish_ema regime). 3 open positions (SBUX/UUUU/NVDA all entered 2026-09-14, within 5% stop-loss window). Q-table has 19 states. RL READY — training can now be activated.
