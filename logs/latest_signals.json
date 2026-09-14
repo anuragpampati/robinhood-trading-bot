@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-14T21:36:54.864194+00:00",
+  "timestamp": "2026-09-14T22:16:26.615656+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -58,7 +58,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0063,
-      "reason": "RSI=62.7 (falling), BB=IN_BAND, EMA=BULLISH",
+      "reason": "low volume (0.70x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -1563,7 +1563,7 @@
   "rl_stats": {
     "live": true,
     "states": 19,
-    "training_samples": 603
+    "training_samples": 610
   },
   "net_buy_buy_signals": [
     {
