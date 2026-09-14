@@ -1,5 +1,27 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-14T14:11:51Z
+- Action   : BUY UUUU
+- Price    : $12.45
+- Amount   : $25.00 | Shares: 2.008030
+- RSI      : 20.94 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.93 | null
+- Stop     : $12.09 | Target: $13.70
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (22.8≈20.9) | BB reversal: 0.11→0.13 (returning from band)
+
+## 2026-09-14T14:11:46Z
+- Action   : BUY SBUX
+- Price    : $99.04
+- Amount   : $50.00 | Shares: 0.504840
+- RSI      : 26.75 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $97.85 | Target: $108.94
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (28.5≈26.7) | BB reversal: 0.17→0.20 (returning from band) | RL BOOST
+
 ## 2026-09-11T20:10:23Z
 - SUMMARY: Market CLOSED (~4:10 PM ET). Regime: normal (SPY RSI 50.3, SPY $764.20 > EMA200 $762.81). RSI BUY: SBUX (RSI 26.7, conf 2/3) + UUUU (RSI 21.2, conf 2/3) — no trade (market closed). Net Buy BUY: 0. Surge: AMD 8.4%/WMT 8.7% (below 10%). Net-buy SELL: GE/ORCL/F/UBER/GM/MRCY/COIN/SPY/OKLO/ROK/CIFR/IWM/NBIS/HOOD/PFE/LEU/NVDA/MCD — none held. CB INACTIVE (daily 0.0%, weekly gain +1.13%). BP $98.49. 0 positions. Acct $98.49.
 
