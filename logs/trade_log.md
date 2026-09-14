@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-14T18:11:00Z
+- SUMMARY: Market OPEN (~2:11 PM ET). Regime: bearish_ema (SPY $762.35 below EMA200 $763.33 — max $25/pos, 3/3 conf required). RSI BUY: 0. Net Buy BUY: 0. Surge: 0 (MSFT surge count=1 expired — no longer in 10%+ surge list). No trades placed. CB INACTIVE (daily −0.11%, weekly −0.11%). Holdings: SBUX 0.5049sh @ $98.905 (−0.13%, stop $97.85, held ~4h); UUUU 2.0080sh @ $12.345 (−0.84%, stop $12.09, held ~4h). No exit triggers fired. BP $173.49. 2 positions. Acct $248.21.
+
 ## 2026-09-14T16:11:10Z
 - SUMMARY: Market OPEN (~12:11 PM ET). Regime: bearish_ema (SPY below EMA200 — max $25/pos, 3/3 conf required). RSI BUY: 0. Net Buy BUY: 0. Surge: 0. No trades placed. CB INACTIVE (daily −0.24%, weekly −0.24%). Holdings: SBUX 0.5049sh @ $98.44 (−0.60%, stop $97.85, held ~2h, exits gated until 17:12 UTC); UUUU 2.0080sh @ $12.305 (−1.17%, stop $12.09, held ~2h, exits gated). BP $173.49. 2 positions. Acct $247.90.
 

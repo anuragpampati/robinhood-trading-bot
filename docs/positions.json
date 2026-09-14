@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-14T17:11:00Z",
+  "updated_at": "2026-09-14T18:11:00Z",
   "buying_power": 173.49,
   "market_regime": "bearish_ema",
-  "account_value": 248.36,
+  "account_value": 248.21,
   "peak_value": 248.49,
   "day_start_value": 248.49,
   "day_start_date": "2026-09-14",
@@ -17,9 +17,9 @@
       "ticker": "SBUX",
       "quantity": 0.504874,
       "avg_cost": 99.03,
-      "current_price": 98.86,
-      "pnl_pct": -0.0017,
-      "value": 49.94,
+      "current_price": 98.905,
+      "pnl_pct": -0.0013,
+      "value": 49.93,
       "entry_atr_pct": 0.006,
       "entry_time": "2026-09-14T14:11:46Z",
       "trail_stop": 97.85,
@@ -31,9 +31,9 @@
       "ticker": "UUUU",
       "quantity": 2.008048,
       "avg_cost": 12.45,
-      "current_price": 12.415,
-      "pnl_pct": -0.0028,
-      "value": 24.93,
+      "current_price": 12.345,
+      "pnl_pct": -0.0084,
+      "value": 24.79,
       "entry_atr_pct": 0.0143,
       "entry_time": "2026-09-14T14:11:51Z",
       "trail_stop": 12.09,
@@ -43,10 +43,10 @@
     }
   ],
   "last_actions": [
+    "2026-09-14T18:11:00Z CYCLE: Market open, regime=bearish_ema. No BUY signals (0 RSI BUY, 0 net-buy BUY, 0 surge). No SELL triggers (SBUX -0.13% @ $98.905 above stop $97.85 | UUUU -0.84% @ $12.345 above stop $12.09). CB inactive (daily -0.11%, weekly -0.11%). BP $173.49. 2 positions. Acct $248.21.",
     "2026-09-14T17:11:00Z CYCLE: Market open, regime=bearish_ema. No BUY signals (0 RSI BUY, 0 net-buy BUY, MSFT surge count=1). No SELL triggers (SBUX -0.17% @ $98.86 above stop $97.85 | UUUU -0.28% @ $12.415 above stop $12.09). CB inactive (daily -0.05%, weekly -0.05%). BP $173.49. 2 positions. Acct $248.36.",
     "2026-09-14T16:11:10Z CYCLE: Market open, regime=bearish_ema. No buys (0 signals). No sells (both positions held ~2h, stops/take-profit not hit, exits gated until 17:12 UTC). SBUX -0.60% @ $98.44 | UUUU -1.17% @ $12.305. CB inactive (daily -0.24%, weekly -0.24%). Acct $247.90.",
     "2026-09-14T15:11:26Z CYCLE: Market open, regime=bearish_ema. No buys (0 signals in bearish regime). No sells (both positions <3h, stops/take-profit not hit). SBUX -0.65% | UUUU -1.24%. Acct $247.98.",
-    "2026-09-14T14:11:46Z BUY SBUX $50 @ ~$99.04 | RSI 26.75 oversold | RL BOOST conf 2→3 | stop $97.85 target $108.94",
-    "2026-09-14T14:11:51Z BUY UUUU $25 @ ~$12.45 | RSI 20.94 oversold | RL HOLD (no veto) | stop $12.09 target $13.70"
+    "2026-09-14T14:11:46Z BUY SBUX $50 @ ~$99.04 | RSI 26.75 oversold | RL BOOST conf 2→3 | stop $97.85 target $108.94"
   ]
 }
