@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-14T22:16:26.615656+00:00",
+  "timestamp": "2026-09-14T22:54:10.299014+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -58,7 +58,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0063,
-      "reason": "low volume (0.70x avg) \u2014 skipping",
+      "reason": "RSI=62.7 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
