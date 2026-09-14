@@ -1,7 +1,13 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-14T17:11:00Z
-- SUMMARY: Market open (~1:11 PM ET). Regime: bearish_ema. No BUY signals (0 RSI BUY, 0 net-buy BUY). No intraday surge candidates (MSFT surge count=1, needs 2). No SELL triggers: SBUX -0.17% @ $98.86 [stop $97.85, target $108.93] | UUUU -0.28% @ $12.415 [stop $12.09, target $13.695]. CB INACTIVE (daily -0.05%, weekly -0.05%). RSI SELL signals on unheld tickers (MSFT/GOOGL/NFLX etc). BP $173.49. 2 positions. Acct $248.36.
+## 2026-09-14T18:11:00Z
+- SUMMARY: Market OPEN (~2:11 PM ET). Regime: bearish_ema (SPY $762.35 below EMA200 $763.33 — max $25/pos, 3/3 conf required). RSI BUY: 0. Net Buy BUY: 0. Surge: 0 (MSFT surge count=1 expired — no longer in 10%+ surge list). No trades placed. CB INACTIVE (daily −0.11%, weekly −0.11%). Holdings: SBUX 0.5049sh @ $98.905 (−0.13%, stop $97.85, held ~4h); UUUU 2.0080sh @ $12.345 (−0.84%, stop $12.09, held ~4h). No exit triggers fired. BP $173.49. 2 positions. Acct $248.21.
+
+## 2026-09-14T16:11:10Z
+- SUMMARY: Market OPEN (~12:11 PM ET). Regime: bearish_ema (SPY below EMA200 — max $25/pos, 3/3 conf required). RSI BUY: 0. Net Buy BUY: 0. Surge: 0. No trades placed. CB INACTIVE (daily −0.24%, weekly −0.24%). Holdings: SBUX 0.5049sh @ $98.44 (−0.60%, stop $97.85, held ~2h, exits gated until 17:12 UTC); UUUU 2.0080sh @ $12.305 (−1.17%, stop $12.09, held ~2h, exits gated). BP $173.49. 2 positions. Acct $247.90.
+
+## 2026-09-14T15:11:26Z
+- SUMMARY: Market OPEN (~11:11 AM ET). Regime: bearish_ema (SPY $758.57 < EMA200 $763.39 — max $25/pos, 3/3 conf required). RSI BUY: 0 candidates. Net Buy BUY: 0. Surge: none. No trades placed. CB INACTIVE (daily −0.21%, weekly −0.21%). Holdings: SBUX 0.5049sh @ $98.39 (−0.65%, stop $97.85); UUUU 2.0080sh @ $12.30 (−1.24%, stop $12.09). Both held <3h — ATR/signal exits gated until 17:12 UTC. BP $173.49. 2 positions. Acct $247.98.
 
 ## 2026-09-14T14:11:51Z
 - Action   : BUY UUUU
@@ -54,3 +60,6 @@
 
 ## 2026-09-10T16:12:35Z
 - SUMMARY: Market OPEN (~12:12 ET). PANIC regime (SPY RSI 26.7 < 30) + bearish_ema — all individual stock buys suppressed. No RSI BUY signals. Surge tracker cleared (MRVL/ARM no longer in 10%+ surge signals). Deployable $14.99 (below $15 min order). RSI SELL: QCOM (RSI 73.1) — not held. Net-buy SELL: WMT/GE/MRCY/GOOGL/KTOS/AI/JPM — none held. SBUX held: $99.97 vs stop $99.61 / target $111.14 — no exit. CB INACTIVE (daily -0.28%, weekly +1.28% gain). BP $64.99. 1 position. Acct $98.64.
+
+## 2026-09-13 16:13:30
+- Market closed — no trades placed.
