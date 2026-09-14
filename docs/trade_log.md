@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-14T19:12:10Z
+- Action   : BUY NVDA
+- Price    : $212.42
+- Amount   : $25.00 | Shares: 0.117690
+- RSI      : 27.87 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.952 | BOOST (conf 2→3)
+- Stop     : $209.19 | Target: $233.66
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : RSI 27.87 deeply oversold | BB below lower band | RL BOOST conf 2→3 | bearish_ema $25 cap
+
 ## 2026-09-14T18:11:00Z
 - SUMMARY: Market OPEN (~2:11 PM ET). Regime: bearish_ema (SPY $762.35 below EMA200 $763.33 — max $25/pos, 3/3 conf required). RSI BUY: 0. Net Buy BUY: 0. Surge: 0 (MSFT surge count=1 expired — no longer in 10%+ surge list). No trades placed. CB INACTIVE (daily −0.11%, weekly −0.11%). Holdings: SBUX 0.5049sh @ $98.905 (−0.13%, stop $97.85, held ~4h); UUUU 2.0080sh @ $12.345 (−0.84%, stop $12.09, held ~4h). No exit triggers fired. BP $173.49. 2 positions. Acct $248.21.
 
