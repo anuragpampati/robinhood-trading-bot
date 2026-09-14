@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-14T17:11:00Z
+- SUMMARY: Market open (~1:11 PM ET). Regime: bearish_ema. No BUY signals (0 RSI BUY, 0 net-buy BUY). No intraday surge candidates (MSFT surge count=1, needs 2). No SELL triggers: SBUX -0.17% @ $98.86 [stop $97.85, target $108.93] | UUUU -0.28% @ $12.415 [stop $12.09, target $13.695]. CB INACTIVE (daily -0.05%, weekly -0.05%). RSI SELL signals on unheld tickers (MSFT/GOOGL/NFLX etc). BP $173.49. 2 positions. Acct $248.36.
+
 ## 2026-09-14T14:11:51Z
 - Action   : BUY UUUU
 - Price    : $12.45
