@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-14T20:10:00Z",
-  "buying_power": 148.49,
+  "updated_at": "2026-09-15T14:13:00Z",
+  "buying_power": 221.93,
   "market_regime": "bearish_ema",
-  "account_value": 248.13,
+  "account_value": 246.94,
   "peak_value": 248.49,
-  "day_start_value": 248.49,
-  "day_start_date": "2026-09-14",
+  "day_start_value": 246.92,
+  "day_start_date": "2026-09-15",
   "week_start_value": 248.49,
   "week_start_date": "2026-09-14",
   "trading_enabled": true,
@@ -14,40 +14,12 @@
   "disabled_reason": null,
   "positions": [
     {
-      "ticker": "SBUX",
-      "quantity": 0.504874,
-      "avg_cost": 99.03,
-      "current_price": 99.08,
-      "pnl_pct": 0.0005,
-      "value": 50.02,
-      "entry_atr_pct": 0.006,
-      "entry_time": "2026-09-14T14:11:46Z",
-      "trail_stop": 97.85,
-      "take_profit": 108.93,
-      "strategy": "normal",
-      "sell_date": null
-    },
-    {
-      "ticker": "UUUU",
-      "quantity": 2.008048,
-      "avg_cost": 12.45,
-      "current_price": 12.3476,
-      "pnl_pct": -0.0082,
-      "value": 24.79,
-      "entry_atr_pct": 0.0143,
-      "entry_time": "2026-09-14T14:11:51Z",
-      "trail_stop": 12.09,
-      "take_profit": 13.695,
-      "strategy": "normal",
-      "sell_date": null
-    },
-    {
       "ticker": "NVDA",
       "quantity": 0.117692,
       "avg_cost": 212.42,
-      "current_price": 210.89,
-      "pnl_pct": -0.0072,
-      "value": 24.82,
+      "current_price": 212.46,
+      "pnl_pct": 0.000188,
+      "value": 25.01,
       "entry_atr_pct": 0.0076,
       "entry_time": "2026-09-14T19:12:10Z",
       "trail_stop": 209.19,
@@ -57,10 +29,10 @@
     }
   ],
   "last_actions": [
+    "2026-09-15T14:12:31Z SELL SBUX: ATR stop $97.35≤$97.85 | −1.70% | proceeds ~$49.14 | held ~24h",
+    "2026-09-15T14:12:25Z SELL UUUU: ATR stop $12.09≤$12.09 | −2.89% | proceeds ~$24.29 | held ~24h",
+    "2026-09-15T14:13:00Z CYCLE: Market OPEN. Signal engine 0 BUY signals (yfinance proxy-blocked). No new buys. CB INACTIVE (daily 0.00%, weekly 0.63%). Sold SBUX+UUUU on ATR stops. NVDA held +0.02% @ $212.46. BP ~$221.93 post-sell est. 1 position. Acct ~$246.94.",
     "2026-09-14T20:10:00Z CYCLE: Market CLOSED. No trades. Regime=bearish_ema. CB inactive (daily -0.15%, weekly -0.15%). SBUX +0.05% @ $99.08 | UUUU -0.82% @ $12.35 | NVDA -0.72% @ $210.89. All above ATR stops. BP $148.49. 3 positions. Acct $248.13.",
-    "2026-09-14T19:12:10Z BUY NVDA $25 @ $212.42 | RSI 27.87 deeply oversold | RL BOOST conf 2→3 | stop $209.19 target $233.66 | bearish_ema $25 cap. BP $148.49. 3 positions. Acct ~$248.39.",
-    "2026-09-14T18:11:00Z CYCLE: Market open, regime=bearish_ema. No BUY signals (0 RSI BUY, 0 net-buy BUY, 0 surge). No SELL triggers (SBUX -0.13% @ $98.905 above stop $97.85 | UUUU -0.84% @ $12.345 above stop $12.09). CB inactive (daily -0.11%, weekly -0.11%). BP $173.49. 2 positions. Acct $248.21.",
-    "2026-09-14T17:11:00Z CYCLE: Market open, regime=bearish_ema. No BUY signals (0 RSI BUY, 0 net-buy BUY, MSFT surge count=1). No SELL triggers (SBUX -0.17% @ $98.86 above stop $97.85 | UUUU -0.28% @ $12.415 above stop $12.09). CB inactive (daily -0.05%, weekly -0.05%). BP $173.49. 2 positions. Acct $248.36.",
-    "2026-09-14T16:11:10Z CYCLE: Market open, regime=bearish_ema. No buys (0 signals). No sells (both positions held ~2h, stops/take-profit not hit, exits gated until 17:12 UTC). SBUX -0.60% @ $98.44 | UUUU -1.17% @ $12.305. CB inactive (daily -0.24%, weekly -0.24%). Acct $247.90."
+    "2026-09-14T19:12:10Z BUY NVDA $25 @ $212.42 | RSI 27.87 deeply oversold | RL BOOST conf 2→3 | stop $209.19 target $233.66 | bearish_ema $25 cap. BP $148.49. 3 positions. Acct ~$248.39."
   ]
 }

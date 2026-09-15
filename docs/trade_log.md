@@ -1,5 +1,30 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-15T14:12:31Z
+- Action   : SELL SBUX
+- Price    : $97.35
+- Amount   : $49.14 | Shares: 0.504874
+- RSI      : N/A (yfinance proxy-blocked this cycle) | EMA: N/A | BB: N/A
+- RL       : null conf=null | null
+- Stop     : $97.85 ATR trail_stop hit | Target was: $108.93
+- Strategy : normal | Sell date: ATR trail stop triggered
+- Regime   : bearish_ema (last known; signal engine unreliable — no market data)
+- Reason   : ATR trailing stop: price $97.35 ≤ trail_stop $97.85 | held ~24h | loss −1.70%
+
+## 2026-09-15T14:12:25Z
+- Action   : SELL UUUU
+- Price    : $12.09
+- Amount   : $24.29 | Shares: 2.008048
+- RSI      : N/A (yfinance proxy-blocked this cycle) | EMA: N/A | BB: N/A
+- RL       : null conf=null | null
+- Stop     : $12.09 ATR trail_stop hit | Target was: $13.695
+- Strategy : normal | Sell date: ATR trail stop triggered
+- Regime   : bearish_ema (last known; signal engine unreliable — no market data)
+- Reason   : ATR trailing stop: price $12.09 ≤ trail_stop $12.09 | held ~24h | loss −2.89%
+
+## 2026-09-15T14:13:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Signal engine: 0 RSI BUY, 0 net-buy, 0 surge — Yahoo Finance proxy-blocked, all 103 tickers failed yfinance download; regime defaulted to "normal" (unreliable). No new BUY orders. SOLD SBUX (ATR stop $97.35≤$97.85, −1.70%) and UUUU (ATR stop $12.09≤$12.09, −2.89%). NVDA HELD: $212.46 > trail_stop $209.19. CB INACTIVE (daily 0.00%, weekly 0.63%). BP ~$221.93 (est post-sell). 1 position. Acct ~$246.94.
+
 ## 2026-09-14T19:12:10Z
 - Action   : BUY NVDA
 - Price    : $212.42
