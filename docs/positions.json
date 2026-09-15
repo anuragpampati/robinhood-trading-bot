@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-15T15:14:00Z",
+  "updated_at": "2026-09-15T16:11:00Z",
   "buying_power": 148.49,
   "market_regime": "normal",
-  "account_value": 246.84,
+  "account_value": 246.81,
   "peak_value": 248.49,
   "day_start_value": 246.92,
   "day_start_date": "2026-09-15",
-  "week_start_value": 248.49,
-  "week_start_date": "2026-09-14",
+  "week_start_value": 246.81,
+  "week_start_date": "2026-09-15",
   "trading_enabled": true,
   "kill_switch_pct": 0.20,
   "kill_switch_floor": 200.0,
@@ -17,9 +17,9 @@
       "ticker": "NVDA",
       "quantity": 0.117692,
       "avg_cost": 212.42,
-      "current_price": 212.24,
-      "pnl_pct": -0.000847,
-      "value": 24.98,
+      "current_price": 212.05,
+      "pnl_pct": -0.001743,
+      "value": 24.96,
       "entry_atr_pct": 0.0076,
       "entry_time": "2026-09-14T19:12:10Z",
       "trail_stop": 209.19,
@@ -29,10 +29,10 @@
     }
   ],
   "last_actions": [
+    "2026-09-15T16:11:00Z CYCLE: Market OPEN, in window. Signal engine proxy-blocked (0/103 tickers). No signals, no trades. CB INACTIVE (daily 0.04%, weekly 0.00% — week reset Mon). NVDA −0.17% @ $212.05, above trail_stop $209.19. BP $148.49 settled ($221.86 cash). 1 position. Acct $246.81.",
     "2026-09-15T15:14:00Z CYCLE: Market OPEN, in window. Signal engine proxy-blocked (0/103 tickers). No signals, no trades. CB INACTIVE (daily 0.03%, weekly 0.66%). NVDA −0.08% @ $212.24, above trail_stop $209.19. BP $148.49 settled ($221.86 cash). 1 position. Acct $246.84.",
     "2026-09-15T14:12:31Z SELL SBUX: ATR stop $97.35≤$97.85 | −1.70% | proceeds ~$49.14 | held ~24h",
     "2026-09-15T14:12:25Z SELL UUUU: ATR stop $12.09≤$12.09 | −2.89% | proceeds ~$24.29 | held ~24h",
-    "2026-09-15T14:13:00Z CYCLE: Market OPEN. Signal engine 0 BUY signals (yfinance proxy-blocked). No new buys. CB INACTIVE (daily 0.00%, weekly 0.63%). Sold SBUX+UUUU on ATR stops. NVDA held +0.02% @ $212.46. BP ~$221.93 post-sell est. 1 position. Acct ~$246.94.",
     "2026-09-14T19:12:10Z BUY NVDA $25 @ $212.42 | RSI 27.87 deeply oversold | RL BOOST conf 2→3 | stop $209.19 target $233.66 | bearish_ema $25 cap. BP $148.49. 3 positions. Acct ~$248.39."
   ]
 }
