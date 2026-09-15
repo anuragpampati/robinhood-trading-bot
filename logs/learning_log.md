@@ -376,3 +376,11 @@
 - Backtest: SKIPPED — Yahoo Finance blocked by egress proxy (403, consistent across sessions)
 - RL samples: 610/200 (+7 new rows from rl_collector)
 - Notes: Kill switch active ($248.13 acct, bearish_ema regime). 3 open positions (SBUX/UUUU/NVDA all entered 2026-09-14, within 5% stop-loss window). Q-table has 19 states. RL READY — training can now be activated.
+
+## 2026-09-15
+- Trades analysed: 2 (SBUX -1.70% ATR-stop, UUUU -2.89% ATR-stop; both normal strategy, BEARISH EMA entry)
+- Win rate: 0% overall (normal: 0% [n=2]; momentum: n/a [n=0]; surge: n/a [n=0])
+- Config changes: none — all strategy types below minimum sample size (need n>=5 for RSI_OVERSOLD, n>=3 for others)
+- Backtest: SKIPPED — Yahoo Finance blocked by proxy (403, all tickers fail; same issue as live signal engine)
+- RL samples: 614/200 (READY — target exceeded; +4 rows from 2 closed trades)
+- Notes: yfinance 403 proxy block continues to prevent both backtest and live signals. NVDA position open ($24.98, -0.09%, above trail_stop). Q-table frozen at 19 states since 2026-07-09 (pre-fix training data). trim_log.py kept 12/13 entries.
