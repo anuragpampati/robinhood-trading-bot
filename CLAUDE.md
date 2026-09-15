@@ -82,20 +82,23 @@ You have access to the Robinhood MCP server (`robinhood-trading`) which gives yo
 ---
 
 ## Watchlist
-**Live trading uses `python -m strategy.run --quick`** — the curated ~103-ticker watchlist
-in `strategy/config.py` (`SPY`, `QQQ`, `AAPL`, `MSFT`, `NVDA`, plus ~100 more sector names).
+**Live trading uses `python -m strategy.run`** (no `--quick`) — the full S&P 500 (~503
+tickers, scraped from Wikipedia) unioned with the core ~103-ticker watchlist in
+`strategy/config.py` (`SPY`, `QQQ`, `AAPL`, `MSFT`, `NVDA`, plus ~100 more sector names),
+so SPY stays present as regime anchor. NASDAQ-100 would normally add another ~30-40
+tickers, but that source is currently broken (Wikipedia removed the constituents table
+from that page, 2026-09) — S&P 500 alone still covers the large majority of NASDAQ-100 by
+overlap, so this isn't a significant gap.
 
-Full-universe scanning also exists (`python -m strategy.run`, no `--quick` — the full S&P
-500, ~503 tickers scraped from Wikipedia, unioned with the watchlist so SPY stays present).
-It was built 2026-09-15 in response to a request to trade "all available companies," but
-**backtested significantly worse than the curated watchlist** (-4.8% vs +5.9% over the same
-90-day window, 58 trades at 34% win rate vs ~25 trades at 41%) — more tickers surfaced more
-low-quality mean-reversion setups, not better ones. Available via `backtest.py
---full-universe` if you want to re-test it, but do not switch live trading to it without a
-backtest showing it actually helps. NASDAQ-100 would normally add another ~30-40 tickers on
-top of the 503, but that source is currently broken (Wikipedia removed the constituents
-table from that page, 2026-09) — S&P 500 alone still covers the large majority of NASDAQ-100
-by overlap, so this isn't a significant gap.
+**Known tradeoff, explicit user decision (2026-09-15):** backtesting showed full-universe
+scanning underperforms the narrower curated watchlist (`--quick` mode) over the same
+90-day window: -4.8% vs +5.9% return, 58 trades at 34% win rate vs ~25 trades at 41% —
+more tickers surfaced more low-quality mean-reversion setups, not better ones. The user
+was shown this and chose full-universe coverage anyway. If the account underperforms and
+someone's looking for why, this is the most likely lever to revisit — `python -m
+strategy.run --quick` reverts to the curated watchlist, and `backtest.py` (no flag)
+vs `backtest.py --full-universe` reproduces the comparison. The kill switch protects
+capital regardless of which mode is active; it doesn't care how many tickers get scanned.
 
 ---
 

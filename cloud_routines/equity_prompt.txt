@@ -7,20 +7,23 @@ IMPORTANT: You MUST complete Steps 5, 6, and 7 on EVERY run — even if the mark
 pip install -r requirements.txt -q
 ```
 
-## Step 2 — Generate signals (curated watchlist, no manual per-ticker fetching)
+## Step 2 — Generate signals (full universe, no manual per-ticker fetching)
 ```bash
-python -m strategy.run --quick
+python -m strategy.run
 ```
-This fetches its own market data internally (yfinance, not MCP) for the ~103-ticker
-curated watchlist and writes logs/latest_signals.json + docs/signals.json. Replaces the
-old approach of fetching each ticker individually via get_equity_historicals (slower, same
-scope) -- pure simplification, not a scope change.
+This fetches its own market data internally (yfinance, not MCP) for the full S&P 500
+(~503 tickers) unioned with the core watchlist (~103 tickers, so SPY stays present as
+regime anchor), computes RSI/BB/EMA signals for all of it, runs the net-buy-trend scan
+over the same universe, and writes logs/latest_signals.json + docs/signals.json. Takes a
+few minutes.
 
-Full-universe scanning (~503 S&P 500 tickers, `python -m strategy.run` without --quick)
-exists and works, but backtested significantly worse than the curated watchlist (-4.8%
-vs +5.9% over the same 90-day window, more trades but lower win rate: 34% vs 41%) --
-more tickers means more low-quality mean-reversion setups, not better ones. Don't switch
-this routine to full-universe mode without a backtest showing it actually helps.
+Known tradeoff (2026-09-15 backtest, explicit user decision to proceed anyway): full
+universe underperformed the curated 103-ticker watchlist over the same 90-day window
+(-4.8% vs +5.9%, 58 trades at 34% win rate vs ~25 trades at 41%) -- more tickers surfaced
+more low-quality mean-reversion setups, not better ones. The user was shown this and chose
+full-universe scanning anyway (wants broad coverage over the better backtest number). The
+kill switch (Step 2a below) is the safety net here, same as always -- it doesn't care how
+many tickers get scanned, only what the account value does.
 
 Read logs/latest_signals.json after it finishes. Note: timestamp, market_open, market_regime,
 trading_halted, halt_reason, rsi_signals, net_buy_buy_signals, surge_signals.

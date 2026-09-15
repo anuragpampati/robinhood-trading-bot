@@ -20,11 +20,13 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo "[$TS] Starting trading cycle" >> "$LOGFILE"
 
 # ── Step 1: Generate signals ──────────────────────────────────────────────────
-# --quick: curated watchlist, not full-universe. Backtested 2026-09-15: full
-# universe (~503 S&P 500 tickers) underperforms the curated watchlist
-# significantly (-4.8% vs +5.9% over the same 90-day window) -- more tickers
-# surfaced more low-quality mean-reversion setups, not better ones.
-$PY -m strategy.run --quick 2>/dev/null >> "$LOGFILE"
+# Full universe (~503 S&P 500 tickers + core watchlist), not --quick. Backtested
+# 2026-09-15: this underperforms the curated watchlist significantly (-4.8% vs
+# +5.9% over the same 90-day window) -- more tickers surfaced more low-quality
+# mean-reversion setups, not better ones. Explicit user decision to run it
+# live anyway (wants full-market coverage over the better backtest number).
+# The kill switch (strategy/circuit_breaker.py) is the safety net regardless.
+$PY -m strategy.run 2>/dev/null >> "$LOGFILE"
 echo "[$TS] Signals generated." >> "$LOGFILE"
 
 # ── Step 2: Claude executes trades via Robinhood MCP ─────────────────────────
