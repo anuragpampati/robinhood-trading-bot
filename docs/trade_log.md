@@ -1,14 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-15T17:12:00Z
-- SUMMARY: Market OPEN, in trade window. Signal engine ran successfully (0 RSI signals, 0 net-buy signals, 0 surge signals — no actionable setups). No trades placed. NVDA held: $211.54, −0.41% (above trail_stop $209.19, take-profit $233.66). Circuit breaker INACTIVE (daily 0.06%, weekly 0.02%). Buying power: $148.49 (settled; $221.86 cash). Equity positions: 1. Regime: normal. Account: $246.76.
-
-## 2026-09-15T16:11:00Z
-- SUMMARY: Market OPEN, in trade window. Signal engine data-blocked (yfinance proxy restrictions — 0/103 tickers fetched). No actionable signals. No trades placed. NVDA held: $212.05, −0.17% (above trail stop $209.19, take-profit $233.66). Circuit breaker INACTIVE (daily 0.04%, weekly 0.00% — week reset to today [Monday]). Buying power: $148.49 (settled; $221.86 cash, ~$73 unsettled from prior sells). Equity positions: 1. Regime: normal. Account: $246.81.
-
-## 2026-09-15T15:14:00Z
-- SUMMARY: Market OPEN, in trade window. Signal engine data-blocked (yfinance proxy restrictions — 0/103 tickers fetched). No actionable signals. No trades placed. NVDA held: $212.24, −0.08% (above trail stop $209.19). Circuit breaker INACTIVE (daily 0.03%, weekly 0.66%). Buying power: $148.49 (settled; $221.86 cash, ~$73 unsettled from SBUX+UUUU sells). Equity positions: 1. Regime: normal (signal engine; prior cycle: bearish_ema). Account: $246.84.
-
 ## 2026-09-15T14:12:31Z
 - Action   : SELL SBUX
 - Price    : $97.35
@@ -77,4 +68,10 @@
 - Reason   : RSI oversold+stabilizing (28.5≈26.7) | BB reversal: 0.17→0.20 (returning from band) | RL BOOST
 
 ## 2026-09-13 16:13:30
+- Market closed — no trades placed.
+
+## 2026-09-15 00:35:32
+- Market closed — no trades placed.
+
+## 2026-09-15 00:53:21
 - Market closed — no trades placed.
