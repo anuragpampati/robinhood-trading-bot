@@ -55,7 +55,7 @@ def signals():
 def positions():
     path = os.path.join(DOCS, 'positions.json')
     if not os.path.exists(path):
-        return jsonify({'buying_power': 100, 'positions': []}), 200
+        return jsonify({'buying_power': 250, 'positions': []}), 200
     return Response(open(path).read(), mimetype='application/json')
 
 @app.route('/api/tradelog')

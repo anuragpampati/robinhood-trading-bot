@@ -2,11 +2,10 @@
 
 import pandas as pd
 import numpy as np
-from .config import RSI_PERIOD, EMA_FAST, EMA_SLOW, ATR_PERIOD
+from .config import RSI_PERIOD, EMA_FAST, EMA_SLOW, ATR_PERIOD, EMA200_PERIOD, VOLUME_LOOKBACK
 
 BB_PERIOD = 20    # SMA lookback for Bollinger Bands
 BB_STD    = 2.0   # standard deviation multiplier
-VOL_MA    = 20    # bars for volume moving average
 
 
 def rsi(close: pd.Series, period: int = RSI_PERIOD) -> pd.Series:
@@ -45,14 +44,14 @@ def compute_all(df: pd.DataFrame) -> pd.DataFrame:
     out["rsi"]       = rsi(out["close"])
     out["ema_fast"]  = ema(out["close"], EMA_FAST)
     out["ema_slow"]  = ema(out["close"], EMA_SLOW)
-    out["ema200"]    = ema(out["close"], 200)
+    out["ema200"]    = ema(out["close"], EMA200_PERIOD)
     bb_lower, bb_mid, bb_upper = bollinger(out["close"])
     out["bb_lower"]  = bb_lower
     out["bb_mid"]    = bb_mid
     out["bb_upper"]  = bb_upper
     band_width       = (bb_upper - bb_lower).replace(0, np.nan)
     out["bb_pct"]    = (out["close"] - bb_lower) / band_width   # 0=lower, 0.5=mid, 1=upper
-    vol_ma           = out["volume"].rolling(VOL_MA).mean()
+    vol_ma           = out["volume"].rolling(VOLUME_LOOKBACK).mean()
     out["vol_ratio"] = out["volume"] / vol_ma.replace(0, np.nan)
     out["atr"]       = atr(out)
     out["atr_pct"]   = out["atr"] / out["close"]

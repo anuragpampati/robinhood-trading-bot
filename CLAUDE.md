@@ -354,6 +354,36 @@ python -m strategy.crypto_backtest --days 180
 
 ---
 
+## Researched but not implemented (2026-09-15 codebase audit)
+Found while comparing against other open-source trading bots. Bigger lifts than a quick
+backtest could validate in one pass -- noted here instead of rushed in.
+- **ADX-based regime detection.** The one equity-regime idea already tried (require price
+  above the ticker's own 200-EMA before a mean-reversion BUY) backtested badly (-8.36% on
+  a 90-day window — see strategy/config.py's momentum-signal comment for the related
+  finding). A proper trend/range classifier (ADX + ATR percentile, the pattern several
+  external bots use) is a more principled version of the same idea and might not fail the
+  same way, but needs its own backtest before it's worth building.
+- **Per-symbol cooldown after a stop-loss.** Don't re-enter a ticker immediately after it
+  just stopped you out, to avoid repeated whipsaw on the same volatile name. Not currently
+  enforced (the only existing rule is "don't buy a ticker you already hold").
+- **ATR-based position sizing** was tested (see backtest.py `--atr-sizing`) — real but
+  marginal improvement, shipped as an opt-in flag, not the default. See that flag's comment
+  for the numbers.
+
+## Known data-quality issue: RL training data before 2026-09-15
+`logs/rl_training_data.jsonl` has ~610 rows from `strategy/rl_collector.py`'s old (buggy)
+logic, which built training rows from every computed signal in `logs/latest_signals.json`
+regardless of whether a trade was actually placed, and guessed reward=0.0 for anything not
+currently held. That's now fixed (rewards come from real BUY→SELL pairs in
+`logs/trade_log.md`), but the pre-fix rows are still in the file, mixed in with new correct
+ones — `logs/q_table.json` was last trained 2026-07-09 (19 states) directly on the old data
+and hasn't been retrained since. The live "RL BOOST/VETO" on real trades is running on that
+stale, partially-mistrained table right now. Worth a clean retrain once enough new (correct)
+rows accumulate — did not purge the old rows or retrain unilaterally since that's real
+accumulated data and a judgment call, not an obvious bug fix.
+
+---
+
 ## Important Disclaimers
 - Options are real money — losses can be 100% of premium paid
 - Crypto is real money — same account, same kill switch; the $100 crypto cap and $250

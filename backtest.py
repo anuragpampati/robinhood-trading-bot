@@ -27,11 +27,22 @@ from strategy.config import (
     TRAIL_LOCK2_PROFIT, TRAIL_LOCK2_STOP,
     BEARISH_EMA_MAX_POSITION, BEARISH_EMA_MIN_CONFIDENCE, MIN_HOLD_BARS,
     DAILY_LOSS_HALT, WEEKLY_LOSS_HALT, TOTAL_CAPITAL,
+    MARKET_OPEN_HOUR, MARKET_OPEN_MINUTE, MARKET_CLOSE_HOUR,
+    AVOID_FIRST_MINUTES, AVOID_LAST_MINUTES,
 )
 
 TEST_DAYS = 30
 EXPORT_RL = "--export-rl" in sys.argv or "--train-rl" in sys.argv
 FULL_UNIVERSE = "--full-universe" in sys.argv
+# --atr-sizing: size positions so hitting the ATR stop always costs the same
+# fixed fraction of account (common pattern in other open-source trading bots,
+# e.g. Omriarusi/trading-bot) instead of flat confidence-tier dollar amounts.
+# Tested 2026-09-15 across 30/90/180d: consistently flat-to-slightly-better on
+# max drawdown (6.54%->6.24% at 90d, 7.71%->7.42% at 180d), negligible return
+# difference. Real but marginal -- left as an opt-in flag, not the default,
+# since it adds a tunable knob (RISK_PER_TRADE_PCT) for a small win.
+ATR_RISK_SIZING = "--atr-sizing" in sys.argv
+RISK_PER_TRADE_PCT = 0.006   # 0.6% of TOTAL_CAPITAL risked per trade if the ATR stop is hit
 for i, arg in enumerate(sys.argv):
     if arg == "--days" and i + 1 < len(sys.argv):
         TEST_DAYS = int(sys.argv[i + 1])
@@ -45,11 +56,17 @@ TICKERS = list(dict.fromkeys(WATCHLIST + full_universe())) if FULL_UNIVERSE else
 
 
 def in_trade_window(ts: pd.Timestamp) -> bool:
-    """10:00–15:30 ET only — avoids volatile open and close."""
+    """Avoids the volatile first/last N minutes of the session (config.py:
+    AVOID_FIRST_MINUTES / AVOID_LAST_MINUTES) -- derived from config instead of
+    hardcoded 10:00-15:30, so this can't silently drift from what
+    market_data.in_trade_window() enforces live."""
     et = ts.tz_convert("America/New_York")
     if et.weekday() >= 5:
         return False
-    return (10, 0) <= (et.hour, et.minute) <= (15, 30)
+    open_min  = MARKET_OPEN_HOUR * 60 + MARKET_OPEN_MINUTE + AVOID_FIRST_MINUTES
+    close_min = MARKET_CLOSE_HOUR * 60 - AVOID_LAST_MINUTES
+    now_min   = et.hour * 60 + et.minute
+    return open_min <= now_min <= close_min
 
 
 def run():
@@ -175,6 +192,10 @@ def run():
                 if sig.confidence < 3:
                     pos_max *= 0.6   # weaker (2/3) signals get smaller size -- they're the
                                       # ones that make up most of the trailing-stop losers
+                if ATR_RISK_SIZING:
+                    stop_dist = ATR_STOP_MULTIPLIER * sig.atr_pct if sig.atr_pct > 0 else STOP_LOSS_PCT
+                    atr_amount = (TOTAL_CAPITAL * RISK_PER_TRADE_PCT) / stop_dist
+                    pos_max = min(pos_max, atr_amount)
                 amount = min(pos_max, cash - CASH_BUFFER)
                 if amount < MIN_TRADE_SIZE:
                     continue

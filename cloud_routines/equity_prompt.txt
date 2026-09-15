@@ -25,18 +25,26 @@ full-universe scanning anyway (wants broad coverage over the better backtest num
 kill switch (Step 2a below) is the safety net here, same as always -- it doesn't care how
 many tickers get scanned, only what the account value does.
 
-Read logs/latest_signals.json after it finishes. Note: timestamp, market_open, market_regime,
-trading_halted, halt_reason, rsi_signals, net_buy_buy_signals, surge_signals.
+Read logs/latest_signals.json after it finishes. Note: timestamp, market_open,
+in_trade_window, market_regime, trading_halted, halt_reason, rsi_signals,
+net_buy_buy_signals, surge_signals.
 
 If market_open is false → skip Steps 2b-4 and go directly to Step 5.
 
-## Step 2a — Kill switch check (hard, does not reset -- separate from Step 3c)
+## Step 2a — Kill switch AND trade-window check (both hard, don't reset -- separate from Step 3c)
 If trading_halted is true in logs/latest_signals.json:
   Append: "⛔ KILL SWITCH -- <halt_reason> -- ALL NEW BUYS HALTED"
   Skip Step 4b entirely (Step 4 SELL logic still runs -- the kill switch blocks new
   risk, it does not trap you in a losing position).
 This is separate from Step 3c below: 3c resets daily/weekly, this one does not --
 it only clears when a human sets trading_enabled back to true in docs/positions.json.
+
+If in_trade_window is false (market_open is true but you're within the first/last 30
+minutes of the session -- 9:30-10:00 or 15:30-16:00 ET, per CLAUDE.md and
+config.py's AVOID_FIRST_MINUTES/AVOID_LAST_MINUTES): skip Step 4b for this cycle only
+(it's not a persistent halt like the kill switch -- next cycle re-checks). This was
+never actually enforced live before 2026-09-15 even though it's been documented and
+backtested since the start; run.py now computes it and reports it here.
 
 ## Step 2b — Intraday surge tracker (2-cycle confirmation)
 Only when market_open is true.
@@ -114,7 +122,7 @@ place_equity_order(account_number=837287598, symbol=<ticker>, side=sell, type=ma
 
 ## Step 4b — Execute BUY orders
 
-SKIP if circuit_breaker_active (Step 3c) OR trading_halted (Step 2a).
+SKIP if circuit_breaker_active (Step 3c) OR trading_halted (Step 2a) OR in_trade_window is false (Step 2a).
 
 Capital rules (from strategy/config.py -- MAX_POSITION_SIZE=$50, BEARISH_EMA_MAX_POSITION=$25):
 - Keep ≥$50 cash buffer

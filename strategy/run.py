@@ -12,7 +12,7 @@ import sys
 from datetime import datetime, timezone
 from tabulate import tabulate
 
-from .market_data import fetch_all_watchlist, fetch_all_from_cache, is_market_open
+from .market_data import fetch_all_watchlist, fetch_all_from_cache, is_market_open, in_trade_window
 from .indicators import compute_all
 from .signals import generate_signal
 from .net_buy import run_net_buy_scan, NetBuySignal, BUY_SURGE_MIN
@@ -49,6 +49,7 @@ def _merged_action(rsi_action: str, nb_action: str) -> str:
 
 def run_analysis() -> dict:
     market_open = is_market_open()
+    tradeable_window = in_trade_window()
     timestamp = datetime.now(timezone.utc).isoformat()
     mode = "QUICK (watchlist only)" if QUICK_MODE else "FULL UNIVERSE (S&P 500 + NASDAQ 100)"
     trading_allowed, halt_reason = check_kill_switch()
@@ -62,6 +63,9 @@ def run_analysis() -> dict:
 
     if not market_open:
         print("[INFO] Market is currently closed. No trades will be placed.\n")
+    elif not tradeable_window:
+        print("[INFO] Within 30 min of open/close (volatile window) — BUYs suppressed below,")
+        print("       existing positions may still be sold.\n")
 
     if not trading_allowed:
         print(f"{'!'*65}")
@@ -237,12 +241,14 @@ def run_analysis() -> dict:
     strong_amt   = MAX_POSITION_SIZE
     moderate_amt = max(MIN_TRADE_SIZE, round(MAX_POSITION_SIZE * 0.5, 2))
 
+    buy_gate_open = trading_allowed and tradeable_window
+
     if not actionable:
         print("  No actionable signals right now. HOLD all positions.")
     else:
         for ticker, action, price, tag, rs, nb in actionable:
-            if action == "BUY" and not trading_allowed:
-                continue  # kill switch active — SELL-side info below still prints
+            if action == "BUY" and not buy_gate_open:
+                continue  # kill switch or open/close buffer active — SELL-side info below still prints
             print(f"\n  [{tag}] {action} {ticker} @ ${price:.2f}")
             if rs and rs.action == action:
                 print(f"    RSI strategy : {rs.reason}")
@@ -259,6 +265,7 @@ def run_analysis() -> dict:
         "mode": "quick" if QUICK_MODE else "full_universe",
         "universe_size": len(universe),
         "market_open": market_open,
+        "in_trade_window": tradeable_window,
         "trading_halted": not trading_allowed,
         "halt_reason": halt_reason or None,
         "market_regime": "bearish_ema" if market_bearish_ema else "normal",
@@ -317,6 +324,10 @@ def run_analysis() -> dict:
     if not trading_allowed:
         print(f"  TRADING HALTED — {halt_reason}")
         print("  DO NOT place any new BUY orders this cycle.")
+    elif not market_open:
+        print("  MARKET CLOSED — DO NOT place any new BUY orders this cycle.")
+    elif not tradeable_window:
+        print("  WITHIN 30 MIN OF OPEN/CLOSE — volatile window, DO NOT place any new BUY orders this cycle.")
     else:
         print(f"  STRONG BUY  → buy up to ${strong_amt:.0f} (both strategies agree)")
         print(f"  NET-BUY     → buy up to ${moderate_amt:.0f} (net buy trend only, strong streak)")

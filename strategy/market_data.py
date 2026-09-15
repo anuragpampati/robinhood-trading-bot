@@ -3,8 +3,12 @@
 import json
 import yfinance as yf
 import pandas as pd
-from datetime import datetime, timezone
-from .config import DATA_PERIOD, DATA_INTERVAL, WATCHLIST
+from datetime import datetime, timezone, timedelta
+from .config import (
+    DATA_PERIOD, DATA_INTERVAL, WATCHLIST,
+    MARKET_OPEN_HOUR, MARKET_OPEN_MINUTE, MARKET_CLOSE_HOUR,
+    AVOID_FIRST_MINUTES, AVOID_LAST_MINUTES,
+)
 
 
 def fetch_ohlcv(ticker: str, period: str = DATA_PERIOD, interval: str = DATA_INTERVAL) -> pd.DataFrame:
@@ -76,19 +80,39 @@ def fetch_all_from_cache(cache_path: str) -> dict[str, pd.DataFrame]:
     return result
 
 
+def _et_now() -> datetime:
+    """Naive approximation of current NYSE-local time, no holiday calendar."""
+    now = datetime.now(timezone.utc)
+    # Use UTC-4 (EDT) as approximation for May–Nov, UTC-5 otherwise
+    offset = -4 if 3 <= now.month <= 11 else -5
+    return now + timedelta(hours=offset)
+
+
 def is_market_open() -> bool:
     """True if NYSE is currently open (naive check, no holiday calendar)."""
-    now = datetime.now(timezone.utc)
-    # NYSE is UTC-5 (EST) or UTC-4 (EDT)
-    from datetime import timedelta
-    # Use UTC-4 (EDT) as approximation for May–Nov, UTC-5 otherwise
-    month = now.month
-    offset = -4 if 3 <= month <= 11 else -5
-    local = now + timedelta(hours=offset)
+    local = _et_now()
     if local.weekday() >= 5:
         return False
-    open_time = local.replace(hour=9, minute=30, second=0, microsecond=0)
-    close_time = local.replace(hour=16, minute=0, second=0, microsecond=0)
+    open_time = local.replace(hour=MARKET_OPEN_HOUR, minute=MARKET_OPEN_MINUTE, second=0, microsecond=0)
+    close_time = local.replace(hour=MARKET_CLOSE_HOUR, minute=0, second=0, microsecond=0)
     return open_time <= local <= close_time
+
+
+def in_trade_window() -> bool:
+    """True if the market is open AND outside the volatile first/last N minutes.
+
+    This is the actual gate BUY signals should respect -- CLAUDE.md and
+    config.py (AVOID_FIRST_MINUTES / AVOID_LAST_MINUTES) have documented this
+    rule from the start, but until now nothing outside backtest.py's separate
+    in_trade_window() actually enforced it live: run.py only ever checked
+    is_market_open(), so the live system was willing to buy in the first/last
+    30 minutes even though the backtest that validated the strategy never did.
+    """
+    if not is_market_open():
+        return False
+    local = _et_now()
+    open_time = local.replace(hour=MARKET_OPEN_HOUR, minute=MARKET_OPEN_MINUTE, second=0, microsecond=0)
+    close_time = local.replace(hour=MARKET_CLOSE_HOUR, minute=0, second=0, microsecond=0)
+    return (open_time + timedelta(minutes=AVOID_FIRST_MINUTES)) <= local <= (close_time - timedelta(minutes=AVOID_LAST_MINUTES))
 
 

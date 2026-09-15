@@ -145,7 +145,8 @@ MIN_SIGNALS_TO_TRADE = 2       # need at least 2/3 indicators aligned
 # CCR writes peak_value + week_start_value to positions.json each cycle.
 DAILY_LOSS_HALT   = 0.03   # 3 % drop from prior-day close → no new buys today
 WEEKLY_LOSS_HALT  = 0.05   # 5 % drop from Monday open → no new buys this week
-CONCENTRATION_MAX = 0.20   # single-position value / account_value ceiling (= $50 / $250)
+# (single-position concentration is already capped by construction --
+# MAX_POSITION_SIZE / TOTAL_CAPITAL = 50/250 = 20% -- no separate constant needed)
 
 # ── Momentum signal thresholds — never wired in, tested 2026-09-13 ───────────
 # Idea: catch EMA-trending stocks with elevated volume (e.g. META) as a BUY
