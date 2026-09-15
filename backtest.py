@@ -3,8 +3,9 @@
 Walk-forward backtest — RSI+VWAP+EMA strategy on hourly bars.
 
 Usage:
-    python backtest.py          # last 30 days
+    python backtest.py          # last 30 days, WATCHLIST (103 tickers)
     python backtest.py --days 7 # last 7 days
+    python backtest.py --full-universe --days 30   # S&P 500 (~550 tickers incl. WATCHLIST)
 
 No look-ahead bias: indicators are causal (EWM adjust=False, VWAP uses
 cumsum per day). Signal at bar i only sees data up to bar i.
@@ -18,6 +19,7 @@ from datetime import timedelta
 from strategy.market_data import fetch_ohlcv
 from strategy.indicators import compute_all
 from strategy.signals import generate_signal
+from strategy.universe import full_universe
 from strategy.config import (
     WATCHLIST, CASH_BUFFER, MAX_POSITION_SIZE, MIN_TRADE_SIZE,
     MAX_OPEN_POSITIONS, STOP_LOSS_PCT, TAKE_PROFIT_PCT, MARKET_REGIME_RSI_MIN,
@@ -29,6 +31,7 @@ from strategy.config import (
 
 TEST_DAYS = 30
 EXPORT_RL = "--export-rl" in sys.argv or "--train-rl" in sys.argv
+FULL_UNIVERSE = "--full-universe" in sys.argv
 for i, arg in enumerate(sys.argv):
     if arg == "--days" and i + 1 < len(sys.argv):
         TEST_DAYS = int(sys.argv[i + 1])
@@ -36,6 +39,9 @@ for i, arg in enumerate(sys.argv):
 WARMUP_DAYS = 60   # extra history for indicator warmup (RSI needs ~14+ bars)
 INITIAL_CASH = TOTAL_CAPITAL   # was hardcoded 500.0 -- drifted from config after the real
                                 # account turned out to be $250, not $500
+# WATCHLIST always included so SPY (regime anchor) is present even when
+# scanning the full universe -- SPY isn't itself an S&P 500 constituent.
+TICKERS = list(dict.fromkeys(WATCHLIST + full_universe())) if FULL_UNIVERSE else WATCHLIST
 
 
 def in_trade_window(ts: pd.Timestamp) -> bool:
@@ -48,9 +54,9 @@ def in_trade_window(ts: pd.Timestamp) -> bool:
 
 def run():
     fetch_period = f"{TEST_DAYS + WARMUP_DAYS}d"
-    print(f"Fetching {fetch_period} of hourly data for {WATCHLIST}...")
+    print(f"Fetching {fetch_period} of hourly data for {len(TICKERS)} tickers...")
     raw = {}
-    for ticker in WATCHLIST:
+    for ticker in TICKERS:
         try:
             df = fetch_ohlcv(ticker, period=fetch_period, interval="1h")
             raw[ticker] = compute_all(df)
@@ -90,7 +96,7 @@ def run():
     for bar_ts in test_bars:
         # current prices for all tickers (last close at or before this bar)
         prices = {}
-        for tk in WATCHLIST:
+        for tk in TICKERS:
             if tk in raw:
                 slice_ = raw[tk].loc[:bar_ts]
                 if not slice_.empty:
@@ -154,7 +160,7 @@ def run():
 
         # ── BUY: signal-based (skipped if circuit breaker active) ────────────────
         if not circuit_breaker_active:
-            for tk in WATCHLIST:
+            for tk in TICKERS:
                 if tk in positions or tk not in prices:
                     continue
                 if len(positions) >= MAX_OPEN_POSITIONS:
@@ -203,7 +209,7 @@ def run():
         max_dd  = max(max_dd, (peak_pv - pv) / peak_pv)
 
     # Mark open positions to market at last bar
-    last_prices = {tk: float(raw[tk]["close"].iloc[-1]) for tk in WATCHLIST if tk in raw}
+    last_prices = {tk: float(raw[tk]["close"].iloc[-1]) for tk in TICKERS if tk in raw}
     final_value = cash + sum(
         pos["qty"] * last_prices.get(tk, pos["entry_price"])
         for tk, pos in positions.items()

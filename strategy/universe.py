@@ -33,6 +33,12 @@ def sp500_tickers() -> list[str]:
 
 @lru_cache(maxsize=1)
 def nasdaq100_tickers() -> list[str]:
+    # ponytail: as of 2026-09, Wikipedia's Nasdaq-100 page no longer embeds a
+    # constituents table at all (verified: no ticker strings present in the
+    # page). full_universe() degrades gracefully to S&P 500 alone when this
+    # raises -- which is most of the Nasdaq-100 anyway (heavy overlap at the
+    # large-cap end). Upgrade path if this matters: swap in a maintained
+    # source (e.g. a CSV from an index provider) instead of scraping.
     df = _wiki_table("https://en.wikipedia.org/wiki/Nasdaq-100")
     # find column named Ticker or Symbol
     for col in df.columns:

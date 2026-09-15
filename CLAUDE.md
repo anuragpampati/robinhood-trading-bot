@@ -82,7 +82,20 @@ You have access to the Robinhood MCP server (`robinhood-trading`) which gives yo
 ---
 
 ## Watchlist
-`SPY`, `QQQ`, `AAPL`, `MSFT`, `NVDA`
+**Live trading uses `python -m strategy.run --quick`** — the curated ~103-ticker watchlist
+in `strategy/config.py` (`SPY`, `QQQ`, `AAPL`, `MSFT`, `NVDA`, plus ~100 more sector names).
+
+Full-universe scanning also exists (`python -m strategy.run`, no `--quick` — the full S&P
+500, ~503 tickers scraped from Wikipedia, unioned with the watchlist so SPY stays present).
+It was built 2026-09-15 in response to a request to trade "all available companies," but
+**backtested significantly worse than the curated watchlist** (-4.8% vs +5.9% over the same
+90-day window, 58 trades at 34% win rate vs ~25 trades at 41%) — more tickers surfaced more
+low-quality mean-reversion setups, not better ones. Available via `backtest.py
+--full-universe` if you want to re-test it, but do not switch live trading to it without a
+backtest showing it actually helps. NASDAQ-100 would normally add another ~30-40 tickers on
+top of the 503, but that source is currently broken (Wikipedia removed the constituents
+table from that page, 2026-09) — S&P 500 alone still covers the large majority of NASDAQ-100
+by overlap, so this isn't a significant gap.
 
 ---
 
@@ -233,8 +246,116 @@ python -m strategy.options_backtest --ticker AAPL --days 90
 
 ---
 
+# CRYPTO SYSTEM (completely separate from equities and options above)
+
+Independent system, same account as everything else — same real $250, same kill switch.
+Daily bars, not hourly: equities on hourly bars whipsawed badly until fixed 2026-09-13
+(63% of exits were small trailing-stop losses); crypto is more volatile intraday than
+equities, so it would suffer the same problem worse. Reuses the exact equity indicator
+and signal code (`strategy/indicators.py`, `strategy/signals.py`) — no separate crypto-
+specific signal logic to maintain. BTC plays the role SPY plays for equities: its own
+200-EMA status gates the other coins into a bearish regime (halved position size). Unlike
+equities, bearish-EMA does *not* also require 3/3 confidence for crypto — BTC spent 154 of
+181 days (85%) of a recent test window below its own 200-EMA (a long recovery, not a rare
+regime flip), so the equity-style tightening left the backtest with zero trades.
+
+## How to Run a Crypto Cycle
+
+1. **Generate crypto signals (DAILY bars — independent):**
+   ```bash
+   python -m strategy.crypto_engine
+   ```
+   Saves to `docs/crypto_signals.json` and `logs/crypto_signals.json`.
+
+2. **Check current crypto positions:**
+   - `get_crypto_positions(account_number=837287598)` — note: pass `rhs_account_number`
+     if the tool asks for a crypto-specific account identifier, not `account_number`
+   - Also read `docs/crypto_positions.json` for tracked state
+
+3. **Kill switch check** — `docs/crypto_signals.json.trading_halted` (from the same
+   `strategy/circuit_breaker.py` as equities/options — same account, same real money).
+   If halted: skip new entries. Existing positions may still be sold.
+
+4. **Execute exits first** (before any new entries):
+   - Current price ≤ entry price × 0.92 (stop-loss: −8%) or ATR trailing stop
+   - Current price ≥ entry price × 1.15 (take-profit: +15%)
+
+5. **Execute new entries** (if conditions met):
+   - Signal must be `BUY` with confidence ≥ 2
+   - Must have fewer than 3 open crypto positions
+   - Total crypto exposure (sum of open position values + new order) must stay ≤ $100
+   - Never buy a coin you already hold
+   - Call `place_crypto_order(side=buy, ...)`
+
+6. **Update `docs/crypto_positions.json`** with current state
+
+7. **Append to `logs/crypto_trade_log.md`**
+
+## Crypto Strategy Rules
+
+### Capital rules (crypto)
+| Rule | Value |
+|------|-------|
+| Tickers | BTC, ETH, SOL, XRP, LTC, ADA, LINK, AVAX, DOGE, BCH (liquid majors only —
+  Robinhood lists 91 pairs total, 33 already halted in at least one region; a $250 account
+  with a $100 crypto sub-limit has no business in thin altcoins) |
+| Max total crypto exposure | $100 (hard ceiling, shared real account with equities/options) |
+| Max per position | $35 normal / $17.50 bearish-EMA regime |
+| Max open crypto positions | 3 |
+| Min order size | $10 |
+| Stop-loss | −8% from entry (wider than equities' −5%, crypto is more volatile) |
+| Take-profit | +15% from entry (wider than equities' +10%, same reason) |
+
+Backtested (`python -m strategy.crypto_backtest --days 90` / `--days 180`, 2026-09-15):
+90d +2.04% (2 trades, 50% win rate, max drawdown 0.80%); 180d +0.53% (5 trades, 20% win
+rate but 1:5.2 R:R, max drawdown 2.31%). Both periods badly underperformed buy-and-hold
+BTC (+20% / +11%) — expected for a mean-reversion strategy in a one-way bull trend, and
+not the point: this trades rarely and small, by design, while the account is new to crypto.
+
+### Never do these (crypto)
+- ❌ Sell crypto short, or use margin
+- ❌ Open a new position if total crypto exposure would exceed $100
+- ❌ Open a new position if you already have 3 open
+- ❌ Buy anything outside the 10-ticker list above without updating this doc and
+  `strategy/crypto_signals.py` first
+- ❌ Trade crypto while `docs/crypto_signals.json.trading_halted` or
+  `docs/positions.json.trading_enabled` is false (same kill switch as equities/options)
+
+## Crypto Logging Format
+Append to `logs/crypto_trade_log.md`:
+
+```
+## 2026-09-15T14:00:00Z
+- Action   : BUY SOL-USD
+- Price    : $100.69
+- Amount   : $35.00 | Quantity: 0.347628
+- RSI      : 24.8 (daily) | EMA: BULLISH | BB: BELOW_BAND
+- Stop     : $92.63 (-8%) | Target: $115.79 (+15%)
+- Regime   : normal (BTC above 200-EMA)
+- Reason   : RSI oversold+stabilizing | BB reversal returning from band
+```
+
+## Data Files (crypto system)
+| File | Purpose |
+|------|---------|
+| `docs/crypto_signals.json` | Latest crypto signals (written by crypto_engine) |
+| `docs/crypto_positions.json` | Tracked open + historical crypto positions |
+| `logs/crypto_signals.json` | Archive of signal runs |
+| `logs/crypto_trade_log.md` | Append-only trade log for crypto |
+
+## Crypto Backtest
+```bash
+python -m strategy.crypto_backtest          # 90-day default
+python -m strategy.crypto_backtest --days 180
+```
+
+---
+
 ## Important Disclaimers
 - Options are real money — losses can be 100% of premium paid
-- Never open a new option position when the equity system is at max positions (capital preservation first)
+- Crypto is real money — same account, same kill switch; the $100 crypto cap and $250
+  account-wide kill switch are two separate ceilings, both apply
+- Never open a new option or crypto position when it would push total exposure past what
+  the account can actually cover (capital preservation first)
 - This is real money — prioritize capital preservation over gains
 - If in doubt, output HOLD and ask the user

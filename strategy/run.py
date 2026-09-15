@@ -79,13 +79,19 @@ def run_analysis() -> dict:
         universe = full_universe()
         print(f"      {len(universe)} tickers loaded.\n")
 
-    # ── Strategy 1: RSI + BB + EMA on watchlist ──────────────────────────────
+    # ── Strategy 1: RSI + BB + EMA ────────────────────────────────────────────
+    # Always includes WATCHLIST (SPY/QQQ/IWM live there, needed for the regime
+    # filter below) union'd with `universe` -- in quick mode universe==WATCHLIST
+    # so this is a no-op; in full mode this was the bug: RSI signals used to be
+    # computed on WATCHLIST only even in "full universe" mode, while Strategy 2
+    # (below) correctly scanned the whole universe. Now both do.
+    fetch_universe = list(dict.fromkeys(WATCHLIST + universe))
     if _CACHE_FILE:
         print(f"[2/4] Loading watchlist data from cache: {_CACHE_FILE}")
         data_map = fetch_all_from_cache(_CACHE_FILE)
     else:
-        print("[2/4] Computing RSI / BB / EMA on watchlist...")
-        data_map = fetch_all_watchlist(WATCHLIST)
+        print(f"[2/4] Computing RSI / BB / EMA on {len(fetch_universe)} tickers...")
+        data_map = fetch_all_watchlist(fetch_universe)
     rsi_signals = {}
 
     # Compute SPY first to determine market regime

@@ -44,7 +44,10 @@ def _bb_position(row: pd.Series) -> str:
     return "IN_BAND"
 
 
-def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False, market_bearish_ema: bool = False) -> Signal:
+def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False,
+                    market_bearish_ema: bool = False,
+                    atr_threshold: float = ATR_VOLATILITY_THRESHOLD,
+                    bearish_ema_min_confidence: int = BEARISH_EMA_MIN_CONFIDENCE) -> Signal:
     """Produce a trading signal for *ticker* from its indicator DataFrame.
 
     Three signals scored 0-3: RSI oversold/overbought, Bollinger Band position,
@@ -52,6 +55,11 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False,
 
     market_bearish: True when SPY RSI < MARKET_REGIME_RSI_MIN (market panic).
     SPY itself is exempt from market_bearish — it IS the market.
+
+    atr_threshold: overridable per-call -- equities' default (3%) is tuned for
+    hourly bars on a low-volatility asset class. Crypto callers pass a much
+    wider value (daily bars, routinely 5-10%+ ATR); the equity default of 3%
+    was found to block nearly every crypto signal when first tested.
 
     Bollinger Bands replace VWAP: BB resets never (VWAP resets daily), making
     it far more meaningful for multi-day swing trades (Stefan Jansen, ch. 4).
@@ -74,7 +82,7 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False,
                       f"low volume ({vol_ratio:.2f}x avg) — skipping")
 
     # Volatility gate — skip if market is too choppy
-    if atr_pct > ATR_VOLATILITY_THRESHOLD:
+    if atr_pct > atr_threshold:
         return Signal(ticker, "HOLD", price, rsi_val, trend, bb_pos, 0, atr_pct,
                       f"ATR too high ({atr_pct:.1%}) — skipping")
 
@@ -132,9 +140,14 @@ def generate_signal(ticker: str, df: pd.DataFrame, market_bearish: bool = False,
         # SPY below its own 200-EMA (bearish trend) → require full 3/3 confidence,
         # not just the normal 2/3. Was previously accepted as a parameter and
         # silently ignored -- config's BEARISH_EMA_MIN_CONFIDENCE was never enforced.
-        if market_bearish_ema and buy_score < BEARISH_EMA_MIN_CONFIDENCE:
+        # bearish_ema_min_confidence is overridable per-call: crypto callers pass
+        # MIN_SIGNALS_TO_TRADE (2, i.e. no extra tightening) because BTC spends
+        # long stretches (85% of a recent 180d window) below its own 200-EMA --
+        # a slow recovery, not a rare regime flip the way it is for SPY. Applying
+        # equities' 3/3 requirement there left crypto with zero trades in 180 days.
+        if market_bearish_ema and buy_score < bearish_ema_min_confidence:
             return Signal(ticker, "HOLD", price, rsi_val, trend, bb_pos, buy_score, atr_pct,
-                          f"BUY suppressed — bearish EMA regime requires {BEARISH_EMA_MIN_CONFIDENCE}/3 confidence, got {buy_score}/3")
+                          f"BUY suppressed — bearish EMA regime requires {bearish_ema_min_confidence}/3 confidence, got {buy_score}/3")
         return Signal(ticker, "BUY", price, rsi_val, trend, bb_pos,
                       buy_score, atr_pct, " | ".join(buy_reasons))
 
