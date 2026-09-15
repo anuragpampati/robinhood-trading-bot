@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-15T15:14:00Z
+- SUMMARY: Market OPEN, in trade window. Signal engine data-blocked (yfinance proxy restrictions — 0/103 tickers fetched). No actionable signals. No trades placed. NVDA held: $212.24, −0.08% (above trail stop $209.19). Circuit breaker INACTIVE (daily 0.03%, weekly 0.66%). Buying power: $148.49 (settled; $221.86 cash, ~$73 unsettled from SBUX+UUUU sells). Equity positions: 1. Regime: normal (signal engine; prior cycle: bearish_ema). Account: $246.84.
+
 ## 2026-09-15T14:12:31Z
 - Action   : SELL SBUX
 - Price    : $97.35
