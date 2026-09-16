@@ -384,3 +384,12 @@
 - Backtest: SKIPPED — Yahoo Finance blocked by proxy (403, all tickers fail; same issue as live signal engine)
 - RL samples: 614/200 (READY — target exceeded; +4 rows from 2 closed trades)
 - Notes: yfinance 403 proxy block continues to prevent both backtest and live signals. NVDA position open ($24.98, -0.09%, above trail_stop). Q-table frozen at 19 states since 2026-07-09 (pre-fix training data). trim_log.py kept 12/13 entries.
+
+## 2026-09-16
+- Trades analysed: 2 closed pairs (SBUX -1.70% normal/ATR-stop; UUUU -2.89% normal/ATR-stop)
+- Win rate: 0% overall (normal: 0% [n=2]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BEARISH entry 0% (n=2); BULLISH entry n/a (n=0)
+- Config changes: none — RSI_OVERSOLD: n=2 < 5 required (NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~24h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy-blocked (403) in remote environment; same recurring issue
+- RL samples: 614/200 (READY — 19 Q-states; run: python -m strategy.rl_agent --train to activate)
+- Notes: Account $247.08 (1 open position: NVDA +0.87%). Both recent trades exited via ATR trailing stop ~24h after entry. Signal engine proxy-blocked all week. NO config changes warranted.
