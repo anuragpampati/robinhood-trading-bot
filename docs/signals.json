@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-16T21:54:25.967865+00:00",
+  "timestamp": "2026-09-16T22:33:58.952730+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7830,8 +7830,8 @@
       "ticker": "STZ",
       "price": 123.02999877929688,
       "net_buy_d2": -17115,
-      "net_buy_d3": -1030956,
-      "obv_slope": -437994,
+      "net_buy_d3": -1032108,
+      "obv_slope": -438311,
       "score": 0.0,
       "reason": "Net buy reversed: -0.02M \u2192 -1.03M | OBV -0.4M/day"
     },
@@ -7839,26 +7839,26 @@
       "ticker": "AXP",
       "price": 312.42999267578125,
       "net_buy_d2": -61904,
-      "net_buy_d3": -2564941,
-      "obv_slope": -426848,
+      "net_buy_d3": -2566707,
+      "obv_slope": -427486,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.06M \u2192 -2.56M | OBV -0.4M/day"
+      "reason": "Net buy reversed: -0.06M \u2192 -2.57M | OBV -0.4M/day"
     },
     {
       "ticker": "MDT",
       "price": 92.5999984741211,
       "net_buy_d2": 253950,
-      "net_buy_d3": -8235307,
-      "obv_slope": -2432027,
+      "net_buy_d3": -8711725,
+      "obv_slope": -2546745,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.25M \u2192 -8.24M | OBV -2.4M/day"
+      "reason": "Net buy reversed: 0.25M \u2192 -8.71M | OBV -2.5M/day"
     },
     {
       "ticker": "BF-B",
       "price": 25.739999771118164,
       "net_buy_d2": -46982,
-      "net_buy_d3": -1358707,
-      "obv_slope": -769648,
+      "net_buy_d3": -1358837,
+      "obv_slope": -769692,
       "score": 0.0,
       "reason": "Net buy reversed: -0.05M \u2192 -1.36M | OBV -0.8M/day"
     },
@@ -7866,8 +7866,8 @@
       "ticker": "GWW",
       "price": 1258.260009765625,
       "net_buy_d2": 5179,
-      "net_buy_d3": -132779,
-      "obv_slope": -174659,
+      "net_buy_d3": -133348,
+      "obv_slope": -174884,
       "score": 0.0,
       "reason": "Net buy reversed: 0.01M \u2192 -0.13M | OBV -0.2M/day"
     },
@@ -7884,8 +7884,8 @@
       "ticker": "BNY",
       "price": 153.47000122070312,
       "net_buy_d2": -93440,
-      "net_buy_d3": -1241551,
-      "obv_slope": -2711504,
+      "net_buy_d3": -1241813,
+      "obv_slope": -2711637,
       "score": 0.0,
       "reason": "Net buy reversed: -0.09M \u2192 -1.24M | OBV -2.7M/day"
     },
@@ -7893,8 +7893,8 @@
       "ticker": "VMC",
       "price": 244.3000030517578,
       "net_buy_d2": 67380,
-      "net_buy_d3": -691694,
-      "obv_slope": -558035,
+      "net_buy_d3": -691699,
+      "obv_slope": -558037,
       "score": 0.0,
       "reason": "Net buy reversed: 0.07M \u2192 -0.69M | OBV -0.6M/day"
     },
@@ -7902,19 +7902,19 @@
       "ticker": "EQT",
       "price": 50.40999984741211,
       "net_buy_d2": -604296,
-      "net_buy_d3": -6947233,
-      "obv_slope": -6849063,
+      "net_buy_d3": -6951870,
+      "obv_slope": -6850360,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.60M \u2192 -6.95M | OBV -6.8M/day"
+      "reason": "Net buy reversed: -0.60M \u2192 -6.95M | OBV -6.9M/day"
     },
     {
       "ticker": "MRSH",
       "price": 176.75999450683594,
       "net_buy_d2": -142029,
-      "net_buy_d3": -1215882,
-      "obv_slope": -1149037,
+      "net_buy_d3": -1442699,
+      "obv_slope": -1244473,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.14M \u2192 -1.22M | OBV -1.1M/day"
+      "reason": "Net buy reversed: -0.14M \u2192 -1.44M | OBV -1.2M/day"
     }
   ],
   "surge_signals": []
