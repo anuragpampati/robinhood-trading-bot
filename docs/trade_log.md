@@ -1,8 +1,5 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-17T20:10:09Z
-- SUMMARY: Market CLOSED. Signals: market_open=false, trading_halted=false, regime=normal. No sell triggers: NVDA +3.29% @ $219.40, above trail_stop $213.48, take_profit $233.66. Trail stop unchanged (profit 3.29% >= 2.5% ratchet → locks at avg_cost×1.005=$213.48, no change). No buy orders (market closed). CB INACTIVE (daily gain 0.01%, weekly gain 0.35%). BP $221.86. 1 position. Acct $247.68.
-
 ## 2026-09-17T18:10:34Z
 - SUMMARY: Market OPEN, in_trade_window=true. Signal engine: universe_size=0 (yfinance 403, proxy-blocked). No RSI/net-buy/surge signals. No sell triggers: NVDA +3.29% @ $219.40, above trail_stop $213.48, take_profit $233.66. Trail stop unchanged. No buy signals. CB INACTIVE (daily gain 0.01%, weekly gain 0.35%). BP $221.86. 1 position. Acct $247.68.
 
