@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-17T21:55:35.204327+00:00",
+  "timestamp": "2026-09-17T22:35:39.091334+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7991,6 +7991,15 @@
       "reason": "Buy vol \u2191174.9% vs prior day | Net buy \u2191 4d streak: -1.65M \u2192 0.05M \u2192 5.82M | OBV +0.4M/day"
     },
     {
+      "ticker": "ABBV",
+      "price": 264.0199890136719,
+      "buy_surge_pct": 0.8414,
+      "buy_vol_d2": 1579552,
+      "buy_vol_d3": 2908553,
+      "net_buy_d3": 2352770,
+      "reason": "Buy vol \u219184.1% vs prior day | 0d streak | latest 2.35M | OBV 2.2M/day"
+    },
+    {
       "ticker": "MMM",
       "price": 164.7100067138672,
       "buy_surge_pct": 1.2922,
@@ -8000,13 +8009,13 @@
       "reason": "Buy vol \u2191129.2% vs prior day | 0d streak | latest 1.04M | OBV 0.3M/day"
     },
     {
-      "ticker": "ABBV",
-      "price": 264.0199890136719,
-      "buy_surge_pct": 0.8414,
-      "buy_vol_d2": 1579552,
-      "buy_vol_d3": 2908553,
-      "net_buy_d3": 2352770,
-      "reason": "Buy vol \u219184.1% vs prior day | 0d streak | latest 2.35M | OBV 2.2M/day"
+      "ticker": "AMD",
+      "price": 545.0900268554688,
+      "buy_surge_pct": 2.0613,
+      "buy_vol_d2": 6790064,
+      "buy_vol_d3": 20786096,
+      "net_buy_d3": 13241655,
+      "reason": "Buy vol \u2191206.1% vs prior day | 1d streak | latest 13.24M | OBV 12.5M/day"
     }
   ]
 }
