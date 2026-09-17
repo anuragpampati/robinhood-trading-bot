@@ -393,3 +393,11 @@
 - Backtest: SKIPPED — Yahoo Finance proxy-blocked (403) in remote environment; same recurring issue
 - RL samples: 614/200 (READY — 19 Q-states; run: python -m strategy.rl_agent --train to activate)
 - Notes: Account $247.08 (1 open position: NVDA +0.87%). Both recent trades exited via ATR trailing stop ~24h after entry. Signal engine proxy-blocked all week. NO config changes warranted.
+
+## 2026-09-17
+- Trades analysed: 2 closed (SBUX -1.70% ATR-stop/normal/BEARISH EMA; UUUU -2.89% ATR-stop/normal/BEARISH EMA)
+- Win rate: 0% overall (normal: 0% [n=2]; momentum: n/a [n=0]; surge: n/a [n=0]); BULLISH EMA n/a (n=0); BEARISH EMA 0% (n=2)
+- Config changes: none — RSI_OVERSOLD: n=2 < 5 required (NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~24h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy-blocked (403) in remote environment; recurring issue; prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
+- RL samples: 614/200 (RL READY — 3.07× target; 19 Q-states; run: python -m strategy.rl_agent --train to activate)
+- Notes: Account $247.68, 1 open position (NVDA +3.29%, stop $213.48, TP $233.66). Signal engine still proxy-blocked (yfinance 403) — no new trades possible. Trade log trimmed to 2 entries. All threshold rules below minimum n for adjustment.

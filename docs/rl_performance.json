@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-09-17",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
@@ -14,5 +14,5 @@
   "rl_training_samples": 614,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — Yahoo Finance network access blocked by environment proxy policy (403, all 103 tickers fail). Config NO_CHANGE: 2 closed trades (SBUX -1.70%, UUUU -2.89%, both normal/ATR-stop); all strategy types n < minimum threshold (need n>=5 for RSI_OVERSOLD, n>=3 for others). RL READY (614/200 samples, 19 Q-states). Updated by daily learning CCR"
+  "note": "Backtest skipped — Yahoo Finance network access blocked by environment proxy policy (403, all tickers fail, recurring issue). Config NO_CHANGE: 2 closed trades in window (SBUX -1.70%, UUUU -2.89%, both normal/ATR-stop, n<5 minimum). RL READY (614/200 samples, 19 Q-states). Updated by daily learning CCR"
 }
