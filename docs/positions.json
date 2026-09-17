@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-17T14:10:00Z",
+  "updated_at": "2026-09-17T15:12:00Z",
   "buying_power": 221.86,
   "market_regime": "normal",
-  "account_value": 247.65,
+  "account_value": 247.64,
   "peak_value": 248.49,
   "day_start_value": 247.65,
   "day_start_date": "2026-09-17",
   "week_start_value": 246.81,
   "week_start_date": "2026-09-15",
   "trading_enabled": true,
-  "kill_switch_pct": 0.20,
+  "kill_switch_pct": 0.2,
   "kill_switch_floor": 200.0,
   "disabled_reason": null,
   "positions": [
@@ -17,9 +17,9 @@
       "ticker": "NVDA",
       "quantity": 0.117692,
       "avg_cost": 212.42,
-      "current_price": 219.10,
-      "pnl_pct": 0.03145,
-      "value": 25.79,
+      "current_price": 219.075,
+      "pnl_pct": 0.03133,
+      "value": 25.7834,
       "entry_atr_pct": 0.0076,
       "entry_time": "2026-09-14T19:12:10Z",
       "trail_stop": 213.48,
@@ -29,10 +29,11 @@
     }
   ],
   "last_actions": [
-    "2026-09-17T14:10:00Z CYCLE: Market OPEN, in window. Signal engine: universe_size=0 (proxy-blocked, yfinance 403). No sell triggers. NVDA +3.14% @ $219.10, trail_stop ratcheted $209.19→$213.48. No buy signals. CB INACTIVE (daily 0.00% new day, weekly −0.34%). BP $221.86. 1 position. Acct $247.65.",
+    "2026-09-17T15:12:00Z CYCLE: Market OPEN, in window. Signal engine: universe_size=0 (yfinance 403, proxy-blocked). No RSI/net-buy/surge signals. No sell triggers: NVDA +3.13% @ $219.075, above trail_stop $213.48, take_profit $233.66. Trail stop unchanged. No buy signals. CB INACTIVE (daily ~0.00%, weekly gain). BP $221.86. 1 position. Acct $247.64.",
+    "2026-09-17T14:10:00Z CYCLE: Market OPEN, in window. Signal engine: universe_size=0 (proxy-blocked, yfinance 403). No sell triggers. NVDA +3.14% @ $219.10, trail_stop ratcheted $209.19\u2192$213.48. No buy signals. CB INACTIVE (daily 0.00% new day, weekly \u22120.34%). BP $221.86. 1 position. Acct $247.65.",
     "2026-09-16T20:11:23Z CYCLE: Market CLOSED. Signal engine: 0 RSI, 0 net-buy, 0 surge (yfinance 403). No trades. NVDA +0.87% @ $214.26 (AH), trail_stop $209.19. CB INACTIVE (daily -0.04%, weekly +0.11%). BP $221.86. 1 position. Acct $247.08.",
-    "2026-09-16T19:11:00Z CYCLE: Market OPEN, in window. Signal engine proxy-blocked (0 RSI, 0 net-buy, 0 surge — yfinance 403, universe_size=0). No sell triggers. NVDA +0.56% @ $213.61, above trail_stop $209.19, take_profit $233.66. Trail stop unchanged (profit 0.56% < 2.5% ratchet). No buy signals. CB INACTIVE (daily +0.07%, weekly +0.08%). BP $221.86. 1 position. Acct $247.00.",
-    "2026-09-16T18:10:28Z CYCLE: Market OPEN, in window. Signal engine proxy-blocked (0 RSI, 0 net-buy, 0 surge — yfinance 403, universe_size=0). No sell triggers. NVDA +1.58% @ $215.78, above trail_stop $209.19, take_profit $233.66. Trail stop unchanged (profit 1.58% < 2.5% ratchet). No buy signals. CB INACTIVE (daily +0.04%, weekly +0.18%). BP $221.86. 1 position. Acct $247.26.",
+    "2026-09-16T19:11:00Z CYCLE: Market OPEN, in window. Signal engine proxy-blocked (0 RSI, 0 net-buy, 0 surge \u2014 yfinance 403, universe_size=0). No sell triggers. NVDA +0.56% @ $213.61, above trail_stop $209.19, take_profit $233.66. Trail stop unchanged (profit 0.56% < 2.5% ratchet). No buy signals. CB INACTIVE (daily +0.07%, weekly +0.08%). BP $221.86. 1 position. Acct $247.00.",
+    "2026-09-16T18:10:28Z CYCLE: Market OPEN, in window. Signal engine proxy-blocked (0 RSI, 0 net-buy, 0 surge \u2014 yfinance 403, universe_size=0). No sell triggers. NVDA +1.58% @ $215.78, above trail_stop $209.19, take_profit $233.66. Trail stop unchanged (profit 1.58% < 2.5% ratchet). No buy signals. CB INACTIVE (daily +0.04%, weekly +0.18%). BP $221.86. 1 position. Acct $247.26.",
     "2026-09-15T14:12:31Z SELL SBUX: ATR stop $97.35<=trail $97.85 | -1.70% | held ~24h"
   ]
 }
