@@ -401,3 +401,12 @@
 - Backtest: SKIPPED — Yahoo Finance proxy-blocked (403) in remote environment; recurring issue; prior metrics retained (+9.29% return, 15.29% max drawdown, 39.6% win rate, 227 trades, R:R 1.78)
 - RL samples: 614/200 (RL READY — 3.07× target; 19 Q-states; run: python -m strategy.rl_agent --train to activate)
 - Notes: Account $247.68, 1 open position (NVDA +3.29%, stop $213.48, TP $233.66). Signal engine still proxy-blocked (yfinance 403) — no new trades possible. Trade log trimmed to 2 entries. All threshold rules below minimum n for adjustment.
+
+## 2026-09-18
+- Trades analysed: 0 closed pairs (trade log trimmed; only SUMMARY cycle entries remain — no individual BUY/SELL lines visible)
+- Win rate: n/a overall (normal: n=0; momentum: n=0; surge: n=0) — below n=3 minimum for all types
+- EMA-trend win rate: n/a (no closed trades)
+- Config changes: none — RSI_OVERSOLD: n=0 < 5 required (NO_CHANGE); MOMENTUM_VOL_MIN: n=0 (NO_CHANGE); ATR_VOLATILITY_THRESHOLD: n=0 (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy-blocked (403) in remote environment; recurring issue; 0 tickers fetchable
+- RL samples: 614/200 (RL READY — 3.07× target; 19 Q-states; run: python -m strategy.rl_agent --train to activate)
+- Notes: Account $247.97 (+0.09% on day), 1 open position (NVDA +4.55% @ $222.08, stop $213.48, TP $233.66). Signal engine still proxy-blocked (yfinance 403) — universe_size=0 on all cycles. RL collector +0 new rows (0 closed trades today). All thresholds unchanged. trim_log kept 5/5 entries.
