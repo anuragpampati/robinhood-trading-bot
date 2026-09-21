@@ -7,31 +7,41 @@ IMPORTANT: You MUST complete Steps 5, 6, and 7 on EVERY run — even if the mark
 pip install -r requirements.txt -q
 ```
 
-## Step 2 — Generate signals (full universe, no manual per-ticker fetching)
+## Step 2 — Generate signals (full universe, Robinhood-sourced OHLCV)
+
+CONFIRMED 2026-09-21: this sandbox's general internet egress is restricted — yfinance (403) and Wikipedia are both unreachable here, which silently zeroed out every signal cycle from 2026-09-15 through 2026-09-21 (universe_size=0, no trades placed for 6 days, though existing positions kept being monitored fine via the Robinhood MCP tools below). The MCP connector to Robinhood IS reachable (proven every cycle via quotes/positions/orders), so price data now comes from get_equity_historicals instead of yfinance.
+
+### Step 2a — Determine the ticker universe
 ```bash
-python -m strategy.run
+python3 -c "
+import json
+from strategy.config import WATCHLIST
+from strategy.universe import full_universe
+u = full_universe()
+tickers = list(dict.fromkeys(WATCHLIST + u))
+print(json.dumps(tickers))
+"
 ```
-This fetches its own market data internally (yfinance, not MCP) for the full S&P 500
-(~503 tickers) unioned with the core watchlist (~103 tickers, so SPY stays present as
-regime anchor), computes RSI/BB/EMA signals for all of it, runs the net-buy-trend scan
-over the same universe, and writes logs/latest_signals.json + docs/signals.json. Takes a
-few minutes.
+full_universe() scrapes Wikipedia for S&P 500 + NASDAQ 100; if that fails here (expected) it falls back to strategy/sp500_snapshot.json automatically (~503 tickers) — no action needed, just use whatever list this prints.
 
-Known tradeoff (2026-09-15 backtest, explicit user decision to proceed anyway): full
-universe underperformed the curated 103-ticker watchlist over the same 90-day window
-(-4.8% vs +5.9%, 58 trades at 34% win rate vs ~25 trades at 41%) -- more tickers surfaced
-more low-quality mean-reversion setups, not better ones. The user was shown this and chose
-full-universe scanning anyway (wants broad coverage over the better backtest number). The
-kill switch (Step 2a below) is the safety net here, same as always -- it doesn't care how
-many tickers get scanned, only what the account value does.
+### Step 2b — Fetch OHLCV via Robinhood historicals, build a cache file
+For EVERY batch of up to 10 symbols from the Step 2a list, call:
+```
+get_equity_historicals(symbols=<batch of ≤10>, start_time=<60 days ago, RFC3339 UTC>, end_time=<now, RFC3339 UTC>, interval="hour", bounds="regular", adjustment_type="all")
+```
+For each symbol in the response's data.results[], take result.symbol and result.bars (each bar already has begins_at/open_price/high_price/low_price/close_price/volume — use them as-is). Accumulate into one dict: `{"SPY": [...bars...], "AAPL": [...bars...], ...}`. Skip any symbol whose call errors or returns empty bars — do not let one bad symbol stop the rest. Write the accumulated dict as JSON to `logs/rh_historicals_cache.json` (this file is gitignored/ephemeral — do not commit it in Step 7).
 
-Read logs/latest_signals.json after it finishes. Note: timestamp, market_open,
-in_trade_window, market_regime, trading_halted, halt_reason, rsi_signals,
-net_buy_buy_signals, surge_signals.
+This is ~55-60 tool calls for the full universe. That's expected and fine — work through all batches, don't stop early.
 
-If market_open is false → skip Steps 2b-4 and go directly to Step 5.
+### Step 2c — Run the strategy against the cache
+```bash
+python -m strategy.run --from-cache logs/rh_historicals_cache.json
+```
+Read logs/latest_signals.json after it finishes. Note: timestamp, market_open, in_trade_window, market_regime, trading_halted, halt_reason, rsi_signals, net_buy_buy_signals, surge_signals, and universe_size (should now be ~503+, not 0 — if it's still 0 or data_map came back mostly empty, say so explicitly in the Step 5 log entry instead of silently proceeding as if signals are trustworthy).
 
-## Step 2a — Kill switch AND trade-window check (both hard, don't reset -- separate from Step 3c)
+If market_open is false → skip Steps 2d-4 and go directly to Step 5.
+
+## Step 2d — Kill switch AND trade-window check (both hard, don't reset -- separate from Step 3c)
 If trading_halted is true in logs/latest_signals.json:
   Append: "⛔ KILL SWITCH -- <halt_reason> -- ALL NEW BUYS HALTED"
   Skip Step 4b entirely (Step 4 SELL logic still runs -- the kill switch blocks new
@@ -42,11 +52,9 @@ it only clears when a human sets trading_enabled back to true in docs/positions.
 If in_trade_window is false (market_open is true but you're within the first/last 30
 minutes of the session -- 9:30-10:00 or 15:30-16:00 ET, per CLAUDE.md and
 config.py's AVOID_FIRST_MINUTES/AVOID_LAST_MINUTES): skip Step 4b for this cycle only
-(it's not a persistent halt like the kill switch -- next cycle re-checks). This was
-never actually enforced live before 2026-09-15 even though it's been documented and
-backtested since the start; run.py now computes it and reports it here.
+(it's not a persistent halt like the kill switch -- next cycle re-checks).
 
-## Step 2b — Intraday surge tracker (2-cycle confirmation)
+## Step 2e — Intraday surge tracker (2-cycle confirmation)
 Only when market_open is true.
 
 Load docs/surge_tracker.json if it exists, else start with {}.
@@ -122,7 +130,7 @@ place_equity_order(account_number=837287598, symbol=<ticker>, side=sell, type=ma
 
 ## Step 4b — Execute BUY orders
 
-SKIP if circuit_breaker_active (Step 3c) OR trading_halted (Step 2a) OR in_trade_window is false (Step 2a).
+SKIP if circuit_breaker_active (Step 3c) OR trading_halted (Step 2d) OR in_trade_window is false (Step 2d).
 
 Capital rules (from strategy/config.py -- MAX_POSITION_SIZE=$50, BEARISH_EMA_MAX_POSITION=$25):
 - Keep ≥$50 cash buffer
@@ -166,7 +174,7 @@ Equity trade entry:
 No-trade summary:
 ```
 ## <UTC ISO timestamp>
-- SUMMARY: <Market closed|...>. Buying power: $<X>. Equity positions: <N>. Regime: <...>. Account: $<account_value>.
+- SUMMARY: <Market closed|...>. Buying power: $<X>. Equity positions: <N>. Regime: <...>. Account: $<account_value>. Universe fetched: <universe_size>.
 ```
 
 ## Step 6 — Write docs/positions.json (REQUIRED)
@@ -208,7 +216,7 @@ No-trade summary:
 ```
 
 ## Step 7 — Commit and push (REQUIRED)
-CRITICAL: Only stage DATA files. NEVER stage or modify strategy/*.py, backtest.py, or docs/index.html.
+CRITICAL: Only stage DATA files. NEVER stage or modify strategy/*.py, backtest.py, or docs/index.html. NEVER stage logs/rh_historicals_cache.json (ephemeral scratch file from Step 2b).
 
 ```bash
 git pull --rebase origin main

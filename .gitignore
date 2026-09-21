@@ -24,6 +24,9 @@ logs/dashboard.log
 logs/tunnel.log
 logs/tunnel_url.txt
 
+# Ephemeral cloud-CCR scratch cache (Robinhood historicals, rebuilt every cycle)
+logs/rh_historicals_cache.json
+
 # Qanat integration spike (see qanat_project/) — isolated venv + regenerable data
 .qanat-venv/
 qanat_project/data/

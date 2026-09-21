@@ -100,6 +100,23 @@ strategy.run --quick` reverts to the curated watchlist, and `backtest.py` (no fl
 vs `backtest.py --full-universe` reproduces the comparison. The kill switch protects
 capital regardless of which mode is active; it doesn't care how many tickers get scanned.
 
+**Outage, found + fixed 2026-09-21:** the cloud CCR sandbox's general internet egress is
+restricted — yfinance (403) and Wikipedia are both unreachable from it, not just yfinance.
+This silently zeroed `universe_size` every single cycle from 2026-09-15 to 2026-09-21 (6
+days, 0 new trades) with no loud failure — existing positions kept being managed correctly
+the whole time since that only needs the Robinhood MCP tools (quotes/orders), which are
+reachable. Fixed two ways: (1) `strategy/universe.py`'s `sp500_tickers()` now falls back to
+a static `strategy/sp500_snapshot.json` (refreshed automatically whenever run from a machine
+that *can* reach Wikipedia) when the live scrape fails; (2) the live "Robinhood Trading
+Cycle" CCR prompt now pre-fetches OHLCV via `get_equity_historicals` (batches of ≤10
+symbols, proven reachable from that sandbox) into `logs/rh_historicals_cache.json`, then
+runs `python -m strategy.run --from-cache <path>` instead of hitting yfinance directly —
+`market_data.py`'s `fetch_all_from_cache`/`rh_json_to_df` already existed for this, just
+wasn't wired into the routine before. Local runs (this Mac) still use live yfinance/Wikipedia
+directly since those aren't blocked here — the cache path only kicks in with `--from-cache`.
+If `universe_size` in `logs/latest_signals.json` reads 0 again, check this first before
+assuming a market data outage.
+
 ---
 
 ## Risk/Reward per Trade
