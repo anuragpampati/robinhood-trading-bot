@@ -3,13 +3,16 @@ Fetch the full tradeable stock universe: S&P 500 + NASDAQ 100.
 Uses Wikipedia via BeautifulSoup — no API key needed.
 """
 
+import json
 import requests
 import pandas as pd
 from io import StringIO
+from pathlib import Path
 from bs4 import BeautifulSoup
 from functools import lru_cache
 
 _HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+_SNAPSHOT = Path(__file__).parent / "sp500_snapshot.json"
 
 
 def _wiki_table(url: str, table_id: str | None = None) -> pd.DataFrame:
@@ -24,11 +27,24 @@ def _wiki_table(url: str, table_id: str | None = None) -> pd.DataFrame:
 
 @lru_cache(maxsize=1)
 def sp500_tickers() -> list[str]:
-    df = _wiki_table(
-        "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
-        table_id="constituents",
-    )
-    return [t.replace(".", "-") for t in df["Symbol"].tolist()]
+    try:
+        df = _wiki_table(
+            "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+            table_id="constituents",
+        )
+        tickers = [t.replace(".", "-") for t in df["Symbol"].tolist()]
+        _SNAPSHOT.write_text(json.dumps(tickers))  # refresh fallback for cloud runs
+        return tickers
+    except Exception as e:
+        # ponytail: Wikipedia is unreachable from the cloud CCR sandbox (confirmed
+        # 2026-09-21 -- general internet egress is restricted there, not just
+        # yfinance). Fall back to the last snapshot saved from a machine that
+        # could reach Wikipedia (this repo ships one; refresh by running this
+        # function locally). Re-scrape live whenever this machine can.
+        if _SNAPSHOT.exists():
+            print(f"  [WARN] Live S&P 500 fetch failed ({e}) — using snapshot from {_SNAPSHOT}")
+            return json.loads(_SNAPSHOT.read_text())
+        raise
 
 
 @lru_cache(maxsize=1)
