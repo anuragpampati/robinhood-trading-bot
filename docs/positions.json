@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-21T18:21:00Z",
+  "updated_at": "2026-09-21T19:21:00Z",
   "buying_power": 221.86,
   "market_regime": "normal",
-  "account_value": 248.60,
-  "peak_value": 248.60,
+  "account_value": 248.63,
+  "peak_value": 248.63,
   "day_start_value": 248.11,
   "day_start_date": "2026-09-21",
   "week_start_value": 248.11,
@@ -17,9 +17,9 @@
       "ticker": "NVDA",
       "quantity": 0.117692,
       "avg_cost": 212.42,
-      "current_price": 227.25,
-      "pnl_pct": 0.0698,
-      "value": 26.74,
+      "current_price": 227.46,
+      "pnl_pct": 0.0708,
+      "value": 26.77,
       "entry_atr_pct": 0.0076,
       "entry_time": "2026-09-14T19:12:10Z",
       "trail_stop": 217.73,
@@ -29,10 +29,10 @@
     }
   ],
   "last_actions": [
+    "2026-09-21T19:21:00Z CYCLE: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +7.08% @ $227.46, trail_stop $217.73 unchanged (ratchet: profit ≥5%, max(217.73,217.73)=unchanged). No buy signals. CB INACTIVE (daily +0.21%, weekly +0.21%). BP $221.86. 1 position. Acct $248.63.",
     "2026-09-21T18:21:00Z CYCLE: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +6.98% @ $227.25, trail_stop $217.73 unchanged (ratchet: profit ≥5%, max(217.73,217.73)=unchanged). No buy signals. CB INACTIVE (daily +0.20%, weekly +0.20%). BP $221.86. 1 position. Acct $248.60.",
     "2026-09-21T17:08:00Z CYCLE: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +6.72% @ $226.69, trail_stop $217.73 unchanged (ratchet: profit ≥5%, max(217.73,217.73)=unchanged), take_profit $233.66. No buy signals. CB INACTIVE (daily +0.17%, weekly +0.17%). BP $221.86. 1 position. Acct $248.54.",
     "2026-09-21T16:08:00Z CYCLE: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +6.01% @ $225.18, trail_stop $217.73 unchanged (ratchet max(217.73,217.73)). No buy signals. CB INACTIVE (daily +0.10%, weekly +0.10%). BP $221.86. 1 position. Acct $248.36.",
-    "2026-09-21T15:08:00Z CYCLE: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +6.09% @ $225.35, trail_stop RATCHETED $213.48→$217.73 (profit ≥5%), take_profit $233.66. No buy signals. CB INACTIVE (daily +0.11%, weekly +0.11%). BP $221.86. 1 position. Acct $248.38.",
     "2026-09-15T14:12:31Z SELL SBUX: ATR stop $97.35<=trail $97.85 | -1.70% | held ~24h"
   ]
 }
