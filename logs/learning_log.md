@@ -410,3 +410,12 @@
 - Backtest: SKIPPED — Yahoo Finance proxy-blocked (403) in remote environment; recurring issue; 0 tickers fetchable
 - RL samples: 614/200 (RL READY — 3.07× target; 19 Q-states; run: python -m strategy.rl_agent --train to activate)
 - Notes: Account $247.97 (+0.09% on day), 1 open position (NVDA +4.55% @ $222.08, stop $213.48, TP $233.66). Signal engine still proxy-blocked (yfinance 403) — universe_size=0 on all cycles. RL collector +0 new rows (0 closed trades today). All thresholds unchanged. trim_log kept 5/5 entries.
+
+## 2026-09-21
+- Trades analysed: 0 new closed pairs today (trade log trimmed to last 2 days; 2 cumulative live closed trades: SBUX -1.70%, UUUU -2.89% — both ATR stop-losses, BEARISH EMA entries)
+- Win rate: 0% overall (normal: 0% [n=2, below 5-trade minimum]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BEARISH entry 0% (n=2); BULLISH entry n/a (n=0)
+- Config changes: none — RSI_OVERSOLD: n_trades=2 < 5 required (NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: n<3 for fast-stop analysis (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy blocked (403, recurring, per CLAUDE.md known issue); prior metrics retained (null — backtest never succeeded in this sandbox)
+- RL samples: 614/200 (READY — +0 new rows today; 19 states in Q-table)
+- Notes: Account $248.56 (+$0.45 from $248.11 week-start). NVDA open position +6.98% @ $227.25 (entry $212.42), trail_stop $217.73, take_profit $233.66. Sell queued for NVDA at next open (RSI=77.5, conf=2). Trading enabled. Network access still blocks yfinance/backtest in this sandbox; universe scanned via RH historicals cache (503 tickers). Trade log trimmed: 5 entries remain. Run: python -m strategy.rl_agent --train to activate Q-learning (614 samples, 19 Q-states ready).
