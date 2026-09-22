@@ -1,35 +1,54 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-22T17:26:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. SELL NVDA +8.0% @ $229.40 (RSI=81.7 overbought SELL conf=2, held 190h). BUY JKHY $25 RL BOOST (RSI=25.5 oversold conf=2→3). 5 positions. Circuit breaker inactive (daily -0.02%, weekly +0.21%). Buying power: $96.86. Account: $248.64. Universe: 503. Regime: normal.
+## 2026-09-22T15:28:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. 5/5 max positions held — no new BUYs. No SELL triggers (WFC/LHX/CB/ERIE <3h, NVDA +7.6% above $217.73 trail). 51 RSI BUY signals conf=2 EMA-bearish. 0 net-buy. 0 surge. CB inactive (daily -0.33%, weekly -0.09%). BP $121.86. 5 positions. Acct $247.88. Universe: 503.
 
-## 2026-09-22T17:24:55Z
-- Action   : BUY JKHY
-- Price    : $149.67
-- Amount   : $25.00 | Shares: 0.167030
-- RSI      : 25.5 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | 🤖 RL BOOST (conf 2→3)
-- Stop     : $143.68 | Target: $164.64
+## 2026-09-22T14:25:49Z
+- Action   : BUY WFC
+- Price    : $84.38
+- Amount   : $25.00 | Shares: 0.296270
+- RSI      : 26.09 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $83.74 | Target: $92.82
 - Strategy : normal | Sell date: ATR/signal
 - Regime   : normal
-- Reason   : RSI 25.5 oversold | price below Bollinger Band | RL BOOST confidence 2→3
+- Reason   : RSI=26.09 oversold | BB below band | EMA bearish | 🤖 RL BOOST
 
-## 2026-09-22T17:24:38Z
-- Action   : SELL NVDA
-- Price    : $229.40
-- Amount   : $27.00 | Shares: 0.117692
-- RSI      : 81.7 | EMA: BULLISH | BB: ABOVE_BAND
-- RL       : null conf=null | null
-- Stop     : $217.73 | Target: $233.66
-- Strategy : normal | Sell date: signal exit
+## 2026-09-22T14:25:49Z
+- Action   : BUY LHX
+- Price    : $240.94
+- Amount   : $25.00 | Shares: 0.103760
+- RSI      : 26.73 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $238.99 | Target: $265.03
+- Strategy : normal | Sell date: ATR/signal
 - Regime   : normal
-- Reason   : RSI 81.7 overbought SELL signal conf=2 | held 190h (+8.0% gain) | take-profit signal
+- Reason   : RSI=26.73 oversold | BB below band | EMA bearish | 🤖 RL BOOST
 
-## 2026-09-22T16:24:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. 5/5 max positions held — no new BUYs possible. No SELL triggers: NVDA +7.8% @ $228.89 (trail $217.73, TP $233.66, hold >7d); WFC -0.7% @ $83.79 (trail $83.74, barely safe, <3h); LHX -0.2% @ $240.60 (trail $238.99, <3h); CB +0.1% @ $334.88 (trail $332.96, <3h); ERIE -1.8% @ $227.48 — ATR trail $229.74 triggered but <3h held, skip. 41 RSI BUY signals (conf=2), 0 net-buy, 0 surge. Circuit breaker inactive (daily -0.23%, weekly +0.00%). Trail stops unchanged (no ratchet triggers). Buying power: $121.86. Equity: 5 positions. Regime: normal. Account: $248.22. Universe: 503.
+## 2026-09-22T14:25:49Z
+- Action   : BUY CB
+- Price    : $334.43
+- Amount   : $25.00 | Shares: 0.074750
+- RSI      : 26.95 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $332.96 | Target: $367.87
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI=26.95 oversold | BB below band | EMA bearish | 🤖 RL BOOST
 
-## 2026-09-22T15:28:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. 5/5 max positions held — no new BUYs possible. No SELL triggers (WFC/LHX/CB/ERIE <3h held, NVDA +7.6% above trail_stop $217.73). 51 RSI BUY signals (all conf=2 EMA-bearish), 0 net-buy, 0 surge. Circuit breaker inactive (daily -0.33%, weekly -0.09%). Buying power: $121.86. Equity positions: 5. Regime: normal. Account: $247.88. Universe fetched: 503.
+## 2026-09-22T14:25:49Z
+- Action   : BUY ERIE
+- Price    : $232.25
+- Amount   : $25.00 | Shares: 0.107640
+- RSI      : 27.45 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $229.74 | Target: $255.48
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI=27.45 oversold | BB below band | EMA bearish | 🤖 RL BOOST
+
+## 2026-09-22T14:25:49Z
+- SUMMARY: Market OPEN, in_trade_window=true. Cache scan FIXED: universe_size=503. Regime=normal. Kill switch OK. CB INACTIVE (new day, daily_dd=0%, weekly_dd=-0.23%). NVDA HOLD (RSI=79.53 conf=0, price $228.13 > trail $217.73, below take_profit $233.66, trail unchanged). 4 new BUYs placed: WFC $25 (RSI 26.09 RL BOOST), LHX $25 (RSI 26.73 RL BOOST), CB $25 (RSI 26.95 RL BOOST), ERIE $25 (RSI 27.45 RL BOOST). BP $121.86 est. 5 positions. Acct ~$248.69.
 
 ## 2026-09-21T19:21:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +7.08% @ $227.46, above trail_stop $217.73 (ratchet ≥5%: max(217.73,212.42×1.025=217.73) unchanged), take_profit $233.66. No buy signals (0 tickers scanned). CB INACTIVE (daily +0.21% gain, weekly +0.21% gain). BP $221.86. 1 position. Acct $248.63.
