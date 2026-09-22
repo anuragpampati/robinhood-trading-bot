@@ -1,9 +1,29 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-22T19:24:10Z
-- SUMMARY: Market OPEN, in_trade_window=true. 5/5 max positions — no BUYs possible. No SELL signals on any held position (JKHY HOLD RSI=24.6, LHX BUY RSI=29.4, CB HOLD RSI=40.4, ERIE HOLD RSI=41.7, CMCSA HOLD RSI=23.0). No ATR stops triggered. No take-profits. CB inactive (daily +0.12%, weekly +0.36%). BP $71.86. 5 positions. Acct $249.00. Universe: 503.
-## 2026-09-22T16:24:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. 5/5 max positions held — no new BUYs possible. No SELL triggers: NVDA +7.8% @ $228.89 (trail $217.73, TP $233.66, hold >7d); WFC -0.7% @ $83.79 (trail $83.74, barely safe, <3h); LHX -0.2% @ $240.60 (trail $238.99, <3h); CB +0.1% @ $334.88 (trail $332.96, <3h); ERIE -1.8% @ $227.48 — ATR trail $229.74 triggered but <3h held, skip. 41 RSI BUY signals (conf=2), 0 net-buy, 0 surge. Circuit breaker inactive (daily -0.23%, weekly +0.00%). Trail stops unchanged (no ratchet triggers). Buying power: $121.86. Equity: 5 positions. Regime: normal. Account: $248.22. Universe: 503.
+## 2026-09-22T18:27:27Z
+- Action   : BUY CMCSA
+- Price    : $22.45
+- Amount   : $25.00 | Shares: 1.113586
+- RSI      : 28.1 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $22.073 | Target: $24.695
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI=28.1 oversold+stabilizing | BB reversal returning from band | 🤖 RL BOOST
+
+## 2026-09-22T18:24:44Z
+- Action   : SELL WFC
+- Price    : $83.695
+- Amount   : $24.79 | Shares: 0.296249
+- RSI      : 28.2 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | null
+- Stop     : $83.74 | Target: $92.83
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : ATR trailing stop triggered — price $83.695 ≤ trail_stop $83.74 (held 4.0h ≥ 3h) | P&L: -0.82% (-$0.21)
+
+## 2026-09-22T18:24:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503. SPY RSI=72.56 (no panic). 13 RSI BUY conf=2 (ema BEARISH, all oversold). 4 net-buy. 2 surge (count=1). WFC ATR stop triggered → SELL. 4/5 positions → BUY CMCSA $25 RL BOOST RSI=28.1. BP $96.86. Acct ≈$248.48.
 
 ## 2026-09-22T15:28:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. 5/5 max positions held — no new BUYs. No SELL triggers (WFC/LHX/CB/ERIE <3h, NVDA +7.6% above $217.73 trail). 51 RSI BUY signals conf=2 EMA-bearish. 0 net-buy. 0 surge. CB inactive (daily -0.33%, weekly -0.09%). BP $121.86. 5 positions. Acct $247.88. Universe: 503.
