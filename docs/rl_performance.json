@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-22",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
-  "win_rate": 0.0,
-  "avg_win_pnl": null,
-  "avg_loss_pnl": -0.02295,
-  "risk_reward": null,
-  "total_trades": 2,
-  "wins": 0,
-  "losses": 2,
+  "win_rate": 0.25,
+  "avg_win_pnl": 0.08,
+  "avg_loss_pnl": -0.018,
+  "risk_reward": 4.44,
+  "total_trades": 4,
+  "wins": 1,
+  "losses": 3,
   "circuit_breaker_halts": 0,
-  "rl_training_samples": 614,
+  "rl_training_samples": 616,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — Yahoo Finance network access blocked by environment proxy policy (403, all tickers fail, recurring issue). Config NO_CHANGE: n_trades=2 < 5 minimum for normal strategy threshold adjustment. RL READY (614/200 samples, 19 Q-states). Updated by daily learning CCR"
+  "note": "Updated by daily learning CCR"
 }

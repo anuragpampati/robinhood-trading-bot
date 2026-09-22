@@ -419,3 +419,11 @@
 - Backtest: SKIPPED — Yahoo Finance proxy blocked (403, recurring, per CLAUDE.md known issue); prior metrics retained (null — backtest never succeeded in this sandbox)
 - RL samples: 614/200 (READY — +0 new rows today; 19 states in Q-table)
 - Notes: Account $248.56 (+$0.45 from $248.11 week-start). NVDA open position +6.98% @ $227.25 (entry $212.42), trail_stop $217.73, take_profit $233.66. Sell queued for NVDA at next open (RSI=77.5, conf=2). Trading enabled. Network access still blocks yfinance/backtest in this sandbox; universe scanned via RH historicals cache (503 tickers). Trade log trimmed: 5 entries remain. Run: python -m strategy.rl_agent --train to activate Q-learning (614 samples, 19 Q-states ready).
+
+## 2026-09-22
+- Trades analysed: 4 total (SBUX -1.70% ATR-stop/normal/BEARISH EMA; UUUU -2.89% ATR-stop/normal/BEARISH EMA; WFC -0.82% ATR-stop/normal/BEARISH EMA 4h; NVDA +8.0% RSI-sell/normal 190h)
+- Win rate: 25% overall (normal: 25% [n=4, below 5-trade minimum]; momentum: n/a [n=0]; surge: n/a [n=0]); BEARISH EMA 25% (n=4); BULLISH EMA n/a (n=0)
+- Config changes: none — RSI_OVERSOLD: n=4 < 5 required (NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~60h >> 2h threshold (NO_CHANGE)
+- Backtest: SKIPPED (NO_CHANGE — no threshold adjustments to validate)
+- RL samples: 616/200 (RL READY — +2 new rows from rl_collector; 19 Q-states; run: python -m strategy.rl_agent --train)
+- Notes: Account $248.86, 5 open positions (JKHY/LHX/CB/ERIE/CMCSA all normal/BEARISH EMA entries today). NVDA closed +8.0% via RSI sell signal (190h held). WFC stopped out via ATR trail -0.82% (4h held). Kill switch OK. universe_size=503 (cache-fixed). trim_log kept 14/14 entries.
