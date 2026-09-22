@@ -1,5 +1,30 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-22T17:26:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. SELL NVDA +8.0% @ $229.40 (RSI=81.7 overbought SELL conf=2, held 190h). BUY JKHY $25 RL BOOST (RSI=25.5 oversold conf=2→3). 5 positions. Circuit breaker inactive (daily -0.02%, weekly +0.21%). Buying power: $96.86. Account: $248.64. Universe: 503. Regime: normal.
+
+## 2026-09-22T17:24:55Z
+- Action   : BUY JKHY
+- Price    : $149.67
+- Amount   : $25.00 | Shares: 0.167030
+- RSI      : 25.5 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | 🤖 RL BOOST (conf 2→3)
+- Stop     : $143.68 | Target: $164.64
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI 25.5 oversold | price below Bollinger Band | RL BOOST confidence 2→3
+
+## 2026-09-22T17:24:38Z
+- Action   : SELL NVDA
+- Price    : $229.40
+- Amount   : $27.00 | Shares: 0.117692
+- RSI      : 81.7 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $217.73 | Target: $233.66
+- Strategy : normal | Sell date: signal exit
+- Regime   : normal
+- Reason   : RSI 81.7 overbought SELL signal conf=2 | held 190h (+8.0% gain) | take-profit signal
+
 ## 2026-09-22T16:24:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. 5/5 max positions held — no new BUYs possible. No SELL triggers: NVDA +7.8% @ $228.89 (trail $217.73, TP $233.66, hold >7d); WFC -0.7% @ $83.79 (trail $83.74, barely safe, <3h); LHX -0.2% @ $240.60 (trail $238.99, <3h); CB +0.1% @ $334.88 (trail $332.96, <3h); ERIE -1.8% @ $227.48 — ATR trail $229.74 triggered but <3h held, skip. 41 RSI BUY signals (conf=2), 0 net-buy, 0 surge. Circuit breaker inactive (daily -0.23%, weekly +0.00%). Trail stops unchanged (no ratchet triggers). Buying power: $121.86. Equity: 5 positions. Regime: normal. Account: $248.22. Universe: 503.
 
