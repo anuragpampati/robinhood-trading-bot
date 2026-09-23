@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-23T14:29:30Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=546 cached (503 in signals). SPY RSI=52.9 (no panic). SELL ERIE (net_buy_sell signal, 24h held). No BUYs: all conf=2 BUY signals have EMA=BEARISH — blocked by regime filter B (need conf=3). 4 positions after sell. CB circuit breaker OK (daily 0.0%, weekly -0.25%). Acct $248.74.
+
+## 2026-09-23T14:29:08Z
+- Action   : SELL ERIE
+- Price    : ~$232.55
+- Amount   : ~$25.09 | Shares: 0.107890
+- RSI      : 39.2 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $229.74 | Target: $254.89
+- Strategy : normal | Sell date: signal
+- Regime   : normal
+- Reason   : net_buy_sell signal — net buy reversed 0.08M→0.00M | OBV -0.1M/day | 24h held ≥ 3h | P&L: ~+0.36%
+
 ## 2026-09-22T18:27:27Z
 - Action   : BUY CMCSA
 - Price    : $22.45
