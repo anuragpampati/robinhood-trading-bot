@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-23T15:28:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY above 200-EMA). Universe=503 symbols. SPY RSI=73.15 BULLISH. No SELLs triggered on held positions (JKHY/LHX/CB/CMCSA all above trail stops, no SELL signals). BUY PGR $25 (RL BOOST conf 2→3). 5 positions after buy. CB circuit breaker OK (daily ~0%, weekly -0.25%). Acct ~$248.74.
+
+## 2026-09-23T15:27:34Z
+- Action   : BUY PGR
+- Price    : $206.17
+- Amount   : $25.00 | Shares: ~0.12125
+- RSI      : 27.9 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $202.71 | Target: $226.79
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI=27.9 oversold+stabilizing (24.7→27.9) | BB reversal 0.12→0.20 returning from band | 🤖 RL BOOST
+
 ## 2026-09-23T14:29:30Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=546 cached (503 in signals). SPY RSI=52.9 (no panic). SELL ERIE (net_buy_sell signal, 24h held). No BUYs: all conf=2 BUY signals have EMA=BEARISH — blocked by regime filter B (need conf=3). 4 positions after sell. CB circuit breaker OK (daily 0.0%, weekly -0.25%). Acct $248.74.
 
