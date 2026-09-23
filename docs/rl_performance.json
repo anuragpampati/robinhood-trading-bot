@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-22",
+  "updated_at": "2026-09-23",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
-  "win_rate": 0.25,
-  "avg_win_pnl": 0.08,
-  "avg_loss_pnl": -0.018,
-  "risk_reward": 4.44,
-  "total_trades": 4,
+  "win_rate": 0.50,
+  "avg_win_pnl": 0.0065,
+  "avg_loss_pnl": -0.0082,
+  "risk_reward": 0.79,
+  "total_trades": 2,
   "wins": 1,
-  "losses": 3,
+  "losses": 1,
   "circuit_breaker_halts": 0,
-  "rl_training_samples": 616,
+  "rl_training_samples": 617,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR"
+  "note": "Updated by daily learning CCR — backtest skipped (yfinance blocked in sandbox); live trade metrics from 2 closed trades in trade_log.md"
 }

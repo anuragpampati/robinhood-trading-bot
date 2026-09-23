@@ -427,3 +427,11 @@
 - Backtest: SKIPPED (NO_CHANGE — no threshold adjustments to validate)
 - RL samples: 616/200 (RL READY — +2 new rows from rl_collector; 19 Q-states; run: python -m strategy.rl_agent --train)
 - Notes: Account $248.86, 5 open positions (JKHY/LHX/CB/ERIE/CMCSA all normal/BEARISH EMA entries today). NVDA closed +8.0% via RSI sell signal (190h held). WFC stopped out via ATR trail -0.82% (4h held). Kill switch OK. universe_size=503 (cache-fixed). trim_log kept 14/14 entries.
+
+## 2026-09-23
+- Trades analysed: 2 (WFC: -0.82% stop, CB: +0.65% signal-sell)
+- Win rate: 50% overall (normal: 50%, momentum: n/a — <3 trades, momentum not wired, surge: n/a)
+- Config changes: none (n=2 closed trades — below n≥5 for normal, n≥3 for momentum; NO_CHANGE)
+- Backtest: skipped — yfinance/proxy blocked in sandbox (known limitation); using live trade metrics
+- RL samples: 617/200 (already past target — retrain recommended when stale data purged)
+- Notes: 5/5 positions full (JKHY, LHX, CMCSA, PGR, AXP). RL table at 19 states unchanged. Backtest blocked by yfinance proxy restriction; prior known result from 2026-09-22 preserved. +1 new RL row added this cycle.

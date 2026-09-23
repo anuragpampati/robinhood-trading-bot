@@ -614,3 +614,4 @@
 {"trade_id": "SBUX|2026-09-14T14:11:46Z|LIVE|HOLD", "timestamp": "2026-09-14T14:11:46Z", "ticker": "SBUX", "action": "HOLD", "price": 99.04, "obs": {"rsi": 26.75, "ema_trend": "BEARISH", "atr_pct": 0.006, "regime": "normal"}, "reward": 0.0}
 {"trade_id": "WFC|2026-09-22T14:25:49Z|LIVE", "timestamp": "2026-09-22T14:25:49Z", "ticker": "WFC", "action": "BUY", "price": 84.38, "obs": {"rsi": 26.09, "ema_trend": "BEARISH", "atr_pct": 0.0038, "regime": "normal"}, "reward": -0.8118}
 {"trade_id": "WFC|2026-09-22T14:25:49Z|LIVE|HOLD", "timestamp": "2026-09-22T14:25:49Z", "ticker": "WFC", "action": "HOLD", "price": 84.38, "obs": {"rsi": 26.09, "ema_trend": "BEARISH", "atr_pct": 0.0038, "regime": "normal"}, "reward": 0.0}
+{"trade_id": "CB|2026-09-22T14:25:49Z|LIVE", "timestamp": "2026-09-22T14:25:49Z", "ticker": "CB", "action": "BUY", "price": 334.43, "obs": {"rsi": 26.95, "ema_trend": "BEARISH", "atr_pct": 0.0022, "regime": "normal"}, "reward": 0.7057}
