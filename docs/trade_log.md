@@ -1,5 +1,30 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-23T16:14:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503 (S&P500 snapshot). SPY RSI=50.5. CB net_buy_sell triggered → SELL +0.65%. AXP RL BOOST RSI=26.4 → BUY $25. 5 positions. CB=$73.66 buying power. Acct $248.58.
+
+## 2026-09-23T16:12:50Z
+- Action   : BUY AXP
+- Price    : $302.89
+- Amount   : $25.00 | Shares: 0.082530
+- RSI      : 26.4 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $300.53 | Target: $333.18
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI=26.4 oversold+stabilizing | BB reversal: 0.15→0.19 (returning from band) | 🤖 RL BOOST
+
+## 2026-09-23T16:12:11Z
+- Action   : SELL CB
+- Price    : $336.79
+- Amount   : $25.15 | Shares: 0.074713
+- RSI      : 43.0 | EMA: BEARISH | BB: IN_BAND
+- RL       : null conf=null | null
+- Stop     : $332.96 | Target: $368.07
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net buy reversed: 0.06M → -0.10M | OBV -0.2M/day (25.7h held) | P&L: +0.65% (+$0.16)
+
 ## 2026-09-22T18:27:27Z
 - Action   : BUY CMCSA
 - Price    : $22.45
