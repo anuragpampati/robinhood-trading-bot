@@ -1,5 +1,52 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-24T15:20:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503 (S&P500 snapshot, 546 cached). SELLs: PGR −2.17% ATR trail stop; AXP −0.80% ATR trail stop. BUYs: CNP $25 RL BOOST; MDT $25 RL BOOST. 5 positions. BP≈$73.63. Acct≈$247.02. Peak $249.00. Circuit breaker OK (daily 0%, weekly −0.44%).
+
+## 2026-09-24T15:15:17Z
+- Action   : BUY MDT
+- Price    : $89.24
+- Amount   : $25.00 | Shares: 0.280140
+- RSI      : 26.4 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $88.01 | Target: $98.16
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI=26.4 oversold+stabilizing (24.3↑26.4) | BB reversal: −0.07→0.08 (returning from band) | 🤖 RL BOOST
+
+## 2026-09-24T15:15:16Z
+- Action   : BUY CNP
+- Price    : $36.93
+- Amount   : $25.00 | Shares: 0.676950
+- RSI      : 25.6 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $36.57 | Target: $40.62
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI=25.6 oversold+stabilizing (22.8↑25.6) | BB reversal: 0.09→0.12 (returning from band) | 🤖 RL BOOST
+
+## 2026-09-24T15:07:17Z
+- Action   : SELL AXP
+- Price    : $300.50
+- Amount   : $24.80 | Shares: 0.082532
+- RSI      : 25.5 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | null
+- Stop     : $300.53 | Target: $333.20
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : ATR trailing stop triggered ($300.50 ≤ trail $300.53) | −0.80% from entry $302.91 | 22.9h held
+
+## 2026-09-24T15:07:16Z
+- Action   : SELL PGR
+- Price    : $201.80
+- Amount   : $24.46 | Shares: 0.121200
+- RSI      : 20.2 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.930 | null
+- Stop     : $202.71 | Target: $226.90
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : ATR trailing stop triggered ($201.80 ≤ trail $202.71) | −2.17% from entry $206.27 | 23.6h held
+
 ## 2026-09-24T14:09:13Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY $766.03 above 200-EMA $763.50). Universe=546 cached (503 in signals). No SELLs triggered (JKHY −0.79% above trail $143.68; LHX +0.26% above trail $238.99; CMCSA −1.14% above trail $22.073; PGR −1.23% above trail $202.71; AXP +0.11% above trail $300.53). No BUYs: 5/5 positions at max. Circuit breaker OK (new day — daily reset 0.0%, weekly −0.08%). BP=$123.63. Acct $247.90. Peak $249.00. 33 RSI BUY signals found (all conf=2, none actionable at max positions).
 
