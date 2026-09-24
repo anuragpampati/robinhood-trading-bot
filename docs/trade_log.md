@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-24T16:21:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503 (RH historicals cache, 546 symbols fetched). SELL JKHY net_buy_sell signal (−1.51%, ~47h held). No BUYs: BP=$73.63, after $50 buffer only $23.63 available (< $25 standard min). 4 positions. BP≈$73.63. Acct≈$247.14. Peak $249.00. Circuit breaker OK (daily +0.05%, weekly −0.39%).
+
+## 2026-09-24T16:20:46Z
+- Action   : SELL JKHY
+- Price    : $147.41
+- Amount   : $24.62 | Shares: 0.167030
+- RSI      : 24.78 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.936 | null
+- Stop     : $143.68 | Target: $164.64
+- Strategy : normal | Sell date: net_buy_sell signal
+- Regime   : normal
+- Reason   : Net buy reversed: 0.02M → -0.04M | OBV -0.3M/day | 47h held | -1.51% loss
+
 ## 2026-09-24T15:20:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503 (S&P500 snapshot, 546 cached). SELLs: PGR −2.17% ATR trail stop; AXP −0.80% ATR trail stop. BUYs: CNP $25 RL BOOST; MDT $25 RL BOOST. 5 positions. BP≈$73.63. Acct≈$247.02. Peak $249.00. Circuit breaker OK (daily 0%, weekly −0.44%).
 
