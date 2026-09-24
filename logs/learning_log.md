@@ -435,3 +435,11 @@
 - Backtest: skipped — yfinance/proxy blocked in sandbox (known limitation); using live trade metrics
 - RL samples: 617/200 (already past target — retrain recommended when stale data purged)
 - Notes: 5/5 positions full (JKHY, LHX, CMCSA, PGR, AXP). RL table at 19 states unchanged. Backtest blocked by yfinance proxy restriction; prior known result from 2026-09-22 preserved. +1 new RL row added this cycle.
+
+## 2026-09-24
+- Trades analysed: 5 closed (WFC, CB, ERIE, CMCSA, JKHY)
+- Win rate: 40% overall (normal: 40% [2W/3L], momentum: n/a [0 trades], surge: n/a [0 trades])
+- Config changes: none (win_rate=40% exactly at threshold, not <40%; no momentum data; avg_hold=29.5h not <2h)
+- Backtest: SKIPPED — yfinance blocked in cloud sandbox (known network restriction)
+- RL samples: 617/200 (target exceeded — RL READY)
+- Notes: All 5 recent trades used normal strategy with EMA=BEARISH entries (RSI 26–28). 2 wins via net_buy_sell exits (+0.65%, +0.36%); 3 losses via stop/net_buy_sell (−0.82%, −1.58%, −1.51%). LHX/CNP/MDT still open. LHX near ATR trail stop — flagged for sell on next open. Acct=$246.51, BP=$73.63, trading_enabled=true.
