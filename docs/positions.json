@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-24T16:21:00Z",
+  "updated_at": "2026-09-24T17:13:00Z",
   "buying_power": 73.63,
   "market_regime": "normal",
-  "account_value": 247.14,
+  "account_value": 246.99,
   "peak_value": 249.00,
   "day_start_value": 247.02,
   "day_start_date": "2026-09-24",
@@ -17,9 +17,9 @@
       "ticker": "LHX",
       "quantity": 0.103708,
       "avg_cost": 241.06,
-      "current_price": 239.82,
-      "pnl_pct": -0.0051,
-      "value": 24.87,
+      "current_price": 240.24,
+      "pnl_pct": -0.0034,
+      "value": 24.91,
       "entry_atr_pct": 0.007,
       "entry_time": "2026-09-22T14:25:48Z",
       "trail_stop": 238.99,
@@ -28,26 +28,12 @@
       "sell_date": null
     },
     {
-      "ticker": "CMCSA",
-      "quantity": 1.113094,
-      "avg_cost": 22.46,
-      "current_price": 22.08,
-      "pnl_pct": -0.0169,
-      "value": 24.58,
-      "entry_atr_pct": 0.0093,
-      "entry_time": "2026-09-22T18:27:27Z",
-      "trail_stop": 22.073,
-      "take_profit": 24.71,
-      "strategy": "normal",
-      "sell_date": null
-    },
-    {
       "ticker": "CNP",
       "quantity": 0.676824,
       "avg_cost": 36.94,
-      "current_price": 37.01,
-      "pnl_pct": 0.0019,
-      "value": 25.05,
+      "current_price": 37.065,
+      "pnl_pct": 0.0034,
+      "value": 25.09,
       "entry_atr_pct": 0.0049,
       "entry_time": "2026-09-24T15:15:16Z",
       "trail_stop": 36.57,
@@ -59,9 +45,9 @@
       "ticker": "MDT",
       "quantity": 0.280112,
       "avg_cost": 89.25,
-      "current_price": 89.24,
-      "pnl_pct": -0.0001,
-      "value": 25.0,
+      "current_price": 88.95,
+      "pnl_pct": -0.0034,
+      "value": 24.90,
       "entry_atr_pct": 0.0069,
       "entry_time": "2026-09-24T15:15:17Z",
       "trail_stop": 88.01,
@@ -71,10 +57,10 @@
     }
   ],
   "last_actions": [
+    "2026-09-24T17:13:00Z CYCLE: SELL CMCSA $22.10 net_buy_sell (−1.58%, 47h). No BUYs (BP $73.63, buffer $50, only $23.63 avail). 3 positions. Regime=normal. Acct≈$246.99. BP≈$73.63.",
     "2026-09-24T16:21:00Z CYCLE: SELL JKHY $147.41 net_buy_sell (−1.51%, 47h). No BUYs (BP $73.63, buffer $50, only $23.63 avail). 4 positions. Regime=normal. Acct≈$247.14. BP≈$73.63.",
     "2026-09-24T15:20:00Z CYCLE: SELL PGR $201.80 ATR trail stop (−2.17%, 23.6h). SELL AXP $300.50 ATR trail stop (−0.80%, 22.9h). BUY CNP $25 RL BOOST RSI=25.6 conf 2→3. BUY MDT $25 RL BOOST RSI=26.4 conf 2→3. 5 positions. Regime=normal. Acct≈$247.02. BP≈$73.63.",
     "2026-09-24T14:09:13Z CYCLE: Market OPEN, in_trade_window. No trades. 5/5 max positions. No SELLs triggered. 33 RSI BUY signals found (all conf=2). Regime=normal. Acct $247.90. BP $123.63.",
-    "2026-09-23T19:12:00Z CYCLE: Market OPEN, in_trade_window. No trades. 5/5 max positions. No SELLs triggered. No BUYs available (0 RSI BUY signals). Regime=normal. Acct $248.32. BP $73.66.",
-    "2026-09-23T18:10:56Z CYCLE: Market OPEN, in_trade_window. No trades. 5/5 max positions. No SELLs triggered. No BUYs available. Regime=normal. Acct $248.55. BP $73.66."
+    "2026-09-23T19:12:00Z CYCLE: Market OPEN, in_trade_window. No trades. 5/5 max positions. No SELLs triggered. No BUYs available (0 RSI BUY signals). Regime=normal. Acct $248.32. BP $73.66."
   ]
 }

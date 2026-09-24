@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-24T17:13:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503 (RH historicals cache, 546 symbols fetched). SELL CMCSA net_buy_sell signal (−1.58%, ~47h held). No BUYs: BP=$73.63, after $50 buffer only $23.63 available (< $25 MODERATE BUY min). 3 positions. BP≈$73.63. Acct≈$246.99. Peak $249.00. Circuit breaker OK (daily −0.01%, weekly −0.45%).
+
+## 2026-09-24T17:12:41Z
+- Action   : SELL CMCSA
+- Price    : $22.10
+- Amount   : $24.60 | Shares: 1.113094
+- RSI      : 25.85 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.906 | null
+- Stop     : $22.07 | Target: $24.71
+- Strategy : normal | Sell date: net_buy_sell signal
+- Regime   : normal
+- Reason   : Net buy reversed: 2.20M → -2.59M | OBV -0.7M/day | ~47h held | -1.58% loss
+
 ## 2026-09-24T16:21:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503 (RH historicals cache, 546 symbols fetched). SELL JKHY net_buy_sell signal (−1.51%, ~47h held). No BUYs: BP=$73.63, after $50 buffer only $23.63 available (< $25 standard min). 4 positions. BP≈$73.63. Acct≈$247.14. Peak $249.00. Circuit breaker OK (daily +0.05%, weekly −0.39%).
 
