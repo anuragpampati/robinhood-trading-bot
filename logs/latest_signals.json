@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-25T21:59:11.380131+00:00",
+  "timestamp": "2026-09-25T23:00:42.852004+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7904,15 +7904,6 @@
     }
   ],
   "surge_signals": [
-    {
-      "ticker": "MMM",
-      "price": 169.5500030517578,
-      "buy_surge_pct": 6.5886,
-      "buy_vol_d2": 181090,
-      "buy_vol_d3": 1374214,
-      "net_buy_d3": 232267,
-      "reason": "Buy vol \u2191658.9% vs prior day | 1d streak | latest 0.23M | OBV 1.3M/day"
-    },
     {
       "ticker": "AOS",
       "price": 58.650001525878906,
