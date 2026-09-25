@@ -443,3 +443,11 @@
 - Backtest: SKIPPED — yfinance blocked in cloud sandbox (known network restriction)
 - RL samples: 617/200 (target exceeded — RL READY)
 - Notes: All 5 recent trades used normal strategy with EMA=BEARISH entries (RSI 26–28). 2 wins via net_buy_sell exits (+0.65%, +0.36%); 3 losses via stop/net_buy_sell (−0.82%, −1.58%, −1.51%). LHX/CNP/MDT still open. LHX near ATR trail stop — flagged for sell on next open. Acct=$246.51, BP=$73.63, trading_enabled=true.
+
+## 2026-09-25
+- Trades analysed: 5 (closed: MDT/CNP/LHX via ATR stop, CB/ERIE via signal-sell)
+- Win rate: 40% overall (normal: 40%, momentum: n/a — 0 trades, surge: n/a — 0 trades)
+- Config changes: none (normal win_rate=0.40 is exactly at threshold, not below; momentum n<3; ATR avg_hold=33.5h not fast-stopped)
+- Backtest: SKIPPED — yfinance/Yahoo Finance blocked in CCR sandbox (403, known issue per CLAUDE.md)
+- RL samples: 617/200 (PAST TARGET — RL READY)
+- Notes: All 5 closed trades were normal strategy, EMA=BEARISH. Stops at -1.93%/-1.05%/-1.25%; signal exits at +0.65%/+0.36%. 5 open positions (CTSH/PNR/INVH/VICI/FFIV) all within 3h of entry today.

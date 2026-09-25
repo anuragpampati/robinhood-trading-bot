@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-24",
+  "updated_at": "2026-09-25",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
   "win_rate": 0.40,
-  "avg_win_pnl": 0.505,
-  "avg_loss_pnl": -1.303,
-  "risk_reward": 0.388,
+  "avg_win_pnl": 0.005,
+  "avg_loss_pnl": -0.014,
+  "risk_reward": 0.36,
   "total_trades": 5,
   "wins": 2,
   "losses": 3,
@@ -14,5 +14,5 @@
   "rl_training_samples": 617,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR. Backtest skipped — yfinance blocked in cloud sandbox (known issue). Trade analysis from last 30 log entries (5 closed trades: WFC −0.82% stop, CB +0.65% net_buy_sell, ERIE +0.36% net_buy_sell, CMCSA −1.58% net_buy_sell, JKHY −1.51% net_buy_sell). Win rate 40% exactly at threshold — no config changes. All entries EMA=BEARISH. No momentum trades in sample."
+  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). Metrics derived from real closed trades in logs/trade_log.md. NO_CHANGE to config thresholds (normal win_rate=40% exactly at threshold, avg_hold=33.5h not fast-stopped). Updated by daily learning CCR"
 }
