@@ -1,11 +1,18 @@
 {
-  "updated_at": "2026-09-25T15:11:47Z",
+<<<<<<< Updated upstream
+  "updated_at": "2026-09-23T18:10:56Z",
+  "buying_power": 73.66,
+  "market_regime": "normal",
+  "account_value": 248.55,
+=======
+  "updated_at": "2026-09-25T16:13:00Z",
   "buying_power": 50.00,
   "market_regime": "normal",
-  "account_value": 246.50,
+  "account_value": 246.76,
+>>>>>>> Stashed changes
   "peak_value": 249.00,
-  "day_start_value": 246.05,
-  "day_start_date": "2026-09-25",
+  "day_start_value": 248.74,
+  "day_start_date": "2026-09-23",
   "week_start_value": 248.11,
   "week_start_date": "2026-09-22",
   "trading_enabled": true,
@@ -14,81 +21,154 @@
   "disabled_reason": null,
   "positions": [
     {
+<<<<<<< Updated upstream
+      "ticker": "JKHY",
+      "quantity": 0.167030,
+      "avg_cost": 149.67,
+      "current_price": 148.35,
+      "pnl_pct": -0.0088,
+      "value": 24.78,
+      "entry_atr_pct": 0.0085,
+      "entry_time": "2026-09-22T17:24:55Z",
+      "trail_stop": 143.68,
+      "take_profit": 164.64,
+=======
       "ticker": "CTSH",
-      "quantity": 0.4344,
+      "quantity": 0.434405,
       "avg_cost": 57.55,
-      "current_price": 58.135,
-      "pnl_pct": 0.0102,
-      "value": 25.25,
+      "current_price": 57.93,
+      "pnl_pct": 0.0066,
+      "value": 25.17,
       "entry_atr_pct": 0.0089,
       "entry_time": "2026-09-25T14:13:24Z",
       "trail_stop": 56.49,
-      "take_profit": 63.31,
+      "take_profit": 63.30,
+>>>>>>> Stashed changes
       "strategy": "normal",
       "sell_date": null
     },
     {
+<<<<<<< Updated upstream
+      "ticker": "LHX",
+      "quantity": 0.103708,
+      "avg_cost": 241.06,
+      "current_price": 240.375,
+      "pnl_pct": -0.0028,
+      "value": 24.92,
+      "entry_atr_pct": 0.007,
+      "entry_time": "2026-09-22T14:25:48Z",
+      "trail_stop": 238.99,
+      "take_profit": 265.17,
+=======
       "ticker": "PNR",
-      "quantity": 0.4701,
+      "quantity": 0.470101,
       "avg_cost": 53.18,
-      "current_price": 53.58,
-      "pnl_pct": 0.0075,
-      "value": 25.19,
+      "current_price": 54.045,
+      "pnl_pct": 0.0163,
+      "value": 25.40,
       "entry_atr_pct": 0.0091,
       "entry_time": "2026-09-25T14:13:25Z",
       "trail_stop": 52.19,
       "take_profit": 58.50,
+>>>>>>> Stashed changes
       "strategy": "normal",
       "sell_date": null
     },
     {
+<<<<<<< Updated upstream
+      "ticker": "CMCSA",
+      "quantity": 1.113094,
+      "avg_cost": 22.46,
+      "current_price": 22.76,
+      "pnl_pct": 0.0134,
+      "value": 25.34,
+      "entry_atr_pct": 0.0093,
+      "entry_time": "2026-09-22T18:27:27Z",
+      "trail_stop": 22.073,
+      "take_profit": 24.71,
+=======
       "ticker": "INVH",
-      "quantity": 0.9502,
+      "quantity": 0.950212,
       "avg_cost": 26.31,
-      "current_price": 26.31,
-      "pnl_pct": 0.0,
-      "value": 25.00,
+      "current_price": 26.345,
+      "pnl_pct": 0.0013,
+      "value": 25.03,
       "entry_atr_pct": 0.0054,
       "entry_time": "2026-09-25T14:13:27Z",
       "trail_stop": 26.02,
       "take_profit": 28.94,
+>>>>>>> Stashed changes
       "strategy": "normal",
       "sell_date": null
     },
     {
+<<<<<<< Updated upstream
+      "ticker": "PGR",
+      "quantity": 0.121200,
+      "avg_cost": 206.27,
+      "current_price": 205.225,
+      "pnl_pct": -0.0051,
+      "value": 24.87,
+      "entry_atr_pct": 0.0084,
+      "entry_time": "2026-09-23T15:27:34Z",
+      "trail_stop": 202.71,
+      "take_profit": 226.90,
+=======
       "ticker": "VICI",
-      "quantity": 1.0749,
+      "quantity": 1.074875,
       "avg_cost": 23.26,
-      "current_price": 23.27,
-      "pnl_pct": 0.0004,
-      "value": 25.01,
+      "current_price": 23.345,
+      "pnl_pct": 0.0037,
+      "value": 25.09,
       "entry_atr_pct": 0.0055,
       "entry_time": "2026-09-25T14:13:28Z",
       "trail_stop": 23.00,
       "take_profit": 25.59,
+>>>>>>> Stashed changes
       "strategy": "normal",
       "sell_date": null
     },
     {
+<<<<<<< Updated upstream
+      "ticker": "AXP",
+      "quantity": 0.082532,
+      "avg_cost": 302.91,
+      "current_price": 302.96,
+      "pnl_pct": 0.0002,
+      "value": 25.01,
+      "entry_atr_pct": 0.0039,
+      "entry_time": "2026-09-23T16:12:50Z",
+      "trail_stop": 300.53,
+      "take_profit": 333.20,
+=======
       "ticker": "FFIV",
-      "quantity": 0.0494,
-      "avg_cost": 447.51,
-      "current_price": 447.51,
-      "pnl_pct": 0.0,
-      "value": 22.11,
+      "quantity": 0.049355,
+      "avg_cost": 447.98,
+      "current_price": 447.73,
+      "pnl_pct": -0.0006,
+      "value": 22.10,
       "entry_atr_pct": 0.0104,
       "entry_time": "2026-09-25T15:11:47Z",
       "trail_stop": 438.20,
-      "take_profit": 492.26,
+      "take_profit": 492.78,
+>>>>>>> Stashed changes
       "strategy": "normal",
       "sell_date": null
     }
   ],
   "last_actions": [
+<<<<<<< Updated upstream
+    "2026-09-23T18:10:56Z CYCLE: Market OPEN, in_trade_window. No trades. 5/5 max positions. No SELLs triggered. No BUYs available. Regime=normal. Acct $248.55. BP $73.66.",
+    "2026-09-23T17:10:21Z CYCLE: Market OPEN, in_trade_window. No trades. 5/5 max positions. No SELLs triggered. No conf=3 signals. Regime=normal. Acct $248.60. BP $73.66.",
+    "2026-09-23T16:14:00Z SELL CB +0.65% @$336.79 (net_buy_sell reversed 0.06M→-0.10M OBV-0.2M/day, 25.7h held). BUY AXP $25 RL BOOST RSI=26.4 conf 2→3. 5 positions. Acct $248.58. BP $73.66.",
+    "2026-09-23T15:27:34Z BUY PGR $25 RL BOOST RSI=27.9 conf 2→3. 5 positions. Acct ~$248.74.",
+    "2026-09-23T14:29:08Z SELL ERIE +0.36% ~$232.55 (net_buy_sell signal: net buy reversed 0.08M→0.00M | OBV -0.1M/day, 24h held). 4 positions. No BUYs (all conf=2 EMA-bearish, blocked by regime filter B). Acct $248.74."
+=======
+    "2026-09-25T16:13:00Z CYCLE: Market OPEN in_trade_window. 5 positions at max. No SELLs (<3h hold, no stops/TP). No BUYs (max). Regime=normal. CB: daily +0.29%/weekly -0.54% (OK). Surge: FFIV/MSFT count=1 (need 2). Acct=$246.76. BP=$50.00.",
     "2026-09-25T15:11:47Z CYCLE: No SELLs (4 pos < 3h, no TP). BUY FFIV $22.11 (RL BOOST conf→3, BB below band). 5 positions. Regime=normal. CB: daily +0.18%/weekly -0.65% (OK). Acct≈$246.50. BP=$50.00.",
     "2026-09-25T14:13:28Z CYCLE: SELL LHX/CNP/MDT (ATR trail stop). BUY CTSH/PNR/INVH/VICI $25 each (RSI oversold, RL BOOST conf→3). 4 positions. Regime=normal. CB: daily 0.0%/weekly -0.83% (OK). Acct≈$246.05. BP=$72.11.",
     "2026-09-24T20:10:41Z CYCLE: Market CLOSED. Universe=503. Regime=normal. LHX below ATR trail stop $238.99 (@$238.055) — sell on next open. CNP/MDT stops OK. No trades. CB: daily -0.21%/weekly -0.64% (OK). Acct=$246.51. BP=$73.63.",
-    "2026-09-24T19:12:30Z CYCLE: Market OPEN, in_trade_window. No SELLs (LHX/CNP/MDT not in SELL signals, ATR stops OK). No BUYs (all 546 RSI HOLD — low vol on current bar). Regime=normal. Acct≈$246.90. BP≈$73.63.",
-    "2026-09-24T18:12:00Z CYCLE: Market OPEN, in_trade_window. No SELLs (LHX/CNP/MDT not in SELL signals, ATR stops OK). No BUYs (BP $73.63, buffer $50, only $23.63 avail). 18 RSI BUY signals conf=2, 4 RL-boosted but still unaffordable. Regime=normal. Acct≈$246.98. BP≈$73.63."
+    "2026-09-24T19:12:30Z CYCLE: Market OPEN, in_trade_window. No SELLs (LHX/CNP/MDT not in SELL signals, ATR stops OK). No BUYs (all 546 RSI HOLD — low vol on current bar). Regime=normal. Acct≈$246.90. BP≈$73.63."
+>>>>>>> Stashed changes
   ]
 }
