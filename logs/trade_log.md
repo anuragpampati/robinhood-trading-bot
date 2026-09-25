@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-25T15:11:47Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY RSI=52.8, EMA=BULLISH). Universe=503 (RH historicals cache). No SELLs (4 positions < 3h, no TP). BUY FFIV $22.11 (RL BOOST conf→3). 5 positions. CB: daily +0.18%/weekly -0.65% (OK). BP=$50.00 (after). Acct≈$246.50. Peak=$249.00.
+
+## 2026-09-25T15:11:47Z
+- Action   : BUY FFIV
+- Price    : $447.51
+- Amount   : $22.11 | Shares: 0.0494
+- RSI      : 48.7 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.974 | RL BOOST (conf 2→3)
+- Stop     : $438.20 | Target: $492.26
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RL BOOST conf 2→3 | BB below lower band | EMA bullish
+
 ## 2026-09-25T14:13:28Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY RSI=48.8, EMA=NEUTRAL). Universe=546 (RH historicals cache). Sells: LHX/CNP/MDT (ATR trail stop). Buys: CTSH/PNR/INVH/VICI (RSI oversold, RL BOOST). CB: daily 0.0%/weekly −0.83% (OK). BP=$72.11 (after). Acct≈$246.05. Peak=$249.00.
 
