@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-28T18:13:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY BULLISH above 200-EMA). No SELLs (all 5 ATR stops safe: PNR $53.23>$52.19, INVH $26.54>$26.02, VICI $23.29>$23.00, CRM $228.85>$226.51, REGN $754.11>$753.28; no SELL signals for any held positions). No BUYs (5/5 max positions). CB: daily 0.20%/weekly 0.20% (OK). RSI BUY candidates skipped (max positions): CRM(conf2,RL-BUY→3), TSLA(conf2,RL-BUY→3), NFLX(conf2,RL-BUY→3), REGN(conf2,RL-HOLD), +16 more. Surge: WAT 33.9% count=1 (need 2). Universe=503. 5 positions (PNR:+0.09%@$53.23, INVH:+0.86%@$26.54, VICI:+0.11%@$23.29, CRM:-0.08%@$228.85, REGN:-1.05%@$754.11). BP=$68.48. Acct=$244.94.
+
 ## 2026-09-28T17:12:28Z
 - SUMMARY: Market OPEN, in_trade_window=true. No SELLs (all 5 positions above ATR stops; all signals HOLD; no TP hit). No BUYs (5/5 max positions). Regime=normal. CB: daily 0.29%/weekly 0.29% (OK). RSI BUY candidates skipped (max positions): AMD(conf2), ALAB(conf2), STZ(conf2), CPRT(conf2), EFX(conf2); net-buy: FANG, WAT. Surge: XOM 11.8% count=1 (need 2). Universe=503. 5 positions (PNR:-0.50%@$52.92, INVH:+0.49%@$26.44, VICI:-0.06%@$23.25, CRM:-0.02%@$228.98, REGN:-0.85%@$755.66). BP=$68.48. Acct=$244.72.
 
