@@ -1,19 +1,10 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-28T19:10:49Z
-- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. No SELLs (all 5 ATR stops safe: PNR $53.065>$52.19, INVH $26.595>$26.02, VICI $23.222>$23.00, CRM $229.00>$226.51, REGN $759.74>$753.28; no SELL signals on held tickers). No BUYs (5/5 max positions). CB: daily 0.18%/weekly 0.18% (OK). Surge: WAT 58.0% count→2 (BUY candidate if slot opens), TEL 88.4% count→1. Net-buy BUY: WAT. RSI BUY: none. Universe=503. 5 positions (PNR:-0.22%@$53.07, INVH:+1.08%@$26.60, VICI:-0.16%@$23.22, CRM:-0.01%@$229.00, REGN:-0.31%@$759.74). BP=$68.48. Acct=$245.00.
+## 2026-09-28T20:15:00Z
+- SUMMARY: Market CLOSED (after 4pm ET). Regime=normal (SPY BULLISH above 200-EMA). No SELLs (market closed — skipped). No BUYs (market closed + 5/5 max positions). ATR stops vs close: PNR $53.04>$52.19 ✓, INVH $26.55>$26.02 ✓, VICI $23.20>$23.00 ✓, CRM $227.27>$226.51 ✓, REGN $752.42<$753.28 ⚠ BELOW STOP. REGN ATR trail stop will trigger SELL at next market open (hours_held≥3 since 2026-09-28T14:19Z). No ratchet updates (all positions at/below cost). CB: daily 0.40%/weekly 0.40% (OK, under 3%/5%). Surge: WAT count=2 (≥10% threshold, held from last cycle — mkt closed, tracker unchanged). RSI/Net-buy: all 5 held = HOLD. Universe=503. BP=$68.48. Acct=$244.45.
 
 ## 2026-09-28T18:13:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY BULLISH above 200-EMA). No SELLs (all 5 ATR stops safe: PNR $53.23>$52.19, INVH $26.54>$26.02, VICI $23.29>$23.00, CRM $228.85>$226.51, REGN $754.11>$753.28; no SELL signals for any held positions). No BUYs (5/5 max positions). CB: daily 0.20%/weekly 0.20% (OK). RSI BUY candidates skipped (max positions): CRM(conf2,RL-BUY→3), TSLA(conf2,RL-BUY→3), NFLX(conf2,RL-BUY→3), REGN(conf2,RL-HOLD), +16 more. Surge: WAT 33.9% count=1 (need 2). Universe=503. 5 positions (PNR:+0.09%@$53.23, INVH:+0.86%@$26.54, VICI:+0.11%@$23.29, CRM:-0.08%@$228.85, REGN:-1.05%@$754.11). BP=$68.48. Acct=$244.94.
-
-## 2026-09-28T17:12:28Z
-- SUMMARY: Market OPEN, in_trade_window=true. No SELLs (all 5 positions above ATR stops; all signals HOLD; no TP hit). No BUYs (5/5 max positions). Regime=normal. CB: daily 0.29%/weekly 0.29% (OK). RSI BUY candidates skipped (max positions): AMD(conf2), ALAB(conf2), STZ(conf2), CPRT(conf2), EFX(conf2); net-buy: FANG, WAT. Surge: XOM 11.8% count=1 (need 2). Universe=503. 5 positions (PNR:-0.50%@$52.92, INVH:+0.49%@$26.44, VICI:-0.06%@$23.25, CRM:-0.02%@$228.98, REGN:-0.85%@$755.66). BP=$68.48. Acct=$244.72.
-
-## 2026-09-28T16:12:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. No SELLs (all 5 positions above ATR stops; CRM/REGN <3h old, skip SELL rules b/c; VICI not in net_buy_sell_signals; no TP hit). No BUYs (5/5 max positions). Regime=normal. CB: daily 0.33%/weekly 0.33% (OK). RSI BUY signals skipped (max positions): ADBE(conf2,RL-HOLD), TSLA(conf2,RL-BUY), NFLX(conf2,RL-HOLD), SOFI(conf2,RL-BUY), NOW(conf2,RL-BUY), etc. Universe=503. 5 positions (PNR:-0.45%@$52.94, INVH:+0.40%@$26.42, VICI:-0.39%@$23.17, CRM:-0.31%@$228.32, REGN:-0.12%@$761.20). BP=$68.48. Acct=$244.64.
-
-## 2026-09-28T15:13:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. No SELLs (no ATR stops hit, no signal SELLs on held tickers, no TP). No BUYs (5/5 max positions). Regime=normal. CB: daily 0.15%/weekly 0.15% (OK). RSI BUY signals: GIS(conf2,RL-HOLD), JBHT(conf2,RL-HOLD), CHTR(conf2,RL-HOLD) — all skipped (max positions). Universe=503. 5 positions (PNR:-0.71%, INVH:+0.53%, VICI:+0.02%, CRM:+0.31%, REGN:+0.51%). BP=$68.48. Acct=$245.07.
 
 ## 2026-09-28T14:20:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY BULLISH above 200-EMA). Universe=503 (RH historicals cache, 502 symbols fetched). SELLs: CTSH (ATR stop $56.38≤$56.49), FFIV (ATR stop $436.38≤$438.20). BUYs: CRM $36.97 (RL BOOST RSI=25.23), REGN $18.49 (RL BOOST RSI=26.18). CB: daily 0.0%/weekly 0.0% (new day+week start). 5 positions (PNR/INVH/VICI/CRM/REGN). BP=$68.48. Acct=$245.44.
@@ -49,7 +40,7 @@
 - Stop     : ATR trail stop hit ($436.38 ≤ $438.20) | Entry: $447.98
 - Strategy : normal | PnL: -2.59%
 - Regime   : normal
-- Reason   : ATR trailing stop triggered (current $436.38 ≤ $438.20, held ~71h)
+- Reason   : ATR trailing stop triggered (current $436.38 ≤ trail_stop $438.20, held ~71h)
 
 ## 2026-09-28T14:17:56Z
 - Action   : SELL CTSH
@@ -60,7 +51,7 @@
 - Stop     : ATR trail stop hit ($56.38 ≤ $56.49) | Entry: $57.55
 - Strategy : normal | PnL: -2.03%
 - Regime   : normal
-- Reason   : ATR trailing stop triggered (current $56.38 ≤ $56.49, held ~72h)
+- Reason   : ATR trailing stop triggered (current $56.38 ≤ trail_stop $56.49, held ~72h)
 
 ## 2026-09-25T20:07:20Z
 - SUMMARY: Market CLOSED (16:07 ET). No trades placed. 5 positions held: CTSH:-0.40%, PNR:+0.91%, INVH:+1.22%, VICI:+1.10%, FFIV:-1.13%. ATR trail stops all safe (CTSH $56.49, PNR $52.19, INVH $26.02, VICI $23.00, FFIV $438.20 — all clear). No stop-loss, take-profit, or signal exits triggered. Regime=normal. CB: daily -0.15% gain/weekly +0.68% drawdown (OK). Signals from 19:46Z (universe=503, last RH cache). Buying power: $50.00. Account: $246.43.
@@ -161,3 +152,6 @@
 - Strategy : normal | Entry: 2026-09-22T14:25:48Z (~72h held)
 - Regime   : normal
 - Reason   : ATR trailing stop hit ($237.97 ≤ $238.99), −1.25% from entry $241.06
+
+## 2026-09-28T17:12:28Z
+- SUMMARY: Market OPEN, in_trade_window=true. No SELLs (all 5 positions above ATR stops; all signals HOLD; no TP hit). No BUYs (5/5 max positions). Regime=normal. CB: daily 0.29%/weekly 0.29% (OK). RSI BUY candidates skipped (max positions): AMD(conf2), ALAB(conf2), STZ(conf2), CPRT(conf2), EFX(conf2). Surge: XOM 11.8% count=1 (need 2). Universe=503. 5 positions (PNR:-0.50%@$52.92, INVH:+0.49%@$26.44, VICI:-0.06%@$23.25, CRM:-0.02%@$228.98, REGN:-0.85%@$755.66). BP=$68.48. Acct=$244.72.
