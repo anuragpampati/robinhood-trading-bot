@@ -8,11 +8,21 @@ TOTAL_CAPITAL = 250.0          # USD funded in agentic account
 CASH_BUFFER = 50.0             # always keep this much uninvested (20%)
 TRADEABLE_CAPITAL = TOTAL_CAPITAL - CASH_BUFFER  # $200
 
-MAX_POSITION_SIZE = 50.0       # max dollars per position (20% of capital) -- sized so
-                                # min(MAX_POSITION_SIZE, cash - CASH_BUFFER) can fill
-                                # ~4 diversified positions before the buffer stops it
+# No fixed per-position dollar cap (removed 2026-09-27, explicit user decision: "buy as
+# much as you can in the available balance which you think can bring up profits"). A
+# STRONG buy signal can now use the entire investable balance (buying_power/cash minus
+# CASH_BUFFER); weaker signals and a bearish regime scale that down (see run.py /
+# backtest.py -- the discount fractions live next to where they're applied, not here).
+# Sizing tracks the CURRENT balance, not the original $250, so it compounds automatically
+# as the user adds capital -- no config change needed when that happens.
+# Explicit tradeoff accepted: concentration risk is much higher now -- a single bad
+# STRONG-tier trade can go a long way toward the -20% kill switch on its own, where before
+# it was capped at 20% of capital. User is fine with this at the current small account
+# size and plans to add more capital once the strategy proves itself.
 MIN_TRADE_SIZE = 15.0          # don't place orders smaller than this
-MAX_OPEN_POSITIONS = 5         # max concurrent holdings (buffer check above binds first)
+MAX_OPEN_POSITIONS = 5         # rarely binds now -- a STRONG buy uses ~all investable
+                                # capital, so this mostly just caps MODERATE-tier
+                                # diversification, not a routine constraint
 
 # ── Hard kill switch (does not reset -- unlike DAILY/WEEKLY_LOSS_HALT below) ──
 # Permanently blocks new BUYs once account_value drops this fraction below
@@ -145,8 +155,10 @@ MIN_SIGNALS_TO_TRADE = 2       # need at least 2/3 indicators aligned
 # CCR writes peak_value + week_start_value to positions.json each cycle.
 DAILY_LOSS_HALT   = 0.03   # 3 % drop from prior-day close → no new buys today
 WEEKLY_LOSS_HALT  = 0.05   # 5 % drop from Monday open → no new buys this week
-# (single-position concentration is already capped by construction --
-# MAX_POSITION_SIZE / TOTAL_CAPITAL = 50/250 = 20% -- no separate constant needed)
+# NOTE: single-position concentration is no longer capped (see the position-sizing
+# comment above) -- these daily/weekly halts are now the main brake on a bad STRONG-tier
+# trade, along with the hard -20% kill switch. They don't prevent one trade from being
+# large; they stop new buys once the damage from one shows up in account value.
 
 # ── Momentum signal thresholds — never wired in, tested 2026-09-13 ───────────
 # Idea: catch EMA-trending stocks with elevated volume (e.g. META) as a BUY
@@ -168,9 +180,9 @@ VOLUME_LOOKBACK = 20           # days for avg-volume filter
 # RSI panic filter (extreme only)
 MARKET_REGIME_RSI_MIN = 30
 # 200-period EMA regime: if SPY close < SPY EMA200 → bearish trend
-# Effect: max position $25 (halved), require 3/3 signal confidence
+# Effect: position size halved, require 3/3 signal confidence
 EMA200_PERIOD = 200
-BEARISH_EMA_MAX_POSITION = 25.0   # halved from MAX_POSITION_SIZE
+BEARISH_EMA_SIZE_FRACTION = 0.5   # halves whatever normal-regime sizing would be
 BEARISH_EMA_MIN_CONFIDENCE = 3    # require 3/3 vs normal 2/3
 
 # ── ATR trailing stop ─────────────────────────────────────────────────────────
