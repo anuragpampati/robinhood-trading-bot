@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-28T20:15:00Z
+- SUMMARY: Market CLOSED (after 4pm ET). Regime=normal (SPY BULLISH above 200-EMA). No SELLs (market closed — skipped). No BUYs (market closed + 5/5 max positions). ATR stops vs close: PNR $53.04>$52.19 ✓, INVH $26.55>$26.02 ✓, VICI $23.20>$23.00 ✓, CRM $227.27>$226.51 ✓, REGN $752.42<$753.28 ⚠ BELOW STOP. REGN ATR trail stop will trigger SELL at next market open (hours_held≥3 since 2026-09-28T14:19Z). No ratchet updates (all positions at/below cost). CB: daily 0.40%/weekly 0.40% (OK, under 3%/5%). Surge: WAT count=2 (≥10% threshold, held from last cycle — mkt closed, tracker unchanged). RSI/Net-buy: all 5 held = HOLD. Universe=503. BP=$68.48. Acct=$244.45.
+
 ## 2026-09-28T18:13:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY BULLISH above 200-EMA). No SELLs (all 5 ATR stops safe: PNR $53.23>$52.19, INVH $26.54>$26.02, VICI $23.29>$23.00, CRM $228.85>$226.51, REGN $754.11>$753.28; no SELL signals for any held positions). No BUYs (5/5 max positions). CB: daily 0.20%/weekly 0.20% (OK). RSI BUY candidates skipped (max positions): CRM(conf2,RL-BUY→3), TSLA(conf2,RL-BUY→3), NFLX(conf2,RL-BUY→3), REGN(conf2,RL-HOLD), +16 more. Surge: WAT 33.9% count=1 (need 2). Universe=503. 5 positions (PNR:+0.09%@$53.23, INVH:+0.86%@$26.54, VICI:+0.11%@$23.29, CRM:-0.08%@$228.85, REGN:-1.05%@$754.11). BP=$68.48. Acct=$244.94.
 
