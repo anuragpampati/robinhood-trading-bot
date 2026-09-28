@@ -146,3 +146,6 @@
 - Strategy : normal | Entry: 2026-09-22T14:25:48Z (~72h held)
 - Regime   : normal
 - Reason   : ATR trailing stop hit ($237.97 ≤ $238.99), −1.25% from entry $241.06
+
+## 2026-09-28T17:12:28Z
+- SUMMARY: Market OPEN, in_trade_window=true. No SELLs (all 5 positions above ATR stops; all signals HOLD; no TP hit). No BUYs (5/5 max positions). Regime=normal. CB: daily 0.29%/weekly 0.29% (OK). RSI BUY candidates skipped (max positions): AMD(conf2), ALAB(conf2), STZ(conf2), CPRT(conf2), EFX(conf2). Surge: XOM 11.8% count=1 (need 2). Universe=503. 5 positions (PNR:-0.50%@$52.92, INVH:+0.49%@$26.44, VICI:-0.06%@$23.25, CRM:-0.02%@$228.98, REGN:-0.85%@$755.66). BP=$68.48. Acct=$244.72.
