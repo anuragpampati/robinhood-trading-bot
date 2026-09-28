@@ -451,3 +451,12 @@
 - Backtest: SKIPPED — yfinance/Yahoo Finance blocked in CCR sandbox (403, known issue per CLAUDE.md)
 - RL samples: 617/200 (PAST TARGET — RL READY)
 - Notes: All 5 closed trades were normal strategy, EMA=BEARISH. Stops at -1.93%/-1.05%/-1.25%; signal exits at +0.65%/+0.36%. 5 open positions (CTSH/PNR/INVH/VICI/FFIV) all within 3h of entry today.
+
+## 2026-09-28
+- Trades analysed: 5 closed pairs (CTSH -2.03%, FFIV -2.59%, LHX -1.25%, CNP -1.05%, MDT -1.93%)
+- Win rate: 0% overall (normal: 0% [n=5]; momentum: n/a [n=0, unwired]; surge: n/a [n=0])
+- EMA-trend win rate: BEARISH entry 0% (n=1, CTSH); BULLISH entry 0% (n=1, FFIV); 3 trades EMA unknown (LHX/CNP/MDT, trimmed from log)
+- Config changes: RSI_OVERSOLD 30→32 PROPOSED (normal win_rate=0%, n=5≥5) but REVERTED — backtest unavailable (yfinance/Yahoo Finance 403 in CCR sandbox, no cache file). Will reapply when running with market data access.
+- Backtest: SKIPPED (network blocked, no rh_historicals_cache.json). Prior config retained unchanged.
+- RL samples: 621/200 (READY — +4 new rows today from 2 closed trades; 19 states in Q-table)
+- Notes: Account $244.45 (5 open positions: PNR/INVH/VICI/CRM/REGN). REGN is below ATR trail stop ($752.42 < $753.28) — will be sold at next market open. All 5 recently closed trades were ATR trailing-stop losses, avg -1.77%, avg_hold 52.2h. RSI_OVERSOLD tightening is warranted when local backtest can validate. Run: python -m strategy.rl_agent --train (621 samples, 19 Q-states).
