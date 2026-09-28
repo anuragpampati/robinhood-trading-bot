@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-28T21:31:58.632759+00:00",
+  "timestamp": "2026-09-28T22:21:27.539666+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7808,7 +7808,7 @@
   "rl_stats": {
     "live": true,
     "states": 19,
-    "training_samples": 617
+    "training_samples": 621
   },
   "net_buy_buy_signals": [
     {
@@ -7935,15 +7935,6 @@
       "reason": "Buy vol \u219112.9% vs prior day | Net buy reversed: 0.51M \u2192 0.32M | OBV -0.1M/day"
     },
     {
-      "ticker": "MMM",
-      "price": 169.47999572753906,
-      "buy_surge_pct": 0.541,
-      "buy_vol_d2": 1374235,
-      "buy_vol_d3": 2117746,
-      "net_buy_d3": 452073,
-      "reason": "Buy vol \u219154.1% vs prior day | 0d streak | latest 0.45M | OBV -0.2M/day"
-    },
-    {
       "ticker": "ABBV",
       "price": 266.2799987792969,
       "buy_surge_pct": 1.244,
@@ -7951,6 +7942,15 @@
       "buy_vol_d3": 2925578,
       "net_buy_d3": 1457755,
       "reason": "Buy vol \u2191124.4% vs prior day | 0d streak | latest 1.46M | OBV 0.5M/day"
+    },
+    {
+      "ticker": "MMM",
+      "price": 169.47999572753906,
+      "buy_surge_pct": 0.541,
+      "buy_vol_d2": 1374235,
+      "buy_vol_d3": 2117746,
+      "net_buy_d3": 452073,
+      "reason": "Buy vol \u219154.1% vs prior day | 0d streak | latest 0.45M | OBV -0.2M/day"
     }
   ]
 }
