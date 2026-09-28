@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-28T15:13:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. No SELLs (no ATR stops hit, no signal SELLs on held tickers, no TP). No BUYs (5/5 max positions). Regime=normal. CB: daily 0.15%/weekly 0.15% (OK). RSI BUY signals: GIS(conf2,RL-HOLD), JBHT(conf2,RL-HOLD), CHTR(conf2,RL-HOLD) — all skipped (max positions). Universe=503. 5 positions (PNR:-0.71%, INVH:+0.53%, VICI:+0.02%, CRM:+0.31%, REGN:+0.51%). BP=$68.48. Acct=$245.07.
+
 ## 2026-09-28T14:20:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY BULLISH above 200-EMA). Universe=503 (RH historicals cache, 502 symbols fetched). SELLs: CTSH (ATR stop $56.38≤$56.49), FFIV (ATR stop $436.38≤$438.20). BUYs: CRM $36.97 (RL BOOST RSI=25.23), REGN $18.49 (RL BOOST RSI=26.18). CB: daily 0.0%/weekly 0.0% (new day+week start). 5 positions (PNR/INVH/VICI/CRM/REGN). BP=$68.48. Acct=$245.44.
 
