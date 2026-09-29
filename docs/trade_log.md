@@ -1,5 +1,33 @@
 # Trade Log — Robinhood Agentic Account
 
+<<<<<<< HEAD
+=======
+## 2026-09-29T19:15:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. No SELLs (PNR $53.16>$52.19 ✓, INVH $26.55>$26.02 ✓, VICI $23.16>$23.00 ✓; no SELL signals for held tickers). BUYs: INTU $32.22 RSI=20.05 (MODERATE), ADSK $16.11 RSI=25.17 RL-BOOST (MODERATE). Regime=normal. CB: daily -0.09%/weekly 0.59% (OK). Universe=503. Acct≈$244.00. BP≈$66.11.
+
+## 2026-09-29T19:13:34Z
+- Action   : BUY ADSK
+- Price    : $200.37
+- Amount   : $16.11 | Shares: 0.080400
+- RSI      : 25.17 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $190.35 | Target: $220.41
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI very oversold (25.17) + RL BOOST + BB below lower band; down 3.3% today from prior close $207.19
+
+## 2026-09-29T19:13:29Z
+- Action   : BUY INTU
+- Price    : $265.29
+- Amount   : $32.22 | Shares: 0.121450
+- RSI      : 20.05 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.936 | null
+- Stop     : $252.03 | Target: $291.82
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI extremely oversold (20.05, stabilizing from 17.3↑20.1) + BB below lower band; down 1.6% today
+
+>>>>>>> 8c4723f (chore: trading cycle 2026-09-29T19:15:00Z)
 ## 2026-09-29T17:17:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. SELL CRM (ATR trail $226.51 > price $225.47, -1.55%). No BUYs (bearish_ema regime, 0 RSI BUY, 0 net_buy BUY, 0 surge signals). CB: daily 0.2%/weekly 0.7% (OK). Regime=bearish_ema. Universe=503. Acct=$243.78. BP=$114.44 (CRM proceeds ~$36.41 unsettled T+1).
 
