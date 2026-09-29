@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-29T16:12:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=bearish_ema (SPY BEARISH below 200-EMA). No SELLs: all 4 ATR stops safe (PNR $52.99>$52.19 ✓, INVH $26.46>$26.02 ✓, VICI $23.175>$23.00 ✓, CRM $227.56>$226.51 ✓; no SELL signals for held tickers). No BUYs: 0 RSI BUY signals, 0 net_buy_buy signals, 0 surge signals (bearish_ema regime — buys halted without 3/3 conf). CB: 0.0%/0.5% (OK). 4 positions (PNR:-0.4%@$52.99, INVH:+0.6%@$26.46, VICI:-0.4%@$23.175, CRM:-0.6%@$227.56). Universe=503. BP=$114.44. Acct=$244.23.
+
 ## 2026-09-29T15:31:33Z
 - Action   : SELL REGN
 - Price    : $745.58
