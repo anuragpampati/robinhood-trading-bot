@@ -132,21 +132,39 @@ place_equity_order(account_number=837287598, symbol=<ticker>, side=sell, type=ma
 
 SKIP if circuit_breaker_active (Step 3c) OR trading_halted (Step 2d) OR in_trade_window is false (Step 2d).
 
-Capital rules (from strategy/config.py -- MAX_POSITION_SIZE=$50, BEARISH_EMA_MAX_POSITION=$25):
-- Keep ≥$50 cash buffer
-- Max equity positions: 5 open at once
+Capital rules (from strategy/config.py -- NO FIXED DOLLAR CAP, changed 2026-09-27 per
+explicit user decision: "buy as much as you can in the available balance which you think
+can bring up profits, I'll add money whenever I see we are making money"):
+- Keep ≥$50 cash buffer at all times (buying_power − amount ≥ $50 after the trade)
+- Max equity positions: 5 open at once (rarely binds now -- a STRONG buy typically uses
+  ~all investable capital in one shot)
 - Never buy a ticker already held
 - REGIME FILTER A (panic): SPY RSI < 30 → skip all buys except surge/intraday_surge
-- REGIME FILTER B (bearish_ema): max $25 per position, confidence must be 3/3
-- Normal regime: confidence 3/3 → max $50 per position; confidence 2/3 → max $25
+- REGIME FILTER B (bearish_ema): confidence must still be 3/3, AND position size is
+  halved (see sizing below) -- this regime gate is unchanged, only the dollar cap is gone
 
-Buy priority:
-1. BOTH net_buy + rsi BUY (conf≥3) → STRONG BUY: $50 normal / $25 bearish_ema
-2. rsi BUY (conf==2) or net_buy_buy only → MODERATE BUY: $25
-3. INTRADAY_SURGE (count≥2) → $25
-4. surge (≥5%) → $25
+Position sizing (replaces the old fixed $50/$25 -- get FRESH buying_power via
+get_portfolio right before this step, don't reuse a number from earlier in the cycle
+since Step 4 SELLs may have changed it):
+  investable = buying_power − $50
+  STRONG BUY (both net_buy + rsi agree, confidence≥3)     → amount = investable (all of it)
+  MODERATE BUY / NET-BUY (one strategy only, or conf==2)  → amount = investable × 0.5
+  INTRADAY_SURGE (count≥2) or surge (≥5%)                 → amount = investable × 0.5
+  If bearish_ema regime: amount = amount × 0.5 (stacks on top of whichever tier above)
+  Skip the trade entirely if the resulting amount < $15 (min order size)
 
-Skip if: already holding, positions ≥ 5, buying_power − amount < $50.
+Buy priority (first match wins, per ticker):
+1. BOTH net_buy + rsi BUY (conf≥3) → STRONG BUY
+2. rsi BUY (conf==2) or net_buy_buy only → MODERATE BUY
+3. INTRADAY_SURGE (count≥2)
+4. surge (≥5%)
+
+Skip if: already holding, positions ≥ 5, buying_power − amount < $50, or amount < $15.
+Real-money note: a STRONG BUY can now use most of the account in a single trade --
+concentration risk is intentionally much higher than before (explicit user tradeoff).
+Verify the computed amount against live buying_power one more time immediately before
+calling place_equity_order -- this is the step in the whole cycle with the most money on
+the line.
 place_equity_order(account_number=837287598, symbol=<ticker>, side=buy, type=market, time_in_force=gfd, dollar_amount=<amount>)
 
 ### RL AGENT FILTER (apply before each BUY):

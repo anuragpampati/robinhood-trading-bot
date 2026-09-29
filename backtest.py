@@ -21,11 +21,11 @@ from strategy.indicators import compute_all
 from strategy.signals import generate_signal
 from strategy.universe import full_universe
 from strategy.config import (
-    WATCHLIST, CASH_BUFFER, MAX_POSITION_SIZE, MIN_TRADE_SIZE,
+    WATCHLIST, CASH_BUFFER, MIN_TRADE_SIZE,
     MAX_OPEN_POSITIONS, STOP_LOSS_PCT, TAKE_PROFIT_PCT, MARKET_REGIME_RSI_MIN,
     ATR_STOP_MULTIPLIER, TRAIL_LOCK1_PROFIT, TRAIL_LOCK1_STOP,
     TRAIL_LOCK2_PROFIT, TRAIL_LOCK2_STOP,
-    BEARISH_EMA_MAX_POSITION, BEARISH_EMA_MIN_CONFIDENCE, MIN_HOLD_BARS,
+    BEARISH_EMA_SIZE_FRACTION, BEARISH_EMA_MIN_CONFIDENCE, MIN_HOLD_BARS,
     DAILY_LOSS_HALT, WEEKLY_LOSS_HALT, TOTAL_CAPITAL,
     MARKET_OPEN_HOUR, MARKET_OPEN_MINUTE, MARKET_CLOSE_HOUR,
     AVOID_FIRST_MINUTES, AVOID_LAST_MINUTES,
@@ -188,15 +188,20 @@ def run():
                 if sig.action != "BUY":
                     continue
 
-                pos_max = BEARISH_EMA_MAX_POSITION if market_bearish_ema else MAX_POSITION_SIZE
+                # No fixed per-position dollar cap (2026-09-27, explicit user decision) --
+                # sizing scales with the CURRENT cash balance instead of a static dollar
+                # figure tied to the original $250, so a STRONG (3/3) signal in a normal
+                # regime can use the whole investable balance.
+                amount = cash - CASH_BUFFER
+                if market_bearish_ema:
+                    amount *= BEARISH_EMA_SIZE_FRACTION
                 if sig.confidence < 3:
-                    pos_max *= 0.6   # weaker (2/3) signals get smaller size -- they're the
+                    amount *= 0.6   # weaker (2/3) signals get smaller size -- they're the
                                       # ones that make up most of the trailing-stop losers
                 if ATR_RISK_SIZING:
                     stop_dist = ATR_STOP_MULTIPLIER * sig.atr_pct if sig.atr_pct > 0 else STOP_LOSS_PCT
                     atr_amount = (TOTAL_CAPITAL * RISK_PER_TRADE_PCT) / stop_dist
-                    pos_max = min(pos_max, atr_amount)
-                amount = min(pos_max, cash - CASH_BUFFER)
+                    amount = min(amount, atr_amount)
                 if amount < MIN_TRADE_SIZE:
                     continue
 

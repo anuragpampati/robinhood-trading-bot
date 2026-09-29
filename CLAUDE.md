@@ -43,11 +43,11 @@ You have access to the Robinhood MCP server (`robinhood-trading`) which gives yo
 ### Capital Rules
 | Rule | Value |
 |------|-------|
-| Total account | $250 |
-| Always keep in cash | ≥ $50 (20%) |
-| Max per new position | $50 (20% of capital) |
+| Total account | $250 (or whatever `get_portfolio` reports live — sizing tracks this, not a fixed number, see below) |
+| Always keep in cash | ≥ $50, or 20% of current buying power if the account has grown, whichever the CCR computes as `buying_power − $50` |
+| Max per new position | **No fixed cap (explicit user decision, 2026-09-27)** — a STRONG BUY (both strategies agree, confidence 3/3) can use the entire investable balance (`buying_power − $50` cash buffer). A weaker BUY (one strategy only, or confidence 2) uses ~50% of that. Bearish-EMA regime halves whatever the above would be, on top of its existing 3/3-confidence requirement. User's explicit tradeoff: a single bad STRONG-tier trade can now go a long way toward the −20% kill switch on its own — no longer capped at 20% of capital like before. User is fine with this at the current small account size ("I'll add money whenever I see we are making money") |
 | Min order size | $15 |
-| Max open positions | 5 (buffer above typically stops it at ~4) |
+| Max open positions | 5 in theory, but rarely binds now — a STRONG buy typically uses ~all investable capital in one shot, so more than 1-2 positions open at once will be uncommon |
 
 ### Kill switch — checked before every cycle, no exceptions
 - [ ] `docs/positions.json.trading_enabled` is `true` (code also enforces this via

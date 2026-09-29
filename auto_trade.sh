@@ -49,14 +49,21 @@ Do the following in order:
    - If price <= avg_cost * 0.95 → SELL (print: SOLD <ticker> ... | STOP_LOSS)
    - If price >= avg_cost * 1.10 → SELL (print: SOLD <ticker> ... | TAKE_PROFIT)
 6. BUY checks (skip entirely if step 3 halted trading) — capital rules (HARD LIMITS — never violate):
-   - Keep >=$50 cash buffer at all times
-   - Max $50 per new position (2/3 confidence) or $50 at 3/3 confidence, $25 at 2/3 — min $15
+   - Keep >=$50 cash buffer at all times (buying_power - amount >= $50 after the trade)
+   - No fixed dollar cap on position size (explicit user decision, 2026-09-27: "buy as
+     much as you can in the available balance which you think can bring up profits").
+     investable = buying_power - $50
+     STRONG (both net_buy + rsi agree, confidence>=3) -> amount = investable (all of it)
+     MODERATE (one strategy only, or confidence==2)   -> amount = investable * 0.5
+     Skip the trade if the resulting amount < $15 (min order size)
    - Max 5 open positions total — skip if len(held) >= 5
    - Never buy a ticker you already hold
    - Skip if SPY RSI < 30 in rsi_signals (market regime filter — broad market panic)
    Priority:
-   a. Ticker in BOTH net_buy_buy_signals (trend_days>=3) AND rsi_signals (action=BUY, confidence>=3) → $50
-   b. Ticker in rsi_signals (action=BUY, confidence>=2) only, or net_buy_buy_signals only → $25
+   a. Ticker in BOTH net_buy_buy_signals (trend_days>=3) AND rsi_signals (action=BUY, confidence>=3) → STRONG
+   b. Ticker in rsi_signals (action=BUY, confidence>=2) only, or net_buy_buy_signals only → MODERATE
+   Real-money note: a STRONG buy can now use most of the account in one trade — get a
+   fresh buying_power reading right before sizing, don't reuse an earlier number.
    Print: BOUGHT <ticker> $<amount> @ $<price>
 7. Print a one-line summary: "SUMMARY: <actions taken or 'no trades'>"
 

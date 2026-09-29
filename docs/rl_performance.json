@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-22",
+  "updated_at": "2026-09-28",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
-  "win_rate": 0.25,
-  "avg_win_pnl": 0.08,
-  "avg_loss_pnl": -0.018,
-  "risk_reward": 4.44,
-  "total_trades": 4,
-  "wins": 1,
-  "losses": 3,
+  "win_rate": 0.0,
+  "avg_win_pnl": null,
+  "avg_loss_pnl": -0.0177,
+  "risk_reward": null,
+  "total_trades": 5,
+  "wins": 0,
+  "losses": 5,
   "circuit_breaker_halts": 0,
-  "rl_training_samples": 616,
+  "rl_training_samples": 621,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). Metrics from 5 real closed trades (CTSH/FFIV/LHX/CNP/MDT), all ATR trailing-stop losses. Proposed RSI_OVERSOLD 30→32 (normal win_rate=0%), but reverted since backtest validation unavailable. Updated by daily learning CCR"
 }

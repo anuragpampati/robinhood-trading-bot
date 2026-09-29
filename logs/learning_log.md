@@ -427,3 +427,36 @@
 - Backtest: SKIPPED (NO_CHANGE — no threshold adjustments to validate)
 - RL samples: 616/200 (RL READY — +2 new rows from rl_collector; 19 Q-states; run: python -m strategy.rl_agent --train)
 - Notes: Account $248.86, 5 open positions (JKHY/LHX/CB/ERIE/CMCSA all normal/BEARISH EMA entries today). NVDA closed +8.0% via RSI sell signal (190h held). WFC stopped out via ATR trail -0.82% (4h held). Kill switch OK. universe_size=503 (cache-fixed). trim_log kept 14/14 entries.
+
+## 2026-09-23
+- Trades analysed: 2 (WFC: -0.82% stop, CB: +0.65% signal-sell)
+- Win rate: 50% overall (normal: 50%, momentum: n/a — <3 trades, momentum not wired, surge: n/a)
+- Config changes: none (n=2 closed trades — below n≥5 for normal, n≥3 for momentum; NO_CHANGE)
+- Backtest: skipped — yfinance/proxy blocked in sandbox (known limitation); using live trade metrics
+- RL samples: 617/200 (already past target — retrain recommended when stale data purged)
+- Notes: 5/5 positions full (JKHY, LHX, CMCSA, PGR, AXP). RL table at 19 states unchanged. Backtest blocked by yfinance proxy restriction; prior known result from 2026-09-22 preserved. +1 new RL row added this cycle.
+
+## 2026-09-24
+- Trades analysed: 5 closed (WFC, CB, ERIE, CMCSA, JKHY)
+- Win rate: 40% overall (normal: 40% [2W/3L], momentum: n/a [0 trades], surge: n/a [0 trades])
+- Config changes: none (win_rate=40% exactly at threshold, not <40%; no momentum data; avg_hold=29.5h not <2h)
+- Backtest: SKIPPED — yfinance blocked in cloud sandbox (known network restriction)
+- RL samples: 617/200 (target exceeded — RL READY)
+- Notes: All 5 recent trades used normal strategy with EMA=BEARISH entries (RSI 26–28). 2 wins via net_buy_sell exits (+0.65%, +0.36%); 3 losses via stop/net_buy_sell (−0.82%, −1.58%, −1.51%). LHX/CNP/MDT still open. LHX near ATR trail stop — flagged for sell on next open. Acct=$246.51, BP=$73.63, trading_enabled=true.
+
+## 2026-09-25
+- Trades analysed: 5 (closed: MDT/CNP/LHX via ATR stop, CB/ERIE via signal-sell)
+- Win rate: 40% overall (normal: 40%, momentum: n/a — 0 trades, surge: n/a — 0 trades)
+- Config changes: none (normal win_rate=0.40 is exactly at threshold, not below; momentum n<3; ATR avg_hold=33.5h not fast-stopped)
+- Backtest: SKIPPED — yfinance/Yahoo Finance blocked in CCR sandbox (403, known issue per CLAUDE.md)
+- RL samples: 617/200 (PAST TARGET — RL READY)
+- Notes: All 5 closed trades were normal strategy, EMA=BEARISH. Stops at -1.93%/-1.05%/-1.25%; signal exits at +0.65%/+0.36%. 5 open positions (CTSH/PNR/INVH/VICI/FFIV) all within 3h of entry today.
+
+## 2026-09-28
+- Trades analysed: 5 closed pairs (CTSH -2.03%, FFIV -2.59%, LHX -1.25%, CNP -1.05%, MDT -1.93%)
+- Win rate: 0% overall (normal: 0% [n=5]; momentum: n/a [n=0, unwired]; surge: n/a [n=0])
+- EMA-trend win rate: BEARISH entry 0% (n=1, CTSH); BULLISH entry 0% (n=1, FFIV); 3 trades EMA unknown (LHX/CNP/MDT, trimmed from log)
+- Config changes: RSI_OVERSOLD 30→32 PROPOSED (normal win_rate=0%, n=5≥5) but REVERTED — backtest unavailable (yfinance/Yahoo Finance 403 in CCR sandbox, no cache file). Will reapply when running with market data access.
+- Backtest: SKIPPED (network blocked, no rh_historicals_cache.json). Prior config retained unchanged.
+- RL samples: 621/200 (READY — +4 new rows today from 2 closed trades; 19 states in Q-table)
+- Notes: Account $244.45 (5 open positions: PNR/INVH/VICI/CRM/REGN). REGN is below ATR trail stop ($752.42 < $753.28) — will be sold at next market open. All 5 recently closed trades were ATR trailing-stop losses, avg -1.77%, avg_hold 52.2h. RSI_OVERSOLD tightening is warranted when local backtest can validate. Run: python -m strategy.rl_agent --train (621 samples, 19 Q-states).

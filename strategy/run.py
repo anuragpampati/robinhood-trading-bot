@@ -20,8 +20,8 @@ from .risk import risk_summary
 from .universe import full_universe
 from .circuit_breaker import check as check_kill_switch
 from .config import (
-    WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, MARKET_REGIME_RSI_MIN, BEARISH_EMA_MAX_POSITION,
-    FIB_TARGETS, SECTOR_GROUPS, MAX_POSITION_SIZE, MIN_TRADE_SIZE,
+    WATCHLIST, TOTAL_CAPITAL, CASH_BUFFER, TRADEABLE_CAPITAL, MARKET_REGIME_RSI_MIN,
+    BEARISH_EMA_SIZE_FRACTION, FIB_TARGETS, SECTOR_GROUPS, MIN_TRADE_SIZE,
 )
 try:
     from .rl_agent import predict as _rl_predict
@@ -113,7 +113,7 @@ def run_analysis() -> dict:
             regime_tag = "BEARISH (SPY below 200 EMA)" if market_bearish_ema else "BULLISH (SPY above 200 EMA)"
             print(f"  [REGIME] SPY ${spy_close:.2f} vs EMA200 ${spy_ema200:.2f} → {regime_tag}")
             if market_bearish_ema:
-                print(f"  [REGIME] Max position ${BEARISH_EMA_MAX_POSITION}, 3/3 confidence required")
+                print(f"  [REGIME] Position size halved, 3/3 confidence required")
         except Exception as exc:
             print(f"  [WARN] SPY: {exc}")
 
@@ -236,10 +236,14 @@ def run_analysis() -> dict:
         if s.ticker not in rsi_signals:
             actionable.append((s.ticker, "BUY", s.price, "NET-BUY", None, s))
 
-    # Position sizing derives from config.py (single source of truth — also what
-    # backtest.py uses). STRONG gets the full cap; MODERATE/NET-BUY get half.
-    strong_amt   = MAX_POSITION_SIZE
-    moderate_amt = max(MIN_TRADE_SIZE, round(MAX_POSITION_SIZE * 0.5, 2))
+    # No fixed dollar cap (2026-09-27, explicit user decision) -- STRONG uses ~all
+    # investable capital, MODERATE/NET-BUY get half. These are PREVIEW figures only,
+    # computed from TRADEABLE_CAPITAL (TOTAL_CAPITAL - CASH_BUFFER) since this script
+    # has no live account access -- the CCR recomputes from *live* buying_power (Step 3)
+    # before actually sizing an order. See the CLAUDE AGENT INSTRUCTIONS block below,
+    # which spells out the real formula for the agent to use.
+    strong_amt   = TRADEABLE_CAPITAL
+    moderate_amt = max(MIN_TRADE_SIZE, round(TRADEABLE_CAPITAL * 0.5, 2))
 
     buy_gate_open = trading_allowed and tradeable_window
 
@@ -329,9 +333,12 @@ def run_analysis() -> dict:
     elif not tradeable_window:
         print("  WITHIN 30 MIN OF OPEN/CLOSE — volatile window, DO NOT place any new BUY orders this cycle.")
     else:
-        print(f"  STRONG BUY  → buy up to ${strong_amt:.0f} (both strategies agree)")
-        print(f"  NET-BUY     → buy up to ${moderate_amt:.0f} (net buy trend only, strong streak)")
-        print(f"  MODERATE BUY→ buy up to ${moderate_amt:.0f} (one strategy)")
+        print(f"  No fixed dollar cap -- use LIVE buying_power (Step 3), not the ${strong_amt:.0f}/${moderate_amt:.0f}")
+        print(f"  preview above (that's computed from TRADEABLE_CAPITAL, a stale $250 assumption):")
+        print(f"  STRONG BUY  → buy up to (buying_power − ${CASH_BUFFER:.0f} cash buffer) — all available investable capital (both strategies agree)")
+        print(f"  NET-BUY     → buy up to 50% of (buying_power − ${CASH_BUFFER:.0f}) (net buy trend only, strong streak)")
+        print(f"  MODERATE BUY→ buy up to 50% of (buying_power − ${CASH_BUFFER:.0f}) (one strategy)")
+        print(f"  BEARISH EMA REGIME → halve whatever the above would be (on top of the 3/3-confidence gate)")
     print("  Any SELL on a held position → sell full position immediately (kill switch does not block exits)")
     print("  DO NOT trade if market_open is False.\n")
 
