@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-29",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
   "win_rate": 0.0,
   "avg_win_pnl": null,
-  "avg_loss_pnl": -0.0177,
+  "avg_loss_pnl": -0.0167,
   "risk_reward": null,
-  "total_trades": 5,
+  "total_trades": 7,
   "wins": 0,
-  "losses": 5,
+  "losses": 7,
   "circuit_breaker_halts": 0,
-  "rl_training_samples": 621,
+  "rl_training_samples": 623,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). Metrics from 5 real closed trades (CTSH/FFIV/LHX/CNP/MDT), all ATR trailing-stop losses. Proposed RSI_OVERSOLD 30→32 (normal win_rate=0%), but reverted since backtest validation unavailable. Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). Metrics from 7 real closed trades (CTSH/FFIV/LHX/CNP/MDT + CRM -1.55% + REGN ~-1.3%, all ATR trailing-stop losses, avg -1.67%). NO_CHANGE: n=3 in current log window (below n>=5 for RSI_OVERSOLD); no momentum trades; avg_hold ~56h (not fast-stopped). INTU/ADSK opened 2026-09-29 (RSI 20/25). Updated by daily learning CCR"
 }

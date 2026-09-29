@@ -460,3 +460,12 @@
 - Backtest: SKIPPED (network blocked, no rh_historicals_cache.json). Prior config retained unchanged.
 - RL samples: 621/200 (READY — +4 new rows today from 2 closed trades; 19 states in Q-table)
 - Notes: Account $244.45 (5 open positions: PNR/INVH/VICI/CRM/REGN). REGN is below ATR trail stop ($752.42 < $753.28) — will be sold at next market open. All 5 recently closed trades were ATR trailing-stop losses, avg -1.77%, avg_hold 52.2h. RSI_OVERSOLD tightening is warranted when local backtest can validate. Run: python -m strategy.rl_agent --train (621 samples, 19 Q-states).
+
+## 2026-09-29
+- Trades analysed: 7 closed total (CTSH -2.03%, FFIV -2.59%, CRM -1.55%, REGN ~-1.3% implied, plus LHX/CNP/MDT from prior days)
+- Win rate: 0% overall (normal: 0% [n=7]; momentum: n/a [0 trades]; surge: n/a [0 trades])
+- EMA-trend win rate: all entries BEARISH — 0% win rate on BEARISH-entry trades (n=7)
+- Config changes: none (n=3 in current log window, below n≥5 threshold for RSI_OVERSOLD; no momentum trades; avg_hold ~56h, not fast-stopped — NO_CHANGE)
+- Backtest: SKIPPED (yfinance/Yahoo Finance 403 in CCR sandbox; known limitation)
+- RL samples: 623/200 (READY — +2 new rows today; 19 Q-states unchanged)
+- Notes: CRM closed -1.55% ATR trail (27h hold). REGN confirmed closed — not in positions.json (stop hit at close 2026-09-28 $752.42<$753.28; sell executed but log entry trimmed). INTU/ADSK opened today (RSI 20.05/25.17, normal strategy). Merge conflict in trade_log.md resolved. 5 open positions: PNR/INVH/VICI/INTU/ADSK. RSI_OVERSOLD tightening (30→32) still warranted by 0% win rate across 7 trades — will reapply once backtest can validate.
