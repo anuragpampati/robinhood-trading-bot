@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-29T17:17:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. SELL CRM (ATR trail $226.51 > price $225.47, -1.55%). No BUYs (bearish_ema regime, 0 RSI BUY, 0 net_buy BUY, 0 surge signals). CB: daily 0.2%/weekly 0.7% (OK). Regime=bearish_ema. Universe=503. Acct=$243.78. BP=$114.44 (CRM proceeds ~$36.41 unsettled T+1).
+
+## 2026-09-29T17:12:14Z
+- Action   : SELL CRM
+- Price    : $225.47
+- Amount   : $36.41 | Shares: 0.161418
+- RSI      : 28.08 | EMA: BEARISH | BB: IN_BAND
+- RL       : BUY conf=0.952 | null
+- Stop     : $226.51 (ATR trail) | Target: $251.93
+- Strategy : normal | Sell date: ATR trailing stop
+- Regime   : bearish_ema
+- Reason   : ATR trail stop $226.51 triggered (price $225.47 < stop, hours_held ~27h, entry $229.03, loss -1.55%)
+
 ## 2026-09-28T20:15:00Z
 - SUMMARY: Market CLOSED (after 4pm ET). Regime=normal (SPY BULLISH above 200-EMA). No SELLs (market closed — skipped). No BUYs (market closed + 5/5 max positions). ATR stops vs close: PNR $53.04>$52.19 ✓, INVH $26.55>$26.02 ✓, VICI $23.20>$23.00 ✓, CRM $227.27>$226.51 ✓, REGN $752.42<$753.28 ⚠ BELOW STOP. REGN ATR trail stop will trigger SELL at next market open (hours_held≥3 since 2026-09-28T14:19Z). No ratchet updates (all positions at/below cost). CB: daily 0.40%/weekly 0.40% (OK, under 3%/5%). Surge: WAT count=2 (≥10% threshold, held from last cycle — mkt closed, tracker unchanged). RSI/Net-buy: all 5 held = HOLD. Universe=503. BP=$68.48. Acct=$244.45.
 
