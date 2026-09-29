@@ -1,147 +1,57 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-09-23T18:10:56Z
-- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY $769.00 above 200-EMA $763.26). Universe=503 (S&P500 snapshot). No SELLs triggered (JKHY −0.88% above trail $143.68; LHX −0.28% above trail $238.99; CMCSA +1.34% above trail $22.07; PGR −0.51% above trail $202.71 <3h hold; AXP +0.02% above trail $300.53 <3h hold). No BUYs: 5/5 positions at max. Circuit breaker OK (daily −0.08%, weekly +0.18%). BP=$73.66. Acct $248.55. Peak $249.00.
+## 2026-09-28T20:15:00Z
+- SUMMARY: Market CLOSED (after 4pm ET). Regime=normal (SPY BULLISH above 200-EMA). No SELLs (market closed — skipped). No BUYs (market closed + 5/5 max positions). ATR stops vs close: PNR $53.04>$52.19 ✓, INVH $26.55>$26.02 ✓, VICI $23.20>$23.00 ✓, CRM $227.27>$226.51 ✓, REGN $752.42<$753.28 ⚠ BELOW STOP. REGN ATR trail stop will trigger SELL at next market open (hours_held≥3 since 2026-09-28T14:19Z). No ratchet updates (all positions at/below cost). CB: daily 0.40%/weekly 0.40% (OK, under 3%/5%). Surge: WAT count=2 (≥10% threshold, held from last cycle — mkt closed, tracker unchanged). RSI/Net-buy: all 5 held = HOLD. Universe=503. BP=$68.48. Acct=$244.45.
 
-## 2026-09-23T16:14:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503 (S&P500 snapshot). SPY RSI=50.5. CB net_buy_sell triggered → SELL +0.65%. AXP RL BOOST RSI=26.4 → BUY $25. 5 positions. BP=$73.66. Acct $248.58.
+## 2026-09-28T18:13:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY BULLISH above 200-EMA). No SELLs (all 5 ATR stops safe: PNR $53.23>$52.19, INVH $26.54>$26.02, VICI $23.29>$23.00, CRM $228.85>$226.51, REGN $754.11>$753.28; no SELL signals for any held positions). No BUYs (5/5 max positions). CB: daily 0.20%/weekly 0.20% (OK). RSI BUY candidates skipped (max positions): CRM(conf2,RL-BUY→3), TSLA(conf2,RL-BUY→3), NFLX(conf2,RL-BUY→3), REGN(conf2,RL-HOLD), +16 more. Surge: WAT 33.9% count=1 (need 2). Universe=503. 5 positions (PNR:+0.09%@$53.23, INVH:+0.86%@$26.54, VICI:+0.11%@$23.29, CRM:-0.08%@$228.85, REGN:-1.05%@$754.11). BP=$68.48. Acct=$244.94.
 
-## 2026-09-23T16:12:50Z
-- Action   : BUY AXP
-- Price    : $302.89
-- Amount   : $25.00 | Shares: 0.082530
-- RSI      : 26.4 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $300.53 | Target: $333.18
+## 2026-09-28T14:20:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY BULLISH above 200-EMA). Universe=503 (RH historicals cache, 502 symbols fetched). SELLs: CTSH (ATR stop $56.38≤$56.49), FFIV (ATR stop $436.38≤$438.20). BUYs: CRM $36.97 (RL BOOST RSI=25.23), REGN $18.49 (RL BOOST RSI=26.18). CB: daily 0.0%/weekly 0.0% (new day+week start). 5 positions (PNR/INVH/VICI/CRM/REGN). BP=$68.48. Acct=$245.44.
+
+## 2026-09-28T14:19:18Z
+- Action   : BUY REGN
+- Price    : $762.13
+- Amount   : $18.49 | Shares: 0.024261
+- RSI      : 26.18 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | RL BOOST (conf 2→3)
+- Stop     : $753.28 | Target: $838.34
 - Strategy : normal | Sell date: ATR/signal
 - Regime   : normal
-- Reason   : RSI=26.4 oversold+stabilizing | BB reversal: 0.15→0.19 (returning from band) | 🤖 RL BOOST
+- Reason   : RSI oversold+stabilizing (26.2→26.2) | BB reversal: 0.10→0.15 (returning from band) | RL BOOST
 
-## 2026-09-23T16:12:11Z
-- Action   : SELL CB
-- Price    : $336.79
-- Amount   : $25.15 | Shares: 0.074713
-- RSI      : 43.0 | EMA: BEARISH | BB: IN_BAND
+## 2026-09-28T14:18:58Z
+- Action   : BUY CRM
+- Price    : $229.03
+- Amount   : $36.97 | Shares: 0.161418
+- RSI      : 25.23 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | RL BOOST (conf 2→3)
+- Stop     : $226.51 | Target: $251.93
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (25.2→25.2) | BB reversal: 0.12→0.16 (returning from band) | RL BOOST
+
+## 2026-09-28T14:18:04Z
+- Action   : SELL FFIV
+- Price    : $436.38
+- Amount   : $21.54 | Shares: 0.049355
+- RSI      : n/a | EMA: n/a | BB: n/a
 - RL       : null conf=null | null
-- Stop     : $332.96 | Target: $368.07
-- Strategy : normal | Sell date: ATR/signal
+- Stop     : ATR trail stop hit ($436.38 ≤ $438.20) | Entry: $447.98
+- Strategy : normal | PnL: -2.59%
 - Regime   : normal
-- Reason   : Net buy reversed: 0.06M → -0.10M | OBV -0.2M/day (25.7h held) | P&L: +0.65% (+$0.16)
+- Reason   : ATR trailing stop triggered (current $436.38 ≤ trail_stop $438.20, held ~71h)
 
-## 2026-09-23T15:28:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal (SPY above 200-EMA). Universe=503 symbols. SPY RSI=73.15 BULLISH. No SELLs triggered on held positions (JKHY/LHX/CB/CMCSA all above trail stops, no SELL signals). BUY PGR $25 (RL BOOST conf 2→3). 5 positions after buy. CB circuit breaker OK (daily ~0%, weekly -0.25%). Acct ~$248.74.
-
-## 2026-09-23T15:27:34Z
-- Action   : BUY PGR
-- Price    : $206.17
-- Amount   : $25.00 | Shares: ~0.12125
-- RSI      : 27.9 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $202.71 | Target: $226.79
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI=27.9 oversold+stabilizing (24.7→27.9) | BB reversal 0.12→0.20 returning from band | 🤖 RL BOOST
-
-## 2026-09-23T14:29:30Z
-- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=546 cached (503 in signals). SPY RSI=52.9 (no panic). SELL ERIE (net_buy_sell signal, 24h held). No BUYs: all conf=2 BUY signals have EMA=BEARISH — blocked by regime filter B (need conf=3). 4 positions after sell. CB circuit breaker OK (daily 0.0%, weekly -0.25%). Acct $248.74.
-
-## 2026-09-23T14:29:08Z
-- Action   : SELL ERIE
-- Price    : ~$232.55
-- Amount   : ~$25.09 | Shares: 0.107890
-- RSI      : 39.2 | EMA: BEARISH | BB: IN_BAND
+## 2026-09-28T14:17:56Z
+- Action   : SELL CTSH
+- Price    : $56.38
+- Amount   : $24.50 | Shares: 0.434405
+- RSI      : n/a | EMA: n/a | BB: n/a
 - RL       : null conf=null | null
-- Stop     : $229.74 | Target: $254.89
-- Strategy : normal | Sell date: signal
+- Stop     : ATR trail stop hit ($56.38 ≤ $56.49) | Entry: $57.55
+- Strategy : normal | PnL: -2.03%
 - Regime   : normal
-- Reason   : net_buy_sell signal — net buy reversed 0.08M→0.00M | OBV -0.1M/day | 24h held ≥ 3h | P&L: ~+0.36%
+- Reason   : ATR trailing stop triggered (current $56.38 ≤ trail_stop $56.49, held ~72h)
 
-## 2026-09-22T18:27:27Z
-- Action   : BUY CMCSA
-- Price    : $22.45
-- Amount   : $25.00 | Shares: 1.113586
-- RSI      : 28.1 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $22.073 | Target: $24.695
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI=28.1 oversold+stabilizing | BB reversal returning from band | 🤖 RL BOOST
-
-## 2026-09-22T18:24:44Z
-- Action   : SELL WFC
-- Price    : $83.695
-- Amount   : $24.79 | Shares: 0.296249
-- RSI      : 28.2 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | null
-- Stop     : $83.74 | Target: $92.83
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : ATR trailing stop triggered — price $83.695 ≤ trail_stop $83.74 (held 4.0h ≥ 3h) | P&L: -0.82% (-$0.21)
-
-## 2026-09-22T18:24:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. Regime=normal. Universe=503. SPY RSI=72.56 (no panic). 13 RSI BUY conf=2 (ema BEARISH, all oversold). 4 net-buy. 2 surge (count=1). WFC ATR stop triggered → SELL. 4/5 positions → BUY CMCSA $25 RL BOOST RSI=28.1. BP $96.86. Acct ≈$248.48.
-
-## 2026-09-22T15:28:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. 5/5 max positions held — no new BUYs. No SELL triggers (WFC/LHX/CB/ERIE <3h, NVDA +7.6% above $217.73 trail). 51 RSI BUY signals conf=2 EMA-bearish. 0 net-buy. 0 surge. CB inactive (daily -0.33%, weekly -0.09%). BP $121.86. 5 positions. Acct $247.88. Universe: 503.
-
-## 2026-09-22T14:25:49Z
-- Action   : BUY WFC
-- Price    : $84.38
-- Amount   : $25.00 | Shares: 0.296270
-- RSI      : 26.09 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $83.74 | Target: $92.82
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI=26.09 oversold | BB below band | EMA bearish | 🤖 RL BOOST
-
-## 2026-09-22T14:25:49Z
-- Action   : BUY LHX
-- Price    : $240.94
-- Amount   : $25.00 | Shares: 0.103760
-- RSI      : 26.73 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $238.99 | Target: $265.03
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI=26.73 oversold | BB below band | EMA bearish | 🤖 RL BOOST
-
-## 2026-09-22T14:25:49Z
-- Action   : BUY CB
-- Price    : $334.43
-- Amount   : $25.00 | Shares: 0.074750
-- RSI      : 26.95 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $332.96 | Target: $367.87
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI=26.95 oversold | BB below band | EMA bearish | 🤖 RL BOOST
-
-## 2026-09-22T14:25:49Z
-- Action   : BUY ERIE
-- Price    : $232.25
-- Amount   : $25.00 | Shares: 0.107640
-- RSI      : 27.45 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $229.74 | Target: $255.48
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI=27.45 oversold | BB below band | EMA bearish | 🤖 RL BOOST
-
-## 2026-09-22T14:25:49Z
-- SUMMARY: Market OPEN, in_trade_window=true. Cache scan FIXED: universe_size=503. Regime=normal. Kill switch OK. CB INACTIVE (new day, daily_dd=0%, weekly_dd=-0.23%). NVDA HOLD (RSI=79.53 conf=0, price $228.13 > trail $217.73, below take_profit $233.66, trail unchanged). 4 new BUYs placed: WFC $25 (RSI 26.09 RL BOOST), LHX $25 (RSI 26.73 RL BOOST), CB $25 (RSI 26.95 RL BOOST), ERIE $25 (RSI 27.45 RL BOOST). BP $121.86 est. 5 positions. Acct ~$248.69.
-
-## 2026-09-21T19:21:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +7.08% @ $227.46, above trail_stop $217.73 (ratchet ≥5%: max(217.73,212.42×1.025=217.73) unchanged), take_profit $233.66. No buy signals (0 tickers scanned). CB INACTIVE (daily +0.21% gain, weekly +0.21% gain). BP $221.86. 1 position. Acct $248.63.
-
-## 2026-09-21T18:21:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +6.98% @ $227.25, trail_stop $217.73 unchanged (ratchet: profit ≥5%, max(217.73,217.73)=unchanged). No buy signals. CB INACTIVE (daily +0.20%, weekly +0.20%). BP $221.86. 1 position. Acct $248.60.
-
-## 2026-09-21T17:08:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +6.72% @ $226.69, trail_stop $217.73 unchanged (ratchet: profit ≥5%, max(217.73,217.73)=unchanged), take_profit $233.66. No buy signals. CB INACTIVE (daily +0.17%, weekly +0.17%). BP $221.86. 1 position. Acct $248.54.
-
-## 2026-09-21T16:08:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +6.01% @ $225.18, above trail_stop $217.73, take_profit $233.66. Trail stop unchanged at $217.73 (ratchet ≥5%: max(217.73,212.42×1.025=217.73)). No buy signals (0 tickers scanned). CB INACTIVE (daily +0.10%, weekly +0.10%). BP $221.86. 1 position. Acct $248.36.
-
-## 2026-09-21T14:10:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. Signal engine: full S&P500 scan (universe_size=0, yfinance 403/proxy-blocked). 0 RSI/net-buy/surge signals. No sell triggers: NVDA +5.00% @ $223.04, above trail_stop $213.48, take_profit $233.66. Trail stop unchanged at $213.48 (profit 5.00%, ratchet ≥0.025: max(213.48, 213.48) unchanged). No buy signals (0 tickers scanned). CB INACTIVE (new day/week baseline reset Mon, daily 0%, weekly 0%). BP $221.86. 1 position. Acct $248.11.
+## 2026-09-28T17:12:28Z
+- SUMMARY: Market OPEN, in_trade_window=true. No SELLs (all 5 positions above ATR stops; all signals HOLD; no TP hit). No BUYs (5/5 max positions). Regime=normal. CB: daily 0.29%/weekly 0.29% (OK). RSI BUY candidates skipped (max positions): AMD(conf2), ALAB(conf2), STZ(conf2), CPRT(conf2), EFX(conf2). Surge: XOM 11.8% count=1 (need 2). Universe=503. 5 positions (PNR:-0.50%@$52.92, INVH:+0.49%@$26.44, VICI:-0.06%@$23.25, CRM:-0.02%@$228.98, REGN:-0.85%@$755.66). BP=$68.48. Acct=$244.72.
