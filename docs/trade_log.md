@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-09-29T15:31:33Z
+- Action   : SELL REGN
+- Price    : $745.58
+- Amount   : $18.09 | Shares: 0.024261
+- RSI      : 23.1 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.93 | null
+- Stop     : $753.28 (triggered) | Target: $838.34
+- Strategy : normal | Sell date: ATR trailing stop
+- Regime   : normal
+- Reason   : ATR trailing stop triggered: $745.58 ≤ trail_stop $753.28 (entry $762.13, loss -2.19%)
+
+## 2026-09-29T15:31:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. SOLD REGN (ATR trail stop $753.28 triggered, current $745.58, entry $762.13, loss -2.19%). CDW RSI BUY conf=2 (RSI=23.3) SKIPPED: in net_buy_sell + EMA BEARISH + RL HOLD@93% — too many contradicting signals, HOLD. CB: daily 0.0%/weekly 0.50% (OK). Regime=normal. Universe=503. 4 positions (PNR:-0.7%@$52.79, INVH:+0.8%@$26.53, VICI:-0.5%@$23.15, CRM:-0.6%@$227.55). BP=$114.44. Acct=$244.22.
+
 ## 2026-09-28T20:15:00Z
 - SUMMARY: Market CLOSED (after 4pm ET). Regime=normal (SPY BULLISH above 200-EMA). No SELLs (market closed — skipped). No BUYs (market closed + 5/5 max positions). ATR stops vs close: PNR $53.04>$52.19 ✓, INVH $26.55>$26.02 ✓, VICI $23.20>$23.00 ✓, CRM $227.27>$226.51 ✓, REGN $752.42<$753.28 ⚠ BELOW STOP. REGN ATR trail stop will trigger SELL at next market open (hours_held≥3 since 2026-09-28T14:19Z). No ratchet updates (all positions at/below cost). CB: daily 0.40%/weekly 0.40% (OK, under 3%/5%). Surge: WAT count=2 (≥10% threshold, held from last cycle — mkt closed, tracker unchanged). RSI/Net-buy: all 5 held = HOLD. Universe=503. BP=$68.48. Acct=$244.45.
 
