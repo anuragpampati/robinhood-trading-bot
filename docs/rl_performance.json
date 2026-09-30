@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29",
+  "updated_at": "2026-09-30",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
@@ -14,5 +14,5 @@
   "rl_training_samples": 623,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). Metrics from 7 real closed trades (CTSH/FFIV/LHX/CNP/MDT + CRM -1.55% + REGN ~-1.3%, all ATR trailing-stop losses, avg -1.67%). NO_CHANGE: n=3 in current log window (below n>=5 for RSI_OVERSOLD); no momentum trades; avg_hold ~56h (not fast-stopped). INTU/ADSK opened 2026-09-29 (RSI 20/25). Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). Metrics from 7 real closed trades (CTSH/FFIV/LHX/CNP/MDT/CRM/REGN, all ATR trailing-stop losses, avg -1.67%). NO_CHANGE: n=3 in current log window (below n>=5 for RSI_OVERSOLD); no momentum trades; avg_hold ~47h (not fast-stopped). INTU/ADSK/PNR/INVH/VICI open as of 2026-09-30. Updated by daily learning CCR"
 }

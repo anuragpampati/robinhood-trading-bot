@@ -469,3 +469,11 @@
 - Backtest: SKIPPED (yfinance/Yahoo Finance 403 in CCR sandbox; known limitation)
 - RL samples: 623/200 (READY — +2 new rows today; 19 Q-states unchanged)
 - Notes: CRM closed -1.55% ATR trail (27h hold). REGN confirmed closed — not in positions.json (stop hit at close 2026-09-28 $752.42<$753.28; sell executed but log entry trimmed). INTU/ADSK opened today (RSI 20.05/25.17, normal strategy). Merge conflict in trade_log.md resolved. 5 open positions: PNR/INVH/VICI/INTU/ADSK. RSI_OVERSOLD tightening (30→32) still warranted by 0% win rate across 7 trades — will reapply once backtest can validate.
+
+## 2026-09-30
+- Trades analysed: 4 closed (CTSH -2.03%, FFIV -2.59%, CRM -1.55%, REGN ~-1.3%); 7 total historical; 5 currently open (PNR/INVH/VICI/INTU/ADSK)
+- Win rate: 0% overall (normal: 0%, 4/4 ATR trailing-stop losses; momentum: unwired; surge: n/a)
+- Config changes: none — NO_CHANGE (n=3 in log window, below n>=5 for RSI_OVERSOLD; avg_hold ~47h not fast-stopped; no momentum trades)
+- Backtest: skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403); using real trade metrics
+- RL samples: 623/200 (RL READY — run: python -m strategy.rl_agent --train to activate Q-learning)
+- Notes: VICI ATR stop ⚠ VERY TIGHT ($23.00, price $22.965 at close) — SELL queued at next market open. INTU +3.76% and ADSK +4.67% showing profit. Acct=$245.47. Kill switch: OK (well above $200 floor).
