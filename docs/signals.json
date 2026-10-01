@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-01T20:45:00.862131+00:00",
+  "timestamp": "2026-10-01T21:30:27.202520+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7816,9 +7816,9 @@
       "price": 490.5400085449219,
       "net_buy_d1": 974224,
       "net_buy_d2": 1342468,
-      "net_buy_d3": 3997432,
+      "net_buy_d3": 4000042,
       "trend_days": 4,
-      "obv_slope": 1815562,
+      "obv_slope": 1816387,
       "score": 41.82,
       "reason": "Net buy \u2191 4d streak: 0.97M \u2192 1.34M \u2192 4.00M | OBV +1.8M/day"
     }
@@ -7828,10 +7828,10 @@
       "ticker": "CTVA",
       "price": 12.569999694824219,
       "net_buy_d2": -2063991,
-      "net_buy_d3": -38498506,
-      "obv_slope": -18330743,
+      "net_buy_d3": -38583528,
+      "obv_slope": -18369525,
       "score": 0.0,
-      "reason": "Net buy reversed: -2.06M \u2192 -38.50M | OBV -18.3M/day"
+      "reason": "Net buy reversed: -2.06M \u2192 -38.58M | OBV -18.4M/day"
     },
     {
       "ticker": "BXP",
@@ -7855,8 +7855,8 @@
       "ticker": "LMT",
       "price": 505.5,
       "net_buy_d2": 262367,
-      "net_buy_d3": -455651,
-      "obv_slope": -1177455,
+      "net_buy_d3": -461444,
+      "obv_slope": -1179696,
       "score": 0.0,
       "reason": "Net buy reversed: 0.26M \u2192 -0.46M | OBV -1.2M/day"
     },
@@ -7864,8 +7864,8 @@
       "ticker": "REGN",
       "price": 734.8099975585938,
       "net_buy_d2": 414792,
-      "net_buy_d3": -698922,
-      "obv_slope": -417788,
+      "net_buy_d3": -699862,
+      "obv_slope": -418068,
       "score": 0.0,
       "reason": "Net buy reversed: 0.41M \u2192 -0.70M | OBV -0.4M/day"
     },
@@ -7873,8 +7873,8 @@
       "ticker": "CI",
       "price": 267.9599914550781,
       "net_buy_d2": 281810,
-      "net_buy_d3": -435524,
-      "obv_slope": -1075051,
+      "net_buy_d3": -436076,
+      "obv_slope": -1075550,
       "score": 0.0,
       "reason": "Net buy reversed: 0.28M \u2192 -0.44M | OBV -1.1M/day"
     },
@@ -7882,8 +7882,8 @@
       "ticker": "NOC",
       "price": 482.0,
       "net_buy_d2": -241314,
-      "net_buy_d3": -808332,
-      "obv_slope": -970048,
+      "net_buy_d3": -808860,
+      "obv_slope": -970184,
       "score": 0.0,
       "reason": "Net buy reversed: -0.24M \u2192 -0.81M | OBV -1.0M/day"
     },
@@ -7891,8 +7891,8 @@
       "ticker": "WYNN",
       "price": 77.30000305175781,
       "net_buy_d2": 725963,
-      "net_buy_d3": -976706,
-      "obv_slope": -784711,
+      "net_buy_d3": -977335,
+      "obv_slope": -785077,
       "score": 0.0,
       "reason": "Net buy reversed: 0.73M \u2192 -0.98M | OBV -0.8M/day"
     },
@@ -7900,30 +7900,30 @@
       "ticker": "TSLA",
       "price": 354.1099853515625,
       "net_buy_d2": 35791083,
-      "net_buy_d3": -27057722,
-      "obv_slope": -11903893,
+      "net_buy_d3": -27166340,
+      "obv_slope": -11928125,
       "score": 0.0,
-      "reason": "Net buy reversed: 35.79M \u2192 -27.06M | OBV -11.9M/day"
+      "reason": "Net buy reversed: 35.79M \u2192 -27.17M | OBV -11.9M/day"
     },
     {
       "ticker": "BKNG",
       "price": 160.27999877929688,
       "net_buy_d2": -1964778,
-      "net_buy_d3": -4895321,
-      "obv_slope": -2279482,
+      "net_buy_d3": -4922462,
+      "obv_slope": -2286642,
       "score": 0.0,
-      "reason": "Net buy reversed: -1.96M \u2192 -4.90M | OBV -2.3M/day"
+      "reason": "Net buy reversed: -1.96M \u2192 -4.92M | OBV -2.3M/day"
     }
   ],
   "surge_signals": [
     {
       "ticker": "SNPS",
       "price": 490.5400085449219,
-      "buy_surge_pct": 0.768,
+      "buy_surge_pct": 0.7692,
       "buy_vol_d2": 2915834,
-      "buy_vol_d3": 5155296,
-      "net_buy_d3": 3997432,
-      "reason": "Buy vol \u219176.8% vs prior day | Net buy \u2191 4d streak: 0.97M \u2192 1.34M \u2192 4.00M | OBV +1.8M/day"
+      "buy_vol_d3": 5158663,
+      "net_buy_d3": 4000042,
+      "reason": "Buy vol \u219176.9% vs prior day | Net buy \u2191 4d streak: 0.97M \u2192 1.34M \u2192 4.00M | OBV +1.8M/day"
     }
   ]
 }
