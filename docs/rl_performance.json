@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
   "win_rate": 0.0,
   "avg_win_pnl": null,
-  "avg_loss_pnl": -0.0167,
+  "avg_loss_pnl": -0.0182,
   "risk_reward": null,
-  "total_trades": 7,
+  "total_trades": 9,
   "wins": 0,
-  "losses": 7,
+  "losses": 9,
   "circuit_breaker_halts": 0,
   "rl_training_samples": 623,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). Metrics from 7 real closed trades (CTSH/FFIV/LHX/CNP/MDT/CRM/REGN, all ATR trailing-stop losses, avg -1.67%). NO_CHANGE: n=3 in current log window (below n>=5 for RSI_OVERSOLD); no momentum trades; avg_hold ~47h (not fast-stopped). INTU/ADSK/PNR/INVH/VICI open as of 2026-09-30. Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). Metrics from 9 real closed trades (CTSH/FFIV/LHX/CNP/MDT/CRM/REGN/VICI/PNR, all ATR trailing-stop losses, avg -1.82%). NO_CHANGE: n=3 in current log window (below n>=5 for RSI_OVERSOLD); no momentum trades. INTU/ADSK/INVH open as of 2026-10-01 (+6.56%/+5.42%/+0.38%). Updated by daily learning CCR"
 }

@@ -477,3 +477,11 @@
 - Backtest: skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403); using real trade metrics
 - RL samples: 623/200 (RL READY — run: python -m strategy.rl_agent --train to activate Q-learning)
 - Notes: VICI ATR stop ⚠ VERY TIGHT ($23.00, price $22.965 at close) — SELL queued at next market open. INTU +3.76% and ADSK +4.67% showing profit. Acct=$245.47. Kill switch: OK (well above $200 floor).
+
+## 2026-10-01
+- Trades analysed: 3 closed in current log window (VICI -2.3%, CRM -1.55%, PNR -2.35% — all ATR trailing-stop losses; 9 cumulative closed trades total)
+- Win rate: 0% overall (normal: 0%, momentum: n/a — no momentum trades, surge: n/a)
+- Config changes: none (NO_CHANGE — normal n=3 in log window, below n>=5 threshold for RSI_OVERSOLD; no momentum trades for MOMENTUM_VOL_MIN; avg_hold ~47h not fast-stopped for ATR_VOLATILITY_THRESHOLD)
+- Backtest: skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403)
+- RL samples: 623/200 (RL READY — 0 new rows today, no closed trades this cycle)
+- Notes: INTU/ADSK/INVH open with +6.56%/+5.42%/+0.38% unrealised gains; bearish_ema regime continues. Account at $245.72. trim_log kept 9/14 entries.
