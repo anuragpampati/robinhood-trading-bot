@@ -1,21 +1,24 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-01T19:15:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. No trades. Regime=bearish_ema. 0 RSI BUY signals. Net-buy candidate: SNPS (conf=2, net-buy only) blocked by bearish_ema 3/3 requirement. ATR safe: INVH $26.375>$26.02 (+0.25%), INTU $283.35>$271.95 (+6.79%), ADSK $213.375>$205.45 (+6.45%). No take-profit or stop triggered. CB: daily -0.21%/weekly +0.23% (OK). Universe=503. Acct=$246.01. BP=$120.58.
+
 ## 2026-10-01T18:16:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. No trades. Regime=bearish_ema. 0 RSI BUY signals. Net-buy candidates: SNPS (conf=2), EQIX (conf=2) — both blocked by bearish_ema 3/3 requirement. ATR safe: INVH $26.36>$26.02 (+0.17%), INTU $282.80>$271.95 (+6.59%), ADSK $212.80>$205.45 (+6.17%). No take-profit or stop triggered. CB: daily -0.26%/weekly +0.18% (OK). Universe=503. Acct=$245.88. BP=$120.58.
 
-## 2026-10-01T15:12:25Z
-- Action   : SELL PNR
-- Price    : $51.93
-- Amount   : $24.41 | Shares: 0.470101
-- RSI      : 30.48 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : null conf=null | null
-- Stop     : $52.19 | Target: $58.50
-- Strategy : normal | Sell date: ATR trailing stop
-- Regime   : bearish_ema
-- Reason   : ATR trailing stop triggered ($51.93 ≤ $52.19). P&L: -2.35%.
+## 2026-10-01T16:13:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. No trades. Regime=bearish_ema. EQIX net-buy BUY blocked (bearish_ema 3/3 requirement — net-buy only, conf=2). 0 RSI BUY signals (conf≥2). 0 surge signals. ATR stops safe: INVH $26.275>$26.02, INTU $279.47>$271.95 (ratchet: 5.33%≥5%→stays $271.95), ADSK $210.41>$205.45 (ratchet: 4.97%→no change). CB: daily -0.54%/weekly -0.09% (OK). Universe=503. Acct=$245.21. BP=$120.58.
 
-## 2026-10-01T15:10:41Z
-- SUMMARY: Market OPEN, in_trade_window=true. SELL PNR (ATR trailing stop $51.93 ≤ $52.19, P&L -2.35%). No BUYs (bearish_ema regime requires 3/3 confidence; 0 RSI BUY signals; EQIX net-buy only, blocked by regime). ATR ratchets: INTU +5.66% → stop stays $271.95; ADSK +5.13% → stop stays $205.45; INVH -0.19% → stop stays $26.02. Surge: cleared. CB: daily -0.48%/weekly -0.04% (OK). Regime=bearish_ema (SPY $759.50 < EMA200 $765.11). Universe=503. Acct=$245.34. BP=$120.58.
+## 2026-10-01T14:15:01Z
+- Action   : SELL VICI
+- Price    : $22.72
+- Amount   : $24.42 | Shares: 1.074875
+- RSI      : 30.14 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : null conf=null | null
+- Stop     : $23.00 (ATR trail) | Target: $25.59
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : ATR trailing stop triggered: $22.72 ≤ trail_stop $23.00. Entry 2026-09-25 @ $23.26, held 5 days. P&L: -2.3% (-$0.58). ATR ratchets: INTU $266.65→$271.95 (+7.3%), ADSK $201.44→$205.45 (+7.4%). No new BUYs: bearish_ema regime (0 signals at conf≥3). Surge: ACN +53.7% (count=1, not yet candidate). CB: daily reset, weekly +0.4% (OK). Universe=503.
 
 ## 2026-09-30T20:10:00Z
 - SUMMARY: Market CLOSED (20:00 UTC). No trades executed. ⚠️ VICI ATR trailing stop BREACHED at close ($22.965 ≤ $23.00 stop) — SELL queued for next cycle at market open. Surge: MU count=1 cleared (market closed, was never candidate). ATR ratchets: no changes (INTU +3.91% → stop stays $266.65; ADSK +4.27% → stop stays $201.44). CB: daily -0.04%/weekly +0.01% (OK). Regime=normal. Universe=10 (held positions + ETFs only via RH historicals; max positions, no buys possible). Acct=$245.47. BP=$120.58.
