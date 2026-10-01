@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-01T18:16:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. No trades. Regime=bearish_ema. 0 RSI BUY signals. Net-buy candidates: SNPS (conf=2), EQIX (conf=2) — both blocked by bearish_ema 3/3 requirement. ATR safe: INVH $26.36>$26.02 (+0.17%), INTU $282.80>$271.95 (+6.59%), ADSK $212.80>$205.45 (+6.17%). No take-profit or stop triggered. CB: daily -0.26%/weekly +0.18% (OK). Universe=503. Acct=$245.88. BP=$120.58.
+
 ## 2026-10-01T15:12:25Z
 - Action   : SELL PNR
 - Price    : $51.93
