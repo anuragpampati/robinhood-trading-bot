@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-01T14:15:01Z
+- Action   : SELL VICI
+- Price    : $22.72
+- Amount   : $24.42 | Shares: 1.074875
+- RSI      : 30.14 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : null conf=null | null
+- Stop     : $23.00 (ATR trail) | Target: $25.59
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : ATR trailing stop triggered: $22.72 ≤ trail_stop $23.00. Entry 2026-09-25 @ $23.26, held 5 days. P&L: -2.3% (-$0.58). ATR ratchets: INTU $266.65→$271.95 (+7.3%), ADSK $201.44→$205.45 (+7.4%). No new BUYs: bearish_ema regime (0 signals at conf≥3). Surge: ACN +53.7% (count=1, not yet candidate). CB: daily reset, weekly +0.4% (OK). Universe=503.
+
 ## 2026-09-30T20:10:00Z
 - SUMMARY: Market CLOSED (20:00 UTC). No trades executed. ⚠️ VICI ATR trailing stop BREACHED at close ($22.965 ≤ $23.00 stop) — SELL queued for next cycle at market open. Surge: MU count=1 cleared (market closed, was never candidate). ATR ratchets: no changes (INTU +3.91% → stop stays $266.65; ADSK +4.27% → stop stays $201.44). CB: daily -0.04%/weekly +0.01% (OK). Regime=normal. Universe=10 (held positions + ETFs only via RH historicals; max positions, no buys possible). Acct=$245.47. BP=$120.58.
 
