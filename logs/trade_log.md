@@ -1,5 +1,31 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-02T15:14:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. REGIME CHANGED: bearish_ema → NORMAL (SPY RSI=59.1, BULLISH). Bought GILD ($59.69, RL BOOST) + SPGI ($29.85, RL BOOST). 16 RSI BUY signals (all conf=2+stabilizing, RSI 20-30, all EMA=BEARISH individually). No SELLs: INVH $26.30>$26.02 (-0.06%), INTU $279.70>$271.95 (+5.42%), ADSK $211.50>$205.45 (+5.52%). CB: daily -0.24%/weekly -0.04% (OK). Universe=503. Acct=$245.32. BP=$79.85.
+
+## 2026-10-02T15:13:22Z
+- Action   : BUY SPGI
+- Price    : $383.22
+- Amount   : $29.85 | Shares: 0.077892
+- RSI      : 26.8 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $380.07 | Target: $421.54
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (26.8↑26.8) | BB reversal returning from band | RL BOOST
+
+## 2026-10-02T15:13:13Z
+- Action   : BUY GILD
+- Price    : $144.84
+- Amount   : $59.69 | Shares: 0.412108
+- RSI      : 25.6 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $143.59 | Target: $159.32
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (25.6↑25.6) | BB reversal returning from band | RL BOOST
+
+
 ## 2026-10-01T20:14:00Z
 - SUMMARY: Market CLOSED. No trades. Regime=bearish_ema. 0 RSI BUY signals, 16 RSI SELL signals (none held). Surge: SNPS +10.6%, AEP +6032% (anomaly). ATR safe: INVH $26.41>$26.02 (+0.38%), INTU $282.72>$271.95 (+6.56%), ADSK $211.31>$205.45 (+5.42%). CB: daily -0.33%/weekly +0.11% (OK). Universe=503. Acct=$245.72. BP=$120.58.
 
