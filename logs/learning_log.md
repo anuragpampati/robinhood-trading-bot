@@ -485,3 +485,11 @@
 - Backtest: skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403)
 - RL samples: 623/200 (RL READY — 0 new rows today, no closed trades this cycle)
 - Notes: INTU/ADSK/INVH open with +6.56%/+5.42%/+0.38% unrealised gains; bearish_ema regime continues. Account at $245.72. trim_log kept 9/14 entries.
+
+## 2026-10-02
+- Trades analysed: 2 (INVH -1.31% ATR trail, 168h; VICI -2.3% ATR trail, 120h)
+- Win rate: 0% overall (normal: 0%, momentum: n/a, surge: n/a)
+- Config changes: none (n=2 < 5 for RSI_OVERSOLD; no momentum trades; avg_hold=144h not < 2h for ATR threshold)
+- Backtest: skipped (yfinance 403 in CCR sandbox)
+- RL samples: 623/200 — RL READY (run python -m strategy.rl_agent --train)
+- Notes: 4 open positions (INTU/ADSK/GILD/SPGI). Regime flipped bearish→normal today. Trim kept 13 entries. Stale q_table (19 states, last trained 2026-07-09) still active; retrain recommended.
