@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-02T19:13:05Z
+- Action   : SELL INVH
+- Price    : $25.965
+- Amount   : $24.67 | Shares: 0.950212
+- RSI      : 30.77 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : null conf=null | null
+- Stop     : $26.02 (trail) | Target: $28.941
+- Strategy : normal | Exit: ATR trail stop
+- Regime   : normal
+- Reason   : ATR trailing stop breached ($25.965 ≤ $26.02 trail); held 168h; PnL −1.31% from entry $26.31
+
+## 2026-10-02T19:13:05Z
+- SUMMARY: Market OPEN, in_trade_window=true. SELL INVH (ATR trail stop). No BUY signals (0 RSI BUY, 0 net-buy BUY). 4 positions remaining. Regime=normal. INTU HOLD RSI=n/a $280.83>$271.95 trail (+5.85%, 72h); ADSK HOLD RSI=n/a $211.83>$205.45 trail (+5.69%, 72h); GILD HOLD RSI=30.77 $144.40>$143.59 trail (-0.30%, 4h); SPGI HOLD RSI=n/a $383.91>$380.07 trail (+0.18%, 4h). INTU trail ratcheted to $271.953. Surge: 0. CB: daily -0.37%/weekly -0.20% (OK). Universe=503 (551/549 data). Acct=$245.04. BP=$79.85 (cash=$104.52, $24.67 unsettled from INVH sell).
+
 ## 2026-10-02T18:12:17Z
 - SUMMARY: Market OPEN, in_trade_window=true. No trades. Regime=normal. 5/5 positions (max, no new BUYs). No SELL triggers: INVH HOLD RSI=34.2 $26.105>$26.020 trail (-0.78%, 172h held); INTU HOLD RSI=56.9 $280.74>$271.950 trail (+5.81%, 71h held); ADSK HOLD RSI=54.4 $211.85>$205.451 trail (+5.69%, 71h held); GILD BUY RSI=26.8 $144.35>$143.590 trail (-0.34%, 3.0h, 3h min barely met — trail stop NOT triggered); SPGI BUY RSI=29.0 $384.48>$380.070 trail (+0.33%, 3.0h, 3h min barely met — trail stop NOT triggered). ATR stops unchanged (no ratchet conditions met). Surge: 0 signals ≥10%. CB: daily -0.30%/weekly -0.09% (OK). Universe=503 (523/549 data). Acct=$245.21. BP=$79.85.
 
