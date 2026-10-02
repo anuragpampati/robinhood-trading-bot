@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-02T14:12:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. No trades. Regime=bearish_ema. 0 RSI BUY (conf≥2), 17 RSI SELL. Net-buy candidates: SNPS (RSI=SELL conflict, skip), EQIX (net-buy only, conf=2→blocked by bearish_ema). Surge: SNPS +15.2%/ADI +46.1%/FTNT +27.3% (count=1, not yet INTRADAY_SURGE candidates). ATR safe: INVH $26.47>$26.02 (+0.61%), INTU $281.96>$271.95 (+6.27%), ADSK $213.48>$205.45 (+6.51%). No take-profit (INVH<$28.94, INTU<$291.85, ADSK<$220.48). No ATR ratchets triggered. CB: daily 0.0%/weekly -0.21% (new day, both OK). Universe=503. Acct=$245.94. BP=$169.39.
+
 ## 2026-10-01T20:14:00Z
 - SUMMARY: Market CLOSED. No trades. Regime=bearish_ema. 0 RSI BUY signals, 16 RSI SELL signals (none held). Surge: SNPS +10.6%, AEP +6032% (anomaly). ATR safe: INVH $26.41>$26.02 (+0.38%), INTU $282.72>$271.95 (+6.56%), ADSK $211.31>$205.45 (+5.42%). CB: daily -0.33%/weekly +0.11% (OK). Universe=503. Acct=$245.72. BP=$120.58.
 
