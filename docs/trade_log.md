@@ -1,5 +1,30 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-05T14:13:19Z
+- Action   : BUY CRH
+- Price    : $80.83
+- Amount   : $54.52 | Shares: 0.6745
+- RSI      : 28.01 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $80.15 | Target: $88.91
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (28.0↑28.0) | BB reversal: 0.17→0.19 (returning from band) | RL BOOST conf=3 STRONG BUY — all investable ($104.52 BP − $50 buffer = $54.52)
+
+## 2026-10-05T14:12:37Z
+- Action   : SELL ADSK
+- Price    : $222.73
+- Amount   : $17.90 | Shares: 0.080373
+- RSI      : 73.14 | EMA: N/A | BB: N/A
+- RL       : BUY conf=0.928 | null (RL not blocking — take-profit and RSI SELL triggered)
+- Stop     : $205.45 (trail) | Target: $220.48 (reached)
+- Strategy : normal | Exit: take-profit +11.1% | RSI SELL conf=2
+- Regime   : normal
+- Reason   : Take-profit triggered ($222.73 ≥ $220.48 = avg_cost×1.10) | RSI SELL conf=2 (RSI=73.14, overbought); entry 2026-09-29T19:13Z, 114h held
+
+## 2026-10-05T14:13:30Z
+- SUMMARY: Market OPEN, in_trade_window=true. SELL ADSK (take-profit +11.1%, RSI SELL conf=2 RSI=73.14). BUY CRH $54.52 @ $80.83 (RL BOOST conf=3, STRONG BUY, RSI=28.01 oversold). 4 positions: INTU HOLD RSI=68.6 $288.11>$271.95 trail (+8.6%, 115h); GILD HOLD RSI=25.7 $144.02>$143.59 trail (-0.57%, 71h); SPGI HOLD RSI=42.8 $388.70>$380.07 trail (+1.4%, 71h); CRH BUY RSI=28.0 $80.83 (new). Trail stops: INTU unchanged at $271.953. No surge signals. CB: daily 0.0%/weekly 0.0% (new day/week, OK). Universe=503. Acct≈$247. BP=$50.00 (after CRH buy).
+
 ## 2026-10-02T19:13:05Z
 - Action   : SELL INVH
 - Price    : $25.965
