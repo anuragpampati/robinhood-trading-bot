@@ -1,35 +1,27 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-10-05T19:12:00Z
-- SUMMARY: No trades. BP=$50.00 (GILD $76.96 unsettled, settles 10/07), investable=$0. Positions: INTU +7.23% ($284.51), SPGI +1.46% ($388.80), CRH +2.34% ($82.79). Trail stops: INTU=$271.953, SPGI=$380.07, CRH=$80.15. Signals: 0 RSI BUY/SELL; net-buy BUY HUM (MODERATE, $0 investable); 10 net-buy SELLs (T/BSX/LEN/PFG/ORLY/VTR/MGM/DAL/AXON/RTX). No held ticker triggered any sell rule. Surge: CPRT removed (not in >=10% surge). CB: daily -0.22%/weekly -0.22% (OK). Regime=normal. SPY RSI=70.4 (BULLISH EMA). Universe=503. Acct=$247.57.
+## 2026-10-05T20:07:00Z
+- SUMMARY: Market closed (4:06 PM ET). No trades. BP=$50.00 (GILD $76.96 unsettled, settles 10/07). 3 positions: INTU +7.31% ($284.72, trail=$271.95, tp=$291.85), SPGI +2.02% ($390.95, trail=$380.07, tp=$421.54), CRH +2.18% ($82.66, trail=$80.15, tp=$88.99). Trail stops unchanged. RSI BUYs: 3 (conf≥2, $0 investable — market closed). Surges: 4. CB: daily +0.19%/weekly +0.19% (OK). Regime: normal. Universe=503. Acct=$247.49. BP=$50.00.
 
-## 2026-10-05T18:12:37Z
-- SUMMARY: No trades. BP=$50.00 (GILD proceeds $76.96 unsettled, settles 10/07), investable=$0. Positions: INTU +6.57% ($282.75), SPGI +1.20% ($387.84), CRH +2.00% ($82.52). Trail stops: INTU=$271.95, SPGI=$380.07, CRH=$80.15. Signals: 5 RSI BUYs (BMY/MRK/NOC RL-BOOSTed conf=3 STRONG, QBTS/LEN conf=2), net-buy BUY HUM; 10 RSI SELLs, 10 net-buy SELLs. No held ticker triggered sell. Surge: CPRT 211.6% (count=1, needs 2). CB: daily -0.02%/weekly -0.02% (OK). SPY RSI=67.4 (BULLISH EMA). Regime=normal. Universe=503. Acct=$247.09.
+## 2026-10-05T17:11:44Z
+- SUMMARY: Market OPEN, in_trade_window=true. No trades. BP=$50.00=cash buffer (GILD proceeds $76.96 unsettled T+2, settles 10/07). 3 positions: INTU +6.34% ($282.15, trail=$271.95, tp=$291.85), SPGI +1.45% ($388.77, trail=$380.07, tp=$421.54), CRH +1.69% ($82.27, trail=$80.15, tp=$88.99). Trail stops unchanged. RSI BUYs: 2 (QBTS RSI=28.03/INCY RSI=23.64, both conf=2, $0 investable). Net-buy BUYs: 0. Net-buy SELLs: 10 (TTWO/BSX/T/LEN/ORLY etc., none held). Surge: 0. CB: daily -0.03%/weekly -0.03% (OK). Regime: normal (SPY RSI=67.03, EMA BULLISH). Universe=503. Acct=$246.95. BP=$50.00.
 
-## 2026-10-05T14:13:19Z
-- Action   : BUY CRH
-- Price    : $80.83
-- Amount   : $54.52 | Shares: 0.6745
-- RSI      : 28.01 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $80.15 | Target: $88.91
-- Strategy : normal | Sell date: ATR/signal
+## 2026-10-05T16:14:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. No trades. Buying power $50.00 = cash buffer (GILD proceeds still unsettled T+2). 3 positions: INTU +6.49% ($282.54, trail=$271.95, tp=$291.85), SPGI +1.29% ($388.15, trail=$380.07, tp=$421.54), CRH +0.64% ($81.42, trail=$80.15, tp=$88.99). Trail stops unchanged. RSI BUYs: 10 (MRK/BMY/GE/T/VTR/VRSK/QBTS/INFQ/CHRW/LEN all conf=2 moderate, $0 investable). Net BUYs: 0. Surge: CPRT first_seen count=1 (not ≥2). CB: daily -0.26%/weekly -0.26% (OK). Regime: normal. Universe=503. Acct=$246.39. BP=$50.00.
+
+## 2026-10-05T15:14:43Z
+- SUMMARY: Market OPEN, in_trade_window=true. SELL GILD (ATR trail stop $143.51≤$143.59, 72h held, PnL -0.92%). No BUY: buying_power=$50.00=cash buffer, GILD proceeds unsettled (T+2). 3 positions (INTU +6.94%, SPGI +1.27%, CRH +0.36%). Regime: normal. SPY RSI=63.95. 14 RSI BUY signals (LEN/TGT/BMY/SYY/TROW/VZ etc., all RL-BOOST conf=3, but $0 investable). CB: daily -0.26%/weekly -0.26% (OK). Universe=503. Acct=$246.39. BP=$50.00.
+
+## 2026-10-05T15:14:43Z
+- Action   : SELL GILD
+- Price    : $143.51
+- Amount   : $59.14 | Shares: 0.412108
+- RSI      : 24.51 | EMA: BEARISH | BB: IN_BAND
+- RL       : HOLD conf=0.936 | null
+- Stop     : $143.59 (ATR trail) | Target: $159.32
+- Strategy : normal | Sell date: ATR trail
 - Regime   : normal
-- Reason   : RSI oversold+stabilizing (28.0↑28.0) | BB reversal: 0.17→0.19 (returning from band) | RL BOOST conf=3 STRONG BUY — all investable ($104.52 BP − $50 buffer = $54.52)
-
-## 2026-10-05T14:12:37Z
-- Action   : SELL ADSK
-- Price    : $222.73
-- Amount   : $17.90 | Shares: 0.080373
-- RSI      : 73.14 | EMA: N/A | BB: N/A
-- RL       : BUY conf=0.928 | null (RL not blocking — take-profit and RSI SELL triggered)
-- Stop     : $205.45 (trail) | Target: $220.48 (reached)
-- Strategy : normal | Exit: take-profit +11.1% | RSI SELL conf=2
-- Regime   : normal
-- Reason   : Take-profit triggered ($222.73 ≥ $220.48 = avg_cost×1.10) | RSI SELL conf=2 (RSI=73.14, overbought); entry 2026-09-29T19:13Z, 114h held
-
-## 2026-10-05T14:13:30Z
-- SUMMARY: Market OPEN, in_trade_window=true. SELL ADSK (take-profit +11.1%, RSI SELL conf=2 RSI=73.14). BUY CRH $54.52 @ $80.83 (RL BOOST conf=3, STRONG BUY, RSI=28.01 oversold). 4 positions: INTU HOLD RSI=68.6 $288.11>$271.95 trail (+8.6%, 115h); GILD HOLD RSI=25.7 $144.02>$143.59 trail (-0.57%, 71h); SPGI HOLD RSI=42.8 $388.70>$380.07 trail (+1.4%, 71h); CRH BUY RSI=28.0 $80.83 (new). Trail stops: INTU unchanged at $271.953. No surge signals. CB: daily 0.0%/weekly 0.0% (new day/week, OK). Universe=503. Acct≈$247. BP=$50.00 (after CRH buy).
+- Reason   : ATR trailing stop triggered ($143.51 ≤ $143.59 trail, 72h held, PnL −0.92% from $144.84 avg_cost)
 
 ## 2026-10-02T19:13:05Z
 - Action   : SELL INVH
