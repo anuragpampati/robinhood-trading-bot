@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-05T15:14:43Z
+- SUMMARY: Market OPEN, in_trade_window=true. SELL GILD (ATR trail stop $143.51≤$143.59, 72h held, PnL -0.92%). No BUY: buying_power=$50.00=cash buffer, GILD proceeds unsettled (T+2). 3 positions (INTU +6.94%, SPGI +1.27%, CRH +0.36%). Regime: normal. SPY RSI=63.95. 14 RSI BUY signals (LEN/TGT/BMY/SYY/TROW/VZ etc., all RL-BOOST conf=3, but $0 investable). CB: daily -0.26%/weekly -0.26% (OK). Universe=503. Acct=$246.39. BP=$50.00.
+
+## 2026-10-05T15:14:43Z
+- Action   : SELL GILD
+- Price    : $143.51
+- Amount   : $59.14 | Shares: 0.412108
+- RSI      : 24.51 | EMA: BEARISH | BB: IN_BAND
+- RL       : HOLD conf=0.936 | null
+- Stop     : $143.59 (ATR trail) | Target: $159.32
+- Strategy : normal | Sell date: ATR trail
+- Regime   : normal
+- Reason   : ATR trailing stop triggered ($143.51 ≤ $143.59 trail, 72h held, PnL −0.92% from $144.84 avg_cost)
+
 ## 2026-10-02T19:13:05Z
 - Action   : SELL INVH
 - Price    : $25.965
