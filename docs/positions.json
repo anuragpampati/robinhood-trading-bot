@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T15:14:43Z",
+  "updated_at": "2026-10-05T16:14:00Z",
   "buying_power": 50.00,
   "market_regime": "normal",
   "account_value": 246.39,
@@ -17,9 +17,9 @@
       "ticker": "INTU",
       "quantity": 0.121438,
       "avg_cost": 265.32,
-      "current_price": 283.74,
-      "pnl_pct": 0.0694,
-      "value": 34.44,
+      "current_price": 282.54,
+      "pnl_pct": 0.0649,
+      "value": 34.31,
       "entry_atr_pct": 0.025,
       "entry_time": "2026-09-29T19:13:29Z",
       "trail_stop": 271.953,
@@ -31,9 +31,9 @@
       "ticker": "SPGI",
       "quantity": 0.077892,
       "avg_cost": 383.22,
-      "current_price": 388.10,
-      "pnl_pct": 0.01274,
-      "value": 30.23,
+      "current_price": 388.15,
+      "pnl_pct": 0.01287,
+      "value": 30.24,
       "entry_atr_pct": 0.0041,
       "entry_time": "2026-10-02T15:13:22Z",
       "trail_stop": 380.07,
@@ -45,9 +45,9 @@
       "ticker": "CRH",
       "quantity": 0.673919,
       "avg_cost": 80.90,
-      "current_price": 81.19,
-      "pnl_pct": 0.00359,
-      "value": 54.72,
+      "current_price": 81.42,
+      "pnl_pct": 0.00643,
+      "value": 54.87,
       "entry_atr_pct": 0.0042,
       "entry_time": "2026-10-05T14:13:19Z",
       "trail_stop": 80.15,
@@ -57,10 +57,10 @@
     }
   ],
   "last_actions": [
+    "2026-10-05T16:14Z No trades. BP=$50=cash buffer (GILD unsettled). 3 positions: INTU +6.49%, SPGI +1.29%, CRH +0.64%. 10 RSI BUYs (all conf=2, $0 investable). Surge: CPRT count=1. CB: daily -0.26%/weekly -0.26% (OK). Universe=503. Acct=$246.39.",
     "2026-10-05T15:14Z SELL GILD (ATR trail stop $143.51≤$143.59, -0.92%, 72h held). No BUY (buying_power=$50=cash buffer, GILD proceeds unsettled). 3 positions. Regime=normal. SPY RSI=63.95. 14 RSI BUYs incl RL-BOOST (LEN/TGT/BMY/SYY/TROW/VZ), $0 investable. CB: daily -0.26%/weekly -0.26% (OK). Universe=503. Acct=$246.39. BP=$50.",
     "2026-10-05T14:13Z SELL ADSK (take-profit +11.1%, RSI SELL conf=2 RSI=73.14, 114h held). BUY CRH $54.52 @ $80.83 (RL BOOST conf=3, RSI=28.01 oversold). 4 positions. BP=$50.00. Acct≈$247. CB: daily 0%/weekly 0% (new day+week OK). Universe=503.",
     "2026-10-02T20:11Z CYCLE: Market CLOSED. No trades. 4 positions (INTU +5.96%, ADSK +5.81%, GILD -0.08%, SPGI +0.82%). Trail stops unchanged. RSI BUYs: 3 (SPOT/GILD/INCY conf=2, market closed). CB: daily -0.16%/weekly +0.04% (OK). Universe=503. Acct=$245.55. BP=$79.85.",
-    "2026-10-02T19:13Z SELL INVH: ATR trail stop triggered ($25.965 ≤ $26.02 trail), PnL −1.31%, 168h held. No BUY signals (0 RSI BUY, 0 net-buy BUY). 4 positions. Regime=normal. INTU trail ratcheted to $271.953. CB: daily -0.37%/weekly -0.20% (OK). Universe=503. Acct=$245.04. BP=$79.85.",
-    "2026-10-02T15:14Z REGIME CHANGE: bearish_ema→NORMAL. BUY GILD $59.69 @ $144.84 (0.412108 sh, RL BOOST conf=3). BUY SPGI $29.85 @ $383.22 (0.077892 sh, RL BOOST conf=3). 5 positions at max. BP=$79.85. Acct=$245.32. CB: daily -0.24%/weekly -0.04% (OK). Universe=503."
+    "2026-10-02T19:13Z SELL INVH: ATR trail stop triggered ($25.965 ≤ $26.02 trail), PnL −1.31%, 168h held. No BUY signals (0 RSI BUY, 0 net-buy BUY). 4 positions. Regime=normal. INTU trail ratcheted to $271.953. CB: daily -0.37%/weekly -0.20% (OK). Universe=503. Acct=$245.04. BP=$79.85."
   ]
 }
