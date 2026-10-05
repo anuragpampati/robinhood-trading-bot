@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-10-02",
+  "updated_at": "2026-10-05",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
   "win_rate": 0.0,
   "avg_win_pnl": null,
-  "avg_loss_pnl": -0.0182,
+  "avg_loss_pnl": -0.0151,
   "risk_reward": null,
-  "total_trades": 2,
+  "total_trades": 3,
   "wins": 0,
-  "losses": 2,
+  "losses": 3,
   "circuit_breaker_halts": 0,
-  "rl_training_samples": 623,
+  "rl_training_samples": 625,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). 2 closed trades in current log window: INVH (-1.31%, 168h ATR trail) and VICI (-2.3%, 120h ATR trail), both normal strategy. NO_CHANGE: n=2 < 5 for RSI_OVERSOLD; no momentum trades (n=0 < 3); avg_hold_hours=144h not < 2h for ATR threshold. Open: INTU/ADSK/GILD/SPGI. Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403). 3 closed trades in current log window: GILD (-0.92%, 72h ATR trail), INVH (-1.31%, 168h ATR trail), VICI (-2.3%, 120h ATR trail), all normal strategy. NO_CHANGE: n=3 < 5 for RSI_OVERSOLD; no momentum trades (n=0 < 3); avg_hold_hours=120h not < 2h for ATR threshold. Open: INTU/SPGI/CRH. Updated by daily learning CCR"
 }

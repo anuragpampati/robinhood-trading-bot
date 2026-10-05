@@ -493,3 +493,11 @@
 - Backtest: skipped (yfinance 403 in CCR sandbox)
 - RL samples: 623/200 — RL READY (run python -m strategy.rl_agent --train)
 - Notes: 4 open positions (INTU/ADSK/GILD/SPGI). Regime flipped bearish→normal today. Trim kept 13 entries. Stale q_table (19 states, last trained 2026-07-09) still active; retrain recommended.
+
+## 2026-10-05
+- Trades analysed: 3 closed (GILD -0.92%, INVH -1.31%, VICI -2.3%)
+- Win rate: 0% overall (normal: 0% [n=3], momentum: n/a [n=0], surge: n/a [n=0])
+- Config changes: none (RSI_OVERSOLD: n=3 < 5 minimum; momentum: n=0 < 3 minimum; ATR: avg_hold=120h not < 2h)
+- Backtest: skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403 errors)
+- RL samples: 625/200 (READY — 425 over target)
+- Notes: All 3 closed trades hit ATR trailing stops at loss; open positions INTU/SPGI/CRH all profitable (+7.31%/+2.02%/+2.18%). Account at $247.49, trading_enabled=true. Kill switch floor at $200, current peak $249.
