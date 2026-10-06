@@ -1,5 +1,28 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-06T14:20:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. GILD proceeds settled (+$76.96 to BP). Trail stops ratcheted: SPGI $380.07→$385.14, CRH $80.15→$81.31. BOUGHT GE $38.48 + MRK $19.24 (both RSI BUY, conf=3 RL-BOOST). 5 pos: INTU +8.90% ($288.94, trail=$271.95, tp=$291.85), SPGI +3.41% ($396.29, trail=$385.14, tp=$421.54), CRH +2.86% ($83.21, trail=$81.31, tp=$88.99), GE new -0.39% ($306.40, trail=$303.90, tp=$338.35), MRK new -0.19% ($139.83, trail=$137.90, tp=$154.10). CB: daily reset (new day), daily -0.20%/weekly +0.77% (OK). Regime=normal. Universe=503. Acct=$248.94. BP=$69.24.
+
+## 2026-10-06T14:14:00Z
+- Action   : BUY GE
+- Price    : $307.59
+- Amount   : $38.48 | Shares: 0.125100
+- RSI      : 27.82 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 → boosted signal conf 2→3
+- Stop     : $303.90 (ATR trail, atr_pct=0.006) | Target: $338.35 (+10%)
+- Strategy : normal | Regime: normal
+- Reason   : RSI oversold (27.82) + RL BOOST (conf=0.928) | GILD settled, $38.48 investable (MODERATE BUY 50% of $76.96)
+
+## 2026-10-06T14:19:00Z
+- Action   : BUY MRK
+- Price    : $140.09
+- Amount   : $19.24 | Shares: 0.137340
+- RSI      : 28.20 | EMA: BULLISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 → boosted signal conf 2→3
+- Stop     : $137.90 (ATR trail, atr_pct=0.0078) | Target: $154.10 (+10%)
+- Strategy : normal | Regime: normal
+- Reason   : RSI oversold (28.20) + RL BOOST (conf=0.928) | MODERATE BUY 50% of $38.48 remaining investable
+
 ## 2026-10-05T20:07:00Z
 - SUMMARY: Market closed (4:06 PM ET). No trades. BP=$50.00 (GILD $76.96 unsettled, settles 10/07). 3 positions: INTU +7.31% ($284.72, trail=$271.95, tp=$291.85), SPGI +2.02% ($390.95, trail=$380.07, tp=$421.54), CRH +2.18% ($82.66, trail=$80.15, tp=$88.99). Trail stops unchanged. RSI BUYs: 3 (conf≥2, $0 investable — market closed). Surges: 4. CB: daily +0.19%/weekly +0.19% (OK). Regime: normal. Universe=503. Acct=$247.49. BP=$50.00.
 
