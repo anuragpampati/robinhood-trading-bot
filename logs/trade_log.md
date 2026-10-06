@@ -1,5 +1,41 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-06T15:30:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. SOLD INTU (RSI=72.7 overbought, +9.38%) + SPGI (net-buy reversal, +3.90%). BOUGHT VTR RSI=26.7 oversold $19.24 (RL BOOST conf 2→3). 4 pos after trades: CRH +3.71%, GE +0.33%, MRK +1.14%, VTR new. Surge: AMZN 46.6% count=1 (not ≥2). CB: daily -0.20%/weekly +1.22% (OK). Regime=normal. Universe=503. Acct=$250.04. BP=$50.00.
+
+## 2026-10-06T15:24:43Z
+- Action   : SELL INTU
+- Price    : $290.20
+- Amount   : $35.24 | Shares: 0.121438
+- RSI      : 72.7 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $271.95 (trail, not triggered) | Target: $291.85
+- Strategy : normal | Sell trigger: RSI SELL conf=2
+- Regime   : normal
+- Reason   : RSI overbought (72.7) + BB above upper band | held 7 days | PnL +9.38%
+
+## 2026-10-06T15:24:46Z
+- Action   : SELL SPGI
+- Price    : $398.16
+- Amount   : $31.01 | Shares: 0.077892
+- RSI      : 64.7 | EMA: NEUTRAL | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $385.14 (trail, not triggered) | Target: $421.54
+- Strategy : normal | Sell trigger: net-buy reversal signal
+- Regime   : normal
+- Reason   : Net-buy reversed ($342K→$30K, OBV -125K/day) | held 4 days | PnL +3.90%
+
+## 2026-10-06T15:28:55Z
+- Action   : BUY VTR
+- Price    : $81.89
+- Amount   : $19.24 | Shares: 0.234940
+- RSI      : 26.7 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3 STRONG BUY)
+- Stop     : $80.66 (ATR trail, atr_pct=0.0075) | Target: $90.08 (+10%)
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold (26.7) + RL BOOST (conf=0.928) | STRONG BUY, all investable ($69.24−$50=$19.24)
+
 ## 2026-10-06T14:20:00Z
 - SUMMARY: Market OPEN, in_trade_window=true. GILD proceeds settled (+$76.96 to BP). Trail stops ratcheted: SPGI $380.07→$385.14, CRH $80.15→$81.31. BOUGHT GE $38.48 + MRK $19.24 (both RSI BUY, conf=3 RL-BOOST). 5 pos: INTU +8.90% ($288.94, trail=$271.95, tp=$291.85), SPGI +3.41% ($396.29, trail=$385.14, tp=$421.54), CRH +2.86% ($83.21, trail=$81.31, tp=$88.99), GE new -0.39% ($306.40, trail=$303.90, tp=$338.35), MRK new -0.19% ($139.83, trail=$137.90, tp=$154.10). CB: daily reset (new day), daily -0.20%/weekly +0.77% (OK). Regime=normal. Universe=503. Acct=$248.94. BP=$69.24.
 
