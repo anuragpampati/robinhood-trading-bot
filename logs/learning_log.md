@@ -501,3 +501,12 @@
 - Backtest: skipped — yfinance/Yahoo Finance blocked in CCR sandbox (403 errors)
 - RL samples: 625/200 (READY — 425 over target)
 - Notes: All 3 closed trades hit ATR trailing stops at loss; open positions INTU/SPGI/CRH all profitable (+7.31%/+2.02%/+2.18%). Account at $247.49, trading_enabled=true. Kill switch floor at $200, current peak $249.
+
+## 2026-10-06
+- Trades analysed: 3 closed (INTU +9.38% WIN/168h/RSI-sell/normal/BULLISH; SPGI +3.90% WIN/96h/net-buy-reversal/normal/NEUTRAL; GILD -0.92% LOSS/72h/ATR-trail/normal/BEARISH)
+- Win rate: 66.7% overall (normal: 66.7% [n=3, 2W/1L, avg_pnl=+4.12%, avg_hold=112h]; momentum: n/a [n=0, unwired]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH/NEUTRAL entries 2W/0L (n=2, 100%); BEARISH entry 0W/1L (n=1, 0%)
+- Config changes: none — RSI_OVERSOLD: n=3 < 5 required (NO_CHANGE, win_rate=66.7% > 65% but n below minimum); MOMENTUM_VOL_MIN: n=0 momentum trades (n<3, NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold=112h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance network access blocked by environment policy (403, recurring network block in CCR sandbox per CLAUDE.md); prior metrics retained (null — backtest never succeeded in this environment)
+- RL samples: 625/200 (READY — +0 new rows today; 19 states in Q-table; 3.1× target)
+- Notes: Account $249.91 (+$2.88 week from $247.03), 4 open positions (CRH +3.33%, GE +0.59%, MRK +1.26%, VTR -0.12%). Two strong wins today: INTU +9.38% (7d hold, RSI overbought exit) and SPGI +3.90% (net-buy reversal). GILD was the only recent loss (-0.92%, ATR trail). Win rate in recovery: after a streak of ATR-stop losses in late Sep, INTU/SPGI wins show the strategy working as designed. Kill switch OK ($249.91 >> $200 floor). RL READY: 625 samples (19 Q-states) — run: python -m strategy.rl_agent --train to activate Q-learning. Trade log trimmed: 17 entries remain.
