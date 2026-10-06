@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-06T21:23:38.712862+00:00",
+  "timestamp": "2026-10-06T22:27:34.001252+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7910,6 +7910,15 @@
       "reason": "Net buy reversed: 1.54M \u2192 -2.30M | OBV -0.5M/day"
     },
     {
+      "ticker": "DGX",
+      "price": 228.38999938964844,
+      "net_buy_d2": 228105,
+      "net_buy_d3": -305878,
+      "obv_slope": -526576,
+      "score": 0.0,
+      "reason": "Net buy reversed: 0.23M \u2192 -0.31M | OBV -0.5M/day"
+    },
+    {
       "ticker": "CRL",
       "price": 304.9599914550781,
       "net_buy_d2": 1113370,
@@ -7926,15 +7935,6 @@
       "obv_slope": -1059487,
       "score": 0.0,
       "reason": "Net buy reversed: 2.51M \u2192 -2.60M | OBV -1.1M/day"
-    },
-    {
-      "ticker": "INTC",
-      "price": 112.5,
-      "net_buy_d2": -29279159,
-      "net_buy_d3": -87881325,
-      "obv_slope": -93961249,
-      "score": 0.0,
-      "reason": "Net buy reversed: -29.28M \u2192 -87.88M | OBV -94.0M/day"
     }
   ],
   "surge_signals": [
@@ -7955,6 +7955,15 @@
       "buy_vol_d3": 3315329,
       "net_buy_d3": 1712066,
       "reason": "Buy vol \u219123.7% vs prior day | Net buy \u2191 4d streak: 0.86M \u2192 1.36M \u2192 1.71M | OBV +2.3M/day"
+    },
+    {
+      "ticker": "AMD",
+      "price": 649.4199829101562,
+      "buy_surge_pct": 0.4193,
+      "buy_vol_d2": 11940623,
+      "buy_vol_d3": 16947326,
+      "net_buy_d3": 9747447,
+      "reason": "Buy vol \u219141.9% vs prior day | 1d streak | latest 9.75M | OBV 10.1M/day"
     }
   ]
 }
