@@ -510,3 +510,12 @@
 - Backtest: SKIPPED — Yahoo Finance network access blocked by environment policy (403, recurring network block in CCR sandbox per CLAUDE.md); prior metrics retained (null — backtest never succeeded in this environment)
 - RL samples: 625/200 (READY — +0 new rows today; 19 states in Q-table; 3.1× target)
 - Notes: Account $249.91 (+$2.88 week from $247.03), 4 open positions (CRH +3.33%, GE +0.59%, MRK +1.26%, VTR -0.12%). Two strong wins today: INTU +9.38% (7d hold, RSI overbought exit) and SPGI +3.90% (net-buy reversal). GILD was the only recent loss (-0.92%, ATR trail). Win rate in recovery: after a streak of ATR-stop losses in late Sep, INTU/SPGI wins show the strategy working as designed. Kill switch OK ($249.91 >> $200 floor). RL READY: 625 samples (19 Q-states) — run: python -m strategy.rl_agent --train to activate Q-learning. Trade log trimmed: 17 entries remain.
+
+## 2026-10-07
+- Trades analysed: 2 closed (GE -1.13% LOSS/28.8h/ATR-trail/normal/BULLISH; VTR -1.77% LOSS/~0h/ATR-trail/normal/BEARISH)
+- Win rate: 0% overall (normal: 0% [n=2, 0W/2L]; momentum: n/a [n=0]; surge: n/a [n=0])
+- EMA-trend win rate: BULLISH n=1 0%; BEARISH n=1 0%
+- Config changes: none (NO_CHANGE — n=2 < 3 minimum for all threshold types; insufficient data)
+- Backtest: SKIPPED — Yahoo Finance blocked in cloud sandbox (403, known CCR network policy per CLAUDE.md)
+- RL samples: 629/200 (READY — +4 new rows today; 19 states in Q-table; 3.1× target)
+- Notes: Account $246.41 (down from peak $250.37). 3 open positions: ERIE -2.42% (BELOW ATR trail stop $220.97 → sell at next open), MRK +1.86%, MOS -0.37%. ERIE flagged for immediate sell at next market open. trim_log kept 19 entries. Kill switch OK ($246.41 >> $200 floor, trading_enabled=true). Both closed trades today were ATR trail-stop exits at small losses (~1-2%), consistent with recent pattern. All 3 minimum-sample thresholds remain unchanged pending more trade data.
