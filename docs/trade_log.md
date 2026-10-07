@@ -1,32 +1,25 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-10-07T16:16:24Z
-- Action   : BUY MOS
-- Price    : $20.04
-- Amount   : $16.57 | Shares: 0.82684
-- RSI      : 25.1 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3)
-- Stop     : $19.69 | Target: $22.04
-- Strategy : normal | Sell date: ATR/signal
+## 2026-10-07T18:13:00Z
+- SUMMARY: Market open (ET 14:13). 1 RSI BUY (RTX conf=2→RL BOOST conf=3, STRONG BUY) skipped — positions=5/5 max. 0 net-buy BUYs. BDX surge count=1 (new, needs ≥2). No SELL conditions triggered: GE -0.76% (trail=$303.90), MRK +1.86% (trail=$140.86), VTR -1.47% (trail=$80.66, CLOSE to stop), ERIE -0.39% (trail=$220.97, ~4h), MOS -0.69% (trail=$19.69, <3h). BP=$66.57 (investable=$16.57). Regime=normal. CB: daily -0.30%/weekly +0.09% (OK). Acct=$247.25. Universe=503 (from SP500 snapshot+cache).
+
+## 2026-10-07T17:12:41Z
+- SUMMARY: Market open (ET 13:12). 1 RSI BUY (COHR conf=2→RL BOOST conf=3 STRONG BUY), 0 net-buys, 0 surge. No trades — position limit (5/5). No SELL conditions triggered (all HOLD: GE -0.53%, MRK +2.33% trail_stop=$140.86, VTR -1.24%, ERIE -0.65% <3h, MOS -0.57% <3h). BP=$66.57 (investable=$16.57). Regime=normal. CB: daily -0.24%/weekly +0.15% (OK). Acct=$247.39. Universe=503. COHR skipped: positions=5≥5 limit.
+
+## 2026-10-07T15:14:45Z
+- Action   : SELL CRH
+- Price    : ~$80.865 (market order)
+- Amount   : ~$54.49 | Shares: 0.673919
+- RSI      : N/A (ATR trailing stop trigger) | EMA: N/A | BB: N/A
+- RL       : null conf=null | null
+- Stop     : ATR trail_stop=$81.305 triggered (price $80.865 ≤ stop $81.305)
+- Target   : $88.99 (+10%) — not reached
+- Strategy : normal | Sell date: ATR/trail-stop
 - Regime   : normal
-- Reason   : RSI oversold+stabilizing (25.1↑25.1) | BB reversal returning from band | RL BOOST to conf=3 | MODERATE BUY ($16.57, 50% of investable $33.14; 5 positions now)
+- Reason   : ATR trailing stop hit: price $80.865 ≤ ratcheted trail_stop $81.305 (stop was ratcheted when CRH was +3.56%); hours_held≈48h; -0.04% from avg_cost $80.90. Exiting.
 
-## 2026-10-07T16:15:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. BOUGHT MOS $16.57 @ ~$20.04 (RSI MODERATE BUY, conf=2, RL BOOST to conf=3). 13 RSI BUYs (all ema=BEARISH on ticker, market_regime=normal): TXT RSI=21.2, ALLE RSI=22.7, LDOS RSI=23.9, MOS RSI=25.1 ← selected (RL BOOST). No SELLs: GE RSI=33.4 HOLD (trail=$303.90, -0.70%), MRK RSI=55.5 HOLD (trail=$140.86 ratcheted +2.62%), VTR RSI=27.4 HOLD (trail=$80.66, -1.01%), ERIE RSI=49.9 HOLD (trail=$220.97, -0.94%). CB: daily -0.22%/weekly +0.17% (OK). Regime=normal. Universe=503. Acct=$247.46. BP=$66.57 (after MOS). 5 pos: GE -0.70%, MRK +2.62%, VTR -1.01%, ERIE -0.94%, MOS new.
-
-## 2026-10-07T14:16:27Z
-- Action   : BUY ERIE
-- Price    : $223.57
-- Amount   : $33.13 | Shares: 0.148186
-- RSI      : 59.6 | EMA: BULLISH | BB: ABOVE_BAND
-- RL       : HOLD conf=0.92 | null
-- Stop     : $220.97 | Target: $245.93
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : Net-buy 4d streak (0.08M→0.30M→1.06M), RSI HOLD, EMA BULLISH, no RSI SELL conflict, MODERATE BUY
-
-## 2026-10-07T14:11:03Z
-- SUMMARY: Market OPEN, in_trade_window=true. BOUGHT ERIE $33.13 @ $223.57 (net-buy MODERATE BUY, conf=2). 0 RSI BUY signals (conf≥2). Net-buy BUYs: WMT (RSI SELL conflict), TRMB (RSI SELL conflict), STZ (borderline RSI 46.3), COST (RSI SELL conf=3), LMT (RSI 46.2 HOLD, EMA BEARISH), ERIE (RSI 59.6 HOLD, EMA BULLISH ✓). Surge: WMT 32% count=1, TRMB 25% count=1, STZ 150% count=1, DPZ 34% count=1, CCL 43% count=1, DTE 1694% count=1, DASH 143% count=1. No SELL signals on held (CRH RSI=62.1 HOLD, GE RSI=30.8 HOLD, MRK RSI=56.3 HOLD, VTR RSI=34.6 HOLD; no trail stops hit). ATR trail stops unchanged. CB: daily -0.09%/weekly +0.30% (OK). Regime=normal. Universe=503. Acct=$247.76. BP=$83.14. 5 pos: CRH +0.51% (trail=$81.305), GE -0.80% (trail=$303.90), MRK +2.05% (trail=$137.90), VTR -0.63% (trail=$80.66), ERIE new.
+## 2026-10-07T15:15:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. SOLD CRH (ATR trail-stop: $80.865 ≤ $81.305, 48h held, -0.04%). No other SELLs (GE RSI=34.2 HOLD -0.94%, MRK RSI=52.7 HOLD +2.21%, VTR RSI=28.8 HOLD -1.09% low-vol, ERIE RSI=52.2 HOLD -1.03% <3h). No BUY signals (0 RSI BUYs, 0 net-buy BUYs, 0 surge). BP=$83.14 (unsettled CRH proceeds ~$54.49; total cash $137.62). CB: daily -0.31%/weekly +0.08% (OK). Regime=normal. Universe=544 (from cache, incl SP500+watchlist). Acct=$247.22. 4 pos after sell: GE -0.94%, MRK +2.21%, VTR -1.09%, ERIE -1.03%.
 
 ## 2026-10-06T20:12:52Z
 - SUMMARY: Market closed. Buying power: $50.00. Equity positions: 4. CRH=$83.59 (+3.33%), GE=$309.44 (+0.59%), MRK=$141.93 (+1.26%), VTR=$81.87 (-0.12%). Regime: normal. Account: $249.91. Universe fetched: 503. RSI BUYs: 0, RSI SELLs: 43, Net BUYs: 6. No trades (market closed). CB: daily -0.19%/weekly -1.17% (OK). ATR stops: CRH=$81.305, GE=$303.90, MRK=$137.90, VTR=$80.660.
