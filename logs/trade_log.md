@@ -1,5 +1,20 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-07T15:14:45Z
+- Action   : SELL CRH
+- Price    : ~$80.865 (market order)
+- Amount   : ~$54.49 | Shares: 0.673919
+- RSI      : N/A (ATR trailing stop trigger) | EMA: N/A | BB: N/A
+- RL       : null conf=null | null
+- Stop     : ATR trail_stop=$81.305 triggered (price $80.865 ≤ stop $81.305)
+- Target   : $88.99 (+10%) — not reached
+- Strategy : normal | Sell date: ATR/trail-stop
+- Regime   : normal
+- Reason   : ATR trailing stop hit: price $80.865 ≤ ratcheted trail_stop $81.305 (stop was ratcheted when CRH was +3.56%); hours_held≈48h; -0.04% from avg_cost $80.90. Exiting.
+
+## 2026-10-07T15:15:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. SOLD CRH (ATR trail-stop: $80.865 ≤ $81.305, 48h held, -0.04%). No other SELLs (GE RSI=34.2 HOLD -0.94%, MRK RSI=52.7 HOLD +2.21%, VTR RSI=28.8 HOLD -1.09% low-vol, ERIE RSI=52.2 HOLD -1.03% <3h). No BUY signals (0 RSI BUYs, 0 net-buy BUYs, 0 surge). BP=$83.14 (unsettled CRH proceeds ~$54.49; total cash $137.62). CB: daily -0.31%/weekly +0.08% (OK). Regime=normal. Universe=544 (from cache, incl SP500+watchlist). Acct=$247.22. 4 pos after sell: GE -0.94%, MRK +2.21%, VTR -1.09%, ERIE -1.03%.
+
 ## 2026-10-06T20:12:52Z
 - SUMMARY: Market closed. Buying power: $50.00. Equity positions: 4. CRH=$83.59 (+3.33%), GE=$309.44 (+0.59%), MRK=$141.93 (+1.26%), VTR=$81.87 (-0.12%). Regime: normal. Account: $249.91. Universe fetched: 503. RSI BUYs: 0, RSI SELLs: 43, Net BUYs: 6. No trades (market closed). CB: daily -0.19%/weekly -1.17% (OK). ATR stops: CRH=$81.305, GE=$303.90, MRK=$137.90, VTR=$80.660.
 
