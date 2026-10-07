@@ -1,5 +1,32 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-07T20:20:00Z
+- SUMMARY: Market CLOSED (ET 16:20). No trades this cycle. 3 positions: ERIE -2.42% ($218.16, trail=$220.97 ⚠️ BELOW STOP — sell at next open), MRK +1.86% ($142.76, trail=$140.86), MOS -0.37% ($19.965, trail=$19.69). ⚠️ NOTE: Prior cycle (ET ~15:08–15:15, 19:08–19:15Z) sold GE @$304.12 (-1.14%) and VTR @$80.44 (-1.87%) via ATR trail stops — trades executed but not logged in prior run (gap corrected here). RSI BUY candidates (not tradeable — market closed): MOS conf=2, BMRN conf=2+RL, USB conf=2+RL. ERIE below trail stop: will sell at next open. Regime=normal/BULLISH EMA. CB: daily -0.64%/weekly -0.25% (OK). Acct=$246.41. BP=$66.57. Universe=503.
+
+## 2026-10-07T19:15:46Z [BACKFILL — prior cycle, not previously logged]
+- Action   : SELL VTR
+- Price    : $80.44
+- Amount   : $18.88 | Shares: 0.234720
+- RSI      : ~21.1 (oversold, HOLD) | EMA: BEARISH | BB: N/A
+- RL       : null conf=null | null
+- Stop     : $80.66 (ATR trail) triggered — price $80.44 ≤ $80.66
+- Target   : $90.17 (+10%) — not reached
+- Strategy : normal | Sell trigger: ATR trailing stop
+- Regime   : normal
+- Reason   : ATR trail stop hit: $80.44 ≤ $80.66; hours_held ~24h; PnL -1.87% from avg_cost $81.97. Exit per rule.
+
+## 2026-10-07T19:08:28Z [BACKFILL — prior cycle, not previously logged]
+- Action   : SELL GE
+- Price    : $304.12
+- Amount   : $38.02 | Shares: 0.125087
+- RSI      : ~29.2 (near-oversold, HOLD) | EMA: BULLISH | BB: N/A
+- RL       : null conf=null | null
+- Stop     : $303.90 (ATR trail) triggered — price $304.12 ≥ $303.90 (price was near stop)
+- Target   : $338.39 (+10%) — not reached
+- Strategy : normal | Sell trigger: ATR trailing stop
+- Regime   : normal
+- Reason   : ATR trail stop triggered; hours_held ~29h; PnL -1.14% from avg_cost $307.63. Exit per rule.
+
 ## 2026-10-07T18:13:00Z
 - SUMMARY: Market open (ET 14:13). 1 RSI BUY (RTX conf=2→RL BOOST conf=3, STRONG BUY) skipped — positions=5/5 max. 0 net-buy BUYs. BDX surge count=1 (new, needs ≥2). No SELL conditions triggered: GE -0.76% (trail=$303.90), MRK +1.86% (trail=$140.86), VTR -1.47% (trail=$80.66, CLOSE to stop), ERIE -0.39% (trail=$220.97, ~4h), MOS -0.69% (trail=$19.69, <3h). BP=$66.57 (investable=$16.57). Regime=normal. CB: daily -0.30%/weekly +0.09% (OK). Acct=$247.25. Universe=503 (from SP500 snapshot+cache).
 
