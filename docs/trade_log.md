@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-07T14:16:27Z
+- Action   : BUY ERIE
+- Price    : $223.57
+- Amount   : $33.13 | Shares: 0.148186
+- RSI      : 59.6 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : HOLD conf=0.92 | null
+- Stop     : $220.97 | Target: $245.93
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : Net-buy 4d streak (0.08M→0.30M→1.06M), RSI HOLD, EMA BULLISH, no RSI SELL conflict, MODERATE BUY
+
+## 2026-10-07T14:11:03Z
+- SUMMARY: Market OPEN, in_trade_window=true. BOUGHT ERIE $33.13 @ $223.57 (net-buy MODERATE BUY, conf=2). 0 RSI BUY signals (conf≥2). Net-buy BUYs: WMT (RSI SELL conflict), TRMB (RSI SELL conflict), STZ (borderline RSI 46.3), COST (RSI SELL conf=3), LMT (RSI 46.2 HOLD, EMA BEARISH), ERIE (RSI 59.6 HOLD, EMA BULLISH ✓). Surge: WMT 32% count=1, TRMB 25% count=1, STZ 150% count=1, DPZ 34% count=1, CCL 43% count=1, DTE 1694% count=1, DASH 143% count=1. No SELL signals on held (CRH RSI=62.1 HOLD, GE RSI=30.8 HOLD, MRK RSI=56.3 HOLD, VTR RSI=34.6 HOLD; no trail stops hit). ATR trail stops unchanged. CB: daily -0.09%/weekly +0.30% (OK). Regime=normal. Universe=503. Acct=$247.76. BP=$83.14. 5 pos: CRH +0.51% (trail=$81.305), GE -0.80% (trail=$303.90), MRK +2.05% (trail=$137.90), VTR -0.63% (trail=$80.66), ERIE new.
+
 ## 2026-10-06T20:12:52Z
 - SUMMARY: Market closed. Buying power: $50.00. Equity positions: 4. CRH=$83.59 (+3.33%), GE=$309.44 (+0.59%), MRK=$141.93 (+1.26%), VTR=$81.87 (-0.12%). Regime: normal. Account: $249.91. Universe fetched: 503. RSI BUYs: 0, RSI SELLs: 43, Net BUYs: 6. No trades (market closed). CB: daily -0.19%/weekly -1.17% (OK). ATR stops: CRH=$81.305, GE=$303.90, MRK=$137.90, VTR=$80.660.
 
