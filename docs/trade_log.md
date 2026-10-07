@@ -1,5 +1,19 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-07T16:16:24Z
+- Action   : BUY MOS
+- Price    : $20.04
+- Amount   : $16.57 | Shares: 0.82684
+- RSI      : 25.1 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3)
+- Stop     : $19.69 | Target: $22.04
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (25.1↑25.1) | BB reversal returning from band | RL BOOST to conf=3 | MODERATE BUY ($16.57, 50% of investable $33.14; 5 positions now)
+
+## 2026-10-07T16:15:00Z
+- SUMMARY: Market OPEN, in_trade_window=true. BOUGHT MOS $16.57 @ ~$20.04 (RSI MODERATE BUY, conf=2, RL BOOST to conf=3). 13 RSI BUYs (all ema=BEARISH on ticker, market_regime=normal): TXT RSI=21.2, ALLE RSI=22.7, LDOS RSI=23.9, MOS RSI=25.1 ← selected (RL BOOST). No SELLs: GE RSI=33.4 HOLD (trail=$303.90, -0.70%), MRK RSI=55.5 HOLD (trail=$140.86 ratcheted +2.62%), VTR RSI=27.4 HOLD (trail=$80.66, -1.01%), ERIE RSI=49.9 HOLD (trail=$220.97, -0.94%). CB: daily -0.22%/weekly +0.17% (OK). Regime=normal. Universe=503. Acct=$247.46. BP=$66.57 (after MOS). 5 pos: GE -0.70%, MRK +2.62%, VTR -1.01%, ERIE -0.94%, MOS new.
+
 ## 2026-10-07T14:16:27Z
 - Action   : BUY ERIE
 - Price    : $223.57
