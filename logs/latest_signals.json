@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-07T21:42:07.951744+00:00",
+  "timestamp": "2026-10-07T22:51:44.719712+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -101,7 +101,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0097,
-      "reason": "low volume (0.70x avg) \u2014 skipping",
+      "reason": "low volume (0.37x avg) \u2014 skipping",
       "fib_target": 515,
       "rl_action": "HOLD",
       "rl_confidence": 0.918
@@ -157,7 +157,7 @@
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
       "atr_pct": 0.0116,
-      "reason": "RSI=60.9 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "reason": "low volume (0.41x avg) \u2014 skipping",
       "fib_target": 869,
       "rl_action": null,
       "rl_confidence": null
@@ -843,7 +843,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0177,
-      "reason": "RSI=60.6 (stable), BB=IN_BAND, EMA=BULLISH",
+      "reason": "low volume (0.52x avg) \u2014 skipping",
       "fib_target": 225,
       "rl_action": null,
       "rl_confidence": null
@@ -1080,7 +1080,7 @@
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 2,
-      "atr_pct": 0.0166,
+      "atr_pct": 0.0165,
       "reason": "RSI oversold+stabilizing (17.6\u219122.3) | BB reversal: 0.09\u21920.17 (returning from band)",
       "fib_target": 10,
       "rl_action": "HOLD",
@@ -1179,7 +1179,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.011,
-      "reason": "low volume (0.62x avg) \u2014 skipping",
+      "reason": "low volume (0.56x avg) \u2014 skipping",
       "fib_target": 906,
       "rl_action": null,
       "rl_confidence": null
@@ -3027,7 +3027,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0113,
-      "reason": "RSI=48.3 (falling), BB=IN_BAND, EMA=BULLISH",
+      "reason": "low volume (0.70x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": "BUY",
       "rl_confidence": 0.974
@@ -4015,8 +4015,8 @@
     {
       "ticker": "FTNT",
       "action": "HOLD",
-      "price": 189.27999877929688,
-      "rsi": 63.16,
+      "price": 189.2899932861328,
+      "rsi": 63.2,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
@@ -6046,7 +6046,7 @@
       "ticker": "PPG",
       "action": "HOLD",
       "price": 105.05000305175781,
-      "rsi": 47.86,
+      "rsi": 47.85,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
@@ -6270,12 +6270,12 @@
       "ticker": "RDDT",
       "action": "HOLD",
       "price": 152.72000122070312,
-      "rsi": 61.19,
+      "rsi": 61.22,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
       "atr_pct": 0.0114,
-      "reason": "RSI=61.2 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "reason": "low volume (0.69x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -6423,8 +6423,8 @@
     {
       "ticker": "ROST",
       "action": "HOLD",
-      "price": 225.50999450683594,
-      "rsi": 43.91,
+      "price": 225.52000427246094,
+      "rsi": 43.94,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
@@ -6443,7 +6443,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0114,
-      "reason": "RSI=54.4 (falling), BB=IN_BAND, EMA=BULLISH",
+      "reason": "low volume (0.66x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": "BUY",
       "rl_confidence": 0.974
@@ -7110,7 +7110,7 @@
       "ticker": "UAL",
       "action": "HOLD",
       "price": 110.12999725341797,
-      "rsi": 44.54,
+      "rsi": 44.55,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
@@ -7808,7 +7808,7 @@
   "rl_stats": {
     "live": true,
     "states": 19,
-    "training_samples": 625
+    "training_samples": 629
   },
   "net_buy_buy_signals": [],
   "net_buy_sell_signals": [
