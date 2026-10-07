@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-07T20:57:14.854639+00:00",
+  "timestamp": "2026-10-07T21:42:07.951744+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7816,8 +7816,8 @@
       "ticker": "FITB",
       "price": 50.119998931884766,
       "net_buy_d2": 0,
-      "net_buy_d3": -3430440,
-      "obv_slope": -1495691,
+      "net_buy_d3": -3432190,
+      "obv_slope": -1496627,
       "score": 3.43,
       "reason": "Net buy reversed: 0.00M \u2192 -3.43M | OBV -1.5M/day"
     },
@@ -7825,8 +7825,8 @@
       "ticker": "AXON",
       "price": 406.0,
       "net_buy_d2": 5240,
-      "net_buy_d3": -793543,
-      "obv_slope": -222361,
+      "net_buy_d3": -794430,
+      "obv_slope": -222567,
       "score": 0.0,
       "reason": "Net buy reversed: 0.01M \u2192 -0.79M | OBV -0.2M/day"
     },
@@ -7834,17 +7834,17 @@
       "ticker": "XOM",
       "price": 164.0500030517578,
       "net_buy_d2": 215915,
-      "net_buy_d3": -6118524,
-      "obv_slope": -569725,
+      "net_buy_d3": -6176856,
+      "obv_slope": -587554,
       "score": 0.0,
-      "reason": "Net buy reversed: 0.22M \u2192 -6.12M | OBV -0.6M/day"
+      "reason": "Net buy reversed: 0.22M \u2192 -6.18M | OBV -0.6M/day"
     },
     {
       "ticker": "ALB",
       "price": 102.75,
       "net_buy_d2": 74562,
-      "net_buy_d3": -1834253,
-      "obv_slope": -946444,
+      "net_buy_d3": -1834778,
+      "obv_slope": -946555,
       "score": 0.0,
       "reason": "Net buy reversed: 0.07M \u2192 -1.83M | OBV -0.9M/day"
     },
@@ -7852,8 +7852,8 @@
       "ticker": "SLB",
       "price": 47.959999084472656,
       "net_buy_d2": -573763,
-      "net_buy_d3": -10771950,
-      "obv_slope": -1155152,
+      "net_buy_d3": -10774203,
+      "obv_slope": -1155774,
       "score": 0.0,
       "reason": "Net buy reversed: -0.57M \u2192 -10.77M | OBV -1.2M/day"
     },
@@ -7861,17 +7861,17 @@
       "ticker": "CMCSA",
       "price": 20.940000534057617,
       "net_buy_d2": 1652450,
-      "net_buy_d3": -23387891,
-      "obv_slope": -17281431,
+      "net_buy_d3": -23562243,
+      "obv_slope": -17325921,
       "score": 0.0,
-      "reason": "Net buy reversed: 1.65M \u2192 -23.39M | OBV -17.3M/day"
+      "reason": "Net buy reversed: 1.65M \u2192 -23.56M | OBV -17.3M/day"
     },
     {
       "ticker": "REG",
       "price": 70.80000305175781,
       "net_buy_d2": -128694,
-      "net_buy_d3": -1218065,
-      "obv_slope": -608029,
+      "net_buy_d3": -1218208,
+      "obv_slope": -608060,
       "score": 0.0,
       "reason": "Net buy reversed: -0.13M \u2192 -1.22M | OBV -0.6M/day"
     },
@@ -7879,8 +7879,8 @@
       "ticker": "UPS",
       "price": 92.29000091552734,
       "net_buy_d2": 825475,
-      "net_buy_d3": -4607985,
-      "obv_slope": -1700343,
+      "net_buy_d3": -4609498,
+      "obv_slope": -1700682,
       "score": 0.0,
       "reason": "Net buy reversed: 0.83M \u2192 -4.61M | OBV -1.7M/day"
     },
@@ -7888,8 +7888,8 @@
       "ticker": "HII",
       "price": 260.6700134277344,
       "net_buy_d2": -52113,
-      "net_buy_d3": -369864,
-      "obv_slope": -594441,
+      "net_buy_d3": -369917,
+      "obv_slope": -594457,
       "score": 0.0,
       "reason": "Net buy reversed: -0.05M \u2192 -0.37M | OBV -0.6M/day"
     },
@@ -7897,8 +7897,8 @@
       "ticker": "HON",
       "price": 208.11000061035156,
       "net_buy_d2": -255308,
-      "net_buy_d3": -1736873,
-      "obv_slope": -476736,
+      "net_buy_d3": -1739007,
+      "obv_slope": -477230,
       "score": 0.0,
       "reason": "Net buy reversed: -0.26M \u2192 -1.74M | OBV -0.5M/day"
     }
