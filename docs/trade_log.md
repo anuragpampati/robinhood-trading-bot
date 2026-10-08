@@ -1,5 +1,44 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-08T16:15:00Z
+- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0 after $50 buffer). BUY candidates PFG (RSI=26.3, conf=2→🤖 RL BOOST→conf=3, MODERATE BUY) + USB (RSI=28.3, conf=2→🤖 RL BOOST→conf=3, MODERATE BUY) — SKIPPED: investable=$0, amount<$15 min. No SELL conditions: MOS HOLD ($19.915, pnl=-0.62%, trail=$19.69 OK, 24h held), SOUN HOLD ($5.53, pnl=-0.90%, trail=$5.47 OK, 2h held/<3h min). CB: daily -0.46%/weekly -0.84% (OK). Kill switch OK ($244.95>$200). Regime=normal. Acct=$244.95. Universe=503.
+
+## 2026-10-08T15:15:00Z
+- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50 (unsettled $51.63, investable=$0). 26 RSI BUY signals (PFG/USB/INTC/QCOM/GRMN rsi<30) — SKIPPED: investable=$0. No SELL conditions triggered. 2 pos: MOS -0.17% (trail $19.69 OK), SOUN -0.18% (trail $5.47 OK, <3h). CB: daily -0.15%/weekly -0.53% (OK). Regime=normal. Acct=$245.73. Universe=503.
+
+## 2026-10-08T14:13:42Z
+- Action   : SELL ERIE
+- Price    : $218.45
+- Amount   : $18.06 | Shares: 0.082694
+- RSI      : ATR trailing stop triggered | EMA: BULLISH | BB: N/A
+- RL       : null conf=null | null
+- Stop     : $220.97 (ATR trail) triggered — price $218.45 ≤ $220.97
+- Strategy : normal | Sell trigger: ATR trailing stop
+- Regime   : normal
+- Reason   : ATR trail stop hit: $218.45 ≤ $220.97 trail; hours_held ≥3h; PnL -2.29% from avg_cost $223.55. Exit per rule.
+
+## 2026-10-08T14:13:50Z
+- Action   : SELL MRK
+- Price    : $140.64
+- Amount   : $17.65 | Shares: 0.125506
+- RSI      : ATR trailing stop triggered | EMA: BEARISH | BB: N/A
+- RL       : null conf=null | null
+- Stop     : $140.86 (ATR trail) triggered — price $140.64 ≤ $140.86
+- Strategy : normal | Sell trigger: ATR trailing stop
+- Regime   : normal
+- Reason   : ATR trail stop hit: $140.64 ≤ $140.86 trail; hours_held ≥3h; PnL +0.34% from avg_cost $140.16. Exit per rule.
+
+## 2026-10-08T14:14:01Z
+- Action   : BUY SOUN
+- Price    : $5.58
+- Amount   : $127.97 | Shares: 22.9337
+- RSI      : 29.92 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | 🤖 RL BOOST (conf 2→3 STRONG BUY)
+- Stop     : $5.47 | Target: $6.14
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (28.2→29.9) | BB returning from band | RL BOOST conf=3 STRONG BUY → all investable capital
+
 ## 2026-10-07T20:20:00Z
 - SUMMARY: Market CLOSED (ET 16:20). No trades this cycle. 3 positions: ERIE -2.42% ($218.16, trail=$220.97 ⚠️ BELOW STOP — sell at next open), MRK +1.86% ($142.76, trail=$140.86), MOS -0.37% ($19.965, trail=$19.69). ⚠️ NOTE: Prior cycle (ET ~15:08–15:15, 19:08–19:15Z) sold GE @$304.12 (-1.14%) and VTR @$80.44 (-1.87%) via ATR trail stops — trades executed but not logged in prior run (gap corrected here). RSI BUY candidates (not tradeable — market closed): MOS conf=2, BMRN conf=2+RL, USB conf=2+RL. ERIE below trail stop: will sell at next open. Regime=normal/BULLISH EMA. CB: daily -0.64%/weekly -0.25% (OK). Acct=$246.41. BP=$66.57. Universe=503.
 
