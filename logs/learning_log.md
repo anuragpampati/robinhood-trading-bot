@@ -519,3 +519,12 @@
 - Backtest: SKIPPED — Yahoo Finance blocked in cloud sandbox (403, known CCR network policy per CLAUDE.md)
 - RL samples: 629/200 (READY — +4 new rows today; 19 states in Q-table; 3.1× target)
 - Notes: Account $246.41 (down from peak $250.37). 3 open positions: ERIE -2.42% (BELOW ATR trail stop $220.97 → sell at next open), MRK +1.86%, MOS -0.37%. ERIE flagged for immediate sell at next market open. trim_log kept 19 entries. Kill switch OK ($246.41 >> $200 floor, trading_enabled=true). Both closed trades today were ATR trail-stop exits at small losses (~1-2%), consistent with recent pattern. All 3 minimum-sample thresholds remain unchanged pending more trade data.
+
+## 2026-10-08
+- Trades analysed: 8 (last ~5 days of closed equity trades)
+- Win rate: 37.5% overall (normal: 37.5%, momentum: n/a not wired in, surge: 0 trades)
+- EMA-trend win rates: BULLISH entry 50% (1/2), BEARISH entry 0% (0/2)
+- Config changes: RSI_OVERSOLD raised 30→32 (win_rate 37.5% < 40% on n=8 ≥ 5 threshold)
+- Backtest: SKIPPED — yfinance blocked in CCR sandbox (known network restriction, see CLAUDE.md)
+- RL samples: 632/200 (READY — run: python -m strategy.rl_agent --train to activate Q-learning)
+- Notes: All 8 recent exits via ATR trailing stop. BEARISH-EMA entries (SOUN, VTR) both lost; BULLISH-EMA had a 50% win rate. RSI_OVERSOLD tightened to reduce entries into mid-drop knives. Q-table still stale (trained 2026-07-09 on 19 states from partially-bad data) — a clean retrain is overdue now that 632 correct samples exist.
