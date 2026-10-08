@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-08T16:15:00Z",
+  "updated_at": "2026-10-08T17:11:51Z",
   "buying_power": 50.0,
   "market_regime": "normal",
-  "account_value": 244.95,
+  "account_value": 244.11,
   "peak_value": 250.37,
   "day_start_value": 246.09,
   "day_start_date": "2026-10-08",
@@ -17,9 +17,9 @@
       "ticker": "MOS",
       "quantity": 0.82685,
       "avg_cost": 20.04,
-      "current_price": 19.915,
-      "pnl_pct": -0.0062,
-      "value": 16.47,
+      "current_price": 19.945,
+      "pnl_pct": -0.00474,
+      "value": 16.49,
       "entry_atr_pct": 0.0087,
       "entry_time": "2026-10-07T16:16:24Z",
       "trail_stop": 19.69,
@@ -31,9 +31,9 @@
       "ticker": "SOUN",
       "quantity": 22.939858,
       "avg_cost": 5.58,
-      "current_price": 5.53,
-      "pnl_pct": -0.009,
-      "value": 126.86,
+      "current_price": 5.505,
+      "pnl_pct": -0.01344,
+      "value": 126.28,
       "entry_atr_pct": 0.0099,
       "entry_time": "2026-10-08T14:13:42Z",
       "trail_stop": 5.47,
@@ -43,10 +43,10 @@
     }
   ],
   "last_actions": [
+    "2026-10-08T17:11:51Z No trades. Market open (ET ~13:12), in_trade_window=true. 0 RSI BUYs, 0 net-buy BUYs, 0 surges. No SELL conditions: MOS HOLD ($19.945, trail=$19.69 OK, >24h), SOUN HOLD ($5.505, trail=$5.47 OK, ~3h). CB: daily -0.80%/weekly -1.18% (OK). Regime=normal. Acct=$244.11. Universe=503.",
     "2026-10-08T16:15:00Z No trades. Market open, in_trade_window=true. BP=$50 (investable=$0). No SELLs: MOS HOLD ($19.92, trail $19.69 OK, 24h held), SOUN HOLD ($5.53, trail $5.47 OK, <3h). BUY candidates PFG (RL BOOST→conf=3) + USB (RL BOOST→conf=3) SKIPPED: investable=$0. CB: daily -0.46%/weekly -0.84% (OK). Regime=normal. Acct=$244.95. Universe=503.",
     "2026-10-08T15:15:00Z No trades. Market open, in_trade_window=true. BP=$50 (unsettled $51.63) → investable=$0, no BUYs. 26 RSI BUY signals (INTC+RL→conf3, QCOM+RL→conf3, GRMN rsi=17.79). No SELL conditions triggered. 2 pos: MOS -0.17% (trail $19.69 OK), SOUN -0.18% (<3h). CB: daily -0.15%/weekly -0.53% (OK). Regime=normal. Acct=$245.73. Universe=503.",
     "2026-10-08T14:13:42Z SELL ERIE (ATR trail $218.45≤$220.97, -2.29%), SELL MRK (ATR trail $140.64≤$140.86, +0.34%). BUY SOUN $127.97 (RSI conf=2+RL BOOST→conf=3 STRONG BUY, rsi=29.92 oversold). 2 pos: MOS -0.25%, SOUN new. CB: daily=0%/weekly=-0.38% (OK). Regime=normal. Acct≈$246.09. BP≈$50 (unsettled). Universe=503.",
-    "2026-10-07T20:20:00Z Market CLOSED (ET 16:20). No trades. 3 positions: ERIE -2.42% BELOW trail stop ($218.16<$220.97 — sell at next open), MRK +1.86% (trail=$140.86 OK), MOS -0.37% (trail=$19.69 OK). BACKFILL: prior cycle sold GE @$304.12 (-1.14%) and VTR @$80.44 (-1.87%) via ATR trail stops (19:08Z+19:15Z, not previously logged). CB: daily -0.64%/weekly -0.25% (OK). Regime=normal. Acct=$246.41. Universe=503.",
-    "2026-10-07T18:13:00Z No trades. Market open (ET 14:13). 1 RSI BUY (RTX conf=2→RL BOOST conf=3 STRONG BUY) skipped (positions=5/5 max). BDX surge count=1 (new). No SELL conditions: GE -0.76%, MRK +1.86% (trail=$140.86), VTR -1.47% (trail=$80.66, CLOSE), ERIE -0.39% (<4h), MOS -0.69% (<3h). CB: daily -0.30%/weekly +0.09% (OK). Regime=normal. Acct=$247.25. Universe=503."
+    "2026-10-07T20:20:00Z Market CLOSED (ET 16:20). No trades. 3 positions: ERIE -2.42% BELOW trail stop ($218.16<$220.97 — sell at next open), MRK +1.86% (trail=$140.86 OK), MOS -0.37% (trail=$19.69 OK). BACKFILL: prior cycle sold GE @$304.12 (-1.14%) and VTR @$80.44 (-1.87%) via ATR trail stops (19:08Z+19:15Z, not previously logged). CB: daily -0.64%/weekly -0.25% (OK). Regime=normal. Acct=$246.41. Universe=503."
   ]
 }
