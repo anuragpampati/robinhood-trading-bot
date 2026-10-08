@@ -1,5 +1,16 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-08T18:12:58Z
+- Action   : SELL SOUN
+- Price    : $5.4635 (fill) | Entry: $5.5785
+- Amount   : $125.39 | Shares: 22.939858
+- RSI      : 20.78 (BUY signal, but selling) | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0.936 | null (no veto/boost)
+- Stop     : $5.47 (ATR trail) | Target was: $6.14
+- Strategy : normal | Sell: ATR trail stop triggered ($5.4671 ≤ $5.47)
+- Regime   : normal
+- Reason   : ATR trailing stop hit (-2.06% loss, $5.4635 vs avg_cost $5.5785). Hours held ~4h ≥ 3h threshold met. Buying power $50 (investable $0) — no new BUYs. 18 RSI BUY signals (all conf=2, all HOLD by RL), 0 net-buy BUYs. Surge first sightings: XOM/DG/DOW (count=1, need 2). CB: daily -1.11%/weekly -1.48% (OK). Regime=normal. Acct=$243.37. Universe=503.
+
 ## 2026-10-08T17:11:51Z
 - SUMMARY: Market open (ET ~13:12). No trades. 0 RSI BUY signals, 0 net-buy BUY signals, 0 surge signals. No SELL conditions triggered. 2 positions: MOS HOLD ($19.945, trail=$19.69 OK, >24h held, -0.47%), SOUN HOLD ($5.505, trail=$5.47 OK, ~3h held, -1.34%). Buying power: $50.00. CB: daily -0.80%/weekly -1.18% (OK). Regime=normal. Acct=$244.11. Universe=503.
 
