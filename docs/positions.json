@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-09T15:15:00Z",
+  "updated_at": "2026-10-09T16:14:06Z",
   "buying_power": 50.0,
   "market_regime": "normal",
-  "account_value": 243.15,
+  "account_value": 243.40,
   "peak_value": 250.37,
   "day_start_value": 243.04,
   "day_start_date": "2026-10-09",
@@ -17,9 +17,9 @@
       "ticker": "AMKR",
       "quantity": 3.586549,
       "avg_cost": 49.34,
-      "current_price": 49.30,
-      "pnl_pct": -0.0008,
-      "value": 176.82,
+      "current_price": 49.40,
+      "pnl_pct": 0.0012,
+      "value": 177.18,
       "entry_atr_pct": 0.0097,
       "entry_time": "2026-10-09T14:15:51Z",
       "trail_stop": 48.38,
@@ -29,10 +29,10 @@
     }
   ],
   "last_actions": [
+    "2026-10-09T16:14:06Z No trades. Market open, in_trade_window=true. BP=$50 (investable=$0). No SELL: AMKR HOLD ($49.40, trail=$48.38, ~2h held, pnl=+0.12%). 0 RSI BUYs, 0 net-buy BUYs. Surge: HUM 14.6% count=1. CB: daily +0.15%/weekly -1.47% (OK). Regime=normal. Acct=$243.40. Universe=503.",
     "2026-10-09T15:15:00Z No trades. Market open, in_trade_window=true. BP=$50 (investable=$0). No SELL: AMKR HOLD ($49.30, trail=$48.38, 1h held, pnl=-0.08%). 3 RSI BUYs (INTC/IREN/SNDK conf=2, RL HOLD) all SKIPPED investable=$0. CB: daily -0.04%/weekly 1.57% (OK). Regime=normal. Acct=$243.15. Universe=503.",
     "2026-10-09T14:16:00Z SELL MOS $19.64 (ATR trail stop $19.69 hit, -2.00%). BUY AMKR $176.96 (STRONG BUY, RL BOOST conf=3, RSI=25.4, rl=BUY/0.928). BP=$50. Acct=$243.04. Universe=503.",
     "2026-10-08T20:25:00Z Market closed (after 16:00 ET). No trades. MOS HOLD ($19.74, trail=$19.69 OK, pnl=-1.50%). ATR stop unchanged. CB: daily -1.15%/weekly -1.52% (OK). Regime=normal. Acct=$243.27. Universe=503.",
-    "2026-10-08T19:12:00Z No trades. Market open, in_trade_window=true. BP=$50 (investable=$0). No SELLs: MOS HOLD ($19.85, trail=$19.69 OK, rsi=28.26 low-vol, ~27h). 0 RSI BUYs, 1 net-buy BUY (ACN MODERATE) SKIPPED investable=$0. 3 surges all <10% (cleared tracker). CB: daily -1.11%/weekly -1.48% (OK). Regime=normal. Acct=$243.37. Universe=503.",
-    "2026-10-08T18:12:58Z SELL SOUN $5.4635 (ATR trail stop $5.47 hit, -2.06%). BP=$50 (investable=$0). 18 RSI BUY signals (all conf=2, all RL HOLD), 0 net-buys, 0 intraday surge (first sightings XOM/DG/DOW). CB: daily -1.11%/weekly -1.48% (OK). Regime=normal. Acct=$243.37. Universe=503."
+    "2026-10-08T19:12:00Z No trades. Market open, in_trade_window=true. BP=$50 (investable=$0). No SELLs: MOS HOLD ($19.85, trail=$19.69 OK, rsi=28.26 low-vol, ~27h). 0 RSI BUYs, 1 net-buy BUY (ACN MODERATE) SKIPPED investable=$0. 3 surges all <10% (cleared tracker). CB: daily -1.11%/weekly -1.48% (OK). Regime=normal. Acct=$243.37. Universe=503."
   ]
 }
