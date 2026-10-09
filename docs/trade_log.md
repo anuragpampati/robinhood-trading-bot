@@ -68,9 +68,6 @@
 ## 2026-10-08T14:13:00Z
 - SUMMARY: Market OPEN (ET ~10:13). Sold ERIE (ATR trail) and MRK (ATR trail). Bought SOUN $127.97 (RSI conf=2 + RL BOOST → conf=3 STRONG BUY). Regime=normal. Acct≈$246.09. BP≈$50 (post-buy, ERIE+MRK proceeds unsettled). 2 positions: MOS, SOUN. CB: daily=0%/weekly=-0.38% (new day, OK). Universe=503. USB skipped (STRONG BUY but no investable after SOUN). CEG surge count=1 (not yet 2, no buy).
 
-## 2026-10-07T20:20:00Z
-- SUMMARY: Market CLOSED (ET 16:20). No trades this cycle. 3 positions: ERIE -2.42% ($218.16, trail=$220.97 ⚠️ BELOW STOP — sell at next open), MRK +1.86% ($142.76, trail=$140.86), MOS -0.37% ($19.965, trail=$19.69). ⚠️ NOTE: Prior cycle (ET ~15:08–15:15, 19:08–19:15Z) sold GE @$304.12 (-1.14%) and VTR @$80.44 (-1.87%) via ATR trail stops — trades executed but not logged in prior run (gap corrected here). RSI BUY candidates (not tradeable — market closed): MOS conf=2, BMRN conf=2+RL, USB conf=2+RL. ERIE below trail stop: will sell at next open. Regime=normal/BULLISH EMA. CB: daily -0.64%/weekly -0.25% (OK). Acct=$246.41. BP=$66.57. Universe=503.
-
 ## 2026-10-07T19:15:46Z [BACKFILL — prior cycle, not previously logged]
 - Action   : SELL VTR
 - Price    : $80.44
@@ -95,27 +92,6 @@
 - Regime   : normal
 - Reason   : ATR trail stop triggered; hours_held ~29h; PnL -1.14% from avg_cost $307.63. Exit per rule.
 
-## 2026-10-07T18:13:00Z
-- SUMMARY: Market open (ET 14:13). 1 RSI BUY (RTX conf=2→RL BOOST conf=3, STRONG BUY) skipped — positions=5/5 max. 0 net-buy BUYs. BDX surge count=1 (new, needs ≥2). No SELL conditions triggered: GE -0.76% (trail=$303.90), MRK +1.86% (trail=$140.86), VTR -1.47% (trail=$80.66, CLOSE to stop), ERIE -0.39% (trail=$220.97, ~4h), MOS -0.69% (trail=$19.69, <3h). BP=$66.57 (investable=$16.57). Regime=normal. CB: daily -0.30%/weekly +0.09% (OK). Acct=$247.25. Universe=503 (from SP500 snapshot+cache).
-
-## 2026-10-07T17:12:41Z
-- SUMMARY: Market open (ET 13:12). 1 RSI BUY (COHR conf=2→RL BOOST conf=3 STRONG BUY), 0 net-buys, 0 surge. No trades — position limit (5/5). No SELL conditions triggered (all HOLD: GE -0.53%, MRK +2.33% trail_stop=$140.86, VTR -1.24%, ERIE -0.65% <3h, MOS -0.57% <3h). BP=$66.57 (investable=$16.57). Regime=normal. CB: daily -0.24%/weekly +0.15% (OK). Acct=$247.39. Universe=503. COHR skipped: positions=5≥5 limit.
-
-## 2026-10-07T15:14:45Z
-- Action   : SELL CRH
-- Price    : ~$80.865 (market order)
-- Amount   : ~$54.49 | Shares: 0.673919
-- RSI      : N/A (ATR trailing stop trigger) | EMA: N/A | BB: N/A
-- RL       : null conf=null | null
-- Stop     : ATR trail_stop=$81.305 triggered (price $80.865 ≤ stop $81.305)
-- Target   : $88.99 (+10%) — not reached
-- Strategy : normal | Sell date: ATR/trail-stop
-- Regime   : normal
-- Reason   : ATR trailing stop hit: price $80.865 ≤ ratcheted trail_stop $81.305 (stop was ratcheted when CRH was +3.56%); hours_held≈48h; -0.04% from avg_cost $80.90. Exiting.
-
-## 2026-10-07T15:15:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. SOLD CRH (ATR trail-stop: $80.865 ≤ $81.305, 48h held, -0.04%). No other SELLs (GE RSI=34.2 HOLD -0.94%, MRK RSI=52.7 HOLD +2.21%, VTR RSI=28.8 HOLD -1.09% low-vol, ERIE RSI=52.2 HOLD -1.03% <3h). No BUY signals (0 RSI BUYs, 0 net-buy BUYs, 0 surge). BP=$83.14 (unsettled CRH proceeds ~$54.49; total cash $137.62). CB: daily -0.31%/weekly +0.08% (OK). Regime=normal. Universe=544 (from cache, incl SP500+watchlist). Acct=$247.22. 4 pos after sell: GE -0.94%, MRK +2.21%, VTR -1.09%, ERIE -1.03%.
-
 ## 2026-10-07T19:15:46Z [BACKFILL — prior cycle, not previously logged]
 - Action   : SELL VTR
 - Price    : $80.44
@@ -139,24 +115,3 @@
 - Strategy : normal | Sell trigger: ATR trailing stop
 - Regime   : normal
 - Reason   : ATR trail stop triggered; hours_held ~29h; PnL -1.14% from avg_cost $307.63. Exit per rule.
-
-## 2026-10-07T18:13:00Z
-- SUMMARY: Market open (ET 14:13). 1 RSI BUY (RTX conf=2→RL BOOST conf=3, STRONG BUY) skipped — positions=5/5 max. 0 net-buy BUYs. BDX surge count=1 (new, needs ≥2). No SELL conditions triggered: GE -0.76% (trail=$303.90), MRK +1.86% (trail=$140.86), VTR -1.47% (trail=$80.66, CLOSE to stop), ERIE -0.39% (trail=$220.97, ~4h), MOS -0.69% (trail=$19.69, <3h). BP=$66.57 (investable=$16.57). Regime=normal. CB: daily -0.30%/weekly +0.09% (OK). Acct=$247.25. Universe=503 (from SP500 snapshot+cache).
-
-## 2026-10-07T17:12:41Z
-- SUMMARY: Market open (ET 13:12). 1 RSI BUY (COHR conf=2→RL BOOST conf=3 STRONG BUY), 0 net-buys, 0 surge. No trades — position limit (5/5). No SELL conditions triggered (all HOLD: GE -0.53%, MRK +2.33% trail_stop=$140.86, VTR -1.24%, ERIE -0.65% <3h, MOS -0.57% <3h). BP=$66.57 (investable=$16.57). Regime=normal. CB: daily -0.24%/weekly +0.15% (OK). Acct=$247.39. Universe=503. COHR skipped: positions=5≥5 limit.
-
-## 2026-10-07T15:14:45Z
-- Action   : SELL CRH
-- Price    : ~$80.865 (market order)
-- Amount   : ~$54.49 | Shares: 0.673919
-- RSI      : N/A (ATR trailing stop trigger) | EMA: N/A | BB: N/A
-- RL       : null conf=null | null
-- Stop     : ATR trail_stop=$81.305 triggered (price $80.865 ≤ stop $81.305)
-- Target   : $88.99 (+10%) — not reached
-- Strategy : normal | Sell date: ATR/trail-stop
-- Regime   : normal
-- Reason   : ATR trailing stop hit: price $80.865 ≤ ratcheted trail_stop $81.305 (stop was ratcheted when CRH was +3.56%); hours_held≈48h; -0.04% from avg_cost $80.90. Exiting.
-
-## 2026-10-07T15:15:00Z
-- SUMMARY: Market OPEN, in_trade_window=true. SOLD CRH (ATR trail-stop: $80.865 ≤ $81.305, 48h held, -0.04%). No other SELLs (GE RSI=34.2 HOLD -0.94%, MRK RSI=52.7 HOLD +2.21%, VTR RSI=28.8 HOLD -1.09% low-vol, ERIE RSI=52.2 HOLD -1.03% <3h). No BUY signals (0 RSI BUYs, 0 net-buy BUYs, 0 surge). BP=$83.14 (unsettled CRH proceeds ~$54.49; total cash $137.62). CB: daily -0.31%/weekly +0.08% (OK). Regime=normal. Universe=544 (from cache, incl SP500+watchlist). Acct=$247.22. 4 pos after sell: GE -0.94%, MRK +2.21%, VTR -1.09%, ERIE -1.03%.

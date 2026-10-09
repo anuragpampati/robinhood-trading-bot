@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-09T21:23:57.344731+00:00",
+  "timestamp": "2026-10-09T22:23:49.308357+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1256,14 +1256,14 @@
     },
     {
       "ticker": "AMKR",
-      "action": "HOLD",
+      "action": "BUY",
       "price": 49.13999938964844,
       "rsi": 32.62,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
-      "confidence": 0,
+      "confidence": 2,
       "atr_pct": 0.0166,
-      "reason": "RSI=32.6 (stable), BB=BELOW_BAND, EMA=BEARISH",
+      "reason": "RSI oversold+stabilizing (31.7\u219132.6) | BB reversal: 0.13\u21920.20 (returning from band)",
       "fib_target": 64,
       "rl_action": null,
       "rl_confidence": null
