@@ -1,5 +1,27 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-09T14:15:51Z
+- Action   : BUY AMKR
+- Price    : $49.34
+- Amount   : $176.96 | Shares: 3.586549
+- RSI      : 25.44 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : BUY conf=0.928 | BOOST (conf 2→3 STRONG BUY)
+- Stop     : $48.38 | Target: $54.27
+- Strategy : normal | Sell date: ATR/signal
+- Regime   : normal
+- Reason   : RSI oversold+stabilizing (25.4→25.4), BB reversal returning from band. RL BUY 0.928 → STRONG BUY, full investable=$176.96. SPY RSI=54.7 (regime OK). Market-wide selloff today: AMKR -3.2% (smaller than TMUS -10%, T -7.8%). CB: daily 0.0%/weekly -1.54% (OK). Universe=503.
+
+## 2026-10-09T14:15:11Z
+- Action   : SELL MOS
+- Price    : $19.64
+- Amount   : $16.24 | Shares: 0.82685
+- RSI      : 24.44 (HOLD signal) | EMA: BEARISH | BB: IN_BAND
+- RL       : HOLD conf=0.936 | null
+- Stop     : $19.69 (ATR trail) | Target was: $22.04
+- Strategy : normal | Sell: ATR trail stop triggered ($19.64 ≤ $19.69, held 46h ≥ 3h)
+- Regime   : normal
+- Reason   : ATR trailing stop hit. Entry $20.04, exit $19.64, PnL=-2.00%. No net-buy SELL signal. RL=HOLD (no veto/boost). BP after sell still $226.96 (unsettled T+2 on cash acct).
+
 ## 2026-10-08T19:12:00Z
 - SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0). No SELL conditions: MOS HOLD ($19.85, trail=$19.69 OK, rsi=28.26 low-vol skip, rl=BUY 0.928, ~27h held, pnl=-0.95%). 0 RSI BUYs, 1 net-buy BUY (ACN conf=MODERATE) SKIPPED: investable=$0. 3 surge signals (ACN/CINF/EOG all 0% surge, none ≥10%). Surge tracker cleared (XOM/DG/DOW removed, all <10%). CB: daily -1.11%/weekly -1.48% (OK). Regime=normal. Acct=$243.37. Universe=503.
 
