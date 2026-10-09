@@ -1,5 +1,8 @@
 # Trade Log — Robinhood Agentic Account
 
+## 2026-10-09T17:20:00Z
+- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0). No SELL conditions: AMKR HOLD ($49.25, trail=$48.38 OK, ~3h held, pnl=-0.18%, no exit triggers). 1 RSI BUY (IREN conf=2, rl=HOLD/0.93, SKIPPED investable=$0). 0 net-buy BUYs. HUM surge count=2 (≥10%, INTRADAY_SURGE threshold reached) but SELL signal (rsi=73.8) + $0 investable — no buy. CB: daily -0.07%/weekly -1.69% (OK). Regime=normal. Acct=$242.86. Universe=503.
+
 ## 2026-10-09T16:14:06Z
 - SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0). No SELL conditions: AMKR HOLD ($49.40, trail=$48.38 OK, ~2h held, pnl=+0.12%). 0 RSI BUYs, 0 net-buy BUYs. Surge: HUM 14.6% (first sighting today, count=1, need 2 for INTRADAY_SURGE; no tracker buy). CB: daily +0.15%/weekly -1.47% (OK, no trip). Regime=normal. Acct=$243.40. Universe=503.
 
