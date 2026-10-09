@@ -1,35 +1,13 @@
 # Trade Log — Robinhood Agentic Account
 
-## 2026-10-09T19:11:00Z
-- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0.00). No SELL: AMKR HOLD ($48.90, trail=$48.38 OK, ~4.9h held, pnl=-0.89%, rsi=24.55 HOLD/low-vol, rl=HOLD/0.93). 0 RSI BUYs (conf>=2). Net BUY: AAPL/TSN/EL SKIPPED investable=$0. Surge: TSN/HUM/CASY first sighting (count=1 each, need 2 for entry). CB: daily -0.58%/weekly -2.18% (OK). Regime=normal (SPY rsi=61.08, above 200-EMA). Acct=$241.64. Universe=503.
-
 ## 2026-10-09T18:12:00Z
-- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50 (investable=$0). No SELL: AMKR HOLD ($48.93, trail=$48.38 OK, ~4h held, pnl=-0.83%, rsi=24.79 BUY conf=2, rl=HOLD/0.93). 3 RSI BUY signals (ON conf=2/AMKR already held/CTVA conf=2) SKIPPED investable=$0. 0 net-buy BUYs. Surge: ANET 3.9% only (<10%, no tracker update). HUM removed from surge tracker (not in 10%+ this cycle). CB: daily -0.49%/weekly -2.09% (OK). Regime=normal. Acct=$241.86. Universe=503.
+- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50 (investable=$0). No SELL: AMKR HOLD ($48.93, trail=$48.38 OK, ~4h held, pnl=-0.83%, rsi=24.79 BUY conf=2, rl=HOLD/0.93). 3 RSI BUY signals (ON conf=2/AMKR already held/CTVA conf=2) SKIPPED investable=$0. 0 net-buy BUYs. Surge: ANET 3.9% (<10%). HUM removed from surge tracker. CB: daily -0.49%/weekly -2.09% (OK). Regime=normal. Acct=$241.86. Universe=503.
 
-## 2026-10-09T15:15:00Z
-- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0). No SELL: AMKR HOLD ($49.30, trail=$48.38 OK, 1h held <3h min, rsi=25.65 HOLD, rl=HOLD/0.906, pnl=-0.08%). 3 RSI BUY signals (INTC conf=2/IREN conf=2/SNDK conf=2, all RL HOLD) SKIPPED: investable=$0. 0 net-buy BUYs, 0 surges. CB: daily -0.04%/weekly 1.57% (OK). Regime=normal. Acct=$243.15. Universe=503.
+## 2026-10-09T17:20:00Z
+- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0). No SELL conditions: AMKR HOLD ($49.25, trail=$48.38 OK, ~3h held, pnl=-0.18%, no exit triggers). 1 RSI BUY (IREN conf=2, rl=HOLD/0.93, SKIPPED investable=$0). 0 net-buy BUYs. HUM surge count=2 (≥10%, INTRADAY_SURGE threshold reached) but SELL signal (rsi=73.8) + $0 investable — no buy. CB: daily -0.07%/weekly -1.69% (OK). Regime=normal. Acct=$242.86. Universe=503.
 
-## 2026-10-09T14:15:51Z
-- Action   : BUY AMKR
-- Price    : $49.34
-- Amount   : $176.96 | Shares: 3.586549
-- RSI      : 25.44 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.928 | BOOST (conf 2→3 STRONG BUY)
-- Stop     : $48.38 | Target: $54.27
-- Strategy : normal | Sell date: ATR/signal
-- Regime   : normal
-- Reason   : RSI oversold+stabilizing (25.4→25.4), BB reversal returning from band. RL BUY 0.928 → STRONG BUY, full investable=$176.96. SPY RSI=54.7 (regime OK). Market-wide selloff today: AMKR -3.2% (smaller than TMUS -10%, T -7.8%). CB: daily 0.0%/weekly -1.54% (OK). Universe=503.
-
-## 2026-10-09T14:15:11Z
-- Action   : SELL MOS
-- Price    : $19.64
-- Amount   : $16.24 | Shares: 0.82685
-- RSI      : 24.44 (HOLD signal) | EMA: BEARISH | BB: IN_BAND
-- RL       : HOLD conf=0.936 | null
-- Stop     : $19.69 (ATR trail) | Target was: $22.04
-- Strategy : normal | Sell: ATR trail stop triggered ($19.64 ≤ $19.69, held 46h ≥ 3h)
-- Regime   : normal
-- Reason   : ATR trailing stop hit. Entry $20.04, exit $19.64, PnL=-2.00%. No net-buy SELL signal. RL=HOLD (no veto/boost). BP after sell still $226.96 (unsettled T+2 on cash acct).
+## 2026-10-09T16:14:06Z
+- SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0). No SELL conditions: AMKR HOLD ($49.40, trail=$48.38 OK, ~2h held, pnl=+0.12%). 0 RSI BUYs, 0 net-buy BUYs. Surge: HUM 14.6% (first sighting today, count=1, need 2 for INTRADAY_SURGE; no tracker buy). CB: daily +0.15%/weekly -1.47% (OK, no trip). Regime=normal. Acct=$243.40. Universe=503.
 
 ## 2026-10-08T19:12:00Z
 - SUMMARY: Market open, in_trade_window=true. No trades. BP=$50.00 (investable=$0). No SELL conditions: MOS HOLD ($19.85, trail=$19.69 OK, rsi=28.26 low-vol skip, rl=BUY 0.928, ~27h held, pnl=-0.95%). 0 RSI BUYs, 1 net-buy BUY (ACN conf=MODERATE) SKIPPED: investable=$0. 3 surge signals (ACN/CINF/EOG all 0% surge, none ≥10%). Surge tracker cleared (XOM/DG/DOW removed, all <10%). CB: daily -1.11%/weekly -1.48% (OK). Regime=normal. Acct=$243.37. Universe=503.
