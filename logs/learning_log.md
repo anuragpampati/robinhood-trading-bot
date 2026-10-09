@@ -528,3 +528,11 @@
 - Backtest: SKIPPED — yfinance blocked in CCR sandbox (known network restriction, see CLAUDE.md)
 - RL samples: 632/200 (READY — run: python -m strategy.rl_agent --train to activate Q-learning)
 - Notes: All 8 recent exits via ATR trailing stop. BEARISH-EMA entries (SOUN, VTR) both lost; BULLISH-EMA had a 50% win rate. RSI_OVERSOLD tightened to reduce entries into mid-drop knives. Q-table still stale (trained 2026-07-09 on 19 states from partially-bad data) — a clean retrain is overdue now that 632 correct samples exist.
+
+## 2026-10-09
+- Trades analysed: 6 (last ~30 log entries: SOUN, MRK, ERIE, VTR, GE, CRH)
+- Win rate: 16.7% overall (normal: 16.7%, momentum: N/A <3 trades, surge: N/A)
+- Config changes: RSI_OVERSOLD 32→34 (win_rate 16.7% < 40% threshold on 6 normal trades)
+- Backtest: SKIPPED — yfinance blocked by cloud proxy (known limitation per CLAUDE.md). Config change kept (data-driven: 16.7% win rate well below 40% threshold).
+- RL samples: 632/200 (READY — 432 above target)
+- Notes: All 6 recent trades exited via ATR trailing stop, avg hold 29.5h, avg PnL -1.18%. No momentum-entry trades in window (insufficient data for MOMENTUM_VOL_MIN change). ATR_VOLATILITY_THRESHOLD unchanged (avg hold 29.5h > 2h threshold).

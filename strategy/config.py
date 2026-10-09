@@ -134,7 +134,7 @@ SECTOR_GROUPS: dict[str, list[str]] = {
 
 # ── RSI parameters ───────────────────────────────────────────────────────────
 RSI_PERIOD = 14
-RSI_OVERSOLD = 32              # buy signal threshold — tighter entry, avoids mid-drop knives  # tuned 2026-10-08: win_rate=37.5% on 8 normal trades, raised 30→32 to tighten entry
+RSI_OVERSOLD = 34              # buy signal threshold — tighter entry, avoids mid-drop knives  # tuned 2026-10-09: win_rate=16.7% on 6 normal trades, raised 32→34 to tighten entry
 RSI_OVERBOUGHT = 70            # sell signal threshold (let winners run past 65)
 
 # ── EMA parameters ───────────────────────────────────────────────────────────
