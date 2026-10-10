@@ -1,8 +1,10 @@
 {
-  "timestamp": "2026-10-09T01:06:14.644607+00:00",
+  "timestamp": "2026-10-10T01:06:00.000000+00:00",
   "trading_halted": false,
   "halt_reason": null,
-  "market_regime": "normal",
+  "market_regime": "unknown",
+  "signal_generation_failed": true,
+  "signal_failure_reason": "yfinance proxy-blocked (403) in CCR sandbox — no get_crypto_historicals MCP endpoint; persistent outage day 25 since >=2026-09-16",
   "tickers": [
     "BTC-USD",
     "ETH-USD",
@@ -17,6 +19,18 @@
   ],
   "signals": [],
   "actionable": [],
+  "spot_prices": {
+    "BTC-USD": 82545.12,
+    "ETH-USD": 2487.39,
+    "SOL-USD": 109.38,
+    "XRP-USD": 1.3994,
+    "LTC-USD": 63.50,
+    "ADA-USD": 0.2450,
+    "LINK-USD": 12.80,
+    "AVAX-USD": 10.36,
+    "DOGE-USD": 0.0857,
+    "BCH-USD": 277.38
+  },
   "rules": {
     "max_crypto_allocation": 100.0,
     "max_position_size": 35.0,
