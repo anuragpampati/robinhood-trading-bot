@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-10",
+  "updated_at": "2026-11-11",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
-  "win_rate": 0.38,
-  "avg_win_pnl": 0.0044,
-  "avg_loss_pnl": -0.019,
+  "win_rate": 0.33,
+  "avg_win_pnl": 0.0092,
+  "avg_loss_pnl": -0.0138,
   "risk_reward": null,
   "total_trades": 13,
   "wins": 5,
@@ -14,5 +14,5 @@
   "rl_training_samples": 639,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Updated by daily learning CCR. Backtest skipped: yfinance blocked in cloud sandbox (known constraint). Normal strategy win_rate=22% (9 trades, RSI_OVERSOLD already at clamp max 40 — no change possible). Surge: 1W/1L (n<3). Net_buy: 3W/0L. Today: APP -5.5% stop-loss, DPZ -0.14% ATR trail. 639 RL rows (target 200 met, >3x over). RL BOOST remains disabled."
+  "note": "Backtest skipped — yfinance blocked in cloud sandbox (known constraint per CLAUDE.md). Win/loss stats from trade_log.md manual analysis (13 closed trades across normal+surge strategies). RL BOOST remains disabled per 2026-11-06 audit. Updated by daily learning CCR"
 }

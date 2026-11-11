@@ -690,3 +690,12 @@
 - Backtest: SKIPPED — yfinance/Yahoo Finance blocked from cloud sandbox (known constraint)
 - RL samples: 639/200 (target exceeded 3x)
 - Notes: APP −5.5% stop-loss (surge, 27h), DPZ −0.14% ATR trail (100.9h). Normal strategy win rate chronic underperformer at 22% — RSI_OVERSOLD threshold exhausted at ceiling (40). The CLAUDE.md finding that 81% of entries are BEARISH-EMA tickers remains the root cause; the threshold knob is out of room. Next lever: require individual-ticker EMA BULLISH/NEUTRAL before RSI-oversold entry (needs backtest from non-cloud environment). RL BOOST remains disabled (retrain + human approval needed first).
+
+## 2026-11-11
+- Trades analysed: 13 closed round-trips (normal: 9, surge: 4, momentum: 0)
+- Win rate: 38% overall (normal: 33% [3/9], surge: 50% [2/4])
+- EMA-bearish entries: predominantly losses (DPZ -0.14%, APP -5.5%, ABNB -1.41%, TTWO -1.61%)
+- Config changes: none (RSI_OVERSOLD already at clamp max 40; momentum strategy unwired; ATR threshold no trigger)
+- Backtest: SKIPPED — yfinance blocked in cloud sandbox (known constraint per CLAUDE.md)
+- RL samples: 639/200 (RL READY — but RL BOOST remains DISABLED per 2026-11-06 audit; do NOT re-enable without human review + retraining on corrected data)
+- Notes: Normal strategy win rate 33% would call for RSI_OVERSOLD +2 but it is already at clamp max (40) — no actionable change. Surge strategy performing better (50% win rate) but small n=4 sample. RL collector +0 new rows (1 closed trade processed, no new closed pairs). Backtest cannot run from cloud container without yfinance access; rl_performance.json updated with manual trade stats.
