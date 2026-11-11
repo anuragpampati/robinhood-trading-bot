@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-11T19:15:22Z",
+  "updated_at": "2026-11-11T20:22:00Z",
   "buying_power": 100.95,
   "market_regime": "bearish_ema",
-  "account_value": 227.35,
+  "account_value": 227.44,
   "peak_value": 249.0,
   "day_start_value": 226.69,
   "day_start_date": "2026-11-11",
@@ -17,9 +17,9 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 366.27,
-      "pnl_pct": 0.00516,
-      "value": 75.27,
+      "current_price": 366.51,
+      "pnl_pct": 0.00582,
+      "value": 75.33,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
@@ -31,9 +31,9 @@
       "ticker": "CFG",
       "quantity": 0.258836,
       "avg_cost": 65.64,
-      "current_price": 65.48,
-      "pnl_pct": -0.00244,
-      "value": 16.95,
+      "current_price": 65.63,
+      "pnl_pct": -0.0002,
+      "value": 16.99,
       "entry_atr_pct": 0.0072,
       "entry_time": "2026-11-11T18:21:52Z",
       "trail_stop": 62.36,
@@ -43,8 +43,8 @@
     }
   ],
   "last_actions": [
+    "2026-11-11T20:22Z Market CLOSED per strategy (DST code issue: EDT offset used past Nov 1 switch — actual time ~3:21 PM EST). 0 SELLs: GD(+0.58% $366.51>trail$346.19 OK); CFG(-0.02% $65.63>trail$62.36 OK). 0 BUYs: market_open=false, execution skipped. Regime: BEARISH_EMA. CB: daily+0.33%/weekly-0.09%(OK). Acct=$227.44. BP=$100.95. Universe=503.",
     "2026-11-11T19:15Z Market OPEN (2:15 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.52% $366.27>trail$346.19 OK); CFG(-0.24% $65.48, <3h hold). 0 BUYs: 0 RSI BUY; 10 net-buy conf=2 (DDOG/MET/MA/STLD/REGN/FITB/CFG/PNC/CHRW/ECL) insufficient (bearish_ema=conf3 req); INTRADAY_SURGE PNC/CHRW count=2 but sizing $12.74<$15 min (bearish_ema 25%). CB: daily gain/weekly +0.13%(OK). Acct=$227.35. BP=$100.95. Universe=503.",
-    "2026-11-11T18:22Z Market OPEN (1:22 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK). 1 BUY: CFG $16.99 market (surge +82.9% buy vol, 4d net-buy streak, bearish_ema 25% sizing). Surge tracker: 6 at count=1 (HBAN/CFG/PNC/CHRW/SCHW/DELL). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$100.95. Universe=503.",
-    "2026-11-11T17:17Z Market OPEN (12:17 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK \u2014 no ratchet, <2.5%). 0 BUYs: 9 net-buy-only conf=2 signals (DDOG/MET/NTAP/STLD/ZBRA/REGN/PNC/CFG/CHRW) insufficient (bearish_ema needs conf=3); ZBRA surge 9.3%<10%. CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$117.94. Universe=503."
+    "2026-11-11T18:22Z Market OPEN (1:22 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK). 1 BUY: CFG $16.99 market (surge +82.9% buy vol, 4d net-buy streak, bearish_ema 25% sizing). Surge tracker: 6 at count=1 (HBAN/CFG/PNC/CHRW/SCHW/DELL). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$100.95. Universe=503."
   ]
 }

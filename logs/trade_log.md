@@ -1,3 +1,6 @@
+## 2026-11-11T20:22:00Z
+- SUMMARY: Market CLOSED per strategy (DST code issue: code uses EDT -4h offset through Nov 30, but EST -5h active since Nov 1 — actual time ~3:21 PM ET, computed 4:21 PM). Buying power: $100.95. Equity positions: 2. Regime: bearish_ema. Account: $227.44. Universe fetched: 503. GD: +0.58% @ $366.51 (trail$346.19 OK — no ratchet, <2.5%). CFG: -0.02% @ $65.63 (trail$62.36 OK). 0 SELLs, 0 BUYs (market_open=false per strategy → skipped execution steps).
+
 ## 2026-11-11T17:17:43Z
 - SUMMARY: Market OPEN (12:17 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK — no ratchet, <2.5%). 0 BUYs: 0 RSI BUY; 9 net-buy-only signals (DDOG/MET/NTAP/STLD/ZBRA/REGN/PNC/CFG/CHRW) all conf=2 insufficient (bearish_ema needs conf=3); 0 surge (ZBRA 9.3%<10% threshold). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$117.94. Universe=503.
 
