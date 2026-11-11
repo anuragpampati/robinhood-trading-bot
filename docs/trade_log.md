@@ -1,3 +1,6 @@
+## 2026-11-11T19:15:22Z
+- SUMMARY: Market OPEN (2:15 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.52% $366.27>trail$346.19 OK — no ratchet <2.5%); CFG(-0.24% $65.48, <3h hold — b/c rules skipped). 0 BUYs: 0 RSI BUY; 10 net-buy conf=2 signals (DDOG/MET/MA/STLD/REGN/FITB/CFG/PNC/CHRW/ECL) insufficient (bearish_ema requires conf=3); INTRADAY_SURGE PNC/CHRW count=2 but sizing $12.74<$15 min (investable$50.95×0.5×0.5). Surge: MET/REGN new@count=1. CB: daily gain/weekly +0.13%(OK). Acct=$227.35. BP=$100.95. Universe=503.
+
 ## 2026-11-11T17:17:43Z
 - SUMMARY: Market OPEN (12:17 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK — no ratchet, <2.5%). 0 BUYs: 0 RSI BUY; 9 net-buy-only signals (DDOG/MET/NTAP/STLD/ZBRA/REGN/PNC/CFG/CHRW) all conf=2 insufficient (bearish_ema needs conf=3); 0 surge (ZBRA 9.3%<10% threshold). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$117.94. Universe=503.
 
