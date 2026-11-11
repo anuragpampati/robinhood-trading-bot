@@ -248,3 +248,16 @@
 - SPY     : RSI=54.41, EMA=BEARISH → bearish_ema regime confirmed
 - Acct    : $227.82 | BP=$99.27 | Equity=$109.88 | Positions=3
 - Universe: 503 tickers scanned (from rh_historicals_cache, sp500_snapshot fallback)
+
+## 2026-11-11T18:21:52Z
+- Action  : BUY CFG (Citizens Financial Group)
+- Price   : $65.64
+- Amount  : $16.99 (0.258830 shares)
+- RSI     : 58.4 (HOLD) | EMA: BULLISH | BB: IN_BAND | ATR=0.72%
+- Surge   : +82.9% buy vol vs prior day | Net buy 4d streak (best signal) | ICE excluded (RSI SELL conflict)
+- Stop    : $62.36 (-5%) | Target: $72.20 (+10%) | Sell date: 2026-11-12
+- Strategy: surge | Regime: bearish_ema | Sizing: 25% investable ($67.94 × 0.5 surge × 0.5 bearish_ema)
+- Order ID: 6af4b240-f37b-49d9-a57b-465bdb9f9ea7 (state: unconfirmed)
+
+## 2026-11-11T18:22Z (SUMMARY)
+- SUMMARY: Market OPEN (1:22 PM ET), in_window=true. Regime: bearish_ema (SPY EMA=BEARISH). 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK). 1 BUY: CFG $16.99 (surge +82.9% buy vol, 4d net-buy streak, bearish_ema 25% sizing). Surge tracker: 6 tickers at count=1 (HBAN/CFG/PNC/CHRW/SCHW/DELL); ICE excluded (7.5%<10%). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$100.95. Universe=503 (611 tickers fetched via RH historicals).

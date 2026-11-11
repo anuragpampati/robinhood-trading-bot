@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-11T17:17:43Z",
-  "buying_power": 117.94,
+  "updated_at": "2026-11-11T18:22:00Z",
+  "buying_power": 100.95,
   "market_regime": "bearish_ema",
   "account_value": 227.45,
   "peak_value": 249.0,
@@ -26,11 +26,25 @@
       "take_profit": 400.83,
       "strategy": "rsi_momentum",
       "sell_date": null
+    },
+    {
+      "ticker": "CFG",
+      "quantity": 0.258830,
+      "avg_cost": 65.64,
+      "current_price": 65.64,
+      "pnl_pct": 0.0,
+      "value": 16.99,
+      "entry_atr_pct": 0.0072,
+      "entry_time": "2026-11-11T18:21:52Z",
+      "trail_stop": 62.36,
+      "take_profit": 72.20,
+      "strategy": "surge",
+      "sell_date": "2026-11-12"
     }
   ],
   "last_actions": [
+    "2026-11-11T18:22Z Market OPEN (1:22 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK). 1 BUY: CFG $16.99 market (surge +82.9% buy vol, 4d net-buy streak, bearish_ema 25% sizing). Surge tracker: 6 at count=1 (HBAN/CFG/PNC/CHRW/SCHW/DELL). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$100.95. Universe=503.",
     "2026-11-11T17:17Z Market OPEN (12:17 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK). 0 BUYs: 9 net-buy-only conf=2 signals (DDOG/MET/NTAP/STLD/ZBRA/REGN/PNC/CFG/CHRW) insufficient (bearish_ema needs conf=3); ZBRA surge 9.3%<10%. CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$117.94. Universe=503.",
-    "2026-11-11T16:18Z Market OPEN (11:18 AM ET), in_window=true. Regime: BEARISH_EMA (switched back from NORMAL at prior 10:19 AM cycle). 0 SELLs: GD(+0.18% $365.04>trail$346.19 OK). 0 BUYs: 0 RSI BUY; TSLA/DDOG/STLD net-buy-only conf=2 insufficient (bearish_ema needs conf=3); 0 surge. CB: daily -0.19%(gain)/weekly +0.24%(OK). Acct=$227.11. BP=$117.94. Universe=503.",
-    "2026-11-11T15:19Z Market OPEN (10:19 AM ET), in_window=true. Regime: NORMAL (switched from BEARISH_EMA). 0 SELLs: GD(+0.41% $365.88>trail$346.19 OK). 0 BUYs: 0 RSI BUY; 0 net-buy; 0 surge. Surge tracker cleared (CDNS/HUM dropped out). CB: daily +0.26%/weekly -0.16%(OK). Acct=$227.29. BP=$117.94. Universe=503."
+    "2026-11-11T16:18Z Market OPEN (11:18 AM ET), in_window=true. Regime: BEARISH_EMA (switched back from NORMAL at prior 10:19 AM cycle). 0 SELLs: GD(+0.18% $365.04>trail$346.19 OK). 0 BUYs: 0 RSI BUY; TSLA/DDOG/STLD net-buy-only conf=2 insufficient (bearish_ema needs conf=3); 0 surge. CB: daily -0.19%(gain)/weekly +0.24%(OK). Acct=$227.11. BP=$117.94. Universe=503."
   ]
 }
