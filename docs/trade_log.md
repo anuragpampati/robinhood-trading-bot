@@ -1,3 +1,6 @@
+## 2026-11-11T14:18:00Z
+- SUMMARY: Market OPEN (9:15 AM ET per signal, pre-market data), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.83% $367.42>trail$346.19 OK, no ratchet <2.5%). 0 BUYs: 0 RSI BUY signals; CVS/DDOG net-buy-only conf=2 insufficient (bearish_ema needs conf=3); no STRONG BUY candidates; surge: CDNS(13.6%)/HUM(1514%) first seen today (count=1, need 2 for intraday). CB: daily 0.0%/weekly 0.42%(OK). Acct=$226.69. BP=$117.94. Universe=503.
+
 ## 2026-11-10T19:22:48Z
 - SUMMARY: Market OPEN (2:22 PM ET), in_window=true. Regime: BEARISH_EMA. 1 SELL: DPZ ATR trail stop ($329.30≤$329.41, −0.14% from entry $329.76, 100.9h held). GD(+1.05% $368.23>trail$346.19 OK — no ratchet, <2.5%). 0 BUYs: 0 RSI BUY signals; CVS net-buy-only conf=2 insufficient for bearish_ema (need conf=3); 0 surge signals. CB: daily +0.11%/weekly +0.08%(OK). Acct=$227.82. BP=$117.94 (settlement lag). Universe=503.
 
