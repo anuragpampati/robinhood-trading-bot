@@ -1,3 +1,6 @@
+## 2026-11-11T17:17:43Z
+- SUMMARY: Market OPEN (12:17 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK — no ratchet, <2.5%). 0 BUYs: 0 RSI BUY; 9 net-buy-only signals (DDOG/MET/NTAP/STLD/ZBRA/REGN/PNC/CFG/CHRW) all conf=2 insufficient (bearish_ema needs conf=3); 0 surge (ZBRA 9.3%<10% threshold). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$117.94. Universe=503.
+
 ## 2026-11-11T15:19:05Z
 - SUMMARY: Market OPEN (10:19 AM ET), in_window=true. Regime: NORMAL (switched from BEARISH_EMA). 0 SELLs: GD(+0.41% $365.88>trail$346.19 OK — no ratchet, <2.5%). 0 BUYs: 0 RSI BUY signals; 0 net-buy signals; 0 surge candidates (CDNS/HUM dropped below 10% intraday surge). CB: daily +0.26%/weekly -0.16%(OK). Acct=$227.29. BP=$117.94 (settlement lag). Universe=503.
 
