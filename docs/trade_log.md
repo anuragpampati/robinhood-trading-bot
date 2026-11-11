@@ -1,3 +1,6 @@
+## 2026-11-11T16:18:00Z
+- SUMMARY: Market OPEN (11:18 AM ET), in_window=true. Regime: BEARISH_EMA (switched back from NORMAL at prior 10:19 AM cycle). 0 SELLs: GD(+0.18% $365.04>trail$346.19 OK, no ratchet <2.5%). 0 BUYs: 0 RSI BUY signals; TSLA/DDOG/STLD net-buy-only conf=2 insufficient (bearish_ema needs conf=3); 0 surge signals. CB: daily -0.19%(gain)/weekly +0.24%(OK). Acct=$227.11. BP=$117.94. Universe=503.
+
 ## 2026-11-11T14:18:00Z
 - SUMMARY: Market OPEN (9:15 AM ET per signal, pre-market data), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.83% $367.42>trail$346.19 OK, no ratchet <2.5%). 0 BUYs: 0 RSI BUY signals; CVS/DDOG net-buy-only conf=2 insufficient (bearish_ema needs conf=3); no STRONG BUY candidates; surge: CDNS(13.6%)/HUM(1514%) first seen today (count=1, need 2 for intraday). CB: daily 0.0%/weekly 0.42%(OK). Acct=$226.69. BP=$117.94. Universe=503.
 
