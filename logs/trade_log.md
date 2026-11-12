@@ -1,3 +1,6 @@
+## 2026-11-12T17:18:00Z
+- SUMMARY: Market OPEN (12:18 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.17% $363.76>trail$346.19 OK); CFG(surge_date=today but $64.93<avg$65.64 no surge exit, trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; 0 RSI BUY signals; net-buy-only (GOOGL/BE/SCHW/SLB/CFG) conf<3 skip; surges CSCO(49.5%)/GOOGL(17.4%) count=1 (need >=2). CB: daily -0.57%/weekly -0.43%(OK). Regime: BEARISH_EMA. Acct=$226.67. BP=$135.11. Universe=503. Surge tracker: CSCO+GOOGL first seen.
+
 ## 2026-11-12T16:17:50Z
 - SUMMARY: Market OPEN (11:17 AM ET), in_window=true. 0 SELLs: GD(HOLD -0.24% $363.51>trail$346.19 OK); CFG(surge_date=today, $65.29<avg$65.64 surge exit n/a, HOLD -0.53%>trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; BE/SCHW net-buy-only conf=2 skip; CFG already held. CB: daily -0.55%/weekly -0.41%(OK). Regime: BEARISH_EMA. Acct=$226.71. BP=$135.11. Universe=503. Surge: ARES first seen (count=1).
 
