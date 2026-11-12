@@ -1,3 +1,21 @@
+## 2026-11-12T16:17:50Z
+- SUMMARY: Market OPEN (11:17 AM ET), in_window=true. 0 SELLs: GD(HOLD -0.24% $363.51>trail$346.19 OK); CFG(surge_date=today, $65.29<avg$65.64 surge exit n/a, HOLD -0.53%>trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; BE/SCHW net-buy-only conf=2 skip; CFG already held. CB: daily -0.55%/weekly -0.41%(OK). Regime: BEARISH_EMA. Acct=$226.71. BP=$135.11. Universe=503. Surge: ARES first seen (count=1).
+
+## 2026-11-12T15:17:00Z
+- SUMMARY: Market OPEN (10:17 AM ET), in_window=true. 0 SELLs: GD(+0.0% $364.15>trail$346.19 OK); CFG(surge_date=today, price $64.83<avg$65.64 surge exit n/a, trail$62.36 OK — no exit triggers). 0 BUYs: bearish_ema regime requires conf=3; SCHW net-buy-only conf=2 → skip; CFG already held → skip. CB: daily -0.55%/weekly -0.41%(OK). Regime: BEARISH_EMA. Acct=$226.72. BP=$135.11. Universe=503.
+
+## 2026-11-12T14:19:00Z
+- SUMMARY: Market CLOSED (pre-market, 9:19 AM EST — strategy timezone bug reports market_open=True). 0 SELLs: GD(HOLD +0.76% $367.16>trail$346.19 OK); CFG(surge_date=today but price $65.36<avg $65.64 so no surge exit, trail$62.36 OK). 0 BUYs: market actually closed. Regime: BEARISH_EMA. CB: new day — daily 0%/weekly +0.14%(OK). Acct=$227.98. BP=$135.11. Universe=503.
+
+## 2026-11-11T20:22:00Z
+- SUMMARY: Market CLOSED per strategy (DST code issue: code uses EDT -4h offset through Nov 30, but EST -5h active since Nov 1 — actual time ~3:21 PM ET, computed 4:21 PM). Buying power: $100.95. Equity positions: 2. Regime: bearish_ema. Account: $227.44. Universe fetched: 503. GD: +0.58% @ $366.51 (trail$346.19 OK — no ratchet, <2.5%). CFG: -0.02% @ $65.63 (trail$62.36 OK). 0 SELLs, 0 BUYs (market_open=false per strategy → skipped execution steps).
+
+## 2026-11-11T17:17:43Z
+- SUMMARY: Market OPEN (12:17 PM ET), in_window=true. Regime: BEARISH_EMA. 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK — no ratchet, <2.5%). 0 BUYs: 0 RSI BUY; 9 net-buy-only signals (DDOG/MET/NTAP/STLD/ZBRA/REGN/PNC/CFG/CHRW) all conf=2 insufficient (bearish_ema needs conf=3); 0 surge (ZBRA 9.3%<10% threshold). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$117.94. Universe=503.
+
+## 2026-11-12T16:17:50Z
+- SUMMARY: Market OPEN (11:17 AM ET), in_window=true. 0 SELLs: GD(HOLD -0.24% $363.51>trail$346.19 OK); CFG(surge_date=today, $65.29<avg$65.64 surge exit n/a, HOLD -0.53%>trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; BE/SCHW net-buy-only conf=2 skip; CFG already held. CB: daily -0.55%/weekly -0.41%(OK). Regime: BEARISH_EMA. Acct=$226.71. BP=$135.11. Universe=503. Surge: ARES first seen (count=1).
+
 ## 2026-11-12T15:17:00Z
 - SUMMARY: Market OPEN (10:17 AM ET), in_window=true. 0 SELLs: GD(+0.0% $364.15>trail$346.19 OK); CFG(surge_date=today, price $64.83<avg$65.64 surge exit n/a, trail$62.36 OK — no exit triggers). 0 BUYs: bearish_ema regime requires conf=3; SCHW net-buy-only conf=2 → skip; CFG already held → skip. CB: daily -0.55%/weekly -0.41%(OK). Regime: BEARISH_EMA. Acct=$226.72. BP=$135.11. Universe=503.
 
