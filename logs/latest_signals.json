@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T21:22:16.971898+00:00",
+  "timestamp": "2026-11-12T21:40:02.736255+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7861,10 +7861,10 @@
       "ticker": "CRH",
       "price": 93.91999816894531,
       "net_buy_d2": -306714,
-      "net_buy_d3": -3520210,
-      "obv_slope": -2377699,
+      "net_buy_d3": -3569568,
+      "obv_slope": -2399210,
       "score": 0.0,
-      "reason": "Net buy reversed: -0.31M \u2192 -3.52M | OBV -2.4M/day"
+      "reason": "Net buy reversed: -0.31M \u2192 -3.57M | OBV -2.4M/day"
     },
     {
       "ticker": "SWK",
@@ -7914,13 +7914,13 @@
       "reason": "Buy vol \u219118.0% vs prior day | 0d streak | latest 4.16M | OBV 13.6M/day"
     },
     {
-      "ticker": "AMD",
-      "price": 585.2999877929688,
-      "buy_surge_pct": 0.3831,
-      "buy_vol_d2": 30836716,
-      "buy_vol_d3": 42649445,
-      "net_buy_d3": 30443816,
-      "reason": "Buy vol \u219138.3% vs prior day | 1d streak | latest 30.44M | OBV 49.1M/day"
+      "ticker": "GOOG",
+      "price": 295.3500061035156,
+      "buy_surge_pct": 0.064,
+      "buy_vol_d2": 11286803,
+      "buy_vol_d3": 12009357,
+      "net_buy_d3": 2407837,
+      "reason": "Buy vol \u21916.4% vs prior day | 0d streak | latest 2.41M | OBV 10.1M/day"
     }
   ]
 }
