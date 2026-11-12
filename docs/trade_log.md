@@ -1,3 +1,6 @@
+## 2026-11-12T20:18:02Z
+- SUMMARY: Market CLOSED per strategy signals (timezone bug: strategy uses UTC-4 for all Nov, actual offset is UTC-5 EST since DST ended Nov 1 — real ET 15:16 PM, market IS open but following signal file per rules). 0 SELLs (skipped — market_open=false per signals). 0 BUYs (skipped). Positions: GD(HOLD +0.016% $364.45>trail$346.19 OK); CFG(surge_date=2026-11-12 passed, $64.90<avg$65.64 no surge exit, trail$62.36 OK -1.13%); GOOGL(sell_date=2026-11-13 tomorrow, 0.98hr held -0.57% $299.79>trail$297.14 OK). No sell signals for held positions. Net-buy BUYs: GOOGL/SLB/CFG conf=2 (skip — bearish_ema requires conf=3). Surge: SLB 19.7% count=1(need≥2), GOOGL 5.1%<10% threshold. CB: daily -0.59%/weekly -0.45%(OK). Regime: BEARISH_EMA. Acct=$226.62. BP=$113.83. Universe=503.
+
 ## 2026-11-12T19:19:20Z
 - Action   : BUY GOOGL
 - Price    : $301.49

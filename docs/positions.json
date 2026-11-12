@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-12T19:19:20Z",
+  "updated_at": "2026-11-12T20:18:02Z",
   "buying_power": 113.83,
   "market_regime": "bearish_ema",
-  "account_value": 226.55,
+  "account_value": 226.62,
   "peak_value": 249.0,
   "day_start_value": 227.98,
   "day_start_date": "2026-11-12",
@@ -17,9 +17,9 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 363.08,
-      "pnl_pct": -0.0036,
-      "value": 74.63,
+      "current_price": 364.45,
+      "pnl_pct": 0.0002,
+      "value": 74.89,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
@@ -31,7 +31,7 @@
       "ticker": "CFG",
       "quantity": 0.258836,
       "avg_cost": 65.64,
-      "current_price": 64.895,
+      "current_price": 64.90,
       "pnl_pct": -0.0113,
       "value": 16.80,
       "entry_atr_pct": 0.0072,
@@ -43,22 +43,22 @@
     },
     {
       "ticker": "GOOGL",
-      "quantity": 0.070580,
-      "avg_cost": 301.49,
-      "current_price": 301.624,
-      "pnl_pct": 0.0004,
-      "value": 21.28,
+      "quantity": 0.070581,
+      "avg_cost": 301.50,
+      "current_price": 299.785,
+      "pnl_pct": -0.0057,
+      "value": 21.16,
       "entry_atr_pct": 0.0072,
       "entry_time": "2026-11-12T19:19:20Z",
       "trail_stop": 297.14,
-      "take_profit": 331.64,
+      "take_profit": 331.65,
       "strategy": "intraday_surge",
       "sell_date": "2026-11-13"
     }
   ],
   "last_actions": [
+    "2026-11-12T20:18Z Market CLOSED per strategy (timezone bug: UTC-4 used vs actual UTC-5 EST — real ET 15:16). 0 SELLs (market_open=false per signals): GD(HOLD +0.016% $364.45>trail$346.19 OK); CFG(surge_date passed, $64.90<avg$65.64 no exit, trail$62.36 OK); GOOGL(sell_date=2026-11-13, 0.98hr, $299.79>trail$297.14 OK). 0 BUYs (skipped). Net-buy BUYs: GOOGL/SLB/CFG conf=2 (bearish_ema→skip). Surge: SLB 19.7% count=1. CB: daily -0.59%/weekly -0.45%(OK). Regime: BEARISH_EMA. Acct=$226.62. BP=$113.83. Universe=503.",
     "2026-11-12T19:19Z Market OPEN (2:19 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.36% $363.08>trail$346.19 OK); CFG(surge_date=today but $64.895<avg$65.64 no surge exit, trail$62.36 OK). 1 BUY: GOOGL INTRADAY_SURGE count=3 (21.1%), RSI=HOLD(68.4) no conflict, bearish_ema halved×2 → $21.28. CB: daily -0.63%/weekly -0.49%(OK). Regime: BEARISH_EMA. Acct=$226.55. BP=$113.83 (post-order). Universe=503.",
-    "2026-11-12T18:18Z Market OPEN (1:18 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.32% $363.22>trail$346.19 OK); CFG(surge_date=today but $64.92<avg$65.64 no surge exit, trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; 0 RSI BUY signals; net-buy-only GOOGL/BE/SLB conf=2 skip; GOOGL INTRADAY_SURGE count=2 but RSI=SELL(overbought) conflicting signal → HOLD. CB: daily -0.62%/weekly -0.47%(OK). Regime: BEARISH_EMA. Acct=$226.57. BP=$135.11. Universe=503.",
-    "2026-11-12T17:18Z Market OPEN (12:18 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.17% $363.76>trail$346.19 OK); CFG(surge_date=today but $64.93<avg$65.64 no surge exit, trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; 0 RSI BUY signals; net-buy-only (GOOGL/BE/SCHW/SLB/CFG) conf<3 skip; surges CSCO(49.5%)/GOOGL(17.4%) count=1 (need >=2). CB: daily -0.57%/weekly -0.43%(OK). Regime: BEARISH_EMA. Acct=$226.67. BP=$135.11. Universe=503. Surge tracker: CSCO+GOOGL first seen."
+    "2026-11-12T18:18Z Market OPEN (1:18 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.32% $363.22>trail$346.19 OK); CFG(surge_date=today but $64.92<avg$65.64 no surge exit, trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; 0 RSI BUY signals; net-buy-only GOOGL/BE/SLB conf=2 skip; GOOGL INTRADAY_SURGE count=2 but RSI=SELL(overbought) conflicting signal → HOLD. CB: daily -0.62%/weekly -0.47%(OK). Regime: BEARISH_EMA. Acct=$226.57. BP=$135.11. Universe=503."
   ]
 }
