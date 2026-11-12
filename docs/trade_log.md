@@ -1,3 +1,17 @@
+## 2026-11-12T19:19:20Z
+- Action   : BUY GOOGL
+- Price    : $301.49
+- Amount   : $21.28 | Shares: 0.070580
+- RSI      : 68.4 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : None conf=None | null
+- Stop     : $297.14 | Target: $331.64
+- Strategy : intraday_surge | Sell date: 2026-11-13
+- Regime   : bearish_ema
+- Reason   : INTRADAY_SURGE count=3 (21.1% volume surge), RSI=HOLD(68.4 not overbought), net_buy_trend +4d, bearish_ema→halved size ×2
+
+## 2026-11-12T19:19:20Z
+- SUMMARY: Market OPEN (2:19 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.36% $363.08>trail$346.19 OK); CFG(surge_date=today but $64.895<avg$65.64 no surge exit, trail$62.36 OK). 1 BUY: GOOGL INTRADAY_SURGE count=3 (21.1%), RSI=HOLD(68.4) no conflict, bearish_ema halved twice → $21.28. CB: daily -0.63%/weekly -0.49%(OK). Regime: BEARISH_EMA. Acct=$226.55. BP=$113.83 (post-order). Universe=503.
+
 ## 2026-11-11T20:22:00Z
 - SUMMARY: Market CLOSED per strategy (DST code issue: code uses EDT -4h offset through Nov 30, but EST -5h active since Nov 1 — actual time ~3:21 PM ET, computed 4:21 PM). Buying power: $100.95. Equity positions: 2. Regime: bearish_ema. Account: $227.44. Universe fetched: 503. GD: +0.58% @ $366.51 (trail$346.19 OK — no ratchet, <2.5%). CFG: -0.02% @ $65.63 (trail$62.36 OK). 0 SELLs, 0 BUYs (market_open=false per strategy → skipped execution steps).
 
