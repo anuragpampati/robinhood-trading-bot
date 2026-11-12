@@ -699,3 +699,13 @@
 - Backtest: SKIPPED — yfinance blocked in cloud sandbox (known constraint per CLAUDE.md)
 - RL samples: 639/200 (RL READY — but RL BOOST remains DISABLED per 2026-11-06 audit; do NOT re-enable without human review + retraining on corrected data)
 - Notes: Normal strategy win rate 33% would call for RSI_OVERSOLD +2 but it is already at clamp max (40) — no actionable change. Surge strategy performing better (50% win rate) but small n=4 sample. RL collector +0 new rows (1 closed trade processed, no new closed pairs). Backtest cannot run from cloud container without yfinance access; rl_performance.json updated with manual trade stats.
+
+## 2026-11-12
+- Trades analysed: 10 closed round-trips with known P&L (normal: 6, surge: 4, momentum: 0)
+- Win rate: 40% overall (normal: 33% [2/6], surge: 50% [2/4])
+- EMA-bearish entries: 0/5 wins (VTR -1.87%, ABNB -1.41%, TTWO -1.61%, APP -5.5%, DPZ -0.14%)
+- EMA-bullish/neutral entries: 4/5 wins (GE only loss at -1.14%)
+- Config changes: none (RSI_OVERSOLD=40 already at clamp max [25,40]; momentum strategy unwired n=0; ATR no fast-stop trigger avg_hold>>2h)
+- Backtest: SKIPPED — yfinance unavailable in cloud sandbox, no rh_historicals_cache.json present
+- RL samples: 639/200 (target exceeded 3x; RL BOOST remains DISABLED per 2026-11-06 audit)
+- Notes: RL collector +0 new rows (1 closed trade processed, no new closed pairs since last run). Trim log kept 60/73 entries. RSI_OVERSOLD at hard ceiling — the bearish-EMA ticker entry pattern remains the core underperformance driver. Requires individual-ticker EMA check at entry (needs backtest from non-cloud environment before wiring in).

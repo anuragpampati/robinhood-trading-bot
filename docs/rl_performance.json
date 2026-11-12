@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-12",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
-  "win_rate": 0.33,
-  "avg_win_pnl": 0.0092,
-  "avg_loss_pnl": -0.0138,
-  "risk_reward": null,
-  "total_trades": 13,
-  "wins": 5,
-  "losses": 8,
+  "win_rate": 0.40,
+  "avg_win_pnl": 0.0097,
+  "avg_loss_pnl": -0.0252,
+  "risk_reward": 0.38,
+  "total_trades": 10,
+  "wins": 4,
+  "losses": 6,
   "circuit_breaker_halts": 0,
   "rl_training_samples": 639,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance blocked in cloud sandbox (known constraint per CLAUDE.md). Win/loss stats from trade_log.md manual analysis (13 closed trades across normal+surge strategies). RL BOOST remains disabled per 2026-11-06 audit. Updated by daily learning CCR"
+  "note": "Updated by daily learning CCR. Backtest skipped — yfinance unavailable in sandbox (no rh_historicals_cache.json). Trade metrics from manual analysis of logs/trade_log.md last ~10 closed trades. RSI_OVERSOLD at clamp max 40, no config changes applied."
 }
