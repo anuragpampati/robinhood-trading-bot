@@ -1,3 +1,6 @@
+## 2026-11-12T15:17:00Z
+- SUMMARY: Market OPEN (10:17 AM ET), in_window=true. 0 SELLs: GD(+0.0% $364.15>trail$346.19 OK); CFG(surge_date=today, price $64.83<avg$65.64 surge exit n/a, trail$62.36 OK — no exit triggers). 0 BUYs: bearish_ema regime requires conf=3; SCHW net-buy-only conf=2 → skip; CFG already held → skip. CB: daily -0.55%/weekly -0.41%(OK). Regime: BEARISH_EMA. Acct=$226.72. BP=$135.11. Universe=503.
+
 ## 2026-11-12T14:19:00Z
 - SUMMARY: Market CLOSED (pre-market, 9:19 AM EST — strategy timezone bug reports market_open=True). 0 SELLs: GD(HOLD +0.76% $367.16>trail$346.19 OK); CFG(surge_date=today but price $65.36<avg $65.64 so no surge exit, trail$62.36 OK). 0 BUYs: market actually closed. Regime: BEARISH_EMA. CB: new day — daily 0%/weekly +0.14%(OK). Acct=$227.98. BP=$135.11. Universe=503.
 
