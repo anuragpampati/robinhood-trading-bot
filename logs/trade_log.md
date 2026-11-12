@@ -1,3 +1,6 @@
+## 2026-11-12T14:19:00Z
+- SUMMARY: Market CLOSED (pre-market, 9:19 AM EST — strategy timezone bug reports market_open=True). 0 SELLs: GD(HOLD +0.76% $367.16>trail$346.19 OK); CFG(surge_date=today but price $65.36<avg $65.64 so no surge exit, trail$62.36 OK). 0 BUYs: market actually closed. Regime: BEARISH_EMA. CB: new day — daily 0%/weekly +0.14%(OK). Acct=$227.98. BP=$135.11. Universe=503.
+
 ## 2026-11-11T20:22:00Z
 - SUMMARY: Market CLOSED per strategy (DST code issue: code uses EDT -4h offset through Nov 30, but EST -5h active since Nov 1 — actual time ~3:21 PM ET, computed 4:21 PM). Buying power: $100.95. Equity positions: 2. Regime: bearish_ema. Account: $227.44. Universe fetched: 503. GD: +0.58% @ $366.51 (trail$346.19 OK — no ratchet, <2.5%). CFG: -0.02% @ $65.63 (trail$62.36 OK). 0 SELLs, 0 BUYs (market_open=false per strategy → skipped execution steps).
 
