@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T22:00:21.840732+00:00",
+  "timestamp": "2026-11-12T22:29:33.403670+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7903,5 +7903,24 @@
       "reason": "Net buy reversed: -0.23M \u2192 -1.46M | OBV -0.6M/day"
     }
   ],
-  "surge_signals": []
+  "surge_signals": [
+    {
+      "ticker": "GOOGL",
+      "price": 298.70001220703125,
+      "buy_surge_pct": 0.1876,
+      "buy_vol_d2": 16566756,
+      "buy_vol_d3": 19675341,
+      "net_buy_d3": 4184092,
+      "reason": "Buy vol \u219118.8% vs prior day | 0d streak | latest 4.18M | OBV 13.7M/day"
+    },
+    {
+      "ticker": "GOOG",
+      "price": 295.3500061035156,
+      "buy_surge_pct": 0.0696,
+      "buy_vol_d2": 11286803,
+      "buy_vol_d3": 12072876,
+      "net_buy_d3": 2420572,
+      "reason": "Buy vol \u21917.0% vs prior day | 0d streak | latest 2.42M | OBV 10.1M/day"
+    }
+  ]
 }
