@@ -1,3 +1,6 @@
+## 2026-11-13T19:17:00Z
+- SUMMARY: Market OPEN (2:17 PM ET), in_window=true. 0 SELLs: GD(-0.59% $362.26>trail$346.19 OK); CFG(-1.12% $64.91>trail$62.36 OK); BMY(+0.38% $63.26, <3h held no stop check); COST(-0.30% $1101.43, <3h held no stop check); CPAY(-0.20% $464.00, <3h held no stop check). 0 BUYs: 5 positions at max (no capacity). Regime: BEARISH_EMA. Surge BMY=count2 (held, skip). Daily -0.36%/weekly -0.81%(CB OK). Acct=$225.80. BP=$65.95. Universe=503.
+
 ## 2026-11-13T18:21:00Z
 - SUMMARY: Market OPEN (1:21 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.57% $362.33>trail$346.19); CFG(surge_date 11-12 passed, $64.86<avg$65.64 no exit, trail$62.36 OK). 3 BUYs: BMY(surge+3655%)/COST(surge+26%)/CPAY(surge+64%), each $15.96 (bearish regime 25% sizing). Acct=$225.86. BP=$65.95 (post-orders). Universe=543.
 
