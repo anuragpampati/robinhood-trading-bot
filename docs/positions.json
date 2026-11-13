@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-12T20:18:02Z",
+  "updated_at": "2026-11-13T14:17:02Z",
   "buying_power": 113.83,
   "market_regime": "bearish_ema",
   "account_value": 226.62,
   "peak_value": 249.0,
-  "day_start_value": 227.98,
-  "day_start_date": "2026-11-12",
+  "day_start_value": 226.62,
+  "day_start_date": "2026-11-13",
   "week_start_value": 227.65,
   "week_start_date": "2026-11-09",
   "trading_enabled": true,
@@ -57,6 +57,7 @@
     }
   ],
   "last_actions": [
+    "2026-11-13T14:17Z ⚠️ MCP CONNECTION FAILURE — Robinhood MCP server timed out (CONNECT_TIMEOUT). Pre-market 9:17 AM EST. No OHLCV, portfolio, or order execution possible. PENDING: GOOGL sell_date=2026-11-13 and CFG sell_date=2026-11-12 (overdue) must sell on next MCP-available cycle. Acct=$226.62 (last known). BP=$113.83 (last known). Universe=N/A.",
     "2026-11-12T20:18Z Market CLOSED per strategy (timezone bug: UTC-4 used vs actual UTC-5 EST — real ET 15:16). 0 SELLs (market_open=false per signals): GD(HOLD +0.016% $364.45>trail$346.19 OK); CFG(surge_date passed, $64.90<avg$65.64 no exit, trail$62.36 OK); GOOGL(sell_date=2026-11-13, 0.98hr, $299.79>trail$297.14 OK). 0 BUYs (skipped). Net-buy BUYs: GOOGL/SLB/CFG conf=2 (bearish_ema→skip). Surge: SLB 19.7% count=1. CB: daily -0.59%/weekly -0.45%(OK). Regime: BEARISH_EMA. Acct=$226.62. BP=$113.83. Universe=503.",
     "2026-11-12T19:19Z Market OPEN (2:19 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.36% $363.08>trail$346.19 OK); CFG(surge_date=today but $64.895<avg$65.64 no surge exit, trail$62.36 OK). 1 BUY: GOOGL INTRADAY_SURGE count=3 (21.1%), RSI=HOLD(68.4) no conflict, bearish_ema halved×2 → $21.28. CB: daily -0.63%/weekly -0.49%(OK). Regime: BEARISH_EMA. Acct=$226.55. BP=$113.83 (post-order). Universe=503.",
     "2026-11-12T18:18Z Market OPEN (1:18 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.32% $363.22>trail$346.19 OK); CFG(surge_date=today but $64.92<avg$65.64 no surge exit, trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; 0 RSI BUY signals; net-buy-only GOOGL/BE/SLB conf=2 skip; GOOGL INTRADAY_SURGE count=2 but RSI=SELL(overbought) conflicting signal → HOLD. CB: daily -0.62%/weekly -0.47%(OK). Regime: BEARISH_EMA. Acct=$226.57. BP=$135.11. Universe=503."

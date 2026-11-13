@@ -1,3 +1,6 @@
+## 2026-11-13T14:17:02Z
+- SUMMARY: ⚠️ MCP CONNECTION FAILURE — Robinhood MCP server timed out (robinhood-trading CONNECT_TIMEOUT). No OHLCV data, no portfolio query, no order execution possible. Market is pre-open (9:17 AM EST, opens 9:30 AM). Skipped Steps 2b-4 entirely. PENDING SELL: GOOGL sell_date=2026-11-13 and CFG sell_date=2026-11-12 (overdue) — will execute on next cycle when MCP recovers. Buying power: $113.83 (last known). Equity positions: 3 (GD/CFG/GOOGL). Regime: bearish_ema (last known). Account: $226.62 (last known). Universe: N/A (MCP down).
+
 ## 2026-11-12T18:18:00Z
 - SUMMARY: Market OPEN (1:18 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.32% $363.22>trail$346.19 OK); CFG(surge_date=today but $64.92<avg$65.64 no surge exit, trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; 0 RSI BUY signals; net-buy-only GOOGL/BE/SLB conf=2 skip; GOOGL INTRADAY_SURGE count=2 but RSI=SELL(overbought) conflicting signal → HOLD (capital preservation). CB: daily -0.62%/weekly -0.47%(OK). Regime: BEARISH_EMA. Acct=$226.57. BP=$135.11. Universe=503.
 
