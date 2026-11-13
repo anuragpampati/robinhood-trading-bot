@@ -1,3 +1,6 @@
+## 2026-11-13T20:17:00Z
+- SUMMARY: Market CLOSED (3:16 PM ET). 0 SELLs: GD(HOLD -0.34% $363.16>trail$346.19 OK); CFG(HOLD -0.98% $65.00>trail$62.36 OK); BMY(HOLD +1.04% $63.68, <3h held); COST(HOLD -0.14% $1103.22>trail$1093.27, <3h held); CPAY(HOLD -0.59% $462.17>trail$458.38, <3h held). 0 BUYs: Market closed. Regime: BEARISH_EMA. CB: daily -0.23%/weekly -0.69%(OK). Acct=$226.09. BP=$65.95. Universe=503.
+
 ## 2026-11-13T19:17:00Z
 - SUMMARY: Market OPEN (2:17 PM ET), in_window=true. 0 SELLs: GD(-0.59% $362.26>trail$346.19 OK); CFG(-1.12% $64.91>trail$62.36 OK); BMY(+0.38% $63.26, <3h held no stop check); COST(-0.30% $1101.43, <3h held no stop check); CPAY(-0.20% $464.00, <3h held no stop check). 0 BUYs: 5 positions at max (no capacity). Regime: BEARISH_EMA. Surge BMY=count2 (held, skip). Daily -0.36%/weekly -0.81%(CB OK). Acct=$225.80. BP=$65.95. Universe=503.
 
