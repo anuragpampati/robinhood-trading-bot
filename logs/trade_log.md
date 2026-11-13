@@ -1,3 +1,6 @@
+## 2026-11-13T15:25:00Z
+- SUMMARY: Market OPEN (10:25 AM ET), in_window=true. 0 SELLs: GD(HOLD -0.71% $361.80>trail$346.19 OK); CFG(surge_date=2026-11-12 passed, $64.56<avg$65.64 no surge exit, trail$62.36 OK — HOLD); GOOGL(sell_date=today, $297.87<avg$301.50 no surge exit, trail$297.14 OK — HOLD). 0 BUYs: 0 RSI BUY signals; 0 net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.31%/weekly -0.77%(OK). Acct=$225.91. BP=$113.83. Universe=503. Surge tracker cleared (GOOGL entry expired — date was 2026-11-12).
+
 ## 2026-11-12T18:18:00Z
 - SUMMARY: Market OPEN (1:18 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.32% $363.22>trail$346.19 OK); CFG(surge_date=today but $64.92<avg$65.64 no surge exit, trail$62.36 OK). 0 BUYs: bearish_ema requires conf=3; 0 RSI BUY signals; net-buy-only GOOGL/BE/SLB conf=2 skip; GOOGL INTRADAY_SURGE count=2 but RSI=SELL(overbought) conflicting signal → HOLD (capital preservation). CB: daily -0.62%/weekly -0.47%(OK). Regime: BEARISH_EMA. Acct=$226.57. BP=$135.11. Universe=503.
 
