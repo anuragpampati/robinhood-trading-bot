@@ -709,3 +709,11 @@
 - Backtest: SKIPPED — yfinance unavailable in cloud sandbox, no rh_historicals_cache.json present
 - RL samples: 639/200 (target exceeded 3x; RL BOOST remains DISABLED per 2026-11-06 audit)
 - Notes: RL collector +0 new rows (1 closed trade processed, no new closed pairs since last run). Trim log kept 60/73 entries. RSI_OVERSOLD at hard ceiling — the bearish-EMA ticker entry pattern remains the core underperformance driver. Requires individual-ticker EMA check at entry (needs backtest from non-cloud environment before wiring in).
+
+## 2026-11-13
+- Trades analysed: 11 closed round-trips (10 normal, 1 intraday_surge)
+- Win rate: 36.4% overall (normal: 40.0%, intraday_surge: 0.0% [n=1], surge: n/a [no closed], momentum: n/a [n<3])
+- Config changes: none — RSI_OVERSOLD=40 already at clamp max; momentum n<3; ATR avg_hold=19h (not <2h)
+- Backtest: skipped — yfinance blocked in cloud sandbox (network policy)
+- RL samples: 639/200 (threshold met; RL still disabled per 2026-11-06 audit until retrained)
+- Notes: EMA-trend split stark — BULLISH entries 57% win rate (+0.18%), BEARISH entries 0% win rate (-1.81%). 639 RL training samples exceed 200 target; Q-table has 19 states (stale, July-trained). RL re-enable requires human review + retraining first. Surge trades open: GD/CFG/BMY/COST/CPAY. Account $226.09.
