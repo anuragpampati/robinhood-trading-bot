@@ -1,3 +1,39 @@
+## 2026-11-13T18:21:00Z
+- SUMMARY: Market OPEN (1:21 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.57% $362.33>trail$346.19); CFG(surge_date 11-12 passed, $64.86<avg$65.64 no exit, trail$62.36 OK). 3 BUYs: BMY(surge+3655%)/COST(surge+26%)/CPAY(surge+64%), each $15.96 (bearish regime 25% sizing). Acct=$225.86. BP=$65.95 (post-orders). Universe=543.
+
+## 2026-11-13T18:19:29Z
+- Action   : BUY CPAY
+- Price    : $464.70
+- Amount   : $15.96 | Shares: 0.034340
+- RSI      : 64.77 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : None conf=None | null (RL disabled 2026-11-06)
+- Stop     : $458.38 | Target: $511.17
+- Strategy : surge | Sell date: 2026-11-14
+- Regime   : bearish_ema
+- Reason   : Buy vol surge +64%; EMA BULLISH; bearish regime → 25% sizing
+
+## 2026-11-13T18:19:28Z
+- Action   : BUY COST
+- Price    : $1,104.54
+- Amount   : $15.96 | Shares: 0.014440
+- RSI      : 77.74 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : None conf=None | null (RL disabled 2026-11-06)
+- Stop     : $1,093.27 | Target: $1,214.99
+- Strategy : surge | Sell date: 2026-11-14
+- Regime   : bearish_ema
+- Reason   : Buy vol surge +26%; EMA BULLISH; bearish regime → 25% sizing. Note: RSI overbought (77.74)+above BB band.
+
+## 2026-11-13T18:19:24Z
+- Action   : BUY BMY
+- Price    : $63.02
+- Amount   : $15.96 | Shares: 0.253250
+- RSI      : 56.89 | EMA: BULLISH | BB: IN_BAND
+- RL       : None conf=None | null (RL disabled 2026-11-06)
+- Stop     : $62.21 | Target: $69.32
+- Strategy : surge | Sell date: 2026-11-14
+- Regime   : bearish_ema
+- Reason   : Buy vol surge +3655% (extraordinary — likely major news event); EMA BULLISH; bearish regime → 25% sizing
+
 ## 2026-11-13T17:16:58Z
 - SUMMARY: Market OPEN (12:16 PM ET), in_window=true. 0 SELLs: GD(HOLD -0.42% $362.85>trail$346.19 OK); CFG(surge_date=2026-11-12 passed, $64.94<avg$65.64 no surge exit, trail$62.36 OK — HOLD). 0 BUYs: 0 RSI BUY signals; 0 net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.29%/weekly -0.74%(OK). Acct=$225.96. BP=$113.83. Universe=503. Surge tracker cleared (AIG/FDS expired, no current surges).
 
