@@ -1,3 +1,17 @@
+## 2026-11-13T16:16:31Z
+- Action   : SELL GOOGL
+- Price    : $294.42 (est. market)
+- Amount   : ~$20.78 | Shares: 0.070581
+- RSI      : N/A | EMA: BEARISH | BB: N/A
+- RL       : N/A conf=N/A | null (RL disabled)
+- Stop     : trail=$297.14 HIT ($294.42 ≤ $297.14) | Target: $331.65
+- Strategy : intraday_surge | Sell date: ATR trail stop
+- Regime   : bearish_ema
+- Reason   : ATR trailing stop triggered — price $294.42 ≤ trail_stop $297.14; held 20.9h ≥ 3h; pnl -2.35% from entry $301.50
+
+## 2026-11-13T16:16:44Z
+- SUMMARY: Market OPEN (11:16 AM ET), in_window=true. 1 SELL: GOOGL trail-stop ($294.42 ≤ trail$297.14 — 20.9h). 0 SELLs (HOLD): GD(-0.63% $362.10 > trail$346.19 OK); CFG(-1.17% $64.87 > trail$62.36 OK — surge_date 11-12 passed, price < avg, no exit). 0 BUYs: 0 RSI BUY; 0 net-buy BUY; surge AIG(31.1%)/FDS(433.2%) count=1 (need ≥2). Regime: BEARISH_EMA. CB: daily -0.36%/weekly -0.81%(OK). Acct=$225.80. BP=$113.83. Universe=503.
+
 ## 2026-11-13T15:25:00Z
 - SUMMARY: Market OPEN (10:25 AM ET), in_window=true. 0 SELLs: GD(HOLD -0.71% $361.80>trail$346.19 OK); CFG(surge_date=2026-11-12 passed, $64.56<avg$65.64 no surge exit, trail$62.36 OK — HOLD); GOOGL(sell_date=today, $297.87<avg$301.50 no surge exit, trail$297.14 OK — HOLD). 0 BUYs: 0 RSI BUY signals; 0 net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.31%/weekly -0.77%(OK). Acct=$225.91. BP=$113.83. Universe=503. Surge tracker cleared (GOOGL entry expired — date was 2026-11-12).
 
