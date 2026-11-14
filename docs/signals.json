@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-13T23:20:54.648411+00:00",
+  "timestamp": "2026-11-14T00:12:17.921957+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7912,6 +7912,15 @@
       "buy_vol_d3": 784992,
       "net_buy_d3": 97643,
       "reason": "Buy vol \u219129.4% vs prior day | Net buy reversed: 0.27M \u2192 0.10M | OBV -0.8M/day"
+    },
+    {
+      "ticker": "ALLE",
+      "price": 191.97999572753906,
+      "buy_surge_pct": 65.4682,
+      "buy_vol_d2": 10978,
+      "buy_vol_d3": 729712,
+      "net_buy_d3": 727210,
+      "reason": "Buy vol \u21916546.8% vs prior day | 0d streak | latest 0.73M | OBV -0.0M/day"
     }
   ]
 }
