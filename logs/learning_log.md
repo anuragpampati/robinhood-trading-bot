@@ -717,3 +717,12 @@
 - Backtest: skipped — yfinance blocked in cloud sandbox (network policy)
 - RL samples: 639/200 (threshold met; RL still disabled per 2026-11-06 audit until retrained)
 - Notes: EMA-trend split stark — BULLISH entries 57% win rate (+0.18%), BEARISH entries 0% win rate (-1.81%). 639 RL training samples exceed 200 target; Q-table has 19 states (stale, July-trained). RL re-enable requires human review + retraining first. Surge trades open: GD/CFG/BMY/COST/CPAY. Account $226.09.
+
+## 2026-11-16
+- Trades analysed: 14 closed round-trips (10 normal, 2 intraday_surge, 2 surge)
+- Win rate: 42.9% overall (normal: 40.0% [4W/6L], surge: 100% [2W/0L], intraday_surge: 0.0% [0W/2L])
+- EMA-trend split: BEARISH entries 0% win rate (all losses); BULLISH entries ~60%+ win rate
+- Config changes: none — RSI_OVERSOLD=40 already at clamp max [25,40]; momentum strategy unwired (n<3); ATR avg_hold>>2h (no fast-stop trigger)
+- Backtest: SKIPPED — yfinance unavailable in cloud sandbox (known constraint per CLAUDE.md)
+- RL samples: 641/200 (target exceeded 3x; RL BOOST remains DISABLED per 2026-11-06 audit — do NOT re-enable without human review + retraining)
+- Notes: 2 new closed trades today: BMY surge +1.60% WIN, COST surge +0.65% WIN. GOOGL intraday_surge -2.35% LOSS (closed yesterday). Open positions: GD rsi_momentum -1.65%, CFG surge -2.24%, CPAY surge -1.08% (all in bearish_ema regime). Account=$225.25. Bearish-EMA ticker entry pattern remains core underperformance driver for normal strategy — RSI_OVERSOLD threshold exhausted at ceiling. Surge strategy outperforming (100% win rate but tiny n=2 today). Trim log kept 53/70 entries.
