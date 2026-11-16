@@ -1,3 +1,6 @@
+## 2026-11-16T20:18:00Z
+- SUMMARY: Market CLOSED (after 4PM ET). 0 SELLs: GD(rsi_momentum -1.65% $358.38>trail$346.19 OK); CFG(surge_date 11-14 passed, $64.17<avg$65.64 no exit, trail$62.36 OK); CPAY(surge_date 11-14 passed, $459.91<avg$464.91 no exit, trail$458.38 OK). 0 BUYs: Market closed. Regime: BEARISH_EMA. CB: daily -0.64%/weekly -0.64%(OK). Acct=$225.25. BP=$86.71. Universe=503.
+
 ## 2026-11-16T19:18:00Z
 - SUMMARY: Market OPEN (2:18 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.60% $358.55>trail$346.19 OK); CFG(surge_date 11-14 passed, $64.23<avg$65.64 no exit, trail$62.36 OK); CPAY(surge_date 11-14 passed, $461.59<avg$464.91 no exit, trail$458.38 OK). 0 BUYs: 0 RSI BUY signals, 0 net-buy BUY signals in bearish_ema regime (need conf≥3). SPY RSI=30.5 (BELOW_BAND/BEARISH, near oversold but HOLD). Regime: BEARISH_EMA. CB: daily -0.59%/weekly -0.59%(OK). Acct=$225.36. BP=$86.71. Universe=503.
 
