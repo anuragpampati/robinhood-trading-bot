@@ -1,3 +1,6 @@
+## 2026-11-16T15:17:00Z
+- SUMMARY: Market OPEN (10:17 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -0.39% $362.97>trail$346.19 OK); CFG(surge_date 11-14 passed, $64.72<avg$65.64 no exit, trail$62.36 OK); CPAY(surge_date 11-14 passed, $462.93<avg$464.91 no exit, trail$458.38 OK). 0 BUYs: only RSI BUY=SPY(conf=2, need conf≥3 in BEARISH_EMA regime), 0 net-buy signals, 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.11%/weekly -0.11%(OK). Acct=$226.44. BP=$86.71. Universe=503.
+
 ## 2026-11-16T14:18:20Z
 - SUMMARY: Market OPEN (pre-market 9:18 AM ET), in_window=true. 2 SELLs: BMY(surge_date 11-14 passed, $64.058>avg$63.02 +1.6% → SELL queued); COST(surge_date 11-14 passed, $1111.94>avg$1104.73 +0.65% → SELL queued). HOLDS: GD(rsi_momentum -0.04% $364.93>trail$346.19 OK); CFG(surge_date passed, $64.99<avg$65.64 no exit, trail$62.36 OK); CPAY(surge_date passed, $463.00<avg$464.91 no exit, trail$458.38 OK). 0 BUYs: 0 RSI BUY signals, 0 net-buy signals, 0 surge signals. Regime: BEARISH_EMA. CB: daily 0%/weekly 0%(new day+week reset, OK). Acct=$226.70. BP=$86.71. Universe=503.
 
