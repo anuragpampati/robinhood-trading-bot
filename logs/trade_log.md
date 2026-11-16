@@ -1,3 +1,28 @@
+## 2026-11-16T14:18:20Z
+- SUMMARY: Market OPEN (pre-market 9:18 AM ET), in_window=true. 2 SELLs: BMY(surge_date 11-14 passed, $64.058>avg$63.02 +1.6% → SELL queued); COST(surge_date 11-14 passed, $1111.94>avg$1104.73 +0.65% → SELL queued). HOLDS: GD(rsi_momentum -0.04% $364.93>trail$346.19 OK); CFG(surge_date passed, $64.99<avg$65.64 no exit, trail$62.36 OK); CPAY(surge_date passed, $463.00<avg$464.91 no exit, trail$458.38 OK). 0 BUYs: 0 RSI BUY signals, 0 net-buy signals, 0 surge signals. Regime: BEARISH_EMA. CB: daily 0%/weekly 0%(new day+week reset, OK). Acct=$226.70. BP=$86.71. Universe=503.
+
+## 2026-11-16T14:18:19Z
+- Action   : SELL BMY
+- Price    : $64.06
+- Amount   : $16.22 | Shares: 0.253261
+- RSI      : 60.0 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : None conf=None | null (RL disabled 2026-11-06)
+- Stop     : $62.21 | Target: $69.32
+- Strategy : surge | Sell date: 2026-11-14 (passed)
+- Regime   : bearish_ema
+- Reason   : Surge sell_date 2026-11-14 passed; current $64.06 > avg_cost $63.02 (+1.6%)
+
+## 2026-11-16T14:18:20Z
+- Action   : SELL COST
+- Price    : $1111.94
+- Amount   : $16.07 | Shares: 0.014447
+- RSI      : 73.5 | EMA: BULLISH | BB: IN_BAND
+- RL       : None conf=None | null (RL disabled 2026-11-06)
+- Stop     : $1093.27 | Target: $1215.20
+- Strategy : surge | Sell date: 2026-11-14 (passed)
+- Regime   : bearish_ema
+- Reason   : Surge sell_date 2026-11-14 passed; current $1111.94 > avg_cost $1104.73 (+0.65%)
+
 ## 2026-11-13T20:17:00Z
 - SUMMARY: Market CLOSED (3:16 PM ET). 0 SELLs: GD(HOLD -0.34% $363.16>trail$346.19 OK); CFG(HOLD -0.98% $65.00>trail$62.36 OK); BMY(HOLD +1.04% $63.68, <3h held); COST(HOLD -0.14% $1103.22>trail$1093.27, <3h held); CPAY(HOLD -0.59% $462.17>trail$458.38, <3h held). 0 BUYs: Market closed. Regime: BEARISH_EMA. CB: daily -0.23%/weekly -0.69%(OK). Acct=$226.09. BP=$65.95. Universe=503.
 
