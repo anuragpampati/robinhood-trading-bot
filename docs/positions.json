@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-16T17:18:00Z",
+  "updated_at": "2026-11-16T18:18:00Z",
   "buying_power": 86.71,
   "market_regime": "bearish_ema",
-  "account_value": 226.07,
+  "account_value": 225.85,
   "peak_value": 249.0,
   "day_start_value": 226.70,
   "day_start_date": "2026-11-16",
@@ -17,9 +17,9 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 361.12,
-      "pnl_pct": -0.009,
-      "value": 74.19,
+      "current_price": 360.23,
+      "pnl_pct": -0.0114,
+      "value": 74.07,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
@@ -31,9 +31,9 @@
       "ticker": "CFG",
       "quantity": 0.258836,
       "avg_cost": 65.64,
-      "current_price": 64.65,
-      "pnl_pct": -0.0151,
-      "value": 16.73,
+      "current_price": 64.57,
+      "pnl_pct": -0.0163,
+      "value": 16.72,
       "entry_atr_pct": 0.0072,
       "entry_time": "2026-11-11T18:21:52Z",
       "trail_stop": 62.36,
@@ -45,9 +45,9 @@
       "ticker": "CPAY",
       "quantity": 0.034329,
       "avg_cost": 464.91,
-      "current_price": 463.92,
-      "pnl_pct": -0.0021,
-      "value": 15.93,
+      "current_price": 463.27,
+      "pnl_pct": -0.0035,
+      "value": 15.90,
       "entry_atr_pct": 0.0068,
       "entry_time": "2026-11-13T18:19:29Z",
       "trail_stop": 458.38,
@@ -57,8 +57,8 @@
     }
   ],
   "last_actions": [
-    "2026-11-16T17:18Z Market OPEN (12:18 PM ET), in_window=true. 0 SELLs: GD(-0.90% $361.12>trail$346.19 OK); CFG(-1.51% $64.65>trail$62.36, surge_date passed price<avg no exit); CPAY(-0.21% $463.92>trail$458.38, surge_date passed price<avg no exit). 0 BUYs: 0 RSI BUY signals, 0 net-buy BUY in BEARISH_EMA. CB: daily -0.28%/weekly -0.28%(OK). Acct=$226.07. BP=$86.71. Universe=503.",
-    "2026-11-16T16:18Z Market OPEN (11:18 AM ET), in_window=true. 0 SELLs: GD(-0.75% $361.67>trail$346.19 OK); CFG(surge_date passed, $64.79<avg$65.64 no exit); CPAY(surge_date passed, $463.14<avg$464.91 no exit). 0 BUYs: 0 signals in BEARISH_EMA regime. CB: daily -0.22%/weekly -0.22%(OK). Acct=$226.20. BP=$86.71. Universe=503.",
-    "2026-11-16T15:17Z Market OPEN (10:17 AM ET), in_window=true. 0 SELLs: GD(-0.39% $362.97>trail$346.19 OK); CFG(surge_date passed, $64.72<avg$65.64 no exit); CPAY(surge_date passed, $462.93<avg$464.91 no exit). 0 BUYs: SPY RSI BUY conf=2 (need conf>=3 in BEARISH_EMA). Regime: BEARISH_EMA. CB: daily -0.11%/weekly -0.11%(OK). Acct=$226.44. BP=$86.71. Universe=503."
+    "2026-11-16T18:18Z Market OPEN (1:18 PM ET), in_window=true. 0 SELLs: GD(-1.14% $360.23>trail$346.19 OK); CFG(-1.63% $64.57>trail$62.36 OK, surge_date passed price<avg no exit); CPAY(-0.35% $463.27>trail$458.38 OK, surge_date passed price<avg no exit). 0 BUYs: 0 RSI BUY, 0 net-buy BUY in BEARISH_EMA; CME surge count=1(need 2). CB: daily -0.37%/weekly -0.37%(OK). Acct=$225.85. BP=$86.71. Universe=503.",
+    "2026-11-16T17:18Z Market OPEN (12:18 PM ET), in_window=true. 0 SELLs: GD(-0.90% $361.12>trail$346.19 OK); CFG(-1.51% $64.65>trail$62.36, surge_date passed price<avg no exit); CPAY(-0.21% $463.92>trail$458.38, surge_date passed price<avg no exit). 0 BUYs: 0 RSI BUY signals, 0 net-buy BUY signals, 0 surge signals in BEARISH_EMA regime. CB: daily -0.28%/weekly -0.28%(OK). Acct=$226.07. BP=$86.71. Universe=503.",
+    "2026-11-16T16:18Z Market OPEN (11:18 AM ET), in_window=true. 0 SELLs: GD(-0.75% $361.67>trail$346.19 OK); CFG(surge_date passed, $64.79<avg$65.64 no exit); CPAY(surge_date passed, $463.14<avg$464.91 no exit). 0 BUYs: 0 signals in BEARISH_EMA regime. CB: daily -0.22%/weekly -0.22%(OK). Acct=$226.20. BP=$86.71. Universe=503."
   ]
 }
