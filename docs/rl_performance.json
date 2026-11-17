@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-17",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
-  "win_rate": 0.429,
-  "avg_win_pnl": 0.00973,
-  "avg_loss_pnl": -0.01455,
-  "risk_reward": 0.669,
-  "total_trades": 14,
-  "wins": 6,
-  "losses": 8,
+  "win_rate": 0.533,
+  "avg_win_pnl": 0.00893,
+  "avg_loss_pnl": -0.01300,
+  "risk_reward": 0.687,
+  "total_trades": 15,
+  "wins": 8,
+  "losses": 7,
   "circuit_breaker_halts": 0,
   "rl_training_samples": 641,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance blocked in cloud sandbox (network policy). NO_CHANGE: normal win_rate=40% (n=10, not <40%); RSI_OVERSOLD at clamp max 40; momentum strategy unwired (n<3); ATR avg_hold>>2h. +2 new closed trades today (BMY surge +1.6% WIN, COST surge +0.65% WIN, GOOGL intraday_surge -2.35% LOSS). Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance blocked in cloud sandbox (known issue). Trade metrics from live log analysis (15 closed round-trips). NO_CHANGE: RSI_OVERSOLD already at clamp max 40; momentum (rsi_momentum) 0 closed trades <3 min; ATR avg_hold ~24h not <2h trigger. Surge strategy 6/6 wins (100%); normal strategy 2/9 wins (22%). Updated by daily learning CCR"
 }

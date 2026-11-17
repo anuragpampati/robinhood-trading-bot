@@ -726,3 +726,12 @@
 - Backtest: SKIPPED — yfinance unavailable in cloud sandbox (known constraint per CLAUDE.md)
 - RL samples: 641/200 (target exceeded 3x; RL BOOST remains DISABLED per 2026-11-06 audit — do NOT re-enable without human review + retraining)
 - Notes: 2 new closed trades today: BMY surge +1.60% WIN, COST surge +0.65% WIN. GOOGL intraday_surge -2.35% LOSS (closed yesterday). Open positions: GD rsi_momentum -1.65%, CFG surge -2.24%, CPAY surge -1.08% (all in bearish_ema regime). Account=$225.25. Bearish-EMA ticker entry pattern remains core underperformance driver for normal strategy — RSI_OVERSOLD threshold exhausted at ceiling. Surge strategy outperforming (100% win rate but tiny n=2 today). Trim log kept 53/70 entries.
+
+## 2026-11-17
+- Trades analysed: 15 closed round-trips (from log + summaries)
+- Win rate: 53.3% overall (normal: 22.2% 2/9, surge: 100.0% 6/6, rsi_momentum: 0 closed)
+- EMA regime at entry: bearish_ema 100% (5/5), normal 30% (3/10)
+- Config changes: none — RSI_OVERSOLD already at clamp max (40); momentum n<3 (0 closed); ATR avg_hold ~24h not <2h
+- Backtest: SKIPPED — yfinance blocked in cloud sandbox (known issue per CLAUDE.md)
+- RL samples: 641/200 (threshold crossed — RL READY, run python -m strategy.rl_agent --train after human review)
+- Notes: Surge strategy outperforming (100% win rate, avg +1.05%); normal RSI mean-reversion struggling (22% win, avg -0.91%). Account at $224.09 (peak $249). One open position: GD (rsi_momentum, -2.57%). CFG/CPAY surge positions open but below avg cost. SPY in PANIC territory (RSI 22-24), bearish_ema regime active.
