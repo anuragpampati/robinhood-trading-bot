@@ -1,3 +1,6 @@
+## 2026-11-17T18:17:17Z
+- SUMMARY: Market OPEN (1:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.86% $357.63>trail$346.19 OK). 0 BUYs: SPY RSI=22.76 PANIC (<30); 1 RSI BUY signal (SPY conf=2 — blocked by panic filter + bearish_ema requires conf=3); 0 net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.41%/weekly -0.41%(OK). Acct=$224.63. BP=$119.21. Universe=503.
+
 ## 2026-11-17T16:17:00Z
 - SUMMARY: Market OPEN (11:17 AM ET), in_window=true. 2 SELLs: CPAY(ATR stop $453.41≤$458.38 -2.5%); CFG(net_buy_sell reversed -3.6%). HOLD GD(-1.9% $358.28>trail$346.19 OK). 0 BUYs: SPY RSI=21.67 PANIC (<30); 0 RSI/net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.34%/weekly -0.34%(OK). Acct≈$224.80. BP≈$151.15 (post-fills est). Universe=503.
 

@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-17T17:15:35Z",
+  "updated_at": "2026-11-17T18:17:17Z",
   "buying_power": 119.21,
   "market_regime": "bearish_ema",
-  "account_value": 224.77,
+  "account_value": 224.63,
   "peak_value": 249.0,
   "day_start_value": 225.55,
   "day_start_date": "2026-11-17",
   "week_start_value": 225.55,
   "week_start_date": "2026-11-17",
   "trading_enabled": true,
-  "kill_switch_pct": 0.2,
+  "kill_switch_pct": 0.20,
   "kill_switch_floor": 200.0,
   "disabled_reason": null,
   "positions": [
@@ -17,9 +17,9 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 358.305,
-      "pnl_pct": -0.0167,
-      "value": 73.63,
+      "current_price": 357.63,
+      "pnl_pct": -0.0186,
+      "value": 73.49,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
@@ -29,8 +29,8 @@
     }
   ],
   "last_actions": [
+    "2026-11-17T18:17Z Market OPEN (1:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.86% $357.63>trail$346.19 OK). 0 BUYs: SPY RSI=22.76 PANIC (<30); 1 RSI BUY signal (SPY conf=2 blocked by panic+bearish_ema). Regime: BEARISH_EMA. CB: daily -0.41%/weekly -0.41%(OK). Acct=$224.63. BP=$119.21. Universe=503.",
     "2026-11-17T17:15Z Market OPEN (12:15 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.67% $358.31>trail$346.19 OK). 0 BUYs: 0 RSI/net-buy BUY signals; SPY RSI=37.9 bearish_ema regime. CB: daily -0.35%/weekly -0.35%(OK). Acct=$224.77. BP=$119.21. Universe=503.",
-    "2026-11-17T16:17Z Market OPEN (11:17 AM ET), in_window=true. 2 SELLs: CPAY(ATR stop $453.41≤$458.38 -2.5%); CFG(net_buy_sell reversed -3.6%). 0 BUYs: SPY RSI=21.67 PANIC (<30); 0 RSI/net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.34%/weekly -0.34%(OK). Acct≈$224.80. BP≈$151.15 (est). Universe=503.",
-    "2026-11-17T15:18Z Market OPEN (10:16 AM ET), in_window=true. 0 SELLs: GD(-2.2% $356.51>trail$346.19 OK); CFG(-2.5% $63.99>trail$62.36 OK, surge_date passed price<avg no exit); CPAY(-1.4% $458.42>trail$458.38 OK — 3¢ above stop ⚠). 0 BUYs: SPY RSI=29.4 PANIC (<30); surge count=1 for FOX/CEG/COP/DRI (need 2). Regime: BEARISH_EMA. CB: daily -0.35%/weekly -0.35%(OK). Acct=$224.77. BP=$119.21. Universe=503."
+    "2026-11-17T16:17Z Market OPEN (11:17 AM ET), in_window=true. 2 SELLs: CPAY(ATR stop $453.41≤$458.38 -2.5%); CFG(net_buy_sell reversed -3.6%). 0 BUYs: SPY RSI=21.67 PANIC (<30); 0 RSI/net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.34%/weekly -0.34%(OK). Acct≈$224.80. BP≈$151.15 (est). Universe=503."
   ]
 }
