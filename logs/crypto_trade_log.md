@@ -1,5 +1,8 @@
 # Crypto Trade Log — Robinhood Agentic Account
 
+## 2026-11-17T01:16:00Z
+- SUMMARY: Crypto cycle — no trades. Positions: 0. Total crypto value: $0.00. Regime: unknown (data invalid). NOTE: Attempted workaround using get_equity_historicals for crypto symbols (BTC, ETH, etc.) — API returned data but for wrong instruments (BTC equity ~$30 vs live BTC ~$64,634; ETH equity ~$18 vs live ETH ~$1,817). Signals generated are invalid and were not acted upon. No open positions to exit. Kill switches clear (trading_halted=false, trading_enabled=true). Current spot (mark): BTC $64,634 | ETH $1,817 | XRP $0.9555 | LTC $44.43 | LINK $9.09 | BCH $207.60. PERSISTENT OUTAGE: day 62 (since ≥2026-09-16) — no reliable crypto OHLCV source available in CCR sandbox; get_equity_historicals returns wrong instruments for crypto ticker symbols.
+
 ## 2026-11-16T01:20:00Z
 - SUMMARY: Crypto cycle — no trades. Positions: 0. Total crypto value: $0.00. Regime: unknown (yfinance blocked). NOTE: yfinance proxy-blocked in CCR sandbox; signal engine produced 0 signals. Kill switches clear (trading_halted=false, trading_enabled=true). Account value: $226.09. No open positions to exit. Current spot (mark): BTC $64,860.76 | ETH $1,812.69 | SOL $71.53 | XRP $0.9607 | LTC $44.96 | ADA $0.1528 | LINK $9.16 | AVAX $7.18 | DOGE $0.0591 | BCH $208.57. PERSISTENT OUTAGE: day 61 (since ≥2026-09-16) — crypto engine non-functional in CCR sandbox; no get_crypto_historicals MCP endpoint exists to replace yfinance for OHLCV data.
 
