@@ -1,36 +1,14 @@
 ## 2026-11-17T20:15:06Z
 - SUMMARY: Market closed (after 4PM ET). 0 SELLs: GD(rsi_momentum -2.57% $355.02>trail$346.19 OK — no stop triggered). 0 BUYs: Market closed. Regime: BEARISH_EMA. CB: daily -0.65%/weekly -0.65%(OK). Acct=$224.09. BP=$119.21. Universe=503.
 
-## 2026-11-17T18:17:17Z
-- SUMMARY: Market OPEN (1:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.86% $357.63>trail$346.19 OK). 0 BUYs: SPY RSI=22.76 PANIC (<30); 1 RSI BUY signal (SPY conf=2 — blocked by panic filter + bearish_ema requires conf=3); 0 net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.41%/weekly -0.41%(OK). Acct=$224.63. BP=$119.21. Universe=503.
+## 2026-11-17T19:17:00Z
+- SUMMARY: Market OPEN (2:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -2.09% $356.79>trail$346.19 OK). 0 BUYs: SPY RSI=24.0 PANIC (<30); 1 RSI BUY signal (SPY conf=2 blocked by panic+bearish_ema). 0 net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.51%/weekly -0.51%(OK). Acct=$224.39. BP=$119.21. Universe=503.
 
-## 2026-11-17T16:17:00Z
-- SUMMARY: Market OPEN (11:17 AM ET), in_window=true. 2 SELLs: CPAY(ATR stop $453.41≤$458.38 -2.5%); CFG(net_buy_sell reversed -3.6%). HOLD GD(-1.9% $358.28>trail$346.19 OK). 0 BUYs: SPY RSI=21.67 PANIC (<30); 0 RSI/net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.34%/weekly -0.34%(OK). Acct≈$224.80. BP≈$151.15 (post-fills est). Universe=503.
+## 2026-11-17T17:15:35Z
+- SUMMARY: Market OPEN (12:15 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.67% $358.31>trail$346.19 OK). 0 BUYs: 0 RSI BUY signals; 0 net-buy BUY signals; SPY RSI=37.9 (bearish_ema regime, buys suppressed). CB: daily -0.35%/weekly -0.35%(OK). Acct=$224.77. BP=$119.21. Universe=503.
 
-## 2026-11-17T16:17:08Z
-- Action   : SELL CFG
-- Price    : $63.28
-- Amount   : $16.38 | Shares: 0.258836
-- RSI      : 28.1 | EMA: BEARISH | BB: BELOW_BAND
-- RL       : BUY conf=0.952 | null (RL disabled)
-- Stop     : $62.36 | Target: $72.20
-- Strategy : surge | Sell date: net_buy_sell signal
-- Regime   : bearish_ema
-- Reason   : Net buy trend reversed (-0.03M→-0.14M, OBV -0.2M/day), hours_held=6d
-
-## 2026-11-17T16:17:04Z
-- Action   : SELL CPAY
-- Price    : $453.41
-- Amount   : $15.56 | Shares: 0.034329
-- RSI      : 41.0 | EMA: NEUTRAL | BB: BELOW_BAND
-- RL       : null conf=null | null
-- Stop     : $458.38 (ATR trail hit) | Target: $511.40
-- Strategy : surge | Sell date: ATR stop hit
-- Regime   : bearish_ema
-- Reason   : ATR trailing stop triggered ($453.41 ≤ trail_stop $458.38), hours_held=4d, entry 2026-11-13
-
-## 2026-11-17T15:18:05Z
-- SUMMARY: Market OPEN (10:16 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -2.2% $356.51>trail$346.19 OK); CFG(surge_date 11-14 passed, $63.99<avg$65.64 no exit -2.5%, trail$62.36 OK); CPAY(surge_date 11-14 passed, $458.415<avg$464.91 no exit -1.4%, trail$458.38 OK — 3¢ above stop ⚠). 0 BUYs: 0 RSI/net-buy BUY signals; SPY RSI=29.4 PANIC (<30) mode — only surge/intraday_surge allowed; Surge: FOX/CEG/COP/DRI all count=1 (need 2). Regime: BEARISH_EMA. CB: daily -0.35%/weekly -0.35%(OK). Acct=$224.77. BP=$119.21. Universe=503.
+## 2026-11-17T14:16:05Z
+- SUMMARY: Market OPEN (pre-mkt 9:16 AM ET), in_window=true. 0 SELLs: GD(-1.3% $359.70>trail$346.19 OK); CFG(-1.8% $64.47>trail$62.36 OK); CPAY(-1.4% $458.40>trail$458.38 OK, 2¢ above stop ⚠). 0 BUYs: 0 RSI/net-buy BUY signals in BEARISH_EMA regime. CB: daily 0.0%/weekly 0.0%(OK, day+week reset). Acct=$225.55. BP=$119.21. Universe=503.
 
 ## 2026-11-16T20:18:00Z
 - SUMMARY: Market CLOSED (after 4PM ET). 0 SELLs: GD(rsi_momentum -1.65% $358.38>trail$346.19 OK); CFG(surge_date 11-14 passed, $64.17<avg$65.64 no exit, trail$62.36 OK); CPAY(surge_date 11-14 passed, $459.91<avg$464.91 no exit, trail$458.38 OK). 0 BUYs: Market closed. Regime: BEARISH_EMA. CB: daily -0.64%/weekly -0.64%(OK). Acct=$225.25. BP=$86.71. Universe=503.
