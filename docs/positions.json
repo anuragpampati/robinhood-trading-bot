@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-17T19:17:00Z",
+  "updated_at": "2026-11-17T20:15:06Z",
   "buying_power": 119.21,
   "market_regime": "bearish_ema",
-  "account_value": 224.39,
+  "account_value": 224.09,
   "peak_value": 249.0,
   "day_start_value": 225.55,
   "day_start_date": "2026-11-17",
@@ -17,9 +17,9 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 356.79,
-      "pnl_pct": -0.0209,
-      "value": 73.3,
+      "current_price": 355.02,
+      "pnl_pct": -0.0257,
+      "value": 72.96,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
@@ -29,8 +29,8 @@
     }
   ],
   "last_actions": [
+    "2026-11-17T20:15Z Market CLOSED (after 4PM ET). 0 SELLs: GD(rsi_momentum -2.57% $355.02>trail$346.19 OK). 0 BUYs: Market closed. Regime: BEARISH_EMA. CB: daily -0.65%/weekly -0.65%(OK). Acct=$224.09. BP=$119.21. Universe=503.",
     "2026-11-17T19:17Z Market OPEN (2:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -2.09% $356.79>trail$346.19 OK). 0 BUYs: SPY RSI=24.0 PANIC (<30); 1 RSI BUY signal (SPY conf=2 blocked by panic+bearish_ema). Regime: BEARISH_EMA. CB: daily -0.51%/weekly -0.51%(OK). Acct=$224.39. BP=$119.21. Universe=503.",
-    "2026-11-17T18:17Z Market OPEN (1:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.86% $357.63>trail$346.19 OK). 0 BUYs: SPY RSI=22.76 PANIC (<30); 1 RSI BUY signal (SPY conf=2 blocked by panic+bearish_ema). Regime: BEARISH_EMA. CB: daily -0.41%/weekly -0.41%(OK). Acct=$224.63. BP=$119.21. Universe=503.",
-    "2026-11-17T17:15Z Market OPEN (12:15 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.67% $358.31>trail$346.19 OK). 0 BUYs: 0 RSI/net-buy BUY signals; SPY RSI=37.9 bearish_ema regime. CB: daily -0.35%/weekly -0.35%(OK). Acct=$224.77. BP=$119.21. Universe=503."
+    "2026-11-17T18:17Z Market OPEN (1:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.86% $357.63>trail$346.19 OK). 0 BUYs: SPY RSI=22.76 PANIC (<30); 1 RSI BUY signal (SPY conf=2 blocked by panic+bearish_ema). Regime: BEARISH_EMA. CB: daily -0.41%/weekly -0.41%(OK). Acct=$224.63. BP=$119.21. Universe=503."
   ]
 }
