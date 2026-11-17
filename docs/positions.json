@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-17T15:18:20Z",
-  "buying_power": 119.21,
+  "updated_at": "2026-11-17T16:17:30Z",
+  "buying_power": 151.15,
   "market_regime": "bearish_ema",
-  "account_value": 224.77,
+  "account_value": 224.80,
   "peak_value": 249.0,
   "day_start_value": 225.55,
   "day_start_date": "2026-11-17",
@@ -17,48 +17,20 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 356.51,
-      "pnl_pct": -0.0217,
-      "value": 73.26,
+      "current_price": 358.28,
+      "pnl_pct": -0.0168,
+      "value": 73.65,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
       "take_profit": 400.83,
       "strategy": "rsi_momentum",
       "sell_date": null
-    },
-    {
-      "ticker": "CFG",
-      "quantity": 0.258836,
-      "avg_cost": 65.64,
-      "current_price": 63.99,
-      "pnl_pct": -0.0251,
-      "value": 16.56,
-      "entry_atr_pct": 0.0072,
-      "entry_time": "2026-11-11T18:21:52Z",
-      "trail_stop": 62.36,
-      "take_profit": 72.2,
-      "strategy": "surge",
-      "sell_date": "2026-11-14"
-    },
-    {
-      "ticker": "CPAY",
-      "quantity": 0.034329,
-      "avg_cost": 464.91,
-      "current_price": 458.415,
-      "pnl_pct": -0.014,
-      "value": 15.74,
-      "entry_atr_pct": 0.0068,
-      "entry_time": "2026-11-13T18:19:29Z",
-      "trail_stop": 458.38,
-      "take_profit": 511.4,
-      "strategy": "surge",
-      "sell_date": "2026-11-14"
     }
   ],
   "last_actions": [
-    "2026-11-17T15:18Z Market OPEN (10:16 AM ET), in_window=true. 0 SELLs: GD(-2.2% $356.51>trail$346.19 OK); CFG(-2.5% $63.99>trail$62.36 OK, surge_date passed price<avg no exit); CPAY(-1.4% $458.42>trail$458.38 OK \u2014 3\u00a2 above stop \u26a0). 0 BUYs: SPY RSI=29.4 PANIC (<30); surge count=1 for FOX/CEG/COP/DRI (need 2). Regime: BEARISH_EMA. CB: daily -0.35%/weekly -0.35%(OK). Acct=$224.77. BP=$119.21. Universe=503.",
-    "2026-11-17T14:16Z Market OPEN (pre-mkt 9:16 AM ET), in_window=true. 0 SELLs: GD(-1.3% $359.70>trail$346.19 OK); CFG(-1.8% $64.47>trail$62.36 OK); CPAY(-1.4% $458.40>trail$458.38 OK, 2\u00a2 above stop \u26a0). 0 BUYs: 0 RSI/net-buy BUY signals in BEARISH_EMA regime. CB: day+week reset. Acct=$225.55. BP=$119.21. Universe=503.",
-    "2026-11-16T20:18Z Market CLOSED (after 4PM ET). 0 SELLs: GD(-1.65% $358.38>trail$346.19 OK); CFG(surge_date passed, $64.17<avg$65.64 no exit, trail$62.36 OK); CPAY(surge_date passed, $459.91<avg$464.91 no exit, trail$458.38 OK). 0 BUYs: market closed. CB: daily -0.64%/weekly -0.64%(OK). Acct=$225.25. BP=$86.71. Universe=503."
+    "2026-11-17T16:17Z Market OPEN (11:17 AM ET), in_window=true. 2 SELLs: CPAY(ATR stop $453.41≤$458.38 -2.5%); CFG(net_buy_sell reversed -3.6%). 0 BUYs: SPY RSI=21.67 PANIC (<30); 0 RSI/net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.34%/weekly -0.34%(OK). Acct≈$224.80. BP≈$151.15 (est). Universe=503.",
+    "2026-11-17T15:18Z Market OPEN (10:16 AM ET), in_window=true. 0 SELLs: GD(-2.2% $356.51>trail$346.19 OK); CFG(-2.5% $63.99>trail$62.36 OK, surge_date passed price<avg no exit); CPAY(-1.4% $458.42>trail$458.38 OK — 3¢ above stop ⚠). 0 BUYs: SPY RSI=29.4 PANIC (<30); surge count=1 for FOX/CEG/COP/DRI (need 2). Regime: BEARISH_EMA. CB: daily -0.35%/weekly -0.35%(OK). Acct=$224.77. BP=$119.21. Universe=503.",
+    "2026-11-17T14:16Z Market OPEN (pre-mkt 9:16 AM ET), in_window=true. 0 SELLs: GD(-1.3% $359.70>trail$346.19 OK); CFG(-1.8% $64.47>trail$62.36 OK); CPAY(-1.4% $458.40>trail$458.38 OK, 2¢ above stop ⚠). 0 BUYs: 0 RSI/net-buy BUY signals in BEARISH_EMA regime. CB: day+week reset. Acct=$225.55. BP=$119.21. Universe=503."
   ]
 }
