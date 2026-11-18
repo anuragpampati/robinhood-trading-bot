@@ -1,3 +1,6 @@
+## 2026-11-18T17:17:00Z
+- SUMMARY: Market OPEN (12:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.15% $349.28>trail$346.19 OK). 0 BUYs: SPY RSI=27.0 PANIC (<30); BEARISH_EMA regime; 0 RSI BUY signals; 0 net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily 0.58%/weekly 1.17%(OK). Acct=$222.91. BP=$151.14. Universe=503.
+
 ## 2026-11-18T14:17:21Z
 - SUMMARY: Market OPEN (9:16 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -2.40% $355.65>trail$346.19 OK). 0 BUYs: 0 RSI BUY signals; 0 net-buy BUY signals; KR surge count=1 (need 2). Regime: BEARISH_EMA. CB: daily 0.00%/weekly 0.59%(OK). Acct=$224.22. BP=$151.14. Universe=503.
 
