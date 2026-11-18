@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-18T17:17:00Z",
+  "updated_at": "2026-11-18T18:18:00Z",
   "buying_power": 151.14,
   "market_regime": "bearish_ema",
-  "account_value": 222.91,
+  "account_value": 222.86,
   "peak_value": 249.0,
   "day_start_value": 224.22,
   "day_start_date": "2026-11-18",
@@ -17,9 +17,9 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 349.275,
-      "pnl_pct": -0.0415,
-      "value": 71.77,
+      "current_price": 348.985,
+      "pnl_pct": -0.0423,
+      "value": 71.72,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
@@ -29,8 +29,8 @@
     }
   ],
   "last_actions": [
+    "2026-11-18T18:18Z Market OPEN (1:18 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.23% $348.99>trail$346.19 OK). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge. Regime: BEARISH_EMA. SPY RSI=30.42. CB: daily 0.61%/weekly 1.20%(OK). Acct=$222.86. BP=$151.14. Universe=503.",
     "2026-11-18T17:17Z Market OPEN (12:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.15% $349.28>trail$346.19 OK). 0 BUYs: SPY RSI=27.0 PANIC (<30); BEARISH_EMA regime; 0 RSI BUY signals. Regime: BEARISH_EMA. CB: daily 0.58%/weekly 1.17%(OK). Acct=$222.91. BP=$151.14. Universe=503.",
-    "2026-11-18T16:30Z Market OPEN (11:30 AM ET), in_window=true. 0 SELLs: GD(HOLD RSI=22.83 -4.59% $347.66>trail$346.19 OK). 0 BUYs: 0 RSI BUY, 0 net-buy, 0 surge. Regime: BEARISH_EMA. CB: daily 0.73%/weekly 1.32%(OK). Acct=$222.58. BP=$151.14. Universe=503.",
-    "2026-11-18T15:17Z Market OPEN (10:17 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.30% $348.72>trail$346.19 OK — no stop). 0 BUYs: 0 RSI BUY signals, 0 net-buy BUY signals, 0 surge signals. Regime: BEARISH_EMA. SPY RSI=30.0 (not PANIC, >30). CB: daily 0.6%/weekly 1.2%(OK). Acct=$222.80. BP=$151.14. Universe=503."
+    "2026-11-18T16:30Z Market OPEN (11:30 AM ET), in_window=true. 0 SELLs: GD(HOLD RSI=22.83 -4.59% $347.66>trail$346.19 OK). 0 BUYs: 0 RSI BUY, 0 net-buy, 0 surge. Regime: BEARISH_EMA. CB: daily 0.73%/weekly 1.32%(OK). Acct=$222.58. BP=$151.14. Universe=503."
   ]
 }
