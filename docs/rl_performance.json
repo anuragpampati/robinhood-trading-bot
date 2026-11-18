@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17",
+  "updated_at": "2026-11-18",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
@@ -14,5 +14,5 @@
   "rl_training_samples": 641,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance blocked in cloud sandbox (known issue). Trade metrics from live log analysis (15 closed round-trips). NO_CHANGE: RSI_OVERSOLD already at clamp max 40; momentum (rsi_momentum) 0 closed trades <3 min; ATR avg_hold ~24h not <2h trigger. Surge strategy 6/6 wins (100%); normal strategy 2/9 wins (22%). Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance blocked in cloud sandbox (known issue, see CLAUDE.md). Trade metrics from live log analysis (15 closed round-trips). NO_CHANGE: RSI_OVERSOLD already at clamp max 40 (rule would say +2 but clamped); momentum n<3 closed trades; ATR avg_hold ~12-24h not <2h trigger. Surge strategy 5+/6 wins (~83%+); normal strategy 3/9 wins (33%). BEARISH-EMA entries continue to underperform (1/1 losses). Updated by daily learning CCR"
 }

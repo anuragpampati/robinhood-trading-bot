@@ -735,3 +735,12 @@
 - Backtest: SKIPPED — yfinance blocked in cloud sandbox (known issue per CLAUDE.md)
 - RL samples: 641/200 (threshold crossed — RL READY, run python -m strategy.rl_agent --train after human review)
 - Notes: Surge strategy outperforming (100% win rate, avg +1.05%); normal RSI mean-reversion struggling (22% win, avg -0.91%). Account at $224.09 (peak $249). One open position: GD (rsi_momentum, -2.57%). CFG/CPAY surge positions open but below avg cost. SPY in PANIC territory (RSI 22-24), bearish_ema regime active.
+
+## 2026-11-18
+- Trades analysed: 15 closed round-trips (0 new since yesterday)
+- Win rate: 53% overall (normal: 33% 3/9, surge: ~83%+ 5+/6, momentum: 0 closed)
+- EMA-at-entry win rate: BULLISH ~80% (8/10 known), BEARISH 0% (0/1, n=1)
+- Config changes: none — RSI_OVERSOLD at clamp max 40 (rule would increase but capped); momentum n<3; ATR avg_hold ~12-24h not <2h trigger
+- Backtest: SKIPPED (yfinance blocked in cloud sandbox — known issue per CLAUDE.md)
+- RL samples: 641/200 (target exceeded — RL READY but NOT re-enabling per CLAUDE.md: needs human review before reactivation)
+- Notes: Account at $222.98 (-10.8% from $250 peak). GD open at -4.05% (trail stop $346.19 vs current $349.62 — stop not yet hit). Bearish-EMA regime active, limiting new entries. Surge strategy continues strong. BEARISH-EMA individual entries remain worst-performing category.
