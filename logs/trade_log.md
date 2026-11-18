@@ -1,3 +1,6 @@
+## 2026-11-18T20:19:00Z
+- SUMMARY: Market CLOSED (strategy reports market_open=False at ~3:14 PM ET — possible strategy timezone issue). 0 SELLs: GD(rsi_momentum -4.05% $349.62>trail$346.19 OK — no stop). 0 BUYs: Market closed. Regime: BEARISH_EMA. SPY RSI=33.37. CB: daily 0.55%/weekly 1.14%(OK). Acct=$222.98. BP=$151.14. Universe=503.
+
 ## 2026-11-18T19:19:00Z
 - SUMMARY: Market OPEN (2:19 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.36% $348.49>trail$346.19 OK — no stop). 0 BUYs: 0 RSI BUY signals, 0 net-buy BUY signals, 0 surge signals; BEARISH_EMA regime active. SPY RSI=36.07 (not PANIC). CB: daily 0.66%/weekly 1.24%(OK). Acct=$222.75. BP=$151.14. Universe=503.
 
