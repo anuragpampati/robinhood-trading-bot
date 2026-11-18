@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-18T22:48:47.118092+00:00",
+  "timestamp": "2026-11-18T23:12:48.671974+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7904,6 +7904,15 @@
     }
   ],
   "surge_signals": [
+    {
+      "ticker": "AMZN",
+      "price": 267.739990234375,
+      "buy_surge_pct": 0.4997,
+      "buy_vol_d2": 25506127,
+      "buy_vol_d3": 38251372,
+      "net_buy_d3": 35657168,
+      "reason": "Buy vol \u219150.0% vs prior day | 1d streak | latest 35.66M | OBV -0.9M/day"
+    },
     {
       "ticker": "AES",
       "price": 15.020000457763672,
