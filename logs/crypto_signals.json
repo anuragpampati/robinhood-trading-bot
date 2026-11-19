@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-11-17T01:15:45.778522+00:00",
+  "timestamp": "2026-11-19T01:15:11.540883+00:00",
   "trading_halted": false,
   "halt_reason": null,
-  "market_regime": "bearish_ema",
+  "market_regime": "normal",
   "tickers": [
     "BTC-USD",
     "ETH-USD",
@@ -15,83 +15,8 @@
     "DOGE-USD",
     "BCH-USD"
   ],
-  "signals": [
-    {
-      "ticker": "BTC-USD",
-      "action": "BUY",
-      "price": 30.41,
-      "rsi": 24.14,
-      "ema_trend": "BEARISH",
-      "bb_signal": "BELOW_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0189,
-      "reason": "RSI oversold+stabilizing (24.1\u219124.1) | BB reversal: 0.06\u21920.11 (returning from band)"
-    },
-    {
-      "ticker": "ETH-USD",
-      "action": "HOLD",
-      "price": 18.58,
-      "rsi": 25.66,
-      "ema_trend": "BEARISH",
-      "bb_signal": "BELOW_BAND",
-      "confidence": 2,
-      "atr_pct": 0.0259,
-      "reason": "BUY suppressed \u2014 SPY RSI < 30 (market panic)"
-    },
-    {
-      "ticker": "XRP-USD",
-      "action": "HOLD",
-      "price": 10.65,
-      "rsi": 18.65,
-      "ema_trend": "BEARISH",
-      "bb_signal": "BELOW_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0384,
-      "reason": "RSI=18.6 (falling), BB=BELOW_BAND, EMA=BEARISH"
-    },
-    {
-      "ticker": "LTC-USD",
-      "action": "HOLD",
-      "price": 43.28,
-      "rsi": 41.8,
-      "ema_trend": "BEARISH",
-      "bb_signal": "BELOW_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0129,
-      "reason": "RSI=41.8 (stable), BB=BELOW_BAND, EMA=BEARISH"
-    },
-    {
-      "ticker": "LINK-USD",
-      "action": "HOLD",
-      "price": 2.85,
-      "rsi": 24.9,
-      "ema_trend": "BEARISH",
-      "bb_signal": "IN_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0561,
-      "reason": "RSI=24.9 (stable), BB=IN_BAND, EMA=BEARISH"
-    },
-    {
-      "ticker": "BCH-USD",
-      "action": "HOLD",
-      "price": 39.19,
-      "rsi": 54.57,
-      "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
-      "confidence": 0,
-      "atr_pct": 0.0118,
-      "reason": "RSI=54.6 (stable), BB=IN_BAND, EMA=BULLISH"
-    }
-  ],
-  "actionable": [
-    {
-      "ticker": "BTC-USD",
-      "price": 30.41,
-      "confidence": 2,
-      "amount": 17.5,
-      "reason": "RSI oversold+stabilizing (24.1\u219124.1) | BB reversal: 0.06\u21920.11 (returning from band)"
-    }
-  ],
+  "signals": [],
+  "actionable": [],
   "rules": {
     "max_crypto_allocation": 100.0,
     "max_position_size": 35.0,
