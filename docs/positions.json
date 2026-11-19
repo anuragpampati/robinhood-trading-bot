@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-19T15:17:01Z",
+  "updated_at": "2026-11-19T16:16:00Z",
   "buying_power": 151.14,
   "market_regime": "bearish_ema",
-  "account_value": 222.83,
+  "account_value": 222.75,
   "peak_value": 249.0,
   "day_start_value": 222.89,
   "day_start_date": "2026-11-19",
   "week_start_value": 225.55,
   "week_start_date": "2026-11-17",
   "trading_enabled": true,
-  "kill_switch_pct": 0.2,
+  "kill_switch_pct": 0.20,
   "kill_switch_floor": 200.0,
   "disabled_reason": null,
   "positions": [
@@ -17,9 +17,9 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 348.865,
-      "pnl_pct": -0.0426,
-      "value": 71.69,
+      "current_price": 348.48,
+      "pnl_pct": -0.0437,
+      "value": 71.65,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
@@ -29,8 +29,8 @@
     }
   ],
   "last_actions": [
+    "2026-11-19T16:16Z Market OPEN (11:16 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.37% $348.48>trail$346.19 OK). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=None. CB: daily 0.06%/weekly 1.24%(OK). Acct=$222.75. BP=$151.14. Universe=503.",
     "2026-11-19T15:17Z Market OPEN (10:17 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.26% $348.87>trail$346.19 OK). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=44.15. CB: daily 0.03%/weekly 1.21%(OK). Acct=$222.83. BP=$151.14. Universe=503.",
-    "2026-11-19T14:15Z Market OPEN (9:15 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.25% $348.90>trail$346.19 OK \u2014 no stop). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=None. CB: daily 0.00%/weekly 1.18%(OK). Acct=$222.89. BP=$151.14. Universe=503.",
-    "2026-11-18T20:19Z Market CLOSED (strategy reports market_open=False at ~3:14 PM ET). 0 SELLs: GD(rsi_momentum -4.05% $349.62>trail$346.19 OK). 0 BUYs: Market closed. Regime: BEARISH_EMA. SPY RSI=33.37. CB: daily 0.55%/weekly 1.14%(OK). Acct=$222.98. BP=$151.14. Universe=503."
+    "2026-11-19T14:15Z Market OPEN (9:15 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.25% $348.90>trail$346.19 OK — no stop). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=None. CB: daily 0.00%/weekly 1.18%(OK). Acct=$222.89. BP=$151.14. Universe=503."
   ]
 }
