@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-19T00:58:16.841221+00:00",
+  "timestamp": "2026-11-19T01:36:41.777967+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1677,13 +1677,13 @@
     {
       "ticker": "ALL",
       "action": "HOLD",
-      "price": 266.54998779296875,
-      "rsi": 44.58,
+      "price": 267.1300048828125,
+      "rsi": 46.54,
       "ema_trend": "BEARISH",
-      "bb_signal": "BELOW_BAND",
+      "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0064,
-      "reason": "RSI=44.6 (stable), BB=BELOW_BAND, EMA=BEARISH",
+      "atr_pct": 0.0067,
+      "reason": "low volume (0.56x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
