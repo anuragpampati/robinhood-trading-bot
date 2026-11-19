@@ -1,3 +1,17 @@
+## 2026-11-19T20:17:11Z
+- Action   : SELL GD
+- Price    : $346.10
+- Amount   : $71.13 | Shares: 0.205492
+- RSI      : 24.9 | EMA: BEARISH | BB: BELOW_BAND
+- RL       : HOLD conf=0 | null
+- Stop     : $346.19 (ATR trail) | Target: $400.83
+- Strategy : rsi_momentum | Sell date: ATR/signal
+- Regime   : bearish_ema
+- Reason   : ATR trailing stop triggered ($346.10 ≤ trail $346.19) | Standard stop-loss -5.02% from entry $364.39
+
+## 2026-11-19T20:18:00Z
+- SUMMARY: Market OPEN (3:18 PM ET), market_open=False per signal engine (live quotes confirm active). 1 SELL: GD ATR-trail-stop triggered ($346.10 ≤ $346.19, -5.02%). 0 BUYs: in_trade_window=False per signal engine. BEARISH_EMA regime; SPY_RSI=20.8 (PANIC). CB: daily 0.28%/weekly 1.46%(OK). Acct=$222.26. BP=$151.14 (proceeds unsettled). Positions=0. Universe=503.
+
 ## 2026-11-19T18:21:00Z
 - SUMMARY: Market OPEN (1:21 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.59% $347.65>trail$346.19 OK — above stop). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=23.79 (PANIC: all buys blocked). CB: daily 0.14%/weekly 1.32%(OK). Acct=$222.58. BP=$151.14. Universe=503.
 
