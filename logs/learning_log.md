@@ -744,3 +744,12 @@
 - Backtest: SKIPPED (yfinance blocked in cloud sandbox — known issue per CLAUDE.md)
 - RL samples: 641/200 (target exceeded — RL READY but NOT re-enabling per CLAUDE.md: needs human review before reactivation)
 - Notes: Account at $222.98 (-10.8% from $250 peak). GD open at -4.05% (trail stop $346.19 vs current $349.62 — stop not yet hit). Bearish-EMA regime active, limiting new entries. Surge strategy continues strong. BEARISH-EMA individual entries remain worst-performing category.
+
+## 2026-11-19
+- Trades analysed: 18 closed round-trips (3 new today: GD -5.02%, CFG -1.8%, CPAY -1.4%)
+- Win rate: 44.4% overall (normal: 12.5% [1/8], rsi_momentum: 80% [4/5], surge: 33% [1/3])
+- Per EMA-trend entry: BULLISH 44% [4/9], BEARISH 0% [0/4], unknown 67% [2/3]
+- Config changes: none — RSI_OVERSOLD clamped at max 40 (would trigger +2 but ceiling hit); momentum n<3; ATR avg_hold ~22h not <2h
+- Backtest: skipped (yfinance/Yahoo Finance blocked in cloud sandbox, known constraint — same as equity cycle)
+- RL samples: 641/200 (READY — but RL BOOST remains disabled per CLAUDE.md, do NOT re-enable without human review)
+- Notes: GD exit today (-5.02% ATR trail after 15 days) the largest single loss to date. BEARISH-EMA entries continue 0% win rate across 4 trades — user should consider requiring individual-ticker EMA BULLISH/NEUTRAL before entries (noted in CLAUDE.md backlog). Account at $222.26 (-11.1% from $250 peak). Kill switch floor $200 still intact.
