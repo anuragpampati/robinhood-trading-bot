@@ -42,18 +42,6 @@
 ## 2026-11-18T14:17:21Z
 - SUMMARY: Market OPEN (9:16 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -2.40% $355.65>trail$346.19 OK). 0 BUYs: 0 RSI BUY signals; 0 net-buy BUY signals; KR surge count=1 (need 2). Regime: BEARISH_EMA. CB: daily 0.00%/weekly 0.59%(OK). Acct=$224.22. BP=$151.14. Universe=503.
 
-## 2026-11-17T20:15:06Z
-- SUMMARY: Market closed (after 4PM ET). 0 SELLs: GD(rsi_momentum -2.57% $355.02>trail$346.19 OK — no stop triggered). 0 BUYs: Market closed. Regime: BEARISH_EMA. CB: daily -0.65%/weekly -0.65%(OK). Acct=$224.09. BP=$119.21. Universe=503.
-
-## 2026-11-17T19:17:00Z
-- SUMMARY: Market OPEN (2:17 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -2.09% $356.79>trail$346.19 OK). 0 BUYs: SPY RSI=24.0 PANIC (<30); 1 RSI BUY signal (SPY conf=2 blocked by panic+bearish_ema). 0 net-buy BUY signals; 0 surge signals. Regime: BEARISH_EMA. CB: daily -0.51%/weekly -0.51%(OK). Acct=$224.39. BP=$119.21. Universe=503.
-
-## 2026-11-17T17:15:35Z
-- SUMMARY: Market OPEN (12:15 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -1.67% $358.31>trail$346.19 OK). 0 BUYs: 0 RSI BUY signals; 0 net-buy BUY signals; SPY RSI=37.9 (bearish_ema regime, buys suppressed). CB: daily -0.35%/weekly -0.35%(OK). Acct=$224.77. BP=$119.21. Universe=503.
-
-## 2026-11-17T14:16:05Z
-- SUMMARY: Market OPEN (pre-mkt 9:16 AM ET), in_window=true. 0 SELLs: GD(-1.3% $359.70>trail$346.19 OK); CFG(-1.8% $64.47>trail$62.36 OK); CPAY(-1.4% $458.40>trail$458.38 OK, 2¢ above stop ⚠). 0 BUYs: 0 RSI/net-buy BUY signals in BEARISH_EMA regime. CB: daily 0.0%/weekly 0.0%(OK, day+week reset). Acct=$225.55. BP=$119.21. Universe=503.
-
 ## 2026-11-06T15:25:00Z (SUMMARY)
 - SUMMARY: Market OPEN (~10:25 AM ET), in_window=true. Regime: BEARISH_EMA (SPY RSI=38.96, EMA BEARISH). 0 SELLs: GD(−2.57% $355.02, trail=$346.19 OK) TTWO(+1.71% $213.76, trail=$209.12 OK, <3h) DPZ(+1.60% $335.02, trail=$323.17 OK, <3h). 0 BUYs: no RSI/net-buy/surge signals (RSI BUYs=0, Net BUYs=0, Surge=0). CB: daily −0.26%/weekly −1.26% (OK). Acct=$226.62. BP=$87.31. Universe=503.
 

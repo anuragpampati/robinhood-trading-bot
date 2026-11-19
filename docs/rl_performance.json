@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-18",
+  "updated_at": "2026-11-19",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
-  "win_rate": 0.533,
+  "win_rate": 0.444,
   "avg_win_pnl": 0.00893,
-  "avg_loss_pnl": -0.01300,
-  "risk_reward": 0.687,
-  "total_trades": 15,
+  "avg_loss_pnl": -0.01732,
+  "risk_reward": 0.516,
+  "total_trades": 18,
   "wins": 8,
-  "losses": 7,
+  "losses": 10,
   "circuit_breaker_halts": 0,
   "rl_training_samples": 641,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance blocked in cloud sandbox (known issue, see CLAUDE.md). Trade metrics from live log analysis (15 closed round-trips). NO_CHANGE: RSI_OVERSOLD already at clamp max 40 (rule would say +2 but clamped); momentum n<3 closed trades; ATR avg_hold ~12-24h not <2h trigger. Surge strategy 5+/6 wins (~83%+); normal strategy 3/9 wins (33%). BEARISH-EMA entries continue to underperform (1/1 losses). Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance blocked in cloud sandbox (known issue, see CLAUDE.md). Trade metrics from live log analysis (18 closed round-trips to date). NO_CHANGE: RSI_OVERSOLD already at clamp max 40; momentum n<3; ATR avg_hold ~22h not <2h trigger. New today: GD closed ATR-trail -5.02%, CFG -1.8%, CPAY -1.4% — all losses. Per-EMA: BEARISH entries 0% win rate (4 trades); BULLISH 44% (9 trades). Normal strategy 12.5% win rate (8 trades) vs rsi_momentum 80% (5 trades). Updated by daily learning CCR"
 }
