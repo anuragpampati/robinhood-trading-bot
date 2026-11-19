@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-19T18:21:00Z",
+  "updated_at": "2026-11-19T19:21:00Z",
   "buying_power": 151.14,
   "market_regime": "bearish_ema",
-  "account_value": 222.58,
+  "account_value": 222.53,
   "peak_value": 249.0,
   "day_start_value": 222.89,
   "day_start_date": "2026-11-19",
@@ -17,9 +17,9 @@
       "ticker": "GD",
       "quantity": 0.205492,
       "avg_cost": 364.39,
-      "current_price": 347.65,
-      "pnl_pct": -0.0459,
-      "value": 71.44,
+      "current_price": 347.33,
+      "pnl_pct": -0.0468,
+      "value": 71.37,
       "entry_atr_pct": 0.0107,
       "entry_time": "2026-11-04T17:26:40Z",
       "trail_stop": 346.19,
@@ -29,8 +29,8 @@
     }
   ],
   "last_actions": [
+    "2026-11-19T19:21Z Market OPEN (2:21 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.68% $347.33>trail$346.19 OK — barely above stop). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=PANIC. CB: daily 0.16%/weekly 1.34%(OK). Acct=$222.53. BP=$151.14. Universe=503.",
     "2026-11-19T18:21Z Market OPEN (1:21 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.59% $347.65>trail$346.19 OK). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=23.79 (PANIC). CB: daily 0.14%/weekly 1.32%(OK). Acct=$222.58. BP=$151.14. Universe=503.",
-    "2026-11-19T17:18Z Market OPEN (12:18 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.90% $346.52>trail$346.19 OK — barely above stop). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=25.55 (PANIC). CB: daily 0.24%/weekly 1.42%(OK). Acct=$222.35. BP=$151.14. Universe=503.",
-    "2026-11-19T16:16Z Market OPEN (11:16 AM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.37% $348.48>trail$346.19 OK — above stop). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=None. CB: daily 0.06%/weekly 1.24%(OK). Acct=$222.75. BP=$151.14. Universe=503."
+    "2026-11-19T17:18Z Market OPEN (12:18 PM ET), in_window=true. 0 SELLs: GD(rsi_momentum -4.90% $346.52>trail$346.19 OK — barely above stop). 0 BUYs: 0 RSI BUY, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=25.55 (PANIC). CB: daily 0.24%/weekly 1.42%(OK). Acct=$222.35. BP=$151.14. Universe=503."
   ]
 }
