@@ -753,3 +753,12 @@
 - Backtest: skipped (yfinance/Yahoo Finance blocked in cloud sandbox, known constraint — same as equity cycle)
 - RL samples: 641/200 (READY — but RL BOOST remains disabled per CLAUDE.md, do NOT re-enable without human review)
 - Notes: GD exit today (-5.02% ATR trail after 15 days) the largest single loss to date. BEARISH-EMA entries continue 0% win rate across 4 trades — user should consider requiring individual-ticker EMA BULLISH/NEUTRAL before entries (noted in CLAUDE.md backlog). Account at $222.26 (-11.1% from $250 peak). Kill switch floor $200 still intact.
+
+## 2026-11-20
+- Trades analysed: 18 closed round-trips (0 new today — no positions closed since 2026-11-19)
+- Win rate: 44.4% overall (normal: 12.5% [1/8], rsi_momentum: 80% [4/5], surge: 33% [1/3])
+- Per EMA-trend entry: BULLISH 44% [4/9], BEARISH 0% [0/4]
+- Config changes: none — RSI_OVERSOLD at clamp max 40 (normal win_rate 12.5% < 40% would trigger +2, but already at ceiling); momentum n<3; ATR avg_hold ~22h not <2h
+- Backtest: SKIPPED — requests/yfinance blocked in cloud sandbox (known issue per CLAUDE.md)
+- RL samples: 641/200 (READY — but RL BOOST remains disabled per CLAUDE.md, do NOT re-enable without human review and retraining on corrected data)
+- Notes: Account at $222.26 (-11.1% from $250 peak, kill switch floor $200). SPY in PANIC territory (RSI 10-13), BEARISH_EMA regime — no new buys today. Normal strategy win rate 12.5% driven by BEARISH-EMA entries (0% win, 4 trades); rsi_momentum strategy performing well (80% win). BEARISH-EMA ticker entry pattern remains core underperformance issue — awaiting non-cloud backtest before wiring in individual-ticker EMA check.
