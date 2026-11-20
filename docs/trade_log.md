@@ -1,8 +1,17 @@
-## 2026-11-20T17:18:31Z
-- SUMMARY: Market OPEN (12:17 PM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=13.33 (PANIC: all buys blocked). CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-20T20:17:08Z
+- SUMMARY: Market CLOSED (market_open=False per strategy at 3:17 PM ET). 0 SELLs: no open positions. 0 BUYs: market closed + PANIC (SPY RSI=10.95 < 30) + BEARISH_EMA regime. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
-## 2026-11-20T15:16:02Z
-- SUMMARY: Market OPEN (10:16 AM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=18.8 (PANIC: all buys blocked). CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-20T19:21:00Z
+- SUMMARY: Market OPEN (2:21 PM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: PANIC (SPY RSI=13.15 < 30, all buys blocked except surge — 0 surge signals); BEARISH_EMA regime. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
+## 2026-11-20T18:19:25Z
+- SUMMARY: Market OPEN (1:19 PM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: PANIC (SPY RSI=12.18 < 30, all buys blocked); BEARISH_EMA regime. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
+## 2026-11-20T16:17:08Z
+- SUMMARY: Market OPEN (11:17 AM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: PANIC regime (SPY RSI=16.32 < 30, all buys blocked); BEARISH_EMA; 1 RSI BUY signal (SPY conf=2, not actionable in PANIC), 0 net-buy BUY, 0 surge. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
+## 2026-11-20T14:17:44Z
+- SUMMARY: Market OPEN (9:17 AM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge; BEARISH_EMA regime; SPY_RSI=19.22 (PANIC: all buys blocked). CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=406 (from cache; full run=503).
 
 ## 2026-11-19T20:17:11Z
 - Action   : SELL GD
