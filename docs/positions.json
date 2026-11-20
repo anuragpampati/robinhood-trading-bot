@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T17:18:39Z",
+  "updated_at": "2026-11-20T18:19:25Z",
   "buying_power": 222.26,
   "market_regime": "bearish_ema",
   "account_value": 222.26,
@@ -14,8 +14,8 @@
   "disabled_reason": null,
   "positions": [],
   "last_actions": [
+    "2026-11-20T18:19Z Market OPEN (1:19 PM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: PANIC (SPY RSI=12.18 < 30, all buys blocked); BEARISH_EMA regime. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.",
     "2026-11-20T17:18Z Market OPEN (12:17 PM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: PANIC (SPY RSI=13.33 < 30, all buys blocked); BEARISH_EMA regime. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.",
-    "2026-11-20T16:17Z Market OPEN (11:17 AM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: PANIC (SPY RSI=16.32 < 30, all buys blocked); BEARISH_EMA regime. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.",
-    "2026-11-19T20:18Z SOLD GD: ATR trail-stop triggered ($346.10 \u2264 $346.19), stop-loss -5.02% from $364.39. Filled at $346.10 | Proceeds ~$71 unsettled. Acct=$222.26. BP=$151.14. 0 positions."
+    "2026-11-20T16:17Z Market OPEN (11:17 AM ET), in_window=true. 0 SELLs: no open positions. 0 BUYs: PANIC (SPY RSI=16.32 < 30, all buys blocked); BEARISH_EMA regime. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503."
   ]
 }
