@@ -1,3 +1,6 @@
+## 2026-11-23T18:15:38Z
+- SUMMARY: Market OPEN (1:15 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge (DPZ dropped from tracker — not in 10%+ surge this cycle); SPY RSI=50.89 (not PANIC). BEARISH_EMA regime (SPY $722.11 vs EMA200). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
 ## 2026-11-23T17:17:52Z
 - SUMMARY: Market OPEN (12:17 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 1 surge (DPZ 19.4% count=1, needs≥2 for intraday_surge; BEARISH_EMA regime requires 3/3 RSI conf); SPY RSI=52.06 (not PANIC). BEARISH_EMA regime. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
