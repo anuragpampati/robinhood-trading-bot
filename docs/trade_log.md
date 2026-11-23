@@ -1,3 +1,12 @@
+## 2026-11-23T17:17:52Z
+- SUMMARY: Market OPEN (12:17 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 1 surge (DPZ 19.4% count=1, needs≥2 for intraday_surge; BEARISH_EMA regime also requires 3/3 RSI conf for any entry); SPY RSI=52.06 (not PANIC). BEARISH_EMA (SPY below 200-EMA). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
+## 2026-11-23T16:14:46Z
+- SUMMARY: Market OPEN (11:14 AM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge; BEARISH_EMA (SPY $724.30 vs EMA200 $751.52); SPY RSI=52.65 (not PANIC). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
+## 2026-11-23T14:19:00Z
+- SUMMARY: Market OPEN (9:19 AM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: PANIC (SPY RSI=11.2 < 30, all buys blocked except surge — 0 surge signals); BEARISH_EMA regime. CB: daily 0.00%/weekly 0.00%(reset-Monday)(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
 ## 2026-11-20T20:17:08Z
 - SUMMARY: Market CLOSED (market_open=False per strategy at 3:17 PM ET). 0 SELLs: no open positions. 0 BUYs: market closed + PANIC (SPY RSI=10.95 < 30) + BEARISH_EMA regime. CB: daily 0.00%/weekly 1.46%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
