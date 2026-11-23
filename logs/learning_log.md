@@ -762,3 +762,11 @@
 - Backtest: SKIPPED — requests/yfinance blocked in cloud sandbox (known issue per CLAUDE.md)
 - RL samples: 641/200 (READY — but RL BOOST remains disabled per CLAUDE.md, do NOT re-enable without human review and retraining on corrected data)
 - Notes: Account at $222.26 (-11.1% from $250 peak, kill switch floor $200). SPY in PANIC territory (RSI 10-13), BEARISH_EMA regime — no new buys today. Normal strategy win rate 12.5% driven by BEARISH-EMA entries (0% win, 4 trades); rsi_momentum strategy performing well (80% win). BEARISH-EMA ticker entry pattern remains core underperformance issue — awaiting non-cloud backtest before wiring in individual-ticker EMA check.
+
+## 2026-11-23
+- Trades analysed: 0 new today (641 total RL rows; last closed trades: GD -5.02%, VTR -1.87%, GE -1.14% — all in trimmed log)
+- Win rate: n/a — n_trades < 5 for all strategy types (trade log trimmed to last 2 days)
+- Config changes: none (RSI_OVERSOLD at max 40; momentum unwired; ATR unchanged)
+- Backtest: SKIPPED — yfinance blocked in cloud sandbox (403). Cannot run backtest.py from CCR.
+- RL samples: 641/200 (target met; RL disabled per CLAUDE.md — not safe to re-enable without human review)
+- Notes: BEARISH_EMA regime active. SPY started day at RSI=11.2 (PANIC), closed ~51.6. 0 open positions. Account $222.26 (-10.7% from $249 peak). No trades possible in PANIC+BEARISH regime.
