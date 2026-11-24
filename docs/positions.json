@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-11-23T20:15:00Z",
+  "updated_at": "2026-11-24T14:14:54Z",
   "buying_power": 222.26,
   "market_regime": "bearish_ema",
   "account_value": 222.26,
   "peak_value": 249.0,
   "day_start_value": 222.26,
-  "day_start_date": "2026-11-23",
+  "day_start_date": "2026-11-24",
   "week_start_value": 222.26,
   "week_start_date": "2026-11-23",
   "trading_enabled": true,
-  "kill_switch_pct": 0.2,
+  "kill_switch_pct": 0.20,
   "kill_switch_floor": 200.0,
   "disabled_reason": null,
   "positions": [],
   "last_actions": [
+    "2026-11-24T14:14Z Market PRE-OPEN (9:14 AM actual ET; strategy DST bug shows 10:14). 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, surge FFIV/ADSK <10%. SPY RSI=51.17 (not PANIC). BEARISH_EMA regime. CB: daily 0.00%/weekly 0.00%(new-day reset)(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.",
     "2026-11-23T20:15Z Market CLOSED (after 3:00 PM ET). 0 SELLs: no open positions. 0 BUYs: market closed. Surge: GOOG count=1 (27.0%), HON count=1 (2.9%) — need≥2. SPY RSI=51.61 (not PANIC). BEARISH_EMA regime. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.",
-    "2026-11-23T19:13Z Market OPEN (2:13 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 1 surge (GOOGL volume 21473% count=1, need≥2); SPY RSI=51.83 (not PANIC). BEARISH_EMA regime. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.",
-    "2026-11-23T18:15Z Market OPEN (1:15 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge (DPZ dropped — no longer in 10%+ surge this cycle); SPY RSI=50.89 (not PANIC). BEARISH_EMA regime (SPY $722.11 vs EMA200). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503."
+    "2026-11-23T19:13Z Market OPEN (2:13 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 1 surge (GOOGL volume 21473% count=1, need≥2); SPY RSI=51.83 (not PANIC). BEARISH_EMA regime. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503."
   ]
 }
