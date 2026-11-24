@@ -770,3 +770,12 @@
 - Backtest: SKIPPED — yfinance blocked in cloud sandbox (403). Cannot run backtest.py from CCR.
 - RL samples: 641/200 (target met; RL disabled per CLAUDE.md — not safe to re-enable without human review)
 - Notes: BEARISH_EMA regime active. SPY started day at RSI=11.2 (PANIC), closed ~51.6. 0 open positions. Account $222.26 (-10.7% from $249 peak). No trades possible in PANIC+BEARISH regime.
+
+## 2026-11-24
+- Trades analysed: 11 closed normal trades (from trade log manual extraction); 0 new closed trades today
+- Win rate: 45.5% overall (normal: 45.5% [n=11, 5W/6L, avg_pnl -0.60%]; momentum: n/a [unwired, n=0]; surge: n/a [n<3])
+- EMA-trend win rate: BULLISH entry 50.0% (n=4, GD/AIG/GDDY/GE); BEARISH entry 42.9% (n=7, KIM/PSA/FANG/TTWO/ABNB/ELV/VTR)
+- Config changes: none — RSI_OVERSOLD=40 (at clamp max, win_rate=45.5% not <40%, NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades unwired (NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold=24h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — yfinance blocked by cloud sandbox network policy (403); 14th+ consecutive failed attempt
+- RL samples: 641/200 (READY — 0 new rows today; 19 states in Q-table; RL BOOST remains DISABLED per 2026-11-06 audit — 23% win rate on boosted trades vs 67% unboosted)
+- Notes: Account $222.26 (down from $249 peak, -10.7%). 0 open positions. Full BEARISH_EMA regime persisting; SPY $716-722 vs EMA200 $749. No BUY signals in 503-ticker universe today. RL training data at 641 samples (exceeded 200 target) but model remains disabled — do not retrain without explicit human authorization per CLAUDE.md. Trim_log.py has a known issue keeping old entries with "(SUMMARY)" suffix timestamps (unparseable, kept by except-clause); benign but log retains historical entries.
