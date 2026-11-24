@@ -1,3 +1,6 @@
+## 2026-11-24T20:16:00Z
+- SUMMARY: Market CLOSED (strategy code calculates 4:14 PM EDT due to DST bug — Nov uses EST UTC-5, code uses UTC-4; actual time 3:14 PM EST). 0 SELLs: no open positions. 0 BUYs: market_open=False per signal. 1 surge (ALLE +10.0% count=1 → first seen, need≥2); IR removed from tracker (no longer in ≥10% surge). SPY RSI=46.84, $716.75 vs EMA200. Regime: bearish_ema. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
 ## 2026-11-24T19:19:00Z
 - SUMMARY: Market OPEN (2:19 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY. 2 surge signals seen but HELD: IR +49.3% volume surge with negative OBV (distribution); ALLE +5.4% surge with RSI=63 (near overbought) and price ABOVE_BAND. No RSI BUY across 503-ticker universe. BEARISH_EMA regime (SPY $719.xx vs EMA200 $749.xx). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 ## 2026-11-24T18:18:20Z
