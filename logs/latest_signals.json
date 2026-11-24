@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24T03:05:59.444002+00:00",
+  "timestamp": "2026-11-24T03:53:02.284526+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1971,13 +1971,13 @@
     {
       "ticker": "ADM",
       "action": "HOLD",
-      "price": 67.4800033569336,
-      "rsi": 44.86,
+      "price": 67.2300033569336,
+      "rsi": 41.07,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0079,
-      "reason": "RSI=44.9 (stable), BB=IN_BAND, EMA=BEARISH",
+      "atr_pct": 0.0083,
+      "reason": "low volume (0.65x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -2083,13 +2083,13 @@
     {
       "ticker": "ADP",
       "action": "HOLD",
-      "price": 302.1099853515625,
-      "rsi": 44.59,
+      "price": 302.302490234375,
+      "rsi": 45.44,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0062,
-      "reason": "low volume (0.67x avg) \u2014 skipping",
+      "atr_pct": 0.0075,
+      "reason": "low volume (0.46x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -2629,13 +2629,13 @@
     {
       "ticker": "CNP",
       "action": "HOLD",
-      "price": 39.7400016784668,
-      "rsi": 50.87,
+      "price": 39.64500045776367,
+      "rsi": 48.8,
       "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0059,
-      "reason": "RSI=50.9 (stable), BB=IN_BAND, EMA=NEUTRAL",
+      "atr_pct": 0.0065,
+      "reason": "RSI=48.8 (stable), BB=IN_BAND, EMA=NEUTRAL",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -3595,16 +3595,16 @@
     {
       "ticker": "EOG",
       "action": "HOLD",
-      "price": 145.35000610351562,
-      "rsi": 25.49,
+      "price": 145.05999755859375,
+      "rsi": 22.89,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0091,
-      "reason": "RSI=25.5 (falling), BB=BELOW_BAND, EMA=BEARISH",
+      "atr_pct": 0.0099,
+      "reason": "RSI=22.9 (falling), BB=BELOW_BAND, EMA=BEARISH",
       "fib_target": null,
-      "rl_action": "BUY",
-      "rl_confidence": 0.952
+      "rl_action": "HOLD",
+      "rl_confidence": 0.918
     },
     {
       "ticker": "EQT",
@@ -6479,13 +6479,13 @@
     {
       "ticker": "STX",
       "action": "HOLD",
-      "price": 520.02001953125,
-      "rsi": 54.54,
+      "price": 522.6589965820312,
+      "rsi": 56.77,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0328,
-      "reason": "low volume (0.61x avg) \u2014 skipping",
+      "atr_pct": 0.0363,
+      "reason": "low volume (0.46x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -6661,13 +6661,13 @@
     {
       "ticker": "STT",
       "action": "HOLD",
-      "price": 161.24000549316406,
-      "rsi": 45.74,
+      "price": 162.1024932861328,
+      "rsi": 49.25,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0105,
-      "reason": "low volume (0.70x avg) \u2014 skipping",
+      "atr_pct": 0.0115,
+      "reason": "RSI=49.3 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -6885,13 +6885,13 @@
     {
       "ticker": "TMO",
       "action": "HOLD",
-      "price": 688.4500122070312,
-      "rsi": 51.21,
+      "price": 690.2249755859375,
+      "rsi": 53.64,
       "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0087,
-      "reason": "RSI=51.2 (stable), BB=IN_BAND, EMA=NEUTRAL",
+      "atr_pct": 0.0099,
+      "reason": "RSI=53.6 (stable), BB=IN_BAND, EMA=NEUTRAL",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -7669,13 +7669,13 @@
     {
       "ticker": "ZTS",
       "action": "HOLD",
-      "price": 79.95500183105469,
-      "rsi": 39.35,
+      "price": 79.82499694824219,
+      "rsi": 38.52,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0096,
-      "reason": "low volume (0.55x avg) \u2014 skipping",
+      "atr_pct": 0.0101,
+      "reason": "low volume (0.45x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -7896,22 +7896,22 @@
   ],
   "surge_signals": [
     {
-      "ticker": "LNT",
-      "price": 72.48999786376953,
-      "buy_surge_pct": 6.905,
-      "buy_vol_d2": 318524,
-      "buy_vol_d3": 2517920,
-      "net_buy_d3": 2165939,
-      "reason": "Buy vol \u2191690.5% vs prior day | 1d streak | latest 2.17M | OBV 1.2M/day"
+      "ticker": "GOOGL",
+      "price": 282.1000061035156,
+      "buy_surge_pct": 8.2502,
+      "buy_vol_d2": 3297105,
+      "buy_vol_d3": 30498985,
+      "net_buy_d3": 16742770,
+      "reason": "Buy vol \u2191825.0% vs prior day | 1d streak | latest 16.74M | OBV -18.1M/day"
     },
     {
-      "ticker": "AOS",
-      "price": 65.0,
-      "buy_surge_pct": 3.611,
-      "buy_vol_d2": 230548,
-      "buy_vol_d3": 1063045,
-      "net_buy_d3": 903589,
-      "reason": "Buy vol \u2191361.1% vs prior day | 1d streak | latest 0.90M | OBV -0.4M/day"
+      "ticker": "ALLE",
+      "price": 189.25999450683594,
+      "buy_surge_pct": 10.6701,
+      "buy_vol_d2": 52681,
+      "buy_vol_d3": 614791,
+      "net_buy_d3": 519181,
+      "reason": "Buy vol \u21911067.0% vs prior day | 1d streak | latest 0.52M | OBV -0.2M/day"
     }
   ]
 }
