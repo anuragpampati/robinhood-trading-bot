@@ -1,3 +1,5 @@
+## 2026-11-24T18:18:20Z
+- SUMMARY: Market OPEN (1:18 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge signals. BEARISH_EMA regime (SPY $719.33 vs EMA200 $749.13); SPY RSI=49.11 (not PANIC). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 ## 2026-11-24T17:19:00Z
 - SUMMARY: Market OPEN (12:19 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge signals. SPY regime=BEARISH_EMA. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
@@ -6,7 +8,6 @@
 
 ## 2026-11-24T14:14:54Z
 - SUMMARY: Market PRE-OPEN (9:14 AM actual ET; strategy DST bug shows 10:14 — Nov uses UTC-5, code uses UTC-4). 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, surge FFIV/ADSK both <10% threshold. SPY RSI=51.17 (not PANIC). BEARISH_EMA regime (SPY $722.42 vs EMA200). Surge tracker: cleared (GOOG/HON from yesterday removed, nothing ≥10% today). CB: daily 0.00%/weekly 0.00%(new-day reset)(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
-
 ## 2026-11-23T20:15:00Z
 - SUMMARY: Market CLOSED (after 3:00 PM ET). 0 SELLs: no open positions. 0 BUYs: market closed. Surge tracker: GOOG count=1 (27.0%), HON count=1 (2.9%) — need≥2 for intraday_surge, market already closed. SPY RSI=51.61 (not PANIC). BEARISH_EMA regime (SPY $722.90). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
