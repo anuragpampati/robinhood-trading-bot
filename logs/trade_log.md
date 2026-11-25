@@ -1,3 +1,6 @@
+## 2026-11-25T15:16:00Z
+- SUMMARY: Market OPEN (10:16 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime (SPY $718.79 vs EMA200 ~$749), 0 RSI BUY signals across 503-ticker universe, net-buy BUYs TJX/NWSA blocked (net-buy only, conf<3 in bearish_ema). Surge tracker NEW: TJX count=1 (142.6%), NWSA count=1 (11.9%), ADP count=1 (51.7%), A count=1 (85.1%) — all first-seen today, need≥2 cycles. SPY RSI=49.04 (no panic). CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
 ## 2026-11-25T14:18:42Z
 - SUMMARY: Pre-market (9:18 AM EST; market opens 9:30 — code shows market_open=True due to DST bug UTC-4). 0 SELLs: no positions. 0 BUYs: pre-market + BEARISH_EMA regime requires conf=3; UBER/IT net-buy only (conf=2, blocked). SPY RSI=49.04 (no panic). CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503. Surge tracker cleared (ALLE entry from 2026-11-24 expired).
 
