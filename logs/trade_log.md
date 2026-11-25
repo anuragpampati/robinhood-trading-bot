@@ -1,3 +1,6 @@
+## 2026-11-25T14:18:42Z
+- SUMMARY: Pre-market (9:18 AM EST; market opens 9:30 — code shows market_open=True due to DST bug UTC-4). 0 SELLs: no positions. 0 BUYs: pre-market + BEARISH_EMA regime requires conf=3; UBER/IT net-buy only (conf=2, blocked). SPY RSI=49.04 (no panic). CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503. Surge tracker cleared (ALLE entry from 2026-11-24 expired).
+
 ## 2026-11-24T20:16:00Z
 - SUMMARY: Market CLOSED (strategy code calculates 4:14 PM EDT due to DST bug — Nov uses EST UTC-5, code uses UTC-4; actual time 3:14 PM EST). 0 SELLs: no open positions. 0 BUYs: market_open=False per signal. 1 surge (ALLE +10.0% count=1 → first seen, need≥2); IR removed from tracker (no longer in ≥10% surge). SPY RSI=46.84, $716.75 vs EMA200. Regime: bearish_ema. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
