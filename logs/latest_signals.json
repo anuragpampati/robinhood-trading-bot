@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25T01:58:46.961182+00:00",
+  "timestamp": "2026-11-25T02:56:27.574862+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -17,7 +17,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0076,
-      "reason": "low volume (0.67x avg) \u2014 skipping",
+      "reason": "RSI=49.6 (stable), BB=IN_BAND, EMA=NEUTRAL",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -31,7 +31,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.011,
-      "reason": "RSI=46.0 (stable), BB=IN_BAND, EMA=BEARISH",
+      "reason": "low volume (0.59x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -73,7 +73,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.01,
-      "reason": "low volume (0.65x avg) \u2014 skipping",
+      "reason": "RSI=47.7 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -87,7 +87,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0279,
-      "reason": "low volume (0.29x avg) \u2014 skipping",
+      "reason": "low volume (0.47x avg) \u2014 skipping",
       "fib_target": 192,
       "rl_action": null,
       "rl_confidence": null
@@ -157,7 +157,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0304,
-      "reason": "low volume (0.67x avg) \u2014 skipping",
+      "reason": "low volume (0.66x avg) \u2014 skipping",
       "fib_target": 869,
       "rl_action": null,
       "rl_confidence": null
@@ -185,7 +185,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0114,
-      "reason": "low volume (0.64x avg) \u2014 skipping",
+      "reason": "RSI=42.4 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": 230,
       "rl_action": null,
       "rl_confidence": null
@@ -199,7 +199,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0108,
-      "reason": "low volume (0.40x avg) \u2014 skipping",
+      "reason": "low volume (0.64x avg) \u2014 skipping",
       "fib_target": 357,
       "rl_action": null,
       "rl_confidence": null
@@ -213,7 +213,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0119,
-      "reason": "low volume (0.57x avg) \u2014 skipping",
+      "reason": "low volume (0.62x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -227,7 +227,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0154,
-      "reason": "low volume (0.45x avg) \u2014 skipping",
+      "reason": "low volume (0.59x avg) \u2014 skipping",
       "fib_target": 382,
       "rl_action": null,
       "rl_confidence": null
@@ -549,7 +549,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.01,
-      "reason": "low volume (0.59x avg) \u2014 skipping",
+      "reason": "RSI=54.0 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": "BUY",
       "rl_confidence": 0.983
@@ -717,7 +717,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0172,
-      "reason": "low volume (0.61x avg) \u2014 skipping",
+      "reason": "RSI=47.1 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -759,7 +759,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0241,
-      "reason": "low volume (0.69x avg) \u2014 skipping",
+      "reason": "RSI=42.0 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": 282,
       "rl_action": null,
       "rl_confidence": null
@@ -1039,7 +1039,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.023,
-      "reason": "low volume (0.49x avg) \u2014 skipping",
+      "reason": "RSI=42.5 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": 44,
       "rl_action": null,
       "rl_confidence": null
@@ -1277,7 +1277,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0184,
-      "reason": "low volume (0.48x avg) \u2014 skipping",
+      "reason": "low volume (0.59x avg) \u2014 skipping",
       "fib_target": 419,
       "rl_action": null,
       "rl_confidence": null
@@ -1291,7 +1291,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.042,
-      "reason": "low volume (0.52x avg) \u2014 skipping",
+      "reason": "low volume (0.70x avg) \u2014 skipping",
       "fib_target": 31,
       "rl_action": null,
       "rl_confidence": null
@@ -1305,7 +1305,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.039,
-      "reason": "low volume (0.45x avg) \u2014 skipping",
+      "reason": "low volume (0.52x avg) \u2014 skipping",
       "fib_target": 213,
       "rl_action": null,
       "rl_confidence": null
@@ -1677,13 +1677,13 @@
     {
       "ticker": "ALL",
       "action": "HOLD",
-      "price": 270.5199890136719,
-      "rsi": 56.3,
+      "price": 270.4200134277344,
+      "rsi": 56.08,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0066,
-      "reason": "low volume (0.55x avg) \u2014 skipping",
+      "atr_pct": 0.0061,
+      "reason": "RSI=56.1 (stable), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -1971,16 +1971,16 @@
     {
       "ticker": "ADM",
       "action": "HOLD",
-      "price": 64.68000030517578,
-      "rsi": 24.85,
+      "price": 64.91000366210938,
+      "rsi": 28.81,
       "ema_trend": "BEARISH",
       "bb_signal": "BELOW_BAND",
       "confidence": 0,
-      "atr_pct": 0.0155,
-      "reason": "RSI=24.8 (falling), BB=BELOW_BAND, EMA=BEARISH",
+      "atr_pct": 0.015,
+      "reason": "RSI=28.8 (falling), BB=BELOW_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": "HOLD",
-      "rl_confidence": 0.886
+      "rl_confidence": 0.919
     },
     {
       "ticker": "ARES",
@@ -2005,7 +2005,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0194,
-      "reason": "low volume (0.70x avg) \u2014 skipping",
+      "reason": "RSI=37.5 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -2083,13 +2083,13 @@
     {
       "ticker": "ADP",
       "action": "HOLD",
-      "price": 310.32000732421875,
-      "rsi": 65.19,
+      "price": 310.8299865722656,
+      "rsi": 66.25,
       "ema_trend": "BULLISH",
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0064,
-      "reason": "RSI=65.2 (stable), BB=ABOVE_BAND, EMA=BULLISH",
+      "atr_pct": 0.0061,
+      "reason": "RSI=66.3 (stable), BB=ABOVE_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -2551,7 +2551,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0125,
-      "reason": "low volume (0.63x avg) \u2014 skipping",
+      "reason": "RSI=48.4 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -2629,13 +2629,13 @@
     {
       "ticker": "CNP",
       "action": "HOLD",
-      "price": 40.150001525878906,
-      "rsi": 57.67,
+      "price": 40.2599983215332,
+      "rsi": 60.04,
       "ema_trend": "BULLISH",
-      "bb_signal": "IN_BAND",
+      "bb_signal": "ABOVE_BAND",
       "confidence": 0,
-      "atr_pct": 0.0057,
-      "reason": "low volume (0.66x avg) \u2014 skipping",
+      "atr_pct": 0.0056,
+      "reason": "RSI=60.0 (stable), BB=ABOVE_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -2840,12 +2840,12 @@
       "ticker": "CME",
       "action": "HOLD",
       "price": 309.3999938964844,
-      "rsi": 50.88,
+      "rsi": 50.97,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0073,
-      "reason": "RSI=50.9 (falling), BB=IN_BAND, EMA=BULLISH",
+      "reason": "RSI=51.0 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": "BUY",
       "rl_confidence": 0.983
@@ -3595,13 +3595,13 @@
     {
       "ticker": "EOG",
       "action": "HOLD",
-      "price": 147.50169372558594,
-      "rsi": 42.53,
+      "price": 146.58999633789062,
+      "rsi": 36.94,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0081,
-      "reason": "RSI=42.5 (stable), BB=IN_BAND, EMA=BEARISH",
+      "atr_pct": 0.008,
+      "reason": "RSI=36.9 (falling), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -4301,7 +4301,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.007,
-      "reason": "low volume (0.70x avg) \u2014 skipping",
+      "reason": "RSI=53.1 (stable), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": "BUY",
       "rl_confidence": 0.983
@@ -5589,7 +5589,7 @@
       "bb_signal": "ABOVE_BAND",
       "confidence": 0,
       "atr_pct": 0.0121,
-      "reason": "low volume (0.62x avg) \u2014 skipping",
+      "reason": "RSI=60.5 (falling), BB=ABOVE_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -6479,13 +6479,13 @@
     {
       "ticker": "STX",
       "action": "HOLD",
-      "price": 481.0950012207031,
-      "rsi": 42.46,
+      "price": 482.94000244140625,
+      "rsi": 43.68,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0296,
-      "reason": "low volume (0.42x avg) \u2014 skipping",
+      "atr_pct": 0.0279,
+      "reason": "low volume (0.58x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -6661,13 +6661,13 @@
     {
       "ticker": "STT",
       "action": "HOLD",
-      "price": 160.1999969482422,
-      "rsi": 43.5,
+      "price": 160.88999938964844,
+      "rsi": 46.78,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0101,
-      "reason": "low volume (0.67x avg) \u2014 skipping",
+      "atr_pct": 0.0088,
+      "reason": "RSI=46.8 (falling), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -6885,13 +6885,13 @@
     {
       "ticker": "TMO",
       "action": "HOLD",
-      "price": 695.9450073242188,
-      "rsi": 56.4,
+      "price": 695.6500244140625,
+      "rsi": 56.03,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0095,
-      "reason": "low volume (0.67x avg) \u2014 skipping",
+      "atr_pct": 0.0085,
+      "reason": "RSI=56.0 (falling), BB=IN_BAND, EMA=BULLISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -7157,7 +7157,7 @@
       "bb_signal": "IN_BAND",
       "confidence": 0,
       "atr_pct": 0.0117,
-      "reason": "low volume (0.61x avg) \u2014 skipping",
+      "reason": "RSI=45.5 (falling), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -7529,13 +7529,13 @@
     {
       "ticker": "WSM",
       "action": "HOLD",
-      "price": 214.00999450683594,
-      "rsi": 38.41,
+      "price": 214.02999877929688,
+      "rsi": 38.89,
       "ema_trend": "BEARISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.015,
-      "reason": "low volume (0.47x avg) \u2014 skipping",
+      "atr_pct": 0.0139,
+      "reason": "RSI=38.9 (stable), BB=IN_BAND, EMA=BEARISH",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -7669,13 +7669,13 @@
     {
       "ticker": "ZTS",
       "action": "HOLD",
-      "price": 81.30500030517578,
-      "rsi": 50.01,
+      "price": 81.48500061035156,
+      "rsi": 51.78,
       "ema_trend": "NEUTRAL",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0091,
-      "reason": "low volume (0.65x avg) \u2014 skipping",
+      "atr_pct": 0.0088,
+      "reason": "RSI=51.8 (falling), BB=IN_BAND, EMA=NEUTRAL",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
@@ -7813,95 +7813,114 @@
   "net_buy_buy_signals": [],
   "net_buy_sell_signals": [
     {
-      "ticker": "NVDA",
-      "price": NaN,
-      "net_buy_d2": 89700800,
-      "net_buy_d3": 0,
-      "obv_slope": -19835550,
+      "ticker": "MRVL",
+      "price": 131.57000732421875,
+      "net_buy_d2": 825974,
+      "net_buy_d3": -12777140,
+      "obv_slope": -12694870,
       "score": 0.0,
-      "reason": "Net buy reversed: 89.70M \u2192 0.00M | OBV -19.8M/day"
+      "reason": "Net buy reversed: 0.83M \u2192 -12.78M | OBV -12.7M/day"
     },
     {
-      "ticker": "MU",
-      "price": NaN,
-      "net_buy_d2": 25944282,
-      "net_buy_d3": 0,
-      "obv_slope": -9915060,
+      "ticker": "HPE",
+      "price": 40.189998626708984,
+      "net_buy_d2": -1357323,
+      "net_buy_d3": -23154733,
+      "obv_slope": -4887240,
       "score": 0.0,
-      "reason": "Net buy reversed: 25.94M \u2192 0.00M | OBV -9.9M/day"
+      "reason": "Net buy reversed: -1.36M \u2192 -23.15M | OBV -4.9M/day"
     },
     {
-      "ticker": "NKE",
-      "price": NaN,
-      "net_buy_d2": 19819585,
-      "net_buy_d3": 0,
-      "obv_slope": -6170360,
+      "ticker": "DDOG",
+      "price": 165.3800048828125,
+      "net_buy_d2": -156818,
+      "net_buy_d3": -2304459,
+      "obv_slope": -1693460,
       "score": 0.0,
-      "reason": "Net buy reversed: 19.82M \u2192 0.00M | OBV -6.2M/day"
+      "reason": "Net buy reversed: -0.16M \u2192 -2.30M | OBV -1.7M/day"
     },
     {
-      "ticker": "CSCO",
-      "price": NaN,
-      "net_buy_d2": 18277618,
-      "net_buy_d3": 0,
-      "obv_slope": -5071400,
+      "ticker": "TMO",
+      "price": 695.6199951171875,
+      "net_buy_d2": -55539,
+      "net_buy_d3": -554129,
+      "obv_slope": -252200,
       "score": 0.0,
-      "reason": "Net buy reversed: 18.28M \u2192 0.00M | OBV -5.1M/day"
+      "reason": "Net buy reversed: -0.06M \u2192 -0.55M | OBV -0.3M/day"
     },
     {
-      "ticker": "APH",
-      "price": NaN,
-      "net_buy_d2": 17323742,
-      "net_buy_d3": 0,
-      "obv_slope": -833250,
+      "ticker": "NEM",
+      "price": 99.69000244140625,
+      "net_buy_d2": -270436,
+      "net_buy_d3": -2598628,
+      "obv_slope": -5002640,
       "score": 0.0,
-      "reason": "Net buy reversed: 17.32M \u2192 0.00M | OBV -0.8M/day"
+      "reason": "Net buy reversed: -0.27M \u2192 -2.60M | OBV -5.0M/day"
     },
     {
-      "ticker": "CMCSA",
-      "price": NaN,
-      "net_buy_d2": 17084168,
-      "net_buy_d3": 0,
-      "obv_slope": -4760170,
+      "ticker": "ADM",
+      "price": 64.9000015258789,
+      "net_buy_d2": 682012,
+      "net_buy_d3": -5112878,
+      "obv_slope": -2707750,
       "score": 0.0,
-      "reason": "Net buy reversed: 17.08M \u2192 0.00M | OBV -4.8M/day"
+      "reason": "Net buy reversed: 0.68M \u2192 -5.11M | OBV -2.7M/day"
     },
     {
-      "ticker": "GOOGL",
-      "price": NaN,
-      "net_buy_d2": 16788320,
-      "net_buy_d3": 0,
-      "obv_slope": -14130200,
+      "ticker": "TWLO",
+      "price": 180.61000061035156,
+      "net_buy_d2": 224505,
+      "net_buy_d3": -1003772,
+      "obv_slope": -1068360,
       "score": 0.0,
-      "reason": "Net buy reversed: 16.79M \u2192 0.00M | OBV -14.1M/day"
+      "reason": "Net buy reversed: 0.22M \u2192 -1.00M | OBV -1.1M/day"
     },
     {
-      "ticker": "VZ",
-      "price": NaN,
-      "net_buy_d2": 15006929,
-      "net_buy_d3": 0,
-      "obv_slope": -1045250,
+      "ticker": "DASH",
+      "price": 160.1300048828125,
+      "net_buy_d2": 613662,
+      "net_buy_d3": -2733315,
+      "obv_slope": -2626700,
       "score": 0.0,
-      "reason": "Net buy reversed: 15.01M \u2192 0.00M | OBV -1.0M/day"
+      "reason": "Net buy reversed: 0.61M \u2192 -2.73M | OBV -2.6M/day"
     },
     {
-      "ticker": "PLTR",
-      "price": NaN,
-      "net_buy_d2": 14340364,
-      "net_buy_d3": 0,
-      "obv_slope": -5643830,
+      "ticker": "BG",
+      "price": 84.05999755859375,
+      "net_buy_d2": 836344,
+      "net_buy_d3": -3414716,
+      "obv_slope": -974290,
       "score": 0.0,
-      "reason": "Net buy reversed: 14.34M \u2192 0.00M | OBV -5.6M/day"
+      "reason": "Net buy reversed: 0.84M \u2192 -3.41M | OBV -1.0M/day"
     },
     {
-      "ticker": "NFLX",
-      "price": NaN,
-      "net_buy_d2": 13234646,
-      "net_buy_d3": 0,
-      "obv_slope": -13037000,
+      "ticker": "GLW",
+      "price": 101.87000274658203,
+      "net_buy_d2": 205926,
+      "net_buy_d3": -577801,
+      "obv_slope": -4432020,
       "score": 0.0,
-      "reason": "Net buy reversed: 13.23M \u2192 0.00M | OBV -13.0M/day"
+      "reason": "Net buy reversed: 0.21M \u2192 -0.58M | OBV -4.4M/day"
     }
   ],
-  "surge_signals": []
+  "surge_signals": [
+    {
+      "ticker": "SPG",
+      "price": 229.8300018310547,
+      "buy_surge_pct": 0.0589,
+      "buy_vol_d2": 909065,
+      "buy_vol_d3": 962591,
+      "net_buy_d3": 789283,
+      "reason": "Buy vol \u21915.9% vs prior day | Net buy reversed: 0.80M \u2192 0.79M | OBV -0.1M/day"
+    },
+    {
+      "ticker": "ACN",
+      "price": 232.32000732421875,
+      "buy_surge_pct": 0.3519,
+      "buy_vol_d2": 2042756,
+      "buy_vol_d3": 2761537,
+      "net_buy_d3": 2108474,
+      "reason": "Buy vol \u219135.2% vs prior day | 1d streak | latest 2.11M | OBV 2.2M/day"
+    }
+  ]
 }
