@@ -1,3 +1,14 @@
+## 2026-11-25T17:22:02Z
+- Action   : BUY IT
+- Price    : $187.02
+- Amount   : $43.07 | Shares: 0.230290
+- RSI      : 64.8 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $183.95 | Target: $205.72
+- Strategy : intraday_surge | Sell date: 2026-11-26
+- Regime   : bearish_ema
+- Reason   : IT buy volume surge +278.9% (2nd consecutive cycle, count=2) | Net-buy 4d streak -0.16M → -0.15M → 0.06M | OBV +0.2M/day | EMA BULLISH (ticker bullish despite SPY bearish_ema regime)
+
 ## 2026-11-25T16:20:00Z
 - SUMMARY: Market OPEN (11:20 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime, 0 RSI BUY signals across 503-ticker universe, net-buy BUYs UBER/IT blocked (conf=2, requires conf≥3 in bearish_ema). Surge tracker: IT count=1 (49.8%) — first-seen today, need count≥2 for INTRADAY_SURGE; prior TJX/NWSA/ADP/A not in ≥10% surge this cycle. CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
