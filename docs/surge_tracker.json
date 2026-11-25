@@ -1,26 +1,26 @@
 {
   "IT": {
-    "count": 4,
+    "count": 5,
     "date": "2026-11-25",
     "first_seen": "2026-11-25T16:21:04Z",
     "price": 186.86
   },
   "CHTR": {
-    "count": 2,
+    "count": 3,
     "date": "2026-11-25",
     "first_seen": "2026-11-25T18:15:00Z",
     "price": 145.54
   },
-  "UBER": {
+  "TKO": {
     "count": 1,
     "date": "2026-11-25",
-    "first_seen": "2026-11-25T19:18:43Z",
-    "price": 66.805
+    "first_seen": "2026-11-25T20:18:33Z",
+    "price": 192.87
   },
-  "DHI": {
+  "FITB": {
     "count": 1,
     "date": "2026-11-25",
-    "first_seen": "2026-11-25T19:18:43Z",
-    "price": 157.89
+    "first_seen": "2026-11-25T20:18:33Z",
+    "price": 51.64
   }
 }

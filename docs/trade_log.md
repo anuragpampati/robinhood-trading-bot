@@ -1,3 +1,6 @@
+## 2026-11-25T20:15:00Z
+- SUMMARY: Market OPEN (3:15 PM ET — DST bug in strategy code falsely reports market_open=False; confirmed open via live IT/SPY quotes), in_window=True (before 3:30 PM cutoff). 0 SELLs: IT held OK (price $185.545 > trail_stop $183.95; hours_held ~2h53m < 3h min; sell_date=2026-11-26; take_profit=$205.85 not reached). 0 BUYs: BEARISH_EMA regime + 0 RSI BUY signals; CHTR INTRADAY_SURGE count=3 (45.0%) skipped — RSI=75.6 explicit SELL overbought (conf=2) + bearish_ema; IT INTRADAY_SURGE count=5 but already held; TKO/FITB count=1 need≥2. CB: daily -0.17%/weekly -0.17%(OK). Acct=$221.89. BP=$179.19. Positions=1 (IT $185.545). Universe=520 (from RH cache).
+
 ## 2026-11-25T18:15:00Z
 - SUMMARY: Market OPEN (1:15 PM ET), in_window=True. 0 SELLs: IT held OK (price $186.65 > trail_stop $183.95; hours_held ~53min < 3h min; sell_date=2026-11-26; take_profit=$205.85 not reached). 0 BUYs: BEARISH_EMA regime → all conf=2 net-buy signals blocked (UBER/MSFT/NWSA/FTV/NWS/WSM/CHTR/BLK — need conf≥3 in bearish_ema); INTRADAY_SURGE only IT (count=3) but already held. CHTR entered surge tracker count=1 (buy_surge_pct 24.7%, first-seen today, need≥2 for INTRADAY_SURGE). No RSI BUY signals across 503-ticker universe. SPY regime=BEARISH_EMA. CB: daily -0.05%/weekly -0.05%(OK). Acct=$222.15. BP=$179.19. Positions=1 (IT $186.65). Universe=503.
 
