@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-11-25
+- Trades analysed: 0 new closed pairs today (no new BUY→SELL exits; IT intraday_surge still open); cumulative normal: 11 trades, 45.5% win rate
+- Win rate: 45.5% overall (normal: 45.5% [n=11]; momentum: n/a [n=0 — unwired]; surge: n/a [n≤3 — insufficient data])
+- EMA-trend win rate: BEARISH entry underperforming (see CLAUDE.md 2026-11-06 audit note); BULLISH slightly better
+- Config changes: none — RSI_OVERSOLD=40 (at clamp max, 45.5% in [40%,65%] hold band → NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades (NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~24h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED — Yahoo Finance proxy blocked (403, recurring in this environment); prior metrics retained
+- RL samples: 641/200 (READY — +0 new rows today; 19 states in Q-table)
+- Notes: Account $221.89, 1 open position (IT intraday_surge, entered 2026-11-25T17:22Z, bearish_ema regime, -0.85%). Buying power $179.19. Market BEARISH_EMA regime (SPY $718 vs EMA200 ~$749). Trade log trimmed: 58 entries remain (last 48h). RL READY (641/200 samples) — run: python3.13 -m strategy.rl_agent --train to activate Q-learning (NOTE: do NOT re-enable RL boost/veto without human validation per CLAUDE.md 2026-11-06 note).
+
+---
+
 ## 2026-09-11
 - Trades analysed: 0 new closed pairs today (trade log trimmed to last 2 days; no new BUY→SELL exits since SBUX close on 2026-09-10); cumulative ~26 closed (13W/13L)
 - Win rate: 50.0% overall (normal: 50.0% [n≈26]; momentum: n/a [n=0]; surge: n/a [n=0])

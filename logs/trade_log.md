@@ -39,21 +39,41 @@
 ## 2026-11-23T20:15:00Z
 - SUMMARY: Market CLOSED (after 3:00 PM ET). 0 SELLs: no open positions. 0 BUYs: market closed. Surge tracker: GOOG count=1 (27.0%), HON count=1 (2.9%) — need≥2 for intraday_surge, market already closed. SPY RSI=51.61 (not PANIC). BEARISH_EMA regime (SPY $722.90). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
-## 2026-11-23T19:13:45Z
-- SUMMARY: Market OPEN (2:13 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 1 surge (GOOGL buy-vol 21473% count=1, need≥2 for intraday_surge; DPZ removed — no longer in 10%+ surge); SPY RSI=51.83 (not PANIC). BEARISH_EMA regime (SPY $723.19 vs EMA200). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-25T17:22:02Z
+- Action   : BUY IT
+- Price    : $187.02
+- Amount   : $43.07 | Shares: 0.230290
+- RSI      : 64.8 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : null conf=null | null
+- Stop     : $183.95 | Target: $205.72
+- Strategy : intraday_surge | Sell date: 2026-11-26
+- Regime   : bearish_ema
+- Reason   : IT buy volume surge +278.9% (2nd consecutive cycle, count=2) | Net-buy 4d streak -0.16M → -0.15M → 0.06M | OBV +0.2M/day | EMA BULLISH (ticker bullish despite SPY bearish_ema regime)
 
-## 2026-11-23T18:15:38Z
-- SUMMARY: Market OPEN (1:15 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge (DPZ dropped from tracker — not in 10%+ surge this cycle); SPY RSI=50.89 (not PANIC). BEARISH_EMA regime (SPY $722.11 vs EMA200). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-25T16:20:00Z
+- SUMMARY: Market OPEN (11:20 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime, 0 RSI BUY signals across 503-ticker universe, net-buy BUYs UBER/IT blocked (conf=2, requires conf≥3 in bearish_ema). Surge tracker: IT count=1 (49.8%) — first-seen today, need count≥2 for INTRADAY_SURGE; prior TJX/NWSA/ADP/A not in ≥10% surge this cycle. CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
-## 2026-11-23T17:17:52Z
-- SUMMARY: Market OPEN (12:17 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 1 surge (DPZ 19.4% count=1, needs≥2 for intraday_surge; BEARISH_EMA regime requires 3/3 RSI conf); SPY RSI=52.06 (not PANIC). BEARISH_EMA regime. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-25T15:16:00Z
+- SUMMARY: Market OPEN (10:16 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime (SPY $718.79 vs EMA200 ~$749), 0 RSI BUY signals across 503-ticker universe, net-buy BUYs TJX/NWSA blocked (net-buy only, conf<3 in bearish_ema). Surge tracker NEW: TJX count=1 (142.6%), NWSA count=1 (11.9%), ADP count=1 (51.7%), A count=1 (85.1%) — all first-seen today, need≥2 cycles. SPY RSI=49.04 (no panic). CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
-## 2026-11-23T16:14:46Z
-- SUMMARY: Market OPEN (11:14 AM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge, 0 intraday-surge; BEARISH_EMA regime (SPY $724.30 vs EMA200 $751.52); SPY RSI=52.65 (not PANIC). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-25T14:18:42Z
+- SUMMARY: Pre-market (9:18 AM EST; market opens 9:30 — code shows market_open=True due to DST bug UTC-4). 0 SELLs: no positions. 0 BUYs: pre-market + BEARISH_EMA regime requires conf=3; UBER/IT net-buy only (conf=2, blocked). SPY RSI=49.04 (no panic). CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503. Surge tracker cleared (ALLE entry from 2026-11-24 expired).
 
-## 2026-11-23T14:19:00Z
-- SUMMARY: Market OPEN (9:19 AM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: PANIC (SPY RSI=11.2 < 30, all buys blocked except surge — 0 surge signals); BEARISH_EMA regime. CB: daily 0.00%/weekly 0.00%(reset-Monday)(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-24T20:16:00Z
+- SUMMARY: Market CLOSED (strategy code calculates 4:14 PM EDT due to DST bug — Nov uses EST UTC-5, code uses UTC-4; actual time 3:14 PM EST). 0 SELLs: no open positions. 0 BUYs: market_open=False per signal. 1 surge (ALLE +10.0% count=1 → first seen, need≥2); IR removed from tracker (no longer in ≥10% surge). SPY RSI=46.84, $716.75 vs EMA200. Regime: bearish_ema. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
+## 2026-11-24T19:19:00Z
+- SUMMARY: Market OPEN (2:19 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY. 2 surge signals seen but HELD: IR +49.3% volume surge with negative OBV (distribution); ALLE +5.4% surge with RSI=63 (near overbought) and price ABOVE_BAND. No RSI BUY across 503-ticker universe. BEARISH_EMA regime (SPY $719.xx vs EMA200 $749.xx). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-24T18:18:20Z
+- SUMMARY: Market OPEN (1:18 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge signals. BEARISH_EMA regime (SPY $719.33 vs EMA200 $749.13); SPY RSI=49.11 (not PANIC). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+## 2026-11-24T17:19:00Z
+- SUMMARY: Market OPEN (12:19 PM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge signals. SPY regime=BEARISH_EMA. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
+## 2026-11-24T16:17:09Z
+- SUMMARY: Market OPEN (11:17 AM ET), in_window=True. 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, 0 surge (FICO dropped — no longer ≥10% intraday surge); SPY RSI=44.15 (not PANIC). BEARISH_EMA regime (SPY $714.56 vs EMA200). CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
+## 2026-11-24T14:14:54Z
+- SUMMARY: Market PRE-OPEN (9:14 AM actual ET; strategy DST bug shows 10:14 — Nov uses UTC-5, code uses UTC-4). 0 SELLs: no open positions. 0 BUYs: 0 RSI BUY conf≥2, 0 net-buy BUY, surge FFIV/ADSK both <10% threshold. SPY RSI=51.17 (not PANIC). BEARISH_EMA regime (SPY $722.42 vs EMA200). Surge tracker: cleared (GOOG/HON from yesterday removed, nothing ≥10% today). CB: daily 0.00%/weekly 0.00%(new-day reset)(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 ## 2026-11-06T15:25:00Z (SUMMARY)
 - SUMMARY: Market OPEN (~10:25 AM ET), in_window=true. Regime: BEARISH_EMA (SPY RSI=38.96, EMA BEARISH). 0 SELLs: GD(−2.57% $355.02, trail=$346.19 OK) TTWO(+1.71% $213.76, trail=$209.12 OK, <3h) DPZ(+1.60% $335.02, trail=$323.17 OK, <3h). 0 BUYs: no RSI/net-buy/surge signals (RSI BUYs=0, Net BUYs=0, Surge=0). CB: daily −0.26%/weekly −1.26% (OK). Acct=$226.62. BP=$87.31. Universe=503.
 
