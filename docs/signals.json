@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25T01:11:45.460245+00:00",
+  "timestamp": "2026-11-25T01:58:46.961182+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -1677,13 +1677,13 @@
     {
       "ticker": "ALL",
       "action": "HOLD",
-      "price": 270.4200134277344,
-      "rsi": 55.76,
+      "price": 270.5199890136719,
+      "rsi": 56.3,
       "ema_trend": "BULLISH",
       "bb_signal": "IN_BAND",
       "confidence": 0,
-      "atr_pct": 0.0062,
-      "reason": "RSI=55.8 (stable), BB=IN_BAND, EMA=BULLISH",
+      "atr_pct": 0.0066,
+      "reason": "low volume (0.55x avg) \u2014 skipping",
       "fib_target": null,
       "rl_action": null,
       "rl_confidence": null
