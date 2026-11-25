@@ -1,3 +1,6 @@
+## 2026-11-25T16:20:00Z
+- SUMMARY: Market OPEN (11:20 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime, 0 RSI BUY signals across 503-ticker universe, net-buy BUYs UBER/IT blocked (conf=2, requires conf≥3 in bearish_ema). Surge tracker: IT count=1 (49.8%) — first-seen today, need count≥2 for INTRADAY_SURGE; prior TJX/NWSA/ADP/A not in ≥10% surge this cycle. CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
+
 ## 2026-11-25T15:16:00Z
 - SUMMARY: Market OPEN (10:16 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime (SPY $718.79 vs EMA200 ~$749), 0 RSI BUY signals across 503-ticker universe, net-buy BUYs TJX/NWSA blocked (net-buy only, conf<3 in bearish_ema). Surge tracker NEW: TJX count=1 (142.6%), NWSA count=1 (11.9%), ADP count=1 (51.7%), A count=1 (85.1%) — all first-seen today, need≥2 cycles. SPY RSI=49.04 (no panic). CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.
 
