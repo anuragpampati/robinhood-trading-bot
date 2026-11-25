@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-25T18:15:00Z",
+  "updated_at": "2026-11-25T19:18:43Z",
   "buying_power": 179.19,
   "market_regime": "bearish_ema",
-  "account_value": 222.15,
+  "account_value": 222.23,
   "peak_value": 249.0,
   "day_start_value": 222.26,
   "day_start_date": "2026-11-25",
@@ -17,9 +17,9 @@
       "ticker": "IT",
       "quantity": 0.230147,
       "avg_cost": 187.14,
-      "current_price": 186.65,
-      "pnl_pct": -0.0026,
-      "value": 42.95,
+      "current_price": 186.995,
+      "pnl_pct": -0.0008,
+      "value": 43.04,
       "entry_atr_pct": 0.0082,
       "entry_time": "2026-11-25T17:22:02Z",
       "trail_stop": 183.95,
@@ -29,10 +29,9 @@
     }
   ],
   "last_actions": [
+    "2026-11-25T19:18Z Market OPEN (2:18 PM ET), in_window=True. 0 SELLs: IT held OK (price $186.995 > trail_stop $183.95; hours_held ~1h57m < 3h min; sell_date=2026-11-26). 0 BUYs: CHTR INTRADAY_SURGE count=2 (51.0%) skipped — RSI=78.0 explicit SELL overbought +8.1% intraday + bearish_ema; UBER/DHI count=1 need≥2. No RSI BUY across 503 universe. CB: daily -0.014%/weekly -0.014%(OK). Acct=$222.23. BP=$179.19. Positions=1. Universe=503.",
     "2026-11-25T18:15Z Market OPEN (1:15 PM ET), in_window=True. 0 SELLs: IT held OK (price $186.65 > trail_stop $183.95; hours_held ~53min < 3h min; sell_date=2026-11-26). 0 BUYs: BEARISH_EMA blocks all conf=2 net-buy signals (UBER/MSFT/NWSA/FTV/NWS/WSM/CHTR/BLK); INTRADAY_SURGE only IT (count=3) but held. CHTR enters surge tracker count=1 (24.7%). CB: daily -0.05%/weekly -0.05%(OK). Acct=$222.15. BP=$179.19. Positions=1. Universe=503.",
     "2026-11-25T17:22Z BUY IT $43.07 (0.2303 shares @ ~$187.02). INTRADAY_SURGE count=2 (buy vol +278.9%, 2nd cycle). Net-buy 4d streak. EMA=BULLISH. bearish_ema regime → size halved (intraday_surge 50% × bearish_ema 50% = 25% of investable). Stop=$183.95, Target=$205.72. Sell date=2026-11-26.",
-    "2026-11-25T16:20Z Market OPEN (11:20 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime, 0 RSI BUY signals across 503-ticker universe, net-buy BUYs UBER/IT blocked (conf=2, requires conf≥3 in bearish_ema). Surge tracker: IT count=1 (49.8%) — first-seen today, need count≥2 for INTRADAY_SURGE; prior TJX/NWSA/ADP/A not in ≥10% surge this cycle. CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.",
-    "2026-11-25T15:16Z Market OPEN (10:16 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime (SPY $718.79 vs EMA200 ~$749), 0 RSI BUY signals across 503-ticker universe, net-buy BUYs TJX/NWSA blocked (net-buy only, conf<3 in bearish_ema). Surge tracker NEW: TJX count=1 (142.6%), NWSA count=1 (11.9%), ADP count=1 (51.7%), A count=1 (85.1%) — all first-seen today, need≥2 cycles. SPY RSI=49.04 (no panic). CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503.",
-    "2026-11-24T20:16Z Market CLOSED (DST bug: code uses UTC-4 for Nov, actual EST UTC-5 → 3:14 PM appears as 4:14 PM). 0 SELLs: no positions. 0 BUYs: market_open=False. Surge: ALLE +10.0% count=1 (need≥2). SPY RSI=46.84 BEARISH_EMA. CB: daily 0.00%/weekly 0.00%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503."
+    "2026-11-25T16:20Z Market OPEN (11:20 AM ET), in_window=True. 0 SELLs: no positions held. 0 BUYs: BEARISH_EMA regime, 0 RSI BUY signals across 503-ticker universe, net-buy BUYs UBER/IT blocked (conf=2, requires conf≥3 in bearish_ema). Surge tracker: IT count=1 (49.8%) — first-seen today, need count≥2 for INTRADAY_SURGE; prior TJX/NWSA/ADP/A not in ≥10% surge this cycle. CB: daily 0.0%/weekly 0.0%(OK). Acct=$222.26. BP=$222.26. Positions=0. Universe=503."
   ]
 }

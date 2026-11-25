@@ -1,3 +1,6 @@
+## 2026-11-25T19:18:43Z
+- SUMMARY: Market OPEN (2:18 PM ET), in_window=True. 0 SELLs: IT held OK (price $186.995 > trail_stop $183.95; hours_held ~1h57m < 3h min; sell_date=2026-11-26). 0 BUYs: CHTR INTRADAY_SURGE count=2 (51.0%) skipped — RSI=78.0 explicit SELL signal (overbought +8.1% intraday) + bearish_ema regime; UBER count=1 need≥2; DHI count=1 need≥2. No RSI BUY signals across 503-ticker universe. Surge tracker updated: IT count=4, CHTR count=2, UBER count=1 (new $66.81), DHI count=1 (new $157.89). CB: daily -0.014%/weekly -0.014%(OK). Acct=$222.23. BP=$179.19. Positions=1. Universe=503.
+
 ## 2026-11-25T17:22:02Z
 - Action   : BUY IT
 - Price    : $187.02
