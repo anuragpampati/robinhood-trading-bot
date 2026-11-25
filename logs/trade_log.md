@@ -228,3 +228,6 @@
 
 ## 2026-11-11T18:22Z (SUMMARY)
 - SUMMARY: Market OPEN (1:22 PM ET), in_window=true. Regime: bearish_ema (SPY EMA=BEARISH). 0 SELLs: GD(+0.63% $366.70>trail$346.19 OK). 1 BUY: CFG $16.99 (surge +82.9% buy vol, 4d net-buy streak, bearish_ema 25% sizing). Surge tracker: 6 tickers at count=1 (HBAN/CFG/PNC/CHRW/SCHW/DELL); ICE excluded (7.5%<10%). CB: daily -0.34%(gain)/weekly +0.09%(OK). Acct=$227.45. BP=$100.95. Universe=503 (611 tickers fetched via RH historicals).
+
+## 2026-11-25T18:15:00Z
+- SUMMARY: Market OPEN (1:15 PM ET), in_window=True. 0 SELLs: IT held OK (price $186.65 > trail_stop $183.95; hours_held ~53min < 3h min; sell_date=2026-11-26; take_profit=$205.85 not reached). 0 BUYs: BEARISH_EMA regime → all conf=2 net-buy signals blocked (UBER/MSFT/NWSA/FTV/NWS/WSM/CHTR/BLK — need conf≥3); INTRADAY_SURGE only IT (count=3) but held. CHTR enters surge tracker count=1 (24.7%). No RSI BUY signals. SPY regime=BEARISH_EMA. CB: daily -0.05%/weekly -0.05%(OK). Acct=$222.15. BP=$179.19. Positions=1 (IT $186.65). Universe=503.
