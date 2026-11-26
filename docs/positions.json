@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-25T20:15:00Z",
+  "updated_at": "2026-11-26T14:16:00Z",
   "buying_power": 179.19,
   "market_regime": "bearish_ema",
-  "account_value": 221.89,
+  "account_value": 221.72,
   "peak_value": 249.0,
-  "day_start_value": 222.26,
-  "day_start_date": "2026-11-25",
+  "day_start_value": 221.72,
+  "day_start_date": "2026-11-26",
   "week_start_value": 222.26,
   "week_start_date": "2026-11-24",
   "trading_enabled": true,
@@ -17,9 +17,9 @@
       "ticker": "IT",
       "quantity": 0.230147,
       "avg_cost": 187.14,
-      "current_price": 185.545,
-      "pnl_pct": -0.0085,
-      "value": 42.70,
+      "current_price": 184.76,
+      "pnl_pct": -0.0127,
+      "value": 42.53,
       "entry_atr_pct": 0.0082,
       "entry_time": "2026-11-25T17:22:02Z",
       "trail_stop": 183.95,
@@ -29,9 +29,9 @@
     }
   ],
   "last_actions": [
+    "2026-11-26T14:16Z Market CLOSED (Thanksgiving holiday, Nov 26 2026). Strategy reported market_open=True (DST bug + no holiday calendar); quotes confirm closed (IT last trade 2026-11-25T20:59Z). 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; sell_date=today but price < avg_cost $187.14 so surge exit doesn't trigger). 0 BUYs: Market closed. bearish_ema regime. CB: daily -0.0%/weekly -0.24%(OK). Acct=$221.72. BP=$179.19. Positions=1. Universe=503.",
     "2026-11-25T20:15Z Market OPEN (3:15 PM ET — DST bug in code falsely says closed; confirmed via live quotes). 0 SELLs: IT held OK (price $185.545 > trail_stop $183.95; hours_held ~2h53m < 3h min; sell_date=2026-11-26). 0 BUYs: bearish_ema + 0 RSI BUY; CHTR surge count=3 skipped (RSI=75.6 SELL); IT surge count=5 but held; TKO/FITB count=1 need≥2. CB: daily -0.17%/weekly -0.17%(OK). Acct=$221.89. BP=$179.19. Positions=1. Universe=520.",
     "2026-11-25T19:18Z Market OPEN (2:18 PM ET), in_window=True. 0 SELLs: IT held OK (price $186.995 > trail_stop $183.95; hours_held ~1h57m < 3h min; sell_date=2026-11-26). 0 BUYs: CHTR INTRADAY_SURGE count=2 (51.0%) skipped — RSI=78.0 explicit SELL overbought +8.1% intraday + bearish_ema; UBER/DHI count=1 need≥2. No RSI BUY across 503 universe. CB: daily -0.014%/weekly -0.014%(OK). Acct=$222.23. BP=$179.19. Positions=1. Universe=503.",
-    "2026-11-25T18:15Z Market OPEN (1:15 PM ET), in_window=True. 0 SELLs: IT held OK (price $186.65 > trail_stop $183.95; hours_held ~53min < 3h min; sell_date=2026-11-26). 0 BUYs: BEARISH_EMA blocks all conf=2 net-buy signals (UBER/MSFT/NWSA/FTV/NWS/WSM/CHTR/BLK); INTRADAY_SURGE only IT (count=3) but held. CHTR enters surge tracker count=1 (24.7%). CB: daily -0.05%/weekly -0.05%(OK). Acct=$222.15. BP=$179.19. Positions=1. Universe=503.",
     "2026-11-25T17:22Z BUY IT $43.07 (0.2303 shares @ ~$187.02). INTRADAY_SURGE count=2 (buy vol +278.9%, 2nd cycle). Net-buy 4d streak. EMA=BULLISH. bearish_ema regime → size halved (intraday_surge 50% × bearish_ema 50% = 25% of investable). Stop=$183.95, Target=$205.72. Sell date=2026-11-26."
   ]
 }
