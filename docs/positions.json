@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T15:16:31Z",
+  "updated_at": "2026-11-26T16:17:00Z",
   "buying_power": 179.19,
   "market_regime": "bearish_ema",
   "account_value": 221.72,
@@ -29,9 +29,9 @@
     }
   ],
   "last_actions": [
-    "2026-11-26T15:16Z Market CLOSED (Thanksgiving holiday, Nov 26 2026). Strategy reported market_open=True (DST/holiday bug); quotes confirm closed (IT last trade 2026-11-25T20:59Z). 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; surge exit doesn't trigger — $184.76 < avg_cost $187.14). 0 BUYs: Market closed. bearish_ema regime. CB: daily 0.0%/weekly -0.24%(OK). Acct=$221.72. BP=$179.19. Positions=1. Universe=503.",
-    "2026-11-26T14:16Z Market CLOSED (Thanksgiving holiday, Nov 26 2026). Strategy reported market_open=True (DST bug + no holiday calendar); quotes confirm closed (IT last trade 2026-11-25T20:59Z). 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; sell_date=today but price < avg_cost $187.14 so surge exit doesn't trigger). 0 BUYs: Market closed. bearish_ema regime. CB: daily -0.0%/weekly -0.24%(OK). Acct=$221.72. BP=$179.19. Positions=1. Universe=503.",
-    "2026-11-25T20:15Z Market OPEN (3:15 PM ET — DST bug in code falsely says closed; confirmed via live quotes). 0 SELLs: IT held OK (price $185.545 > trail_stop $183.95; hours_held ~2h53m < 3h min; sell_date=2026-11-26). 0 BUYs: bearish_ema + 0 RSI BUY; CHTR surge count=3 skipped (RSI=75.6 SELL); IT surge count=5 but held; TKO/FITB count=1 need≥2. CB: daily -0.17%/weekly -0.17%(OK). Acct=$221.89. BP=$179.19. Positions=1. Universe=520.",
-    "2026-11-25T17:22Z BUY IT $43.07 (0.2303 shares @ ~$187.02). INTRADAY_SURGE count=2 (buy vol +278.9%, 2nd cycle). Net-buy 4d streak. EMA=BULLISH. bearish_ema regime → size halved (intraday_surge 50% × bearish_ema 50% = 25% of investable). Stop=$183.95, Target=$205.72. Sell date=2026-11-26."
+    "2026-11-26T16:17Z Market CLOSED (Thanksgiving holiday, Nov 26 2026). Strategy engine reports market_open=True (DST/holiday bug); quotes confirm closed. Historicals: 543/549 symbols via RH MCP. 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; sell_date=today but $184.76 < avg_cost $187.14). 0 BUYs: Market closed. bearish_ema regime. CB: daily 0.0%/weekly -0.24%(OK). Universe=503.",
+    "2026-11-26T15:16Z Market CLOSED (Thanksgiving holiday, Nov 26 2026). Strategy reported market_open=True (DST/holiday bug, same as prior cycle). Quotes confirm closed (IT last trade 2026-11-25T20:59Z). 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; sell_date=today but $184.76 < avg_cost $187.14 so surge date exit doesn't trigger; no ATR/TP/RSI-SELL). 0 BUYs: Market confirmed closed. Surge tracker: 8 tickers count=1 for 2026-11-26 (unchanged — market closed, no increment). bearish_ema regime. CB: daily 0.0%/weekly -0.24%(OK). Acct=$221.72. BP=$179.19. Positions=1. Universe=503.",
+    "2026-11-26T14:16Z Market CLOSED (Thanksgiving holiday, Nov 26 2026). Strategy reported market_open=True (DST bug + no holiday calendar); quotes confirm closed (IT last trade 2026-11-25T20:59Z, wide bid/ask $159/$190). 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; sell_date=today but price $184.76 < avg_cost $187.14 so surge date exit doesn't trigger; no ATR/TP/signal exit). 0 BUYs: Market closed. Surge tracker: 8 tickers at count=1 for 2026-11-26 (all reset from yesterday). bearish_ema regime. CB: daily start reset (new day). Acct=$221.72. BP=$179.19. Positions=1. Universe=503.",
+    "2026-11-25T20:15Z Market OPEN (3:15 PM ET — DST bug in code falsely says closed; confirmed via live quotes). 0 SELLs: IT held OK (price $185.545 > trail_stop $183.95; hours_held ~2h53m < 3h min; sell_date=2026-11-26). 0 BUYs: bearish_ema + 0 RSI BUY; CHTR surge count=3 skipped (RSI=75.6 SELL); IT surge count=5 but held; TKO/FITB count=1 need≥2. CB: daily -0.17%/weekly -0.17%(OK). Acct=$221.89. BP=$179.19. Positions=1. Universe=520."
   ]
 }
