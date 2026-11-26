@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "backtest_days": 14,
   "strategy_return": null,
   "spy_return": null,
@@ -14,5 +14,5 @@
   "rl_training_samples": 641,
   "rl_states_learned": 19,
   "rl_target_samples": 200,
-  "note": "Backtest skipped — yfinance blocked in cloud sandbox (403). No new closed trades today. Normal strategy: 11 trades, 45.5% win rate, avg P&L -0.60% (trail stops). RSI_OVERSOLD=40 (clamp max, 45.5% win rate in hold band). Momentum signals unwired (n=0). ATR avg_hold ~24h (not <2h). NO_CHANGE. Updated by daily learning CCR"
+  "note": "Backtest skipped — yfinance blocked in cloud sandbox (403). No new closed trades today. Normal strategy: 11 trades, 45.5% win rate, avg P&L ~-0.60% (trail stops). RSI_OVERSOLD=40 (clamp max, 45.5% in hold band). Momentum n=0. ATR avg_hold ~24h. NO_CHANGE. Updated by daily learning CCR"
 }

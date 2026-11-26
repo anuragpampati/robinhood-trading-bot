@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-11-26
+- Trades analysed: 0 new closed pairs today (no new BUY→SELL exits; IT intraday_surge still open, sell_date=today but price $184.76 < avg_cost $187.14 so surge date exit didn't trigger; market closed Thanksgiving)
+- Win rate: 45.5% overall (normal: 45.5% [n=11]; momentum: n/a [n=0 — unwired]; surge: n/a [n≤3 — insufficient data])
+- EMA-trend win rate: BEARISH entry underperforming (see CLAUDE.md 2026-11-06 audit note); BULLISH slightly better
+- Config changes: none — RSI_OVERSOLD=40 (at clamp max, 45.5% in [40%,65%] hold band → NO_CHANGE); MOMENTUM_VOL_MIN: n=0 momentum trades (NO_CHANGE); ATR_VOLATILITY_THRESHOLD: avg_hold ~24h >> 2h (NO_CHANGE)
+- Backtest: SKIPPED (NO_CHANGE — no threshold adjustments; yfinance proxy blocked in this environment regardless)
+- RL samples: 641/200 (READY — +0 new rows today; 19 states in Q-table)
+- Notes: Account $221.72, 1 open position (IT intraday_surge, entered 2026-11-25T17:22Z, bearish_ema regime, -1.3%; sell_date was today but market closed for Thanksgiving). BP=$179.19. Market BEARISH_EMA regime. Trade log trimmed: 62 entries remain. RL READY (641/200) — NOTE: do NOT re-enable RL boost/veto without human validation per CLAUDE.md 2026-11-06 note.
+
+---
+
 ## 2026-11-25
 - Trades analysed: 0 new closed pairs today (no new BUY→SELL exits; IT intraday_surge still open); cumulative normal: 11 trades, 45.5% win rate
 - Win rate: 45.5% overall (normal: 45.5% [n=11]; momentum: n/a [n=0 — unwired]; surge: n/a [n≤3 — insufficient data])
