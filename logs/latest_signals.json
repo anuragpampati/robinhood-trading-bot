@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26T22:53:22.011670+00:00",
+  "timestamp": "2026-11-26T23:25:26.220733+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -8079,15 +8079,6 @@
       "buy_vol_d3": 569076,
       "net_buy_d3": 400253,
       "reason": "Buy vol \u219152.9% vs prior day | 0d streak | latest 0.40M | OBV 0.4M/day"
-    },
-    {
-      "ticker": "ARE",
-      "price": 43.09000015258789,
-      "buy_surge_pct": 0.8018,
-      "buy_vol_d2": 887927,
-      "buy_vol_d3": 1599825,
-      "net_buy_d3": 1479651,
-      "reason": "Buy vol \u219180.2% vs prior day | 0d streak | latest 1.48M | OBV 1.5M/day"
     }
   ]
 }
