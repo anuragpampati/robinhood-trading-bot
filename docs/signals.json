@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26T14:15:20.036380+00:00",
+  "timestamp": "2026-11-26T15:15:11.760169+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": true,
@@ -8075,22 +8075,13 @@
       "reason": "Buy vol \u219163.3% vs prior day | Net buy \u2191 4d streak: 0.00M \u2192 0.02M \u2192 0.13M | OBV +0.0M/day"
     },
     {
-      "ticker": "CVX",
-      "price": 211.015,
-      "buy_surge_pct": 2.5531,
-      "buy_vol_d2": 302209,
-      "buy_vol_d3": 1073782,
-      "net_buy_d3": 622844,
-      "reason": "Buy vol \u2191255.3% vs prior day | 0d streak | latest 0.62M | OBV 0.6M/day"
-    },
-    {
-      "ticker": "CMG",
-      "price": 37.41,
-      "buy_surge_pct": 0.2283,
-      "buy_vol_d2": 2461862,
-      "buy_vol_d3": 3023912,
-      "net_buy_d3": 1810233,
-      "reason": "Buy vol \u219122.8% vs prior day | 0d streak | latest 1.81M | OBV 2.7M/day"
+      "ticker": "EG",
+      "price": 433.755,
+      "buy_surge_pct": 3.2593,
+      "buy_vol_d2": 25167,
+      "buy_vol_d3": 107193,
+      "net_buy_d3": 66362,
+      "reason": "Buy vol \u2191325.9% vs prior day | 0d streak | latest 0.07M | OBV 0.1M/day"
     }
   ]
 }

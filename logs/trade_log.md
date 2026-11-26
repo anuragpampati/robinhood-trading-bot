@@ -1,3 +1,6 @@
+## 2026-11-26T15:16:31Z
+- SUMMARY: Market CLOSED — Thanksgiving holiday (US, Nov 26 2026). Strategy reported market_open=True (DST/holiday bug, same as prior cycle). Quotes confirm closed (IT last trade 2026-11-25T20:59Z). 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; sell_date=today but $184.76 < avg_cost $187.14 so surge date exit doesn't trigger; no ATR/TP/RSI-SELL). 0 BUYs: Market confirmed closed. Surge tracker: 8 tickers count=1 for 2026-11-26 (unchanged — market closed, no increment). bearish_ema regime. CB: daily 0.0%/weekly -0.24% (OK). 0 RSI BUYs, 16 net-buy BUYs (moot — market closed). Acct=$221.72. BP=$179.19. Positions=1 (IT). Universe=503.
+
 ## 2026-11-26T14:16:00Z
 - SUMMARY: Market CLOSED — Thanksgiving holiday (US, Nov 26 2026). Strategy reported market_open=True (DST bug + no holiday calendar); quotes confirm closed (IT last trade 2026-11-25T20:59Z, wide bid/ask $159/$190). 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; sell_date=today but price $184.76 < avg_cost $187.14 so surge date exit doesn't trigger; no ATR/TP/signal exit). 0 BUYs: Market closed. Surge tracker: 8 tickers at count=1 for 2026-11-26 (all reset from yesterday). bearish_ema regime. CB: daily start reset (new day). Acct=$221.72. BP=$179.19. Positions=1. Universe=503.
 
