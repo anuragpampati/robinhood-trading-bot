@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T19:16:00Z",
+  "updated_at": "2026-11-27T20:14:29Z",
   "buying_power": 179.19,
   "market_regime": "bearish_ema",
   "account_value": 222.60,
@@ -14,8 +14,8 @@
   "disabled_reason": null,
   "positions": [],
   "last_actions": [
+    "2026-11-27T20:14Z Market CLOSED (after hours). 0 SELLs (no positions). 0 BUYs (market closed). Regime: bearish_ema. 0 RSI BUYs; 73 RSI SELLs (none held). Net-buy BUYs: 5 (VTRS,DHR,NWS,TMO,TDY). Surge: 1 (ES). CB: daily +0.10%/weekly +0.15% OK. Acct=$222.60. BP=$179.19. Positions=0. Universe=503.",
     "2026-11-27T19:16Z Market OPEN. 0 SELLs (no positions). 0 BUYs: bearish_ema (conf≥3 required, 0 RSI BUYs, 5 net-buy-only blocked). Surges: 0. CB: daily -0.10%/weekly -0.15% OK. Acct=$222.60. BP=$179.19. Positions=0. Universe=503.",
-    "2026-11-27T18:20Z Market OPEN. 0 SELLs (no positions). 0 BUYs: bearish_ema (conf≥3 required, 0 RSI BUYs, 5 net-buy-only blocked). Surges: 0. CB: daily +0.10%/weekly +0.15% OK. Acct=$222.60. BP=$179.19. Positions=0. Universe=503.",
     "2026-11-27T17:17Z SELL IT (intraday_surge sell_date exit, price $188.39 > avg_cost $187.14, +0.7%). Order placed (ID: 6b09bae8). 0 BUYs: bearish_ema (conf≥3 required, 0 RSI BUYs). Acct=$222.55. BP=$179.19 (pre-sell). Positions=0. Universe=503."
   ]
 }

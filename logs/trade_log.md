@@ -1,3 +1,6 @@
+## 2026-11-27T20:14:29Z
+- SUMMARY: Market CLOSED (after hours). 0 SELLs (no positions). 0 BUYs (market closed). Regime: bearish_ema. 0 RSI BUYs; 73 RSI SELLs (overbought, none held). Net-buy BUYs: 5 (VTRS,DHR,NWS,TMO,TDY) — blocked by closed market. Net-buy SELLs: 5 (FDXF,AME,VRT,IRM,MNST) — none held. Surge: 1 (ES +2709%). CB: daily +0.10%/weekly +0.15% OK. Acct=$222.60. BP=$179.19. Positions=0. Universe=503.
+
 ## 2026-11-27T19:16:00Z
 - SUMMARY: Market OPEN. 0 SELLs (no positions held). 0 BUYs: bearish_ema regime (conf≥3 required; 0 RSI BUYs; 5 net-buy-only signals [VTRS+4] blocked by regime). 0 surges. CB: daily -0.10%/weekly -0.15% OK. Acct=$222.60. BP=$179.19. Positions=0. Universe=503.
 
