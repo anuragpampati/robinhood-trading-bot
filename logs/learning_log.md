@@ -801,3 +801,12 @@
 - Backtest: SKIPPED — yfinance blocked by cloud sandbox network policy (403); 14th+ consecutive failed attempt
 - RL samples: 641/200 (READY — 0 new rows today; 19 states in Q-table; RL BOOST remains DISABLED per 2026-11-06 audit — 23% win rate on boosted trades vs 67% unboosted)
 - Notes: Account $222.26 (down from $249 peak, -10.7%). 0 open positions. Full BEARISH_EMA regime persisting; SPY $716-722 vs EMA200 $749. No BUY signals in 503-ticker universe today. RL training data at 641 samples (exceeded 200 target) but model remains disabled — do not retrain without explicit human authorization per CLAUDE.md. Trim_log.py has a known issue keeping old entries with "(SUMMARY)" suffix timestamps (unparseable, kept by except-clause); benign but log retains historical entries.
+
+## 2026-11-27
+- Trades analysed: 3 closed round-trips (IT +0.73% intraday_surge, VTR -1.87% normal, GE -1.14% normal)
+- Win rate: 33% overall (normal: 0% n=2, intraday_surge: 100% n=1, momentum: n/a n=0)
+- EMA entry: BULLISH 50% (n=2), BEARISH 0% (n=1)
+- Config changes: none (n_trades < 5 for normal, < 3 for all other types — below statistical threshold)
+- Backtest: SKIPPED — yfinance blocked (403) in cloud CCR sandbox, same known issue as 2026-09-21
+- RL samples: 642/200 (exceeds target; RL BOOST/VETO remains DISABLED per 2026-11-06 decision — confirmed harmful)
+- Notes: RSI_OVERSOLD already at clamp max (40). Account at $222.60 (-10.9% from $250 start). Bearish_EMA regime active (SPY below 200-EMA). Zero open positions. Buying power $179.19. log trimmed to 60/70 recent entries.

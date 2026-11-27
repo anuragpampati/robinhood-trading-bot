@@ -639,3 +639,4 @@
 {"trade_id": "APP|2026-11-09T15:24:34Z|LIVE|HOLD", "timestamp": "2026-11-09T15:24:34Z", "ticker": "APP", "action": "HOLD", "price": 407.62, "obs": {"rsi": 84.4, "ema_trend": "BULLISH", "atr_pct": 0.0279, "regime": "normal"}, "reward": 0.0}
 {"trade_id": "COST|2026-11-13T18:19:28Z|LIVE", "timestamp": "2026-11-13T18:19:28Z", "ticker": "COST", "action": "BUY", "price": 1.0, "obs": {"rsi": 77.74, "ema_trend": "BULLISH", "atr_pct": 0.001, "regime": "bearish_ema"}, "reward": 111094.0}
 {"trade_id": "BMY|2026-11-13T18:19:24Z|LIVE", "timestamp": "2026-11-13T18:19:24Z", "ticker": "BMY", "action": "BUY", "price": 63.02, "obs": {"rsi": 56.89, "ema_trend": "BULLISH", "atr_pct": 0.0064, "regime": "bearish_ema"}, "reward": 1.6503}
+{"trade_id": "IT|2026-11-25T17:22:02Z|LIVE", "timestamp": "2026-11-25T17:22:02Z", "ticker": "IT", "action": "BUY", "price": 187.02, "obs": {"rsi": 64.8, "ema_trend": "BULLISH", "atr_pct": 0.0082, "regime": "bearish_ema"}, "reward": 0.7325}
