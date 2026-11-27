@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27T22:34:39.189347+00:00",
+  "timestamp": "2026-11-27T23:07:05.045237+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -7890,5 +7890,15 @@
       "reason": "Net buy reversed: 12.70M \u2192 8.92M | OBV -5.8M/day"
     }
   ],
-  "surge_signals": []
+  "surge_signals": [
+    {
+      "ticker": "ABNB",
+      "price": 179.16000366210938,
+      "buy_surge_pct": 1.0481,
+      "buy_vol_d2": 2756175,
+      "buy_vol_d3": 5644790,
+      "net_buy_d3": 5293930,
+      "reason": "Buy vol \u2191104.8% vs prior day | 1d streak | latest 5.29M | OBV -0.1M/day"
+    }
+  ]
 }
