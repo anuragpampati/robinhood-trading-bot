@@ -1,3 +1,6 @@
+## 2026-11-27T18:20:00Z
+- SUMMARY: Market OPEN. 0 SELLs (no positions held). 0 BUYs: bearish_ema regime (conf≥3 required; 0 RSI BUYs; 5 net-buy-only signals blocked by regime). 0 surges. CB: daily +0.10%/weekly +0.15% OK. Acct=$222.60. BP=$179.19. Positions=0. Universe=503.
+
 ## 2026-11-27T17:16:24Z
 - Action   : SELL IT
 - Price    : $188.39 (signal price; market order placed, fill pending)
