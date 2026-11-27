@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-27T15:17:00Z",
+  "updated_at": "2026-11-27T16:15:35Z",
   "buying_power": 179.19,
   "market_regime": "bearish_ema",
-  "account_value": 222.14,
+  "account_value": 222.04,
   "peak_value": 249.0,
   "day_start_value": 222.38,
   "day_start_date": "2026-11-27",
@@ -17,9 +17,9 @@
       "ticker": "IT",
       "quantity": 0.230147,
       "avg_cost": 187.14,
-      "current_price": 186.60,
-      "pnl_pct": -0.0029,
-      "value": 42.95,
+      "current_price": 186.20,
+      "pnl_pct": -0.0050,
+      "value": 42.85,
       "entry_atr_pct": 0.0082,
       "entry_time": "2026-11-25T17:22:02Z",
       "trail_stop": 183.95,
@@ -29,7 +29,7 @@
     }
   ],
   "last_actions": [
-    "2026-11-27T15:17Z Market OPEN (Black Friday half-day). 0 SELLs: IT HOLD (price $186.60 > trail_stop $183.95; surge_exit N/A price < avg_cost; RSI HOLD 60.7; no net_buy_sell). 0 BUYs: bearish_ema (3/3 required), 0 RSI BUYs, DHR net-buy conf=2 blocked. Surge: 0 tickers. CB: daily -0.11%/weekly -0.05% OK. Acct=$222.14. BP=$179.19. Positions=1 (IT -0.29%). Universe=503.",
-    "2026-11-27T14:14Z Pre-market (Black Friday, Nov 27 2026). Strategy reports market_open=True (holiday-schedule bug); quotes confirm last regular trade Nov 25. 0 SELLs: IT HOLD (price $184.76 > trail_stop $183.95; sell_date=2026-11-26 but $184.76 < avg_cost $187.14 so surge date exit N/A; RSI=57.4 HOLD; no net_buy_sell). 0 BUYs: pre-market + bearish_ema regime (requires 3/3 confidence, 0 RSI BUYs). Surge tracker: 7 tickers reset to count=1 for 2026-11-27 (8 previous 2026-11-26 entries removed). CB: daily fresh reset (new day), weekly -0.054% OK. Acct=$222.38. BP=$179.19. Positions=1 (IT). Universe=503."
+    "2026-11-27T16:15Z Market OPEN (Black Friday half-day, 11:15 ET). 0 SELLs: IT HOLD (price $186.20 > trail_stop $183.95; surge_exit N/A price < avg_cost; RSI HOLD 60.1; no net_buy_sell). 0 BUYs: bearish_ema (3/3 required), 0 RSI BUYs, DHR net-buy only (blocked). Surge: 0 tickers. CB: daily -0.17%/weekly -0.11% OK. Acct=$222.04. BP=$179.19. Positions=1 (IT -0.50%). Universe=503.",
+    "2026-11-27T15:17Z Market OPEN (Black Friday half-day). 0 SELLs: IT HOLD (price $186.60 > trail_stop $183.95; surge_exit N/A price < avg_cost; RSI HOLD 60.7; no net_buy_sell). 0 BUYs: bearish_ema (3/3 required), 0 RSI BUYs, DHR net-buy conf=2 blocked. Surge: 0 tickers. CB: daily -0.11%/weekly -0.05% OK. Acct=$222.14. BP=$179.19. Positions=1 (IT -0.29%). Universe=503."
   ]
 }
