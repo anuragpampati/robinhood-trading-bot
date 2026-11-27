@@ -1,3 +1,17 @@
+## 2026-11-27T17:16:24Z
+- Action   : SELL IT
+- Price    : $188.39 (signal price; market order placed, fill pending)
+- Amount   : $43.36 | Shares: 0.230147
+- RSI      : 64.23 | EMA: BULLISH | BB: ABOVE_BAND
+- RL       : None conf=None | null (disabled)
+- Stop     : $183.95 | Target: $205.85
+- Strategy : intraday_surge | Sell date: 2026-11-26
+- Regime   : bearish_ema
+- Reason   : Surge date exit — sell_date 2026-11-26 expired; price $188.39 > avg_cost $187.14 (+0.7%). Order ID: 6b09bae8-7b93-4394-bc8d-267deffe8727
+
+## 2026-11-27T17:17:00Z
+- SUMMARY: Market OPEN. 1 SELL: IT (intraday_surge sell_date 2026-11-26 past, price $188.39 > avg_cost $187.14, +0.7%). 0 BUYs: bearish_ema regime requires conf≥3; 0 RSI BUYs across 503 tickers; net-buy BUYs DHR/IT/TMO all conf≈2 (blocked); net-buy SELLs AME/VRT/FDXF/IRM (not held). No surge signals. ATR trail stop IT: $183.95 (profit_pct=+0.67%, no ratchet). CB: daily +0.08%/weekly +0.13% (OK). Account: $222.55. BP: $179.19 (pre-sell). Positions: 0 (after sell). Universe=503.
+
 ## 2026-11-27T16:15:35Z
 - SUMMARY: Market OPEN (Black Friday half-day, 11:15 ET). Buying power: $179.19. Equity positions: 1 (IT -0.50%). Regime: bearish_ema. Account: $222.04. Universe fetched: 503. SELL check IT: price $186.20 > trail_stop $183.95 (no stop); sell_date 2026-11-26 expired but price $186.20 < avg_cost $187.14 (surge exit not triggered); RSI=HOLD (60.1), EMA=BULLISH, BB=IN_BAND; not in net_buy_sell. No SELL. 0 BUYs: bearish_ema requires 3/3 confidence; 0 RSI BUYs across 503 tickers; DHR net-buy only (1 strategy, blocked in bearish_ema). Surge: 0 tickers at ≥10% intraday (tracker empty). ATR trail stop IT: $183.95 unchanged (profit_pct=-0.50%, no ratchet). CB: daily -0.17%/weekly -0.11% (OK). Net-buy BUYs: DHR only (blocked). RSI SELLs: 52 overbought (none held). Surge: 0 signals.
 
