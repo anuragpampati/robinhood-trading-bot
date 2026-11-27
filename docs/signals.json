@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26T23:25:26.220733+00:00",
+  "timestamp": "2026-11-27T00:14:57.829115+00:00",
   "mode": "full_universe",
   "universe_size": 503,
   "market_open": false,
@@ -8079,6 +8079,15 @@
       "buy_vol_d3": 569076,
       "net_buy_d3": 400253,
       "reason": "Buy vol \u219152.9% vs prior day | 0d streak | latest 0.40M | OBV 0.4M/day"
+    },
+    {
+      "ticker": "ALGN",
+      "price": 165.39999389648438,
+      "buy_surge_pct": 0.1729,
+      "buy_vol_d2": 510171,
+      "buy_vol_d3": 598370,
+      "net_buy_d3": 434240,
+      "reason": "Buy vol \u219117.3% vs prior day | 0d streak | latest 0.43M | OBV 0.5M/day"
     }
   ]
 }
